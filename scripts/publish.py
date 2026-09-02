@@ -143,9 +143,17 @@ def main():
 
     # Der Token steht in der Fernadresse und darf darum nie in einen Commit
     # oder in eine Ausgabe geraten. Er wird bei jedem Lauf frisch gesetzt.
+    # «remote remove» löscht auch die Fernzweige und braucht dafür
+    # packed-refs. Bleibt dort eine Sperrdatei liegen, was auf einem
+    # eingehängten Laufwerk vorkommt, scheitert das Entfernen still und das
+    # folgende «add» meldet «origin already exists». Darum die Adresse
+    # setzen, wenn origin schon da ist, und nur sonst neu anlegen.
     fern = f"https://{z['benutzer']}:{z['token']}@github.com/{z['benutzer']}/{z['repo']}.git"
-    lauf("git", "remote", "remove", "origin", pruefen=False)
-    lauf("git", "remote", "add", "origin", fern)
+    vorhanden = "origin" in lauf("git", "remote").stdout.split()
+    if vorhanden:
+        lauf("git", "remote", "set-url", "origin", fern)
+    else:
+        lauf("git", "remote", "add", "origin", fern)
 
     lauf("git", "add", "-A")
     stand = lauf("git", "status", "--porcelain")

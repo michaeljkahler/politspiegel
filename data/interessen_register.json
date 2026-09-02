@@ -50,6 +50,10 @@
    "geprueft": "2026-09-02"
   },
   {
+   "kennung": "130b777869fd4494",
+   "status": "offen"
+  },
+  {
    "kennung": "c8c4efc9c24b7f72",
    "status": "verworfen"
   },
@@ -79,6 +83,22 @@
    "geprueft": "2026-09-02"
   },
   {
+   "kennung": "f015702b26c2e9d0",
+   "status": "offen"
+  },
+  {
+   "kennung": "36654b7ff6d73061",
+   "status": "offen"
+  },
+  {
+   "kennung": "963753c9f862e546",
+   "status": "offen"
+  },
+  {
+   "kennung": "7092dce3b1208c87",
+   "status": "offen"
+  },
+  {
    "schluessel": "Ivo Tognella|CHE-225.675.333",
    "mitglied": "Ivo Tognella",
    "fraktion": "SVP-EDU",
@@ -104,6 +124,10 @@
    "geprueft": "2026-09-02"
   },
   {
+   "kennung": "ddbf7b1771239162",
+   "status": "offen"
+  },
+  {
    "schluessel": "Markus Leu|CHE-109.710.781",
    "mitglied": "Markus Leu",
    "fraktion": "SVP-EDU",
@@ -126,6 +150,26 @@
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
    "geprueft": "2026-09-02"
+  },
+  {
+   "kennung": "cadbc78640305f04",
+   "status": "offen"
+  },
+  {
+   "kennung": "98a816bd5e18e316",
+   "status": "offen"
+  },
+  {
+   "kennung": "b25cd1fa0218b4a7",
+   "status": "offen"
+  },
+  {
+   "kennung": "d1a7949355e9b47e",
+   "status": "offen"
+  },
+  {
+   "kennung": "2e979205bc3ae1ea",
+   "status": "offen"
   },
   {
    "schluessel": "Michael Mundt|CHE-335.111.498",
@@ -263,6 +307,30 @@
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
    "geprueft": "2026-09-02"
+  },
+  {
+   "kennung": "dc67e12727dd2b5e",
+   "status": "offen"
+  },
+  {
+   "kennung": "3ade8b90833f66f8",
+   "status": "offen"
+  },
+  {
+   "kennung": "2a7bd6e6ba8a42d7",
+   "status": "offen"
+  },
+  {
+   "kennung": "39632052c7d98d09",
+   "status": "offen"
+  },
+  {
+   "kennung": "4330d9446d17cd0e",
+   "status": "offen"
+  },
+  {
+   "kennung": "c21e62d97e9ba2af",
+   "status": "offen"
   },
   {
    "kennung": "4937c2796cf488d9",
