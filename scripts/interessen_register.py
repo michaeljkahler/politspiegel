@@ -137,12 +137,29 @@ def kandidaten():
     leute = {p["name"]: p for p in H.mitglieder()}
 
     raus = []
+    # Dieselbe Rechtseinheit kann in der Trefferliste mehrfach stehen, wenn sie
+    # den Sitz gewechselt hat: «Naturstein Schweiz GmbH» erscheint bei Jannik
+    # Schraff dreimal, einmal mit Sitz Baar, zweimal mit Sitz Beringen, alle
+    # drei unter derselben UID. Das ist ein Mandat und darf auch nur einmal in
+    # der Prüfliste und im Dashboard stehen. Massgeblich ist die UID, nicht der
+    # Firmenname mit Sitz.
+    gesehen = set()
     for name, e in sorted(daten["personen"].items()):
         p = leute.get(name)
         if not p:
             continue
         dekl = H.deklarierte_firmen(p)
         ort_bekannt = bool(H.gemeinde(p.get("adresse"), name))
+        # Eine Rechtseinheit kann in der Trefferliste unter mehreren Namen
+        # stehen, weil das Register frühere Firmennamen mitführt. Jannik Schraff
+        # hat «SMG bau gmbh» deklariert; unter derselben UID CHE-115.560.082
+        # steht zusätzlich «Naturstein Schweiz GmbH». Wer nur den Namen
+        # vergleicht, hält die Umfirmierung für ein zweites, undeklariertes
+        # Mandat und legt einem Ratsmitglied etwas zur Last, das es deklariert
+        # hat. Massgeblich ist darum die UID: passt irgendein Name dieser
+        # Rechtseinheit zur Deklaration, gilt das Mandat als deklariert.
+        deklarierte_uid = {t["uid"] for t in e["treffer"]
+                           if H.firma_passt(t["firma"], H.alle_deklarationen(p))}
         for t in e["treffer"]:
             if not str(t.get("urteil", "")).startswith("bestaetigt"):
                 continue
@@ -157,11 +174,15 @@ def kandidaten():
                 continue
             if t.get("firma_geloescht"):
                 continue
-            if H.firma_passt(t["firma"], H.alle_deklarationen(p)):
-                continue                       # bereits deklariert
+            if t["uid"] in deklarierte_uid:
+                continue                       # bereits deklariert, siehe oben
+            schluessel = f"{name}|{t['uid']}"
+            if schluessel in gesehen:
+                continue                       # dieselbe Firma, anderer Sitz
+            gesehen.add(schluessel)
             person = t.get("person") or {}
             raus.append({
-                "schluessel": f"{name}|{t['uid']}",
+                "schluessel": schluessel,
                 "mitglied": name,
                 "fraktion": p.get("fraktion"),
                 "firma": t["firma"],

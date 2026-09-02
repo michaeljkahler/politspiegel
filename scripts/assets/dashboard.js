@@ -403,16 +403,51 @@
     }).join("");
   }
 
+  /* Die Mailadresse wird erst hier zusammengesetzt und steht darum nirgends am
+     Stück im Quelltext. Das hält einfache Adress-Sammler ab, mehr nicht: wer
+     die Seite ausführt, sieht sie. Ein wirksamerer Schutz wäre ein Formular,
+     und das hiesse einen Server zu betreiben, was diese Seite gerade nicht tut. */
+  function kontakt() {
+    var a = ["michael.j.kahler", "gmail.com"].join("@");
+    return '<a href="' + "mail" + "to:" + a + '">' + a + "</a>";
+  }
+
   function fussHtml(s) {
     var quelle = s ? " (" + esc(s.q) + ")" : "";
     var prot = s && s.pu ? ' <a href="' + esc(s.pu) + '">Wortprotokoll</a>.' : "";
     return '<footer class="foot"><b>Datenquelle:</b> Kanton Schaffhausen, namentliche ' +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
-      " Aufbereitung ohne Gewähr.<br><b>Richtungskorrektur:</b> Bei Umkehrabstimmungen werden " +
+      " Aufbereitung ohne Gewähr." +
+
+      "<br><b>Interessenbindungen:</b> Selbstdeklaration der Ratsmitglieder auf sh.ch, " +
+      "ergänzt um Einträge des Handelsregisteramts des Kantons Schaffhausen und der " +
+      "Zefix-REST-API des Bundesamts für Justiz. Ein Registerfund erscheint erst, wenn er " +
+      "von Hand am Registerauszug bestätigt worden ist. Andere Quellen werden nicht " +
+      "herangezogen." +
+
+      "<br><b>Richtungskorrektur:</b> Bei Umkehrabstimmungen werden " +
       "Ja und Nein vor der Aggregation getauscht, die Herkunft des Entscheids steht auf jeder " +
       "betroffenen Karte. Ausmehrungen ohne eindeutige Richtung bleiben aus den Quoten draussen." +
+
+      "<br><b>Grenzen der Daten:</b> Die Richtungskorrektur ist zu 88 Prozent am Wortprotokoll " +
+      "oder von Hand geprüft. Der Rest folgt einer Regel, deren Fehlerquote bei rund " +
+      "5 Prozent gemessen wurde. Wer einzelne Zahlen zitiert, sollte sie an der Quelle " +
+      "nachschlagen." +
+
       "<br><b>Parteifarben</b> nach srfdata/swiss-party-colors (CC BY-SA 4.0), angepasst für die " +
-      "Schaffhauser Parteien. Ja und Nein sind bewusst parteiunabhängig eingefärbt.</footer>";
+      "Schaffhauser Parteien. Ja und Nein sind bewusst parteiunabhängig eingefärbt." +
+
+      "<br><b>Datenschutz:</b> Diese Seite sendet nichts. Die Antworten im Reiter «Wer stimmt " +
+      "wie ich» bleiben im Browser, es gibt weder Konto noch Cookie noch Zählpixel und keine " +
+      "eingebundenen Dienste Dritter. Die Seite liegt allerdings bei GitHub Pages, und GitHub " +
+      "hält als Betreiber der Server eigene Zugriffsprotokolle, in denen unter anderem die " +
+      "IP-Adresse steht. Darauf hat der Betreiber dieser Seite keinen Zugriff." +
+
+      "<br><b>Impressum:</b> Verantwortlich für den Inhalt ist Michael Kahler, " +
+      "erreichbar unter " + kontakt() + ". Diese Seite ist ein privates, nichtkommerzielles " +
+      "Projekt und steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des " +
+      "Kantons Schaffhausen. Wer einen Fehler findet, melde ihn bitte an diese Adresse." +
+      "</footer>";
   }
 
   /* ═══ Rubrik: Zuletzt entschieden ═══════════════════════════════════════ */

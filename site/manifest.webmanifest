@@ -1,0 +1,29 @@
+{
+  "name": "Abstimmungsspiegel Kantonsrat Schaffhausen",
+  "short_name": "Abstimmungsspiegel",
+  "description": "Wie der Schaffhauser Kantonsrat abstimmt: alle namentlichen Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema.",
+  "lang": "de-CH",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B0F14",
+  "theme_color": "#0B0F14",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

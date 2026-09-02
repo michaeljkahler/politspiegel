@@ -205,6 +205,16 @@ def suche(s, name, vs, knopf, haken):
     m_vs = re.search(r'ViewState:0"><!\[CDATA\[([^\]]+)\]\]', t)
     nach_vs = m_vs.group(1) if m_vs else vs
 
+    # Eine leere Ergebnismenge meldet das Portal im Klartext und ohne die
+    # Trefferzahl: «Für die angegebenen Suchkriterien wurden keine Einträge
+    # gefunden.» Ohne diesen Fall sieht ein sauberes «nichts gefunden» aus wie
+    # eine Seite, die das Skript nicht lesen konnte. Der Unterschied ist für ein
+    # Transparenzprojekt wesentlich: geprüft und nichts gefunden ist eine
+    # Aussage, nicht geprüft ist keine.
+    if re.search(r"keine Eintr[äa]ge gefunden|no entries (were )?found"
+                 r"|aucune inscription", t, re.I):
+        return [], None, basis, nach_vs
+
     # Die Teilantwort enthält bei aufeinanderfolgenden Abfragen mehr als einen
     # Tabellenrumpf: den neuen und den aus der wiederhergestellten Ansicht. Wer
     # über das ganze Dokument sucht, sammelt beide ein und meldet die Treffer
@@ -730,8 +740,20 @@ def firmen_pruefen():
         print(f"{ZIEL.name} fehlt.")
         return
     daten = json.loads(ZIEL.read_text(encoding="utf-8"))
+    # Zeitbudget wie beim Abfragelauf: nach einem vollständigen Durchgang sind
+    # mehrere hundert Firmen zu prüfen, das dauert länger, als manche Umgebung
+    # einen einzelnen Aufruf leben lässt. Darum wird der Stand laufend
+    # geschrieben und der nächste Aufruf setzt fort; bereits geprüfte Firmen
+    # überspringt die Schleife ohnehin. Das ändert nichts an den zugesagten
+    # Grenzen: begrenzt sind die Namensabfragen, nicht die Auszüge.
+    budget = None
+    if "--minuten" in sys.argv:
+        budget = time.time() + float(sys.argv[sys.argv.index("--minuten") + 1]) * 60
     gesehen, neu = {}, 0
+    knapp = False
     for name, e in daten["personen"].items():
+        if knapp:
+            break
         for t in e["treffer"]:
             # Bereits geprüft und entweder gelöscht oder mit Zweck versehen:
             # dann gibt es nichts mehr zu holen.
@@ -741,6 +763,9 @@ def firmen_pruefen():
                 continue
             uid = t["uid"]
             if uid not in gesehen:
+                if budget and time.time() > budget:
+                    knapp = True
+                    break
                 s = sitzung()
                 leute, zweck, fehler = personen_aus_seite(
                     s, s.get(AUSZUG, params={"uid": uid}, timeout=60).text)
@@ -754,9 +779,300 @@ def firmen_pruefen():
     weg = sum(1 for v, _ in gesehen.values() if not v)
     print(f"{neu} Treffer nachgetragen, {len(gesehen)} Firmen geprüft, "
           f"davon {weg} gelöscht.")
+    offen = len({t["uid"] for e in daten["personen"].values() for t in e["treffer"]
+                 if t.get("firma_besteht") is None})
+    if offen:
+        print(f"Zeitbudget erreicht, noch {offen} Firmen offen. "
+              f"Nächster Aufruf setzt fort.")
+
+
+def suchbegriff(p, mit_vorname):
+    """Was ins Feld «Person» geschrieben wird.
+
+    Der Nachname allein ist bei häufigen Namen unbrauchbar: das Portal zeigt nur
+    die erste Seite mit zwanzig Zeilen, und für «Müller» meldet es 500 Treffer.
+    Nachname und Vorname zusammen grenzen so weit ein, dass die Liste
+    vollständig zurückkommt: aus 500 Treffern für «Leu» werden 12 für «Leu
+    Markus», der gesuchte Eintrag ist darunter. Die Reihenfolge folgt der
+    Schreibweise im Register («Leu, Markus»).
+
+    Beurteilt wird trotzdem weiter am Auszug. Die engere Suche spart die
+    Namensvettern, sie ersetzt die Prüfung nicht: auch «Leu Markus» liefert
+    Firmen, in denen ein anderer Markus Leu eingetragen ist.
+    """
+    if not mit_vorname:
+        return p["nachname"]
+    return f"{p['nachname']} {p['vorname'].split()[0]}"
+
+
+def treffer_beurteilen(s, p, treffer, basis, nach_vs):
+    """Jeden Treffer am Registerauszug prüfen und einordnen.
+
+    Die Suche läuft über den Namen und wirft Namensvettern zusammen; erst der
+    Auszug nennt die Vornamen. Diese Aufrufe gehören zur selben Person und
+    brauchen darum keine Pause zwischen sich.
+    """
+    bestaetigt = beendet = 0
+    wohnort = gemeinde(p.get("adresse"), p.get("name"))
+    for zeile, t in enumerate(treffer):
+        leute, zweck, fehler, firma_weg = auszug_von_zeile(s, basis, nach_vs, zeile)
+        t["firma_geloescht"] = firma_weg
+        t["zweck"] = zweck
+        if fehler:
+            t["person"] = None
+            t["urteil"] = "ungeprueft"
+            t["fehler"] = fehler
+            continue
+        t["eingetragene"] = leute
+        urteile = []
+        for e in leute:
+            u, ort = ist_die_person(e["eintrag"], p["nachname"], p["vorname"], wohnort)
+            e["ort_register"] = ort
+            urteile.append((u, e))
+        # Reihenfolge der Sicherheit: eindeutig, dann mit Ortsvorbehalt,
+        # dann nur über den Ort gestützt, dann ausgeschlossen. Innerhalb
+        # einer Stufe zählt ein bestehender Eintrag mehr als ein
+        # gestrichener: gestrichen heisst, das Mandat ist beendet.
+        for stufe in ("bestaetigt", "bestaetigt_anderer_ort", "moeglich",
+                      "namensvetter", "unklar"):
+            passend = sorted((e for u, e in urteile if u == stufe),
+                             key=lambda e: bool(e.get("geloescht")))
+            if passend:
+                t["urteil"] = stufe
+                t["person"] = passend[0]
+                t["aktuell"] = not passend[0].get("geloescht")
+                # Ohne hinterlegte Adresse ruht die Zuordnung allein auf dem
+                # Vornamen. Bei drei Ratsmitgliedern führt sh.ch keine
+                # Adresse; dort fehlt die zweite Stütze, und das muss im
+                # Bericht sichtbar sein statt stillschweigend zu gelten.
+                t["ort_geprueft"] = bool(wohnort)
+                if stufe.startswith("bestaetigt"):
+                    bestaetigt += 1
+                    if not t["aktuell"]:
+                        beendet += 1
+                break
+        else:
+            t["urteil"] = "unklar"
+            t["person"] = None
+            t["aktuell"] = None
+    return bestaetigt, beendet
+
+
+def melden(name, treffer, bestaetigt, beendet, hinweis):
+    """Die Zeilen, die ein Lauf je Person ausgibt."""
+    vetter = sum(1 for t in treffer if t.get("urteil") == "namensvetter")
+    print(f"   {name:28} {len(treffer)} Treffer, davon {bestaetigt} bestätigt"
+          + (f" ({beendet} beendet)" if beendet else "")
+          + (f", {vetter} Namensvetter" if vetter else "")
+          + (f"  ({hinweis})" if hinweis else ""))
+    for t in treffer:
+        if str(t.get("urteil", "")).startswith("bestaetigt"):
+            print(f"        · {t['firma']}, {t['sitz']}: {t['person']['funktion']}"
+                  + ("" if t.get("aktuell") else "  [beendet]"))
+
+
+def probe():
+    """Eine einzelne Suche, nur um zu sehen, wie das Suchfeld reagiert.
+
+    Öffnet keine Auszüge und schreibt nichts. Gedacht für die Frage, in welcher
+    Schreibweise das Feld «Person» Vorname und Nachname versteht, bevor ein
+    ganzer Stapel Namen darauf umgestellt wird. Eine Suche statt siebenundzwanzig
+    ist die schonendere Art, das herauszufinden.
+    """
+    begriff = sys.argv[sys.argv.index("--probe") + 1]
+    s = sitzung()
+    vs, knopf, haken = formular(s)
+    if "--roh" in sys.argv:
+        # Für die Frage, was «Trefferzahl nicht gefunden» bedeutet: eine leere
+        # Ergebnismenge oder eine Seite, die das Skript nicht liest.
+        d = {"idSucheForm": "idSucheForm", "idSucheForm:idFirma": "",
+             "idSucheForm:idPerson": begriff,
+             "idSucheForm:panel:idRechtsform_input": "",
+             "idSucheForm:panel:idSitz_input": "", "idSucheForm:panel:idSitz_hinput": "",
+             "idSucheForm:panel:idShabDatum_input": "", "idSucheForm:panel:idShabNummer": "",
+             "idSucheForm:panel:idDiverseTyp_input": "",
+             "idSucheForm:panel:idDiverseSuchtext": "", "idSucheForm:panel_active": "-1",
+             knopf: knopf, "javax.faces.ViewState": vs,
+             "javax.faces.partial.ajax": "true", "javax.faces.source": knopf,
+             "javax.faces.partial.execute": "@all",
+             "javax.faces.partial.render": "idSucheForm"}
+        for k in haken:
+            d[k] = "on"
+        t = html.unescape(s.post(URL, data=d, timeout=90,
+                                 headers={"Faces-Request": "partial/ajax",
+                                          "X-Requested-With": "XMLHttpRequest"}).text)
+        print(f"Antwort {len(t)} Zeichen")
+        for muster in ("Anzahl gefundene Firmen", "Number of companies found",
+                       "Keine Datensätze", "No records", "resultTable_data",
+                       "Zu viele", "too many", "genauer", "einschränken"):
+            if muster.lower() in t.lower():
+                i = t.lower().find(muster.lower())
+                print(f"  gefunden {muster!r}: …{re.sub(r'<[^>]+>', ' ', t[i-80:i+160])}…")
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t)).strip()
+        print("\nSichtbarer Text:\n" + text[:1500])
+        return
+    treffer, hinweis, _, _ = suche(s, begriff, vs, knopf, haken)
+    print(f"Suchbegriff: {begriff!r}")
+    if treffer is None:
+        print(f"Kein auswertbares Ergebnis: {hinweis}")
+        return
+    print(f"{len(treffer)} Zeilen gelesen" + (f"  ({hinweis})" if hinweis else ""))
+    for t in treffer[:12]:
+        print(f"   {t['uid']}  {t['firma']}, {t['sitz']}")
+
+
+def unvollstaendig(daten):
+    """Namen, deren gespeichertes Ergebnis nicht belastbar ist.
+
+    Zwei Sorten: Trefferlisten, von denen das Portal nur die erste Seite mit
+    zwanzig Zeilen herausgegeben hat, und Namen, bei denen es die Trefferzahl
+    gar nicht erst gemeldet hat. Beide Male steht der Grund im Feld «hinweis».
+    """
+    raus = []
+    for name, e in daten["personen"].items():
+        h = e.get("hinweis") or ""
+        if "angezeigt sind" in h or "Trefferzahl nicht gefunden" in h:
+            raus.append(name)
+    return sorted(raus)
+
+
+def nachfassen():
+    """Die unvollständigen Namen erneut abfragen, mit Vorname und Nachname.
+
+    Grundlage ist der Entscheid von Michael vom 2. September 2026. Der
+    vollständige Durchgang desselben Tages hat bei 24 von 59 Namen nur die
+    erste Seite der Trefferliste erhalten und bei 3 Namen gar kein auswertbares
+    Ergebnis. Für diese Namen ist der Durchgang faktisch nicht erfolgt, und die
+    engere Suche behebt genau das: sie liefert dieselben Mandate in einer Liste,
+    die vollständig zurückkommt.
+
+    Die Auflagen des Amts bleiben in Kraft. Die 45 Sekunden zwischen zwei
+    Personen werden eingehalten, jeder Lauf wird protokolliert, und der Stand
+    wird nach jeder Person gesichert, damit ein Abbruch keine Abfrage doppelt
+    nötig macht. Dass dieser Stapel über die im Skript hinterlegte Zusage
+    hinausgeht, steht im Protokoll, damit es gegenüber dem Amt sichtbar ist und
+    nicht in der Zahl der Läufe verschwindet.
+
+    Die neuen Treffer werden zu den alten gelegt, nicht an ihre Stelle. Sollte
+    die engere Suche einen Eintrag nicht finden, den der Nachname allein gefunden
+    hat, geht er dadurch nicht verloren.
+    """
+    if not ZIEL.exists():
+        print(f"{ZIEL.name} fehlt.")
+        return
+    daten = json.loads(ZIEL.read_text(encoding="utf-8"))
+    st = status_lesen()
+    leute = {p["name"]: p for p in mitglieder()}
+
+    stand = st.setdefault("nachfassen", {})
+    if not stand:
+        stand.update({
+            "start": date.today().isoformat(), "ende": None,
+            "grundlage": ("Entscheid von Michael vom 2. September 2026. Der vollständige "
+                          "Durchgang vom selben Tag lieferte bei diesen Namen nur die "
+                          "erste Seite der Trefferliste oder gar keine Trefferzahl. Sie "
+                          "werden mit Vorname und Nachname erneut abgefragt, weil die "
+                          "engere Suche eine vollständige Liste zurückgibt. Dieser Stapel "
+                          "geht über die Zusage des Amts vom 2. September 2026 hinaus."),
+            "warteschlange": unvollstaendig(daten), "erledigt": []})
+
+    if "--erneut" in sys.argv:
+        # Namen, deren Lauf «Trefferzahl nicht gefunden» ergeben hat, noch einmal.
+        # Bis zur Erkennung der leeren Ergebnismenge liess sich nicht sagen, ob
+        # das Portal nichts gefunden oder das Skript nichts gelesen hat. Jetzt
+        # lässt es sich, und die betroffenen Namen bekommen ein klares Ergebnis.
+        wieder = [n for n in stand["erledigt"]
+                  if "Trefferzahl nicht gefunden"
+                  in (daten["personen"].get(n, {}).get("hinweis") or "")]
+        stand["erledigt"] = [n for n in stand["erledigt"] if n not in wieder]
+        stand["ende"] = None
+        stand.setdefault("bemerkungen", []).append(
+            {"am": date.today().isoformat(),
+             "was": f"{len(wieder)} Namen erneut abgefragt, nachdem das Skript die leere "
+                    f"Ergebnismenge des Portals erkennen gelernt hat: "
+                    f"{', '.join(wieder)}"})
+        print(f"{len(wieder)} Namen zurückgestellt: {', '.join(wieder)}")
+
+    offen = [n for n in stand["warteschlange"] if n not in stand["erledigt"]]
+    if not offen:
+        stand["ende"] = date.today().isoformat()
+        STATUS.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"Nachfassen abgeschlossen, {len(stand['erledigt'])} Namen.")
+        return
+
+    print(f"Nachfassen: {len(stand['erledigt'])} von {len(stand['warteschlange'])} erledigt.")
+    if "--apply" not in sys.argv:
+        print(f"Offen: {', '.join(offen)}")
+        print("\n(Probelauf, nichts abgefragt. Mit --apply abfragen.)")
+        return
+
+    budget = None
+    if "--minuten" in sys.argv:
+        budget = time.time() + float(sys.argv[sys.argv.index("--minuten") + 1]) * 60
+
+    for i, name in enumerate(offen):
+        if budget and time.time() > budget:
+            print(f"\nZeitbudget erreicht, {len(stand['erledigt'])} von "
+                  f"{len(stand['warteschlange'])} erledigt. Nächster Aufruf setzt fort.")
+            break
+        p = leute.get(name)
+        if not p:
+            print(f"   ! {name}: nicht in mitglieder.json")
+            stand["erledigt"].append(name)
+            continue
+        try:
+            s = sitzung()
+            vs, knopf, haken = formular(s)
+            treffer, hinweis, basis, nach_vs = suche(
+                s, suchbegriff(p, True), vs, knopf, haken)
+        except Exception as e:
+            print(f"   ! {name}: {str(e)[:120]}")
+            break
+        if treffer is None:
+            print(f"   {name:28} übersprungen: {hinweis}")
+            continue
+
+        bestaetigt, beendet = treffer_beurteilen(s, p, treffer, basis, nach_vs)
+        alt = daten["personen"].get(name, {}).get("treffer", [])
+        bekannt = {(t["uid"], t.get("firma"), t.get("sitz")) for t in alt}
+        dazu = [t for t in treffer
+                if (t["uid"], t.get("firma"), t.get("sitz")) not in bekannt]
+        daten["personen"][name] = {
+            "nachname": p["nachname"], "vorname": p["vorname"],
+            "abgefragt": date.today().isoformat(),
+            "treffer": alt + dazu,
+            "hinweis": hinweis,
+            "nachgefasst": {"am": date.today().isoformat(),
+                            "begriff": suchbegriff(p, True),
+                            "vorher": len(alt), "neu": len(dazu)}}
+        stand["erledigt"].append(name)
+        melden(name, treffer, bestaetigt, beendet, hinweis)
+        if dazu:
+            print(f"        {len(dazu)} Treffer waren vorher nicht in der Liste.")
+
+        daten["stand"] = date.today().isoformat()
+        ZIEL.write_text(json.dumps(daten, ensure_ascii=False, indent=1), encoding="utf-8")
+        STATUS.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+        if i < len(offen) - 1:
+            time.sleep(PAUSE_JE_PERSON)
+
+    st["laeufe"].append({"datum": date.today().isoformat(),
+                         "zeit": datetime.now().strftime("%H:%M"),
+                         "namen": offen, "art": "nachfassen"})
+    if len(stand["erledigt"]) >= len(stand["warteschlange"]):
+        stand["ende"] = date.today().isoformat()
+        print("\nNachfassen abgeschlossen.")
+    ZIEL.write_text(json.dumps(daten, ensure_ascii=False, indent=1), encoding="utf-8")
+    STATUS.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    rest = len(stand["warteschlange"]) - len(stand["erledigt"])
+    print(f"\nNoch offen: {rest} Namen.")
 
 
 def main():
+    if "--probe" in sys.argv:
+        return probe()
+    if "--nachfassen" in sys.argv:
+        return nachfassen()
     if "--firmen-pruefen" in sys.argv:
         return firmen_pruefen()
     if "--neu-beurteilen" in sys.argv:
@@ -829,7 +1145,8 @@ def main():
         try:
             s = sitzung()
             vs, knopf, haken = formular(s)
-            treffer, hinweis, basis, nach_vs = suche(s, p["nachname"], vs, knopf, haken)
+            treffer, hinweis, basis, nach_vs = suche(
+                s, suchbegriff(p, False), vs, knopf, haken)
         except Exception as e:
             print(f"   ! {name}: {str(e)[:120]}")
             break
@@ -840,67 +1157,13 @@ def main():
             print(f"   {name:28} übersprungen: {hinweis}")
             continue
 
-        # Jeden Treffer am Registerauszug prüfen. Die Suche läuft über den
-        # Nachnamen und wirft Namensvettern zusammen; erst der Auszug nennt die
-        # Vornamen. Diese Aufrufe gehören zur selben Person und brauchen darum
-        # keine Pause.
-        bestaetigt = beendet = 0
-        wohnort = gemeinde(p.get("adresse"), p.get("name"))
-        for zeile, t in enumerate(treffer):
-            leute, zweck, fehler, firma_weg = auszug_von_zeile(s, basis, nach_vs, zeile)
-            t["firma_geloescht"] = firma_weg
-            t["zweck"] = zweck
-            if fehler:
-                t["person"] = None
-                t["urteil"] = "ungeprueft"
-                t["fehler"] = fehler
-                continue
-            t["eingetragene"] = leute
-            urteile = []
-            for e in leute:
-                u, ort = ist_die_person(e["eintrag"], p["nachname"], p["vorname"], wohnort)
-                e["ort_register"] = ort
-                urteile.append((u, e))
-            # Reihenfolge der Sicherheit: eindeutig, dann mit Ortsvorbehalt,
-            # dann nur über den Ort gestützt, dann ausgeschlossen. Innerhalb
-            # einer Stufe zählt ein bestehender Eintrag mehr als ein
-            # gestrichener: gestrichen heisst, das Mandat ist beendet.
-            for stufe in ("bestaetigt", "bestaetigt_anderer_ort", "moeglich",
-                          "namensvetter", "unklar"):
-                passend = sorted((e for u, e in urteile if u == stufe),
-                                 key=lambda e: bool(e.get("geloescht")))
-                if passend:
-                    t["urteil"] = stufe
-                    t["person"] = passend[0]
-                    t["aktuell"] = not passend[0].get("geloescht")
-                    # Ohne hinterlegte Adresse ruht die Zuordnung allein auf dem
-                    # Vornamen. Bei drei Ratsmitgliedern führt sh.ch keine
-                    # Adresse; dort fehlt die zweite Stütze, und das muss im
-                    # Bericht sichtbar sein statt stillschweigend zu gelten.
-                    t["ort_geprueft"] = bool(wohnort)
-                    if stufe.startswith("bestaetigt"):
-                        bestaetigt += 1
-                        if not t["aktuell"]:
-                            beendet += 1
-                    break
-            else:
-                t["urteil"] = "unklar"
-                t["person"] = None
-                t["aktuell"] = None
+        bestaetigt, beendet = treffer_beurteilen(s, p, treffer, basis, nach_vs)
 
         daten["personen"][name] = {"nachname": p["nachname"], "vorname": p["vorname"],
                                    "abgefragt": date.today().isoformat(),
                                    "treffer": treffer, "hinweis": hinweis}
         d["erledigt"].append(name)
-        vetter = sum(1 for t in treffer if t.get("urteil") == "namensvetter")
-        print(f"   {name:28} {len(treffer)} Treffer, davon {bestaetigt} bestätigt"
-              + (f" ({beendet} beendet)" if beendet else "")
-              + (f", {vetter} Namensvetter" if vetter else "")
-              + (f"  ({hinweis})" if hinweis else ""))
-        for t in treffer:
-            if str(t.get("urteil", "")).startswith("bestaetigt"):
-                print(f"        · {t['firma']}, {t['sitz']}: {t['person']['funktion']}"
-                      + ("" if t.get("aktuell") else "  [beendet]"))
+        melden(name, treffer, bestaetigt, beendet, hinweis)
 
         # Zwischenstand sichern: ein vollständiger Durchgang dauert fast eine
         # Stunde, ein Abbruch darf die bisherigen Personen nicht kosten.

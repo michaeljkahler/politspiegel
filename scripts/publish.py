@@ -67,6 +67,15 @@ def kopfzeilen(url):
         '<meta name="twitter:image" content="' + url + 'vorschau.png">\n'
         '<link rel="canonical" href="' + url + '">\n'
         '<meta name="robots" content="index, follow">\n'
+        # Zeichen und Startbildschirm. Die Dateien liegen fest in site/ und
+        # werden nicht bei jedem Lauf neu erzeugt. Relative Pfade, damit
+        # nichts bricht, wenn das Repository einmal umzieht.
+        '<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
+        '<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">\n'
+        '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n'
+        '<link rel="manifest" href="manifest.webmanifest">\n'
+        '<meta name="theme-color" content="#0B0F14">\n'
+        '<meta name="apple-mobile-web-app-title" content="Abstimmungsspiegel">\n'
     )
 
 
@@ -76,7 +85,9 @@ def seite_bauen(url):
     # sammeln sie sich bei jeder Veröffentlichung an.
     html = re.sub(r'\n?<meta (?:property="og:|name="twitter:)[^>]*>', "", html)
     html = re.sub(r'\n?<link rel="canonical"[^>]*>', "", html)
-    html = re.sub(r'\n?<meta name="(?:description|robots)"[^>]*>', "", html)
+    html = re.sub(r'\n?<meta name="(?:description|robots|theme-color'
+                  r'|apple-mobile-web-app-title)"[^>]*>', "", html)
+    html = re.sub(r'\n?<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>', "", html)
     einf = html.find("</title>")
     if einf < 0:
         raise SystemExit("Kein <title> in der Ausgabe gefunden, Abbruch.")
