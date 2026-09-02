@@ -1,0 +1,44 @@
+# Veröffentlicht den Ordner site/ als GitHub Pages.
+#
+# Warum ein Arbeitsablauf und nicht «Deploy from a branch»: Pages kann bei der
+# einfachen Variante nur den Wurzelordner oder /docs ausliefern, nicht /site.
+# Der Ordner docs/ enthält hier die Projektdokumentation, und das Bauergebnis
+# in die Wurzel zu legen hiesse, das ganze Repository auszuliefern. Dieser
+# Ablauf nimmt genau site/ und sonst nichts.
+#
+# Er baut nichts. Die fertige site/index.html liegt im Repository und wird von
+# scripts/publish.py erzeugt; hier wird sie nur weitergereicht. Jeder Push auf
+# main löst das aus, also auch der wiederkehrende Auftrag.
+
+name: Seite veröffentlichen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Läuft ein Push, während ein anderer noch veröffentlicht, gewinnt der neuere.
+# Abbrechen ist hier gefahrlos: veröffentlicht wird ein fertiger Ordner.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  veroeffentlichen:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+      - id: deployment
+        uses: actions/deploy-pages@v4
