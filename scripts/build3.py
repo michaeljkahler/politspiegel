@@ -16,7 +16,9 @@ Gegenüber build2.py neu:
     musste.
   · kompakte Datenkodierung: Stimmen als Zeichenkette statt als Liste von
     Wörtern, das spart rund 70 % Dateigrösse
-  · Bilddownload im Instagram-Hochformat für vier Motive
+  · Bilddownload im Instagram-Hochformat für 16 Motive: Abstimmungen,
+    alle neun Ranglisten, Fraktionsvergleich, Profilkarte und
+    Interessenbindungen je Ratsmitglied, und das eigene Matching-Ergebnis
 
 Ausführen:  python3 scripts/build3.py   ->  output/dashboard.html
 """
@@ -87,9 +89,174 @@ def zusatz(name, standard):
     return json.loads(pfad.read_text(encoding="utf-8"))
 
 
+def netz_mit_register():
+    """Beziehungsnetz aus der Selbstdeklaration, ergänzt um freigegebene
+    Registerfunde.
+
+    Jede Kante trägt neu ein Feld «q» für die Herkunft: «d» für die
+    Selbstdeklaration auf sh.ch, «r» für eine Bindung, die nur im
+    Handelsregister steht. Das Dashboard färbt danach ein, blau und gelb.
+
+    Aufgenommen wird ausschliesslich, was in data/interessen_register.json den
+    Status «bestaetigt» trägt, also von Hand am Registerauszug geprüft ist. Die
+    Rohfunde der Personensuche sind Namensabgleiche und kommen hier nicht an.
+    """
+    netz = zusatz("interessen_netz.json", {"knoten": [], "kanten": []})
+    for k in netz.get("kanten", []):
+        if k.get("art") != "branche":
+            k["q"] = "d"
+
+    reg = zusatz("interessen_register.json", {"eintraege": []})
+    frei = [e for e in reg.get("eintraege", [])
+            if e.get("status") == "bestaetigt" and not e.get("nicht_mehr_gefunden")]
+    if not frei:
+        netz["reg_stand"] = reg.get("stand")
+        return netz
+
+    vorhanden = {n["id"] for n in netz["knoten"]}
+    nach_name = {n["label"]: n["id"] for n in netz["knoten"] if n["typ"] == "mitglied"}
+    neu_k = neu_o = neu_b = 0
+    for e in frei:
+        mid = nach_name.get(e["mitglied"])
+        if not mid:
+            continue
+        oid = "o:reg:" + re.sub(r"\W+", "", norm_klein(e["firma"]))[:40]
+        if oid not in vorhanden:
+            netz["knoten"].append({"id": oid, "typ": "organisation",
+                                   "label": e["firma"], "ort": e.get("sitz"),
+                                   "branche": e.get("branche"),
+                                   "q": "r", "uid": e.get("uid"),
+                                   "url": e.get("auszug"), "anzahl": 0})
+            vorhanden.add(oid)
+            neu_o += 1
+            # An die Branche hängen wie die deklarierten Organisationen auch,
+            # sonst hinge der Registerfund allein am Ratsmitglied und fiele aus
+            # der thematischen Ordnung des Netzes heraus. Die Branche stammt aus
+            # dem Firmennamen und, wo der nichts hergibt, aus dem eingetragenen
+            # Zweck.
+            b = e.get("branche")
+            if b:
+                bid = f"b:{b}"
+                if bid not in vorhanden:
+                    netz["knoten"].append({"id": bid, "typ": "branche",
+                                           "label": b, "anzahl": 0})
+                    vorhanden.add(bid)
+                    neu_b += 1
+                netz["kanten"].append({"von": oid, "nach": bid, "rolle": None,
+                                       "roh": None, "art": "branche"})
+        netz["kanten"].append({"von": mid, "nach": oid, "q": "r",
+                               "rolle": e.get("funktion") or "im Handelsregister eingetragen",
+                               "roh": e.get("eintrag") or ""})
+        neu_k += 1
+    for n in netz["knoten"]:
+        if n["typ"] == "organisation":
+            n["anzahl"] = sum(1 for k in netz["kanten"] if k["nach"] == n["id"])
+    netz["reg_stand"] = reg.get("stand")
+    print(f"  Netz: {neu_k} Kanten und {neu_o} Organisationen aus dem "
+          f"Handelsregister ergänzt, {neu_b} neue Branchen (freigegeben von "
+          f"{len(reg.get('eintraege', []))} geprüften Funden)")
+    return netz
+
+
+def norm_klein(s):
+    return re.sub(r"\s+", " ", (s or "").lower()).strip()
+
+
+def ausgeschieden(d):
+    """Wer in der laufenden Legislatur ausgeschieden ist.
+
+    Massgeblich ist die Namensliste der jüngsten Sitzung. Sie führt den
+    vollständigen Rat, Abwesende eingeschlossen: eine Abwesenheit steht als
+    Stimme «A» und nicht als fehlender Name. Wer dort nicht mehr steht, aber
+    früher in der Legislatur mitgestimmt hat, ist ausgeschieden.
+
+    Nicht massgeblich ist der Abgleich mit mitglieder.json. Diese Datei entsteht
+    aus den contentids in mitglieder_ids.json, und die Liste kann unvollständig
+    sein: sie zählt derzeit 59 Einträge, der Rat hat 60 Sitze. Ein erster
+    Versuch, das Ausscheiden über diese Differenz zu bestimmen, hat darum Lukas
+    Bringolf als ausgeschieden markiert, obwohl er der Justizkommission
+    vorsitzt und in der jüngsten Sitzung mitgestimmt hat. «Fehlt in unseren
+    Stammdaten» und «nicht mehr im Rat» sind zwei verschiedene Dinge, und die
+    Verwechslung stellt eine falsche Behauptung über eine namentlich genannte
+    Person ins Netz.
+
+    Zurückgegeben wird je Person die letzte Sitzung, an der sie teilgenommen
+    hat. Mehr lässt sich nicht belegen, ein Rücktrittsdatum steht in keiner der
+    Quellen.
+
+    Nur für die laufende Legislatur sinnvoll: in abgeschlossenen sind alle
+    ausgeschieden, dort wäre der Vermerk nichts als Lärm.
+    """
+    leg = d["aktuelle_legislatur"]
+    S = sorted((s for s in d["sessions"] if s.get("legislatur") == leg),
+               key=sess_sort_key)
+    if len(S) < 2:
+        return {}
+
+    im_rat = {f"{p['nachname']}|{p['vorname']}" for p in S[-1]["members"]}
+    letzte = {}
+    for s in S:
+        for p in s["members"]:
+            letzte[f"{p['nachname']}|{p['vorname']}"] = s["sitzung"]
+
+    raus = {k: v for k, v in letzte.items() if k not in im_rat}
+    if raus:
+        print(f"  Ausgeschieden in der laufenden Legislatur: {len(raus)} "
+              f"({', '.join(sorted(k.replace('|', ' ') for k in raus))})")
+
+    # Wer mitstimmt, aber kein Profil hat, ist eine Lücke in den Stammdaten und
+    # kein Ausscheiden. Sie gehört gemeldet, damit die contentid nachgetragen
+    # wird, sonst fehlen Bild und Interessenbindungen dieser Person.
+    m = zusatz("mitglieder.json", {"mitglieder": []})
+    profile = {p.get("name") or f"{p.get('vorname','')} {p.get('nachname','')}".strip()
+               for p in m.get("mitglieder", [])}
+    if profile:
+        ohne = sorted(f"{k.split('|')[1]} {k.split('|')[0]}".strip()
+                      for k in im_rat
+                      if f"{k.split('|')[1]} {k.split('|')[0]}".strip() not in profile)
+        if ohne:
+            print(f"  ! Ohne Profil auf sh.ch, obwohl im Rat: {', '.join(ohne)}. "
+                  f"Auf sh.ch fehlt der Personenkasten, darum gibt es keine contentid "
+                  f"und damit kein Bild und keine Interessenbindungen.")
+    return raus
+
+
+def ohne_profil(d):
+    """Wer im Rat sitzt, aber auf sh.ch keinen Personenkasten hat.
+
+    Ohne Kasten gibt es keine contentid, ohne contentid kein Profil, also weder
+    Porträt noch Interessenbindungen. Das ist eine Lücke auf sh.ch und keine
+    Aussage über die Person. Das Dashboard sagt das im Profil, statt eine leere
+    Seite zu zeigen, die nach Fehler aussieht.
+    """
+    leg = d["aktuelle_legislatur"]
+    S = sorted((s for s in d["sessions"] if s.get("legislatur") == leg),
+               key=sess_sort_key)
+    if not S:
+        return []
+    m = zusatz("mitglieder.json", {"mitglieder": []})
+    profile = {p.get("name") or f"{p.get('vorname','')} {p.get('nachname','')}".strip()
+               for p in m.get("mitglieder", [])}
+    if not profile:
+        return []
+    return sorted(f"{p['nachname']}|{p['vorname']}" for p in S[-1]["members"]
+                  if f"{p['vorname']} {p['nachname']}".strip() not in profile)
+
+
 def personen_payload():
     """Profile der Ratsmitglieder aus mitglieder.json, auf das Nötige gekürzt."""
     d = zusatz("mitglieder.json", {"mitglieder": [], "stand": None})
+    # Freigegebene Registerfunde je Ratsmitglied, damit das Profil zeigt, was in
+    # der Selbstdeklaration fehlt, ohne dass man ins Beziehungsnetz wechseln muss.
+    reg = zusatz("interessen_register.json", {"eintraege": []})
+    nach_person = {}
+    for e in reg.get("eintraege", []):
+        if e.get("status") != "bestaetigt" or e.get("nicht_mehr_gefunden"):
+            continue
+        nach_person.setdefault(e["mitglied"], []).append({
+            "f": e["firma"], "o": e.get("sitz"), "r": e.get("funktion"),
+            "u": e.get("uid"), "url": e.get("auszug")})
+
     raus = []
     for m in d.get("mitglieder", []):
         raus.append({
@@ -103,6 +270,9 @@ def personen_payload():
             # Die Quelle setzt teils Aufzählungszeichen davor, die hier stören
             "ib": [re.sub(r"^[\s\-–—•*]+", "", t).strip()
                    for t in (m.get("interessenbindungen") or []) if t and t.strip()],
+            # Nur im Handelsregister gefunden, von Hand am Auszug bestätigt
+            "hr": nach_person.get(
+                m.get("name") or f"{m.get('vorname','')} {m.get('nachname','')}".strip(), []),
             "url": m.get("url") or "",
             # Porträt als base64-JPEG, im Schnitt 6 KB. Ohne Präfix gespeichert,
             # das setzt die Anzeige davor.
@@ -592,11 +762,13 @@ def bauen():
         "sessions": sessions_payload(d, umkehr),
         "leg": d["legislaturen"],
         "aktLeg": d["aktuelle_legislatur"],
+        "weg": ausgeschieden(d),
+        "ohneProfil": ohne_profil(d),
         "themen": d["themen_gruppen"],
         "formen": d.get("tags_form_liste") or [],
         "hier": d.get("tags_hierarchie") or [],
         "personen": personen_payload(),
-        "netz": zusatz("interessen_netz.json", {"knoten": [], "kanten": []}),
+        "netz": netz_mit_register(),
         # Handelsregisterabgleich der Organisationen, Quelle Zefix über lindas.admin.ch
         "hreg": zusatz("interessen_pruefung.json",
                        {"eindeutig": [], "moeglich": [], "nicht_gefunden": []}),
@@ -690,6 +862,10 @@ __CSS__
       <div class="bildwahl">
         <label for="bildMotiv">Motiv</label>
         <select id="bildMotiv"></select>
+        <div id="bildSubjektWrap" hidden>
+          <label for="bildSubjekt" id="bildSubjektLabel">Ratsmitglied</label>
+          <select id="bildSubjekt"></select>
+        </div>
         <p class="bildnote">Hochformat 1080 × 1350, das Standardmass für Beiträge
         auf Instagram, LinkedIn und Facebook.</p>
         <button type="button" class="btn" id="bildLaden">Als PNG herunterladen</button>
@@ -698,6 +874,9 @@ __CSS__
     </div>
   </div>
 </div>
+
+<div class="beta" aria-hidden="true"><span>Betaversion</span></div>
+<p class="beta-text">Diese Seite ist eine Betaversion: die Daten werden noch geprüft.</p>
 
 <script id="daten" type="application/json">__DATEN__</script>
 <script>

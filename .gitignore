@@ -12,6 +12,33 @@ data/github_zugang.json
 mail-*.md
 SKILL-*.md
 
+# Interne Arbeitsauftraege. Sie beschreiben, was bei einer Veroeffentlichung
+# schiefgehen kann, und fuehren dafuer die Suchmuster mit, nach denen geprueft
+# wird: Mailadresse, Strassenname, Tokenanfaenge. Genau diese Zeichenfolgen
+# gehoeren nicht in ein oeffentliches Repository, auch wenn sie dort nur als
+# Suchmuster stehen.
+docs/AUFTRAG_*.md
+
+# Rohergebnisse der Personensuche im Handelsregister. Sie stammen aus einer
+# Suche über den Nachnamen und enthalten darum auch Namensvettern. Sie einem
+# öffentlichen Repository beizulegen hiesse, ungeprüfte Verbindungen zwischen
+# namentlich genannten Politikern und Firmen zu behaupten. Ins Dashboard darf
+# nur, was am Registerauszug bestätigt ist.
+data/hr_personen.json
+data/hr_abfrage_status.json
+data/interessen_register_pruefliste.md
+data/interessen_register_voll.json
+
+# Von Hand nachgetragene Wohngemeinden. Sie dienen allein der Zuordnung von
+# Registerfunden und haben in einer öffentlichen Ausgabe nichts zu suchen.
+data/mitglieder_ergaenzung.json
+
+# Stammdaten der Ratsmitglieder. Sie stehen zwar so auf sh.ch, enthalten aber
+# Wohnadresse, Geburtsdatum und Mailadresse von 59 Personen. Das Dashboard
+# braucht davon nur die Gemeinde, und ein öffentliches Repository braucht die
+# Datei gar nicht: scripts/mitglieder.py stellt sie jederzeit wieder her.
+data/mitglieder.json
+
 # Python
 __pycache__/
 *.pyc

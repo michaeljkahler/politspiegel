@@ -30,9 +30,20 @@
   --p-mitte:#D6862B; --p-mitte-ink:#9E590C;
   --p-none:#A8AEB6;  --p-none-ink:#69707A;
 
+  /* Herkunft einer Interessenbindung. Blau steht für die Selbstdeklaration auf
+     sh.ch, Gelb für einen Eintrag, der nur im Handelsregister steht. Die beiden
+     trennen sich auch bei Farbsehschwäche deutlich (ΔE über 120 bei
+     Deuteranopie und Protanopie). Zu FDP-Blau und EVP-Gelb ist der Abstand
+     dagegen klein, darum erscheinen diese Farben nur auf Kanten, Organisationen
+     und Abzeichen, nie auf Mitgliederknoten, und jede Markierung trägt
+     zusätzlich Text: Farbe allein trägt hier keine Bedeutung. */
+  --q-dekl:#0E4E8A; --q-dekl-ink:#0B3F70; --q-dekl-flaeche:#E7F0F9;
+  --q-reg:#F0A202;  --q-reg-ink:#8A5D00;  --q-reg-flaeche:#FDF3DF;
+
   --card-shadow:0 1px 2px rgba(17,24,32,.05), 0 6px 18px rgba(17,24,32,.045);
   --r-card:14px; --r-ctl:9px;
   --nav-w:236px; --nav-w-min:64px;
+  --beta-eck:168px; --beta-mitte:62px;   /* Beta-Balken, siehe .beta am Dateiende */
 }
 /* ── Token: dunkel ─────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark){
@@ -56,6 +67,8 @@
     --p-fdp:#6D9FD8;   --p-fdp-ink:#6D9FD8;
     --p-mitte:#E3A053; --p-mitte-ink:#E3A053;
     --p-none:#C3C9D0;  --p-none-ink:#C3C9D0;
+    --q-dekl:#6FA8DC; --q-dekl-ink:#8FC0E8; --q-dekl-flaeche:#12283C;
+    --q-reg:#F5C24B;  --q-reg-ink:#F5C24B;  --q-reg-flaeche:#3A2E10;
     --card-shadow:0 1px 2px rgba(0,0,0,.45);
   }
 }
@@ -79,6 +92,8 @@
   --p-fdp:#6D9FD8;   --p-fdp-ink:#6D9FD8;
   --p-mitte:#E3A053; --p-mitte-ink:#E3A053;
   --p-none:#C3C9D0;  --p-none-ink:#C3C9D0;
+  --q-dekl:#6FA8DC; --q-dekl-ink:#8FC0E8; --q-dekl-flaeche:#12283C;
+  --q-reg:#F5C24B;  --q-reg-ink:#F5C24B;  --q-reg-flaeche:#3A2E10;
   --card-shadow:0 1px 2px rgba(0,0,0,.45);
 }
 
@@ -130,7 +145,10 @@ body[data-nav="min"] .navtoggle svg{transform:rotate(180deg)}
 .side nav button:hover{background:var(--surface-2); color:var(--ink)}
 .side nav button.on{background:var(--sunken); color:var(--ink)}
 .side nav button.on svg{color:var(--ink); opacity:1}
-.sidefoot{margin-top:auto; display:flex; flex-direction:column; gap:12px}
+/* Der Abstand unten haelt Themenschalter und Standdatum ueber dem Beta-Balken,
+   der fest in der unteren linken Ecke liegt. */
+.sidefoot{margin-top:auto; display:flex; flex-direction:column; gap:12px;
+  padding-bottom:calc(var(--beta-mitte) * 1.7)}
 .themetoggle{display:flex; align-items:center; gap:10px; padding:9px 11px;
   border-radius:var(--r-ctl); border:1px solid var(--line); background:var(--surface-2);
   cursor:pointer; font-size:13px; font-weight:600; color:var(--ink-2); white-space:nowrap}
@@ -525,7 +543,9 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 /* Porträts */
 .avatar{border-radius:99px; flex:0 0 auto; display:inline-block; object-fit:cover;
   background:var(--sunken); vertical-align:middle}
-.avatar.leerbild{background:currentColor}
+.avatar.leerbild{background:var(--sunken); color:var(--ink-3);
+  display:inline-flex; align-items:center; justify-content:center;
+  font-weight:700; letter-spacing:.02em}
 
 .mtab .nm button .avatar{margin-right:2px}
 .rlist .nm button{background:none; border:0; padding:0; cursor:pointer; font:inherit;
@@ -604,6 +624,61 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 .hreg.moeglich b{color:var(--p-evp-ink)}
 .hreg.offen b{color:var(--ink-3)}
 
+/* Ausgeschiedene Ratsmitglieder. Bewusst zurückhaltend: die Person ist nicht
+   weniger wichtig, ihre Zahlen sind nur nicht mehr fortschreibbar. Darum ein
+   graues Abzeichen und kein Warnton. */
+.quellluecke{margin:14px 0 0; padding:11px 14px; border-radius:var(--r-ctl);
+  background:var(--surface-2); border:1px solid var(--line);
+  font-size:13px; line-height:1.55; color:var(--ink-2)}
+.quellluecke b{color:var(--ink)}
+
+.wegchip{display:inline-block; margin-left:8px; padding:1px 7px; border-radius:999px;
+         background:var(--abw); color:var(--abw-on); font-size:9.5px; font-weight:700;
+         letter-spacing:.06em; text-transform:uppercase; vertical-align:2px;
+         white-space:nowrap}
+.mtab td.istweg button{color:var(--ink-2)}
+.mkopf h2 .quellluecke{margin:14px 0 0; padding:11px 14px; border-radius:var(--r-ctl);
+  background:var(--surface-2); border:1px solid var(--line);
+  font-size:13px; line-height:1.55; color:var(--ink-2)}
+.quellluecke b{color:var(--ink)}
+
+.wegchip{vertical-align:5px}
+
+/* ── Herkunft der Interessenbindungen ──────────────────────────────────── */
+/* Blau deklariert, Gelb nur im Handelsregister. Die Farbe steht nie allein:
+   jeder Eintrag trägt ein beschriftetes Abzeichen, im Netz sind die Linien der
+   Registerfunde zusätzlich gestrichelt. */
+.iblist li{position:relative; padding-left:0}
+.iblist li.q-d{border-left:3px solid var(--q-dekl)}
+.iblist li.q-r{border-left:3px solid var(--q-reg); background:var(--q-reg-flaeche)}
+.iblist li.q-d, .iblist li.q-r{padding-left:11px; border-radius:0 6px 6px 0}
+.qtag{display:inline-block; margin-right:8px; padding:1px 7px; border-radius:999px;
+      font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+      vertical-align:1px}
+.qtag-d{background:var(--q-dekl-flaeche); color:var(--q-dekl-ink)}
+.qtag-r{background:var(--q-reg); color:#2A1E00}
+.ibrolle{display:block; font-size:12px; color:var(--ink-2); margin-top:1px}
+
+.qlegende{margin:0 0 14px; padding:11px 14px; border:1px solid var(--line);
+          border-radius:var(--r-ctl); background:var(--surface-2); font-size:12.5px}
+.qzeile{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; padding:4px 0}
+.qzeile + .qzeile{border-top:1px solid var(--hair)}
+.qzeile > b{flex:0 0 62px; font-size:10.5px; font-weight:700; letter-spacing:.07em;
+            text-transform:uppercase; color:var(--ink-3)}
+.qleg{display:inline-flex; align-items:center; gap:7px; font-weight:600; color:var(--ink-2)}
+/* Linienarten */
+.qleg-d i{width:22px; height:0; border-top:2px solid var(--q-dekl); display:inline-block}
+.qleg-r i{width:22px; height:0; border-top:2px dashed var(--q-reg); display:inline-block}
+/* Knotenarten, als Punkt in der jeweiligen Farbe */
+.pkt{width:11px; height:11px; border-radius:50%; display:inline-block; flex:0 0 auto}
+.pkt-m{background:var(--p-al)}
+.pkt-o{background:var(--p-fdp)}
+.pkt-b{background:var(--ink-3)}
+.pkt-r{background:var(--q-reg); box-shadow:0 0 0 2px var(--surface-2), 0 0 0 3.5px var(--q-reg-ink)}
+.qlegnote{font-size:11.5px; color:var(--ink-3); font-weight:400}
+.qzeile .qlegnote{flex:1 1 320px}
+.qfuss{margin-top:8px; padding-top:8px; border-top:1px solid var(--hair); line-height:1.5}
+
 /* Angaben aus dem amtlichen Register selbst, nicht aus dem Namensabgleich */
 .hamt{margin-top:6px; padding:7px 9px; border-radius:7px; background:var(--sunken);
       font-size:11.5px; line-height:1.45; color:var(--ink-2)}
@@ -679,4 +754,61 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none !important; animation:none !important}
+}
+
+/* ── Beta-Balken ───────────────────────────────────────────────────────────
+   Ein diagonaler Balken in der unteren linken Ecke, auf jeder Rubrik sichtbar.
+   Er liegt fest im Blickfeld, weil der Hinweis nicht weggescrollt werden soll,
+   solange die Daten geprüft werden.
+
+   Geometrie: der Mittelpunkt des Bandes liegt auf der Winkelhalbierenden der
+   Ecke, --beta-mitte Pixel vom Eck entfernt. Sichtbar ist davon die Sehne
+   zwischen linkem und unterem Bildrand, und die ist doppelt so lang wie
+   --beta-mitte. Darum muss --beta-mitte gut die halbe Textbreite betragen,
+   sonst wird das Wort angeschnitten. Der Kasten (--beta-eck) ist bewusst
+   grösser als die Sehne: er darf erst dort schneiden, wo ohnehin der Bildrand
+   kommt, sonst endet das Band mitten in der Fläche. Faustregel für ihn:
+   --beta-mitte × 2,45.
+
+   Rot ist hier bewusst gewählt und kollidiert mit keiner Bedeutung im
+   Dashboard: die Abstimmungsskala ist grün, violett und grau, die
+   Herkunftsfarben blau und gelb, und keine Fraktionsfarbe liegt in diesem
+   Bereich. Der Balken trägt seine Aussage im Text, nicht in der Farbe.
+
+   Für Bildschirmleser bleibt er verborgen (aria-hidden) und wird stattdessen
+   von .beta-text in ganzen Worten angesagt: ein um 45 Grad gedrehtes Wort in
+   einer Ecke ergibt vorgelesen keinen brauchbaren Satz. */
+.beta{
+  position:fixed; z-index:900; bottom:0; left:0;
+  width:var(--beta-eck); height:var(--beta-eck); overflow:hidden;
+  pointer-events:none;                 /* verdeckt keine Bedienelemente */
+}
+.beta span{
+  position:absolute; left:0; bottom:0;
+  display:block; width:300px; padding:5px 0;
+  transform:translate(calc(-50% + var(--beta-mitte)),
+                      calc(50% - var(--beta-mitte))) rotate(45deg);
+  transform-origin:center;
+  background:#C62828; color:#FFFFFF;
+  font-size:12.5px; font-weight:650; letter-spacing:.09em;
+  text-transform:uppercase; text-align:center;
+  box-shadow:0 1px 10px rgba(17,24,32,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .beta span{ background:#E04B4B; color:#1A0808; }
+}
+:root[data-theme="dark"] .beta span{ background:#E04B4B; color:#1A0808; }
+
+/* Auf schmalen Bildschirmen rückt das Band näher an die Ecke und wird kleiner,
+   damit es nicht die halbe Seite belegt. */
+@media (max-width:640px){
+  :root{ --beta-eck:132px; --beta-mitte:48px; }
+  .beta span{ font-size:10px; padding:4px 0; letter-spacing:.06em; }
+}
+
+/* Nur für Bildschirmleser. */
+.beta-text{
+  position:absolute; width:1px; height:1px; margin:-1px;
+  padding:0; border:0; overflow:hidden; white-space:nowrap;
+  clip:rect(0 0 0 0); clip-path:inset(50%);
 }

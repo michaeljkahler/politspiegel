@@ -1,0 +1,49 @@
+{
+ "stand": "2026-09-02",
+ "hinweis": "Prüfliste der Registerfunde. Nur Einträge mit status «bestaetigt» erscheinen im Dashboard. Massgeblich ist der Registerauszug, nicht dieser Namensabgleich. Nicht freigegebene Funde stehen hier nur als Kennung, die Arbeitsfassung bleibt lokal.",
+ "eintraege": [
+  {
+   "schluessel": "Anna Brügel|CHE-175.452.958",
+   "mitglied": "Anna Brügel",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "firma": "SAH Services GmbH",
+   "uid": "CHE-175.452.958",
+   "sitz": "Schaffhausen",
+   "rechtsform": "Gesellschaft mit beschränkter Haftung",
+   "funktion": "Geschäftsführerin",
+   "zeichnung": "Kollektivunterschrift zu zweien",
+   "eintrag": "Brügel, Anna, von Stein am Rhein, in Schaffhausen",
+   "auszug": "https://sh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-175.452.958",
+   "zweck": "Die Gesellschaft bezweckt den Betrieb von Unternehmungen zur Förderung der sozialen Integration, namentlich der Arbeitsintegration stellenloser Menschen. Sie führt insbesondere in Zusammenarbeit mit dem Schweizerischen Arbeiterhilfswerk SAH Schaffhausen qualifizierte Arbeitsintegrationsprojekte und -programme durch, namentlich durch Betreiben von Gastrobetrieben, Anbieten von Catering oder …",
+   "branche": "Soziales und Hilfswerke",
+   "vorbehalt": null,
+   "deklariert": [
+    "Ev Haeny-Stiftung, Schaffhausen, Mitglied Stiftungsrat",
+    "SAH Schaffhausen (Schweizerisches Arbeitshilfswerk), Mitglied Vorstand",
+    "Verein Zukunft Spitäler Schaffhausen, Vorstandsmitglied"
+   ],
+   "status": "bestaetigt",
+   "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: Anna Brügel ist Geschäftsführerin, in der Selbstdeklaration auf sh.ch fehlt die GmbH.",
+   "kennung": "acf1a03223e27ca9"
+  },
+  {
+   "kennung": "c8c4efc9c24b7f72",
+   "status": "verworfen"
+  },
+  {
+   "kennung": "b60f658121846b07",
+   "status": "verworfen",
+   "nicht_mehr_gefunden": true
+  },
+  {
+   "kennung": "987d1eb61f6f7057",
+   "status": "verworfen",
+   "nicht_mehr_gefunden": true
+  },
+  {
+   "kennung": "a95929fbedb1fddd",
+   "status": "verworfen",
+   "nicht_mehr_gefunden": true
+  }
+ ]
+}

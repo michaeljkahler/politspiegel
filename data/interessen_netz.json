@@ -670,7 +670,7 @@
    "id": "b:Bildung und Wissenschaft",
    "typ": "branche",
    "label": "Bildung und Wissenschaft",
-   "anzahl": 8
+   "anzahl": 7
   },
   {
    "id": "o:kaufmannischer verband schaffhausen",
@@ -858,7 +858,7 @@
    "partei": "SP",
    "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
    "bild": true,
-   "anzahl": 6
+   "anzahl": 4
   },
   {
    "id": "o:erziehungsrat sh",
@@ -869,18 +869,10 @@
    "anzahl": 1
   },
   {
-   "id": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "id": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung und extremismus nap sh im rahmen anstellung an phsh",
    "typ": "organisation",
-   "label": "Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung",
+   "label": "Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH",
    "branche": "Gemeinden und Behörden",
-   "ort": null,
-   "anzahl": 1
-  },
-  {
-   "id": "o:und extremismus nap sh im rahmen anstellung an phsh",
-   "typ": "organisation",
-   "label": "und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH",
-   "branche": "Bildung und Wissenschaft",
    "ort": null,
    "anzahl": 1
   },
@@ -893,26 +885,12 @@
    "anzahl": 1
   },
   {
-   "id": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
+   "id": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg und freiburg i v ekm",
    "typ": "organisation",
-   "label": "CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg",
+   "label": "CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg und Freiburg, (i. V. EKM)",
    "branche": "Soziales und Hilfswerke",
    "ort": null,
    "anzahl": 1
-  },
-  {
-   "id": "o:und freiburg i v ekm",
-   "typ": "organisation",
-   "label": "und Freiburg, (i. V. EKM)",
-   "branche": "Übrige",
-   "ort": null,
-   "anzahl": 1
-  },
-  {
-   "id": "b:Übrige",
-   "typ": "branche",
-   "label": "Übrige",
-   "anzahl": 5
   },
   {
    "id": "m:Looser|Gianluca",
@@ -1313,6 +1291,12 @@
    "branche": "Übrige",
    "ort": null,
    "anzahl": 1
+  },
+  {
+   "id": "b:Übrige",
+   "typ": "branche",
+   "label": "Übrige",
+   "anzahl": 4
   },
   {
    "id": "m:Neumann|Eva",
@@ -2385,15 +2369,9 @@
   },
   {
    "von": "m:Looser|Bettina",
-   "nach": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "nach": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung und extremismus nap sh im rahmen anstellung an phsh",
    "rolle": null,
-   "roh": "- Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung"
-  },
-  {
-   "von": "m:Looser|Bettina",
-   "nach": "o:und extremismus nap sh im rahmen anstellung an phsh",
-   "rolle": null,
-   "roh": "und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH"
+   "roh": "- Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH"
   },
   {
    "von": "m:Looser|Bettina",
@@ -2403,15 +2381,9 @@
   },
   {
    "von": "m:Looser|Bettina",
-   "nach": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
-   "rolle": null,
-   "roh": "- CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg"
-  },
-  {
-   "von": "m:Looser|Bettina",
-   "nach": "o:und freiburg i v ekm",
+   "nach": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg und freiburg i v ekm",
    "rolle": "Mitglied, Programmleitung",
-   "roh": "und Freiburg, Mitglied Programmleitung (i. V. EKM)"
+   "roh": "- CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg und Freiburg, Mitglied Programmleitung (i. V. EKM)"
   },
   {
    "von": "m:Looser|Gianluca",
@@ -2512,8 +2484,8 @@
   {
    "von": "m:Müller|Markus",
    "nach": "o:american quarter horse association aqha amarillo texas usa",
-   "rolle": null,
-   "roh": "- American Quarter Horse Association (AQHA), Amarillo, Texas (USA),"
+   "rolle": "Director",
+   "roh": "- American Quarter Horse Association (AQHA), Amarillo, Texas (USA), Director"
   },
   {
    "von": "m:Müller|Markus",
@@ -2662,8 +2634,8 @@
   {
    "von": "m:Neukomm|Peter",
    "nach": "o:energiepolitische kommission schweizerischen stadteverbands ekk",
-   "rolle": null,
-   "roh": "- Energiepolitische Kommission des Schweizerischen Städteverbands(EKK)"
+   "rolle": "Mitglied",
+   "roh": "- Energiepolitische Kommission des Schweizerischen Städteverbands(EKK), Mitglied"
   },
   {
    "von": "m:Neukomm|Peter",
@@ -2914,8 +2886,8 @@
   {
    "von": "m:Schmidig|Rainer",
    "nach": "o:verband rentnerinnen und rentner pensionskasse schaffhausen",
-   "rolle": null,
-   "roh": "- Verband der Rentnerinnen und Rentner der Pensionskasse Schaffhausen,"
+   "rolle": "Vizepräsident",
+   "roh": "- Verband der Rentnerinnen und Rentner der Pensionskasse Schaffhausen, Vizepräsident"
   },
   {
    "von": "m:Schmidig|Rainer",
@@ -2938,8 +2910,8 @@
   {
    "von": "m:Schnetzler|Andreas",
    "nach": "o:kantonale natur und heimatschutzkommission knhk als lw vertreter",
-   "rolle": null,
-   "roh": "- Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter,"
+   "rolle": "Mitglied",
+   "roh": "- Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter, Mitglied"
   },
   {
    "von": "m:Schraff|Jannik",
@@ -2992,8 +2964,8 @@
   {
    "von": "m:Schudel|Erich",
    "nach": "o:kant gebaudeversicherung schaffhausen",
-   "rolle": "Verwaltungskommission",
-   "roh": "- Verwaltungskommission Kant. Gebäudeversicherung Schaffhausen,"
+   "rolle": "Verwaltungskommission, Mitglied",
+   "roh": "- Verwaltungskommission Kant. Gebäudeversicherung Schaffhausen, Mitglied"
   },
   {
    "von": "m:Schärrer|Nina",
@@ -3516,15 +3488,8 @@
    "art": "branche"
   },
   {
-   "von": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "von": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung und extremismus nap sh im rahmen anstellung an phsh",
    "nach": "b:Gemeinden und Behörden",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
-   "von": "o:und extremismus nap sh im rahmen anstellung an phsh",
-   "nach": "b:Bildung und Wissenschaft",
    "rolle": null,
    "roh": null,
    "art": "branche"
@@ -3537,15 +3502,8 @@
    "art": "branche"
   },
   {
-   "von": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
+   "von": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg und freiburg i v ekm",
    "nach": "b:Soziales und Hilfswerke",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
-   "von": "o:und freiburg i v ekm",
-   "nach": "b:Übrige",
    "rolle": null,
    "roh": null,
    "art": "branche"

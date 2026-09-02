@@ -204,6 +204,79 @@
   /* Titel einer Abstimmung, verlinkt aufs Wortprotokoll der Sitzung. Fehlt das
      Protokoll, bleibt es beim reinen Text: ein toter Link wäre schlechter als
      keiner. */
+  /* Interessenbindungen im Profil, nach Herkunft getrennt.
+     Blau: auf sh.ch selbst deklariert. Gelb: nur im Handelsregister gefunden
+     und von Hand am Registerauszug bestätigt. Die Farbe steht nie allein, jede
+     Gruppe trägt eine Überschrift und jeder gelbe Eintrag den Link zum Auszug. */
+  /* Ausgeschieden: in der laufenden Legislatur hat die Person mitgestimmt, sie
+     steht aber nicht mehr auf der Mitgliederliste von sh.ch. Belegen lässt sich
+     nur die letzte Sitzung, an der sie teilgenommen hat; ein Rücktrittsdatum
+     steht in keiner der Quellen. In abgeschlossenen Legislaturen ist der
+     Vermerk sinnlos, dort sind alle ausgeschieden. */
+  function wegSeit(k) {
+    if (!D.weg) return null;
+    // Nur wenn die laufende Legislatur im Blick ist, entweder als Ganzes oder
+    // über eine ihrer Sitzungen. Bei «Alle Legislaturen» wäre der Vermerk
+    // ebenso irreführend wie in einer abgeschlossenen.
+    var s = st.scope;
+    if (!s) return null;
+    if (s.typ === "leg" && String(s.wert) !== String(D.aktLeg)) return null;
+    if (s.typ === "sess") {
+      var tref = D.sessions.filter(function (x) { return x.s === s.wert; })[0];
+      if (!tref || String(tref.leg) !== String(D.aktLeg)) return null;
+    }
+    return D.weg[k] || null;
+  }
+
+  function wegChip(k) {
+    var s = wegSeit(k);
+    if (!s) return "";
+    return '<span class="wegchip" title="Hat in dieser Legislatur mitgestimmt, steht ' +
+      'aber nicht mehr auf der Mitgliederliste von sh.ch. Letzte Sitzung: ' +
+      esc(s) + '">ausgeschieden</span>';
+  }
+
+  /* Im Rat, aber ohne Personenkasten auf sh.ch. Ohne Kasten keine contentid,
+     ohne contentid kein Profil: weder Porträt noch Interessenbindungen. Das ist
+     eine Lücke der Quelle und keine Aussage über die Person, und es gehört
+     hingeschrieben, statt eine leere Seite zu zeigen. */
+  function ohneProfil(k) {
+    return !!(D.ohneProfil && D.ohneProfil.indexOf(k) >= 0);
+  }
+
+  function ibBlock(pr) {
+    var dekl = pr.ib || [], hr = pr.hr || [];
+    if (!dekl.length && !hr.length) return "";
+    var s = '<div class="sec"><h2>Interessenbindungen</h2><p>' +
+      (dekl.length ? dekl.length + (dekl.length === 1 ? " deklariertes Mandat" : " deklarierte Mandate") : "keine Deklaration") +
+      (hr.length ? ", " + hr.length + (hr.length === 1 ? " weiteres im Handelsregister" : " weitere im Handelsregister") : "") +
+      "</p></div>";
+    if (dekl.length) {
+      s += '<ul class="iblist">' + dekl.map(function (x) {
+        return '<li class="q-d"><span class="qtag qtag-d">deklariert</span>' + esc(x) + "</li>";
+      }).join("") + "</ul>";
+    }
+    if (hr.length) {
+      s += '<ul class="iblist">' + hr.map(function (x) {
+        return '<li class="q-r"><span class="qtag qtag-r">nur Handelsregister</span>' +
+          "<b>" + esc(x.f) + "</b>" + (x.o ? ", " + esc(x.o) : "") +
+          (x.r ? '<span class="ibrolle">' + esc(x.r) + "</span>" : "") +
+          (x.url ? ' <a class="plink" href="' + esc(x.url) + '" target="_blank" rel="noopener" ' +
+            'title="Registerauszug auf sh.chregister.ch öffnen">Auszug' +
+            '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
+            '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
+            'fill="none" stroke-width="1.4"/></svg></a>' : "") + "</li>";
+      }).join("") + "</ul>";
+    }
+    s += '<p class="ibquelle">Blau: Selbstdeklaration auf sh.ch' +
+      (D.personen.stand ? ", Stand " + esc(D.personen.stand) : "") + ". " +
+      (hr.length ? "Gelb: Eintrag im Handelsregister des Kantons Schaffhausen, der in der " +
+        "Deklaration fehlt, einzeln am Registerauszug geprüft. Ein fehlender Eintrag muss " +
+        "nichts bedeuten: die Deklarationspflicht deckt nicht jedes Mandat, und Angaben " +
+        "können veralten. Verbindlich ist der beglaubigte Registerauszug." : "") + "</p>";
+    return s;
+  }
+
   function protokollLink(s, text, tooltip) {
     var t = esc(text);
     if (!s || !s.pu) {
@@ -554,8 +627,9 @@
       '<th class="weg">Stimmen</th></tr></thead><tbody>' +
       liste.map(function (m) {
         return "<tr>" +
-          '<td class="nm"><button type="button" data-member="' + esc(m.k) + '">' +
-          avatar(PERS[m.k], m.p, 30) + esc(m.name) + "</button></td>" +
+          '<td class="nm' + (wegSeit(m.k) ? " istweg" : "") + '">' +
+          '<button type="button" data-member="' + esc(m.k) + '">' +
+          avatar(PERS[m.k], m.p, 30, m.name) + esc(m.name) + wegChip(m.k) + "</button></td>" +
           '<td class="weg" style="font-size:12.5px;color:var(--ink-2)">' + esc(m.f) + "</td>" +
           '<td class="zahl"><span class="quote"><span class="qbar"><i style="width:' +
           m.quote.toFixed(1) + '%"></i></span>' + pz(m.quote) + " %</span></td>" +
@@ -599,32 +673,37 @@
     });
 
     var pr = (D.personen && D.personen.liste || []).filter(function (p) { return p.k === k; })[0];
+    var raus = wegSeit(k);
     var profil = "";
     if (pr) {
       var felder = [];
       if (pr.be) felder.push(["Beruf", pr.be]);
       if (pr.se) felder.push(["Im Rat seit", pr.se]);
       if (pr.ge) felder.push(["Gemeinde", pr.ge]);
+      if (raus) felder.push(["Letzte Sitzung", raus]);
       profil =
         (felder.length ? '<div class="profilzeile">' + felder.map(function (f) {
           return "<span><b>" + f[0] + "</b>" + esc(f[1]) + "</span>";
         }).join("") + "</div>" : "") +
-        (pr.ib && pr.ib.length
-          ? '<div class="sec"><h2>Interessenbindungen</h2><p>' + pr.ib.length +
-            (pr.ib.length === 1 ? " deklariertes Mandat" : " deklarierte Mandate") + "</p></div>" +
-            '<ul class="iblist">' + pr.ib.map(function (t) {
-              return "<li>" + esc(t) + "</li>";
-            }).join("") + "</ul>" +
-            '<p class="ibquelle">Selbstdeklaration auf sh.ch' +
-            (D.personen.stand ? ", Stand " + esc(D.personen.stand) : "") + "</p>"
-          : "");
+        ibBlock(pr);
+    }
+    if (ohneProfil(k)) {
+      profil += '<p class="quellluecke"><b>Kein Profil auf sh.ch.</b> Zu dieser Person ' +
+        "führt die Mitgliederseite des Kantons keinen Personenkasten. Darum fehlen hier " +
+        "Porträt, Beruf und die Selbstdeklaration der Interessenbindungen. Die " +
+        "Abstimmungsdaten sind davon nicht betroffen, sie stammen aus den " +
+        "Abstimmungsprotokollen.</p>";
     }
 
     el.innerHTML =
-      '<div class="mkopf">' + avatar(pr, stats.p, 58) +
-      "<div><h2>" + esc(teile[1] + " " + teile[0]) + "</h2>" +
+      '<div class="mkopf">' + avatar(pr, stats.p, 58, teile[1] + " " + teile[0]) +
+      "<div><h2>" + esc(teile[1] + " " + teile[0]) + wegChip(k) + "</h2>" +
       '<div class="msub">' + esc(stats.f) + " · " + esc(stats.p) + " · " +
-      stats.sitzungen + " Sitzungen im Zeitraum</div></div>" +
+      stats.sitzungen + " Sitzungen im Zeitraum" +
+      (raus ? ". Nicht mehr im Rat: die Mitgliederliste auf sh.ch führt diese Person " +
+        "nicht mehr. Belegt ist nur die letzte Sitzung, an der sie teilgenommen hat, " +
+        "das Rücktrittsdatum steht in keiner der Quellen." : "") +
+      "</div></div>" +
       '<button type="button" class="zurueck" id="zurueck">← Alle Ratsmitglieder</button></div>' +
       profil +
       '<div class="mgrid">' +
@@ -679,7 +758,7 @@
   /* Porträt mit Ring in der Parteifarbe. Der Ring ersetzt den früheren
      Farbpunkt, sonst ginge beim Wechsel auf Bilder die Parteizuordnung auf
      einen Blick verloren. Fehlt ein Bild, bleibt der gefüllte Kreis. */
-  function avatar(p, partei, groesse) {
+  function avatar(p, partei, groesse, name) {
     var g = groesse || 30;
     var ring = "box-shadow:0 0 0 2px var(--surface),0 0 0 " + (g > 40 ? 4 : 3) +
       "px var(--p-" + pkey(partei) + ")";
@@ -689,7 +768,14 @@
         '" alt="" loading="lazy" width="' + g + '" height="' + g +
         '" style="' + mass + ring + '">';
     }
-    return '<span class="avatar leerbild p-' + pkey(partei) + '" style="' + mass + ring + '"></span>';
+    // Ohne Bild die Initialen. Das betrifft vor allem Ausgeschiedene: sh.ch
+    // führt sie nicht mehr, also gibt es kein Porträt. Eine leere dunkle
+    // Scheibe sähe nach Fehler aus, die Initialen nach Absicht.
+    var voll = (p && p.n) || name || "";
+    var ini = voll.split(/\s+/).filter(Boolean).slice(0, 2)
+                  .map(function (x) { return x[0]; }).join("").toUpperCase();
+    return '<span class="avatar leerbild p-' + pkey(partei) + '" style="' + mass + ring +
+      ";font-size:" + Math.round(g * 0.38) + 'px">' + esc(ini) + "</span>";
   }
 
   function mstat(n, l, s) {
@@ -846,7 +932,7 @@
           /* Personen führen ins Profil, Fraktionen bleiben Text */
           var inhalt = it.k
             ? '<button type="button" data-member="' + esc(it.k) + '">' +
-              avatar(PERS[it.k], it.p, 26) + esc(it.name) +
+              avatar(PERS[it.k], it.p, 26, it.name) + esc(it.name) +
               " <small>" + esc(it.f) + "</small></button>"
             : '<i class="pdot p-' + fkey(it.f) + '"></i>' + esc(it.f);
           return '<li><span class="r">' + (i + 1) + '</span><span class="nm">' + inhalt +
@@ -975,8 +1061,12 @@
     }
   }
 
-  function auswerten() {
+  /* Die Auswertung steckte in auswerten() und war damit nur für die Anzeige
+     verfügbar. Sie ist jetzt eine eigene Funktion, damit der Bilddownload
+     dasselbe Ergebnis zeigt wie die Seite und nicht eine zweite Rechnung. */
+  function matchRechnen() {
     var M = D.match;
+    if (!M || !st.antworten) return null;
     var n = st.modus || M.modi[0];
     var eigene = M.fragen.slice(0, n).map(function (_, i) {
       var a = st.antworten[i];
@@ -1008,6 +1098,28 @@
       return { f: f, quote: proFrak[f].summe / proFrak[f].n, n: proFrak[f].n };
     }).sort(function (a, b) { return b.quote - a.quote; });
 
+    var beantwortet = eigene.filter(Boolean).length;
+    if (beantwortet < M.min) return null;
+    return {
+      personen: personen, fraktionen: fraktionen,
+      beantwortet: beantwortet, gesamt: n,
+      /* für den Bilddownload vereinheitlicht */
+      frak: fraktionen.map(function (f) {
+        return { name: f.f, wert: f.quote, partei: f.f,
+                 unter: f.n + (f.n === 1 ? " Ratsmitglied" : " Ratsmitglieder") };
+      }),
+      leute: personen.map(function (x) {
+        return { name: x.name, wert: x.quote, partei: x.p, f: x.f, unter: x.f };
+      })
+    };
+  }
+
+  function auswerten() {
+    var M = D.match;
+    var erg = matchRechnen();
+    if (!erg) return;
+    var personen = erg.personen, fraktionen = erg.fraktionen;
+
     $("#mergebnis").innerHTML =
       '<div class="sec" style="margin-top:34px"><h2>Fraktionen</h2>' +
       "<p>gemittelte Übereinstimmung</p></div>" +
@@ -1035,18 +1147,91 @@
   }
 
   /* ═══ Bilddownload ═════════════════════════════════════════════════════ */
+  /* Motive für den Bilddownload.
+     gruppe  Überschrift im Auswahlfeld
+     subjekt "mitglied" verlangt eine zweite Auswahl, wer gemeint ist
+     nur     Bedingung, ob das Motiv überhaupt anwählbar ist
+     Die Ranglisten teilen sich eine Zeichenfunktion und unterscheiden sich nur
+     in Titel, Kennzahl und Formatierung; darum stehen sie als Daten hier und
+     nicht als vier fast gleiche Funktionen. */
   var MOTIVE = [
-    { k: "vote", l: "Neuste Abstimmung" },
-    { k: "sitzung", l: "Sitzungsüberblick" },
-    { k: "frak", l: "Fraktionsvergleich" },
-    { k: "rang", l: "Rangliste Zustimmungsquote" }
+    { k: "vote",    g: "Abstimmungen", l: "Neuste Abstimmung" },
+    { k: "sitzung", g: "Abstimmungen", l: "Sitzungsüberblick" },
+
+    { k: "rang:quote",    g: "Rangliste Ratsmitglieder", l: "Höchste Zustimmungsquote",
+      w: "quote",    u: "der abgegebenen Stimmen" },
+    { k: "rang:nein",     g: "Rangliste Ratsmitglieder", l: "Höchste Ablehnungsquote",
+      w: "nein",     u: "der abgegebenen Stimmen" },
+    { k: "rang:praesenz", g: "Rangliste Ratsmitglieder", l: "Höchste Präsenz",
+      w: "praesenz", u: "abgegebene Stimmen" },
+    { k: "rang:abw",      g: "Rangliste Ratsmitglieder", l: "Höchste Abwesenheitsquote",
+      w: "abw",      u: "nicht teilgenommen" },
+    { k: "rang:enth",     g: "Rangliste Ratsmitglieder", l: "Häufigste Enthaltungen",
+      w: "enthQuote", u: "der abgegebenen Stimmen" },
+
+    { k: "frang:quote",    g: "Rangliste Fraktionen", l: "Höchste Zustimmungsquote",
+      w: "quote",    u: "der abgegebenen Stimmen", frak: true },
+    { k: "frang:praesenz", g: "Rangliste Fraktionen", l: "Höchste Präsenz",
+      w: "praesenz", u: "abgegebene Stimmen", frak: true },
+    { k: "frang:geschl",   g: "Rangliste Fraktionen", l: "Höchste Geschlossenheit",
+      w: "disziplin", u: "mittlerer Mehrheitsanteil", frak: true },
+    { k: "frang:enth",     g: "Rangliste Fraktionen", l: "Häufigste Enthaltungen",
+      w: "enthQuote", u: "der abgegebenen Stimmen", frak: true },
+
+    { k: "frak", g: "Fraktionen", l: "Fraktionsvergleich" },
+
+    { k: "person",     g: "Einzelnes Ratsmitglied", l: "Profilkarte", subjekt: "mitglied" },
+    { k: "personIb",   g: "Einzelnes Ratsmitglied", l: "Interessenbindungen",
+      subjekt: "mitglied" },
+
+    { k: "matchFrak", g: "Wer stimmt wie ich?", l: "Mein Ergebnis: Fraktionen",
+      nur: "match" },
+    { k: "matchTop",  g: "Wer stimmt wie ich?", l: "Mein Ergebnis: Ratsmitglieder",
+      nur: "match" }
   ];
+
+  function motivVon(k) {
+    for (var i = 0; i < MOTIVE.length; i++) if (MOTIVE[i].k === k) return MOTIVE[i];
+    return MOTIVE[0];
+  }
+
+  /* Anwählbar ist ein Motiv nur, wenn es auch etwas zu zeigen gibt. Ein leeres
+     Ergebnisbild wäre schlimmer als ein fehlendes Motiv. */
+  function motivMoeglich(m) {
+    if (m.nur === "match") return matchErgebnisDa();
+    return true;
+  }
+
+  /* Ob ein Ergebnis vorliegt, entscheidet dieselbe Rechnung wie die Anzeige.
+     Eine eigene Zählung war schon einmal falsch: st.antworten ist ein Objekt
+     und hat kein length, die Schleife lief nie und die Motive fehlten. */
+  function matchErgebnisDa() {
+    return matchRechnen() !== null;
+  }
   var W = 1080, H = 1350;
 
   function cssFarbe(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#888";
   }
+  /* Das Porträt eines Ratsmitglieds ist ein base64-JPEG und muss vor dem
+     Zeichnen geladen sein, sonst bliebe die Fläche leer und ein sofortiger
+     Download zeigte ein halbfertiges Bild. Darum: erst laden, dann malen. */
   function zeichneBild(motiv) {
+    var m = motivVon(motiv);
+    if (m.subjekt === "mitglied") {
+      var pr = PERS[bildSubjekt()];
+      if (pr && pr.bi) {
+        var im = new Image();
+        im.onload = function () { malen(motiv, im); };
+        im.onerror = function () { malen(motiv, null); };
+        im.src = "data:image/jpeg;base64," + pr.bi;
+        return;
+      }
+    }
+    malen(motiv, null);
+  }
+
+  function malen(motiv, bild) {
     var c = $("#bildCanvas"), x = c.getContext("2d");
     var bg = cssFarbe("--surface"), ink = cssFarbe("--ink"),
         ink2 = cssFarbe("--ink-2"), ink3 = cssFarbe("--ink-3"), line = cssFarbe("--line");
@@ -1062,11 +1247,16 @@
     x.strokeStyle = ink; x.lineWidth = 3;
     x.beginPath(); x.moveTo(72, 156); x.lineTo(W - 72, 156); x.stroke();
 
-    var y = 240;
+    var y = 240, m = motivVon(motiv);
     if (motiv === "vote") y = bildVote(x, y, ink, ink2, ink3, line);
     else if (motiv === "sitzung") y = bildSitzung(x, y, ink, ink2, ink3, line);
     else if (motiv === "frak") y = bildFrak(x, y, ink, ink2, ink3, line);
-    else y = bildRang(x, y, ink, ink2, ink3, line);
+    else if (motiv === "person") y = bildPerson(x, y, ink, ink2, ink3, line, bild);
+    else if (motiv === "personIb") y = bildPersonIb(x, y, ink, ink2, ink3, line, bild);
+    else if (motiv === "matchFrak") y = bildMatch(x, y, ink, ink2, ink3, line, "frak");
+    else if (motiv === "matchTop") y = bildMatch(x, y, ink, ink2, ink3, line, "top");
+    else if (m.w) y = bildRangArt(x, y, ink, ink2, ink3, line, m);
+    else y = bildRangArt(x, y, ink, ink2, ink3, line, motivVon("rang:quote"));
 
     /* Wasserzeichen */
     x.strokeStyle = line; x.lineWidth = 1;
@@ -1077,6 +1267,401 @@
     x.fillStyle = ink3;
     x.font = "400 18px 'Public Sans', sans-serif";
     x.fillText("Daten: Parlamentsdienste Kanton Schaffhausen", 72, H - 62);
+  }
+
+
+  /* ── Bausteine für die neuen Motive ──────────────────────────────────── */
+
+  function bildSubjekt() {
+    var s = $("#bildSubjekt");
+    return (s && s.value) || (mitgliedStats()[0] || {}).k || "";
+  }
+
+  /* Kennzahl eines Motivs. Zwei der fünf Mitgliederranglisten lassen sich nicht
+     direkt ablesen und werden hier gerechnet. */
+  function motivWert(m, e) {
+    if (m.w === "nein") return e.abgegeben ? e.N / e.abgegeben * 100 : 0;
+    if (m.w === "abw")  return e.total ? e.A / e.total * 100 : 0;
+    return e[m.w] || 0;
+  }
+
+  function kopfzeile(x, ink, ink3, titel, unter, y) {
+    x.fillStyle = ink;
+    x.font = "700 52px Archivo, sans-serif";
+    y = umbrechen(x, titel, 72, y, W - 144, 60, 2);
+    x.fillStyle = ink3;
+    x.font = "400 26px 'Public Sans', sans-serif";
+    x.fillText(unter, 72, y + 12);
+    return y + 60;
+  }
+
+  /* Eine Rangliste, für Mitglieder wie für Fraktionen. Zehn Zeilen mit Balken.
+     Der Balken ist auf den höchsten Wert der Liste bezogen und nicht auf 100
+     Prozent: bei Präsenzwerten zwischen 88 und 99 wären sonst alle Balken
+     gleich lang und die Grafik sagte nichts. */
+  function bildRangArt(x, y, ink, ink2, ink3, line, m) {
+    var liste = (m.frak ? frakStats() : mitgliedStats())
+      .filter(function (e) { return m.frak ? e.abgegeben > 0 : e.abgegeben > 0; })
+      .map(function (e) {
+        return { name: m.frak ? e.f : anzeigeName(e.k),
+                 partei: m.frak ? null : e.p,
+                 /* Unterzeile: bei Mitgliedern die Fraktion, bei Fraktionen die
+                    Sitzzahl. Den Fraktionsnamen zu wiederholen sagt nichts. */
+                 unter: m.frak ? (e.sitze + (e.sitze === 1 ? " Sitz" : " Sitze"))
+                               : e.f,
+                 wert: motivWert(m, e) };
+      })
+      .sort(function (a, b) { return b.wert - a.wert; })
+      .slice(0, 10);
+    if (!liste.length) return y;
+
+    y = kopfzeile(x, ink, ink3, m.l, m.u + " · " + scopeLabel(), y);
+    var hoch = liste[0].wert || 1;
+
+    liste.forEach(function (e, i) {
+      /* Fraktionen tragen ihre Fraktionsfarbe (fkey), Ratsmitglieder die ihrer
+         Partei (pkey). Mit pkey auf einen Fraktionsnamen kommt nur Grau heraus. */
+      var farbe = cssFarbe("--p-" + (m.frak ? fkey(e.name) : pkey(e.partei)));
+      x.fillStyle = ink3;
+      x.font = "700 26px 'Public Sans', sans-serif";
+      x.fillText(String(i + 1), 72, y + 30);
+      x.fillStyle = ink;
+      x.font = "600 30px 'Public Sans', sans-serif";
+      x.fillText(kuerzText(x, e.name, 470), 118, y + 30);
+      if (e.unter) {
+        x.fillStyle = ink3;
+        x.font = "400 21px 'Public Sans', sans-serif";
+        x.fillText(kuerzText(x, e.unter, 400), 118, y + 60);
+      }
+
+      var bx = 620, bw = W - 72 - bx - 130;
+      x.fillStyle = line;
+      x.fillRect(bx, y + 12, bw, 22);
+      x.fillStyle = farbe;
+      x.fillRect(bx, y + 12, Math.max(bw * (e.wert / hoch), 3), 22);
+      x.fillStyle = ink;
+      x.font = "700 30px 'Public Sans', sans-serif";
+      x.textAlign = "right";
+      x.fillText(pz(e.wert, 1) + " %", W - 72, y + 34);
+      x.textAlign = "left";
+
+      y += 86;
+      if (i < liste.length - 1) {
+        x.strokeStyle = line; x.lineWidth = 1;
+        x.beginPath(); x.moveTo(72, y - 22); x.lineTo(W - 72, y - 22); x.stroke();
+      }
+    });
+    return y;
+  }
+
+  function kuerzText(x, s, breite) {
+    s = String(s || "");
+    if (x.measureText(s).width <= breite) return s;
+    while (s.length > 4 && x.measureText(s + "…").width > breite) s = s.slice(0, -1);
+    return s + "…";
+  }
+
+  function rundesBild(x, bild, cx, cy, r, ringfarbe) {
+    x.save();
+    x.beginPath(); x.arc(cx, cy, r, 0, Math.PI * 2); x.closePath(); x.clip();
+    if (bild) {
+      var s = Math.max(2 * r / bild.width, 2 * r / bild.height);
+      x.drawImage(bild, cx - bild.width * s / 2, cy - bild.height * s / 2,
+                  bild.width * s, bild.height * s);
+    } else {
+      x.fillStyle = cssFarbe("--sunken");
+      x.fillRect(cx - r, cy - r, 2 * r, 2 * r);
+    }
+    x.restore();
+    x.strokeStyle = ringfarbe; x.lineWidth = 6;
+    x.beginPath(); x.arc(cx, cy, r + 3, 0, Math.PI * 2); x.stroke();
+  }
+
+  /* Profilkarte eines Ratsmitglieds: Porträt, Fraktion, die drei Kennzahlen und
+     die stärksten Themen. */
+  function bildPerson(x, y, ink, ink2, ink3, line, bild) {
+    var k = bildSubjekt();
+    var e = mitgliedStats().filter(function (s) { return s.k === k; })[0];
+    if (!e) return y;
+    var pr = PERS[k] || {}, farbe = cssFarbe("--p-" + pkey(e.p));
+
+    rundesBild(x, bild, 72 + 90, y + 80, 90, farbe);
+    if (!bild) {
+      x.fillStyle = ink3;
+      x.font = "700 60px 'Public Sans', sans-serif";
+      x.textAlign = "center";
+      x.fillText(initialen(anzeigeName(k)), 72 + 90, y + 102);
+      x.textAlign = "left";
+    }
+
+    x.fillStyle = ink;
+    x.font = "700 50px Archivo, sans-serif";
+    var yy = umbrechen(x, anzeigeName(k), 300, y + 52, W - 372, 56, 2);
+    x.fillStyle = ink3;
+    x.font = "600 25px 'Public Sans', sans-serif";
+    x.fillText(kuerzText(x, e.f, W - 372), 300, yy + 10);
+    if (wegSeit(k)) {
+      x.fillStyle = ink3;
+      x.font = "400 21px 'Public Sans', sans-serif";
+      x.fillText("ausgeschieden, letzte Sitzung " + wegSeit(k).slice(0, 34), 300, yy + 44);
+    }
+    y += 210;
+
+    [["Zustimmung", pz(e.quote, 1) + " %", "der abgegebenen Stimmen"],
+     ["Präsenz", pz(e.praesenz, 1) + " %", e.abgegeben + " von " + e.total],
+     ["Sitzungen", String(e.sitzungen), "im Zeitraum"]].forEach(function (s, i) {
+      var bx = 72 + i * ((W - 144) / 3);
+      x.fillStyle = ink;
+      x.font = "700 46px Archivo, sans-serif";
+      x.fillText(s[1], bx, y + 46);
+      x.fillStyle = ink2;
+      x.font = "600 22px 'Public Sans', sans-serif";
+      x.fillText(s[0], bx, y + 78);
+      x.fillStyle = ink3;
+      x.font = "400 19px 'Public Sans', sans-serif";
+      x.fillText(s[2], bx, y + 104);
+    });
+    y += 150;
+
+    x.strokeStyle = line; x.lineWidth = 1;
+    x.beginPath(); x.moveTo(72, y); x.lineTo(W - 72, y); x.stroke();
+    y += 46;
+
+    var t = themenFuer(k);
+    if (t.length) {
+      x.fillStyle = ink3;
+      x.font = "600 22px 'Public Sans', sans-serif";
+      x.fillText("ZUSTIMMUNG NACH THEMA", 72, y);
+      y += 40;
+      t.slice(0, 5).forEach(function (r) {
+        x.fillStyle = ink;
+        x.font = "600 26px 'Public Sans', sans-serif";
+        x.fillText(kuerzText(x, r.t, 560), 72, y + 24);
+        var bx = 660, bw = W - 72 - bx - 110;
+        x.fillStyle = line; x.fillRect(bx, y + 6, bw, 20);
+        x.fillStyle = farbe; x.fillRect(bx, y + 6, Math.max(bw * r.q / 100, 3), 20);
+        x.fillStyle = ink;
+        x.font = "700 26px 'Public Sans', sans-serif";
+        x.textAlign = "right";
+        x.fillText(pz(r.q, 0) + " %", W - 72, y + 26);
+        x.textAlign = "left";
+        y += 62;
+      });
+    }
+    return y;
+  }
+
+  /* In der Tabelle steht «Nachname Vorname», weil danach sortiert wird. Auf
+     einem Bild, das geteilt wird, liest sich «Vorname Nachname» natürlicher. */
+  function anzeigeName(k) {
+    var teile = String(k || "").split("|");
+    return teile.length > 1 ? teile[1] + " " + teile[0] : (k || "");
+  }
+
+  function initialen(n) {
+    return String(n || "").split(/\s+/).filter(Boolean).slice(0, 2)
+      .map(function (w) { return w[0]; }).join("").toUpperCase();
+  }
+
+  function themenFuer(k) {
+    var themen = {};
+    scopeSessions().forEach(function (s) {
+      var m = s.m.filter(function (q) { return q.n === k; })[0];
+      if (!m) return;
+      for (var i = 0; i < s.v.length; i++) {
+        var th = s.v[i].th || "Ohne Thema";
+        themen[th] = themen[th] || { J: 0, ab: 0 };
+        var c = korr(m, i, istUmkehr(s.v[i]));
+        if (c === "J") { themen[th].J++; themen[th].ab++; }
+        else if (c === "N" || c === "E") themen[th].ab++;
+      }
+    });
+    return Object.keys(themen).map(function (th) {
+      return { t: th, q: themen[th].ab ? themen[th].J / themen[th].ab * 100 : 0,
+               n: themen[th].ab };
+    }).filter(function (r) { return r.n >= 5; })
+      .sort(function (a, b) { return b.q - a.q; });
+  }
+
+  /* Interessenbindungen eines Ratsmitglieds, blau deklariert, gelb nur im
+     Handelsregister. Dieselbe Unterscheidung wie im Dashboard, damit ein
+     geteiltes Bild nicht anders aussagt als die Seite. */
+  function bildPersonIb(x, y, ink, ink2, ink3, line, bild) {
+    var k = bildSubjekt();
+    var e = mitgliedStats().filter(function (s) { return s.k === k; })[0];
+    var pr = PERS[k] || {};
+    if (!e) return y;
+    var farbe = cssFarbe("--p-" + pkey(e.p));
+
+    rundesBild(x, bild, 72 + 62, y + 52, 62, farbe);
+    if (!bild) {
+      x.fillStyle = ink3;
+      x.font = "700 42px 'Public Sans', sans-serif";
+      x.textAlign = "center";
+      x.fillText(initialen(anzeigeName(k)), 72 + 62, y + 68);
+      x.textAlign = "left";
+    }
+    x.fillStyle = ink;
+    x.font = "700 44px Archivo, sans-serif";
+    x.fillText(kuerzText(x, anzeigeName(k), W - 300), 248, y + 44);
+    x.fillStyle = ink3;
+    x.font = "600 23px 'Public Sans', sans-serif";
+    x.fillText(kuerzText(x, e.f, W - 300), 248, y + 78);
+    y += 150;
+
+    var dekl = pr.ib || [], hr = pr.hr || [];
+    x.fillStyle = ink;
+    x.font = "700 36px Archivo, sans-serif";
+    x.fillText("Interessenbindungen", 72, y);
+    x.fillStyle = ink3;
+    x.font = "400 22px 'Public Sans', sans-serif";
+    y = umbrechen(x, dekl.length + (dekl.length === 1 ? " deklariertes Mandat" :
+      " deklarierte Mandate") + (hr.length ? ", " + hr.length + " nur im Handelsregister" : ""),
+      72, y + 34, W - 144, 30, 2) + 18;
+
+    if (!dekl.length && !hr.length) {
+      x.fillStyle = ink3;
+      x.font = "400 26px 'Public Sans', sans-serif";
+      umbrechen(x, ohneProfil(k)
+        ? "Zu dieser Person führt sh.ch keinen Personenkasten, darum liegt keine Deklaration vor."
+        : "Keine Interessenbindungen deklariert.", 72, y + 20, W - 144, 34, 3);
+      return y + 90;
+    }
+
+    /* Alle Einträge sollen aufs Bild. Peter Neukomm deklariert 16, eine feste
+       Obergrenze hätte zehn davon stillschweigend verschluckt: ein Bild, das
+       vollständig aussieht und es nicht ist, ist schlimmer als eines, das die
+       Lücke benennt.
+
+       Darum wird die Schriftgrösse an die Menge angepasst. Erst wird gemessen,
+       wie hoch die Liste in einer Grösse würde; passt sie nicht, kommt die
+       nächstkleinere. Reicht auch die kleinste nicht, wird abgeschnitten und
+       die Zahl der übrigen ausdrücklich genannt. */
+    var alle = dekl.map(function (s) { return { text: s, gelb: false }; })
+      .concat(hr.map(function (s) {
+        return { text: s.f + (s.o ? ", " + s.o : "") + (s.r ? " · " + s.r : ""),
+                 gelb: true };
+      }));
+    var platz = H - 160 - y - 60;   /* 60 für die Fussnote reservieren */
+
+    function zeilenZahl(text, groesse, bw) {
+      x.font = "400 " + groesse + "px 'Public Sans', sans-serif";
+      var w = String(text).split(/\s+/), zl = "", n = 1;
+      for (var i = 0; i < w.length; i++) {
+        var pr2 = zl ? zl + " " + w[i] : w[i];
+        if (x.measureText(pr2).width > bw && zl) { n++; zl = w[i]; } else zl = pr2;
+      }
+      return n;
+    }
+    function hoeheFuer(g, liste) {
+      var zh = Math.round(g * 1.32), h = 0;
+      liste.forEach(function (e) {
+        h += Math.round(g * 0.7) + zeilenZahl(e.text, g, W - 144 - 40) * zh + 10;
+      });
+      return h;
+    }
+
+    var groesse = 25, pass = null;
+    [25, 23, 21, 19, 17, 15].forEach(function (g) {
+      if (pass === null && hoeheFuer(g, alle) <= platz) pass = g;
+    });
+    var zeigen = alle, rest = 0;
+    if (pass === null) {
+      groesse = 15;
+      /* So viele wie hineinpassen, der Rest wird gezählt und benannt. */
+      var h = 0, i = 0;
+      for (; i < alle.length; i++) {
+        var hh = hoeheFuer(groesse, [alle[i]]);
+        if (h + hh > platz - 40) break;
+        h += hh;
+      }
+      zeigen = alle.slice(0, i);
+      rest = alle.length - i;
+    } else groesse = pass;
+
+    var zh = Math.round(groesse * 1.32);
+    zeigen.forEach(function (e) {
+      var bx = 72, bw = W - 144;
+      var n = zeilenZahl(e.text, groesse, bw - 40);
+      var hoehe = Math.round(groesse * 0.7) + n * zh;
+      x.fillStyle = e.gelb ? cssFarbe("--q-reg-flaeche") : cssFarbe("--q-dekl-flaeche");
+      x.fillRect(bx, y, bw, hoehe);
+      x.fillStyle = e.gelb ? cssFarbe("--q-reg") : cssFarbe("--q-dekl");
+      x.fillRect(bx, y, 6, hoehe);
+      x.fillStyle = ink;
+      x.font = "400 " + groesse + "px 'Public Sans', sans-serif";
+      umbrechen(x, e.text, bx + 22, y + Math.round(groesse * 1.15), bw - 40, zh, n);
+      y += hoehe + 10;
+    });
+
+    if (rest) {
+      x.fillStyle = ink3;
+      x.font = "600 " + groesse + "px 'Public Sans', sans-serif";
+      x.fillText("und " + rest + (rest === 1 ? " weitere Interessenbindung"
+                                             : " weitere Interessenbindungen"), 72, y + 24);
+      y += 44;
+    }
+
+    if (y + 70 < H - 160) {
+      x.fillStyle = ink3;
+      x.font = "400 20px 'Public Sans', sans-serif";
+      y = umbrechen(x, hr.length
+        ? "Blau: Selbstdeklaration auf sh.ch. Gelb: im Handelsregister eingetragen, in der Deklaration nicht gefunden."
+        : "Quelle: Selbstdeklaration auf sh.ch.", 72, y + 24, W - 144, 28, 2);
+    }
+    return y;
+  }
+
+  /* Ergebnis des Matchings, entweder nach Fraktionen oder die stärksten
+     Übereinstimmungen mit einzelnen Ratsmitgliedern. */
+  function bildMatch(x, y, ink, ink2, ink3, line, art) {
+    var erg = matchRechnen();
+    if (!erg) {
+      x.fillStyle = ink3;
+      x.font = "400 28px 'Public Sans', sans-serif";
+      umbrechen(x, "Noch kein Ergebnis. Zuerst im Reiter «Wer stimmt wie ich?» " +
+        "genügend Fragen beantworten und auswerten.", 72, y + 20, W - 144, 38, 4);
+      return y + 140;
+    }
+    var liste = art === "frak" ? erg.frak : erg.leute;
+    y = kopfzeile(x, ink, ink3,
+      art === "frak" ? "So nah stehe ich den Fraktionen" : "So nah stehe ich den Ratsmitgliedern",
+      erg.beantwortet + " von " + erg.gesamt + " Fragen beantwortet", y);
+
+    liste.slice(0, art === "frak" ? 6 : 10).forEach(function (e, i) {
+      var farbe = cssFarbe("--p-" + (art === "frak" ? fkey(e.name) : pkey(e.partei)));
+      x.fillStyle = ink3;
+      x.font = "700 26px 'Public Sans', sans-serif";
+      x.fillText(String(i + 1), 72, y + 30);
+      x.fillStyle = ink;
+      x.font = "600 30px 'Public Sans', sans-serif";
+      x.fillText(kuerzText(x, e.name, 470), 118, y + 30);
+      if (e.unter) {
+        x.fillStyle = ink3;
+        x.font = "400 21px 'Public Sans', sans-serif";
+        x.fillText(kuerzText(x, e.unter, 400), 118, y + 60);
+      }
+      var bx = 620, bw = W - 72 - bx - 130;
+      x.fillStyle = line; x.fillRect(bx, y + 12, bw, 22);
+      x.fillStyle = farbe; x.fillRect(bx, y + 12, Math.max(bw * e.wert / 100, 3), 22);
+      x.fillStyle = ink;
+      x.font = "700 30px 'Public Sans', sans-serif";
+      x.textAlign = "right";
+      x.fillText(pz(e.wert, 0) + " %", W - 72, y + 34);
+      x.textAlign = "left";
+      y += art === "frak" ? 96 : 82;
+    });
+
+    /* Die Fussnote nur, wenn sie über dem Wasserzeichen Platz hat. Sonst
+       überschreibt sie es, und das Bild sieht nach Fehler aus. */
+    if (y + 70 < H - 160) {
+      x.fillStyle = ink3;
+      x.font = "400 20px 'Public Sans', sans-serif";
+      umbrechen(x, "Übereinstimmung über die beantworteten Fragen. Bei Umkehrabstimmungen " +
+        "ist die Richtung korrigiert, ein Ja bedeutet überall dasselbe.", 72, y + 24,
+        W - 144, 28, 2);
+    }
+    return y + 90;
   }
 
   function umbrechen(x, text, links, oben, breite, zeilenhoehe, maxZeilen) {
@@ -1295,15 +1880,54 @@
   function bildModal(offen) {
     var m = $("#bildModal");
     m.hidden = !offen;
-    if (offen) zeichneBild($("#bildMotiv").value);
+    if (offen) {
+      bildMotivListe();
+      zeichneBild($("#bildMotiv").value);
+    }
+  }
+
+  function bildMotivListe() {
+    var sel = $("#bildMotiv"), gruppen = [], nach = {};
+    MOTIVE.filter(motivMoeglich).forEach(function (m) {
+      if (!nach[m.g]) { nach[m.g] = []; gruppen.push(m.g); }
+      nach[m.g].push(m);
+    });
+    var vorher = sel.value;
+    sel.innerHTML = gruppen.map(function (g) {
+      return '<optgroup label="' + esc(g) + '">' + nach[g].map(function (m) {
+        return '<option value="' + m.k + '">' + esc(m.l) + "</option>";
+      }).join("") + "</optgroup>";
+    }).join("");
+    if (vorher && sel.querySelector('option[value="' + vorher + '"]')) sel.value = vorher;
+    subjektFeld();
+  }
+
+  /* Das zweite Auswahlfeld erscheint nur für Motive, die eine Person brauchen.
+     Vorbelegt ist, wer gerade im Dashboard offen ist, sonst der erste Name. */
+  function subjektFeld() {
+    var sel = $("#bildMotiv"), wrap = $("#bildSubjektWrap"), sub = $("#bildSubjekt");
+    var m = motivVon(sel.value);
+    wrap.hidden = m.subjekt !== "mitglied";
+    if (wrap.hidden) return;
+    var leute = mitgliedStats().sort(function (a, b) {
+      return a.nach.localeCompare(b.nach, "de");
+    });
+    var vorher = sub.value || st.mitglied;
+    sub.innerHTML = leute.map(function (e) {
+      return '<option value="' + esc(e.k) + '">' + esc(e.name) +
+        (e.f ? " · " + esc(e.f) : "") + "</option>";
+    }).join("");
+    if (vorher && sub.querySelector('option[value="' + vorher + '"]')) sub.value = vorher;
   }
 
   function initBild() {
     var sel = $("#bildMotiv");
-    sel.innerHTML = MOTIVE.map(function (m) {
-      return '<option value="' + m.k + '">' + m.l + "</option>";
-    }).join("");
-    sel.addEventListener("change", function () { zeichneBild(sel.value); });
+    bildMotivListe();
+    sel.addEventListener("change", function () {
+      subjektFeld();
+      zeichneBild(sel.value);
+    });
+    $("#bildSubjekt").addEventListener("change", function () { zeichneBild(sel.value); });
     $("#bildZu").addEventListener("click", function () { bildModal(false); });
     $("#bildModal").addEventListener("click", function (e) {
       if (e.target === $("#bildModal")) bildModal(false);
@@ -1311,7 +1935,11 @@
     $("#bildLaden").addEventListener("click", function () {
       var c = $("#bildCanvas");
       var a = document.createElement("a");
-      a.download = "kantonsrat-sh-" + sel.value + ".png";
+      var teil = sel.value.replace(/:/g, "-");
+      if (motivVon(sel.value).subjekt === "mitglied") {
+        teil += "-" + bildSubjekt().replace(/\|/g, "-").toLowerCase();
+      }
+      a.download = "kantonsrat-sh-" + teil + ".png";
       a.href = c.toDataURL("image/png");
       a.click();
     });
@@ -1378,10 +2006,11 @@
   function amtlichBlock(a) {
     if (!a) return "";
     var zeilen = [];
-    var geloescht = a.geloescht_am || /^gel/i.test(a.status || "");
-    if (geloescht) {
-      zeilen.push('<span class="hwarn">Im Register gelöscht' +
-        (a.geloescht_am ? " am " + esc(a.geloescht_am) : "") + "</span>");
+    // status kommt aus zefix.py schon auf Deutsch: aktiv, gelöscht, in Löschung
+    if (a.status === "gelöscht" || a.status === "in Löschung" || a.geloescht_am) {
+      zeilen.push('<span class="hwarn">Im Register ' +
+        esc(a.status === "in Löschung" ? "in Löschung" : "gelöscht") +
+        (a.geloescht_am ? ", " + esc(a.geloescht_am) : "") + "</span>");
     }
     if (a.rechtsform) zeilen.push(esc(a.rechtsform));
     if (a.sitz) zeilen.push("Sitz " + esc(a.sitz));
@@ -1396,6 +2025,49 @@
         '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
         '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
         'fill="none" stroke-width="1.4"/></svg></a>' : "") + "</div>";
+  }
+
+  function regKanten(N) {
+    return (N.kanten || []).filter(function (k) { return k.q === "r"; }).length;
+  }
+
+  /* Vollständige Legende: was ein Punkt ist, was seine Grösse sagt und was die
+     beiden Linienarten bedeuten. Die Zeile zum Handelsregister erscheint nur,
+     wenn es dort etwas zu sehen gibt, sonst erklärt sie eine Unterscheidung,
+     die im Bild gar nicht vorkommt. */
+  function netzLegende(N) {
+    var reg = regKanten(N);
+    var regOrg = (N.knoten || []).filter(function (k) {
+      return k.typ === "organisation" && k.q === "r";
+    }).length;
+
+    var punkte =
+      '<span class="qleg"><i class="pkt pkt-m"></i>Ratsmitglied</span>' +
+      '<span class="qleg"><i class="pkt pkt-o"></i>Organisation</span>' +
+      '<span class="qleg"><i class="pkt pkt-b"></i>Branche</span>' +
+      (regOrg ? '<span class="qleg"><i class="pkt pkt-r"></i>Organisation nur im ' +
+        "Handelsregister (" + regOrg + ")</span>" : "");
+
+    var linien =
+      '<span class="qleg qleg-d"><i></i>deklariert auf sh.ch</span>' +
+      (reg ? '<span class="qleg qleg-r"><i></i>nur im Handelsregister (' + reg + ")</span>"
+           : "");
+
+    return '<div class="qlegende">' +
+      '<div class="qzeile"><b>Punkte</b>' + punkte + "</div>" +
+      '<div class="qzeile"><b>Linien</b>' + linien + "</div>" +
+      '<div class="qzeile"><b>Grösse</b><span class="qleg qlegnote">Je mehr Verbindungen ' +
+      "ein Punkt hat, desto grösser ist er. Beschriftet werden die grösseren, die " +
+      "Schwelle lässt sich unter «Darstellung feinjustieren» ändern.</span></div>" +
+      '<div class="qzeile"><b>Suche</b><span class="qleg qlegnote">Ein Treffer bekommt ' +
+      "einen farbigen Ring, seine Füllung bleibt. Ein angeklickter Punkt bekommt einen " +
+      "dunklen Ring, und der Rest tritt zurück.</span></div>" +
+      (reg ? '<p class="qlegnote qfuss">Gestrichelt und gelb heisst: die Bindung steht im ' +
+        "Handelsregister des Kantons Schaffhausen, nicht in der Selbstdeklaration. Das muss " +
+        "nichts bedeuten, die Deklarationspflicht deckt nicht jedes Mandat, und der " +
+        "Registerstand kann nachhinken. Jeder solche Eintrag ist einzeln am Registerauszug " +
+        "geprüft; verbindlich ist allein der beglaubigte Auszug.</p>" : "") +
+      "</div>";
   }
 
   function renderNetz(el) {
@@ -1415,12 +2087,17 @@
       '<header class="hero"><div class="eyebrow">Selbstdeklarationen</div>' +
       "<h1>Interessenbindungen</h1>" +
       '<p class="subline">Wer sitzt wo? Jeder Punkt ist ein Ratsmitglied, eine Organisation ' +
-      "oder eine Branche, jede Linie ein deklariertes Mandat. Organisationen, die mehrere " +
+      "oder eine Branche, jede Linie ein Mandat. Blaue Linien stehen in der " +
+      "Selbstdeklaration, gelb gestrichelte nur im Handelsregister. Organisationen, die mehrere " +
       "Ratsmitglieder nennen, rücken zwischen diese.</p></header>" +
-      '<div class="hinweis"><b>Quelle:</b> ausschliesslich die Selbstdeklarationen auf sh.ch' +
+      '<div class="hinweis"><b>Quelle:</b> die Selbstdeklarationen auf sh.ch' +
       (D.personen && D.personen.stand ? ", Stand " + esc(D.personen.stand) : "") +
+      (regKanten(N) ? ", ergänzt um Einträge aus dem Handelsregister des Kantons " +
+        "Schaffhausen, die in keiner Deklaration stehen und einzeln am Registerauszug " +
+        "geprüft sind" : "") +
       ". Keine eigenen Zuschreibungen, keine Bewertung. " + mit + " Ratsmitglieder, " + org +
       " Organisationen, " + (N.kanten || []).length + " Mandate.</div>" +
+      netzLegende(N) +
       '<div class="netzleiste">' +
       '<select id="netzBranche"><option value="">Alle Branchen</option>' +
       Object.keys(branchen).sort().map(function (b) {
@@ -1621,17 +2298,47 @@ function netzMalen(){
 
   netzKanten.forEach(k=>{
     const an = !hervor || (hervor.has(k.von)&&hervor.has(k.nach));
-    g.strokeStyle = k.art==="branche" ? (an?cssFarbe("--line"):cssFarbe("--hair")) : (an?cssFarbe("--ink-3"):cssFarbe("--line"));
-    g.lineWidth = (k.art==="branche" ? 0.7 : 1)/Math.max(netzZoom,0.6);
+    // Herkunft der Bindung: blau deklariert, gelb nur im Handelsregister.
+    // Die Farbe liegt bewusst auf der Kante und nicht auf dem Mitgliederknoten,
+    // der die Parteifarbe trägt; FDP-Blau und EVP-Gelb liegen zu nah daran.
+    if(k.art==="branche"){
+      g.strokeStyle = an?cssFarbe("--line"):cssFarbe("--hair");
+      g.lineWidth = 0.7/Math.max(netzZoom,0.6);
+      g.setLineDash([]);
+    } else if(k.q==="r"){
+      g.strokeStyle = an?cssFarbe("--q-reg"):cssFarbe("--line");
+      g.lineWidth = 1.6/Math.max(netzZoom,0.6);
+      // Gestrichelt, damit die Unterscheidung nicht allein an der Farbe hängt
+      g.setLineDash([4/Math.max(netzZoom,0.6), 3/Math.max(netzZoom,0.6)]);
+    } else {
+      g.strokeStyle = an?cssFarbe("--q-dekl"):cssFarbe("--line");
+      g.lineWidth = 1/Math.max(netzZoom,0.6);
+      g.setLineDash([]);
+    }
     g.beginPath(); g.moveTo(k.a.x,k.a.y); g.lineTo(k.b.x,k.b.y); g.stroke();
   });
+  g.setLineDash([]);
   netzKnoten.forEach(n=>{
     const an = !hervor || hervor.has(n.id);
     const treffer = q && n.treffer;
     const r=netzRadius(n);
     g.globalAlpha = an ? 1 : 0.16;
-    g.fillStyle = treffer ? cssFarbe("--p-evp") : netzFarben()[n.typ];
+    // Die Füllung sagt, was der Knoten ist. Gelb ist Organisationen
+    // vorbehalten, die nur im Handelsregister stehen; ein Suchtreffer bekommt
+    // darum keine eigene Füllung mehr, sondern einen Ring. Sonst sähen ein
+    // gesuchter Verein und ein Registerfund gleich aus.
+    g.fillStyle = (n.typ==="organisation" && n.q==="r") ? cssFarbe("--q-reg")
+                : netzFarben()[n.typ];
     g.beginPath(); g.arc(n.x,n.y,r,0,Math.PI*2); g.fill();
+    if(n.typ==="organisation" && n.q==="r"){
+      // Ring auch hier, damit die Unterscheidung nicht allein an der Farbe hängt
+      g.strokeStyle=cssFarbe("--q-reg-ink"); g.lineWidth=1.6/netzZoom;
+      g.beginPath(); g.arc(n.x,n.y,r+2.5/netzZoom,0,Math.PI*2); g.stroke();
+    }
+    if(treffer){
+      g.strokeStyle=cssFarbe("--focus"); g.lineWidth=2.6/netzZoom;
+      g.beginPath(); g.arc(n.x,n.y,r+4/netzZoom,0,Math.PI*2); g.stroke();
+    }
     if(netzGewaehlt && n.id===netzGewaehlt.id){
       g.strokeStyle=cssFarbe("--ink"); g.lineWidth=2/netzZoom; g.stroke();
     }

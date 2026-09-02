@@ -254,14 +254,13 @@ def rest_anreichern(orgs, zugang):
             "uid": v.get("uid"),
             "sitz": v.get("legalSeat"),
             "kanton": v.get("canton"),
-            "ort": adresse.get("town") or v.get("legalSeat"),
-            "rechtsform": (v.get("legalForm") or {}).get("name", {}).get("de")
-                          if isinstance(v.get("legalForm"), dict) else None,
-            "status": v.get("status"),
+            "ort": adresse.get("city") or v.get("legalSeat"),
+            "rechtsform": deutsch((v.get("legalForm") or {}).get("name")),
+            "status": STATUS.get(v.get("status"), v.get("status")),
             "geloescht_am": v.get("deletionDate"),
             "zweck": kuerzen(v.get("purpose")),
             "frueher": [n.get("name") for n in (v.get("oldNames") or []) if n.get("name")][:4],
-            "url": v.get("zefixDetailWeb") or v.get("cantonalExcerptWeb"),
+            "url": deutsch(v.get("zefixDetailWeb")) or v.get("cantonalExcerptWeb"),
         }
         if i % 10 == 0:
             print(f"   ... {i}/{len(orgs)} am Register geprüft", flush=True)
@@ -272,6 +271,27 @@ def rest_anreichern(orgs, zugang):
 def kuerzen(s, n=240):
     s = re.sub(r"\s+", " ", s or "").strip()
     return s if len(s) <= n else s[:n].rsplit(" ", 1)[0] + " …"
+
+
+def deutsch(feld):
+    """Mehrsprachige Felder der API (DFIEString) auf Deutsch herunterbrechen.
+
+    legalForm.name und zefixDetailWeb sind keine Zeichenketten, sondern Objekte
+    mit den Schlüsseln de, fr, it und en. Wer sie direkt weitergibt, schreibt
+    ein Objekt in die Seite.
+    """
+    if isinstance(feld, dict):
+        for s in ("de", "fr", "it", "en"):
+            if feld.get(s):
+                return feld[s]
+        return None
+    return feld or None
+
+
+# status ist laut Schnittstellenbeschreibung auf drei Werte festgelegt.
+STATUS = {"ACTIVE": "aktiv",
+          "CANCELLED": "gelöscht",
+          "BEING_CANCELLED": "in Löschung"}
 
 
 def main():
@@ -334,11 +354,12 @@ def main():
             if not a:
                 continue
             e["amtlich"] = a
-            if a.get("geloescht_am") or (a.get("status") or "").upper().startswith("GEL"):
+            if a.get("geloescht_am") or a.get("status") in ("gelöscht", "in Löschung"):
+                wie = "in Löschung" if a.get("status") == "in Löschung" else "gelöscht"
                 befunde.append({"art": "geloescht", "organisation": e["organisation"],
                                 "mitglieder": e["mitglieder"],
-                                "text": f"im Handelsregister gelöscht"
-                                        + (f" am {a['geloescht_am']}" if a.get("geloescht_am") else ""),
+                                "text": f"im Handelsregister {wie}"
+                                        + (f", Datum {a['geloescht_am']}" if a.get("geloescht_am") else ""),
                                 "url": a.get("url")})
             elif e in offen:
                 treffer = a.get("frueher") and "früherer Name" or "Namensvariante"

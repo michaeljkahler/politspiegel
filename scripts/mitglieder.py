@@ -175,7 +175,8 @@ def einlesen():
     mitglieder = []
     for cid, j in roh.items():
         angaben = contact_parsen(j.get("data_contact"))
-        interessen = angaben.get("Interessenbindungen", [])
+        interessen = interessen_zusammenfuegen(
+            angaben.get("Interessenbindungen", []))
         mitglieder.append({
             "cid": cid,
             "nachname": (j.get("data_familyName") or "").strip(),
@@ -194,6 +195,47 @@ def einlesen():
         })
     mitglieder.sort(key=lambda m: (m["nachname"], m["vorname"]))
     return mitglieder
+
+
+def interessen_zusammenfuegen(zeilen):
+    """Umbrüche in der Deklaration wieder zusammenführen.
+
+    Auf sh.ch bricht eine lange Interessenbindung über zwei Zeilen um, und die
+    Rolle landet allein auf der zweiten. Zeilenweise eingelesen werden daraus
+    zwei Einträge:
+
+        «- Verwaltungskommission Kant. Gebäudeversicherung Schaffhausen,»
+        «Mitglied»
+
+    Das kostet nicht nur eine saubere Darstellung. Im Beziehungsnetz entsteht
+    daraus eine Organisation namens «Mitglied», und bei Peter Neukomm fehlte
+    darum die Energiepolitische Kommission des Städteverbands als vollständiger
+    Eintrag.
+
+    Das Komma am Zeilenende taugt nicht als Merkmal, Neukomms abgerissene Zeile
+    endet auf «(EKK)». Der Aufzählungsstrich allein taugt auch nicht: sieben
+    Profile führen ihre ganze Deklaration ohne Striche. Beides zusammen trägt.
+    Führt eine Person überhaupt Striche, dann beginnt jeder echte Eintrag mit
+    einem, und eine strichlose Zeile gehört zur vorherigen.
+    """
+    zeilen = [(z or "").strip() for z in zeilen]
+    zeilen = [z for z in zeilen if z]
+    strich = lambda z: bool(re.match(r"^[-\u2013\u2014\u2022*]\s*", z))
+    if not any(strich(z) for z in zeilen):
+        return zeilen
+    raus = []
+    for z in zeilen:
+        if raus and not strich(z):
+            vor = raus[-1].rstrip()
+            # Die Trennung «Organisation, Rolle» hängt am Komma. Bricht die
+            # Zeile ohne eines um und beginnt die Fortsetzung gross, ist sie
+            # die Rolle und bekommt ihr Komma. Beginnt sie klein («und
+            # Extremismus …»), ist es ein Satzrest und wird nur angehängt.
+            fuge = " " if (vor.endswith(",") or not z[:1].isupper()) else ", "
+            raus[-1] = vor + fuge + z
+        else:
+            raus.append(z)
+    return raus
 
 
 def main():
