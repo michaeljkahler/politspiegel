@@ -1,0 +1,4247 @@
+{
+ "stand": "2026-09-01",
+ "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat/Mitglieder-und-Parteien/Mitglieder-und-Fraktionen-2304166-DE.html",
+ "knoten": [
+  {
+   "id": "m:Aellig|Pentti",
+   "typ": "mitglied",
+   "label": "Pentti Aellig",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:bytix",
+   "typ": "organisation",
+   "label": "Bytix AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Zürich",
+   "anzahl": 1
+  },
+  {
+   "id": "b:Wirtschaft und Gewerbe",
+   "typ": "branche",
+   "label": "Wirtschaft und Gewerbe",
+   "anzahl": 21
+  },
+  {
+   "id": "o:dorflingen",
+   "typ": "organisation",
+   "label": "Dörflingen",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Gemeinden und Behörden",
+   "typ": "branche",
+   "label": "Gemeinden und Behörden",
+   "anzahl": 18
+  },
+  {
+   "id": "m:Alaye|Mayowa",
+   "typ": "mitglied",
+   "label": "Mayowa Alaye",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:glp schaffhausen",
+   "typ": "organisation",
+   "label": "GLP Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 3
+  },
+  {
+   "id": "b:Parteien",
+   "typ": "branche",
+   "label": "Parteien",
+   "anzahl": 24
+  },
+  {
+   "id": "m:Altorfer|Leonie",
+   "typ": "mitglied",
+   "label": "Leonie Altorfer",
+   "partei": "JUSO",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Bolli|Fabian",
+   "typ": "mitglied",
+   "label": "Fabian Bolli",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:handball pfader neuhausen",
+   "typ": "organisation",
+   "label": "Handball Pfader Neuhausen (Verein)",
+   "branche": "Sport und Freizeit",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Sport und Freizeit",
+   "typ": "branche",
+   "label": "Sport und Freizeit",
+   "anzahl": 5
+  },
+  {
+   "id": "o:gemeinde neuhausen einwohnerrat gpk",
+   "typ": "organisation",
+   "label": "Gemeinde Neuhausen; Einwohnerrat, GPK",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Brenn|Franziska",
+   "typ": "mitglied",
+   "label": "Franziska Brenn",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:stiftung betreutes wohnen",
+   "typ": "organisation",
+   "label": "Stiftung betreutes Wohnen",
+   "branche": "Soziales und Hilfswerke",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "b:Soziales und Hilfswerke",
+   "typ": "branche",
+   "label": "Soziales und Hilfswerke",
+   "anzahl": 12
+  },
+  {
+   "id": "o:stiftung schonhalde",
+   "typ": "organisation",
+   "label": "Stiftung Schönhalde",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Neuhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "b:Berufs- und Interessenverbände",
+   "typ": "branche",
+   "label": "Berufs- und Interessenverbände",
+   "anzahl": 29
+  },
+  {
+   "id": "m:Brügel|Anna",
+   "typ": "mitglied",
+   "label": "Anna Brügel",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:ev haeny stiftung",
+   "typ": "organisation",
+   "label": "Ev Haeny-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:sah schaffhausen schweizerisches arbeitshilfswerk",
+   "typ": "organisation",
+   "label": "SAH Schaffhausen (Schweizerisches Arbeitshilfswerk)",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:zukunft spitaler schaffhausen",
+   "typ": "organisation",
+   "label": "Verein Zukunft Spitäler Schaffhausen",
+   "branche": "Gesundheit und Pflege",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "b:Gesundheit und Pflege",
+   "typ": "branche",
+   "label": "Gesundheit und Pflege",
+   "anzahl": 6
+  },
+  {
+   "id": "m:Bucher|Tim",
+   "typ": "mitglied",
+   "label": "Tim Bucher",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "m:De Ventura|Linda",
+   "typ": "mitglied",
+   "label": "Linda De Ventura",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 5
+  },
+  {
+   "id": "o:fachstelle fur gewaltbetroffene",
+   "typ": "organisation",
+   "label": "Verein Fachstelle für Gewaltbetroffene",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:mieterinnen und mieterverband schaffhausen",
+   "typ": "organisation",
+   "label": "Mieterinnen- und Mieterverband Schaffhausen",
+   "branche": "Wohnen und Immobilien",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "b:Wohnen und Immobilien",
+   "typ": "branche",
+   "label": "Wohnen und Immobilien",
+   "anzahl": 9
+  },
+  {
+   "id": "o:frau macht politik",
+   "typ": "organisation",
+   "label": "Frau macht Politik",
+   "branche": "Soziales und Hilfswerke",
+   "ort": "Schaffhausen",
+   "anzahl": 2
+  },
+  {
+   "id": "o:sp schaffhausen",
+   "typ": "organisation",
+   "label": "SP Kanton Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 3
+  },
+  {
+   "id": "o:nationalrarin sicherheitspolitische kommission",
+   "typ": "organisation",
+   "label": "Nationalrärin, Sicherheitspolitische Kommission",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Derksen|Theresia",
+   "typ": "mitglied",
+   "label": "Theresia Derksen",
+   "partei": "Die Mitte",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Di Ronco|Christian",
+   "typ": "mitglied",
+   "label": "Christian Di Ronco",
+   "partei": "Die Mitte",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 5
+  },
+  {
+   "id": "o:energieverbund neuhausen",
+   "typ": "organisation",
+   "label": "Energieverbund Neuhausen AG",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Energie und Umwelt",
+   "typ": "branche",
+   "label": "Energie und Umwelt",
+   "anzahl": 11
+  },
+  {
+   "id": "o:alterszentrum und spitex neuhausen am rheinfall",
+   "typ": "organisation",
+   "label": "Alterszentrum und Spitex Neuhausen am Rheinfall",
+   "branche": "Gesundheit und Pflege",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:pro senectute schaffhausen",
+   "typ": "organisation",
+   "label": "Pro Senectute Kanton Schaffhausen",
+   "branche": "Gesundheit und Pflege",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:paul und clotilde sonderegger van den avont stiftung",
+   "typ": "organisation",
+   "label": "Paul und Clotilde Sonderegger-Van den Avont Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:vsr rentnervereinigung schaffhausen",
+   "typ": "organisation",
+   "label": "VSR Rentnervereinigung Schaffhausen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Egger|Martin",
+   "typ": "mitglied",
+   "label": "Martin Egger",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 5
+  },
+  {
+   "id": "o:burgerliche witwen und waisenstiftung",
+   "typ": "organisation",
+   "label": "Bürgerliche Witwen und Waisenstiftung",
+   "branche": "Soziales und Hilfswerke",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:hauseigentumerverband schaffhausen",
+   "typ": "organisation",
+   "label": "Hauseigentümerverband Schaffhausen",
+   "branche": "Wohnen und Immobilien",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:diabetesgesellschaft schaffhausen",
+   "typ": "organisation",
+   "label": "Diabetesgesellschaft Schaffhausen",
+   "branche": "Gesundheit und Pflege",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:fdp schaffhausen",
+   "typ": "organisation",
+   "label": "FDP Kanton Schaffhausen",
+   "branche": "Parteien",
+   "ort": "Schaffhausen",
+   "anzahl": 2
+  },
+  {
+   "id": "o:fdp stadt schaffhausen",
+   "typ": "organisation",
+   "label": "FDP Stadt Schaffhausen",
+   "branche": "Parteien",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Faccani|Diego",
+   "typ": "mitglied",
+   "label": "Diego Faccani",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:faccani schuhe",
+   "typ": "organisation",
+   "label": "Faccani Schuhe AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Fehr|Markus",
+   "typ": "mitglied",
+   "label": "Markus Fehr",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Fioretti|Mariano",
+   "typ": "mitglied",
+   "label": "Mariano Fioretti",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:grosser stadtrat schaffhausen",
+   "typ": "organisation",
+   "label": "Grosser Stadtrat Schaffhausen",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 3
+  },
+  {
+   "id": "m:Flubacher Rüedlinger|Melanie",
+   "typ": "mitglied",
+   "label": "Melanie Flubacher Rüedlinger",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Freivogel|Matthias",
+   "typ": "mitglied",
+   "label": "Matthias Freivogel",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:66k gallerie fur gegenwartskunst",
+   "typ": "organisation",
+   "label": "Verein 66K (Gallerie für Gegenwartskunst",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Kultur und Medien",
+   "typ": "branche",
+   "label": "Kultur und Medien",
+   "anzahl": 15
+  },
+  {
+   "id": "o:theaterkommission stadt schaffhausen",
+   "typ": "organisation",
+   "label": "Theaterkommission Stadt Schaffhausen",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Graf|Hansueli",
+   "typ": "mitglied",
+   "label": "Hansueli Graf",
+   "partei": "SVP Agro",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:landenergie schaffhausen oberhallau",
+   "typ": "organisation",
+   "label": "Verein Landenergie Schaffhausen Oberhallau",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:schaffhauser bauernverband",
+   "typ": "organisation",
+   "label": "Schaffhauser Bauernverband",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Landwirtschaft und Wein",
+   "typ": "branche",
+   "label": "Landwirtschaft und Wein",
+   "anzahl": 9
+  },
+  {
+   "id": "m:Gruhler Heinzer|Irene",
+   "typ": "mitglied",
+   "label": "Irene Gruhler Heinzer",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:krebsliga schaffhausen",
+   "typ": "organisation",
+   "label": "Krebsliga Schaffhausen",
+   "branche": "Gesundheit und Pflege",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:abwasserverband stein am rhein und umgebung bba",
+   "typ": "organisation",
+   "label": "Abwasserverband Stein am Rhein und Umgebung, BBA",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:sp sh",
+   "typ": "organisation",
+   "label": "SP Kanton SH",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Hedinger|Beat",
+   "typ": "mitglied",
+   "label": "Beat Hedinger",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:stiftung bergtrotte osterfingen",
+   "typ": "organisation",
+   "label": "Stiftung Bergtrotte Osterfingen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:radio munot club",
+   "typ": "organisation",
+   "label": "Radio Munot Club",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:genussregion wilchingen osterfingen trasadingen",
+   "typ": "organisation",
+   "label": "Genussregion Wilchingen/Osterfingen/Trasadingen",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Herren|Nicole",
+   "typ": "mitglied",
+   "label": "Nicole Herren",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 4
+  },
+  {
+   "id": "o:stadtischer gewerbeverband sh",
+   "typ": "organisation",
+   "label": "Städtischer Gewerbeverband SH",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:herrenacker parkhaus",
+   "typ": "organisation",
+   "label": "Herrenacker Parkhaus AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:gemeinnutzige stiftung schweizersbild",
+   "typ": "organisation",
+   "label": "Gemeinnützige Stiftung Schweizersbild",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "m:Hotz|Walter",
+   "typ": "mitglied",
+   "label": "Walter Hotz",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:sapi hotz industrielle automation",
+   "typ": "organisation",
+   "label": "Sapi-Hotz Industrielle Automation",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Isliker|Arnold",
+   "typ": "mitglied",
+   "label": "Arnold Isliker",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:einwohnerrat gemeinde neuhausen am rheinfall",
+   "typ": "organisation",
+   "label": "Einwohnerrat Gemeinde Neuhausen am Rheinfall",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Isliker|Deborah",
+   "typ": "mitglied",
+   "label": "Deborah Isliker",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 5
+  },
+  {
+   "id": "o:ortsmarketing neuhausen",
+   "typ": "organisation",
+   "label": "Ortsmarketing Neuhausen",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:traktorenfest guntmadigen",
+   "typ": "organisation",
+   "label": "Traktorenfest Guntmadigen",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:einwohnerrat gemeinde neuhausen",
+   "typ": "organisation",
+   "label": "Einwohnerrat Gemeinde Neuhausen",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:astag sektion schaffhauen kgv",
+   "typ": "organisation",
+   "label": "ASTAG Sektion Schaffhauen, KGV",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Verkehr",
+   "typ": "branche",
+   "label": "Verkehr",
+   "anzahl": 7
+  },
+  {
+   "id": "m:Kräuchi|Raphael",
+   "typ": "mitglied",
+   "label": "Raphael Kräuchi",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:stiftung forum fur weiterbildung stiftungsratsmitglied",
+   "typ": "organisation",
+   "label": "Stiftung Forum für Weiterbildung, Stiftungsratsmitglied",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Bildung und Wissenschaft",
+   "typ": "branche",
+   "label": "Bildung und Wissenschaft",
+   "anzahl": 8
+  },
+  {
+   "id": "o:kaufmannischer verband schaffhausen",
+   "typ": "organisation",
+   "label": "Kaufmännischer Verband Schaffhausen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:skkbs schweizerische konferenz kaufmannischen berufsfachschulen",
+   "typ": "organisation",
+   "label": "SKKBS Schweizerische Konferenz der Kaufmännischen Berufsfachschulen",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Laich|Lorenz",
+   "typ": "mitglied",
+   "label": "Lorenz Laich",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 6
+  },
+  {
+   "id": "o:vorsitzender clientis bs bank schaffhausen",
+   "typ": "organisation",
+   "label": "Vorsitzender der Clientis BS Bank Schaffhausen AG",
+   "branche": "Banken und Versicherungen",
+   "ort": "Hallau",
+   "anzahl": 1
+  },
+  {
+   "id": "b:Banken und Versicherungen",
+   "typ": "branche",
+   "label": "Banken und Versicherungen",
+   "anzahl": 4
+  },
+  {
+   "id": "o:munot invest",
+   "typ": "organisation",
+   "label": "Munot Invest AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Dörflingen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:jessica und martin blumer stiftung",
+   "typ": "organisation",
+   "label": "Jessica und Martin Blumer-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Dörflingen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:kant gewerbeverbands",
+   "typ": "organisation",
+   "label": "des Kant. Gewerbeverbands",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:aufsichtskommission handelsschule kaufm verbands",
+   "typ": "organisation",
+   "label": "der Aufsichtskommission Handelsschule des kaufm. Verbands",
+   "branche": "Bildung und Wissenschaft",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:bei stiftung museumsbahn stein am rhein etzwilen hemishofen ramsen rielasingen singen sehr rs",
+   "typ": "organisation",
+   "label": "bei der Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Lang|Svea",
+   "typ": "mitglied",
+   "label": "Svea Lang",
+   "partei": "JSVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:jsvp schaffhauen",
+   "typ": "organisation",
+   "label": "JSVP, Schaffhauen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:jugendparlament schaffhausen",
+   "typ": "organisation",
+   "label": "Jugendparlament Schaffhausen",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Le Donne|Vanessa",
+   "typ": "mitglied",
+   "label": "Vanessa Le Donne",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:soziale dienste gde beringen",
+   "typ": "organisation",
+   "label": "Soziale Dienste, Gde. Beringen",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:iiz steuergruppe",
+   "typ": "organisation",
+   "label": "IIZ Steuergruppe",
+   "branche": "Gemeinden und Behörden",
+   "ort": "Kanton Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:pex kaufmann kauffrau efz",
+   "typ": "organisation",
+   "label": "PEX Kaufmann/Kauffrau EFZ",
+   "branche": "Bildung und Wissenschaft",
+   "ort": "Kanton Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Leu|Markus",
+   "typ": "mitglied",
+   "label": "Markus Leu",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:hev schaffhausen",
+   "typ": "organisation",
+   "label": "HEV Schaffhausen",
+   "branche": "Wohnen und Immobilien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:pk sbv",
+   "typ": "organisation",
+   "label": "PK SBV",
+   "branche": "Banken und Versicherungen",
+   "ort": "Zürich",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Litscher|Monika",
+   "typ": "mitglied",
+   "label": "Monika Litscher",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:verband schulleitenden schaffhausen",
+   "typ": "organisation",
+   "label": "Verband der Schulleitenden Schaffhausen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Looser|Bettina",
+   "typ": "mitglied",
+   "label": "Bettina Looser",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 6
+  },
+  {
+   "id": "o:erziehungsrat sh",
+   "typ": "organisation",
+   "label": "Erziehungsrat KT SH",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "typ": "organisation",
+   "label": "Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:und extremismus nap sh im rahmen anstellung an phsh",
+   "typ": "organisation",
+   "label": "und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:migros kulturprozent ici gemeinsam hier jurymitglied i v ekm",
+   "typ": "organisation",
+   "label": "Migros Kulturprozent, «Ici -Gemeinsam hier», Jurymitglied (i. V. EKM)",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
+   "typ": "organisation",
+   "label": "CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:und freiburg i v ekm",
+   "typ": "organisation",
+   "label": "und Freiburg, (i. V. EKM)",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Übrige",
+   "typ": "branche",
+   "label": "Übrige",
+   "anzahl": 5
+  },
+  {
+   "id": "m:Looser|Gianluca",
+   "typ": "mitglied",
+   "label": "Gianluca Looser",
+   "partei": "Junge Grüne",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "typ": "organisation",
+   "label": "Eidgenässische Kommission für Kinder- und Jugendfragen (EKKJ)",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Lüthi|Isabelle",
+   "typ": "mitglied",
+   "label": "Isabelle Lüthi",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kulturmacherei schaffhausen",
+   "typ": "organisation",
+   "label": "Verein Kulturmacherei Schaffhausen",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Meyer|Daniel",
+   "typ": "mitglied",
+   "label": "Daniel Meyer",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:genossenschaft baum land ch",
+   "typ": "organisation",
+   "label": "Genossenschaft Baum-land.ch",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:sozialdemokratische partei neuhausen",
+   "typ": "organisation",
+   "label": "Sozialdemokratische Partei Neuhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Mundt|Michael",
+   "typ": "mitglied",
+   "label": "Michael Mundt",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 4
+  },
+  {
+   "id": "o:svp schaffhausen kantonalvorstand",
+   "typ": "organisation",
+   "label": "SVP Kanton Schaffhausen, Kantonalvorstand",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:acs sektion schaffhausen",
+   "typ": "organisation",
+   "label": "ACS Sektion Schaffhausen",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:ivs industrie und wirtschafts vereinigung schaffhausen",
+   "typ": "organisation",
+   "label": "IVS Industrie- und Wirtschafts-Vereinigung Schaffhausen",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Müller|Andrea",
+   "typ": "mitglied",
+   "label": "Andrea Müller",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:muller energie thayngen gesellschafter gl",
+   "typ": "organisation",
+   "label": "Müller Energie GmbH, Thayngen, Gesellschafter, GL",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:macheis immo gesellschafter gl",
+   "typ": "organisation",
+   "label": "MACHEIS Immo AG, Gesellschafter/GL",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp schaffhausen kantonalprasidentin",
+   "typ": "organisation",
+   "label": "SVP Schaffhausen, Kantonalpräsidentin",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Müller|Markus",
+   "typ": "mitglied",
+   "label": "Markus Müller",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 10
+  },
+  {
+   "id": "o:radio munot schaffhausen",
+   "typ": "organisation",
+   "label": "Radio Munot AG Schaffhausen",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:hauseigentumerverband hev schaffhausen",
+   "typ": "organisation",
+   "label": "Hauseigentümerverband HEV Schaffhausen",
+   "branche": "Wohnen und Immobilien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:herausgeberrat klettgauerbote",
+   "typ": "organisation",
+   "label": "Herausgeberrat Klettgauerbote",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:federation of european quarter horse associations feqha",
+   "typ": "organisation",
+   "label": "Federation of European Quarter Horse Associations (FEQHA)",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:american quarter horse association aqha amarillo texas usa",
+   "typ": "organisation",
+   "label": "American Quarter Horse Association (AQHA), Amarillo, Texas (USA)",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp schaffhausen",
+   "typ": "organisation",
+   "label": "SVP Kanton Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp lohningen",
+   "typ": "organisation",
+   "label": "SVP Löhningen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:ig lebensraum klettgau co",
+   "typ": "organisation",
+   "label": "IG Lebensraum Klettgau, Co",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:freier journalist",
+   "typ": "organisation",
+   "label": "freier Journalist",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:lohninger ziiting",
+   "typ": "organisation",
+   "label": "Löhninger Ziiting",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Müller|Roland",
+   "typ": "mitglied",
+   "label": "Roland Müller",
+   "partei": "GRÜNE",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 6
+  },
+  {
+   "id": "o:einwohnerrat",
+   "typ": "organisation",
+   "label": "Einwohnerrat",
+   "branche": "Gemeinden und Behörden",
+   "ort": "Neuhausen am Rheinfall",
+   "anzahl": 1
+  },
+  {
+   "id": "o:gpk einwohnerrat neuhausen am rheinfall",
+   "typ": "organisation",
+   "label": "GPK, Einwohnerrat Neuhausen am Rheinfall",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:fachkommission swiss designer schools",
+   "typ": "organisation",
+   "label": "Fachkommission Swiss-designer-schools",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Bern",
+   "anzahl": 1
+  },
+  {
+   "id": "o:tischtennisclub neuhausen",
+   "typ": "organisation",
+   "label": "Tischtennisclub Neuhausen",
+   "branche": "Sport und Freizeit",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:fur judische geschichte gailingen e v",
+   "typ": "organisation",
+   "label": "Verein für jüdische Geschichte Gailingen e.V",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kantonalkommission pro infirmis thurgau schaffhausen",
+   "typ": "organisation",
+   "label": "Kantonalkommission Pro Infirmis Thurgau-Schaffhausen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Neukomm|Peter",
+   "typ": "mitglied",
+   "label": "Peter Neukomm",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 15
+  },
+  {
+   "id": "o:georg fischer preis",
+   "typ": "organisation",
+   "label": "Georg Fischer Preis",
+   "branche": "Kultur und Medien",
+   "ort": "Schaffhausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:verwaltung kraftwerk schaffhausen",
+   "typ": "organisation",
+   "label": "Verwaltung Kraftwerk Schaffhausen AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:sasag koomunikations",
+   "typ": "organisation",
+   "label": "Sasag Koomunikations AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:parkhaus herrenacker",
+   "typ": "organisation",
+   "label": "Parkhaus Herrenacker AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:swisspower",
+   "typ": "organisation",
+   "label": "Swisspower AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:internationale bachgesellschaft schaffhausen",
+   "typ": "organisation",
+   "label": "Internationale Bachgesellschaft Schaffhausen",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "o:gonnerverein schaffhauser az",
+   "typ": "organisation",
+   "label": "Gönnerverein schaffhauser az",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "o:tourismuskommission schaffhauserland tourismus",
+   "typ": "organisation",
+   "label": "Tourismuskommission Schaffhauserland Tourismus",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:metropolitankonferenz zurich metrorat stadtekammer",
+   "typ": "organisation",
+   "label": "Metropolitankonferenz Zürich, Metrorat, Städtekammer",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:internationaler stadtebund bodensee leitungsgruppe",
+   "typ": "organisation",
+   "label": "Internationaler Städtebund Bodensee, Leitungsgruppe",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:klaranlageverbandes sh",
+   "typ": "organisation",
+   "label": "Kläranlageverbandes SH",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:sp stadt schaffhausen",
+   "typ": "organisation",
+   "label": "SP Stadt Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "o:verband gemeindeprasidentinnen vggsh",
+   "typ": "organisation",
+   "label": "Verband der GemeindepräsidentInnen (VGGSH)",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:energiepolitische kommission schweizerischen stadteverbands ekk",
+   "typ": "organisation",
+   "label": "Energiepolitische Kommission des Schweizerischen Städteverbands(EKK)",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:schaffhauen",
+   "typ": "organisation",
+   "label": "Schaffhauen",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Neumann|Eva",
+   "typ": "mitglied",
+   "label": "Eva Neumann",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Passafaro|Marco",
+   "typ": "mitglied",
+   "label": "Marco Passafaro",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Penkov|Angela",
+   "typ": "mitglied",
+   "label": "Angela Penkov",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:lindenforum",
+   "typ": "organisation",
+   "label": "Verein Lindenforum",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:grosser stadtrat sh",
+   "typ": "organisation",
+   "label": "Grosser Stadtrat SH",
+   "branche": "Gemeinden und Behörden",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Pfalzgraf|Maurus",
+   "typ": "mitglied",
+   "label": "Maurus Pfalzgraf",
+   "partei": "Grüne",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:sholar selbstbau genossenschaft schaffhauen verwaltung",
+   "typ": "organisation",
+   "label": "SHolar-Selbstbau Genossenschaft, Schaffhauen, Verwaltung",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:pro velo schaffhauen",
+   "typ": "organisation",
+   "label": "Pro Velo, Schaffhauen",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Portmann|Patrick",
+   "typ": "mitglied",
+   "label": "Patrick Portmann",
+   "partei": "SP",
+   "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+   "bild": true,
+   "anzahl": 9
+  },
+  {
+   "id": "o:polizeibeamtenverband",
+   "typ": "organisation",
+   "label": "Polizeibeamtenverband",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:vpod",
+   "typ": "organisation",
+   "label": "VPOD",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:wwf",
+   "typ": "organisation",
+   "label": "WWF",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:brava terre femmes schweiz",
+   "typ": "organisation",
+   "label": "Brava (TERRE DES FEMMES SCHWEIZ)",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:greenpeace",
+   "typ": "organisation",
+   "label": "Greenpeace",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:vogelwarte sempach",
+   "typ": "organisation",
+   "label": "Vogelwarte Sempach",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:clean up schaffhausen",
+   "typ": "organisation",
+   "label": "Clean-up Schaffhausen",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Rohner|Raphaël",
+   "typ": "mitglied",
+   "label": "Raphaël Rohner",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 13
+  },
+  {
+   "id": "o:tcs sektion schaffhausen",
+   "typ": "organisation",
+   "label": "TCS Sektion Schaffhausen",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:mcs schaffhausen",
+   "typ": "organisation",
+   "label": "MCS Schaffhausen",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:burgerliche witwen und waisenstiftung schaffhausen",
+   "typ": "organisation",
+   "label": "Bürgerliche Witwen- und Waisenstiftung Schaffhausen",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:srk schaffhausen",
+   "typ": "organisation",
+   "label": "SRK Schaffhausen",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:zunft zum webern schaffhausen 2",
+   "typ": "organisation",
+   "label": "Zunft zum Webern Schaffhausen, 2.",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:handelsschule kv schaffhausen aufsichtskommission",
+   "typ": "organisation",
+   "label": "Handelsschule KV Schaffhausen, Aufsichtskommission",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kantonale berufsmaturitatskommission schaffhausen",
+   "typ": "organisation",
+   "label": "Kantonale Berufsmaturitätskommission Schaffhausen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:museum im zeughaus",
+   "typ": "organisation",
+   "label": "Verein Museum im Zeughaus",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:stiftung schule fur berufliche aus und weiterbildung",
+   "typ": "organisation",
+   "label": "Stiftung Schule für berufliche Aus- und Weiterbildung",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kunzle stiftung",
+   "typ": "organisation",
+   "label": "Künzle-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Salathé|Regula",
+   "typ": "mitglied",
+   "label": "Regula Salathé",
+   "partei": "EVP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:pflege und wohnheim sonnmatt wilchingen aufsichtskommissionsmitglied",
+   "typ": "organisation",
+   "label": "Pflege und Wohnheim Sonnmatt, Wilchingen, Aufsichtskommissionsmitglied",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Scheck|Peter",
+   "typ": "mitglied",
+   "label": "Peter Scheck",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 0
+  },
+  {
+   "id": "m:Schlatter|Hermann",
+   "typ": "mitglied",
+   "label": "Hermann Schlatter",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:bling bling schaffhausen",
+   "typ": "organisation",
+   "label": "Bling Bling Schaffhausen GmbH",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp stadt schaffhausen",
+   "typ": "organisation",
+   "label": "SVP Stadt Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:randenvereinigung",
+   "typ": "organisation",
+   "label": "Randenvereinigung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schlatter|Martin",
+   "typ": "mitglied",
+   "label": "Martin Schlatter",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 7
+  },
+  {
+   "id": "o:wald schaffhausen",
+   "typ": "organisation",
+   "label": "Wald Schaffhausen",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:guterkorporation beringen",
+   "typ": "organisation",
+   "label": "Güterkorporation Beringen",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:begleitgruppe vernetzungsprojekt beringen lohningen neuhausen",
+   "typ": "organisation",
+   "label": "Begleitgruppe Vernetzungsprojekt Beringen-Löhningen-Neuhausen",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp sh",
+   "typ": "organisation",
+   "label": "SVP Kanton SH",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:svp kreispartei klettgau",
+   "typ": "organisation",
+   "label": "SVP Kreispartei Klettgau",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 2
+  },
+  {
+   "id": "o:landw genossenschaft",
+   "typ": "organisation",
+   "label": "Landw. Genossenschaft",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Beringen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:mannerriege",
+   "typ": "organisation",
+   "label": "Männerriege",
+   "branche": "Sport und Freizeit",
+   "ort": "Beringen",
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schlatter|Roman",
+   "typ": "mitglied",
+   "label": "Roman Schlatter",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:landwirtschaftliche genossenschaft beringen",
+   "typ": "organisation",
+   "label": "Landwirtschaftliche Genossenschaft Beringen",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:ip service team nahrstoff und direktzahlungsfragen",
+   "typ": "organisation",
+   "label": "IP Service Team (Nährstoff und Direktzahlungsfragen)",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schmidig|Rainer",
+   "typ": "mitglied",
+   "label": "Rainer Schmidig",
+   "partei": "EVP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:verband rentnerinnen und rentner pensionskasse schaffhausen",
+   "typ": "organisation",
+   "label": "Verband der Rentnerinnen und Rentner der Pensionskasse Schaffhausen",
+   "branche": "Banken und Versicherungen",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schnetzler|Andreas",
+   "typ": "mitglied",
+   "label": "Andreas Schnetzler",
+   "partei": "EDU",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:edu schaffhausen",
+   "typ": "organisation",
+   "label": "EDU Kanton Schaffhausen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:voss vermehrungsorganisation schaffhauser saatgut",
+   "typ": "organisation",
+   "label": "VOSS (Vermehrungsorganisation Schaffhauser Saatgut)",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kantonale natur und heimatschutzkommission knhk als lw vertreter",
+   "typ": "organisation",
+   "label": "Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schraff|Jannik",
+   "typ": "mitglied",
+   "label": "Jannik Schraff",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:smg immobilien",
+   "typ": "organisation",
+   "label": "SMG Immobilien AG",
+   "branche": "Wohnen und Immobilien",
+   "ort": "Beringen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:schraff und muller beringen gesellschafter",
+   "typ": "organisation",
+   "label": "Schraff und Müller GmbH, Beringen, Gesellschafter",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:smg bau beringen gesellschafter",
+   "typ": "organisation",
+   "label": "SMG bau gmbh, Beringen, Gesellschafter",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schudel|Erich",
+   "typ": "mitglied",
+   "label": "Erich Schudel",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 6
+  },
+  {
+   "id": "o:svp beggingen",
+   "typ": "organisation",
+   "label": "SVP Beggingen",
+   "branche": "Parteien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:schutzenverein beggingen jungschutzenleiter",
+   "typ": "organisation",
+   "label": "Schützenverein Beggingen, Jungschützenleiter",
+   "branche": "Sport und Freizeit",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:msc randen",
+   "typ": "organisation",
+   "label": "MSC Randen",
+   "branche": "Verkehr",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:herausgeberrat klettgauer bote",
+   "typ": "organisation",
+   "label": "Herausgeberrat Klettgauer Bote",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kant gebaudeversicherung schaffhausen",
+   "typ": "organisation",
+   "label": "Kant. Gebäudeversicherung Schaffhausen",
+   "branche": "Banken und Versicherungen",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schärrer|Nina",
+   "typ": "mitglied",
+   "label": "Nina Schärrer",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:hauseigentumerverband sh",
+   "typ": "organisation",
+   "label": "Hauseigentümerverband Kanton SH",
+   "branche": "Wohnen und Immobilien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:frau macht politik co",
+   "typ": "organisation",
+   "label": "Frau macht Politik, CO",
+   "branche": "Soziales und Hilfswerke",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Schöpfer|Sandra",
+   "typ": "mitglied",
+   "label": "Sandra Schöpfer",
+   "partei": "EDU",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:pmb bau",
+   "typ": "organisation",
+   "label": "pmb bau ag",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Suter|Roman",
+   "typ": "mitglied",
+   "label": "Roman Suter",
+   "partei": "FDP",
+   "fraktion": "FDP-Die Mitte",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:slrg stein am rhein",
+   "typ": "organisation",
+   "label": "SLRG Stein am Rhein",
+   "branche": "Sport und Freizeit",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Tognella|Ivo",
+   "typ": "mitglied",
+   "label": "Ivo Tognella",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:tanner holzbau und sagerei",
+   "typ": "organisation",
+   "label": "Tanner Holzbau und Sägerei AG",
+   "branche": "Wohnen und Immobilien",
+   "ort": "Merishausen",
+   "anzahl": 1
+  },
+  {
+   "id": "o:randen immo begginen mitinhaber",
+   "typ": "organisation",
+   "label": "Randen Immo AG, Begginen, Mitinhaber",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:holzbau schweiz sektion schaffhausen",
+   "typ": "organisation",
+   "label": "Holzbau Schweiz Sektion Schaffhausen",
+   "branche": "Wohnen und Immobilien",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Ullmann|Corinne",
+   "typ": "mitglied",
+   "label": "Corinne Ullmann",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 3
+  },
+  {
+   "id": "o:jakob emma windler stiftung",
+   "typ": "organisation",
+   "label": "Jakob & Emma Windler-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Stein am Rhein",
+   "anzahl": 1
+  },
+  {
+   "id": "o:dr bruno herzer stiftng",
+   "typ": "organisation",
+   "label": "Dr. Bruno Herzer-Stiftng",
+   "branche": "Übrige",
+   "ort": "Stein am Rhein",
+   "anzahl": 1
+  },
+  {
+   "id": "o:tourismus stein am rhein",
+   "typ": "organisation",
+   "label": "Verein Tourismus Stein am Rhein",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "m:Würms|Josef",
+   "typ": "mitglied",
+   "label": "Josef Würms",
+   "partei": "SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 2
+  },
+  {
+   "id": "o:finanzprasident ramsen",
+   "typ": "organisation",
+   "label": "Finanzpräsident, Ramsen",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:klaranlageverband bibertal",
+   "typ": "organisation",
+   "label": "Kläranlageverband, Bibertal",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  }
+ ],
+ "kanten": [
+  {
+   "von": "m:Aellig|Pentti",
+   "nach": "o:bytix",
+   "rolle": "Verwaltungsrat, Geschäftsleiter",
+   "roh": "Verwaltungsrat & Geschäftsleiter Bytix AG, Zürich"
+  },
+  {
+   "von": "m:Aellig|Pentti",
+   "nach": "o:dorflingen",
+   "rolle": "Gemeindepräsident",
+   "roh": "Gemeindepräsident Dörflingen"
+  },
+  {
+   "von": "m:Alaye|Mayowa",
+   "nach": "o:glp schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- GLP Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Bolli|Fabian",
+   "nach": "o:glp schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- GLP Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Bolli|Fabian",
+   "nach": "o:handball pfader neuhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Handball Pfader Neuhausen (Verein), Vorstandsmitglied"
+  },
+  {
+   "von": "m:Bolli|Fabian",
+   "nach": "o:gemeinde neuhausen einwohnerrat gpk",
+   "rolle": "Präsident",
+   "roh": "- Gemeinde Neuhausen; Einwohnerrat, Präsident GPK"
+  },
+  {
+   "von": "m:Brenn|Franziska",
+   "nach": "o:stiftung betreutes wohnen",
+   "rolle": "Stiftungsrätin",
+   "roh": "Stiftung betreutes Wohnen, Schaffhausen, Stiftungsrätin"
+  },
+  {
+   "von": "m:Brenn|Franziska",
+   "nach": "o:stiftung schonhalde",
+   "rolle": "Stiftungsrätin",
+   "roh": "Stiftung Schönhalde, Neuhausen, Stiftungsrätin"
+  },
+  {
+   "von": "m:Brügel|Anna",
+   "nach": "o:ev haeny stiftung",
+   "rolle": "Mitglied, Stiftungsrat",
+   "roh": "- Ev Haeny-Stiftung, Schaffhausen, Mitglied Stiftungsrat"
+  },
+  {
+   "von": "m:Brügel|Anna",
+   "nach": "o:sah schaffhausen schweizerisches arbeitshilfswerk",
+   "rolle": "Mitglied, Vorstand",
+   "roh": "- SAH Schaffhausen (Schweizerisches Arbeitshilfswerk), Mitglied Vorstand"
+  },
+  {
+   "von": "m:Brügel|Anna",
+   "nach": "o:zukunft spitaler schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verein Zukunft Spitäler Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Bucher|Tim",
+   "nach": "o:glp schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- GLP Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:De Ventura|Linda",
+   "nach": "o:fachstelle fur gewaltbetroffene",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verein Fachstelle für Gewaltbetroffene, Vorstandsmitglied (www.fsgb-sh.ch)"
+  },
+  {
+   "von": "m:De Ventura|Linda",
+   "nach": "o:mieterinnen und mieterverband schaffhausen",
+   "rolle": "Präsidentin",
+   "roh": "- Mieterinnen- und Mieterverband Schaffhausen, Präsidentin"
+  },
+  {
+   "von": "m:De Ventura|Linda",
+   "nach": "o:frau macht politik",
+   "rolle": "Vorstand",
+   "roh": "- Frau macht Politik, Schaffhausen, Vorstand"
+  },
+  {
+   "von": "m:De Ventura|Linda",
+   "nach": "o:sp schaffhausen",
+   "rolle": "Geschäftsleitung",
+   "roh": "- SP Kanton Schaffhausen, Geschäftsleitung"
+  },
+  {
+   "von": "m:De Ventura|Linda",
+   "nach": "o:nationalrarin sicherheitspolitische kommission",
+   "rolle": null,
+   "roh": "- Nationalrärin, Sicherheitspolitische Kommission"
+  },
+  {
+   "von": "m:Di Ronco|Christian",
+   "nach": "o:energieverbund neuhausen",
+   "rolle": "Verwaltungsrat",
+   "roh": "-Verwaltungsrat Energieverbund Neuhausen AG"
+  },
+  {
+   "von": "m:Di Ronco|Christian",
+   "nach": "o:alterszentrum und spitex neuhausen am rheinfall",
+   "rolle": "Präsident, Verwaltungskommission",
+   "roh": "-Präsident Verwaltungskommission Alterszentrum und Spitex Neuhausen am Rheinfall"
+  },
+  {
+   "von": "m:Di Ronco|Christian",
+   "nach": "o:pro senectute schaffhausen",
+   "rolle": "Stiftungsratspräsident",
+   "roh": "-Stiftungsratspräsident Pro Senectute Kanton Schaffhausen"
+  },
+  {
+   "von": "m:Di Ronco|Christian",
+   "nach": "o:paul und clotilde sonderegger van den avont stiftung",
+   "rolle": "Stiftungsratspräsident",
+   "roh": "-Stiftungsratspräsident Paul und Clotilde Sonderegger-Van den Avont Stiftung"
+  },
+  {
+   "von": "m:Di Ronco|Christian",
+   "nach": "o:vsr rentnervereinigung schaffhausen",
+   "rolle": "Beisitzer, Vorstand",
+   "roh": "-Beisitzer Vorstand VSR Rentnervereinigung Schaffhausen"
+  },
+  {
+   "von": "m:Egger|Martin",
+   "nach": "o:burgerliche witwen und waisenstiftung",
+   "rolle": "Stiftungsrat, Verwalter",
+   "roh": "- Bürgerliche Witwen und Waisenstiftung, Schaffhausen, Stiftungsrat, Verwalter"
+  },
+  {
+   "von": "m:Egger|Martin",
+   "nach": "o:hauseigentumerverband schaffhausen",
+   "rolle": "Vorstand, Mitglied",
+   "roh": "- Hauseigentümerverband Schaffhausen, Schaffhausen, Vorstand, Mitglied"
+  },
+  {
+   "von": "m:Egger|Martin",
+   "nach": "o:diabetesgesellschaft schaffhausen",
+   "rolle": "Vorstand, Mitglied",
+   "roh": "- Diabetesgesellschaft Schaffhausen, Schaffhausen, Vorstand, Mitglied"
+  },
+  {
+   "von": "m:Egger|Martin",
+   "nach": "o:fdp schaffhausen",
+   "rolle": "Vorstand, Mitglied",
+   "roh": "- FDP Kanton Schaffhausen, Schaffhausen, Vorstand, Mitglied"
+  },
+  {
+   "von": "m:Egger|Martin",
+   "nach": "o:fdp stadt schaffhausen",
+   "rolle": "Vorstand, Mitglied",
+   "roh": "- FDP Stadt Schaffhausen, Schaffhausen, Vorstand, Mitglied"
+  },
+  {
+   "von": "m:Faccani|Diego",
+   "nach": "o:faccani schuhe",
+   "rolle": "VR-Präsident",
+   "roh": "Faccani Schuhe AG, Schaffhausen, VR-Präsident"
+  },
+  {
+   "von": "m:Fioretti|Mariano",
+   "nach": "o:grosser stadtrat schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "Mitglied Grosser Stadtrat Schaffhausen"
+  },
+  {
+   "von": "m:Freivogel|Matthias",
+   "nach": "o:sp schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- SP Kanton Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Freivogel|Matthias",
+   "nach": "o:66k gallerie fur gegenwartskunst",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verein 66K (Gallerie für Gegenwartskunst, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Freivogel|Matthias",
+   "nach": "o:theaterkommission stadt schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "- Theaterkommission Stadt Schaffhausen, Mitglied"
+  },
+  {
+   "von": "m:Graf|Hansueli",
+   "nach": "o:landenergie schaffhausen oberhallau",
+   "rolle": "Präsident",
+   "roh": "- Verein Landenergie Schaffhausen Oberhallau, Präsident"
+  },
+  {
+   "von": "m:Graf|Hansueli",
+   "nach": "o:schaffhauser bauernverband",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Schaffhauser Bauernverband, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Gruhler Heinzer|Irene",
+   "nach": "o:krebsliga schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Krebsliga Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Gruhler Heinzer|Irene",
+   "nach": "o:abwasserverband stein am rhein und umgebung bba",
+   "rolle": "Präsidentin",
+   "roh": "- Abwasserverband Stein am Rhein und Umgebung, Präsidentin BBA"
+  },
+  {
+   "von": "m:Gruhler Heinzer|Irene",
+   "nach": "o:sp sh",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- SP Kanton SH, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Hedinger|Beat",
+   "nach": "o:stiftung bergtrotte osterfingen",
+   "rolle": "Stiftungsrat",
+   "roh": "-Stiftung Bergtrotte Osterfingen, Stiftungsrat"
+  },
+  {
+   "von": "m:Hedinger|Beat",
+   "nach": "o:radio munot club",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Radio Munot Club, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Hedinger|Beat",
+   "nach": "o:genussregion wilchingen osterfingen trasadingen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Genussregion Wilchingen/Osterfingen/Trasadingen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Herren|Nicole",
+   "nach": "o:stadtischer gewerbeverband sh",
+   "rolle": "Präsidentin",
+   "roh": "- Städtischer Gewerbeverband SH, Präsidentin"
+  },
+  {
+   "von": "m:Herren|Nicole",
+   "nach": "o:herrenacker parkhaus",
+   "rolle": "Vizepräsidentin",
+   "roh": "- Herrenacker Parkhaus AG, Vizepräsidentin"
+  },
+  {
+   "von": "m:Herren|Nicole",
+   "nach": "o:gemeinnutzige stiftung schweizersbild",
+   "rolle": "Stiftungsrätin",
+   "roh": "- Gemeinnützige Stiftung Schweizersbild, Stiftungsrätin"
+  },
+  {
+   "von": "m:Herren|Nicole",
+   "nach": "o:grosser stadtrat schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "- Grosser Stadtrat Schaffhausen, Mitglied"
+  },
+  {
+   "von": "m:Hotz|Walter",
+   "nach": "o:sapi hotz industrielle automation",
+   "rolle": "Inhaber",
+   "roh": "- Sapi-Hotz Industrielle Automation, Schaffhausen, Inhaber"
+  },
+  {
+   "von": "m:Isliker|Arnold",
+   "nach": "o:einwohnerrat gemeinde neuhausen am rheinfall",
+   "rolle": null,
+   "roh": "- Einwohnerrat Gemeinde Neuhausen am Rheinfall"
+  },
+  {
+   "von": "m:Isliker|Deborah",
+   "nach": "o:ortsmarketing neuhausen",
+   "rolle": "Präsidentin",
+   "roh": "- Ortsmarketing Neuhausen, Präsidentin"
+  },
+  {
+   "von": "m:Isliker|Deborah",
+   "nach": "o:traktorenfest guntmadigen",
+   "rolle": "Präsidentin",
+   "roh": "- Traktorenfest Guntmadigen, Präsidentin"
+  },
+  {
+   "von": "m:Isliker|Deborah",
+   "nach": "o:frau macht politik",
+   "rolle": "Vorstand",
+   "roh": "- Frau macht Politik, Vorstand"
+  },
+  {
+   "von": "m:Isliker|Deborah",
+   "nach": "o:einwohnerrat gemeinde neuhausen",
+   "rolle": "Mitglied",
+   "roh": "- Mitglied Einwohnerrat Gemeinde Neuhausen"
+  },
+  {
+   "von": "m:Isliker|Deborah",
+   "nach": "o:astag sektion schaffhauen kgv",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- ASTAG Sektion Schaffhauen, Vorstandsmitglied KGV"
+  },
+  {
+   "von": "m:Kräuchi|Raphael",
+   "nach": "o:stiftung forum fur weiterbildung stiftungsratsmitglied",
+   "rolle": null,
+   "roh": "- Stiftung Forum für Weiterbildung, Stiftungsratsmitglied"
+  },
+  {
+   "von": "m:Kräuchi|Raphael",
+   "nach": "o:kaufmannischer verband schaffhausen",
+   "rolle": "Vorstand, Beisitzer",
+   "roh": "- Kaufmännischer Verband Schaffhausen, Vorstand, Beisitzer"
+  },
+  {
+   "von": "m:Kräuchi|Raphael",
+   "nach": "o:skkbs schweizerische konferenz kaufmannischen berufsfachschulen",
+   "rolle": "Vorstand",
+   "roh": "- SKKBS Schweizerische Konferenz der Kaufmännischen Berufsfachschulen, Vorstand"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:vorsitzender clientis bs bank schaffhausen",
+   "rolle": "Geschäftsleitung",
+   "roh": "Vorsitzender der Geschäftsleitung Clientis BS Bank Schaffhausen AG, Hallau"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:munot invest",
+   "rolle": "Verwaltungsrat",
+   "roh": "Verwaltungsrat Munot Invest AG, Dörflingen"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:jessica und martin blumer stiftung",
+   "rolle": "Mitglied, Stiftungsrat",
+   "roh": "Mitglied Stiftungsrat Jessica und Martin Blumer-Stiftung, Dörflingen"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:kant gewerbeverbands",
+   "rolle": "Vorstandsmitglied",
+   "roh": "Vorstandsmitglied des Kant. Gewerbeverbands"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:aufsichtskommission handelsschule kaufm verbands",
+   "rolle": "Mitglied",
+   "roh": "Mitglied der Aufsichtskommission Handelsschule des kaufm. Verbands, Schaffhausen"
+  },
+  {
+   "von": "m:Laich|Lorenz",
+   "nach": "o:bei stiftung museumsbahn stein am rhein etzwilen hemishofen ramsen rielasingen singen sehr rs",
+   "rolle": "Stiftungsrat",
+   "roh": "Stiftungsrat bei der Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)"
+  },
+  {
+   "von": "m:Lang|Svea",
+   "nach": "o:jsvp schaffhauen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- JSVP, Schaffhauen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Lang|Svea",
+   "nach": "o:jugendparlament schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "- Jugendparlament Schaffhausen, Mitglied"
+  },
+  {
+   "von": "m:Le Donne|Vanessa",
+   "nach": "o:soziale dienste gde beringen",
+   "rolle": null,
+   "roh": "-Soziale Dienste, Gde. Beringen"
+  },
+  {
+   "von": "m:Le Donne|Vanessa",
+   "nach": "o:iiz steuergruppe",
+   "rolle": "Mitglied",
+   "roh": "-Mitglied IIZ Steuergruppe, Kanton Schaffhausen"
+  },
+  {
+   "von": "m:Le Donne|Vanessa",
+   "nach": "o:pex kaufmann kauffrau efz",
+   "rolle": null,
+   "roh": "-PEX Kaufmann/Kauffrau EFZ, Kanton Schaffhausen"
+  },
+  {
+   "von": "m:Leu|Markus",
+   "nach": "o:hev schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- HEV Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Leu|Markus",
+   "nach": "o:pk sbv",
+   "rolle": "Stiftungsrat",
+   "roh": "- PK SBV, Zürich, Stiftungsrat"
+  },
+  {
+   "von": "m:Litscher|Monika",
+   "nach": "o:verband schulleitenden schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verband der Schulleitenden Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:erziehungsrat sh",
+   "rolle": "Mitglied",
+   "roh": "- Erziehungsrat KT SH, Mitglied"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "rolle": null,
+   "roh": "- Steuergruppe Umsetzung Nationaler Aktionsplan gegen Radikalisierung"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:und extremismus nap sh im rahmen anstellung an phsh",
+   "rolle": null,
+   "roh": "und Extremismus NAP KT SH im Rahmen der Anstellung an der PHSH"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:migros kulturprozent ici gemeinsam hier jurymitglied i v ekm",
+   "rolle": null,
+   "roh": "- Migros Kulturprozent, «Ici -Gemeinsam hier», Jurymitglied (i. V. EKM)"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
+   "rolle": null,
+   "roh": "- CAS Migrationsrecht/CAS Asylverfahren Universitäten Bern, Neuenburg"
+  },
+  {
+   "von": "m:Looser|Bettina",
+   "nach": "o:und freiburg i v ekm",
+   "rolle": "Mitglied, Programmleitung",
+   "roh": "und Freiburg, Mitglied Programmleitung (i. V. EKM)"
+  },
+  {
+   "von": "m:Looser|Gianluca",
+   "nach": "o:mieterinnen und mieterverband schaffhausen",
+   "rolle": "Vorstand",
+   "roh": "Mieterinnen- und Mieterverband Schaffhausen, Vorstand"
+  },
+  {
+   "von": "m:Looser|Gianluca",
+   "nach": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "rolle": "Mitglied",
+   "roh": "Eidgenässische Kommission für Kinder- und Jugendfragen (EKKJ), Mitglied"
+  },
+  {
+   "von": "m:Lüthi|Isabelle",
+   "nach": "o:kulturmacherei schaffhausen",
+   "rolle": "Präsidentin",
+   "roh": "- Verein Kulturmacherei Schaffhausen, Präsidentin"
+  },
+  {
+   "von": "m:Meyer|Daniel",
+   "nach": "o:genossenschaft baum land ch",
+   "rolle": "Vorstandsmitglied",
+   "roh": "Genossenschaft Baum-land.ch, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Meyer|Daniel",
+   "nach": "o:sozialdemokratische partei neuhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "Sozialdemokratische Partei Neuhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Mundt|Michael",
+   "nach": "o:gemeinnutzige stiftung schweizersbild",
+   "rolle": "Stiftungsrat",
+   "roh": "- Gemeinnützige Stiftung Schweizersbild, Stiftungsrat"
+  },
+  {
+   "von": "m:Mundt|Michael",
+   "nach": "o:svp schaffhausen kantonalvorstand",
+   "rolle": "Mitglied",
+   "roh": "- SVP Kanton Schaffhausen, Mitglied Kantonalvorstand"
+  },
+  {
+   "von": "m:Mundt|Michael",
+   "nach": "o:acs sektion schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- ACS Sektion Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Mundt|Michael",
+   "nach": "o:ivs industrie und wirtschafts vereinigung schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- IVS Industrie- und Wirtschafts-Vereinigung Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Müller|Andrea",
+   "nach": "o:muller energie thayngen gesellschafter gl",
+   "rolle": null,
+   "roh": "- Müller Energie GmbH, Thayngen, Gesellschafter, GL"
+  },
+  {
+   "von": "m:Müller|Andrea",
+   "nach": "o:macheis immo gesellschafter gl",
+   "rolle": null,
+   "roh": "- MACHEIS Immo AG, Gesellschafter/GL"
+  },
+  {
+   "von": "m:Müller|Andrea",
+   "nach": "o:svp schaffhausen kantonalprasidentin",
+   "rolle": null,
+   "roh": "- SVP Schaffhausen, Kantonalpräsidentin"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:radio munot schaffhausen",
+   "rolle": "Mitglied, Verwaltungsrat",
+   "roh": "- Radio Munot AG Schaffhausen, Mitglied Verwaltungsrat"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:hauseigentumerverband hev schaffhausen",
+   "rolle": "Vizepräsident",
+   "roh": "- Hauseigentümerverband HEV Schaffhausen, Vizepräsident"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:herausgeberrat klettgauerbote",
+   "rolle": "Mitglied",
+   "roh": "- Herausgeberrat Klettgauerbote, Mitglied"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:federation of european quarter horse associations feqha",
+   "rolle": "Präsident",
+   "roh": "- Federation of European Quarter Horse Associations (FEQHA), Präsident"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:american quarter horse association aqha amarillo texas usa",
+   "rolle": null,
+   "roh": "- American Quarter Horse Association (AQHA), Amarillo, Texas (USA),"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:svp schaffhausen",
+   "rolle": "Vizepräsident",
+   "roh": "- SVP Kanton Schaffhausen, Vizepräsident"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:svp lohningen",
+   "rolle": "Präsident",
+   "roh": "- SVP Löhningen, Präsident"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:ig lebensraum klettgau co",
+   "rolle": "Präsident",
+   "roh": "- IG Lebensraum Klettgau, Co-Präsident"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:freier journalist",
+   "rolle": "Kolumnist",
+   "roh": "- Kolumnist & freier Journalist"
+  },
+  {
+   "von": "m:Müller|Markus",
+   "nach": "o:lohninger ziiting",
+   "rolle": "Redaktor",
+   "roh": "- Redaktor Löhninger Ziiting"
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:einwohnerrat",
+   "rolle": "Präsident",
+   "roh": "- Präsident Einwohnerrat, Neuhausen am Rheinfall"
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:gpk einwohnerrat neuhausen am rheinfall",
+   "rolle": "Mitglied",
+   "roh": "- Mitglied GPK, Einwohnerrat Neuhausen am Rheinfall"
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:fachkommission swiss designer schools",
+   "rolle": "Mitglied",
+   "roh": "- Mitglied Fachkommission Swiss-designer-schools, Bern"
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:tischtennisclub neuhausen",
+   "rolle": null,
+   "roh": "- Tischtennisclub Neuhausen"
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:fur judische geschichte gailingen e v",
+   "rolle": null,
+   "roh": "- Verein für jüdische Geschichte Gailingen e.V."
+  },
+  {
+   "von": "m:Müller|Roland",
+   "nach": "o:kantonalkommission pro infirmis thurgau schaffhausen",
+   "rolle": null,
+   "roh": "- Kantonalkommission Pro Infirmis Thurgau-Schaffhausen"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:georg fischer preis",
+   "rolle": "Stiftungsrat, Präsident",
+   "roh": "- Stiftungsrat Georg Fischer Preis, Schaffhausen, Präsident"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:verwaltung kraftwerk schaffhausen",
+   "rolle": "Präsident",
+   "roh": "- Verwaltung Kraftwerk Schaffhausen AG, Präsident"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:sasag koomunikations",
+   "rolle": "Mitglied, Verwaltungsrat",
+   "roh": "- Sasag Koomunikations AG, Mitglied Verwaltungsrat"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:parkhaus herrenacker",
+   "rolle": "Mitglied, Verwaltungsrat",
+   "roh": "- Parkhaus Herrenacker AG, Mitglied Verwaltungsrat"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:swisspower",
+   "rolle": "Mitglied, Verwaltungsrat",
+   "roh": "- Swisspower AG, Mitglied Verwaltungsrat"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:internationale bachgesellschaft schaffhausen",
+   "rolle": "Mitglied, Vorstand",
+   "roh": "- Internationale Bachgesellschaft Schaffhausen, Mitglied Vorstand"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:gonnerverein schaffhauser az",
+   "rolle": "Mitglied, Vorstand",
+   "roh": "- Gönnerverein schaffhauser az, Mitglied Vorstand"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:tourismuskommission schaffhauserland tourismus",
+   "rolle": "Mitglied",
+   "roh": "- Tourismuskommission Schaffhauserland Tourismus, Mitglied"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:metropolitankonferenz zurich metrorat stadtekammer",
+   "rolle": "Mitglied",
+   "roh": "- Metropolitankonferenz Zürich, Mitglied Metrorat, Städtekammer"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:internationaler stadtebund bodensee leitungsgruppe",
+   "rolle": "Mitglied",
+   "roh": "- Internationaler Städtebund Bodensee, Mitglied Leitungsgruppe"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:klaranlageverbandes sh",
+   "rolle": "Mitglied, Verwaltungskommission",
+   "roh": "- Kläranlageverbandes SH, Mitglied Verwaltungskommission"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:sp stadt schaffhausen",
+   "rolle": "Mitglied, Vorstand",
+   "roh": "- SP Stadt Schaffhausen, Mitglied Vorstand"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:verband gemeindeprasidentinnen vggsh",
+   "rolle": "Mitglied, Vorstand",
+   "roh": "- Verband der GemeindepräsidentInnen (VGGSH), Mitglied Vorstand"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:energiepolitische kommission schweizerischen stadteverbands ekk",
+   "rolle": null,
+   "roh": "- Energiepolitische Kommission des Schweizerischen Städteverbands(EKK)"
+  },
+  {
+   "von": "m:Neukomm|Peter",
+   "nach": "o:schaffhauen",
+   "rolle": "Stadtpräsident",
+   "roh": "- Stadtpräsident Schaffhauen"
+  },
+  {
+   "von": "m:Penkov|Angela",
+   "nach": "o:lindenforum",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verein Lindenforum, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Penkov|Angela",
+   "nach": "o:grosser stadtrat sh",
+   "rolle": "Präsidentin",
+   "roh": "- Grosser Stadtrat SH, Präsidentin"
+  },
+  {
+   "von": "m:Penkov|Angela",
+   "nach": "o:sp stadt schaffhausen",
+   "rolle": "Vorstand",
+   "roh": "- SP Stadt Schaffhausen, Vorstand"
+  },
+  {
+   "von": "m:Pfalzgraf|Maurus",
+   "nach": "o:sholar selbstbau genossenschaft schaffhauen verwaltung",
+   "rolle": "Präsident",
+   "roh": "- SHolar-Selbstbau Genossenschaft, Schaffhauen, Präsident Verwaltung"
+  },
+  {
+   "von": "m:Pfalzgraf|Maurus",
+   "nach": "o:pro velo schaffhauen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Pro Velo, Schaffhauen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:sp schaffhausen",
+   "rolle": "Mitglied, Geschäftsleitung, Co-Präsidium",
+   "roh": "- Mitglied Geschäftsleitung SP Kanton Schaffhausen / Co-Präsidium"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:polizeibeamtenverband",
+   "rolle": "Präsident",
+   "roh": "- Polizeibeamtenverband, Präsident"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:vpod",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- VPOD, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:wwf",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- WWF, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:brava terre femmes schweiz",
+   "rolle": "Mitglied",
+   "roh": "- Brava (TERRE DES FEMMES SCHWEIZ), Mitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:greenpeace",
+   "rolle": "Mitglied",
+   "roh": "- Greenpeace, Mitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:gonnerverein schaffhauser az",
+   "rolle": "Mitglied",
+   "roh": "- Gönnerverein Schaffhauser AZ, Mitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:vogelwarte sempach",
+   "rolle": "Mitglied",
+   "roh": "- Vogelwarte Sempach, Mitglied"
+  },
+  {
+   "von": "m:Portmann|Patrick",
+   "nach": "o:clean up schaffhausen",
+   "rolle": "Co-Leitung",
+   "roh": "- Clean-up Schaffhausen, Co-Leitung"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:tcs sektion schaffhausen",
+   "rolle": "Vizepräsident",
+   "roh": "- TCS Sektion Schaffhausen, Vizepräsident"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:mcs schaffhausen",
+   "rolle": "Vizepräsident",
+   "roh": "- MCS Schaffhausen, Vizepräsident"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:burgerliche witwen und waisenstiftung schaffhausen",
+   "rolle": "Präsident",
+   "roh": "- Bürgerliche Witwen- und Waisenstiftung Schaffhausen, Präsident"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:srk schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- SRK Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:fdp schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- FDP Kanton Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:zunft zum webern schaffhausen 2",
+   "rolle": "Zunftmeister",
+   "roh": "- Zunft zum Webern Schaffhausen, 2. Zunftmeister"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:internationale bachgesellschaft schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Internationale Bachgesellschaft Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:handelsschule kv schaffhausen aufsichtskommission",
+   "rolle": "Mitglied",
+   "roh": "- Handelsschule KV Schaffhausen, Mitglied Aufsichtskommission"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:kantonale berufsmaturitatskommission schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "- Kantonale Berufsmaturitätskommission Schaffhausen, Mitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:museum im zeughaus",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Verein Museum im Zeughaus, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:stiftung schule fur berufliche aus und weiterbildung",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Stiftung Schule für berufliche Aus- und Weiterbildung, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:kunzle stiftung",
+   "rolle": "Stiftungsrat, Mitglied",
+   "roh": "- Stiftungsrat Künzle-Stiftung, Mitglied"
+  },
+  {
+   "von": "m:Rohner|Raphaël",
+   "nach": "o:zukunft spitaler schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Zukunft Spitäler Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Salathé|Regula",
+   "nach": "o:pflege und wohnheim sonnmatt wilchingen aufsichtskommissionsmitglied",
+   "rolle": null,
+   "roh": "- Pflege und Wohnheim Sonnmatt, Wilchingen, Aufsichtskommissionsmitglied"
+  },
+  {
+   "von": "m:Schlatter|Hermann",
+   "nach": "o:bling bling schaffhausen",
+   "rolle": "Geschäftsführer",
+   "roh": "- Bling Bling Schaffhausen GmbH, Geschäftsführer"
+  },
+  {
+   "von": "m:Schlatter|Hermann",
+   "nach": "o:svp stadt schaffhausen",
+   "rolle": "Präsident",
+   "roh": "- SVP Stadt Schaffhausen, Präsident"
+  },
+  {
+   "von": "m:Schlatter|Hermann",
+   "nach": "o:randenvereinigung",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Randenvereinigung, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:wald schaffhausen",
+   "rolle": "Präsident",
+   "roh": "- Präsident Wald Schaffhausen, Präsident"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:guterkorporation beringen",
+   "rolle": "Präsident",
+   "roh": "- Güterkorporation Beringen, Präsident"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:begleitgruppe vernetzungsprojekt beringen lohningen neuhausen",
+   "rolle": "Leiter",
+   "roh": "- Begleitgruppe Vernetzungsprojekt Beringen-Löhningen-Neuhausen, Leiter"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:svp sh",
+   "rolle": "Vorstand",
+   "roh": "- SVP Kanton SH, Vorstand"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:svp kreispartei klettgau",
+   "rolle": "Vorstand",
+   "roh": "- SVP Kreispartei Klettgau, Vorstand"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:landw genossenschaft",
+   "rolle": "Vorstand",
+   "roh": "- Landw. Genossenschaft, Beringen, Vorstand"
+  },
+  {
+   "von": "m:Schlatter|Martin",
+   "nach": "o:mannerriege",
+   "rolle": "Vorstand",
+   "roh": "- Männerriege, Beringen, Vorstand"
+  },
+  {
+   "von": "m:Schlatter|Roman",
+   "nach": "o:landwirtschaftliche genossenschaft beringen",
+   "rolle": "Vorstand",
+   "roh": "- Landwirtschaftliche Genossenschaft Beringen, Vorstand"
+  },
+  {
+   "von": "m:Schlatter|Roman",
+   "nach": "o:ip service team nahrstoff und direktzahlungsfragen",
+   "rolle": "Berater",
+   "roh": "- Berater IP Service Team (Nährstoff und Direktzahlungsfragen)"
+  },
+  {
+   "von": "m:Schmidig|Rainer",
+   "nach": "o:verband rentnerinnen und rentner pensionskasse schaffhausen",
+   "rolle": null,
+   "roh": "- Verband der Rentnerinnen und Rentner der Pensionskasse Schaffhausen,"
+  },
+  {
+   "von": "m:Schmidig|Rainer",
+   "nach": "o:grosser stadtrat schaffhausen",
+   "rolle": "Mitglied",
+   "roh": "- Mitglied Grosser Stadtrat Schaffhausen"
+  },
+  {
+   "von": "m:Schnetzler|Andreas",
+   "nach": "o:edu schaffhausen",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- EDU Kanton Schaffhausen, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Schnetzler|Andreas",
+   "nach": "o:voss vermehrungsorganisation schaffhauser saatgut",
+   "rolle": "Rechnungsprüfer",
+   "roh": "- VOSS (Vermehrungsorganisation Schaffhauser Saatgut), Rechnungsprüfer"
+  },
+  {
+   "von": "m:Schnetzler|Andreas",
+   "nach": "o:kantonale natur und heimatschutzkommission knhk als lw vertreter",
+   "rolle": null,
+   "roh": "- Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter,"
+  },
+  {
+   "von": "m:Schraff|Jannik",
+   "nach": "o:smg immobilien",
+   "rolle": "Verwaltungsrat",
+   "roh": "- SMG Immobilien AG, Beringen, Verwaltungsrat"
+  },
+  {
+   "von": "m:Schraff|Jannik",
+   "nach": "o:schraff und muller beringen gesellschafter",
+   "rolle": null,
+   "roh": "- Schraff und Müller GmbH, Beringen, Gesellschafter"
+  },
+  {
+   "von": "m:Schraff|Jannik",
+   "nach": "o:smg bau beringen gesellschafter",
+   "rolle": null,
+   "roh": "- SMG bau gmbh, Beringen, Gesellschafter"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:svp beggingen",
+   "rolle": "Präsident",
+   "roh": "- SVP Beggingen, Präsident"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:svp kreispartei klettgau",
+   "rolle": "Präsident",
+   "roh": "- SVP Kreispartei Klettgau, Präsident"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:schutzenverein beggingen jungschutzenleiter",
+   "rolle": null,
+   "roh": "- Schützenverein Beggingen, Jungschützenleiter"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:msc randen",
+   "rolle": "Kassierer",
+   "roh": "- MSC Randen, Kassierer"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:herausgeberrat klettgauer bote",
+   "rolle": "Mitglied",
+   "roh": "- Herausgeberrat Klettgauer Bote, Mitglied"
+  },
+  {
+   "von": "m:Schudel|Erich",
+   "nach": "o:kant gebaudeversicherung schaffhausen",
+   "rolle": "Verwaltungskommission",
+   "roh": "- Verwaltungskommission Kant. Gebäudeversicherung Schaffhausen,"
+  },
+  {
+   "von": "m:Schärrer|Nina",
+   "nach": "o:hauseigentumerverband sh",
+   "rolle": "Vorstandsmitglied",
+   "roh": "- Hauseigentümerverband Kanton SH, Vorstandsmitglied"
+  },
+  {
+   "von": "m:Schärrer|Nina",
+   "nach": "o:frau macht politik co",
+   "rolle": "Präsidentin",
+   "roh": "- Frau macht Politik, CO-Präsidentin"
+  },
+  {
+   "von": "m:Schöpfer|Sandra",
+   "nach": "o:pmb bau",
+   "rolle": "Verwaltungsrat, Mitglied",
+   "roh": "- pmb bau ag, Verwaltungsrat Mitglied"
+  },
+  {
+   "von": "m:Suter|Roman",
+   "nach": "o:slrg stein am rhein",
+   "rolle": "Präsident",
+   "roh": "- SLRG Stein am Rhein, Präsident"
+  },
+  {
+   "von": "m:Tognella|Ivo",
+   "nach": "o:tanner holzbau und sagerei",
+   "rolle": "Inhaber, VR-Präsident",
+   "roh": "- Tanner Holzbau und Sägerei AG, Merishausen, Inhaber, VR-Präsident"
+  },
+  {
+   "von": "m:Tognella|Ivo",
+   "nach": "o:randen immo begginen mitinhaber",
+   "rolle": "VR-Präsident",
+   "roh": "- Randen Immo AG, Begginen, VR-Präsident, Mitinhaber"
+  },
+  {
+   "von": "m:Tognella|Ivo",
+   "nach": "o:holzbau schweiz sektion schaffhausen",
+   "rolle": "Präsident",
+   "roh": "- Holzbau Schweiz Sektion Schaffhausen, Präsident"
+  },
+  {
+   "von": "m:Ullmann|Corinne",
+   "nach": "o:jakob emma windler stiftung",
+   "rolle": "Stiftungsrätin",
+   "roh": "- Jakob & Emma Windler-Stiftung, Stein am Rhein, Stiftungsrätin"
+  },
+  {
+   "von": "m:Ullmann|Corinne",
+   "nach": "o:dr bruno herzer stiftng",
+   "rolle": "Präsidentin, Stiftungsrat",
+   "roh": "- Dr. Bruno Herzer-Stiftng, Stein am Rhein, Präsidentin Stiftungsrat"
+  },
+  {
+   "von": "m:Ullmann|Corinne",
+   "nach": "o:tourismus stein am rhein",
+   "rolle": "Präsidentin",
+   "roh": "- Verein Tourismus Stein am Rhein, Präsidentin"
+  },
+  {
+   "von": "m:Würms|Josef",
+   "nach": "o:finanzprasident ramsen",
+   "rolle": "Gemeindepräsident",
+   "roh": "- Gemeindepräsident/Finanzpräsident, Ramsen"
+  },
+  {
+   "von": "m:Würms|Josef",
+   "nach": "o:klaranlageverband bibertal",
+   "rolle": "Mitglied",
+   "roh": "- Mitglied Kläranlageverband, Bibertal"
+  },
+  {
+   "von": "o:bytix",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:dorflingen",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:glp schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:handball pfader neuhausen",
+   "nach": "b:Sport und Freizeit",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:gemeinde neuhausen einwohnerrat gpk",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stiftung betreutes wohnen",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stiftung schonhalde",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:ev haeny stiftung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sah schaffhausen schweizerisches arbeitshilfswerk",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:zukunft spitaler schaffhausen",
+   "nach": "b:Gesundheit und Pflege",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:fachstelle fur gewaltbetroffene",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:mieterinnen und mieterverband schaffhausen",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:frau macht politik",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sp schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:nationalrarin sicherheitspolitische kommission",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:energieverbund neuhausen",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:alterszentrum und spitex neuhausen am rheinfall",
+   "nach": "b:Gesundheit und Pflege",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pro senectute schaffhausen",
+   "nach": "b:Gesundheit und Pflege",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:paul und clotilde sonderegger van den avont stiftung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:vsr rentnervereinigung schaffhausen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:burgerliche witwen und waisenstiftung",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:hauseigentumerverband schaffhausen",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:diabetesgesellschaft schaffhausen",
+   "nach": "b:Gesundheit und Pflege",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:fdp schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:fdp stadt schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:faccani schuhe",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:grosser stadtrat schaffhausen",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:66k gallerie fur gegenwartskunst",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:theaterkommission stadt schaffhausen",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:landenergie schaffhausen oberhallau",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:schaffhauser bauernverband",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:krebsliga schaffhausen",
+   "nach": "b:Gesundheit und Pflege",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:abwasserverband stein am rhein und umgebung bba",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sp sh",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stiftung bergtrotte osterfingen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:radio munot club",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:genussregion wilchingen osterfingen trasadingen",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stadtischer gewerbeverband sh",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:herrenacker parkhaus",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:gemeinnutzige stiftung schweizersbild",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sapi hotz industrielle automation",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:einwohnerrat gemeinde neuhausen am rheinfall",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:ortsmarketing neuhausen",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:traktorenfest guntmadigen",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:einwohnerrat gemeinde neuhausen",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:astag sektion schaffhauen kgv",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stiftung forum fur weiterbildung stiftungsratsmitglied",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kaufmannischer verband schaffhausen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:skkbs schweizerische konferenz kaufmannischen berufsfachschulen",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:vorsitzender clientis bs bank schaffhausen",
+   "nach": "b:Banken und Versicherungen",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:munot invest",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:jessica und martin blumer stiftung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kant gewerbeverbands",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:aufsichtskommission handelsschule kaufm verbands",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:bei stiftung museumsbahn stein am rhein etzwilen hemishofen ramsen rielasingen singen sehr rs",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:jsvp schaffhauen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:jugendparlament schaffhausen",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:soziale dienste gde beringen",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:iiz steuergruppe",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pex kaufmann kauffrau efz",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:hev schaffhausen",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pk sbv",
+   "nach": "b:Banken und Versicherungen",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:verband schulleitenden schaffhausen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:erziehungsrat sh",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:steuergruppe umsetzung nationaler aktionsplan gegen radikalisierung",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:und extremismus nap sh im rahmen anstellung an phsh",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:migros kulturprozent ici gemeinsam hier jurymitglied i v ekm",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:cas migrationsrecht cas asylverfahren universitaten bern neuenburg",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:und freiburg i v ekm",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kulturmacherei schaffhausen",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:genossenschaft baum land ch",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sozialdemokratische partei neuhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp schaffhausen kantonalvorstand",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:acs sektion schaffhausen",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:ivs industrie und wirtschafts vereinigung schaffhausen",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:muller energie thayngen gesellschafter gl",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:macheis immo gesellschafter gl",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp schaffhausen kantonalprasidentin",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:radio munot schaffhausen",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:hauseigentumerverband hev schaffhausen",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:herausgeberrat klettgauerbote",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:federation of european quarter horse associations feqha",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:american quarter horse association aqha amarillo texas usa",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp lohningen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:ig lebensraum klettgau co",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:freier journalist",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:lohninger ziiting",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:einwohnerrat",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:gpk einwohnerrat neuhausen am rheinfall",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:fachkommission swiss designer schools",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:tischtennisclub neuhausen",
+   "nach": "b:Sport und Freizeit",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:fur judische geschichte gailingen e v",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kantonalkommission pro infirmis thurgau schaffhausen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:georg fischer preis",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:verwaltung kraftwerk schaffhausen",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sasag koomunikations",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:parkhaus herrenacker",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:swisspower",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:internationale bachgesellschaft schaffhausen",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:gonnerverein schaffhauser az",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:tourismuskommission schaffhauserland tourismus",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:metropolitankonferenz zurich metrorat stadtekammer",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:internationaler stadtebund bodensee leitungsgruppe",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:klaranlageverbandes sh",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sp stadt schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:verband gemeindeprasidentinnen vggsh",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:energiepolitische kommission schweizerischen stadteverbands ekk",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:schaffhauen",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:lindenforum",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:grosser stadtrat sh",
+   "nach": "b:Gemeinden und Behörden",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:sholar selbstbau genossenschaft schaffhauen verwaltung",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pro velo schaffhauen",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:polizeibeamtenverband",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:vpod",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:wwf",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:brava terre femmes schweiz",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:greenpeace",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:vogelwarte sempach",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:clean up schaffhausen",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:tcs sektion schaffhausen",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:mcs schaffhausen",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:burgerliche witwen und waisenstiftung schaffhausen",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:srk schaffhausen",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:zunft zum webern schaffhausen 2",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:handelsschule kv schaffhausen aufsichtskommission",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kantonale berufsmaturitatskommission schaffhausen",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:museum im zeughaus",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:stiftung schule fur berufliche aus und weiterbildung",
+   "nach": "b:Bildung und Wissenschaft",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kunzle stiftung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pflege und wohnheim sonnmatt wilchingen aufsichtskommissionsmitglied",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:bling bling schaffhausen",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp stadt schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:randenvereinigung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:wald schaffhausen",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:guterkorporation beringen",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:begleitgruppe vernetzungsprojekt beringen lohningen neuhausen",
+   "nach": "b:Energie und Umwelt",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp sh",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp kreispartei klettgau",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:landw genossenschaft",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:mannerriege",
+   "nach": "b:Sport und Freizeit",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:landwirtschaftliche genossenschaft beringen",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:ip service team nahrstoff und direktzahlungsfragen",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:verband rentnerinnen und rentner pensionskasse schaffhausen",
+   "nach": "b:Banken und Versicherungen",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:edu schaffhausen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:voss vermehrungsorganisation schaffhauser saatgut",
+   "nach": "b:Landwirtschaft und Wein",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kantonale natur und heimatschutzkommission knhk als lw vertreter",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:smg immobilien",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:schraff und muller beringen gesellschafter",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:smg bau beringen gesellschafter",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:svp beggingen",
+   "nach": "b:Parteien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:schutzenverein beggingen jungschutzenleiter",
+   "nach": "b:Sport und Freizeit",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:msc randen",
+   "nach": "b:Verkehr",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:herausgeberrat klettgauer bote",
+   "nach": "b:Kultur und Medien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kant gebaudeversicherung schaffhausen",
+   "nach": "b:Banken und Versicherungen",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:hauseigentumerverband sh",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:frau macht politik co",
+   "nach": "b:Soziales und Hilfswerke",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:pmb bau",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:slrg stein am rhein",
+   "nach": "b:Sport und Freizeit",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:tanner holzbau und sagerei",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:randen immo begginen mitinhaber",
+   "nach": "b:Wirtschaft und Gewerbe",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:holzbau schweiz sektion schaffhausen",
+   "nach": "b:Wohnen und Immobilien",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:jakob emma windler stiftung",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:dr bruno herzer stiftng",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:tourismus stein am rhein",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:finanzprasident ramsen",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:klaranlageverband bibertal",
+   "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  }
+ ]
+}

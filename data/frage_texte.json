@@ -1,0 +1,583 @@
+{
+ "hinweis": "Von Hand geschriebene Fragetexte und neutrale Zusammenfassungen für den Reiter «Wer stimmt wie ich». Die Frage benennt, worüber der Rat wirklich abgestimmt hat, nicht bloss das übergeordnete Geschäft: bei Anträgen innerhalb einer Vorlage sind das zwei verschiedene Dinge. Ein Ja bedeutet immer Zustimmung zu dem, was die Frage nennt; bei Umkehrabstimmungen ist die Richtung dafür bereits korrigiert. Die Zitate stammen wörtlich aus dem Wortprotokoll und sind anonymisiert; belegt ist die Seite durch die Stimmabgabe der sprechenden Person, nicht durch eine Auslegung ihres Inhalts. Zitate erscheinen nur paarweise, sonst läse sich die Karte einseitig. Wo sich in der Debatte kein eigenständiges Sachargument findet, bleiben beide Felder leer.",
+ "stand": "2026-09-02",
+ "fragen": [
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#2",
+   "kontext": "Erhöhung des Ortsverkehrsbeitrages und Mittel für touristische Ausflugsverkehre",
+   "frage": "Soll der Kantonsrat eine feste Obergrenze für den jährlichen Kantonsbeitrag an den Ortsverkehr beschliessen?",
+   "zusammenfassung": "Der Kanton beteiligt sich an den ungedeckten Betriebskosten des Ortsverkehrs in Schaffhausen und Neuhausen. Der Antrag will, dass der Kantonsrat die Höhe dieses Beitrags in einem eigenen Beschluss festlegt, statt sie offen zu lassen. Die zuständigen Gemeinden könnten beim Regierungsrat eine Anpassung beantragen, entscheiden müsste weiterhin der Kantonsrat.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#9",
+   "kontext": "Kantonaler Strassenrichtplan, Teilrichtplan Radrouten",
+   "frage": "Soll zwischen Hallau und Neunkirch ein eigener Radweg entlang der Kantonsstrasse gebaut und die bisherige Route über Murgarten aus dem Netzplan gestrichen werden?",
+   "zusammenfassung": "Der Strassenrichtplan legt fest, welche Radverbindungen der Kanton weiterverfolgt. Die Planungserklärung verlangt, bei der nächsten Anpassung einen abgesetzten Radweg entlang der Kantonsstrasse K73 zwischen Hallau und Neunkirch vorzusehen und im Gegenzug die bestehende Verbindung Hallau–Murgarten aus dem Netzplan zu entlassen.",
+   "dafuer": "Was ich an der Diskussion nicht verstehe, ist, weshalb wir nicht auf die betroffenen Gemeinden und die betroffene Schule hören.",
+   "dagegen": "Bei Radwegen stellt sich immer die Frage nach der Nutzung und nach dem bereits Bestehenden. Einen dritten Radweg von Hallau nach Neunkirch, parallel zum Bestehenden zu bauen, ist finanzpolitisch gesehen ein Wahnsinn."
+  },
+  {
+   "schluessel": "8. und 9. Sitzung 2026 · 15.06.2026 (Nachmittag)#2",
+   "kontext": "Vier Postulate zur Axpo und zum Elektrizitätswerk des Kantons Schaffhausen",
+   "frage": "Soll das Postulat, das eine Versorgung durch erneuerbare Produktion der Axpo verlangt, als erledigt abgeschrieben werden?",
+   "zusammenfassung": "Das Postulat aus dem Jahr 2022 verlangte, dass Axpo und EKS die Stromversorgung stärker auf erneuerbare Produktion ausrichten. Der Regierungsrat hat dazu Bericht erstattet und beantragt, das Postulat abzuschreiben. Eine Abschreibung bedeutet, dass der Rat den Auftrag als erledigt betrachtet; sie ist keine inhaltliche Absage an das Anliegen, wird aber oft als solche verstanden.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "15. Sitzung 2025 · 30.06.2025 (Vormittag)#5",
+   "kontext": "Gegenvorschlag zur Volksinitiative «Kantonsbeitrag an die Kosten der baulichen Erneuerung des Kantonsspitals»",
+   "frage": "Soll der Kantonsrat den Stimmberechtigten empfehlen, die Spitalinitiative abzulehnen?",
+   "zusammenfassung": "Die Spitalinitiative verlangt einen Kantonsbeitrag an die bauliche Erneuerung des Kantonsspitals. Der Rat beriet dazu einen Gegenvorschlag. Der Antrag der Gesundheitskommission will, dass die Initiative selbst den Stimmberechtigten mit der Empfehlung auf Ablehnung vorgelegt wird. Über die Höhe eines möglichen Beitrags standen in der Debatte Beträge zwischen 55 und 77 Millionen Franken im Raum.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "8. Sitzung 2025 Traktanden · 31.03.2025 (Vormittag)#4",
+   "kontext": "Teilrevision des Finanzhaushaltsgesetzes: Verbuchung finanzpolitischer Reserven",
+   "frage": "Soll für die Rechnungslegung des Kantons verbindlich das Modell HRM2 gelten, mit Offenlegung jeder Abweichung?",
+   "zusammenfassung": "Das Finanzhaushaltsgesetz regelt, nach welchen Regeln der Kanton Rechnung legt. Der Antrag will das schweizweit übliche Harmonisierte Rechnungsmodell HRM2 verbindlich festschreiben. Abweichungen wären nur in begründeten Ausnahmefällen zulässig und müssten im Anhang zur Jahresrechnung offengelegt und begründet werden. Dahinter steht die Frage, wie viel Spielraum der Kanton beim Bilden und Auflösen von Reserven behalten soll.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag)#7",
+   "kontext": "Totalrevision des Einführungsgesetzes zur AHV und zur Invalidenversicherung",
+   "frage": "Soll für Geschäftsleitung und Personal der Sozialversicherungsanstalt das kantonale Personalrecht gelten?",
+   "zusammenfassung": "Die Sozialversicherungsanstalt erhält eine vom Kanton unabhängige Verwaltungskommission. Strittig war, ob ihr Personal weiterhin dem kantonalen Personalrecht untersteht oder ob die Anstalt eigene Anstellungsbedingungen erhält. Der Antrag will das kantonale Personalrecht festschreiben, die Mitglieder der Verwaltungskommission davon ausnehmen und das Personal bei der Pensionskasse Schaffhausen versichern.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2026 · 18.05.2026 (Vormittag)#3",
+   "kontext": "Gesetz über Aktenführung und Archivierung (Archivgesetz)",
+   "frage": "Soll die Schaffhauser Kantonalbank ein eigenes Archivierungsreglement erlassen, das vom Staatsarchiv genehmigt werden muss?",
+   "zusammenfassung": "Das neue Archivgesetz regelt, wer welche Akten aufbewahren und dem Staatsarchiv übergeben muss. Für die Schaffhauser Kantonalbank war strittig, wie weit das Staatsarchiv mitreden soll. Der Antrag verlangt, dass die Bank die Aufbewahrung selbst regelt, ihr Reglement aber der Genehmigung durch das Staatsarchiv unterstellt wird.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Vormittag)#5",
+   "kontext": "Revision der Kantonsverfassung: Finanzreferendum und Finanzbefugnisse",
+   "frage": "Sollen Ausgabenbeschlüsse des Kantonsrats erst ab 7,5 Millionen Franken einmalig und 1,25 Millionen jährlich wiederkehrend der Volksabstimmung unterstehen?",
+   "zusammenfassung": "Die Kantonsverfassung legt fest, ab welcher Summe ein Ausgabenbeschluss des Kantonsrats vor das Volk kommt. Der Antrag will diese Schwellen neu auf 7,5 Millionen Franken bei einmaligen und 1,25 Millionen bei jährlich wiederkehrenden Ausgaben festsetzen. Höhere Schwellen geben Rat und Regierung mehr Spielraum, tiefere sichern mehr direkte Mitsprache.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. Sitzung 2026 · 29.06.2026 (Vormittag)#9",
+   "kontext": "Aufhebung des Bahnübergangs an der Kantonsstrasse H352 in Stein am Rhein",
+   "frage": "Soll Stein am Rhein eingeladen werden, mit der Inbetriebnahme des umgebauten Bahnübergangs zugleich einen Ortsverkehrsbus einzuführen?",
+   "zusammenfassung": "Der Kanton will den Bahnübergang an der Kantonsstrasse H352 in Stein am Rhein aufheben. Die Planungserklärung verlangt, die Stadt einzuladen, auf den Zeitpunkt der Inbetriebnahme einen Ortsverkehrsbus vorzusehen. Eine Planungserklärung ist ein Auftrag mit empfehlendem Charakter und bindet die Gemeinde nicht.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Nachmittag)#1",
+   "kontext": "Revision des Verwaltungsrechtspflegegesetzes",
+   "frage": "Soll das Obergericht in Bausachen in der Regel innert neun Monaten entscheiden müssen?",
+   "zusammenfassung": "Das Verwaltungsrechtspflegegesetz regelt den Rechtsschutz gegen Entscheide von Behörden. Der Antrag übernimmt einen Vorschlag des Regierungsrats und will dem Obergericht für Bausachen eine Richtfrist von neun Monaten setzen. In der Beratung wurde eingewendet, eine gesetzliche Frist für ein Gericht sei rechtlich heikel.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)#2",
+   "kontext": "«Volksinitiative für flüssigen Verkehr auf kantonalen Hauptstrassen»",
+   "frage": "Soll der Kantonsrat den Stimmberechtigten empfehlen, die Verkehrsflussinitiative abzulehnen?",
+   "zusammenfassung": "Die Verkehrsflussinitiative will den Verkehrsfluss auf kantonalen Hauptstrassen sichern und Tempo-30-Abschnitte dort erschweren. Die vorberatende Kommission für Bau, Verkehr und Energie beantragt, die Initiative den Stimmberechtigten mit der Empfehlung auf Ablehnung zu unterbreiten. Parallel dazu beriet der Rat einen Gegenvorschlag.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "21. Sitzung 2025 · 03.11.2025 (Vormittag)#3",
+   "kontext": "Totalrevision des Einführungsgesetzes zur AHV und zur Invalidenversicherung, zweite Lesung",
+   "frage": "Soll sich das Anstellungsverhältnis von Geschäftsleitung und Personal der Sozialversicherungsanstalt nach dem kantonalen Personalgesetz richten?",
+   "zusammenfassung": "Auch hier geht es um die künftig unabhängige Sozialversicherungsanstalt. Der Antrag will festschreiben, dass sich die Anstellungsverhältnisse nach dem kantonalen Personalgesetz richten. Dagegen stand die Überlegung, eine unabhängige Anstalt solle auch bei den Anstellungsbedingungen eigenständig sein; die Kommission hatte dazu einen Kompromiss ausgehandelt.",
+   "dafuer": "Grundsätzlich ist es begrüssenswert, dass die Sozialversicherungsanstalt neu eine vom Kanton unabhängige Verwaltungskommission einsetzen wird, die unter anderem die administrative und personelle Aufsicht über die Ausgleichskasse ausübt.",
+   "dagegen": "Ich empfehle Ihnen auch, den Antrag abzulehnen. Es ist ein Kompromiss und das Element der Unabhängigkeit finden wir sehr wichtig."
+  },
+
+  {
+   "schluessel": "2. Sitzung 2026 · 16.03.2026 (Vormittag)#3",
+   "kontext": "Postulat: Hoheit über den Entscheid zu Tempo 30 auf Kantonsstrassen",
+   "frage": "Soll der Kanton wieder selbst entscheiden, wo auf Kantonsstrassen im Stadtgebiet Tempo 30 gilt?",
+   "zusammenfassung": "Auf Kantonsstrassen innerhalb der Stadt entscheidet heute die Stadt über Tempo 30. Der Vorstoss verlangt, diese Zuständigkeit zum Kanton zurückzuholen. Der Motionär wandelte seine Motion vor der Abstimmung in ein Postulat um; der Auftrag ist damit ein Prüfauftrag und nicht verbindlich.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Nachmittag)#4",
+   "kontext": "Volksmotion «Kommunale Demokratie stärken, Gemeindeautonomie über das Stimm- und Wahlrecht»",
+   "frage": "Sollen die Gemeinden selbst bestimmen dürfen, wer bei ihnen stimmen und wählen darf?",
+   "zusammenfassung": "Heute regelt das kantonale Recht einheitlich, wer in einer Gemeinde stimmen und wählen darf. Die von rund 150 Personen unterzeichnete Volksmotion verlangt, diesen Entscheid den Gemeinden zu überlassen. Eine Gemeinde könnte das Stimmrecht dann etwa auf niedergelassene Ausländer ausdehnen, eine andere alles beim Alten belassen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "6. und 7. Sitzung 2025 · 17.03.2025 (Vormittag)#3",
+   "kontext": "Postulat: Feuerthalen und Flurlingen verkehrstarifisch fair anbinden",
+   "frage": "Soll der Kanton erreichen, dass Fahrten aus Feuerthalen und Flurlingen in die Stadt tariflich günstiger werden?",
+   "zusammenfassung": "Feuerthalen und Flurlingen liegen im Kanton Zürich, gehören aber zum Schaffhauser Agglomerationsverkehr. Wer von dort in die Stadt fährt, überquert eine Tarifgrenze und zahlt mehr als für eine gleich lange Fahrt innerhalb der Stadt. Das Postulat verlangt vom Regierungsrat, mit den Zürcher Stellen eine faire tarifliche Anbindung auszuhandeln.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Nachmittag)#8",
+   "kontext": "Motion: Standesinitiative zu Fäsenstaub- und Rosenbergtunnel",
+   "frage": "Soll Schaffhausen mit einer Standesinitiative in Bern den Ausbau von Fäsenstaub- und Rosenbergtunnel fordern?",
+   "zusammenfassung": "Mit einer Standesinitiative kann ein Kanton der Bundesversammlung einen Vorschlag unterbreiten. Die Motion verlangt, dass Schaffhausen damit eine zweite Röhre am Fäsenstaubtunnel und eine dritte Röhre am Rosenbergtunnel in St. Gallen unterstützt. Beide Projekte betreffen die Autobahnachse durch die Ostschweiz.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "6. und 7. Sitzung 2025 · 17.03.2025 (Nachmittag)#2",
+   "kontext": "Motion: Gebührenerlass bei der Umwandlung eingetragener Partnerschaften",
+   "frage": "Soll der Kanton auf die Gebühr verzichten, wenn eine eingetragene Partnerschaft in eine Ehe umgewandelt wird?",
+   "zusammenfassung": "Seit der Öffnung der Ehe können bestehende eingetragene Partnerschaften in eine Ehe umgewandelt werden. Der Kanton erhebt dafür eine Gebühr. Die Motion verlangt, auf diese Gebühr zu verzichten, weil die Betroffenen sonst für den Schritt zur rechtlichen Gleichstellung ein zweites Mal bezahlen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Vormittag)#6",
+   "kontext": "Budget 2026, Sozialamt",
+   "frage": "Soll das Sozialamt für eingekaufte Dienstleistungen Dritter höchstens 795'000 Franken ausgeben dürfen?",
+   "zusammenfassung": "Das Sozialamt kauft einen Teil seiner Leistungen bei Dritten ein, etwa Beratung und Begleitung. Der Antrag zum Budget 2026 will diesen Posten auf 795'000 Franken begrenzen und damit unter den Betrag senken, den Regierung und Kommission vorsahen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "27. Sitzung 2025 · 15.12.2025 (Vormittag)#7",
+   "kontext": "Postulat zum Ausbau des «Schaffhauser Modells» für Gewaltbetroffene",
+   "frage": "Soll das eben überwiesene Postulat zum Ausbau der Betreuung von Gewaltbetroffenen sogleich wieder abgeschrieben werden?",
+   "zusammenfassung": "Der Rat hatte das Postulat unmittelbar zuvor erheblich erklärt. Es verlangt den Ausbau der Betreuung von Betroffenen sexualisierter und häuslicher Gewalt. Weil zum Thema bereits ein Bericht vorlag, beantragte der Regierungsrat, den Auftrag im selben Zug als erledigt abzuschreiben. Eine Abschreibung beendet den Auftrag, ohne dass weitere Arbeiten folgen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Nachmittag)#3",
+   "kontext": "Postulat: Brückenangebote eindämmen, direkte Anschlusslösungen stärken",
+   "frage": "Soll der Kanton darauf hinwirken, dass nach der Sekundarschule mehr Jugendliche direkt eine Lehre beginnen statt ein Zwischenjahr einzuschalten?",
+   "zusammenfassung": "Brückenangebote sind Zwischenjahre zwischen Volksschule und Berufsbildung. Ihre Zahl ist gestiegen. Das Postulat verlangt vom Regierungsrat Strategien, um sie einzudämmen und stattdessen den direkten Übertritt in eine Lehre oder eine weiterführende Schule zu stärken.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. Sitzung 2025 · 03.03.2025 (Vormittag)#10",
+   "kontext": "Postulat: Energiekostenzulage für Haushalte mit geringem Einkommen",
+   "frage": "Soll der Kanton Haushalten mit kleinem Einkommen eine Zulage an die Energiekosten zahlen?",
+   "zusammenfassung": "Steigende Strom- und Heizkosten treffen Haushalte mit kleinem Einkommen besonders. Das Postulat verlangt vom Regierungsrat zu prüfen, wie deren Kaufkraft mit einer Zulage an die Energiekosten gestärkt werden kann.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "8. Sitzung 2025 Traktanden · 31.03.2025 (Vormittag)#8",
+   "kontext": "Volksmotion: Sitz der Studierenden im Hochschulrat der Pädagogischen Hochschule",
+   "frage": "Sollen die Studierenden im Hochschulrat der Pädagogischen Hochschule vertreten sein?",
+   "zusammenfassung": "Der Hochschulrat ist das oberste Organ der Pädagogischen Hochschule Schaffhausen. Die von über 150 Personen unterzeichnete Volksmotion verlangt, dass die Studierenden dort mit einer eigenen Stimme vertreten sind.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "27. Sitzung 2025 · 15.12.2025 (Vormittag)#9",
+   "kontext": "Volksmotion «Kein Kahlschlag auf dem Geissberg»",
+   "frage": "Soll die Holznutzung auf dem Geissberg eingeschränkt und der Wald dort stärker geschützt werden?",
+   "zusammenfassung": "Grössere Holzschläge auf dem Geissberg hatten in der Bevölkerung Kritik ausgelöst. Die von über 260 Personen unterzeichnete Volksmotion verlangt eine nachhaltige Nutzung und den Erhalt des Walds. Dagegen stand das Argument, die Bewirtschaftung folge bereits den forstlichen Vorgaben.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Abend)#13",
+   "kontext": "Budget 2026, Verpflichtungskredite",
+   "frage": "Soll der Kanton Geld für die Bewerbung als Kulturhauptstadt 2030 sprechen?",
+   "zusammenfassung": "Schaffhausen bewirbt sich um den Titel einer europäischen Kulturhauptstadt im Jahr 2030. Zur Finanzierung der Vorbereitungsarbeiten war im Budget 2026 ein Verpflichtungskredit vorgesehen. Ein Verpflichtungskredit bindet den Kanton über mehrere Jahre.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Nachmittag)#10",
+   "kontext": "Motion: Wiedergutmachung für Betroffene von Medikamentenversuchen in der Breitenau",
+   "frage": "Soll der Kanton auch Betroffene von Medikamentenversuchen in der Klinik Breitenau entschädigen?",
+   "zusammenfassung": "Zwischen 1950 und 1980 wurden in der kantonalen Psychiatrieklinik Breitenau Medikamentenversuche an Patienten durchgeführt. Die Motion verlangt, das Dossier nicht zu schliessen und die Betroffenen in eine Wiedergutmachung einzubeziehen. Der Regierungsrat hatte die Überweisung wegen des Aufwands abgelehnt.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "6. und 7. Sitzung 2025 · 17.03.2025 (Nachmittag)#1",
+   "kontext": "Postulat: Vergünstigte ÖV-Abonnemente für Jugendliche",
+   "frage": "Soll der Kanton Jugendlichen die Abonnemente des öffentlichen Verkehrs verbilligen?",
+   "zusammenfassung": "Das Postulat verlangt vom Regierungsrat zu prüfen, wie der Kanton Abonnemente des öffentlichen Verkehrs für Jugendliche vergünstigen kann, damit der Weg zu Schule, Lehre und Freizeit weniger kostet.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Nachmittag)#1",
+   "kontext": "Motion: Neuregelung der Gewinnverteilung der Schaffhauser Kantonalbank",
+   "frage": "Soll neu geregelt werden, wie der Gewinn der Schaffhauser Kantonalbank verteilt wird?",
+   "zusammenfassung": "Die Kantonalbank gehört dem Kanton und liefert einen Teil ihres Gewinns ab. Die Motion verlangt, diese Verteilung neu zu regeln, mit dem Ziel eines höheren Anteils für die öffentliche Hand. Dagegen stand das Argument, die Bank brauche Eigenkapital für ihr Wachstum.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "9. Sitzung 2025 · 05.05.2025 (Vormittag)#4",
+   "kontext": "Erhöhung des Ortsverkehrsbeitrages, erste Lesung",
+   "frage": "Soll sich der Kanton am Ortsverkehr mit einem festen Anteil von 20 Prozent der ungedeckten Betriebskosten beteiligen?",
+   "zusammenfassung": "Der Kanton beteiligt sich an den ungedeckten Betriebskosten des Ortsverkehrs von Schaffhausen und Neuhausen. Der Antrag will diesen Anteil im Gesetz auf 20 Prozent festschreiben, statt ihn im Einzelfall auszuhandeln. Ein fester Prozentsatz wächst mit den Kosten mit, ein Höchstbetrag nicht.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Nachmittag)#2",
+   "kontext": "Postulat: Zusätzliche Nationalbankausschüttungen für den Generationenfonds",
+   "frage": "Sollen zusätzliche Ausschüttungen der Nationalbank in den Generationenfonds fliessen statt in die laufende Rechnung?",
+   "zusammenfassung": "Die Schweizerische Nationalbank schüttet in guten Jahren zusätzliche Beträge an Bund und Kantone aus. Das Postulat verlangt zu prüfen, ob solche ausserordentlichen Mittel dem Generationenfonds zugewiesen werden. Der Fonds ist für langfristige Lasten gedacht, das laufende Budget für den Betrieb.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "3. und 4. Sitzung 2025 · 17.02.2025 (Nachmittag)#1",
+   "kontext": "Teilrevision des Steuergesetzes: Anteil der Gemeinden an der direkten Bundessteuer",
+   "frage": "Soll ein Überschuss aus dem Gemeindeanteil an der Bundessteuer je zur Hälfte nach Steuerkraft und nach Einwohnerzahl verteilt werden?",
+   "zusammenfassung": "Die Gemeinden erhalten einen Anteil an der direkten Bundessteuer. Sind die Mindereinnahmen der Gemeinden ausgeglichen und bleibt ein Überschuss, muss geregelt werden, wie er verteilt wird. Der Antrag will ihn je zur Hälfte nach den Steuereinnahmen von juristischen Personen und nach der Einwohnerzahl aufteilen. Die erste Grösse begünstigt Gemeinden mit vielen Firmen, die zweite die bevölkerungsreichen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "25. und 26. Sitzung 2025 · 01.12.2025 (Nachmittag)#10",
+   "kontext": "Stärkung der ambulanten psychiatrischen und psychotherapeutischen Versorgung",
+   "frage": "Soll das Postulat für eine langfristige Strategie zur psychischen Gesundheit als erledigt abgeschrieben werden?",
+   "zusammenfassung": "Das Postulat verlangte eine mittel- bis langfristige Strategie zur Sicherstellung der psychischen Gesundheit im Kanton. Der Regierungsrat legte dazu fünf Massnahmen vor und beantragte, den Auftrag abzuschreiben. Strittig war, ob fünf Massnahmen bereits eine Strategie sind.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "25. und 26. Sitzung 2025 · 01.12.2025 (Nachmittag)#1",
+   "kontext": "Teilrevision des Schulgesetzes: flächendeckend geleitete Schulen",
+   "frage": "Sollen Lehrer und Schulleitungen der öffentlichen Schulen beim Kanton angestellt bleiben?",
+   "zusammenfassung": "Mit der Einführung geleiteter Schulen stellte sich die Frage, wer die Schulleitungen anstellt. Der Antrag will im Gesetz festhalten, dass Lehrer und Schulleitungen der öffentlichen Schulen sowie der Rektor der Kantonsschule Arbeitnehmer des Kantons sind. Die Gegenposition will die Anstellung bei den Gemeinden.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Nachmittag)#9",
+   "kontext": "Postulat: Schulen und Lehrpersonen im Umgang mit künstlicher Intelligenz stärken",
+   "frage": "Soll der Kanton Schulen und Lehrpersonen im Umgang mit künstlicher Intelligenz gezielt unterstützen?",
+   "zusammenfassung": "Künstliche Intelligenz verändert Unterricht und Prüfungen. Das Postulat verlangt vom Regierungsrat aufzuzeigen, wie Schulen, Schulleitungen und Lehrpersonen darin gestärkt werden können.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "18. Sitzung 2025 · 08.09.2025 (Vormittag)#5",
+   "kontext": "Kantonsreferendum gegen das Bundesgesetz über die Individualbesteuerung",
+   "frage": "Soll Schaffhausen zusammen mit anderen Kantonen das Referendum gegen die Individualbesteuerung ergreifen?",
+   "zusammenfassung": "Das eidgenössische Parlament hat die Individualbesteuerung beschlossen: Ehepaare würden künftig getrennt besteuert. Acht Kantone können gemeinsam das Kantonsreferendum ergreifen und damit eine Volksabstimmung erzwingen. Strittig war, ob der Bund damit in die Steuerhoheit der Kantone eingreift oder ob die Reform die Erwerbsanreize verbessert.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "21. Sitzung 2025 · 03.11.2025 (Vormittag)#9",
+   "kontext": "Postulat: Kantonaler Beitrag zur Ticket-Integration",
+   "frage": "Soll sich der Kanton daran beteiligen, dass Menschen mit kleinem Budget öffentliche Veranstaltungen vergünstigt besuchen können?",
+   "zusammenfassung": "Die «Ticket Integration» verbilligt den Eintritt zu Kultur- und Sportveranstaltungen für Menschen in bescheidenen wirtschaftlichen Verhältnissen. Das Postulat verlangt einen kantonalen Beitrag daran.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2026 · 18.05.2026 (Nachmittag)#6",
+   "kontext": "Postulat: Berufsmaturität stärken, Lernende und Lehrbetriebe entlasten",
+   "frage": "Soll der Kanton die Berufsmaturität stärken und die Belastung für Lernende und Lehrbetriebe senken?",
+   "zusammenfassung": "Die Berufsmaturität wird begleitend zur Lehre absolviert und beansprucht Lernende wie Betriebe zusätzlich. Das Postulat verlangt vom Regierungsrat Massnahmen, die diese Belastung senken und den Weg attraktiver machen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)#9",
+   "kontext": "Teilrevision des Finanzhaushaltsgesetzes: Globalbudget",
+   "frage": "Soll ein Globalbudget nur zulässig sein, wenn ein kantonales Spezialgesetz es ausdrücklich vorsieht?",
+   "zusammenfassung": "Beim Globalbudget erhält eine Verwaltungseinheit einen Gesamtbetrag statt einzelner Konten. Die Revision will das für Kanton und Gemeinden einheitlich erlauben. Der Antrag will es an ein Spezialgesetz binden. Das gäbe dem Kantonsrat mehr Kontrolle, verlangte aber für jede Gemeinde mit Globalbudget eine eigene gesetzliche Grundlage.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "18. Sitzung 2025 · 08.09.2025 (Vormittag)#2",
+   "kontext": "Teilrevision des Finanzhaushaltsgesetzes, zweite Lesung",
+   "frage": "Soll bei Anstalten wie Informatik Schaffhausen nur dann vom Finanzhaushaltsgesetz abgewichen werden dürfen, wenn ein Erlass es vorsieht, der dem Referendum untersteht?",
+   "zusammenfassung": "Das Finanzhaushaltsgesetz gilt auch für selbständige und unselbständige Anstalten wie Informatik Schaffhausen und das Interkantonale Labor. Der Antrag will Abweichungen nur zulassen, wenn ein kantonaler oder kommunaler Erlass sie vorsieht, der dem Referendum untersteht. Dahinter steht die Frage, wie viel Einblick Parlament und Stimmvolk in solche Betriebe behalten.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. Sitzung 2025 · 03.03.2025 (Vormittag)#3",
+   "kontext": "Postulat: Ökologischer Schaufelraddampfer auf Untersee und Rhein",
+   "frage": "Soll der Kanton einen ökologisch betriebenen Schaufelraddampfer auf Untersee und Rhein prüfen?",
+   "zusammenfassung": "Auf Untersee und Rhein verkehren die Kursschiffe der Schifffahrtsgesellschaft, an der sich der Kanton beteiligt. Das Postulat verlangt zu prüfen, ob ein Schaufelraddampfer mit ökologischem Antrieb beschafft werden kann, als Beitrag an Tourismus und Klimaschutz zugleich.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. Sitzung 2026 · 29.06.2026 (Vormittag)#3",
+   "kontext": "Teilrevision des Schulgesetzes und des Schuldekretes, Schlussabstimmung",
+   "frage": "Soll das Schuldekret mit der flächendeckenden Einführung geleiteter Schulen in Kraft treten?",
+   "zusammenfassung": "Das Schuldekret regelt die Einzelheiten zur Revision des Schulgesetzes, mit der geleitete Schulen im ganzen Kanton eingeführt werden. In der Schlussabstimmung entscheidet der Rat über die Vorlage als Ganzes, wie sie aus zwei Lesungen hervorgegangen ist.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag)#9",
+   "kontext": "Motion «Konversionsmassnahmen verbieten»",
+   "frage": "Soll der Kanton sogenannte Konversionsmassnahmen verbieten?",
+   "zusammenfassung": "Als Konversionsmassnahmen gelten Versuche, die sexuelle Orientierung oder die Geschlechtsidentität einer Person zu ändern. Fachgesellschaften halten sie für schädlich. Die Motion verlangt ein kantonales Verbot solcher Angebote.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "7. Sitzung 2026 · 01.06.2026 (Vormittag)#6",
+   "kontext": "Motion «Für einen verantwortungsvollen Umgang mit Bauland»",
+   "frage": "Soll der Kanton dafür sorgen, dass eingezontes Bauland tatsächlich überbaut wird?",
+   "zusammenfassung": "Ein Teil des eingezonten Baulands bleibt über Jahre unbebaut, während anderswo neu eingezont wird. Das Bundesrecht verlangt von den Kantonen Massnahmen dagegen. Die Motion verlangt solche Instrumente für Schaffhausen, etwa Fristen für die Überbauung.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Abend)#9",
+   "kontext": "Budget 2026, Rebsteuer",
+   "frage": "Soll die Rebsteuer bei einem Franken pro Are bleiben?",
+   "zusammenfassung": "Die Rebsteuer ist eine Abgabe der Rebbaubetriebe nach dem kantonalen Landwirtschaftsgesetz. Ihre Höhe setzt der Kantonsrat jährlich mit dem Budget fest. Zur Abstimmung stand der Ansatz von einem Franken pro Are.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Vormittag)#8",
+   "kontext": "Gesetz über den Solidaritätsbeitrag an Opfer fürsorgerischer Zwangsmassnahmen",
+   "frage": "Sollen auch Betroffene von Medikamentenversuchen in der Breitenau einen Solidaritätsbeitrag erhalten?",
+   "zusammenfassung": "Das Gesetz regelt Solidaritätsbeiträge an Opfer fürsorgerischer Zwangsmassnahmen und Fremdplatzierungen vor 1981. In dieser Schlussabstimmung ging es um die erweiterte Fassung, die zusätzlich Betroffene von Medikamentenversuchen in der psychiatrischen Klinik Breitenau zwischen 1950 und 1980 einschliesst. Die Beiträge werden auf Gesuch hin ausgerichtet.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "3. und 4. Sitzung 2025 · 17.02.2025 (Vormittag)#2",
+   "kontext": "Änderung des Gemeindegesetzes: separate Referenden gegen Budget und Steuerfuss",
+   "frage": "Soll die Möglichkeit gestrichen werden, dass eine Gemeinde allein den Steuerfuss dem Referendum unterstellt?",
+   "zusammenfassung": "Nach der Vorlage unterstehen Budget und Steuerfuss einer Gemeinde dem fakultativen Referendum, und eine Gemeinde kann in ihrer Verfassung vorsehen, dass nur der Steuerfuss angefochten werden kann. Der Antrag will diese Wahlmöglichkeit streichen, sodass Budget und Steuerfuss stets zusammen angefochten würden.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "13. und 14. Sitzung 2025 · 16.06.2025 (Nachmittag)#5",
+   "kontext": "Postulat: Zugang zu Ergänzungsleistungen verbessern",
+   "frage": "Soll der Kanton den Zugang zu Ergänzungsleistungen erleichtern?",
+   "zusammenfassung": "Ergänzungsleistungen decken den Grundbedarf, wenn Rente und Einkommen nicht reichen. Ein Teil der Berechtigten bezieht sie nicht, oft wegen des Verfahrens oder aus Unkenntnis. Das Postulat verlangt vom Regierungsrat Massnahmen, die den Zugang verbessern.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#10",
+   "kontext": "Budget 2026, Verpflichtungskredite",
+   "frage": "Soll der Kredit für die Beseitigung von Quaggamuschelrückständen im Rhein gestrichen werden?",
+   "zusammenfassung": "Die Quaggamuschel breitet sich im Rhein aus und setzt sich in Leitungen und Anlagen fest. Für die Beseitigung der Rückstände war ein Verpflichtungskredit vorgesehen. Der Antrag will ihn aus dem Budget 2026 streichen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2026 · 18.05.2026 (Nachmittag)#7",
+   "kontext": "Volksmotion: Teilzeitmodell für die Berufsmaturität 2",
+   "frage": "Soll die Berufsmaturität nach der Lehre auch in Teilzeit absolviert werden können?",
+   "zusammenfassung": "Die Berufsmaturität 2 wird nach abgeschlossener Lehre besucht, im Kanton bisher in Vollzeit. Die von über 150 Personen unterzeichnete Volksmotion verlangt ein Teilzeitmodell, damit sie sich mit Erwerbsarbeit verbinden lässt.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Vormittag)#7",
+   "kontext": "Postulat: Begrenzung der Vergütung der Axpo-Geschäftsleitung",
+   "frage": "Soll sich der Kanton als Miteigentümer für eine Begrenzung der Löhne der Axpo-Geschäftsleitung einsetzen?",
+   "zusammenfassung": "Die Axpo gehört mehreren Nordostschweizer Kantonen, darunter Schaffhausen. Das Postulat verlangt, dass sich der Kanton als Eigner für eine Begrenzung der Vergütung der Geschäftsleitung auf ein vernünftiges Mass einsetzt.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#6",
+   "kontext": "Beschluss über den Beitrag an den Ortsverkehr",
+   "frage": "Soll der Kantonsbeitrag an den Ortsverkehr auf höchstens 4,5 Millionen Franken im Jahr begrenzt werden?",
+   "zusammenfassung": "Nachdem der Rat entschieden hatte, den Höchstbetrag in einem eigenen Beschluss festzulegen, ging es um dessen Höhe. Der Antrag setzt den maximalen Staatsbeitrag an die ungedeckten Betriebskosten des Ortsverkehrs auf 4,5 Millionen Franken pro Jahr fest.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "8. und 9. Sitzung 2026 · 15.06.2026 (Nachmittag)#5",
+   "kontext": "Vier Postulate zur Axpo und zum Elektrizitätswerk des Kantons Schaffhausen",
+   "frage": "Soll das Postulat zur Begrenzung der Axpo-Vergütungen als erledigt abgeschrieben werden?",
+   "zusammenfassung": "Der Rat hatte 2025 verlangt, dass sich der Kanton für eine Begrenzung der Vergütung der Axpo-Geschäftsleitung einsetzt. Der Regierungsrat berichtete über das Erreichte und beantragte, den Auftrag abzuschreiben. Eine Abschreibung beendet den Auftrag.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Abend)#1",
+   "kontext": "Budget 2026, Energie- und Klimafonds",
+   "frage": "Soll die Einlage in den Klimafonds auf die ursprünglich beantragten 4,5 und 1,5 Millionen Franken zurückgesetzt werden?",
+   "zusammenfassung": "Der Energie- und Klimafonds finanziert Förderprogramme des Kantons. Die Geschäftsprüfungskommission hatte die von der Regierung beantragte Einlage gekürzt. Der Antrag will diese Kürzung rückgängig machen: 4,5 Millionen Franken für Energie und Klimaschutz, 1,5 Millionen für Klimaanpassung.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag)#8",
+   "kontext": "Totalrevision des Einführungsgesetzes zur AHV und zur Invalidenversicherung",
+   "frage": "Soll das Personal der Sozialversicherungsanstalt dem Privatrecht unterstehen, mit einem Reglement, das sich am kantonalen Personalgesetz orientiert?",
+   "zusammenfassung": "Die Sozialversicherungsanstalt wird vom Kanton unabhängig. Strittig war das Anstellungsrecht ihres Personals. Der Antrag unterstellt die Anstellungen dem Privatrecht und schreibt zugleich vor, dass sich das Personalreglement am kantonalen Personalgesetz orientiert. Das ist ein Mittelweg zwischen voller Eigenständigkeit und kantonalem Personalrecht.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#11",
+   "kontext": "Genehmigung des kantonalen Strassenrichtplans, Schlussabstimmung",
+   "frage": "Soll der kantonale Strassenrichtplan in der bereinigten Fassung genehmigt werden?",
+   "zusammenfassung": "Der Strassenrichtplan legt fest, welche Strassen- und Radprojekte der Kanton weiterverfolgt. Nachdem der Rat über die einzelnen Planungserklärungen entschieden hatte, ging es in der Schlussabstimmung um den Plan als Ganzes.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "25. und 26. Sitzung 2025 · 01.12.2025 (Nachmittag)#3",
+   "kontext": "Teilrevision des Schulgesetzes: flächendeckend geleitete Schulen",
+   "frage": "Sollen die Gemeinden die Schulleitungen selbst anstellen können?",
+   "zusammenfassung": "Gegenstück zur Frage nach der Anstellung beim Kanton: Der Antrag will den Gemeinden ausdrücklich erlauben, die Schulleitungen nach den Vorgaben des kantonalen Rechts selbst anzustellen. Dafür sprach die Nähe zur Gemeinde, dagegen die einheitlichen Anstellungsbedingungen im Kanton.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "15. Sitzung 2025 · 30.06.2025 (Vormittag)#2",
+   "kontext": "Gegenvorschlag zur Volksinitiative zur baulichen Erneuerung des Kantonsspitals",
+   "frage": "Soll die Einlage des Kantons in das Eigenkapital der Spitäler von 70 auf 60 Millionen Franken gesenkt werden?",
+   "zusammenfassung": "Der Gegenvorschlag sieht vor, dass der Kanton zu Baubeginn 70 Millionen Franken in das Eigenkapital der Spitäler Schaffhausen einlegt. Der Antrag will diesen Betrag auf 60 Millionen senken. In der Debatte reichten die genannten Schätzungen des Bedarfs von 55 bis 99 Millionen Franken.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "25. und 26. Sitzung 2025 · 01.12.2025 (Nachmittag)#9",
+   "kontext": "Stärkung der ambulanten psychiatrischen und psychotherapeutischen Versorgung",
+   "frage": "Soll das Postulat für Sofortmassnahmen in der psychischen Gesundheit Jugendlicher als erledigt abgeschrieben werden?",
+   "zusammenfassung": "Das Postulat verlangte Sofortmassnahmen für Jugendliche und junge Erwachsene in der psychischen Gesundheitsversorgung. Der Regierungsrat legte fünf Massnahmen vor und beantragte, den Auftrag abzuschreiben.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "18. Sitzung 2025 · 08.09.2025 (Vormittag)#3",
+   "kontext": "Teilrevision des Finanzhaushaltsgesetzes, Schlussabstimmung",
+   "frage": "Soll die Revision des Finanzhaushaltsgesetzes zum Globalbudget in Kraft treten?",
+   "zusammenfassung": "Die Revision klärt, unter welchen Bedingungen Kanton und Gemeinden ihre Anstalten mit einem Globalbudget führen dürfen. Für die Gemeinden war die Rechtslage bisher unklar. In der Schlussabstimmung entschied der Rat über die Vorlage als Ganzes.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2026 · 18.05.2026 (Vormittag)#2",
+   "kontext": "Gesetz über Aktenführung und Archivierung (Archivgesetz)",
+   "frage": "Soll das Staatsarchiv die Gemeindearchive beraten, statt ihnen Weisungen zu erteilen?",
+   "zusammenfassung": "Die Vorlage sah vor, dass das Staatsarchiv den Gemeinden Weisungen zur Archivierung erteilen kann. Der Antrag ersetzt das durch einen Beratungsauftrag und streicht die Weisungsbestimmung ganz. Dahinter steht die Frage, wie weit der Kanton den Gemeinden in die Aktenführung hineinredet.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#5",
+   "kontext": "Budget 2026, Abteilung Familie und Jugend",
+   "frage": "Soll die Abteilung Familie und Jugend um ein Zehntelpensum gekürzt werden?",
+   "zusammenfassung": "Der Antrag zum Budget 2026 will die Lohnsumme der Abteilung Familie und Jugend um 12'150 Franken senken. Das entspricht einem Pensum von zehn Prozent.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag)#4",
+   "kontext": "Totalrevision des Einführungsgesetzes zur AHV und zur Invalidenversicherung",
+   "frage": "Soll der Kantonsrat die Verwaltungskommission der Sozialversicherungsanstalt selbst wählen, mit einer Amtszeit von höchstens zwölf Jahren?",
+   "zusammenfassung": "Die Sozialversicherungsanstalt erhält eine eigene Verwaltungskommission. Der Antrag will, dass der Kantonsrat deren Präsidium und die vier weiteren Mitglieder wählt, auf unverbindlichen Vorschlag des Regierungsrats, und dass niemand länger als zwölf Jahre im Amt bleibt.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag)#5",
+   "kontext": "Totalrevision des Einführungsgesetzes zur AHV und zur Invalidenversicherung",
+   "frage": "Soll man bis zum vollendeten 70. Altersjahr in die Verwaltungskommission der Sozialversicherungsanstalt gewählt werden können, statt nur bis 65?",
+   "zusammenfassung": "Die Vorlage sah eine Altersgrenze von 65 Jahren für die Wahl in die Verwaltungskommission vor. Der Antrag will sie auf 70 Jahre anheben; bestehende Mitglieder würden mit Vollendung des 70. Altersjahres ausscheiden.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#2",
+   "kontext": "Budget 2026, Sozialamt",
+   "frage": "Soll die Lohnsumme des Sozialamts auf 1,7 Millionen Franken gekürzt werden?",
+   "zusammenfassung": "Der Antrag zum Budget 2026 will die Löhne des Verwaltungs- und Betriebspersonals im Sozialamt auf 1,7 Millionen Franken begrenzen und damit unter den beantragten Betrag senken.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#3",
+   "kontext": "Budget 2026, Fonds Asyl- und Flüchtlingswesen",
+   "frage": "Soll die Lohnsumme im Asyl- und Flüchtlingswesen auf 6,3 Millionen Franken gekürzt werden?",
+   "zusammenfassung": "Das Personal im Asyl- und Flüchtlingswesen wird aus einem eigenen Fonds bezahlt. Der Antrag zum Budget 2026 will diese Lohnsumme auf 6,3 Millionen Franken begrenzen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#8",
+   "kontext": "Budget 2026, Strassenverkehrs- und Schifffahrtsamt",
+   "frage": "Soll die Dispositionsstelle im Strassenverkehrsamt auf ein halbes Pensum gekürzt werden?",
+   "zusammenfassung": "Der Antrag zum Budget 2026 will die Lohnsumme des Strassenverkehrs- und Schifffahrtsamts um 42'500 Franken senken, was der Halbierung des Pensums der Dispositionsstelle entspricht.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#7",
+   "kontext": "Budget 2026, Strassenverkehrs- und Schifffahrtsamt",
+   "frage": "Soll die Lohnsumme des Strassenverkehrsamts um 92'000 Franken gekürzt werden?",
+   "zusammenfassung": "Ein weitergehender Antrag zum selben Posten: Er will die Löhne des Verwaltungs- und Betriebspersonals im Strassenverkehrs- und Schifffahrtsamt um 92'000 Franken senken.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)#1",
+   "kontext": "«Volksinitiative für flüssigen Verkehr auf kantonalen Hauptstrassen»",
+   "frage": "Soll ein Satz der Verkehrsflussinitiative für ungültig erklärt werden?",
+   "zusammenfassung": "Der Kantonsrat prüft, ob eine Volksinitiative mit übergeordnetem Recht vereinbar ist. Der Antrag will den zweiten Satz der von der Initiative vorgeschlagenen Bestimmung für ungültig erklären, sodass nur der übrige Text vor das Volk käme. Eine Teilungültigkeit beschneidet das Anliegen der Initianten, wahrt aber die Rechtmässigkeit der Vorlage.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "9. Sitzung 2025 · 05.05.2025 (Vormittag)#6",
+   "kontext": "Erhöhung des Ortsverkehrsbeitrages, erste Lesung",
+   "frage": "Soll der Kantonsrat den Höchstbeitrag an den Ortsverkehr in einem eigenen Beschluss festlegen?",
+   "zusammenfassung": "Der Antrag will, dass der Kantonsrat die Höhe des maximalen jährlichen Beitrags an den Ortsverkehr selbst beschliesst. Die zuständigen Gemeinden könnten beim Regierungsrat eine Anpassung beantragen, entscheiden müsste weiterhin der Rat. Das ist die Alternative zu einem festen Prozentsatz, der mit den Kosten mitwächst.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "19. und 20. Sitzung 2025 · 22.09.2025 (Vormittag)#4",
+   "kontext": "Revision der Kantonsverfassung: Finanzbefugnisse",
+   "frage": "Sollen Geschäfte über Anteile an strategischen Beteiligungen des Kantons ab 10 Millionen Franken zwingend vor das Volk?",
+   "zusammenfassung": "Strategische Beteiligungen des Kantons sind Anteile an Unternehmen wie Kantonalbank, Elektrizitätswerk oder Axpo. Der Antrag will in der Verfassung festhalten, dass Kauf oder Verkauf solcher Anteile obligatorisch der Volksabstimmung untersteht, wenn der Verkehrswert 10 Millionen Franken übersteigt oder sich der Anteil des Kantons dadurch wesentlich verändert.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "8. und 9. Sitzung 2026 · 15.06.2026 (Nachmittag)#3",
+   "kontext": "Vier Postulate zur Axpo und zum Elektrizitätswerk des Kantons Schaffhausen",
+   "frage": "Soll das Postulat zur Stärkung der Stromversorgung der Axpo-Eignerkantone als erledigt abgeschrieben werden?",
+   "zusammenfassung": "Das Postulat aus dem Jahr 2022 verlangte, dass die Axpo die Versorgung ihrer Eignerkantone stärker sichert. Der Regierungsrat berichtete darüber und beantragte, den Auftrag abzuschreiben.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Abend)#17",
+   "kontext": "Budget 2026 der Spezialverwaltungen",
+   "frage": "Soll das Budget 2026 der Informatik Schaffhausen genehmigt werden?",
+   "zusammenfassung": "Informatik Schaffhausen ist eine unselbständige Anstalt des Kantons und führt ein eigenes Budget, das der Kantonsrat gesondert genehmigt. Zur Abstimmung stand das Budget 2026 dieser Spezialverwaltung.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "9. Sitzung 2025 · 05.05.2025 (Vormittag)#3",
+   "kontext": "Erhöhung des Ortsverkehrsbeitrages, erste Lesung",
+   "frage": "Soll sich der Kanton an den ungedeckten Kosten von Güterverkehr, Kursschifffahrt und Ausflugsverkehr beteiligen können?",
+   "zusammenfassung": "Das Gesetz zur Förderung des öffentlichen Verkehrs regelt, wofür der Kanton zahlt. Der Antrag will eine Bestimmung einfügen, wonach der Kanton bei vorrangigem kantonalem Interesse auch für Güterverkehr, Kursschifffahrt und Ausflugsverkehr Vereinbarungen abschliessen und sich an den ungedeckten Kosten beteiligen kann.",
+   "dafuer": null,
+   "dagegen": null
+  }
+ ]
+}

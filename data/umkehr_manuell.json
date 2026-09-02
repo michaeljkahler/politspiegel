@@ -1,0 +1,295 @@
+{
+ "hinweis": "Handentscheide zu Umkehrabstimmungen, die der automatische Abgleich nicht klären konnte. Grundlage ist jeweils die zitierte Stelle im Wortprotokoll. Diese Datei hat Vorrang vor Regelwerk und automatischem Protokollabgleich. Wer einen Entscheid ändern will, ändert ihn hier.",
+ "entscheide": [
+  {
+   "schluessel": "1. Sitzung des Kantonsrats · 10.01.2022 (Vormittag) #Nr1",
+   "titel": "Antrag Urs Capaul",
+   "inverted_note": "Ja bedeutet Überweisung an 9er-SPK",
+   "stimmen": "19 Ja : 35 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Das Geschäft wurde mit 35 Stimmen der GrüZ zugewiesen, das sind die Nein-Stimmen. Aus dem Protokoll geht hervor, dass das Präsidium die 9er-Kommission vorschlug und Urs Capaul für die GrüZ plädierte. Ein Ja stützte also die 9er-Kommission und damit die Gegenposition zu seinem Antrag.",
+   "beleg": "Protokoll der 1. Sitzung vom 10. Januar 2022 5 Abstimmung Das Geschäft wird mit 35 : 19 Stimmen der GrüZ zugewiesen.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "11. und 12. Sitzung 2024 · 17.06.2024 (Vormittag) #Nr1",
+   "titel": "Antrag Linda De Ventura",
+   "inverted_note": "Ja bedeutet Beibehaltung Traktandeliste",
+   "stimmen": "2 Ja : 49 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der Änderung der Traktandenliste wurde mit 49 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja bedeutete Beibehaltung, also Ablehnung des Antrags De Ventura.",
+   "beleg": "Abstimmung Der Änderung der Traktandenliste wird mit 49 : 2 Stimmen bei 4 Enthaltungen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "12. Sitzung 2025 · 02.06.2025 (Vormittag) #Nr5",
+   "titel": "Antrag A. Penkov",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+   "stimmen": "40 Ja : 16 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der Kommissionsvorlage wurde mit den 40 Ja-Stimmen gegenüber dem Änderungsantrag Penkov der Vorzug gegeben. Ein Ja ist die Ablehnung des Antrags.",
+   "beleg": "Abstimmungen Der Kommissionsvorlage wird mit 40 : 16 Stimmen bei 1 Enthaltung gegenüber dem Änderungsantrag von Angela Penkov der Vorzug gegeben Der Kommissionsvorlage wird mit 39 : 16 Stimmen bei 2 Enthaltungen gegenüber dem Streichungsantrag von Erich Schudel der Vorzug gegeben.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "14. Sitzung des Kantonsrats · 12.09.2022 (Vormittag) #Nr10",
+   "titel": "Antrag Patrick Portmann: Es sei ein neuer Abs. 3 unter 37a zu schaffen, der lautet:",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+   "stimmen": "35 Ja : 18 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der zitierte Antragstext wurde mit den 35 Ja-Stimmen abgelehnt. Ein Ja stützte die Spezialkommission, nicht den Antrag Portmann.",
+   "beleg": "») wird mit 35 : 18 Stimmen abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "14. und 15. Sitzung 2024 · 26.08.2024 (Vormittag) #Nr3",
+   "titel": "Antrag Knapp/Schnetzler/Kessler",
+   "inverted_note": "Ja bedeutet Unterstützung Antrag SPK 2023/5",
+   "stimmen": "3 Ja : 49 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der bereinigte Antrag zur Basissteuersumme wurde mit 49 Stimmen angenommen, das sind die Nein-Stimmen. Der Hinweis ordnet das Ja der Spezialkommission zu, der Titel nennt die Gegenseite. Ein Ja ist damit die Ablehnung des Antrags Knapp/Schnetzler/Kessler.",
+   "beleg": "Abstimmung Dem bereinigten Antrag mit der Festlegung der Basissteuersumme auf 14.5 Mio. Franken, dass es durch Beschluss des Kantonsrats angepasst werden kann und Ziff. 2 wie folgt angepasst wird: «Der KFaktor ergibt sich aus der Veränderung des Fahrzeugbestands in Prozent des Vorjahresbestands, zuzüglich 100%, wird mit 49 : 3 Stimmen und 3 Enthaltungen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "14. und 15. Sitzung 2024 · 26.08.2024 (Vormittag) #Nr9",
+   "titel": "Antrag Christian Heydecker",
+   "inverted_note": "Ja bedeutet Unterstützung Antrag SPK 2024/6",
+   "stimmen": "30 Ja : 28 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Die beantragte Streichung des zweiten Satzes in Art. 5 Abs. 1 wurde mit den 30 Ja-Stimmen abgelehnt. Ein Ja ist die Ablehnung des Antrags Heydecker.",
+   "beleg": "Abstimmung Den zweiten Satz in Art. 5 Abs. 1 zu streichen wird mit 30 : 28 Stimmen abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "15. und 16. Sitzung · 25.09.2023 (Vormittag) #Nr14",
+   "titel": "Antrag Peter Werner",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+   "stimmen": "35 Ja : 17 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem aktuellen § 8 Abs. 1 wurde mit den 35 Ja-Stimmen der Vorzug gegeben, also dem bestehenden Recht. Der Antrag Werner wollte es ändern, ein Ja ist seine Ablehnung.",
+   "beleg": "Abstimmung Dem aktuellen § 8 Abs. 1 wird mit 35 : 17 Stimmen der Vorzug gegeben.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "17. und 18. Sitzung 2024 · 23.09.2024 (Vormittag) #Nr8",
+   "titel": "Antrag Josef Würms",
+   "inverted_note": "Ja bedeutet Zustimmung Kommissionsvorlage",
+   "stimmen": "38 Ja : 19 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der Streichungsantrag zu Abs. 3 wurde mit den 38 Ja-Stimmen abgelehnt. Ein Ja stützte die Kommissionsvorlage.",
+   "beleg": "Der Streichungsantrag zu Abs. 3 wird mit 38 : 19 Stimmen bei 1 Enthaltung abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "17. und 18. Sitzung · 06.11.2023 (Nachmittag) #Nr1",
+   "titel": "Antrag Martin Schlatter",
+   "inverted_note": "Ja bedeutet Zustimmung  Antrag SPK 2021/1",
+   "stimmen": "34 Ja : 17 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem Kommissionsantrag wurde mit den 34 Ja-Stimmen der Vorzug gegenüber dem Streichungsantrag gegeben. Ein Ja ist die Ablehnung des Antrags Schlatter.",
+   "beleg": "Abstimmung Dem Kommissionsantrag wird mit 34 : 17 Stimmen der Vorzug gegenüber dem Streichungsantrag (von § 81 Abs. neu) gegeben.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "17. und 18. Sitzung · 06.11.2023 (Nachmittag) #Nr9",
+   "titel": "Antrag Regula Salathé",
+   "inverted_note": "Ja bedeutet Zustimmung  Antrag SPK 2021/1",
+   "stimmen": "34 Ja : 15 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem abgeänderten Kommissionsvorschlag wurde mit den 34 Ja-Stimmen zugestimmt. Ein Ja stützte die Kommission, nicht den Antrag Salathé.",
+   "beleg": "Dem abgeänderten Kommissionsvorschlag wird mit 34 : 15 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "17. und 18. Sitzung · 06.11.2023 (Vormittag) #Nr2",
+   "titel": "Antrag Regierungsrat Walter Vogelsanger",
+   "inverted_note": "Ja bedeutet Zustimmung 9er-SPK",
+   "stimmen": "36 Ja : 11 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Die Orientierungsvorlage wurde mit den 36 Ja-Stimmen an eine 9er-Spezialkommission überwiesen, was der Hinweis dem Ja zuordnet. Der Antrag des Regierungsrats zielte auf ein anderes Vorgehen, ein Ja ist seine Ablehnung.",
+   "beleg": "Abstimmung Die Orientierungsvorlage wird zur Vorberatung mit 36 : 11 Stimmen an eine 9er-Spezialkommission überwiesen.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "17., 18. und 19. Kantonsratssitzung · 19.11.2018 (Teil 1) #Nr5",
+   "titel": "Antrag Kurt Zubler: Anpassung Ziffer 3",
+   "inverted_note": "Ja bedeutet Annahme GPK Antrag",
+   "stimmen": "30 Ja : 23 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Mit den 30 Ja-Stimmen wurde beschlossen, dass auch GPK-Mitglieder in der PUK vertreten sein dürfen; das ordnet der Hinweis dem Antrag der GPK zu. Der Antrag Zubler zielte auf die Gegenposition.",
+   "beleg": "Abstimmung Mit 30 : 23 Stimmen wird zugestimmt, dass auch GPK-Mitglieder in der PUK vertreten sein dürfen.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "2. Sitzung 2026 · 16.03.2026 (Vormittag) #Nr1",
+   "titel": "Antrag Beat Hedinger",
+   "inverted_note": "Ja bedeutet Zustimmung aktuelle Traktandenliste",
+   "stimmen": "0 Ja : 53 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Das Protokoll hält fest, der Verschiebung des Traktandums 4 sei mit 53 Stimmen zugestimmt worden. Diese 53 sind im Excel die Nein-Stimmen, die Verschiebung war der Antrag Hedinger. Ein Ja stützte also die bestehende Traktandenliste, nicht den Antrag.",
+   "beleg": "Abstimmung Der Verschiebung des Traktandums 4 wird mit 53 : 0 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "2. Sitzung des Kantonsrats · 24.01.2022 (Vormittag) #Nr2",
+   "titel": "Antrag Tim Bucher",
+   "inverted_note": "Ja bedeutet Beibehalten aktuelle Traktandenliste",
+   "stimmen": "19 Ja : 29 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem Antrag zur Umstellung der Traktandenliste wurde mit 29 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja bedeutete Beibehalten und damit Ablehnung des Antrags Bucher.",
+   "beleg": "Abstimmung Dem Antrag zur Umstellung der Traktandenliste wird mit 29 : 19 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "22. und 23. Sitzung · 04.12.2023 (Nachmittag) #Nr1",
+   "titel": "Antrag Erich Schudel",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag De Ventura/Montanari",
+   "stimmen": "35 Ja : 20 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Zugestimmt wurde mit den 35 Ja-Stimmen dem Antrag auf zweimalige temporäre Stellvertretung, den der Hinweis De Ventura/Montanari zuordnet, nicht Schudel. Ein Ja ist die Ablehnung des Antrags Schudel.",
+   "beleg": "Abstimmung Dem Antrag auf eine zweimalige temporäre Stellvertretung pro Legislatur (innerhalb 4 Jahren) wird mit 35 : 20 Stimmen bei 2 Enthaltungen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "22. und 23. Sitzung · 04.12.2023 (Nachmittag) #Nr3",
+   "titel": "Antrag Martin Schlatter",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag De Ventura/Montanari",
+   "stimmen": "9 Ja : 44 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der Version von Martin Schlatter wurde mit 44 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja stand also gegen seinen Antrag.",
+   "beleg": "Abstimmung Der Version von Kantonsrat Martin Schlatter mit dem Einschub «mit Ausnahme der Wählbarkeit in das Ratsbüro, in eine Aufsichtskommission oder als Kommissionspräsident», wird mit 44 : 9 Stimmen bei 5 Enthaltungen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag) #Nr10",
+   "titel": "Antrag Maurus Pfalzgraf",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag GPK/RR",
+   "stimmen": "46 Ja : 11 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Angenommen wurde der Verpflichtungskredit, also die Vorlage, mit den 46 Ja-Stimmen. Der Antrag Pfalzgraf war laut Debatte ein Streichungsantrag dagegen. Ein Ja ist damit die Ablehnung des Antrags.",
+   "beleg": "Abstimmung Der Verpflichtungskredit wird mit 46 : 11 Stimmen bei 3 Enthaltungen angenommen.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Vormittag) #Nr3",
+   "titel": "Antrag Markus Müller",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag GPK/RR",
+   "stimmen": "1 Ja : 54 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Den Änderungsanträgen wurde mit 54 Stimmen zugestimmt; das sind im Excel die Nein-Stimmen. Der Antrag Müller ist die Änderung, ein Ja stützte die Fassung von GPK und Regierung.",
+   "beleg": "Abstimmung Den Änderungsanträgen wird mit 54 : 1 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "3. und 4. Sitzung des Kantonsrats · 25.01.2021 (Vormittag) #Nr2",
+   "titel": "Ordnungsantrag Matthias Frick",
+   "inverted_note": "Ja bedeutet Zustimmung Beibehalten aktuelle Traktandenliste",
+   "stimmen": "25 Ja : 31 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Abgestimmt wurde über den Antrag Frick, das Geschäft an die zweite Stelle der Traktandenliste zu setzen. Der Hinweis ordnet dem Ja das Beibehalten der aktuellen Liste zu. Ein Ja ist damit die Ablehnung des Ordnungsantrags.",
+   "beleg": "Dem Antrag von Matthias Frick, den Bericht und Antrag des Regierungsrats vom 13. Oktober 2020 betreffend der Volksinitiative «Mehr Raum für die Nacht (Lichtverschmutzungsinitiative)» an die zweite Stelle der Traktandenliste zu stellen, wird mit 31 : 25 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "3. und 4. Sitzung des Kantonsrats · 25.01.2021 (Vormittag) #Nr7",
+   "titel": "Kombinierter Antrag Nihat Tektas (resp. FDP-CVP-Fraktion) / Matthias Freivogel",
+   "inverted_note": "Ja bedeutet Zustimmung aktuell zu beratende Vorlage",
+   "stimmen": "0 Ja : 55 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem zitierten Antragstext wurde mit 55 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja stand für die aktuell zu beratende Vorlage und damit gegen den kombinierten Antrag Tektas.",
+   "beleg": "Das Verfahren ist ohne Kostenvorschuss und beförderlich zu behandeln», wird mit 55 : 0 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "3. und 4. Sitzung des Kantonsrats · 28.02.2022 (Vormittag) #Nr2",
+   "titel": "Antrag Matthias Freivogel",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag Spezialkommission",
+   "stimmen": "35 Ja : 18 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der zitierte Antragstext wurde mit den 35 Ja-Stimmen abgelehnt. Ein Ja stützte die Spezialkommission, nicht den Antrag Freivogel.",
+   "beleg": "» wird mit 35 : 18 Stimmen abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "3. und 4. Sitzung des Kantonsrats · 28.02.2022 (Vormittag) #Nr3",
+   "titel": "Antrag Marcel Montanari",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag Spezialkommission",
+   "stimmen": "47 Ja : 7 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der zitierte Antragstext wurde mit den 47 Ja-Stimmen abgelehnt. Ein Ja stützte die Spezialkommission, nicht den Antrag Montanari.",
+   "beleg": "» wird mit 47 : 7 Stimmen abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "3./4. Sitzung des Kantonsrats · 27.02.2023 (Nachmittag) #Nr1",
+   "titel": "Mayowa Alaye beantragt, in § 9 Abs. 2 (neu) den Begriff «betroffenen» vor ständigen Kommissionen (…)",
+   "inverted_note": "Ja bedeutet Zustimmung Antrag Mayowa Alaye",
+   "stimmen": "18 Ja : 32 Nein",
+   "ja_ist_zustimmung": true,
+   "begruendung": "Dem Antrag von Matthias Freivogel wurde mit 32 Stimmen gegenüber dem Antrag von Mayowa Alaye der Vorzug gegeben; die 32 sind die Nein-Stimmen. Die 18 Ja-Stimmen standen also für den Antrag Alaye, den auch der Titel nennt. Ein Ja ist Zustimmung.",
+   "beleg": "Abstimmungen Dem Antrag von Matthias Freivogel wird mit 32 : 18 Stimmen gegenüber dem Antrag von Mayowa Alaye der Vorzug gegeben Mit 29 : 23 Stimmen wird der Antrag von Matthias Freivogel gegenüber der Vorlage des Ratsbüros abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "4. Sitzung 2024 · 03.04.2024 (Vormittag) #Nr1",
+   "titel": "Antrag Regula Salathé",
+   "inverted_note": "Ja bedeutet Zuweisung GesKo",
+   "stimmen": "32 Ja : 18 Nein",
+   "ja_ist_zustimmung": true,
+   "begruendung": "Der Überweisung an die Gesundheitskommission wurde mit den 32 Ja-Stimmen zugestimmt. Das ist genau, was der Hinweis dem Ja zuordnet und was der Antrag Salathé verlangte. Ein Ja ist Zustimmung.",
+   "beleg": "Abstimmung Der Überweisung des Geschäfts an die Gesundheitskommission wird mit 32 : 18 Stimmen bei 6 Enthaltungen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2024 · 18.03.2024 (Vormittag) #Nr1",
+   "titel": "Antrag Mariano Fioretti",
+   "inverted_note": "Ja bedeutet Eintreten",
+   "stimmen": "37 Ja : 20 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem Eintreten wurde mit den 37 Ja-Stimmen zugestimmt. Der Antrag Fioretti richtete sich gegen das Eintreten, ein Ja ist seine Ablehnung.",
+   "beleg": "Abstimmung Dem Eintreten auf die Vorlage wird mit 37 : 20 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "5. und 6. Sitzung 2024 · 18.03.2024 (Vormittag) #Nr3",
+   "titel": "Antrag Severin Brüngger",
+   "inverted_note": "Ja bedeutet Zustimmung SPK 2023/5",
+   "stimmen": "35 Ja : 21 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der zitierte Antragstext, der die Berechnung vereinfachen und eine Variantenabstimmung prüfen wollte, wurde mit den 35 Ja-Stimmen abgelehnt. Ein Ja stützte die Spezialkommission, nicht den Antrag Brüngger.",
+   "beleg": "Dabei sollen die Berechnung vereinfacht und auch eine Variantenabstimmung geprüft werden» wird mit 35 : 21 Stimmen bei 1 Enthaltung abgelehnt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "5. und 6. Sitzung des Kantonsrats · 08.03.2021 (Nachmittag) #Nr2",
+   "titel": "Antrag Roland Müller / Anpassung Art. 38",
+   "inverted_note": "Ja bedeutet Zustimmung bestehender Art.",
+   "stimmen": "36 Ja : 19 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Dem regierungsrätlichen Antrag zum steuerpflichtigen Einkommen wurde mit den 36 Ja-Stimmen zugestimmt. Der Hinweis ordnet dem Ja den bestehenden Artikel zu, der Antrag Müller wollte ihn ändern.",
+   "beleg": "Abstimmung Dem regierungsrätlichen Antrag zum steuerpflichtigen Einkommen wird mit 36 : 19 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "5. und 6. Sitzung des Kantonsrats · 08.03.2021 (Vormittag) #Nr3",
+   "titel": "Antrag Erwin Sutter / Art. 23 Abs. 1",
+   "inverted_note": "Ja bedeutet Zustimmung bestehender Art.",
+   "stimmen": "32 Ja : 22 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Art. 23 Abs. 1 wurde mit den 32 Ja-Stimmen wie bisher belassen. Der Antrag Sutter wollte ihn ändern, ein Ja ist seine Ablehnung.",
+   "beleg": "Mit 32 : 22 Stimmen wird Art. 23 Abs. 1 wie bisher belassen.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "7. und 8. Sitzung Sitzung des Kantonsrats · 15.05.2023 (Nachmittag) #Nr2",
+   "titel": "Antrag Stefan Lacher",
+   "inverted_note": "Ja bedeutet Beibehaltung Traktandenliste",
+   "stimmen": "0 Ja : 51 Nein",
+   "ja_ist_zustimmung": false,
+   "begruendung": "Der Traktandenlistenänderung wurde mit 51 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja bedeutete Beibehaltung und damit Ablehnung des Antrags Lacher.",
+   "beleg": "Abstimmung Der Traktandenlistenänderung wird mit 51 : 0 Stimmen zugestimmt.",
+   "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  }
+ ]
+}

@@ -1,0 +1,563 @@
+{
+ "Bytix AG": [],
+ "Stiftung betreutes Wohnen": [
+  {
+   "name": "BeWo Plus Bern, betreutes / begleitetes Wohnen, Inhaberin H. Hirter Asempah",
+   "ort": "Bern",
+   "uid": "CHE110013507"
+  },
+  {
+   "name": "Genossenschaft Betreutes Wohnen Appenzell",
+   "ort": "Appenzell",
+   "uid": "CHE109869915"
+  },
+  {
+   "name": "Genossenschaft betreutes Wohnen in Wynau",
+   "ort": "Wynau",
+   "uid": "CHE109879440"
+  },
+  {
+   "name": "Betreutes Wohnen Elgg AG",
+   "ort": "Elgg",
+   "uid": "CHE110099880"
+  },
+  {
+   "name": "VIKTORIA BWZH, GmbH für betreutes Wohnen",
+   "ort": "Zürich",
+   "uid": "CHE111789303"
+  }
+ ],
+ "Stiftung Schönhalde": [],
+ "Ev Haeny-Stiftung": [
+  {
+   "name": "Ev Haeny-Stiftung",
+   "ort": "Schaffhausen",
+   "uid": "CHE461305755"
+  }
+ ],
+ "Energieverbund Neuhausen AG": [
+  {
+   "name": "Energieverbund Siloah AG",
+   "ort": "Muri b. Bern",
+   "uid": "CHE103708863"
+  }
+ ],
+ "Paul und Clotilde Sonderegger-Van den Avont Stiftung": [
+  {
+   "name": "Paul Amrein AG",
+   "ort": "Zug",
+   "uid": "CHE100871389"
+  },
+  {
+   "name": "Association du Foyer St Paul",
+   "ort": "Cologny",
+   "uid": "CHE101245591"
+  },
+  {
+   "name": "Paul Bär AG",
+   "ort": "Olten",
+   "uid": "CHE102496256"
+  },
+  {
+   "name": "Paul Bärtsch AG",
+   "ort": "Chur",
+   "uid": "CHE107059911"
+  },
+  {
+   "name": "Paul Barman S.A.",
+   "ort": "Chéserex",
+   "uid": "CHE106858571"
+  }
+ ],
+ "Faccani Schuhe AG": [
+  {
+   "name": "Faccani Schuhe AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE113559079"
+  }
+ ],
+ "Stiftung Bergtrotte Osterfingen": [
+  {
+   "name": "Stiftung Bergtrotte Osterfingen",
+   "ort": "Wilchingen",
+   "uid": "CHE218603736"
+  },
+  {
+   "name": "Bergtrotte Gastronomie AG",
+   "ort": "Osterfingen",
+   "uid": "CHE199008726"
+  }
+ ],
+ "Herrenacker Parkhaus AG": [
+  {
+   "name": "Herrenacker Parkhaus AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE101262046"
+  }
+ ],
+ "Gemeinnützige Stiftung Schweizersbild": [],
+ "Stiftung Forum für Weiterbildung, Stiftungsratsmitglied": [
+  {
+   "name": "Forum Alpinum AG",
+   "ort": "Maienfeld",
+   "uid": "CHE103874579"
+  },
+  {
+   "name": "Hôtel du Forum l'Olivier SA",
+   "ort": "Martigny",
+   "uid": "CHE103028811"
+  },
+  {
+   "name": "SWF Service World Forum Association, en liquidation",
+   "ort": "Genève",
+   "uid": "CHE100514268"
+  },
+  {
+   "name": "Tourismus Forum Luzern",
+   "ort": "Luzern",
+   "uid": "CHE101272122"
+  },
+  {
+   "name": "FORUM MONDIAL DE L'ECONOMIE",
+   "ort": "Cologny",
+   "uid": "CHE107856445"
+  }
+ ],
+ "Vorsitzender der Clientis BS Bank Schaffhausen AG": [],
+ "Munot Invest AG": [
+  {
+   "name": "Munot Invest AG",
+   "ort": "Dörflingen",
+   "uid": "CHE102764149"
+  },
+  {
+   "name": "Radio Munot Werbe AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE106461593"
+  },
+  {
+   "name": "Radio Munot Betriebs AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE100155212"
+  },
+  {
+   "name": "Munot Modulus AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE107361178"
+  },
+  {
+   "name": "Munot Trading GmbH",
+   "ort": "Beringen",
+   "uid": "CHE107502993"
+  }
+ ],
+ "Jessica und Martin Blumer-Stiftung": [
+  {
+   "name": "BLUE FLOWERS, Doucet Jessica",
+   "ort": "Lausanne",
+   "uid": "CHE109803721"
+  },
+  {
+   "name": "Institut de Beauté, Jessica Egger",
+   "ort": "Bulle",
+   "uid": "CHE110575923"
+  },
+  {
+   "name": "Nulle part Ailleurs Jessica Debons",
+   "ort": "Sion",
+   "uid": "CHE111651662"
+  },
+  {
+   "name": "Boutique Jessica, Mme Cl. Dizerens",
+   "ort": "Orbe",
+   "uid": "CHE100123488"
+  },
+  {
+   "name": "SUMMATION Jessica Summa",
+   "ort": "Regensdorf",
+   "uid": "CHE112691055"
+  }
+ ],
+ "bei der Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)": [
+  {
+   "name": "Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)",
+   "ort": "Stein am Rhein",
+   "uid": "CHE112875922"
+  },
+  {
+   "name": "Genossenschaft Museumsbahn Emmental",
+   "ort": "Grünen",
+   "uid": "CHE351076920"
+  }
+ ],
+ "Genossenschaft Baum-land.ch": [
+  {
+   "name": "Genossenschaft Baum-land.ch",
+   "ort": "Trasadingen",
+   "uid": "CHE178497615"
+  }
+ ],
+ "Müller Energie GmbH, Thayngen, Gesellschafter, GL": [
+  {
+   "name": "Müller Verwaltungs AG",
+   "ort": "Jona",
+   "uid": "CHE105741239"
+  }
+ ],
+ "MACHEIS Immo AG, Gesellschafter/GL": [
+  {
+   "name": "MACHEIS Immo AG",
+   "ort": "Thayngen",
+   "uid": "CHE305722616"
+  }
+ ],
+ "Radio Munot AG Schaffhausen": [
+  {
+   "name": "Angestelltenverband der Radio/TV- und Multimediabranche",
+   "ort": "Altendorf",
+   "uid": "CHE103967212"
+  },
+  {
+   "name": "\"CDM\"-Radiologie SA",
+   "ort": "Plan-les-Ouates",
+   "uid": "CHE100367731"
+  },
+  {
+   "name": "Bolliger AG Radio & Television",
+   "ort": "Aarau",
+   "uid": "CHE108086046"
+  },
+  {
+   "name": "Cidou, radio-TV, Alcide Borer",
+   "ort": "Bassecourt",
+   "uid": "CHE106325889"
+  },
+  {
+   "name": "Radio TV Nova Boschetti SA",
+   "ort": "Vezio",
+   "uid": "CHE106876221"
+  }
+ ],
+ "Verwaltung Kraftwerk Schaffhausen AG": [
+  {
+   "name": "ABT-Verwaltungs AG",
+   "ort": "Rorschach",
+   "uid": "CHE102528494"
+  },
+  {
+   "name": "ACF All-Credit Finanz- und Verwaltungs AG",
+   "ort": "Luzern",
+   "uid": "CHE103255117"
+  },
+  {
+   "name": "Adli Verwaltungs-AG",
+   "ort": "Luzern",
+   "uid": "CHE102360349"
+  },
+  {
+   "name": "Aegis Verwaltungs AG Winterthur",
+   "ort": "Winterthur",
+   "uid": "CHE100826006"
+  },
+  {
+   "name": "AFAG Verwaltungs- und Treuhand AG in Liquidation",
+   "ort": "Chur",
+   "uid": "CHE102783655"
+  }
+ ],
+ "Sasag Koomunikations AG": [
+  {
+   "name": "sasag Kabelkommunikation AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE107878725"
+  },
+  {
+   "name": "Apollinaria Tech Korlatolt Felelossgu Tarsasag, Budapest, succursale de Genève",
+   "ort": "Genève",
+   "uid": "CHE405681455"
+  }
+ ],
+ "Parkhaus Herrenacker AG": [
+  {
+   "name": "Bahnhof-Parkhaus Winterthur AG",
+   "ort": "Winterthur",
+   "uid": "CHE107897243"
+  },
+  {
+   "name": "Burgdorfer Innenstadt Parkhaus AG in Liquidation",
+   "ort": "Burgdorf",
+   "uid": "CHE100504583"
+  },
+  {
+   "name": "City Parkhaus AG",
+   "ort": "Zürich",
+   "uid": "CHE102829665"
+  },
+  {
+   "name": "EISI PARKHAUS AG",
+   "ort": "Brugg AG",
+   "uid": "CHE103107356"
+  },
+  {
+   "name": "Parkhaus AG Adelboden",
+   "ort": "Adelboden",
+   "uid": "CHE103118006"
+  }
+ ],
+ "Swisspower AG": [
+  {
+   "name": "SwissPowerControl Sàrl",
+   "ort": "Mont-sur-Lausanne",
+   "uid": "CHE110603985"
+  },
+  {
+   "name": "SwissPowerSystems GmbH",
+   "ort": "Bad Zurzach",
+   "uid": "CHE112575785"
+  },
+  {
+   "name": "SwissPower Umzug GmbH",
+   "ort": "Bern",
+   "uid": "CHE113732797"
+  },
+  {
+   "name": "Swisspower AG",
+   "ort": "Bern",
+   "uid": "CHE116186715"
+  },
+  {
+   "name": "360 Grad Swisspower GmbH in Liquidation",
+   "ort": "Aarau Rohr",
+   "uid": "CHE398365627"
+  }
+ ],
+ "SHolar-Selbstbau Genossenschaft, Schaffhauen, Verwaltung": [],
+ "Stiftung Schule für berufliche Aus- und Weiterbildung": [
+  {
+   "name": "Verkehrsschule Zug",
+   "ort": "Zug",
+   "uid": "CHE100577234"
+  },
+  {
+   "name": "Alpine Schule Vättis AG",
+   "ort": "Vättis",
+   "uid": "CHE107802484"
+  },
+  {
+   "name": "Alpine Segelflugschule Schänis AG",
+   "ort": "Schänis",
+   "uid": "CHE107290615"
+  },
+  {
+   "name": "Arbeitsgemeinschaft für Schulen auf biblischer Basis",
+   "ort": "Dübendorf",
+   "uid": "CHE100616590"
+  },
+  {
+   "name": "Baumschulen AG Flora",
+   "ort": "Hallau",
+   "uid": "CHE100347705"
+  }
+ ],
+ "Künzle-Stiftung": [],
+ "Bling Bling Schaffhausen GmbH": [
+  {
+   "name": "Daniel Gablinger Stiftung",
+   "ort": "Zürich",
+   "uid": "CHE102007829"
+  },
+  {
+   "name": "Helbling AG, Flawil",
+   "ort": "Flawil",
+   "uid": "CHE102051138"
+  },
+  {
+   "name": "Edition Helbling AG",
+   "ort": "Volketswil",
+   "uid": "CHE100139348"
+  },
+  {
+   "name": "Autohaus Helbling AG Jona",
+   "ort": "Rapperswil SG",
+   "uid": "CHE105932176"
+  },
+  {
+   "name": "Helbling + Co. AG",
+   "ort": "Jona",
+   "uid": "CHE107799267"
+  }
+ ],
+ "Landw. Genossenschaft": [
+  {
+   "name": "Landw. Genossenschaft Ebnat-Kappel in Liquidation",
+   "ort": "Ebnat-Kappel",
+   "uid": "CHE107266315"
+  },
+  {
+   "name": "Landw. Genossenschaft Aesch",
+   "ort": "Aesch ZH",
+   "uid": "CHE102386515"
+  },
+  {
+   "name": "Genossenschaft Landw. Verein Pfäffikon - Hittnau - Russikon",
+   "ort": "Pfäffikon ZH",
+   "uid": "CHE100984740"
+  },
+  {
+   "name": "Landw. Genossenschaft Weesen",
+   "ort": "Weesen",
+   "uid": "CHE102375345"
+  },
+  {
+   "name": "Wasserversorgungsgenossenschaft der landw. Neusiedler Winikon",
+   "ort": "Winikon",
+   "uid": "CHE102259897"
+  }
+ ],
+ "Landwirtschaftliche Genossenschaft Beringen": [
+  {
+   "name": "Genossenschaft für landwirtschaftliches Bauen Gersau",
+   "ort": "Gersau",
+   "uid": "CHE102309650"
+  }
+ ],
+ "SMG Immobilien AG": [
+  {
+   "name": "Aadufo-Immobilien AG",
+   "ort": "Kreuzlingen",
+   "uid": "CHE102748297"
+  },
+  {
+   "name": "Abag Immobilien- und Generalunternehmung AG",
+   "ort": "Zürich",
+   "uid": "CHE103114793"
+  },
+  {
+   "name": "Treuhand & Immobilien Abt AG",
+   "ort": "Glattbrugg",
+   "uid": "CHE106949860"
+  },
+  {
+   "name": "ABV Immobilien AG",
+   "ort": "Arosa",
+   "uid": "CHE103255287"
+  },
+  {
+   "name": "Achermann Walter Immobilien AG",
+   "ort": "Buochs",
+   "uid": "CHE106902634"
+  }
+ ],
+ "Schraff und Müller GmbH, Beringen, Gesellschafter": [
+  {
+   "name": "Peter Schraff GmbH",
+   "ort": "Amriswil",
+   "uid": "CHE105192947"
+  },
+  {
+   "name": "Schraff & Müller AG",
+   "ort": "Beringen",
+   "uid": "CHE112388421"
+  }
+ ],
+ "SMG bau gmbh, Beringen, Gesellschafter": [
+  {
+   "name": "Bachmann AG Beringen",
+   "ort": "Beringen",
+   "uid": "CHE101444038"
+  },
+  {
+   "name": "Bau- und Wohngenossenschaft Bienengarten Beringen",
+   "ort": "Beringen",
+   "uid": "CHE101860187"
+  }
+ ],
+ "pmb bau ag": [
+  {
+   "name": "PMB Bau AG",
+   "ort": "Schaffhausen",
+   "uid": "CHE108505876"
+  }
+ ],
+ "Tanner Holzbau und Sägerei AG": [
+  {
+   "name": "ATS-Tanner Banding Systems AG",
+   "ort": "Zug",
+   "uid": "CHE101500501"
+  },
+  {
+   "name": "Tanner Immobilien AG",
+   "ort": "Teufen AR",
+   "uid": "CHE107068264"
+  },
+  {
+   "name": "Adolf Tanner AG Elektrofachgeschäft",
+   "ort": "Widnau",
+   "uid": "CHE107800249"
+  },
+  {
+   "name": "Maler Tanner AG",
+   "ort": "Winterthur",
+   "uid": "CHE101668218"
+  },
+  {
+   "name": "Tanner AG Langnau i.E.",
+   "ort": "Langnau im Emmental",
+   "uid": "CHE101128637"
+  }
+ ],
+ "Randen Immo AG, Begginen, Mitinhaber": [
+  {
+   "name": "Bvk Brandenberger AG",
+   "ort": "Illnau-Effretikon",
+   "uid": "CHE101499022"
+  },
+  {
+   "name": "Heinrich Brandenberg AG",
+   "ort": "Gutenswil",
+   "uid": "CHE100819319"
+  },
+  {
+   "name": "René Brandenberger AG",
+   "ort": "Glarus",
+   "uid": "CHE105883655"
+  },
+  {
+   "name": "Brandenberger + Ruosch AG",
+   "ort": "Zürich",
+   "uid": "CHE105836087"
+  },
+  {
+   "name": "Brandenberger Immobilien AG",
+   "ort": "Buch am Irchel",
+   "uid": "CHE103629608"
+  }
+ ],
+ "Jakob & Emma Windler-Stiftung": [
+  {
+   "name": "Jakob Bernasconi AG",
+   "ort": "Solothurn",
+   "uid": "CHE106920454"
+  },
+  {
+   "name": "Jakob Blösch AG",
+   "ort": "Mörigen",
+   "uid": "CHE107212561"
+  },
+  {
+   "name": "Jakob Bösch AG",
+   "ort": "Herisau",
+   "uid": "CHE108712139"
+  },
+  {
+   "name": "CTE-Computertechnik Einigen, Jakob Bühler",
+   "ort": "Einigen",
+   "uid": "CHE101845354"
+  },
+  {
+   "name": "Jakob Buri AG",
+   "ort": "Wil",
+   "uid": "CHE102114709"
+  }
+ ]
+}

@@ -1,0 +1,635 @@
+{
+ "stand": "2026-09-02",
+ "quelle": "Zefix (Bundesamt für Justiz) über lindas.admin.ch",
+ "hinweis": "Namensabgleich, keine Feststellung. «Eindeutig» heisst, dass Name und, soweit bekannt, Sitz übereinstimmen; «möglich» heisst, dass nur ein Teil des Namens passt. Nicht gefunden heisst nicht, dass es die Organisation nicht gibt: Schreibweise, Umbenennung oder Löschung im Register sind häufige Gründe. Verbindlich sind allein der beglaubigte Registerauszug und der Publikationstext im SHAB.",
+ "eindeutig": [
+  {
+   "organisation": "Ev Haeny-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Schaffhausen",
+   "treffer": [
+    {
+     "name": "Ev Haeny-Stiftung",
+     "ort": "Schaffhausen",
+     "uid": "CHE461305755",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Brügel Anna"
+   ]
+  },
+  {
+   "organisation": "Faccani Schuhe AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Schaffhausen",
+   "treffer": [
+    {
+     "name": "Faccani Schuhe AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE113559079",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Faccani Diego"
+   ]
+  },
+  {
+   "organisation": "Stiftung Bergtrotte Osterfingen",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Stiftung Bergtrotte Osterfingen",
+     "ort": "Wilchingen",
+     "uid": "CHE218603736",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Hedinger Beat"
+   ]
+  },
+  {
+   "organisation": "Herrenacker Parkhaus AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Herrenacker Parkhaus AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE101262046",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Herren Nicole"
+   ]
+  },
+  {
+   "organisation": "Munot Invest AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Dörflingen",
+   "treffer": [
+    {
+     "name": "Munot Invest AG",
+     "ort": "Dörflingen",
+     "uid": "CHE102764149",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Radio Munot Werbe AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE106461593",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Radio Munot Betriebs AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE100155212",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Munot Modulus AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE107361178",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Munot Trading GmbH",
+     "ort": "Beringen",
+     "uid": "CHE107502993",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Laich Lorenz"
+   ]
+  },
+  {
+   "organisation": "bei der Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)",
+   "branche": "Verkehr",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)",
+     "ort": "Stein am Rhein",
+     "uid": "CHE112875922",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 0.91
+    }
+   ],
+   "mitglieder": [
+    "Laich Lorenz"
+   ]
+  },
+  {
+   "organisation": "Genossenschaft Baum-land.ch",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Genossenschaft Baum-land.ch",
+     "ort": "Trasadingen",
+     "uid": "CHE178497615",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Meyer Daniel"
+   ]
+  },
+  {
+   "organisation": "MACHEIS Immo AG, Gesellschafter/GL",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "MACHEIS Immo AG",
+     "ort": "Thayngen",
+     "uid": "CHE305722616",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 0.67
+    }
+   ],
+   "mitglieder": [
+    "Müller Andrea"
+   ]
+  },
+  {
+   "organisation": "Swisspower AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "SwissPower Umzug GmbH",
+     "ort": "Bern",
+     "uid": "CHE113732797",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Swisspower AG",
+     "ort": "Bern",
+     "uid": "CHE116186715",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "360 Grad Swisspower GmbH in Liquidation",
+     "ort": "Aarau Rohr",
+     "uid": "CHE398365627",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Neukomm Peter"
+   ]
+  },
+  {
+   "organisation": "pmb bau ag",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "PMB Bau AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE108505876",
+     "stufe": "eindeutig",
+     "uebereinstimmung": 1.0
+    }
+   ],
+   "mitglieder": [
+    "Schöpfer Sandra"
+   ]
+  }
+ ],
+ "moeglich": [
+  {
+   "organisation": "Stiftung betreutes Wohnen",
+   "branche": "Soziales und Hilfswerke",
+   "ort": "Schaffhausen",
+   "treffer": [
+    {
+     "name": "BeWo Plus Bern, betreutes / begleitetes Wohnen, Inhaberin H. Hirter Asempah",
+     "ort": "Bern",
+     "uid": "CHE110013507",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.67
+    },
+    {
+     "name": "Genossenschaft Betreutes Wohnen Appenzell",
+     "ort": "Appenzell",
+     "uid": "CHE109869915",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.67
+    },
+    {
+     "name": "Genossenschaft betreutes Wohnen in Wynau",
+     "ort": "Wynau",
+     "uid": "CHE109879440",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.67
+    },
+    {
+     "name": "Betreutes Wohnen Elgg AG",
+     "ort": "Elgg",
+     "uid": "CHE110099880",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.67
+    },
+    {
+     "name": "VIKTORIA BWZH, GmbH für betreutes Wohnen",
+     "ort": "Zürich",
+     "uid": "CHE111789303",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.67
+    }
+   ],
+   "mitglieder": [
+    "Brenn Franziska"
+   ]
+  },
+  {
+   "organisation": "Energieverbund Neuhausen AG",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Energieverbund Siloah AG",
+     "ort": "Muri b. Bern",
+     "uid": "CHE103708863",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Di Ronco Christian"
+   ]
+  },
+  {
+   "organisation": "Sasag Koomunikations AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "sasag Kabelkommunikation AG",
+     "ort": "Schaffhausen",
+     "uid": "CHE107878725",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Neukomm Peter"
+   ]
+  },
+  {
+   "organisation": "Parkhaus Herrenacker AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Bahnhof-Parkhaus Winterthur AG",
+     "ort": "Winterthur",
+     "uid": "CHE107897243",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Burgdorfer Innenstadt Parkhaus AG in Liquidation",
+     "ort": "Burgdorf",
+     "uid": "CHE100504583",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "City Parkhaus AG",
+     "ort": "Zürich",
+     "uid": "CHE102829665",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "EISI PARKHAUS AG",
+     "ort": "Brugg AG",
+     "uid": "CHE103107356",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Parkhaus AG Adelboden",
+     "ort": "Adelboden",
+     "uid": "CHE103118006",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Neukomm Peter"
+   ]
+  },
+  {
+   "organisation": "Landw. Genossenschaft",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Beringen",
+   "treffer": [
+    {
+     "name": "Landw. Genossenschaft Ebnat-Kappel in Liquidation",
+     "ort": "Ebnat-Kappel",
+     "uid": "CHE107266315",
+     "stufe": "moeglich",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Landw. Genossenschaft Aesch",
+     "ort": "Aesch ZH",
+     "uid": "CHE102386515",
+     "stufe": "moeglich",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Genossenschaft Landw. Verein Pfäffikon - Hittnau - Russikon",
+     "ort": "Pfäffikon ZH",
+     "uid": "CHE100984740",
+     "stufe": "moeglich",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Landw. Genossenschaft Weesen",
+     "ort": "Weesen",
+     "uid": "CHE102375345",
+     "stufe": "moeglich",
+     "uebereinstimmung": 1.0
+    },
+    {
+     "name": "Wasserversorgungsgenossenschaft der landw. Neusiedler Winikon",
+     "ort": "Winikon",
+     "uid": "CHE102259897",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Schlatter Martin"
+   ]
+  },
+  {
+   "organisation": "SMG Immobilien AG",
+   "branche": "Wohnen und Immobilien",
+   "ort": "Beringen",
+   "treffer": [
+    {
+     "name": "Aadufo-Immobilien AG",
+     "ort": "Kreuzlingen",
+     "uid": "CHE102748297",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Abag Immobilien- und Generalunternehmung AG",
+     "ort": "Zürich",
+     "uid": "CHE103114793",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Treuhand & Immobilien Abt AG",
+     "ort": "Glattbrugg",
+     "uid": "CHE106949860",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "ABV Immobilien AG",
+     "ort": "Arosa",
+     "uid": "CHE103255287",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    },
+    {
+     "name": "Achermann Walter Immobilien AG",
+     "ort": "Buochs",
+     "uid": "CHE106902634",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Schraff Jannik"
+   ]
+  },
+  {
+   "organisation": "Schraff und Müller GmbH, Beringen, Gesellschafter",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Schraff & Müller AG",
+     "ort": "Beringen",
+     "uid": "CHE112388421",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Schraff Jannik"
+   ]
+  },
+  {
+   "organisation": "SMG bau gmbh, Beringen, Gesellschafter",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [
+    {
+     "name": "Bau- und Wohngenossenschaft Bienengarten Beringen",
+     "ort": "Beringen",
+     "uid": "CHE101860187",
+     "stufe": "moeglich",
+     "uebereinstimmung": 0.5
+    }
+   ],
+   "mitglieder": [
+    "Schraff Jannik"
+   ]
+  }
+ ],
+ "nicht_gefunden": [
+  {
+   "organisation": "Bytix AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": "Zürich",
+   "treffer": [],
+   "mitglieder": [
+    "Aellig Pentti"
+   ]
+  },
+  {
+   "organisation": "Stiftung Schönhalde",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Neuhausen",
+   "treffer": [],
+   "mitglieder": [
+    "Brenn Franziska"
+   ]
+  },
+  {
+   "organisation": "Paul und Clotilde Sonderegger-Van den Avont Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Di Ronco Christian"
+   ]
+  },
+  {
+   "organisation": "Gemeinnützige Stiftung Schweizersbild",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Herren Nicole",
+    "Mundt Michael"
+   ]
+  },
+  {
+   "organisation": "Stiftung Forum für Weiterbildung, Stiftungsratsmitglied",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Kräuchi Raphael"
+   ]
+  },
+  {
+   "organisation": "Vorsitzender der Clientis BS Bank Schaffhausen AG",
+   "branche": "Banken und Versicherungen",
+   "ort": "Hallau",
+   "treffer": [],
+   "mitglieder": [
+    "Laich Lorenz"
+   ]
+  },
+  {
+   "organisation": "Jessica und Martin Blumer-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Dörflingen",
+   "treffer": [],
+   "mitglieder": [
+    "Laich Lorenz"
+   ]
+  },
+  {
+   "organisation": "Müller Energie GmbH, Thayngen, Gesellschafter, GL",
+   "branche": "Energie und Umwelt",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Müller Andrea"
+   ]
+  },
+  {
+   "organisation": "Radio Munot AG Schaffhausen",
+   "branche": "Kultur und Medien",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Müller Markus"
+   ]
+  },
+  {
+   "organisation": "Verwaltung Kraftwerk Schaffhausen AG",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Neukomm Peter"
+   ]
+  },
+  {
+   "organisation": "SHolar-Selbstbau Genossenschaft, Schaffhauen, Verwaltung",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Pfalzgraf Maurus"
+   ]
+  },
+  {
+   "organisation": "Stiftung Schule für berufliche Aus- und Weiterbildung",
+   "branche": "Bildung und Wissenschaft",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Rohner Raphaël"
+   ]
+  },
+  {
+   "organisation": "Künzle-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Rohner Raphaël"
+   ]
+  },
+  {
+   "organisation": "Bling Bling Schaffhausen GmbH",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Schlatter Hermann"
+   ]
+  },
+  {
+   "organisation": "Landwirtschaftliche Genossenschaft Beringen",
+   "branche": "Landwirtschaft und Wein",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Schlatter Roman"
+   ]
+  },
+  {
+   "organisation": "Tanner Holzbau und Sägerei AG",
+   "branche": "Wohnen und Immobilien",
+   "ort": "Merishausen",
+   "treffer": [],
+   "mitglieder": [
+    "Tognella Ivo"
+   ]
+  },
+  {
+   "organisation": "Randen Immo AG, Begginen, Mitinhaber",
+   "branche": "Wirtschaft und Gewerbe",
+   "ort": null,
+   "treffer": [],
+   "mitglieder": [
+    "Tognella Ivo"
+   ]
+  },
+  {
+   "organisation": "Jakob & Emma Windler-Stiftung",
+   "branche": "Berufs- und Interessenverbände",
+   "ort": "Stein am Rhein",
+   "treffer": [],
+   "mitglieder": [
+    "Ullmann Corinne"
+   ]
+  }
+ ],
+ "personensuche": []
+}

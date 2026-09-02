@@ -1,0 +1,1154 @@
+{
+ "gruppen": {
+  "1": "Staat, Volk, Behörden",
+  "2": "Privatrecht, Zivilrechtspflege",
+  "3": "Strafrecht, Strafvollzug",
+  "4": "Erziehung, Kultur, Natur",
+  "5": "Verteidigung, Wehrdienste",
+  "6": "Finanzen",
+  "7": "Raumplanung, Bau, Verkehr, Energie",
+  "8": "Gesundheit, Umwelt, Arbeit, Soziales",
+  "9": "Wirtschaft"
+ },
+ "zuordnung": [
+  {
+   "geschaeft": "Bericht und Antrag (Orientierungsvorlage) des Regierungsrats vom 7. Januar 2020 betreffend Eignerstrategie für die EKS (Elektrizitätswerk des Kantons Schaffhausen AG)",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 8,
+   "begruendung": "Eignerstrategie EKS, Energieversorgung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der Gesundheitskommission zur Petition vom 25. August 2025 betreffend Fortführung Brustkrebs-Screening-Programm",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag der Justizkommission  betreffend Wahl einer Ompudsperson",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Wahl der Ombudsperson"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der SPK 2021/1 vom 11. Januar 2024 betreffend «Stärkung des Milizparlaments»; 2. Lesung",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Parlamentsorganisation, Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der SPK 2021/1 vom 14. Juni 2023 betreffend die «Stärkung des Milizparlaments» ADS 23-74",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Parlamentsorganisation, Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der Spezialkommission 2021/1 vom 14. Juni 2023 betreffend die «Stärkung des Milizparlaments»; Weiterbehandlung Anhang 1  (Geschäftsordnung des Kantonsrates Schaffhausen (Parlamentsorganisation/Parlamentsbetrieb)ADS 23-74",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 15,
+   "begruendung": "Parlamentsorganisation, Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der Spezialkommission 2021/1 vom 14. Juni 2023 betreffend die «Stärkung des Milizparlaments»; Weiterbehandlung Anhang 1(Geschäftsordnung des Kantonsrates Schaffhausen  (Parlamentsorganisation/Parlamentsbetrieb)ADS 23-74",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 11,
+   "begruendung": "Parlamentsorganisation, Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag der Spezialkommission 2021/1 vom 14. Juni 2023 betreffend die «Stärkung des Milizparlaments»; Weiterbehandlung Anhang 2  (Geschäftsordnung des Kantonsrates Schaffhausen (Entschädigungsregelung) ADS 23-74",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 12,
+   "begruendung": "Parlamentsorganisation, Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Ratsbüros vom 12. Dezember 2022 betreffend Teilrevision der Geschäftsordnung (Vertretungsrecht der Fraktionen)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4,
+   "begruendung": "Geschäftsordnung des Kantonsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats  vom 21. November 2023 betreffend Erhöhung des Ortsverkehrsbeitrages und Bereitstellung  finanzieller Mittel für touristische Ausflugsverkehre",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 10
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats  vom 27. August 2024 betreffend Teilrevision Finanzhaushaltsgesetz (Globalbudget)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Finanzhaushaltsgesetz, Globalbudget"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats  vom 27. Februar 2024 betreffend Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung  im Bereich der Pflege (EG FAP)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats  vom 4. März 2025 betreffend das Gesetz über den Solidaritätsbeitrag an Opfer von fürsorgerischen Zwangsmassnahmen und  Fremdplatzierungen vor 1981 (GSO)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Strafrecht, Strafvollzug"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats  über die Ergreifung des Kantonsreferendums zum Bundesgesetz über die Individualbesteuerung",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Individualbesteuerung, Kantonsreferendum"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats 2. Juli 2024 betreffend Verpflichtungskredit zur Umsetzung der Strategie Digitale Verwaltung Schaffhausen (Kreditvorlage)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 betreffend Bereinigung der Sammlung der Motionen und Postulate",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Bereinigung der Vorstösse, Parlamentsbetrieb"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zu den Postulaten 2022/15, 2022/16, 2022/17 und 2025/1 betreffend die Axpo",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zur Teilrevision des Hochschulgesetzes (Umsetzung der Volksmotion 2024/1 «Für eine Stimme der Studierenden im Hochschulrat der Pädagogischen Hochschule Schaffhausen [PHSH]»)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Hochschulgesetz, Bildungsrecht"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. März 2026 betreffend die Teilrevision des Gesetzes zur Förderung der Regional- und Standortentwicklung im Kanton Schaffhausen (Umsetzung des Postulates Freivogel 2024/09)",
+   "gruppe": "9",
+   "gruppe_name": "Wirtschaft",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Regional- und Standortentwicklung, Wirtschaftsförderung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. April 2023 betreffend «Teilrevision des Gesetzes über die Strassenverkehrssteuern vom 17. Juni 1968»",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [
+    "Finanzen"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 13
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. Februar 2025 betreffend Bereinigung der Sammlung der Motionen und Postulate",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Bereinigung der Vorstösse, Parlamentsbetrieb"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. Februar 2025 betreffend die «Volksinitiative für flüssigen Verkehr auf kantonalen Hauptstrassen (Verkehrsflussinitiative)»",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. Januar 2022 betreffend Revision der Verfassung des Kantons Schaffhausen und des Finanzhaushaltsgesetzes (Finanzreferendum; Finanzbefugnisse) 2. Lesung",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. Januar 2022 betreffend Revision des Finanzhaushaltsgesetzes (finanzpolitische Reserven)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Finanzhaushaltsgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. Januar 2022 betreffend die Revision des Finanzhaushaltsgesetzes (Finanzpolitische Reserven), 2. Lesung",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 7,
+   "begruendung": "Finanzhaushaltsgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. März 2025 betreffend die Teilrevision des Bevölkerungsschutzgesetzes (BevSG)",
+   "gruppe": "5",
+   "gruppe_name": "Verteidigung, Wehrdienste",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 11. März 2025 betreffend die Teilrevision des Zivilschutzgesetzes(ZSG)",
+   "gruppe": "5",
+   "gruppe_name": "Verteidigung, Wehrdienste",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 12. Dezember 2023 zum Postulat «Erweiterte Eigentümerstrategie des Kantons für die Spitäler  Schaffhausen»",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Eigentümerstrategie Spitäler Schaffhausen"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. August 2024 betreffend Teilrevision des Steuergesetzes (Anteil der Gemeinden an der direkten Bundessteuer)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Steuergesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. August 2024 betreffend Teilrevision des Steuergesetzes (Anteil der Gemeinden an der direkten Bundessteuer) 2. Lesung",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Steuergesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Februar 2024 betreffend Bereinigung der Sammlung der Motionen und Postulate",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 8,
+   "begruendung": "Bereinigung der Vorstösse, Parlamentsbetrieb"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Februar 2024 betreffend Teilrevision des Gesetzes über das Arbeitsverhältnis des Staats- personals (vorgeburtlicher Mutterschaftsurlaub)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Februar 2024 betreffend Teilrevision des Gesetzes über das Arbeitsverhältnis des Staats- personals (vorgeburtlicher Mutterschutz)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Oktober 2020 betreffend die Volksinitiative «Mehr Raum für die Nacht (Lichtverschmutzungsinitiative)»",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4,
+   "begruendung": "Lichtverschmutzung, Umweltschutz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Oktober 2020 betreffend die Änderung des Strassengesetzes, 2. Lesung",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6,
+   "begruendung": "Strassengesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. Oktober 2023 zum Stand der Arbeiten zur Verbesserung der Aufsicht über die Pflegeheime im Kanton Schaffhauen (Orientierungsvorlage)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 13. September 2022 betreffend die Änderung des Gesetzes über die Einführung des  Schweizerischen Strafgesetzbuches",
+   "gruppe": "3",
+   "gruppe_name": "Strafrecht, Strafvollzug",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Einführungsgesetz zum Strafgesetzbuch"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 14. Februar 2023 betreffend Bereinigung der Sammlung der Motionen und Postulate",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Bereinigung der Vorstösse, Parlamentsbetrieb"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 14. Februar 2023 betreffend die Änderung des Gesetzes über die Einführung des  Schweizerischen Zivilgesetzbuches (Hinterlegungsstelle für Mietzinsen)",
+   "gruppe": "2",
+   "gruppe_name": "Privatrecht, Zivilrechtspflege",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Einführungsgesetz zum ZGB, Mietzinshinterlegung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 14. Januar 2025 betreffend Änderung des Justizgesetzes und weiterer Gesetzs (Zuständigkeiten und verfahrensrechtliche Bestimmungen)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 10,
+   "begruendung": "Justizgesetz: Zuständigkeiten und Organisation der Rechtspflege"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 14. Juni 2022 betreffend Weiterentwicklung Demografiestrategie Kanton Schaffhausen (Orientierungsvorlage)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Demografiestrategie des Regierungsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 14. November 2023 betreffend die Änderung des kantonalen Landwirtschaftsgesetzes (Erhöhung der Familienzulagen in der Landwirtschaft)",
+   "gruppe": "9",
+   "gruppe_name": "Wirtschaft",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 15. Dezember 2020 betreffend Teilrevision Baugesetz (Schaffung eines Energie- und Klimafonds), 2. Lesung",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Baugesetz, Energie- und Klimafonds"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 15. März 2022 betreffend Teilrevision Polizeigesetz (Bedrohungsmanagment)",
+   "gruppe": "3",
+   "gruppe_name": "Strafrecht, Strafvollzug",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Polizeigesetz, Bedrohungsmanagement"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend Stillstand beim Biogas beenden (Postulat 2022/7)",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Biogas, Energie"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. Dezember 2024 betreffend die Totalrevision des Einführungsgesetzes zu den Bundesgesetzen  über die Alters- und Hinterlassenenversicherung und über die Invalidenversicherung",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Einführungsgesetz AHV und IV, Sozialversicherung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. Februar 2026 über die Teilrevision des Pensionskassengesetzes",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "kantonale Pensionskasse, Personalrecht"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen) 2. Lesung",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 18. Januar 2022 betreffend die Umsetzung der Motion 2021/7 mit dem Titel «Mehr Transparenz - aber mit Augenmass»",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 8,
+   "begruendung": "Transparenz in der Politikfinanzierung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 19.  Dezember 2023 betreffend Umsetzung der Postulate im Personalbereich (Prüfung einer zukunftsgerichteten und konkurrenzfähigen Besoldung) Anhang 3",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 19. Dezember 2023 zur Volksmotion 2020/1 betreffend «Mehr Demokratie in Schaffhausen - einfach und sicher:  Volksbegehren auch elektronisch unterschreiben (E-Collecting)» (Orientierungsvorlage)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 19. November 2024 betreffend Genehmigung der Änderungen beim Grundbedarf für den Lebensunterhalt gemäss Art. 25 Abs. 3 des Gesetzes über die öffentliche Sozialhilfe  und soziale Einrichtungen (SHEG) (Anpassung an die Teuerung)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 20. Februar 2024 betreffend Unterzeichnung der Grundlagenvereinbarung über die Finanzierung  der Kosten im Zusammenhang mit dem Betrieb des Hochrhein-Bodensee-Express (HBE)",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Hochrhein-Bodensee-Express, Bahnverkehr"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 20. Mai 2019 betreffend Änderung des Gesetzes über den Schutz von Personendaten (kantonales Datenschutzgesetz)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "kantonales Datenschutzgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 21. Januar 2025 betreffend Legislaturprogramm 2025-2028 (mit Rechenschaftsbericht 2021-2024)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Legislaturprogramm des Regierungsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 21. November 2023 betreffend Erhöhung des Ortsverkehrs- veitrages und Bereitstellung finanzieller Mittel für touristische Ausflugsverkehre",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4,
+   "begruendung": "Ortsverkehr und öffentlicher Verkehr"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 21. November 2023 betreffend Erhöhung des Ortsverkehrsbeitrages und Bereitstellung finanzieller Mittel für  touristische Ausflugsverkehre",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 21. Oktober 2024 betreffend Teilrevision Finanzhaushaltsgesetz (Verbuchung finanzpolitische Reserven und NFA Rückstellungen)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Finanzhaushaltsgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 22. Februar 2022 betreffend die Aufgaben- und Finanzierungsentflechtung zwischen dem  Kanton und den Gemeinden",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Finanzierungsentflechtung Kanton und Gemeinden"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 22. Februar 2022 betreffend die Aufgaben- und Finanzierungsentflechtung zwischen dem Kanton  und den Gemeinden (2. Lesung) ADS 22-14, 22-45, 23-46 und 23-98",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6,
+   "begruendung": "Finanzierungsentflechtung Kanton und Gemeinden"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 23. Januar 2024 betreffend Zusatzkredit für den Bau eines zusätzlichen Stockwerkes beim Polizei- und Sicherheits- zentrum",
+   "gruppe": "3",
+   "gruppe_name": "Strafrecht, Strafvollzug",
+   "alternativen": [
+    "Raumplanung, Bau, Verkehr, Energie"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 23. September 2025 betreffend Teilrevision des Altersbetreuungs- und Pflegegesetzes (Rest- kostenfinanzierung Pflege)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 23. September 2025 betreffend Teilrevision des Altersbetreuungs- und Pflegegesetzes (Restkostenfinanzierung Pflege)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. August 2021 betreffend die Änderung des Schulgesetzes (private Schulen und privater Unterricht)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6,
+   "begruendung": "Schulgesetz, Privatschulen"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Juni 2025 betreffend Gesetz über Aktenführung und Archivierung (Archivgesetz)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Oktober 2024 betreffend Revision des Gesetzes über den Rechtsschutz in Verwaltungssachen (Verwaltungsrechtspflegegesetz) reduzierte Vorlage",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 25. Februar 2025 betreffend Gegenvorschlag zur Volksinitiative «Kantonsbeitrag an die Kosten der baulichen Erneuerung des Kantonsspitals (Spitalinitiative)»",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [
+    "Raumplanung, Bau, Verkehr, Energie"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 7
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 25. Juni 2024 betreffend Schaffung einer Ombudsstelle",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 26. November 2024 betreffend Änderung des Dekrets über die Besoldung der Richterinnen und Richter",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. August 2024 betreffend Budget 2025 und Finanzplan 2025-2028/Oktoberbrief vom 21. Oktober 2024",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 32,
+   "begruendung": "Budget und Finanzplan"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. August 2024 betreffend Teilrevision Finahaushalts- gesetz (Globalbudget)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. August 2024 betreffend Teilrevision Finanzhaushaltsgesetz  (Globalbudget)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Finanzhaushaltsgesetz, Globalbudget"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Revision des Gesetzes über die Raumplanung und das öffentliche Baurecht im Kanton Schaffhausen (Baugesetz)",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 32
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 27. Oktober 2020 betreffend die Revision des Wasserwirtschaftsgesetzes.",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6,
+   "begruendung": "Wasserwirtschaftsgesetz, Gewässer"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. April 2026 betreffend Jahresbericht und Jahresrechnung 2025 der Schaffhauser Sonderschulen",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [
+    "Finanzen"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. Februar 2023 betreffend den Verpflichtungskredit für das Sportinfrastrukturprojekt   «Neubau Hallenbad KSS» gemäss Kantonalem Sportanlagenkonzept (KASAK)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [
+    "Raumplanung, Bau, Verkehr, Energie"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Sportinfrastruktur, Hallenbad KSS"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. Oktober 2025 betreffend Teilrevision des Dekrets über die Erteilung von Stipendien  und Studiendarlehen (Stipendiendekret) betreffend Umsetzung der Motion 2021/14 «Starkes Bildungssystem dank doppeltem Fehlbetragsmodell»",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Stipendien und Studiendarlehen"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. April 2025 betreffend Jahresbericht und Jahresrechnung 2024 der Schaffhauser Sonderschulen",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [
+    "Finanzen"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. April 2025 betreffend Vierjahresbericht für die Leistungsperiode vom 1. August 2020 bis 31. Dezember 2024 der Pädagogischen Hochschule Schaffhausen (PHSH)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend Revision des Gesetzes über den Rechtsschutz in Verwaltungssachen (Verwaltungsrechtspflegegesetz)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Verwaltungsrechtspflege, Rechtsschutz in Verwaltungssachen"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 8
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4,
+   "begruendung": "Spitalgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 3. Dezember 2024 betreffend die Totalrevision des Gesetzes über die Einführung des Bundesgesetzes über  den Umweltschutz (Einführungsgesetz zum USG)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 3. Juni 2025 betreffend Teilrevision des Steuergesetzes (Nachvollzug von Bundesrecht  sowie Ergänzungen zur Datenweitergabe und Zustellung",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 3. vom 23. September 2025 betreffend Teilrevision des Schulgesetzes und des Einführungsgesetzes zum Berufsbildungsgesetz zwecks gesetzlicher Verankerung der Spitalschulung",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [
+    "Gesundheit, Umwelt, Arbeit, Soziales"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 30. April 2024 betreffend Teilrevision des Einführungsgesetzes zum Berufsbildungsgesetz zur  Schaffung einer gesetzlichen Grundlage für das Caase Management Berufsbildung",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 31. März 2026 betreffend Geschäftsbericht 2025 der Informatik Schaffhausen (ITSH)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 4. Mai 2021 betreffend Teilrevision des Steuergesetzes",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Steuergesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 4. November 2025 betreffend die Änderung des Justizgesetzes (elektronische Aktenführung und  elektronische Signierung)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 4. November 2025 für das Sportinfrastrukturprojekt «Erweiterung Hallensportzentrum  Schweizersbild» gemäss Kantonalem Sportanlagenkonzept (KASAK SH)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 5. Mai 2026 betreffend die Einführung eines Mammographie-Screening-Programms im Kanton Schaffhausen",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 5. November 2024 betreffend  Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St. Gallen, Graubünden, Thurgau und  Tessin (BVG- und Stiftungskonkordat)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "BVG- und Stiftungsaufsicht, berufliche Vorsorge"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 5. September 2023 betreffend Umsetzung der Postulate im Personalbereich (Prüfung einer zukunfts- orientierten und konkurrenzfähigen Besoldung)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Personalpolitik und Besoldung des Kantons"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 6. August 2024  betreffend Genehmigung des kantonalen Strassenrichtplanes",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 6. August 2024 betreffend die Anpassung des Dekrets über den Vollzug des Krankenversichungs- gesetzes",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 7. April 2026 betreffend Geschäftsbericht 2025 der Gebäudeversicherung des Kantons Schaffhausen",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 7. Juli 2020 betreffend Teilrevision des Steuergesetzes (steuerliche Attraktivierung des Wohnstandortes Schaffhausen)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "Steuergesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 7. März 2023 betreffend den Projektbericht Entwicklungsstrategie 2023 (Orientierungsvorlage)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Entwicklungsstrategie des Regierungsrats"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. April 2025 betreffend Geschäftsbericht 2024 der Gebäudeversicherung des Kantons Schaffhausen",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. April 2025 zum Geschäftsbericht 2024 der Spitäler Schaffhausen",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. April 2026 zum Geschäftsbericht 2025 der Spitäler Schaffhausen",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Spitäler Schaffhausen, Geschäftsbericht"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. August 2023 betreffend Teilrevision des Gesetzes über die direkten Steuern (Sofortmassnahmen  Mindestbesteuerung) ADS 23-81",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Gesetz über die direkten Steuern"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. Dezember 2020   betreffend Schaffung eines Gesetzes über Sofortmassnahmen zur Bewältigung der Coronavirus-Krise (Corona-Sofortmassnahmen-Gesetz)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 7,
+   "begruendung": "Corona-Sofortmassnahmen, öffentliche Gesundheit"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. April 2024 zum Geschäftsbericht 2023 der Spitäler Schaffhausen",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Januar 2024 betreffend die Änderung des Gemeindegesetzes (separate Referenden gegen Budget und Steuerfuss)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Gemeindegesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Januar 2024 betreffend die Änderung des Gemeindegesetzes (seperate Referenden gegen Budget und Steuerfuss)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Mai 2023 betreffend Genehmigung des kantonalen Strassenrichtplanes",
+   "gruppe": "7",
+   "gruppe_name": "Raumplanung, Bau, Verkehr, Energie",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5,
+   "begruendung": "kantonaler Strassenrichtplan"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regierungsrats vom vom 23. September 2025 betreffend Teilrevision des Altersbetreuungs- und Pflegegesetzes (Restkostenfinanzierung Pflege) 2. Lesung",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats  vom 11. Juni 2024 betreffend Schaffung einer gesetzlichen Grundlage für die finanzielle Entlastung von Familien  mit einem Kind mit besonderen Bedürfnissen beim Besuch einer Kinderbetreuungseinrichtung («Betreuung von Kindern mit besonderen Bedürfnissen»)",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats 12. August 2025 betreffend «Änderung des Wasserwirtschaftsgesetzes vom 18. Mai 1998»",
+   "gruppe": "9",
+   "gruppe_name": "Wirtschaft",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats vom 11. Januar  2022 betreffend Revision der Verfassung des Kantons Schaffhausen und des Finanzhaushaltsgesetzes  (Finanzreferendum; Finanzbefugnisse)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Staat, Volk, Behörden"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3,
+   "begruendung": "Kantonsverfassung und Finanzhaushaltsgesetz"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats vom 17. Dezember 2024 betreffend die Totalrevision des Einführungsgesetzes zu den Bundesgesetzen über die Alters- und Hinterlassenenversicherung und über die Invalidenversicherung",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Einführungsgesetz AHV und IV, Sozialversicherung"
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats vom 23. September 2025 betreffend Stärkung der ambulanten psychiatrischen und psychologischen  psychotherapeutischen Versorgung im Kanton Schaffhausen",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Bericht und Antrag des Regieungsrats vom 8. April 2025 betreffend die Änderung des Landwirtschaftsgesetzes",
+   "gruppe": "9",
+   "gruppe_name": "Wirtschaft",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2,
+   "begruendung": "Landwirtschaftsgesetz"
+  },
+  {
+   "geschaeft": "Einführungsgesetz zum Bundesgesetz über die Förderung der Ausbildung im Bereich der Pflege (EG FAP)",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Geschäftsbericht 2024 der Schaffhauser Kantonalbank",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Geschäftsbericht/Rechnung 2020 der Spitäler Schaffhausen.",
+   "gruppe": "8",
+   "gruppe_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 4,
+   "begruendung": "Spitäler Schaffhausen, Geschäftsbericht"
+  },
+  {
+   "geschaeft": "Interpellation Nr. 2025/1 von Walter Hotz vom 3. März 2025 mit dem Titel «Bürokratie-Kassensturz -    Ist der Kanton noch Finanzierbar»",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1
+  },
+  {
+   "geschaeft": "Mehr Transparenz aber mit Augenmass» und Volksinitiative «zur Umsetzung der vom Stimmvolk angenommenen Transparenzinitiative»  (Umsetzungsinitiative)",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Nachtrag vom 10. Juni 2025  zum Bericht und Antrag des Regierungsrats vom 4. März 2025 betreffend das Gesetz über den Solidaritätsbeitrag an Opfer von fürsorgerischen Zwangsmassnahmen und Fremdplatzierungen vor 1981 (GSO)",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [
+    "Strafrecht, Strafvollzug"
+   ],
+   "geprüft": true,
+   "anzahl_abstimmungen": 3
+  },
+  {
+   "geschaeft": "Petition Bündnis Gerechigkeit Schaffhausen vom 3. Juni 2024: «Überlebende statt Täterschaft schützen»",
+   "gruppe": "3",
+   "gruppe_name": "Strafrecht, Strafvollzug",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Petition zum Schutz von Gewaltbetroffenen, Opferschutz"
+  },
+  {
+   "geschaeft": "Petition Lehrpersonen Schaffhausen vom 15. November 2023 «Lehrpersonenmangel stoppen - gemeinsam + jetzt»",
+   "gruppe": "4",
+   "gruppe_name": "Erziehung, Kultur, Natur",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 2
+  },
+  {
+   "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6
+  },
+  {
+   "geschaeft": "Staatsrechnung 2020",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 8,
+   "begruendung": "Staatsrechnung"
+  },
+  {
+   "geschaeft": "Staatsrechnung und  Verwaltungsbericht 2023",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 6
+  },
+  {
+   "geschaeft": "Staatsrechnung und  Verwaltungsbericht 2024",
+   "gruppe": "6",
+   "gruppe_name": "Finanzen",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 5
+  },
+  {
+   "geschaeft": "Wahl eines Mitglieds in den Erziehungsrat",
+   "gruppe": "1",
+   "gruppe_name": "Staat, Volk, Behörden",
+   "alternativen": [],
+   "geprüft": true,
+   "anzahl_abstimmungen": 1,
+   "begruendung": "Wahl in eine kantonale Behörde"
+  }
+ ]
+}

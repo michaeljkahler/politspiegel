@@ -1,0 +1,28 @@
+# Zugangsdaten. Muss ganz oben stehen und darf nie entfernt werden: das
+# Repository wird öffentlich auf GitHub veröffentlicht.
+data/zefix_zugang.json
+data/github_zugang.json
+*_zugang.json
+.env
+*.pem
+*.key
+
+# Persönliche Korrespondenz. Enthält Mailadressen und gehört nicht in ein
+# öffentliches Repository, auch wenn keine Passwörter darin stehen.
+mail-*.md
+SKILL-*.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Vom Scraper regenerierte Rohdaten (nicht versionieren)
+data/raw/
+data/protokolle/
+
+# Archiv und Zwischenstände
+archiv/
+
+# Bauergebnis. Es steckt identisch in site/index.html, das veröffentlicht wird.
+# Beides zu versionieren verdoppelt jede Fassung in der Historie.
+output/
