@@ -90,8 +90,10 @@ def listentitel(a):
     """Titel für die Liste auf dem Deckblatt. Formale Kurztitel («Sofortige
     2. Lesung», «Schlussabstimmung») bekommen den Sachbetreff angehängt."""
     t = a["titel"]
-    if len(t) < 36 and a["geschaeft"] and a["geschaeft"].lower() not in t.lower():
-        return f"{t}: {a['geschaeft']}"
+    g = a["geschaeft"]
+    schon = any(w.lower()[:8] in t.lower() for w in g.split() if len(w) >= 8)
+    if len(t) < 36 and g and not schon:
+        return f"{t}: {g}"
     return t
 
 
@@ -154,6 +156,23 @@ def rund(d, box, r, fill, outline=None, w=1):
 
 
 # ── Auswertung einer Abstimmung ──────────────────────────────────────────────
+def vorstoss_aus_geschaeft(v, titel, referenz):
+    """Vorstösse ohne Sachtitel im Titel («Volksmotion 2024/1 von X und Y … vom
+    22. März 2024»): der Sachtitel steht dann oft in «…» im Geschäftstitel."""
+    m = re.match(r"(Volksmotion|Motion|Postulat|Interpellation|Petition)\s*(?:Nr\.\s*)?([\d/]+)?"
+                 r"\s*(?:von\s+(.+?))?(?:\s*\(|\s+sowie\b|\s+vom\s+\d|$)", titel)
+    if not m or referenz:
+        return titel, referenz
+    q = re.search(r"«(.+?)»", flach(v.get("geschaeft")))
+    if not q or len(q.group(1)) < 8:
+        return titel, referenz
+    art, nr, wer = m.group(1), m.group(2), (m.group(3) or "").strip()
+    if len(wer) > 40:
+        wer = re.split(r"\s+und\s+", wer)[0] + " u. a."
+    ref = art + (" " + nr if nr else "") + (", " + wer if wer else "")
+    return kuerze(q.group(1), 96), ref
+
+
 def auswerten(sess, i, v):
     gesamt = collections.Counter()
     nach_frak = collections.OrderedDict()
@@ -170,6 +189,13 @@ def auswerten(sess, i, v):
         an = (not ja_gewinnt) if inv else ja_gewinnt
         ergebnis, ekey = ("Angenommen", "ja") if an else ("Abgelehnt", "nein")
     titel, referenz = ueberschrift(v)
+    titel, referenz = vorstoss_aus_geschaeft(v, titel, referenz)
+    # Abschreibung eines Vorstosses: «Angenommen» heisst, der Vorstoss ist
+    # erledigt. Damit die Karte das nicht als Zustimmung zum Anliegen zeigt,
+    # steht die Abstimmungsform vorne im Titel.
+    typ = flach(v.get("typ"))
+    if typ.lower() == "abschreibung" and not titel.lower().startswith("abschreibung"):
+        titel = "Abschreibung: " + titel
     frak = sorted(
         [{"name": f, "key": frak_key(f), "total": sum(c.values()),
           "c": {k: c.get(k, 0) for k in STIMME_KEY.values()}}
@@ -475,7 +501,10 @@ def text_karussell(sess, votes, teil, teile, url_ordner):
               + (f" Teil {teil} von {teile}." if teile > 1 else ""), ""]
     for a in votes:
         c = a["c"]
-        z = f"{a['nr']}. {a['titel']}: {a['ergebnis']} (Ja {c['ja']}, Nein {c['nein']}"
+        z = f"{a['nr']}. {listentitel(a)}"
+        if a["referenz"]:
+            z += f" ({a['referenz']})"
+        z += f": {a['ergebnis']} (Ja {c['ja']}, Nein {c['nein']}"
         if c["enth"]:
             z += f", Enthaltung {c['enth']}"
         z += ")"
