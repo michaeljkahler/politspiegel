@@ -3,12 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politspiegel Schaffhausen</title>
-<meta name="description" content="Politspiegel Schaffhausen: wie der Kantonsrat abstimmt, und was bei der naechsten kantonalen Abstimmung auf dem Zettel steht. Mit Quellen, offen hergeleitet.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="manifest" href="manifest.webmanifest">
+<title>Abstimmungsspiegel · alle Abstimmungen</title>
+<meta name="description" content="Abstimmungsspiegel Schaffhausen: zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="theme-color" content="#0B0F14">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,39 +112,32 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 <div class="wrap">
 
 <header class="kopf">
+  <a class="zurueck" href="../">&larr; Politspiegel Schaffhausen</a>
   <p class="marke">Kanton Schaffhausen</p>
-  <h1>Politspiegel Schaffhausen</h1>
-  <p class="lead">Wie der Kantonsrat abstimmt, und was bei der nächsten Abstimmung auf dem Zettel steht.</p>
+  <h1>Abstimmungsspiegel</h1>
+  <p class="lead">Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.
+  Bewertet wird der Beleg, nicht das Argument.</p>
 </header>
 
 <main>
-<div class="kaesten">
-    <a class="kasten k-kantonsrat" href="kantonsrat/">
-      <span class="k-marke">Laufend</span>
-      <h2>Kantonsratsspiegel</h2>
-      <p class="k-satz">Alle namentlichen Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema. Mit Vergleich der eigenen Haltung.</p>
-      <div class="k-zahlen"><span class="k-zahl">1 441<em>namentliche Abstimmungen</em></span><span class="k-zahl">202<em>Sitzungen</em></span></div>
-      
-      <p class="k-pfeil">ansehen &rarr;</p>
-    </a>
-    <div class="kasten kasten-div k-abstimmung">
-      <span class="k-marke">Laufend</span>
-      <a class="k-titel-link" href="abstimmung/"><h2>Abstimmungsspiegel</h2></a>
-      <p class="k-satz">Nächste Abstimmung am 27. September 2026: Verkehrsflussinitiative. Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.</p>
-      <div class="k-zahlen"><span class="k-zahl">10<em>Aussagen geprüft</em></span><span class="k-zahl">2<em>Abstimmungen</em></span></div>
-      <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li class="k-leer">noch keine</li></ul></div></details>
-      <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
-    </div>
-</div>
+<section class="abschnitt"><h2>Aktuell</h2><ul class="liste">
+    <li><a href="../2026-09-27-verkehrsfluss/">
+      <time datetime="2026-09-27">27.09.2026</time>
+      <span><h3>Verkehrsflussinitiative</h3>
+      <p class="erg">Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen», mit Gegenvorschlag des Kantonsrats · 10 Aussagen geprüft</p></span>
+    </a></li>
+  </ul></section>
+<section class="abschnitt"><h2>Kommend</h2><ul class="liste">
+    <li><a href="../2026-11-29-spitalgesetz/">
+      <time datetime="2026-11-29">29.11.2026</time>
+      <span><h3>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></h3>
+      <p class="erg">Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen» · 0 Aussagen geprüft</p></span>
+    </a></li>
+  </ul></section>
+<section class="abschnitt"><h2>Vergangen</h2><p class="hinweis">Noch keine vergangene Abstimmung. Jede Seite bleibt nach der Abstimmung so stehen, wie sie vorher war; das Ergebnis wird nachgetragen.</p></section>
 </main>
 
 <footer class="fuss">
-  <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Beide
-  Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats,
-  amtliche Abstimmungsunterlagen, Geodaten von Bund und Kanton. Jede Zahl ist
-  bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
-  gekennzeichnet.</p>
-
   <p>Erzeugt am 03.09.2026. Aufbereitung ohne Gewähr.</p>
 </footer>
 

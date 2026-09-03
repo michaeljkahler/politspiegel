@@ -7,7 +7,8 @@ Aufruf aus der Projektwurzel:
 Liest    politspiegel/politspiegel.json              Titel, Untertitel, Kantonsratskasten
          abstimmungsspiegel/abstimmungen/*/vorlage.json  je Abstimmung Titel, Datum, Stand, Ergebnis
          data/all_sessions.json                       Kennzahlen des Kantonsratsspiegels
-Schreibt site/index.html            die Uebersicht
+Schreibt site/index.html            die Uebersicht, zwei Kaesten
+         site/abstimmung/index.html alle Abstimmungen: aktuell, kommend, vergangen
          site/dashboard.html        Weiterleitung auf kantonsrat/
 
 Warum eine eigene Ebene: Der Kantonsratsspiegel ist 2,7 MB, die Abstimmungsseite
@@ -24,10 +25,15 @@ Liste: Bis zum 3. September 2026 standen die Kaesten samt Kennzahlen von Hand
 in einer JSON-Datei. Von Hand gepflegte Zahlen auf einer Uebersichtsseite
 veralten unbemerkt, und zwar genau dann, wenn die Seite darunter aktuell ist.
 Jetzt entscheidet der Abstimmungsordner: liegt dort eine vorlage.json und ist
-die Seite gebaut, erscheint die Abstimmung. Kommende stehen als Kasten oben,
-vergangene als Liste darunter, mit dem Ergebnis, sobald es in der vorlage.json
-unter «ergebnis» nachgetragen ist. Nichts wird geloescht: eine alte Abstimmung
-bleibt unter ihrer Adresse erreichbar und in der Liste auffindbar.
+die Seite gebaut, erscheint die Abstimmung.
+
+Warum ein Kasten fuer alle Abstimmungen und nicht einer je Abstimmung: Mit
+jeder Vorlage kaeme ein Kasten dazu, und nach zwei Jahren waere die Uebersicht
+eine Halde. Darum stehen auf der Startseite genau zwei Kaesten, einer je
+Angebot. Der Abstimmungskasten nennt die naechste Abstimmung, und ein
+Aufklappfeld darin fuehrt zu jeder einzelnen: aktuell, kommend, vergangen. Die
+vollstaendige Liste mit Ergebnissen liegt unter abstimmung/. Nichts wird
+geloescht: eine alte Abstimmung bleibt unter ihrer Adresse erreichbar.
 """
 
 from __future__ import annotations
@@ -96,7 +102,7 @@ a{color:inherit}
 h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spacing:-.015em}
 .lead{margin:0;font-size:18px;color:var(--text-leise)}
 
-.kaesten{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px}
+.kaesten{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px;align-items:start}
 .kasten{display:flex;flex-direction:column;border:1px solid var(--linie);border-radius:16px;
   padding:24px 26px 22px;background:var(--karte);text-decoration:none;color:inherit;
   transition:border-color .12s, transform .12s}
@@ -120,6 +126,32 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
 
+.kasten-div{cursor:default}
+.kasten-div:hover{transform:none}
+.k-titel-link{text-decoration:none;color:inherit}
+.k-titel-link:hover h2{text-decoration:underline}
+.k-wahl{margin:14px 0 0;border-top:1px solid var(--linie);padding-top:12px}
+.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;
+  font-family:Archivo,sans-serif;font-size:14px;font-weight:600;color:var(--contra-text);padding:4px 0}
+.k-wahl summary::-webkit-details-marker{display:none}
+.k-wahl summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(45deg);margin-right:4px;transition:transform .15s}
+.k-wahl[open] summary::after{transform:rotate(-135deg)}
+.k-gruppe{margin:10px 0 0}
+.k-gruppe h3{margin:0 0 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise)}
+.k-gruppe ul{list-style:none;margin:0;padding:0}
+.k-gruppe li a{display:grid;grid-template-columns:86px 1fr;gap:10px;padding:7px 6px;border-radius:8px;
+  text-decoration:none;color:inherit;font-size:14.5px;line-height:1.35}
+.k-gruppe li a:hover{background:var(--flaeche)}
+.k-gruppe time{color:var(--text-leise);font-variant-numeric:tabular-nums;font-size:13px;padding-top:1px}
+.k-entwurf{font-size:12px;font-weight:400;color:var(--text-leise);font-style:italic;font-family:"Public Sans",sans-serif}
+.k-gruppe .k-leer{font-size:13.5px;color:var(--text-leise);padding:4px 6px}
+
+.zurueck{display:inline-flex;align-items:center;gap:6px;font-family:Archivo,sans-serif;font-size:13px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise);text-decoration:none;margin-bottom:10px}
+.zurueck:hover{color:var(--text)}
+.abschnitt{margin-top:44px}
+.abschnitt h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-leise);margin:0 0 12px}
 .fruehere{margin-top:48px}
 .fruehere h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;
   color:var(--text-leise);margin:0 0 6px}
@@ -219,24 +251,55 @@ def kasten(k) -> str:
     </a>"""
 
 
-def abstimmungskasten(z) -> str:
-    satz = z["untertitel"]
-    if satz:
-        satz += ". "
-    satz += "Die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs."
-    k = {
-        "art": "abstimmung",
-        "pfad": z["pfad"],
-        "marke": datum_lang(z["datum"]),
-        "titel": z["titel"],
-        "satz": satz,
-        "kennzahlen": [{"wert": str(z["aussagen"]), "einheit": "Aussagen geprüft"}],
-    }
-    if z["stellen"]:
-        k["kennzahlen"].append({"wert": str(z["stellen"]), "einheit": "Stellen im Text geprüft"})
-    if z["status"] != "veroeffentlicht":
-        k["stand"] = "Entwurf, noch nicht veröffentlichungsreif"
-    return kasten(k)
+def gruppen(zeilen, heute):
+    """Aktuell (die naechste), kommend (die weiteren), vergangen; nur gebaute."""
+    g = [z for z in zeilen if z["gebaut"]]
+    kommend = sorted([z for z in g if z["datum"] >= heute], key=lambda z: z["datum"])
+    vergangen = sorted([z for z in g if z["datum"] < heute], key=lambda z: z["datum"], reverse=True)
+    aktuell = kommend[:1]
+    return aktuell, kommend[1:], vergangen
+
+
+def eintrag(z) -> str:
+    entwurf = ' <span class="k-entwurf">Entwurf</span>' if z["status"] != "veroeffentlicht" else ""
+    return (f'<li><a href="{e(z["pfad"])}"><time datetime="{e(z["datum"])}">{e(datum_kurz(z["datum"]))}</time>'
+            f'<span>{e(z["titel"])}{entwurf}</span></a></li>')
+
+
+def gruppe(titel, zs, leer) -> str:
+    li = "".join(eintrag(z) for z in zs) if zs else f'<li class="k-leer">{e(leer)}</li>'
+    return f'<div class="k-gruppe"><h3>{e(titel)}</h3><ul>{li}</ul></div>'
+
+
+def abstimmungskasten(zeilen, heute) -> str:
+    """Ein Kasten fuer den ganzen Abstimmungsspiegel. Der Titel fuehrt zur
+    Listenseite abstimmung/, das Aufklappfeld direkt zu jeder Abstimmung.
+    Kein <a> um den Kasten: ein Aufklappfeld in einem Link ist kein gueltiges
+    HTML, und der Browser wuerde jeden Klick als Sprung werten."""
+    aktuell, kommend, vergangen = gruppen(zeilen, heute)
+    gesamt = len(aktuell) + len(kommend) + len(vergangen)
+    if aktuell:
+        z = aktuell[0]
+        satz = (f"Nächste Abstimmung am {datum_lang(z['datum'])}: {z['titel']}. "
+                "Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.")
+        zahlen = [{"wert": str(z["aussagen"]), "einheit": "Aussagen geprüft"},
+                  {"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
+    else:
+        satz = "Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs."
+        zahlen = [{"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
+    zahlen_html = "".join(f'<span class="k-zahl">{e(x["wert"])}<em>{e(x["einheit"])}</em></span>' for x in zahlen)
+    wahl = (gruppe("Aktuell", aktuell, "keine Abstimmung angekündigt")
+            + gruppe("Kommend", kommend, "keine weiteren angekündigt")
+            + gruppe("Vergangen", vergangen, "noch keine"))
+    return f"""
+    <div class="kasten kasten-div k-abstimmung">
+      <span class="k-marke">Laufend</span>
+      <a class="k-titel-link" href="abstimmung/"><h2>Abstimmungsspiegel</h2></a>
+      <p class="k-satz">{e(satz)}</p>
+      <div class="k-zahlen">{zahlen_html}</div>
+      <details class="k-wahl"><summary>Abstimmung wählen</summary>{wahl}</details>
+      <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
+    </div>"""
 
 
 def ergebnis_text(erg) -> str:
@@ -297,12 +360,7 @@ def bauen(d, zeilen) -> str:
         "titel": kr.get("titel", "Kantonsratsspiegel"), "satz": kr["satz"],
         "kennzahlen": ratszahlen() or [{"wert": "", "einheit": "aus den Ratsdaten"}],
     }]
-    kommend = [z for z in zeilen if z["datum"] >= heute and z["gebaut"]]
-    vergangen = [z for z in zeilen if z["datum"] < heute and z["gebaut"]]
-    # Kommende von nah nach fern: die naechste Abstimmung zuerst.
-    kommend.sort(key=lambda z: z["datum"])
-    html_kaesten = "".join(kasten(k) for k in kaesten)
-    html_kaesten += "".join(abstimmungskasten(z) for z in kommend)
+    html_kaesten = "".join(kasten(k) for k in kaesten) + abstimmungskasten(zeilen, heute)
 
     return f"""<!DOCTYPE html>
 <html lang="de-CH">
@@ -333,7 +391,6 @@ def bauen(d, zeilen) -> str:
 <main>
 <div class="kaesten">{html_kaesten}
 </div>
-{fruehere(vergangen)}
 </main>
 
 <footer class="fuss">
@@ -343,6 +400,65 @@ def bauen(d, zeilen) -> str:
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>
 
+  <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
+</footer>
+
+</div>
+</body>
+</html>
+"""
+
+
+def listenseite(zeilen) -> str:
+    """abstimmung/index.html: alle Abstimmungen, aktuell, kommend, vergangen."""
+    heute = date.today().isoformat()
+    aktuell, kommend, vergangen = gruppen(zeilen, heute)
+
+    def block(titel, zs, leer):
+        if not zs:
+            return f'<section class="abschnitt"><h2>{e(titel)}</h2><p class="hinweis">{e(leer)}</p></section>'
+        li = "".join(f"""
+    <li><a href="../{e(z['pfad'].split('/', 1)[1])}">
+      <time datetime="{e(z['datum'])}">{e(datum_kurz(z['datum']))}</time>
+      <span><h3>{e(z['titel'])}{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
+      <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if z['datum'] < heute else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>
+    </a></li>""" for z in zs)
+        return f'<section class="abschnitt"><h2>{e(titel)}</h2><ul class="liste">{li}\n  </ul></section>'
+
+    return f"""<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abstimmungsspiegel · alle Abstimmungen</title>
+<meta name="description" content="Abstimmungsspiegel Schaffhausen: zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#0B0F14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>{CSS}</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="kopf">
+  <a class="zurueck" href="../">&larr; Politspiegel Schaffhausen</a>
+  <p class="marke">Kanton Schaffhausen</p>
+  <h1>Abstimmungsspiegel</h1>
+  <p class="lead">Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.
+  Bewertet wird der Beleg, nicht das Argument.</p>
+</header>
+
+<main>
+{block("Aktuell", aktuell, "Keine Abstimmung angekündigt.")}
+{block("Kommend", kommend, "Keine weiteren Abstimmungen angekündigt.")}
+{block("Vergangen", vergangen, "Noch keine vergangene Abstimmung. Jede Seite bleibt nach der Abstimmung so stehen, wie sie vorher war; das Ergebnis wird nachgetragen.")}
+</main>
+
+<footer class="fuss">
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
 </footer>
 
@@ -378,9 +494,11 @@ def main() -> None:
     SITE.mkdir(parents=True, exist_ok=True)
     ziel = SITE / "index.html"
     ziel.write_text(bauen(d, zeilen), encoding="utf-8")
+    (SITE / "abstimmung").mkdir(parents=True, exist_ok=True)
+    (SITE / "abstimmung" / "index.html").write_text(listenseite(zeilen), encoding="utf-8")
     (SITE / "dashboard.html").write_text(UMLEITUNG, encoding="utf-8")
     heute = date.today().isoformat()
-    print(f"geschrieben: {ziel}  ({ziel.stat().st_size/1024:.1f} kB)")
+    print(f"geschrieben: {ziel}  ({ziel.stat().st_size/1024:.1f} kB), dazu abstimmung/index.html")
     print(f"  {'kantonsrat/':44s} "
           + ("vorhanden" if (SITE / "kantonsrat" / "index.html").is_file() else "FEHLT NOCH"))
     for z in zeilen:

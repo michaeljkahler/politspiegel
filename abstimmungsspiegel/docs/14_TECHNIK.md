@@ -193,17 +193,18 @@ Struktur:
 site/
   index.html                   Politspiegel Schaffhausen, die Übersicht
   kantonsrat/index.html        Kantonsratsspiegel
+  abstimmung/index.html        Abstimmungsspiegel, alle Abstimmungen
   abstimmung/<slug>/index.html je Vorlage eine Seite, mit Grafiken daneben
 ```
 
 ### Die Übersicht findet die Abstimmungen selbst
 
-`politspiegel/bauen.py` liest alle `abstimmungen/*/vorlage.json` und baut
-daraus die Kästen: Titel, Untertitel, Termin, Zahl der geprüften Aussagen,
-Stand. Kommende Abstimmungen stehen als Kasten oben, vergangene als Liste
-«Frühere Abstimmungen» darunter, mit dem Ergebnis, sobald es nachgetragen ist.
-Verlinkt wird nur, was gebaut ist: Fehlt `site/abstimmung/<slug>/index.html`,
-meldet der Lauf das und lässt den Kasten weg.
+`politspiegel/bauen.py` liest alle `abstimmungen/*/vorlage.json`. Auf der
+Startseite steht ein Kasten «Abstimmungsspiegel» mit der nächsten Abstimmung und
+einem Aufklappfeld (aktuell, kommend, vergangen); unter `abstimmung/` liegt die
+vollständige Liste mit Ergebnissen, sobald sie nachgetragen sind. Verlinkt wird
+nur, was gebaut ist: Fehlt `site/abstimmung/<slug>/index.html`, meldet der Lauf
+das und lässt den Eintrag weg.
 
 Bis zum 3. September 2026 standen die Kästen samt Kennzahlen von Hand in einer
 JSON-Datei. Handzahlen auf einer Übersichtsseite veralten unbemerkt, und zwar

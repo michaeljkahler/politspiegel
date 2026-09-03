@@ -123,6 +123,16 @@ body[data-nav="min"] .app{grid-template-columns:var(--nav-w-min) 1fr}
   background:var(--surface); border-right:1px solid var(--line);
   display:flex; flex-direction:column; gap:22px; padding:18px 14px 16px; overflow:hidden;
 }
+/* Heimlink zur Übersicht «Politspiegel Schaffhausen». In der Seitenleiste
+   mit Wort, in der eingeklappten Leiste und in der oberen Leiste (Telefon)
+   nur das Haus. */
+.heim{display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); text-decoration:none;
+  margin:-6px 0 -10px; padding:4px 0; transition:color .13s}
+.heim:hover{color:var(--ink)}
+body[data-nav="min"] .heim span{display:none}
+.heim-oben{display:none; margin:0; padding:8px; border:1px solid var(--line); border-radius:var(--r-ctl);
+  background:var(--surface); color:var(--ink-2)}
 .brandrow{display:flex; align-items:flex-start; gap:8px}
 .brand{font-family:"Archivo",sans-serif; font-weight:700; font-size:15px; line-height:1.2;
   letter-spacing:-.015em; flex:1; min-width:0}
@@ -717,6 +727,7 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
   .burger{display:flex; align-items:center; justify-content:center; width:38px; height:38px;
     border:1px solid var(--line); background:var(--surface); border-radius:var(--r-ctl);
     cursor:pointer; flex:0 0 auto}
+  .heim-oben{display:inline-flex; flex:0 0 auto}
   .topbar{padding:10px 16px}
   .search{order:3; flex:1 1 100%}
   .pick{margin-left:auto}

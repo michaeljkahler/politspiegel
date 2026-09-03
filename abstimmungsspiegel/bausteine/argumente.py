@@ -907,6 +907,9 @@ a{color:inherit}
 .kopf .ober{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
 .marke-seite{font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--text-leise);
   font-family:Archivo,sans-serif;font-weight:600}
+.marke-seite .heim{display:inline-flex;align-items:center;gap:5px;color:inherit;text-decoration:none;
+  border-bottom:1px solid transparent;transition:color .13s,border-color .13s}
+.marke-seite .heim:hover{color:var(--text);border-color:var(--text-leise)}
 h1{font-size:clamp(28px,4.2vw,42px);line-height:1.12;margin:12px 0 4px;letter-spacing:-.01em}
 .untertitel{color:var(--text-leise);margin:0 0 18px;font-size:17px}
 .termin{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--linie);
@@ -1794,7 +1797,7 @@ def bauen() -> str:
 
 <header class="kopf">
   <div class="ober">
-    <span class="marke-seite">Abstimmungsspiegel · {e(v['ebene'])}</span>
+    <span class="marke-seite"><a class="heim" href="../../" title="Zur Übersicht Politspiegel Schaffhausen"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2 8l6-5 6 5v5.5a.5.5 0 0 1-.5.5H10v-4H6v4H2.5a.5.5 0 0 1-.5-.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>Politspiegel</a> · <a href="../" class="heim heim-liste" title="Alle Abstimmungen">Abstimmungsspiegel</a> · {e(v['ebene'])}</span>
     <span class="termin">Abstimmung {tag}.{monat}.{jahr}</span>
   </div>
   <h1>{e(v['titel'])}</h1>

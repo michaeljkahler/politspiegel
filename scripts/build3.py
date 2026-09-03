@@ -811,6 +811,10 @@ __CSS__
 <div class="app">
 
   <aside class="side" id="side">
+    <a class="heim" href="../" title="Zur Übersicht Politspiegel Schaffhausen">
+      <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+        <path d="M2 8l6-5 6 5v5.5a.5.5 0 0 1-.5.5H10v-4H6v4H2.5a.5.5 0 0 1-.5-.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+      </svg><span>Politspiegel</span></a>
     <div class="brandrow">
       <div class="brand">Kantonsrat<br>Schaffhausen<span>Kantonsratsspiegel</span></div>
       <button class="navtoggle" id="navToggle" type="button"
@@ -838,6 +842,11 @@ __CSS__
           <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
         </svg>
       </button>
+      <a class="heim heim-oben" href="../" aria-label="Zur Übersicht Politspiegel Schaffhausen" title="Politspiegel Schaffhausen">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+          <path d="M2 8l6-5 6 5v5.5a.5.5 0 0 1-.5.5H10v-4H6v4H2.5a.5.5 0 0 1-.5-.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+        </svg>
+      </a>
       <label class="search" for="suche">
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
           <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.7" fill="none"/>
