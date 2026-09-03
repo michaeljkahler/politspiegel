@@ -80,7 +80,10 @@ Neben jedem Argument zeigt die Seite, wie die Fraktionen tatsächlich abgestimmt
 haben, als dieselbe Frage im Rat lag. Das ist der Mehrwert, den kein bestehendes
 Schweizer Angebot hat.
 
-Was noch offen ist, steht je Vorlage in `docs/ENTSCHEIDE.md` unter «Offen». Zwei
-Punkte sind für die Veröffentlichung zwingend: die Zweitprüfung durch eine
-Person ausserhalb des Projekts, ohne sichtbare Seitenzuordnung, und die Anhörung
-beider Komitees.
+Was noch offen ist, steht je Vorlage in `docs/ENTSCHEIDE.md` unter «Offen».
+
+Entschieden am 3. September 2026: Zweitprüfung und Anhörung der Komitees sind
+keine Bedingung für die Veröffentlichung mehr. Veröffentlicht wird, sobald die
+Prüfliste in [12_QS.md](12_QS.md) durch ist; die Komitees können sich jederzeit
+direkt beim Herausgeber melden, Widerspruch wird als Zitat aufgenommen und
+Korrekturen werden sichtbar protokolliert.

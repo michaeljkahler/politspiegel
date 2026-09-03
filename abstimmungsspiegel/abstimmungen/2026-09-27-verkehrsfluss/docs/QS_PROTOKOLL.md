@@ -15,7 +15,7 @@ Prüfliste in 12_QS.md die Fallen einzeln nennt statt allgemein zu mahnen.
 
 | Bereich | Stand |
 |---|---|
-| 1 Inhalt | offen: 1.9 Anhörung der Komitees, 1.2 drei Fundstellen |
+| 1 Inhalt | offen: 1.2 drei Fundstellen. 1.9 Anhörung als Bedingung gestrichen (3.9.2026) |
 | 2 Zahlen | durchlaufen, sechs Korrekturen, siehe unten |
 | 3 Geodaten | bestanden, 4 von 4 Ebenen freigegeben |
 | 4 Layout | bestanden am 3.9.2026, acht Befunde behoben |

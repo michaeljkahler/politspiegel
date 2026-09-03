@@ -231,18 +231,22 @@ Das Verfahren muss vor der ersten Vorlage feststehen und öffentlich sein.
 3. **Einordnen.** Typ bestimmen (Tatsache, Prognose, Wertung), Argumentschema
    zuweisen, kritische Fragen des Schemas anhängen.
 4. **Belegen.** Quellen suchen, Prüfschema ausfüllen, Präzisierungssatz schreiben.
-5. **Gegenlesen.** Zweite Person prüft **ohne** die Seitenzuordnung zu sehen
-   (Argument ohne Absender). Das ist der wirksamste Schutz gegen die eigene
-   Schlagseite und billig zu haben.
-6. **Anhörung.** Beide Komitees bekommen ihre Karten vor der Veröffentlichung zur
-   Stellungnahme, mit fester Frist. Widerspruch wird als Zitat aufgenommen, nicht
-   weggeschrieben. Das kostet wenig und entzieht dem Vorwurf der Einseitigkeit
-   die Grundlage.
-7. **Veröffentlichen** mit Prüfdatum, Prüfer und Versionsstand.
+5. **Gegenlesen** nach der Prüfliste in 12_QS.md, wo möglich ohne die
+   Seitenzuordnung zu sehen (Argument ohne Absender).
+6. **Veröffentlichen** mit Prüfdatum und Versionsstand.
+7. **Rückmeldung.** Beide Komitees können sich jederzeit direkt beim Herausgeber
+   zu ihren Karten äussern. Widerspruch wird als Zitat aufgenommen, nicht
+   weggeschrieben.
 8. **Korrigieren** sichtbar, mit Datum und Grund im Fuss der Seite.
 
-**Zeitpunkt:** frühestens nach dem Vorliegen der Abstimmungserläuterungen,
-spätestens vier Wochen vor dem Termin, damit die Anhörung Platz hat.
+Bis zum 3. September 2026 waren eine Zweitprüfung durch eine Person ausserhalb
+des Projekts und eine Anhörung der Komitees vor der Veröffentlichung
+vorgesehen. Beides ist gestrichen: Das Projekt ist ein Ein-Personen-Betrieb,
+und eine Bedingung, die nie erfüllt wird, verhindert die Veröffentlichung
+statt sie besser zu machen. An die Stelle tritt die offene Rückmeldung nach
+der Veröffentlichung, sichtbar protokolliert.
+
+**Zeitpunkt:** frühestens nach dem Vorliegen der Abstimmungserläuterungen.
 
 ---
 

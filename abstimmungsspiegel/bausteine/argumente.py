@@ -1761,9 +1761,8 @@ def bauen() -> str:
     <li>Geprüft wird der Beleg, nicht die Politik: Quellenlage, Zahlenfestigkeit,
       Ursachennachweis, Reichweite, Übertragbarkeit. Achsen, die auf eine Aussage nicht
       passen, bleiben leer statt null.</li>
-    <li>Eine zweite Person liest gegen, ohne die Seitenzuordnung zu sehen. <em>Noch offen.</em></li>
-    <li>Beide Komitees erhalten ihre Karten vor der Veröffentlichung zur Stellungnahme.
-      <em>Noch offen.</em></li>
+    <li>Beide Komitees können sich jederzeit zu ihren Karten äussern. Widerspruch wird als
+      Zitat aufgenommen, nicht weggeschrieben.</li>
     <li>Korrekturen werden sichtbar protokolliert, nicht stillschweigend nachgeführt.</li>
   </ol>
   <p>Ausführlich in <code>abstimmungsspiegel/docs/10_METHODE.md</code>. Grundlagen: Toulmin-Schema,

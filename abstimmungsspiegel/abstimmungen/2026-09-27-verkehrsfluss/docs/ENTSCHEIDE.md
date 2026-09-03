@@ -138,7 +138,6 @@ gerechnet.
 
 ### Redaktion
 
-- **Zweitprüfung** durch mindestens eine Person ausserhalb des Projekts, ohne
-  sichtbare Seitenzuordnung. Noch nicht organisiert.
-- **Anhörung beider Komitees** vor der Veröffentlichung. Noch nicht erfolgt. Bei
-  einem Termin am 27. September muss sie in den nächsten Tagen laufen.
+- **Zweitprüfung und Anhörung** sind am 3. September 2026 als Bedingung
+  gestrichen (siehe `docs/10_METHODE.md`). Die Komitees können sich direkt beim
+  Herausgeber melden; Rückmeldungen werden sichtbar protokolliert.

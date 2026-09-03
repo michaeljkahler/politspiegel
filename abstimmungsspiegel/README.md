@@ -28,4 +28,4 @@ Dach über beiden ist der Politspiegel.
 
 | Termin | Vorlage | Ordner | Stand |
 |---|---|---|---|
-| 27.09.2026 | Verkehrsflussinitiative, mit Gegenvorschlag | [`abstimmungen/2026-09-27-verkehrsfluss/`](abstimmungen/2026-09-27-verkehrsfluss/) | Prototyp, nicht veröffentlicht |
+| 27.09.2026 | Verkehrsflussinitiative, mit Gegenvorschlag | [`abstimmungen/2026-09-27-verkehrsfluss/`](abstimmungen/2026-09-27-verkehrsfluss/) | veröffentlicht am 03.09.2026, Rückmeldungen offen |
