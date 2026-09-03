@@ -494,7 +494,31 @@ def video(bilder, dauern, ziel):
 
 
 # ── Texte ────────────────────────────────────────────────────────────────────
-def text_karussell(sess, votes, teil, teile, url_ordner):
+def parteien_zeile(netz, sess):
+    """«Parteien im Rat: @…» je Netzwerk. Immer alle Parteien, die in der Sitzung
+    vertreten waren; wer im Netzwerk kein Konto hat, steht als Name. Konten aus
+    data/parteien_social.json. Facebook verlinkt aus der Schnittstelle nicht,
+    dort stehen nur die Namen."""
+    pfad = DATA / "parteien_social.json"
+    if not pfad.exists():
+        return ""
+    liste = json.loads(pfad.read_text(encoding="utf-8"))["parteien"]
+    konten = {e["partei"].lower(): e for e in liste}
+    reihe = [e["partei"].lower() for e in liste]     # Reihenfolge wie in der Datei
+    im_rat = []
+    for m in sess["members"]:
+        k = (m.get("partei") or "").strip()
+        if k and k.lower() not in [x.lower() for x in im_rat]:
+            im_rat.append(k)
+    teile = []
+    for k in sorted(im_rat, key=lambda x: (reihe.index(x.lower()) if x.lower() in reihe else 99, x.lower())):
+        e = konten.get(k.lower())
+        h = e.get(netz) if e else None
+        teile.append(("@" + h) if h and netz != "facebook" else k)
+    return "Parteien im Rat: " + " ".join(teile)
+
+
+def text_karussell(sess, votes, teil, teile, url_ordner, netz="instagram"):
     datum, zeit = datum_lang(sess["sitzung"])
     n = sess["n_votes"]
     zeilen = [f"Kantonsrat Schaffhausen, {datum}: {n} namentliche Abstimmung{'en' if n != 1 else ''}."
@@ -511,20 +535,25 @@ def text_karussell(sess, votes, teil, teile, url_ordner):
         if a["inv"]:
             z += ". " + a["inv_note"].rstrip(".") + "."
         zeilen.append(z)
-    zeilen += ["", "Alle Details, Fraktionen und Namen: " + SEITE_URL,
-               "Quelle: Abstimmungsprotokolle des Kantonsrats, sh.ch", "",
-               "#Schaffhausen #Kantonsrat #Politspiegel"]
-    t = "\n".join(zeilen)
+    schluss_ = ["", "Alle Details, Fraktionen und Namen: " + SEITE_URL,
+                "Quelle: Abstimmungsprotokolle des Kantonsrats, sh.ch"]
+    pz = parteien_zeile(netz, sess)
+    if pz:
+        schluss_ += ["", pz]
+    schluss_ += ["", "#Schaffhausen #Kantonsrat #Politspiegel"]
+    t = "\n".join(zeilen + schluss_)
     if len(t) > 2100:   # Instagram: 2200 Zeichen
-        t = kuerze(t, 2000) + "\n\n" + SEITE_URL
+        t = kuerze("\n".join(zeilen), 2000 - len("\n".join(schluss_))) + "\n".join(schluss_)
     return t
 
 
-def text_reel(sess):
+def text_reel(sess, netz="instagram"):
     datum, _ = datum_lang(sess["sitzung"])
     n = sess["n_votes"]
+    pz = parteien_zeile(netz, sess)
     return (f"Kantonsrat Schaffhausen, {datum}: alle {n} namentlichen Abstimmungen in einer Minute. "
-            f"Wer wie gestimmt hat: {SEITE_URL}\n\n#Schaffhausen #Kantonsrat #Politspiegel")
+            f"Wer wie gestimmt hat: {SEITE_URL}" + (f"\n\n{pz}" if pz else "")
+            + "\n\n#Schaffhausen #Kantonsrat #Politspiegel")
 
 
 # ── Hauptlauf ────────────────────────────────────────────────────────────────
@@ -552,12 +581,20 @@ def sitzung_bauen(sess, ordner, mit_video=True):
             img.save(pfad, optimize=True)
             medien.append(url_ordner + pfad.name)
             lauf += 1
+        # Zwei Beiträge je Karussell: die @-Erwähnungen der Parteien sind je
+        # Netzwerk andere Konten, und Metricool kennt nur einen Text je Beitrag.
         posts.append({
-            "art": "karussell", "teil": gi, "teile": len(gruppen),
-            "text": text_karussell(sess, gruppe, gi, len(gruppen), url_ordner),
+            "art": "karussell", "teil": gi, "teile": len(gruppen), "netz": "instagram",
+            "text": text_karussell(sess, gruppe, gi, len(gruppen), url_ordner, "instagram"),
             "media": medien,
-            "providers": ["instagram", "facebook", "tiktok"],
+            "providers": ["instagram", "facebook"],
             "instagram": {"type": "POST"}, "facebook": {"type": "POST"},
+        })
+        posts.append({
+            "art": "karussell", "teil": gi, "teile": len(gruppen), "netz": "tiktok",
+            "text": text_karussell(sess, gruppe, gi, len(gruppen), url_ordner, "tiktok"),
+            "media": medien,
+            "providers": ["tiktok"],
             "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE", "photoCoverIndex": 0},
         })
 
@@ -583,17 +620,24 @@ def sitzung_bauen(sess, ordner, mit_video=True):
         if video(bilder, dauern, ordner / "reel.mp4"):
             datum, _ = datum_lang(sess["sitzung"])
             posts.append({
-                "art": "reel",
-                "text": text_reel(sess),
+                "art": "reel", "netz": "instagram",
+                "text": text_reel(sess, "instagram"),
                 "media": [url_ordner + "reel.mp4"],
                 "dauer_s": sum(dauern),
-                "providers": ["instagram", "tiktok", "facebook", "youtube"],
+                "providers": ["instagram", "facebook", "youtube"],
                 "instagram": {"type": "REEL", "showReelOnFeed": True},
                 "facebook": {"type": "REEL"},
-                "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE"},
                 "youtube": {"type": "short", "title": f"Kantonsrat Schaffhausen, {datum}: "
                             f"{n} Abstimmungen", "privacy": "public", "madeForKids": False,
                             "category": "NEWS_POLITICS"},
+            })
+            posts.append({
+                "art": "reel", "netz": "tiktok",
+                "text": text_reel(sess, "tiktok"),
+                "media": [url_ordner + "reel.mp4"],
+                "dauer_s": sum(dauern),
+                "providers": ["tiktok"],
+                "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE"},
             })
 
     (ordner / "posts.json").write_text(json.dumps({

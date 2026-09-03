@@ -1,0 +1,82 @@
+{
+  "hinweis": "Konten der im Kantonsrat vertretenen Parteien, geprüft am 4. September 2026 (Profilseiten aufgerufen, Instagram-Handles von den Parteiwebsites übernommen). Wird in den Kantonsrats-Beiträgen als Zeile «Parteien im Rat» erwähnt, immer alle, damit keine Partei bevorzugt wird. Facebook verlinkt @-Erwähnungen aus der Schnittstelle nicht, dort steht der Name als Text. AL ist seit 2022 aufgelöst und nicht mehr im Rat.",
+  "parteien": [
+    {
+      "partei": "SVP",
+      "instagram": "svp_kanton_schaffhausen",
+      "tiktok": null,
+      "facebook": "SVP Kanton Schaffhausen",
+      "quelle": "svp-sh.ch; zweites Konto @svp_sh (64 Follower) nicht verlinkt"
+    },
+    {
+      "partei": "SP",
+      "instagram": "sp.schaffhausen",
+      "tiktok": "sp.schaffhausen",
+      "facebook": "SP Schaffhausen",
+      "quelle": "Profile geprüft; Website sp-schaffhausen.ch ohne Links"
+    },
+    {
+      "partei": "FDP",
+      "instagram": "fdp.sh",
+      "tiktok": null,
+      "facebook": "FDP Kanton Schaffhausen",
+      "quelle": "fdp-sh.ch (Facebook Schaffhausenverbessern)"
+    },
+    {
+      "partei": "GLP",
+      "instagram": "glp_schaffhausen",
+      "tiktok": null,
+      "facebook": "Grünliberale Schaffhausen",
+      "quelle": "sh.grunliberale.ch"
+    },
+    {
+      "partei": "GRÜNE",
+      "instagram": "gruene_sh",
+      "tiktok": null,
+      "facebook": "Grüne Schaffhausen",
+      "quelle": "gruene-sh.ch (Facebook GrueneParteiSH)"
+    },
+    {
+      "partei": "Die Mitte",
+      "instagram": "diemitte.sh",
+      "tiktok": null,
+      "facebook": "Die Mitte Schaffhausen",
+      "quelle": "sh.die-mitte.ch"
+    },
+    {
+      "partei": "EVP",
+      "instagram": "evp_schaffhausen",
+      "tiktok": null,
+      "facebook": "EVP Schaffhausen",
+      "quelle": "evp-sh.ch"
+    },
+    {
+      "partei": "EDU",
+      "instagram": null,
+      "tiktok": null,
+      "facebook": "EDU Schaffhausen",
+      "quelle": "edu-sh.ch verlinkt nur Facebook (profile.php?id=61594090704547)"
+    },
+    {
+      "partei": "JSVP",
+      "instagram": "jsvp_sh",
+      "tiktok": "jsvp.sh",
+      "facebook": null,
+      "quelle": "jsvp-sh.ch; TikTok-Profil geprüft, 817 Follower"
+    },
+    {
+      "partei": "JUSO",
+      "instagram": "juso_schaffhausen",
+      "tiktok": "juso.schaffhausen",
+      "facebook": null,
+      "quelle": "juso-schaffhausen.ch"
+    },
+    {
+      "partei": "Junge Grüne",
+      "instagram": "jungegruene_sh",
+      "tiktok": "jungegruene_sh",
+      "facebook": null,
+      "quelle": "jungegruene.ch/sh; TikTok-Profil geprüft, noch ohne Follower"
+    }
+  ]
+}
