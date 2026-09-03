@@ -1180,10 +1180,11 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
         Instagram, LinkedIn und Facebook. Die Farben folgen dem gewählten Hell- oder
         Dunkelmodus der Seite.</p>
         <button type="button" class="bildknopf" id="bildLaden">Als PNG herunterladen</button>
-        <button type="button" class="bildknopf leise" id="bildAlle" hidden>Alle Folien herunterladen</button>
+        <button type="button" class="bildknopf leise" id="bildAlle" hidden>Alle Folien als ZIP herunterladen</button>
         <p class="bildregel">Das Karussell zeigt die Karte einer Seite, Folie für Folie. Die letzte
         Folie zeigt immer die Aussage der Gegenseite mit gleicher Nummer, damit kein Bild ohne
-        Gegenseite in Umlauf kommt. Bewertet wird der Beleg, nicht das Argument.</p>
+        Gegenseite in Umlauf kommt. Bewertet wird der Beleg, nicht das Argument. Kein Text wird
+        abgeschnitten: Was nicht Platz hat, wird kleiner gesetzt oder auf eine weitere Folie verteilt.</p>
       </div>
       <div class="bildvorschau"><canvas id="bildCanvas" width="1080" height="1350"></canvas></div>
     </div>
@@ -1471,7 +1472,16 @@ if(kmEl){
   var W = 1080, H = 1350, M = 72, INNEN = W - 2*M;
   var $ = function(s){ return document.querySelector(s); };
   var FUSS = H - 132;          // oberhalb liegt der Inhalt, darunter das Wasserzeichen
+  var LIMIT = FUSS - 14;       // unterste erlaubte Grundlinie fuer Text
   var BILDER = {};             // geladene Grafiken, Schluessel: Datei
+
+  /* Kein Text wird abgeschnitten. Jeder Textblock meldet, wenn er unter die
+     Fusslinie geraet (UEBERLAUF), und zeichne() setzt das ganze Motiv dann in
+     der naechstkleineren Stufe neu, bis alles Platz hat. S ist der Massstab
+     der Schrift; Kopf und Fuss bleiben davon unberuehrt. */
+  var S = 1, UEBERLAUF = false;
+  function sk(px){ return Math.round(px * S); }
+  function pruefe(y){ if (y > LIMIT) UEBERLAUF = true; }
 
   function farbe(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888'; }
   function palette(){
@@ -1482,8 +1492,8 @@ if(kmEl){
   }
   function seitenFarbe(p, s){ return s === 'pro' ? p.pro : p.contra; }
   function gegen(s){ return s === 'pro' ? 'contra' : 'pro'; }
-  function ARCH(px, w){ return (w || 600) + ' ' + px + 'px Archivo, "Helvetica Neue", Arial, sans-serif'; }
-  function SANS(px, w){ return (w || 400) + ' ' + px + 'px "Public Sans", "Helvetica Neue", Arial, sans-serif'; }
+  function ARCH(px, w){ return (w || 600) + ' ' + sk(px) + 'px Archivo, "Helvetica Neue", Arial, sans-serif'; }
+  function SANS(px, w){ return (w || 400) + ' ' + sk(px) + 'px "Public Sans", "Helvetica Neue", Arial, sans-serif'; }
 
   /* ---- Text ------------------------------------------------------------ */
   function zeilen(x, str, maxW){
@@ -1500,22 +1510,18 @@ if(kmEl){
     return out;
   }
   /* Zeichnet einen Text mit Umbruch und gibt die naechste freie Zeile zurueck.
-     Ueberzaehlige Zeilen fallen weg; die letzte bekommt eine Auslassung, damit
-     ein Schnitt als Schnitt erkennbar ist und nicht als Ende des Satzes. */
-  function text(x, str, px, y, maxW, lh, maxLines){
+     Es wird nie gekuerzt: Was nicht mehr ueber der Fusslinie Platz hat,
+     loest den Ueberlauf aus, und das Motiv wird kleiner neu gesetzt. Der
+     dritte Zahlenparameter frueherer Fassungen (Zeilenlimit) wird ignoriert. */
+  function text(x, str, px, y, maxW, lh){
+    lh = lh * S;
     var zs = zeilen(x, str, maxW);
-    if (maxLines && zs.length > maxLines) {
-      zs = zs.slice(0, maxLines);
-      var l = zs[maxLines-1];
-      while (l.length && x.measureText(l + ' …').width > maxW) l = l.replace(/\s*\S+$/, '');
-      zs[maxLines-1] = l + ' …';
-    }
-    zs.forEach(function(z){ if (z) x.fillText(z, px, y); y += z ? lh : lh * 0.55; });
+    zs.forEach(function(z){ if (z) x.fillText(z, px, y); pruefe(y); y += z ? lh : lh * 0.55; });
     return y;
   }
-  function hoehe(x, str, maxW, lh, maxLines){
+  function hoehe(x, str, maxW, lh){
+    lh = lh * S;
     var zs = zeilen(x, str, maxW);
-    if (maxLines && zs.length > maxLines) zs = zs.slice(0, maxLines);
     var h = 0; zs.forEach(function(z){ h += z ? lh : lh * 0.55; }); return h;
   }
   /* Fliesstext, der den Platz nutzt: die groesste Schrift aus der Reihe, bei
@@ -1528,7 +1534,7 @@ if(kmEl){
       var g = groessen[i], lh = Math.round(g * 1.45);
       x.font = SANS(g, 400);
       if (hoehe(x, str, maxW, lh) <= frei || i === groessen.length - 1)
-        return text(x, str, px, y, maxW, lh, Math.floor(frei / lh));
+        return text(x, str, px, y, maxW, lh);
     }
   }
   function linie(x, x1, y1, x2, y2, f, b){
@@ -1554,21 +1560,25 @@ if(kmEl){
 
   /* ---- Rahmen ---------------------------------------------------------- */
   function kopf(x, p){
+    var s0 = S; S = 1;
     x.fillStyle = p.bg; x.fillRect(0, 0, W, H);
     x.textBaseline = 'alphabetic';
     x.fillStyle = p.ink; x.font = ARCH(28, 700); x.fillText('ABSTIMMUNGSSPIEGEL', M, 92);
     x.fillStyle = p.leise; x.font = SANS(19, 600);
     x.fillText((D.vorlage.ebene + ' · Abstimmung vom ' + D.vorlage.datum).toUpperCase(), M, 126);
     linie(x, M, 152, W - M, 152, p.ink, 3);
+    S = s0;
     return 226;
   }
   function fuss(x, p, rechts){
+    var s0 = S; S = 1;
     linie(x, M, FUSS, W - M, FUSS, p.linie, 1);
     x.fillStyle = p.ink; x.font = SANS(22, 700);
     x.fillText('Politspiegel Schaffhausen · Abstimmungsspiegel', M, FUSS + 40);
     x.fillStyle = p.leise; x.font = SANS(18, 400);
     x.fillText(D.url ? D.url.replace(/^https?:\/\//, '') : 'Bewertet wird der Beleg einer Aussage, nicht die Aussage.', M, FUSS + 70);
     if (rechts) { x.textAlign = 'right'; x.font = SANS(18, 600); x.fillText(rechts, W - M, FUSS + 70); x.textAlign = 'left'; }
+    S = s0;
   }
   function titel(x, p, str, y, px){
     x.fillStyle = p.ink; x.font = ARCH(px || 40, 600);
@@ -1648,7 +1658,8 @@ if(kmEl){
       x.fillStyle = p.flaeche; rundrect(x, M, y, INNEN, kh, 14); x.fill();
       x.fillStyle = p.ink; x.font = ARCH(22, 600); x.fillText(k[0], M + 26, y + 40);
       x.fillStyle = p.ink; x.font = SANS(20, 400);
-      text(x, k[1], M + 26, y + 74, INNEN - 52, 28, Math.floor((kh - 90) / 28));
+      var ende = text(x, k[1], M + 26, y + 74, INNEN - 52, 28);
+      if (ende > y + kh - 4) UEBERLAUF = true;
       y += kh + 16;
     });
   }
@@ -1685,7 +1696,7 @@ if(kmEl){
     y = text(x, a.traeger, M, y, INNEN, 24, 1) + 18;
     if (a.typ === 'wertung'){
       x.fillStyle = p.leise; x.font = SANS(20, 400);
-      text(x, 'Werturteil. Steht ohne Note, weil sich kein Beleg dafür prüfen lässt.', M, y + 8, INNEN, 28, 2);
+      if (text(x, 'Werturteil. Steht ohne Note, weil sich kein Beleg dafür prüfen lässt.', M, y + 8, INNEN, 28) > ende) UEBERLAUF = true;
       return ende;
     }
     var r = Math.min(70, (ende - y - 10) / 2);
@@ -1694,7 +1705,8 @@ if(kmEl){
     x.fillStyle = p.leise; x.font = SANS(18, 400); x.fillText('Punkten für den Beleg', M + 2*r + 50, y + r + 24);
     var tx = M + 2*r + 50, ty = y + r + 58; x.font = SANS(17, 400);
     var teile = D.achsen.map(function(ax){ var v = a.pruefung[ax.id]; return ax.kurz + ' ' + (v == null ? '–' : v); });
-    text(x, teile.join('  ·  '), tx, ty, W - M - tx, 24, 2);
+    if (text(x, teile.join('  ·  '), tx, ty, W - M - tx, 24) > ende + 10) UEBERLAUF = true;
+    if (y + 2*r + 12 > ende + 10) UEBERLAUF = true;
     return ende;
   }
 
@@ -1715,16 +1727,18 @@ if(kmEl){
     x.fillStyle = p.leise; x.font = SANS(21, 400);
     y = text(x, 'Dieselbe Vorlage im Rat: namentliche Abstimmungen am ' + kr.sitzung +
              ', gezählt aus dem Wortprotokoll.', M, y, INNEN, 30, 2) + 14;
-    var n = kr.abstimmungen.length, eh = Math.min(170, Math.floor((FUSS - 36 - y) / Math.max(n, 1)));
+    /* Die Zeilen fliessen; passt die Folge nicht bis zur Fusslinie, setzt
+       zeichne() das Motiv kleiner. Ein festes Budget je Zeile hatte zuvor
+       zweizeilige Antraege in die naechste Zeile laufen lassen. */
+    var n = kr.abstimmungen.length, luft = n > 4 ? 16 : 30;
     kr.abstimmungen.forEach(function(v){
-      var top = y;
       x.fillStyle = p.leise; x.font = ARCH(15, 600);
       x.fillText(('Abstimmung ' + v.nr + ' · ' + v.titel).toUpperCase(), M, y + 2);
       x.fillStyle = p.ink; x.font = SANS(22, 600); x.textAlign = 'right';
       x.fillText(v.ja + ' Ja : ' + v.nein + ' Nein', W - M, y + 2); x.textAlign = 'left';
       y += 30;
       x.fillStyle = p.ink; x.font = ARCH(21, 600);
-      y = text(x, v.details || v.titel, M, y, INNEN, 27, eh > 150 ? 2 : 1) + 6;
+      y = text(x, v.details || v.titel, M, y, INNEN, 27) + 6;
       /* Ja dunkel, Nein hell. Die Seitenfarben waeren hier irrefuehrend: Wer fuer
          die Initiative ist, stimmt beim Gegenvorschlag mit Nein. */
       var s = Math.max(v.ja + v.nein, 1), bw = INNEN;
@@ -1733,10 +1747,10 @@ if(kmEl){
       y += 34;
       x.fillStyle = p.leise; x.font = SANS(16, 400);
       var fr = v.fraktionen.map(function(f){ return f.name + ' ' + f.ja + ':' + f.nein; }).join('  ·  ');
-      text(x, fr + (v.enth ? '  ·  ' + v.enth + ' Enth.' : ''), M, y, INNEN, 22, 1);
-      y = top + eh;
+      y = text(x, fr + (v.enth ? '  ·  ' + v.enth + ' Enth.' : ''), M, y, INNEN, 22) + luft;
     });
     x.fillStyle = p.leise; x.font = SANS(15, 400);
+    pruefe(y + 6);
     x.fillText('Balken: Anteil Ja dunkel, Anteil Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 14);
   }
 
@@ -1747,6 +1761,9 @@ if(kmEl){
      bleiben erhalten, damit kein Satz ueber den Folienrand springt. */
   var MX = document.createElement('canvas').getContext('2d');
   function seiten(str, frei){
+    /* Immer im Massstab 1 gemessen: Die Zahl der Folien darf sich nicht
+       aendern, wenn zeichne() eine Folie kleiner setzt. */
+    var s0 = S; S = 1;
     MX.font = SANS(24, 400);
     var lh = Math.round(24 * 1.45), maxL = Math.floor(frei / lh);
     var out = [], akt = [], n = 0;
@@ -1763,6 +1780,7 @@ if(kmEl){
       akt.push('');   /* Absatzende, wird beim Zusammensetzen zur Leerzeile */
     });
     if (akt.length) out.push(akt);
+    S = s0;
     return out.map(function(seite){
       var abs = [], z = [];
       seite.forEach(function(l){ if (l === ''){ if (z.length) abs.push(z.join(' ')); z = []; } else z.push(l); });
@@ -1794,7 +1812,7 @@ if(kmEl){
       var gr = [54, 48, 42, 36], k;
       for (k = 0; k < gr.length; k++){ x.font = ARCH(gr[k], 600);
         if (hoehe(x, '«' + a.aussage + '»', INNEN, gr[k]*1.25) <= 620 || k === gr.length-1) break; }
-      y = text(x, '«' + a.aussage + '»', M, y, INNEN, gr[k]*1.25, Math.floor(620 / (gr[k]*1.25))) + 18;
+      y = text(x, '«' + a.aussage + '»', M, y, INNEN, gr[k]*1.25) + 18;
       x.fillStyle = p.leise; x.font = SANS(22, 400);
       y = text(x, a.traeger, M, y, INNEN, 30, 2) + 12;
       if (a.fundstelle){ x.font = SANS(19, 400);
@@ -1816,7 +1834,7 @@ if(kmEl){
       x.fillStyle = p.leise; x.font = SANS(22, 400); x.fillText('Punkten, 4 je anwendbare Achse', M + 30 + x.measureText('').width + (function(){ x.font = ARCH(56, 700); var w = x.measureText(a.erreicht + ' von ' + a.moeglich).width; x.font = SANS(22, 400); return w; })(), y + 46);
       netz(x, p, W/2, y + 290, 150, [{ werte: a.pruefung, farbe: fb }], true, a.pruefung);
       y += 520;
-      balken(x, p, y, a.pruefung, fb);
+      pruefe(balken(x, p, y, a.pruefung, fb) - 30);
     }});
     textFolien(f, w ? 'Was daran stimmt' : 'Was zutrifft', a.trifft_zu, '');
     textFolien(f, w ? 'Warum ohne Note' : 'Was fehlt', a.fehlt, a.zahlhinweis || '');
@@ -1843,14 +1861,13 @@ if(kmEl){
       y = titel(x, p, 'Kritische Fragen', y + 20, 36);
       x.fillStyle = p.leise; x.font = SANS(20, 400);
       y = text(x, 'Die Prüffragen zum Argumenttyp' + (a.schema ? ' «' + a.schema + '»' : '') + '.', M, y, INNEN, 28, 2) + 14;
-      var frei = FUSS - 20 - y, je = Math.min(190, Math.floor(frei / a.kritische_fragen.length));
       a.kritische_fragen.forEach(function(k){
-        var top = y, st = k.status === 'beantwortet' ? 'beantwortet' : (k.status === 'offen' ? 'offen' : 'nicht erfüllt');
+        var st = k.status === 'beantwortet' ? 'beantwortet' : (k.status === 'offen' ? 'offen' : 'nicht erfüllt');
         pille(x, st, M, y + 14, k.status === 'beantwortet' ? p.bg : p.ink, k.status === 'beantwortet' ? p.ink : p.flaeche);
         y += 46;
         x.fillStyle = p.ink; x.font = ARCH(22, 600); y = text(x, k.frage, M, y, INNEN, 29, 2) + 2;
-        x.fillStyle = p.leise; x.font = SANS(19, 400); text(x, k.kommentar, M, y, INNEN, 26, Math.max(1, Math.floor((top + je - y - 10) / 26)));
-        y = top + je;
+        x.fillStyle = p.leise; x.font = SANS(19, 400);
+        y = text(x, k.kommentar, M, y, INNEN, 26) + 34;
       });
     }});
     f.push({ name: 'Grundlagen', z: function(x, p, y){
@@ -1863,7 +1880,6 @@ if(kmEl){
       x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('QUELLEN DER PRÜFUNG', M, y); y += 34;
       if (!a.belege.length){ x.fillStyle = p.ink; x.font = SANS(23, 400); x.fillText('Keine weiteren Quellen herangezogen.', M, y); return; }
       a.belege.forEach(function(b){
-        if (y > FUSS - 60) return;
         var art = { amtlich: 'amtlich', wissenschaft: 'Wissenschaft', medien: 'Medien', interessengruppe: 'Interessengruppe', komitee: 'Komitee' }[b.art] || b.art;
         var pw = art ? pille(x, art, M, y + 4, p.ink, p.flaeche) + 14 : 0;
         x.fillStyle = p.ink; x.font = SANS(22, 400); y = text(x, b.titel, M + pw, y + 8, INNEN - pw, 30, 2) + 14;
@@ -1914,17 +1930,29 @@ if(kmEl){
     var warten = [document.fonts ? document.fonts.ready : Promise.resolve()];
     if (m.arg){ var f = folien(m.arg)[folie || 0]; if (f && f.bild) warten.push(ladeBild(f.bild)); }
     return Promise.all(warten).then(function(){
-      var y = kopf(x, p), rechts = '';
-      if (k === 'vorlage') mVorlage(x, p, y);
-      else if (k === 'gegen') mGegen(x, p, y);
-      else if (k === 'kantonsrat') mKantonsrat(x, p, y);
-      else if (k.indexOf('paar:') === 0) mPaar(x, p, y, +k.slice(5));
-      else if (m.arg){
-        var fs = folien(m.arg), n = (folie || 0);
-        fs[n].z(x, p, y);
-        rechts = (n + 1) + ' von ' + fs.length;
+      /* Erst in voller Groesse, dann stufenweise kleiner, bis nichts mehr
+         unter die Fusslinie geraet. Die letzte Stufe wird auf jeden Fall
+         gezeichnet; bei den vorhandenen Texten reicht die zweite oder dritte. */
+      var stufen = [1, 0.94, 0.88, 0.82, 0.76, 0.7, 0.64, 0.58, 0.52, 0.46];
+      for (var i = 0; i < stufen.length; i++){
+        S = stufen[i]; UEBERLAUF = false;
+        var y = kopf(x, p), rechts = '';
+        if (k === 'vorlage') mVorlage(x, p, y);
+        else if (k === 'gegen') mGegen(x, p, y);
+        else if (k === 'kantonsrat') mKantonsrat(x, p, y);
+        else if (k.indexOf('paar:') === 0) mPaar(x, p, y, +k.slice(5));
+        else if (m.arg){
+          var fs = folien(m.arg), n = (folie || 0);
+          fs[n].z(x, p, y);
+          rechts = (n + 1) + ' von ' + fs.length;
+        }
+        fuss(x, p, rechts);
+        if (!UEBERLAUF) break;
       }
-      fuss(x, p, rechts);
+      /* Fuer die Pruefung von aussen: welche Stufe es wurde, und ob selbst
+         die kleinste noch ueberlief. Letzteres ist ein Fehler im Motiv. */
+      window.bildStufe = S; window.bildUeberlauf = UEBERLAUF;
+      S = 1;
     });
   }
 
@@ -1958,15 +1986,52 @@ if(kmEl){
       a.href = $('#bildCanvas').toDataURL('image/png'); a.click();
     });
   });
+  /* Alle Folien in einer ZIP-Datei. Mehrere Einzeldownloads hintereinander
+     blockieren die Browser oder fragen nach; eine Datei geht immer. Das
+     ZIP wird hier ohne Fremdbibliothek geschrieben, unkomprimiert (PNG ist
+     schon gepackt). Format: lokale Kopfzeile je Datei, Zentralverzeichnis,
+     Endeintrag; alles Little-Endian. */
+  var CRC = (function(){ var t = [], c; for (var n = 0; n < 256; n++){ c = n;
+    for (var k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); t[n] = c >>> 0; } return t; })();
+  function crc32(b){ var c = 0xFFFFFFFF; for (var i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zip(dateien){
+    var enc = new TextEncoder(), teile = [], zentral = [], offset = 0;
+    var d = new Date(), zeit = (d.getHours() << 11) | (d.getMinutes() << 5) | (d.getSeconds() >> 1),
+        datum = ((d.getFullYear() - 1980) << 9) | ((d.getMonth() + 1) << 5) | d.getDate();
+    function u16(v){ return [v & 255, (v >>> 8) & 255]; }
+    function u32(v){ return [v & 255, (v >>> 8) & 255, (v >>> 16) & 255, (v >>> 24) & 255]; }
+    dateien.forEach(function(f){
+      var name = enc.encode(f.name), crc = crc32(f.data), n = f.data.length;
+      var lokal = new Uint8Array([].concat(u32(0x04034b50), u16(20), u16(0x0800), u16(0), u16(zeit), u16(datum),
+        u32(crc), u32(n), u32(n), u16(name.length), u16(0)));
+      teile.push(lokal, name, f.data);
+      zentral.push(new Uint8Array([].concat(u32(0x02014b50), u16(20), u16(20), u16(0x0800), u16(0), u16(zeit), u16(datum),
+        u32(crc), u32(n), u32(n), u16(name.length), u16(0), u16(0), u16(0), u16(0), u32(0), u32(offset))), name);
+      offset += lokal.length + name.length + n;
+    });
+    var zLaenge = zentral.reduce(function(s, z){ return s + z.length; }, 0);
+    var ende = new Uint8Array([].concat(u32(0x06054b50), u16(0), u16(0), u16(dateien.length), u16(dateien.length),
+      u32(zLaenge), u32(offset), u16(0)));
+    return new Blob(teile.concat(zentral, [ende]), { type: 'application/zip' });
+  }
+  function pngDaten(){
+    return new Promise(function(res){
+      $('#bildCanvas').toBlob(function(b){ b.arrayBuffer().then(function(ab){ res(new Uint8Array(ab)); }); }, 'image/png');
+    });
+  }
   $('#bildAlle').addEventListener('click', function(){
     var m = motivVon(sel.value); if (!m.arg) return;
-    var n = folien(m.arg).length, i = 0;
+    var knopf = $('#bildAlle'), n = folien(m.arg).length, i = 0, dateien = [];
+    knopf.disabled = true; knopf.textContent = 'Folien werden gezeichnet …';
     (function schritt(){
-      if (i >= n){ neu(); return; }
-      zeichne(sel.value, i).then(function(){
-        var a = document.createElement('a'); a.download = dateiname(sel.value, i);
-        a.href = $('#bildCanvas').toDataURL('image/png'); a.click();
-        i++; setTimeout(schritt, 400);
+      if (i >= n){
+        var a = document.createElement('a'), url = URL.createObjectURL(zip(dateien));
+        a.download = dateiname(sel.value, null).replace(/\.png$/, '.zip'); a.href = url; a.click();
+        setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+        knopf.disabled = false; knopf.textContent = 'Alle Folien als ZIP herunterladen'; neu(); return;
+      }
+      zeichne(sel.value, i).then(pngDaten).then(function(b){
+        dateien.push({ name: dateiname(sel.value, i), data: b }); i++; schritt();
       });
     })();
   });
