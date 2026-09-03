@@ -399,3 +399,65 @@ Zwei Vektorebenen mit Attributen je Strassenstück, gerechnet von
 10. Darstellung im Viewer: Initiative blau (5 px), Gegenvorschlag rot (11 px),
     beide mit heller Kontur; wo beide gelten, liegt Blau auf Rot. Klick auf ein
     Stück zeigt die Attribute.
+
+## Stichprobe Bus-Zuordnung (4. September 2026)
+
+Geprüft wurden die verkehrsorientierten Stücke ohne Bus (vorher 7,9 km), je mit
+Abstand zur nächsten OSM-Buslinie und zur nächsten BAV-Haltestelle:
+
+1. Ohne Linie und ohne Haltestelle im Umkreis von 600 m, also ohne Busbetrieb:
+   Trasadingen Zollstrasse (708 m, H13 Richtung Erzingen), Buch Steinerstrasse
+   (375 m), Bargen H4 (339 m), Neuhausen Zollstrasse (80 m).
+2. Linie auf einer Parallelstrasse, Haltestelle 100 bis 280 m entfernt, also
+   kein Bus auf dieser Strasse: Stein am Rhein Oehningerstrasse (Linie 33 in
+   211 m), Wilchingen Trasadingerstrasse (Linien 27/N77 in 78 m), Hallau
+   Neunkircherstrasse (151 m), Neunkirch Wilchingerstrasse (262 m), Thayngen
+   Erlengasse (46 m), Ramsen und Buch Richtung Brücke (Linie 25, 108 bis 140 m).
+3. Nur Nachtbus N77 quert: Neunkirch Hallauerstrasse (563 m).
+4. Zwei Fehlzuordnungen, beide wegen getrennter Fahrbahnen oder einer
+   Wendeschleife: Schaffhausen Ebnatstrasse (Linien 5, 6, 10, 24 in 35 m,
+   Haltestelle Falkeneck in 49 m) und Schleitheim Schwarzwaldstrasse (Linie 21
+   endet dort, Haltestelle Bahnhofstrasse in 36 m). Korrektur: Haltestellen
+   zählen bis 50 m statt 30 m. Ergebnis danach: Initiative 60,2 km (vorher
+   58,7), nur Gegenvorschlag 7,4 km (vorher 7,9).
+
+## Anwohner und Lärmfassaden (4. September 2026)
+
+`geo/skripte/haushalte.py`, Ergebnis in `geo/02_aufbereitet/haushalte.json`, Ebene
+`anwohner_hektaren` im Viewer, Tabelle im Kartenblock, Zahlen in contra-4.
+
+1. Anwohner: Einwohner der STATPOP-Hektaren (BFS, 2024, über api3.geo.admin.ch),
+   die eine betroffene Strasse schneiden. Initiative 20,658 Personen
+   (9,837 Haushalte zu 2,1), Gegenvorschlag 14,014 (6,673).
+2. Fassaden: Fassadenpunkte des kantonalen Lärmkatasters (Tag, Sanierungshorizont
+   2043) höchstens 25 m von einer betroffenen Strasse. Über 65 dB(A), dem
+   Immissionsgrenzwert der ES III: Initiative 883 Punkte an
+   404 Gebäuden, Gegenvorschlag 353 Gebäude. Über 60 dB(A)
+   (ES II): 1422 beziehungsweise 1244 Gebäude. Die
+   Empfindlichkeitsstufe je Gebäude liegt nicht als Ebene vor, darum beide Werte.
+3. Anwohner in Hektaren mit mindestens einer Fassade über 65 dB(A): Initiative
+   6,481, Gegenvorschlag 5,562; die Hektare zählt
+   ganz, Obergrenze.
+4. Die 1816 Fassaden der Übergabe zählten Punkte über dem Grenzwert entlang aller
+   Kantonsstrassen innerorts (80,4 km) mit einer nicht dokumentierten
+   Grenzwertregel; sie stehen nicht mehr auf der Seite.
+
+## Gemeindekarten und Umkreise (4. September 2026)
+
+`geo/skripte/gemeindekarten.py` ersetzt die Karten und Kennzahlen der Übergabe.
+
+1. Jede Karte zeigt beide Vorlagen (Rot Gegenvorschlag, Blau Initiative),
+   Umkreise 100, 300 und 500 m um die Anlagen, betroffene Strassen in 100 m
+   (schwarz) und 300 m (grau) hervorgehoben.
+2. Anlagen: OpenStreetMap (amenity school, college, kindergarten, childcare,
+   nursing_home, social_facility, hospital), 42 / 31 / 19 / 0 nach Schulen,
+   Kindergärten, Heimen, weiteren. Liegt das GeoPackage der Übergabe
+   (`infra_SH_v2.gpkg`, 213 Standorte aus OSM und kantonalen Quellen) unter
+   `geo/01_roh/`, nimmt das Skript dieses; die OSM-Liste ist dünner (im
+   Stadtgebiet Schaffhausen 6 Schulen statt rund 15).
+3. Kanton: betroffen 67,77 km (mindestens eine Vorlage), davon
+   6 Prozent in 100 m, 32 Prozent in 300 m, 47 Prozent in 500 m einer
+   Anlage. Übergabe: 13, 56 und 73 Prozent, bezogen auf 43,9 km und 213 Standorte.
+4. `kandidaten_wgs84` (Strassen in 100 und 300 m) ist neu gerechnet, die Zahlen
+   in `karte.gemeinden`, `karte.total`, `karte.anlagen_total` und in der
+   Textkritik (Stelle 1, Punkt 2) sind eingetragen (`zahlen_eintragen.py`).

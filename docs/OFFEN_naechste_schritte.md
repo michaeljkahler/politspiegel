@@ -18,14 +18,20 @@ Stand 3. September 2026, nachgeführt.
 - **Impressum** auf allen Seiten, aus `politspiegel/politspiegel.json`.
 - **Rohling** für den 29. November 2026 (Spitalgesetz).
 
+## Erledigt am 4. September 2026, zweite Runde Geodaten
+
+- **Anwohner und Haushalte:** STATPOP-Hektaren an den betroffenen Strassen, Lärmfassaden über
+  65 und 60 dB(A); Tabelle im Kartenblock, Ebene im Viewer, Zahlen in contra-4.
+- **Bus-Stichprobe:** zwei Fehlzuordnungen (Ebnatstrasse, Schleitheim), Haltestellen zählen
+  jetzt bis 50 m; Initiative 60,2 km.
+- **Gemeindekarten und Kennzahlen** neu aus den gerechneten Ebenen, Anlagen aus OpenStreetMap.
+
 ## Offen bei den Geodaten
 
-1. Betroffene Haushalte: STATPOP-Hektarraster mit der Lärmkarte verschneiden.
-2. Stichprobe der Bus-Zuordnung in Stein am Rhein, Trasadingen und Neunkirch (verkehrsorientiert
-   ohne Buslinie laut OSM, 7,9 km).
-3. Die Karten der Gemeinden (`grafiken/gemeinden/karte_*.svg`) und die Kennzahlen unter
-   `karte.gemeinden` in `vorlage.json` stammen noch aus der Übergabe (43,9 km); auf die neue
-   Rechnung umstellen.
+1. `infra_SH_v2.gpkg` (Übergabe, 213 Standorte) nach `geo/01_roh/` legen; `gemeindekarten.py`
+   nimmt es dann statt der dünneren OSM-Liste, danach `zahlen_eintragen.py` und neu bauen.
+2. Empfindlichkeitsstufen je Gebäude, falls der Kanton sie als Ebene liefert; dann eine
+   Grenzwertzahl statt zwei.
 
 ## Erledigt am 3. September 2026: Umbau auf drei Ebenen
 

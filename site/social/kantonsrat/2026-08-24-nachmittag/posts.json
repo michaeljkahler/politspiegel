@@ -3,7 +3,7 @@
  "slug": "2026-08-24-nachmittag",
  "n_votes": 14,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23337193-DE.html",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "abstimmungen": [
   {
    "nr": 1,
@@ -192,6 +192,12 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370752401,
+    "uuid": "1599279743586878484",
+    "termin": "2026-09-04T12:00",
+    "draft": true
    }
   },
   {
@@ -221,6 +227,12 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370752462,
+    "uuid": "5610260638388276479",
+    "termin": "2026-09-05T11:00",
+    "draft": true
    }
   },
   {
@@ -252,6 +264,12 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370752531,
+    "uuid": "-3871439654648527223",
+    "termin": "2026-09-04T18:00",
+    "draft": true
    }
   }
  ]

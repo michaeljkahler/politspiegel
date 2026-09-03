@@ -53,6 +53,7 @@ ERWARTET = {
                                  "geometrie": {"LineString", "MultiLineString"}},
     "geltung_gegenvorschlag":   {"pflicht": {"strasse", "gemeinde", "fkt", "tempo", "laenge_m", "bus"},
                                  "geometrie": {"LineString", "MultiLineString"}},
+    "anwohner_hektaren":        {"pflicht": {"einwohner"}, "geometrie": {"Polygon"}},
 }
 
 # Woher die Ebene stammt. Steht im Bericht und in der Legende der Karte, damit
@@ -83,6 +84,11 @@ HERKUNFT = {
         "Kantonsstrassen innerorts (ueberregional, regional nach Feld typ der "
         "Achsen), Stuecke des Laermkatasters mit Tempo bis 50. Attribute je Stueck.",
         "01_roh/laerm_strassenachse_roh.xml, kantonsstrassen_alle_roh.xml"),
+    "anwohner_hektaren": (
+        "Eigene Rechnung (geo/skripte/haushalte.py): Hektaren der Bevoelkerungsstatistik "
+        "STATPOP 2024 (BFS, ueber api3.geo.admin.ch), die eine betroffene Strasse schneiden, "
+        "mit Einwohnerzahl und der Angabe, ob eine Fassade ueber 65 dB(A) darin liegt.",
+        "01_roh/statpop_2024_hektaren.json, laerm_fassadenpunkte_tag_roh.xml"),
 }
 
 

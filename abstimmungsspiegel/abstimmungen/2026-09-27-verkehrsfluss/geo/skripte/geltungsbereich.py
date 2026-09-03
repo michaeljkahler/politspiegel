@@ -46,7 +46,7 @@ darin), und die Ortstafelebene ist mit 140 Punkten nicht vollstaendig.
 
 Bus: Ein Stueck gilt als vom oeffentlichen Verkehr genutzt, wenn ein Teil davon
 innerhalb von 20 m einer Buslinie aus OpenStreetMap liegt oder eine
-BAV-Haltestelle hoechstens 30 m entfernt ist. Faehrt die Linie nur ueber einen
+BAV-Haltestelle hoechstens 50 m entfernt ist. Faehrt die Linie nur ueber einen
 Teil des Stuecks, wird das Stueck fuer die Initiative auf diesen Teil
 geschnitten; im Gegenvorschlag bleibt es ganz und traegt «Bus: teilweise». Der Puffer faengt den
 Versatz zwischen amtlicher Achse und OSM-Linienfuehrung auf; wie stark das
@@ -85,7 +85,7 @@ ACHSE_FANG = 15.0          # m, Stueckmitte zur Kantonsstrassenachse
 BUS_PUFFER = 20.0          # m, OSM-Buslinie zur Achse
 BUS_MIN = 0.1              # ab diesem Anteil der Laenge im Puffer zaehlt der Bus
 BUS_GANZ = 0.9             # ab diesem Anteil gilt das ganze Stueck als befahren
-HALTE_FANG = 30.0          # m, Haltestelle zum Stueck (Bus-Kriterium)
+HALTE_FANG = 50.0          # m, Haltestelle zum Stueck (Bus-Kriterium); 50 wegen getrennter Fahrbahnen (Ebnatstrasse)
 PROBE = (10.0, 15.0, 20.0, 30.0, 40.0)
 TEMPO_INNERORTS = 50
 BAUGEBIET_PUFFER = 30.0

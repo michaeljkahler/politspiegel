@@ -1,0 +1,242 @@
+{
+  "gerechnet_am": "2026-09-03",
+  "statpop_jahr": 2024,
+  "personen_je_haushalt": 2.1,
+  "fassade_fang_m": 25.0,
+  "igw_es3_db": 65.0,
+  "igw_es2_db": 60.0,
+  "vorlagen": {
+    "initiative": {
+      "strassen_km": 60.2,
+      "hektaren": 618,
+      "anwohner": 20658,
+      "haushalte": 9837,
+      "hektaren_mit_fassade_ueber_65": 123,
+      "anwohner_an_fassaden_ueber_65": 6481,
+      "haushalte_an_fassaden_ueber_65": 3086,
+      "punkte": 7118,
+      "punkte_ueber_65": 883,
+      "gebaeude_ueber_65": 404,
+      "punkte_ueber_60": 3495,
+      "gebaeude_ueber_60": 1422
+    },
+    "gegenvorschlag": {
+      "strassen_km": 43.1,
+      "hektaren": 413,
+      "anwohner": 14014,
+      "haushalte": 6673,
+      "hektaren_mit_fassade_ueber_65": 112,
+      "anwohner_an_fassaden_ueber_65": 5562,
+      "haushalte_an_fassaden_ueber_65": 2649,
+      "punkte": 4586,
+      "punkte_ueber_65": 745,
+      "gebaeude_ueber_65": 353,
+      "punkte_ueber_60": 2974,
+      "gebaeude_ueber_60": 1244
+    },
+    "eine": {
+      "strassen_km": 67.8,
+      "hektaren": 681,
+      "anwohner": 21715,
+      "haushalte": 10340,
+      "hektaren_mit_fassade_ueber_65": 128,
+      "anwohner_an_fassaden_ueber_65": 6556,
+      "haushalte_an_fassaden_ueber_65": 3122,
+      "punkte": 7576,
+      "punkte_ueber_65": 894,
+      "gebaeude_ueber_65": 412,
+      "punkte_ueber_60": 3733,
+      "gebaeude_ueber_60": 1553
+    }
+  },
+  "je_gemeinde": {
+    "Schaffhausen": {
+      "hektaren": 167,
+      "anwohner": 7209,
+      "haushalte": 3433,
+      "punkte_ueber_65": 505,
+      "gebaeude_ueber_65": 187
+    },
+    "Neuhausen am Rheinfall": {
+      "hektaren": 41,
+      "anwohner": 3076,
+      "haushalte": 1465,
+      "punkte_ueber_65": 130,
+      "gebaeude_ueber_65": 57
+    },
+    "Thayngen": {
+      "hektaren": 68,
+      "anwohner": 1561,
+      "haushalte": 743,
+      "punkte_ueber_65": 2,
+      "gebaeude_ueber_65": 2
+    },
+    "Stein am Rhein": {
+      "hektaren": 49,
+      "anwohner": 1292,
+      "haushalte": 615,
+      "punkte_ueber_65": 18,
+      "gebaeude_ueber_65": 16
+    },
+    "Beringen": {
+      "hektaren": 33,
+      "anwohner": 980,
+      "haushalte": 467,
+      "punkte_ueber_65": 99,
+      "gebaeude_ueber_65": 54
+    },
+    "Neunkirch": {
+      "hektaren": 28,
+      "anwohner": 843,
+      "haushalte": 401,
+      "punkte_ueber_65": 12,
+      "gebaeude_ueber_65": 10
+    },
+    "Hallau": {
+      "hektaren": 25,
+      "anwohner": 833,
+      "haushalte": 397,
+      "punkte_ueber_65": 13,
+      "gebaeude_ueber_65": 13
+    },
+    "Schleitheim": {
+      "hektaren": 26,
+      "anwohner": 632,
+      "haushalte": 301,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Wilchingen": {
+      "hektaren": 30,
+      "anwohner": 631,
+      "haushalte": 300,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Ramsen": {
+      "hektaren": 26,
+      "anwohner": 575,
+      "haushalte": 274,
+      "punkte_ueber_65": 23,
+      "gebaeude_ueber_65": 19
+    },
+    "Stetten (SH)": {
+      "hektaren": 20,
+      "anwohner": 571,
+      "haushalte": 272,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Dörflingen": {
+      "hektaren": 21,
+      "anwohner": 527,
+      "haushalte": 251,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Löhningen": {
+      "hektaren": 13,
+      "anwohner": 492,
+      "haushalte": 234,
+      "punkte_ueber_65": 83,
+      "gebaeude_ueber_65": 46
+    },
+    "Lohn (SH)": {
+      "hektaren": 14,
+      "anwohner": 426,
+      "haushalte": 203,
+      "punkte_ueber_65": 1,
+      "gebaeude_ueber_65": 1
+    },
+    "Merishausen": {
+      "hektaren": 16,
+      "anwohner": 413,
+      "haushalte": 197,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Gächlingen": {
+      "hektaren": 17,
+      "anwohner": 373,
+      "haushalte": 178,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Siblingen": {
+      "hektaren": 10,
+      "anwohner": 247,
+      "haushalte": 118,
+      "punkte_ueber_65": 8,
+      "gebaeude_ueber_65": 7
+    },
+    "Buch (SH)": {
+      "hektaren": 17,
+      "anwohner": 222,
+      "haushalte": 106,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Hemishofen": {
+      "hektaren": 12,
+      "anwohner": 156,
+      "haushalte": 74,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Rüdlingen": {
+      "hektaren": 10,
+      "anwohner": 153,
+      "haushalte": 73,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Büttenhardt": {
+      "hektaren": 8,
+      "anwohner": 135,
+      "haushalte": 64,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Beggingen": {
+      "hektaren": 8,
+      "anwohner": 113,
+      "haushalte": 54,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Trasadingen": {
+      "hektaren": 8,
+      "anwohner": 102,
+      "haushalte": 49,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Oberhallau": {
+      "hektaren": 7,
+      "anwohner": 79,
+      "haushalte": 38,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Bargen (SH)": {
+      "hektaren": 4,
+      "anwohner": 47,
+      "haushalte": 22,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    },
+    "Buchberg": {
+      "hektaren": 3,
+      "anwohner": 27,
+      "haushalte": 13,
+      "punkte_ueber_65": 0,
+      "gebaeude_ueber_65": 0
+    }
+  },
+  "quellen": {
+    "statpop": "BFS, STATPOP 2024, Einwohner je Hektare, ueber api3.geo.admin.ch (ch.bfs.volkszaehlung-bevoelkerungsstatistik_einwohner)",
+    "fassaden": "Kanton Schaffhausen, Laermbelastungskataster Strassenverkehr, Fassadenpunkte Tag, Referenz Sanierungshorizont 2043, wfs.geo.sh.ch",
+    "grenzwerte": "LSV Anhang 3: Immissionsgrenzwert Tag 65 dB(A) in ES III, 60 dB(A) in ES II",
+    "haushaltsgroesse": "BFS, durchschnittliche Haushaltsgroesse Kanton Schaffhausen 2,1 Personen"
+  }
+}

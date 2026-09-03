@@ -162,3 +162,12 @@ Der Grund ist derselbe wie bei den Grafiken: Wer eine Linie sieht, soll ohne
 Rückfrage wissen, wessen Linie das ist. Eine eigene Auswertung neben einer
 amtlichen Ebene ohne Unterscheidung darzustellen leiht sich Autorität, die uns
 nicht zusteht.
+
+## Skripte der Verkehrsflussinitiative, Reihenfolge
+
+1. `geo/skripte/geltungsbereich.py`: die beiden Ebenen der betroffenen Strassen.
+2. `python3 abstimmungsspiegel/bausteine/geo_freigeben.py <slug>`: Freigabe nach 03.
+3. `geo/skripte/haushalte.py`: Anwohner und Lärmfassaden (braucht 03).
+4. `geo/skripte/gemeindekarten.py`: Umkreise, Gemeindekarten, `karte.gemeinden`.
+5. `geo_freigeben.py` erneut (Kandidaten, Hektaren), dann `geo/skripte/zahlen_eintragen.py`.
+6. `abstimmungsspiegel/bausteine/argumente.py <slug>` und `politspiegel/bauen.py`.

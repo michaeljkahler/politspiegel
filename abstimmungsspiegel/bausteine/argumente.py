@@ -525,8 +525,9 @@ def karte_block(k) -> str:
         return ""
 
     def datei(name):
-        n = name.replace(" ", "_")
-        return n.split("_am_")[0] if "_am_Rheinfall" in n else n
+        # gleiche Regel wie gemeindekarten.py: Bargen (SH) -> Bargen, Stein am Rhein -> Stein_am_Rhein
+        return (name.replace(" (SH)", "").replace(" am Rheinfall", "").replace(" am Rhein", "_am_Rhein")
+                .replace(" ", "_"))
 
     g = k["gemeinden"]
     knoepfe = "".join(
@@ -536,6 +537,7 @@ def karte_block(k) -> str:
     zeilen = "".join(
         f'<tr><td>{e(x["gemeinde"])}</td>'
         f'<td class="z">{x["betroffen_km"]:.2f}</td>'
+        f'<td class="z z-leise">{x.get("initiative_km", 0):.2f}</td><td class="z z-leise">{x.get("gegenvorschlag_km", 0):.2f}</td>'
         f'<td class="z">{x["km100"]:.2f}</td><td class="z z-leise">{x["p100"]:.0f} %</td>'
         f'<td class="z">{x["km300"]:.2f}</td><td class="z z-leise">{x["p300"]:.0f} %</td>'
         f'<td class="z">{x["km500"]:.2f}</td><td class="z z-leise">{x["p500"]:.0f} %</td>'
@@ -543,12 +545,14 @@ def karte_block(k) -> str:
         for x in g)
     t = k["total"]
     summe = (f'<tr class="km-summe"><td>Kanton</td><td class="z">{t["betroffen_km"]:.2f}</td>'
+             f'<td class="z z-leise">{t.get("initiative_km", 0):.2f}</td><td class="z z-leise">{t.get("gegenvorschlag_km", 0):.2f}</td>'
              f'<td class="z">{t["km100"]:.2f}</td><td class="z z-leise">{t["p100"]:.0f} %</td>'
              f'<td class="z">{t["km300"]:.2f}</td><td class="z z-leise">{t["p300"]:.0f} %</td>'
              f'<td class="z">{t["km500"]:.2f}</td><td class="z z-leise">{t["p500"]:.0f} %</td>'
              f'<td class="z z-leise">{e(t["anlagen"])}</td></tr>').replace(".", ",")
 
     daten = json.dumps([{"n": x["gemeinde"], "d": datei(x["gemeinde"]), "b": x["betroffen_km"],
+                         "bi": x.get("initiative_km", 0), "bg": x.get("gegenvorschlag_km", 0),
                          "k1": x["km100"], "p1": x["p100"], "k3": x["km300"], "p3": x["p300"],
                          "k5": x["km500"], "p5": x["p500"], "a": x["anlagen"]} for x in g],
                        ensure_ascii=False)
@@ -577,7 +581,7 @@ def karte_block(k) -> str:
   <details class="km-tabelle">
     <summary>Alle Gemeinden als Tabelle</summary>
     <div class="tk-scroll"><table>
-      <thead><tr><th>Gemeinde</th><th>betroffen km</th>
+      <thead><tr><th>Gemeinde</th><th>betroffen km</th><th>Initiative</th><th>Gegenvorschlag</th>
         <th>≤ 100 m</th><th></th><th>≤ 300 m</th><th></th><th>≤ 500 m</th><th></th>
         <th>Anlagen S/K/H/So</th></tr></thead>
       <tbody>{zeilen}{summe}</tbody>
@@ -586,10 +590,36 @@ def karte_block(k) -> str:
     H = Alters- und Pflegeheime, So = weitere Sozialeinrichtungen.</p>
   </details>
 
+  {anwohner_block(k.get('anwohner'))}
+
   <details class="pk pk-neben"><summary><span class="pk-titel">Datengrundlagen der Karte</span>
     <span class="pk-anriss">{len(k["quellen"])} Quellen</span></summary>
     <div class="pk-inhalt"><ul class="beleg-liste">{quellen}</ul></div></details>
   <script id="km-daten" type="application/json">{daten}</script>""")
+
+
+def anwohner_block(a) -> str:
+    """Wer an den betroffenen Strassen wohnt, je Vorlage. Zahlen aus
+    geo/02_aufbereitet/haushalte.json, uebernommen nach vorlage.json «karte.anwohner»."""
+    if not a:
+        return ""
+    z = lambda n: f"{int(n):,}".replace(",", "\u202f")
+    zeilen = "".join(
+        f'<tr><td>{e(r["vorlage"])}</td><td class="z">{str(r["km"]).replace(".", ",")}</td>'
+        f'<td class="z">{z(r["anwohner"])}</td><td class="z">{z(r["haushalte"])}</td>'
+        f'<td class="z">{z(r["gebaeude_65"])}</td><td class="z">{z(r["gebaeude_60"])}</td>'
+        f'<td class="z">{z(r["anwohner_65"])}</td></tr>' for r in a["zeilen"])
+    return f"""
+  <div class="tk-tabelle km-anwohner">
+    <p class="tk-tab-titel">{marke("eigen")}Anwohner und Lärmfassaden je Vorlage</p>
+    <p class="km-anwohner-satz">{e(a["einleitung"])}</p>
+    <div class="tk-scroll"><table>
+      <thead><tr><th>Vorlage</th><th>km</th><th>Anwohner</th><th>Haushalte</th>
+        <th>Gebäude über 65 dB</th><th>über 60 dB</th><th>Anwohner an Fassaden über 65 dB</th></tr></thead>
+      <tbody>{zeilen}</tbody></table></div>
+    <p class="tk-tab-fuss">{e(a["quelle"])}. Anwohner: Einwohner der Hektaren, die eine betroffene
+    Strasse schneiden. Die letzte Spalte zählt die ganze Hektare und ist eine Obergrenze.</p>
+  </div>"""
 
 
 FREIGEGEBEN = VORLAGE / "geo" / "03_freigegeben"
@@ -599,6 +629,7 @@ BUSNETZ = FREIGEGEBEN / "busnetz_wgs84.geojson"
 GELTUNG_INI = FREIGEGEBEN / "geltung_initiative.geojson"
 GELTUNG_GV = FREIGEGEBEN / "geltung_gegenvorschlag.geojson"
 GELTUNG_KENN = VORLAGE / "geo" / "02_aufbereitet" / "geltungsbereich.json"
+ANWOHNER = FREIGEGEBEN / "anwohner_hektaren.geojson"
 
 # Amtliche Kachelebenen, alle am 3.9.2026 gegen wmts.geo.admin.ch geprueft.
 WMTS = [
@@ -733,8 +764,15 @@ def viewer_block(k) -> str:
                         '<input type="checkbox" id="vw-ggv" checked>'
                         f'<span><i class="vw-linie vw-lgv"></i>Betroffen beim Gegenvorschlag'
                         f'<em>{e(kmz(kz.get("gegenvorschlag_km", 0)))}, {kz.get("gegenvorschlag_stuecke", 0)} Strassenstücke</em></span></label>')
+    anw = ANWOHNER.read_text(encoding="utf-8") if ANWOHNER.exists() else ""
+    if anw:
+        geltung_opt += ('<label class="vw-opt" title="Einwohner je Hektare, Hektaren an einer betroffenen Strasse">'
+                        '<input type="checkbox" id="vw-anw">'
+                        '<span><i class="vw-flaeche"></i>Anwohner je Hektare'
+                        '<em>BFS STATPOP 2024, dunkler = mehr; Rand rot: Fassade über 65 dB</em></span></label>')
     geltung_scripts = ((f'<script id="vw-gini-daten" type="application/json">{g_ini}</script>' if g_ini else "")
-                       + (f'<script id="vw-ggv-daten" type="application/json">{g_gv}</script>' if g_gv else ""))
+                       + (f'<script id="vw-ggv-daten" type="application/json">{g_gv}</script>' if g_gv else "")
+                       + (f'<script id="vw-anw-daten" type="application/json">{anw}</script>' if anw else ""))
 
     halte = HALTESTELLEN.read_text(encoding="utf-8") if HALTESTELLEN.exists() else ""
     bus = BUSNETZ.read_text(encoding="utf-8") if BUSNETZ.exists() else ""
@@ -758,9 +796,7 @@ def viewer_block(k) -> str:
         f'{"" if x.get("linien") else " (keine Kandidaten)"}</option>'
         for x in k["gemeinden"])
     ohne = [x["gemeinde"] for x in k["gemeinden"] if not x.get("linien")]
-    ohne_satz = (f' In {", ".join(ohne[:-1])} und {ohne[-1]} liegt keine betroffene Strasse '
-                 f'innerhalb von 300 Metern einer solchen Nutzung; diese Gemeinden lassen sich '
-                 f'darum nicht anspringen.') if len(ohne) > 1 else ""
+    ohne_satz = ""
 
     return abschnitt("viewer", "Selber nachschauen",
         "Die betroffenen Strassen beider Vorlagen als Karte zum Bewegen und Zoomen, blau die "
@@ -1120,6 +1156,8 @@ html{scroll-behavior:smooth}
 .rohling{border:1px dashed var(--linie);border-radius:14px;padding:22px 24px;margin:0 0 30px;color:var(--text-leise)}
 .rohling h2{margin:0 0 8px;font-size:20px;color:var(--text)} .rohling p{margin:0}
 .folge ol{margin:0;padding-left:20px} .folge p{margin:0 0 8px} .folge p:last-child{margin:0}
+.km-anwohner{margin:18px 0 6px} .km-anwohner-satz{margin:0 0 8px;font-size:14px;color:var(--text-leise)}
+.km-anwohner td.z,.km-anwohner th{text-align:right} .km-anwohner td:first-child,.km-anwohner th:first-child{text-align:left}
 .km-einleitung{margin:0 0 16px;font-size:15px} .km-einleitung ol{margin:0;padding-left:22px} .km-einleitung li{margin:0 0 5px}
 .pk-inhalt ol,.praezis-teil ol,.zahlhinweis ol{margin:0 0 9px;padding-left:22px;font-size:15px}
 .pk-inhalt ol:last-child,.praezis-teil ol:last-child,.zahlhinweis ol:last-child{margin-bottom:0}
@@ -1275,6 +1313,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .km-buehne img{display:block;width:100%;height:auto}
 .km-zahlen{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .km-kachel{border:1px solid var(--linie);border-radius:10px;padding:9px 13px;min-width:118px}
+.km-kachel-ini{border-top:3px solid var(--geo-ini)} .km-kachel-gv{border-top:3px solid var(--geo-gv)}
 .km-kachel span{display:block;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
   color:var(--text-leise);font-family:Archivo,sans-serif}
 .km-kachel b{font-family:Archivo,sans-serif;font-size:19px;font-variant-numeric:tabular-nums}
@@ -1340,6 +1379,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .vw-legfuss{font-size:11.5px;font-style:italic;margin-top:6px !important}
 .vw-lueber{border-top:5px solid var(--leg-kanton);width:22px}
 .vw-lreg{border-top:3px solid var(--leg-kanton);width:22px;opacity:.6}
+.vw-flaeche{display:inline-block;width:16px;height:12px;background:rgba(184,134,11,.45);border:1px solid #6B4F1D;flex:none}
 .vw-lini{border-top:5px solid var(--geo-ini);width:22px}
 .vw-lgv{border-top:11px solid var(--geo-gv);width:22px}
 .vw-lbeide{border-top:11px solid var(--geo-gv);width:22px;position:relative}
@@ -1626,6 +1666,23 @@ if(vwEl && window.L){
   if(gGv) gGv.addTo(karte);
   if(gIni) gIni.addTo(karte);
   ordne();
+
+  // Anwohner je Hektare (STATPOP), unter den Linien
+  let anwohner=null;
+  const aEl=document.getElementById('vw-anw-daten');
+  if(aEl){
+    const stufe=n=>n>=150?.75:n>=80?.55:n>=40?.4:n>=15?.25:.12;
+    anwohner=L.geoJSON(JSON.parse(aEl.textContent),{
+      style:f=>({color:f.properties.laut65?farbe('gv'):'#6B4F1D',weight:f.properties.laut65?2:.6,
+        fillColor:'#B8860B',fillOpacity:stufe(f.properties.einwohner)}),
+      onEachFeature:(f,l)=>l.bindPopup('<div class="vw-pop"><b>'+f.properties.einwohner+' Einwohner</b> in dieser Hektare'+
+        ' (STATPOP 2024)<br>'+(f.properties.laut65?'mindestens eine Fassade über 65 dB(A) am Tag':'keine Fassade über 65 dB(A)')+
+        '<br>betroffen: '+[f.properties.initiative?'Initiative':null,f.properties.gegenvorschlag?'Gegenvorschlag':null].filter(Boolean).join(' und ')+'</div>')});
+  }
+  const aBox=document.getElementById('vw-anw');
+  if(aBox) aBox.addEventListener('change',()=>{ if(!anwohner) return;
+    if(aBox.checked){ anwohner.addTo(karte); anwohner.bringToBack(); if(aktiveBasis) aktiveBasis.bringToBack(); ordne(); }
+    else karte.removeLayer(anwohner); });
   ['ini','gv'].forEach(w=>{ const b=document.getElementById(w==='ini'?'vw-gini':'vw-ggv');
     if(b) b.addEventListener('change',()=>zeigeGeltung(w,b.checked)); });
   // Busnetz aus den OSM-Linienrelationen
@@ -1706,6 +1763,8 @@ if(kmEl){
     bild.alt='Karte '+x.n+': betroffene Kantonsstrassen und Umkreise sensibler Nutzungen';
     zahlen.innerHTML=
       '<div class="km-kachel"><span>betroffen</span><b>'+komma(x.b)+'</b><i>km</i></div>'+
+      '<div class="km-kachel km-kachel-ini"><span>Initiative</span><b>'+komma(x.bi)+'</b><i>km</i></div>'+
+      '<div class="km-kachel km-kachel-gv"><span>Gegenvorschlag</span><b>'+komma(x.bg)+'</b><i>km</i></div>'+
       '<div class="km-kachel"><span>bis 100 m</span><b>'+komma(x.k1)+'</b><i>km · '+x.p1+' %</i></div>'+
       '<div class="km-kachel"><span>bis 300 m</span><b>'+komma(x.k3)+'</b><i>km · '+x.p3+' %</i></div>'+
       '<div class="km-kachel"><span>bis 500 m</span><b>'+komma(x.k5)+'</b><i>km · '+x.p5+' %</i></div>'+
