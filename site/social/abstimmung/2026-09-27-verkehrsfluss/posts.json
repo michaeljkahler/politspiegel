@@ -2,7 +2,7 @@
  "slug": "2026-09-27-verkehrsfluss",
  "vorlage": "Verkehrsflussinitiative",
  "abstimmung": "2026-09-27",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "bilder": [
   {
    "datei": "vorlage.png",
@@ -13,493 +13,493 @@
   {
    "datei": "gegen.png",
    "motiv": "gegen",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-0.png",
-   "motiv": "paar-0",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-1.png",
-   "motiv": "paar-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-2.png",
-   "motiv": "paar-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-3.png",
-   "motiv": "paar-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-4.png",
-   "motiv": "paar-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "kantonsrat.png",
    "motiv": "kantonsrat",
-   "stufe": 0.88,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-1.png",
-   "motiv": "karussell-pro-1-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-2.png",
-   "motiv": "karussell-pro-1-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-3.png",
-   "motiv": "karussell-pro-1-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-4.png",
-   "motiv": "karussell-pro-1-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-5.png",
-   "motiv": "karussell-pro-1-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-6.png",
-   "motiv": "karussell-pro-1-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-7.png",
-   "motiv": "karussell-pro-1-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-8.png",
-   "motiv": "karussell-pro-1-folie-8",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-1.png",
-   "motiv": "karussell-pro-2-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-2.png",
-   "motiv": "karussell-pro-2-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-3.png",
-   "motiv": "karussell-pro-2-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-4.png",
-   "motiv": "karussell-pro-2-folie-4",
-   "stufe": 0.94,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-5.png",
-   "motiv": "karussell-pro-2-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-6.png",
-   "motiv": "karussell-pro-2-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-7.png",
-   "motiv": "karussell-pro-2-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-8.png",
-   "motiv": "karussell-pro-2-folie-8",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-9.png",
-   "motiv": "karussell-pro-2-folie-9",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-10.png",
-   "motiv": "karussell-pro-2-folie-10",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-1.png",
-   "motiv": "karussell-pro-3-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-2.png",
-   "motiv": "karussell-pro-3-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-3.png",
-   "motiv": "karussell-pro-3-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-4.png",
-   "motiv": "karussell-pro-3-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-5.png",
-   "motiv": "karussell-pro-3-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-6.png",
-   "motiv": "karussell-pro-3-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-7.png",
-   "motiv": "karussell-pro-3-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-1.png",
-   "motiv": "karussell-pro-4-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-2.png",
-   "motiv": "karussell-pro-4-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-3.png",
-   "motiv": "karussell-pro-4-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-4.png",
-   "motiv": "karussell-pro-4-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-5.png",
-   "motiv": "karussell-pro-4-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-6.png",
-   "motiv": "karussell-pro-4-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-7.png",
-   "motiv": "karussell-pro-4-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-1.png",
-   "motiv": "karussell-pro-5-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-2.png",
-   "motiv": "karussell-pro-5-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-3.png",
-   "motiv": "karussell-pro-5-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-4.png",
-   "motiv": "karussell-pro-5-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-5.png",
-   "motiv": "karussell-pro-5-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-6.png",
-   "motiv": "karussell-pro-5-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-1.png",
    "motiv": "karussell-contra-1-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-2.png",
    "motiv": "karussell-contra-1-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-3.png",
    "motiv": "karussell-contra-1-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-4.png",
    "motiv": "karussell-contra-1-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-5.png",
    "motiv": "karussell-contra-1-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-6.png",
    "motiv": "karussell-contra-1-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-7.png",
    "motiv": "karussell-contra-1-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-8.png",
    "motiv": "karussell-contra-1-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-1.png",
    "motiv": "karussell-contra-2-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-2.png",
    "motiv": "karussell-contra-2-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-3.png",
    "motiv": "karussell-contra-2-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-4.png",
    "motiv": "karussell-contra-2-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-5.png",
    "motiv": "karussell-contra-2-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-6.png",
    "motiv": "karussell-contra-2-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-7.png",
    "motiv": "karussell-contra-2-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-8.png",
    "motiv": "karussell-contra-2-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-1.png",
    "motiv": "karussell-contra-3-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-2.png",
    "motiv": "karussell-contra-3-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-3.png",
    "motiv": "karussell-contra-3-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-4.png",
    "motiv": "karussell-contra-3-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-5.png",
    "motiv": "karussell-contra-3-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-6.png",
    "motiv": "karussell-contra-3-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-7.png",
    "motiv": "karussell-contra-3-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-1.png",
    "motiv": "karussell-contra-4-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-2.png",
    "motiv": "karussell-contra-4-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-3.png",
    "motiv": "karussell-contra-4-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-4.png",
    "motiv": "karussell-contra-4-folie-4",
-   "stufe": 0.94,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-5.png",
    "motiv": "karussell-contra-4-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-6.png",
    "motiv": "karussell-contra-4-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-7.png",
    "motiv": "karussell-contra-4-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-8.png",
    "motiv": "karussell-contra-4-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-1.png",
    "motiv": "karussell-contra-5-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-2.png",
    "motiv": "karussell-contra-5-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-3.png",
    "motiv": "karussell-contra-5-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-4.png",
    "motiv": "karussell-contra-5-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-5.png",
    "motiv": "karussell-contra-5-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-6.png",
    "motiv": "karussell-contra-5-folie-6",
-   "stufe": 1,
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-1.png",
+   "motiv": "karussell-pro-1-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-2.png",
+   "motiv": "karussell-pro-1-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-3.png",
+   "motiv": "karussell-pro-1-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-4.png",
+   "motiv": "karussell-pro-1-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-5.png",
+   "motiv": "karussell-pro-1-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-6.png",
+   "motiv": "karussell-pro-1-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-7.png",
+   "motiv": "karussell-pro-1-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-8.png",
+   "motiv": "karussell-pro-1-folie-8",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-1.png",
+   "motiv": "karussell-pro-2-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-10.png",
+   "motiv": "karussell-pro-2-folie-10",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-2.png",
+   "motiv": "karussell-pro-2-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-3.png",
+   "motiv": "karussell-pro-2-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-4.png",
+   "motiv": "karussell-pro-2-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-5.png",
+   "motiv": "karussell-pro-2-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-6.png",
+   "motiv": "karussell-pro-2-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-7.png",
+   "motiv": "karussell-pro-2-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-8.png",
+   "motiv": "karussell-pro-2-folie-8",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-9.png",
+   "motiv": "karussell-pro-2-folie-9",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-1.png",
+   "motiv": "karussell-pro-3-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-2.png",
+   "motiv": "karussell-pro-3-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-3.png",
+   "motiv": "karussell-pro-3-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-4.png",
+   "motiv": "karussell-pro-3-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-5.png",
+   "motiv": "karussell-pro-3-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-6.png",
+   "motiv": "karussell-pro-3-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-7.png",
+   "motiv": "karussell-pro-3-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-1.png",
+   "motiv": "karussell-pro-4-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-2.png",
+   "motiv": "karussell-pro-4-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-3.png",
+   "motiv": "karussell-pro-4-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-4.png",
+   "motiv": "karussell-pro-4-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-5.png",
+   "motiv": "karussell-pro-4-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-6.png",
+   "motiv": "karussell-pro-4-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-7.png",
+   "motiv": "karussell-pro-4-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-1.png",
+   "motiv": "karussell-pro-5-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-2.png",
+   "motiv": "karussell-pro-5-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-3.png",
+   "motiv": "karussell-pro-5-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-4.png",
+   "motiv": "karussell-pro-5-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-5.png",
+   "motiv": "karussell-pro-5-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-6.png",
+   "motiv": "karussell-pro-5-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-0.png",
+   "motiv": "paar-0",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-1.png",
+   "motiv": "paar-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-2.png",
+   "motiv": "paar-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-3.png",
+   "motiv": "paar-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-4.png",
+   "motiv": "paar-4",
+   "stufe": null,
    "ueberlauf": false
   }
  ],
@@ -525,12 +525,17 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759483,
+    "uuid": "-5766243968222019486",
+    "draft": true
    }
   },
   {
    "art": "karussell",
    "termin": "2026-09-08T12:00",
-   "text": "Verkehrsflussinitiative: Wie der Kantonsrat Schaffhausen gestimmt hat (Sitzung vom 10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)).\n\n1. Antrag M. Pfalzgraf: 36 Ja, 17 Nein\n2. Antrag Ständige Kommission für Bau, Verkehr und Energie (BVE): 35 Ja, 20 Nein\n3. Antrag (BVE): 34 Ja, 20 Nein\n4. Antrag M. Mundt: 18 Ja, 34 Nein\n5. Antrag (BVE): 39 Ja, 16 Nein\n6. Antrag (BVE): 37 Ja, 17 Nein\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "text": "Verkehrsflussinitiative: Wie der Kantonsrat Schaffhausen gestimmt hat, Sitzung vom 19. Mai 2025. Namentliche Abstimmungen, gezählt aus dem Wortprotokoll.\n\n1. 2. Satz von Art. 12. Abs. 4 (neu) der Verkehrsflussinitiative soll für ungültig erklärt werden: 36 Ja, 17 Nein\n2. Die Verkehrsflussinitiative sei abzulehnen und den Stimmberechtigten des Kantons Schaffhausen mit dem Antrag auf Ablehnung zu unterbreiten: 35 Ja, 20 Nein\n3. Der Verkehrsflussinitiative sei ein Gegenvorschlag gegenüberzustellen: 34 Ja, 20 Nein\n4. Der Gegenvorschlag sei zwecks Überarbeitung an die vorberatende Kommission (BVE) zurückzuweisen: 18 Ja, 34 Nein\n5. Zustimmung zu Gegenvorschlag inkl. von der BVE beschlossene Anpassungen: 39 Ja, 16 Nein\n6. Bei Stichfrage sei dem Gegenvorschlag der Vorzug zu geben: 37 Ja, 17 Nein\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/kantonsrat.png"
    ],
@@ -548,6 +553,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759512,
+    "uuid": "-1192247261613175555",
+    "draft": true
    }
   },
   {
@@ -571,6 +581,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759584,
+    "uuid": "-6880601036237943753",
+    "draft": true
    }
   },
   {
@@ -594,6 +609,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759660,
+    "uuid": "-4036561831005371882",
+    "draft": true
    }
   },
   {
@@ -617,6 +637,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759671,
+    "uuid": "7942033449760411386",
+    "draft": true
    }
   },
   {
@@ -640,6 +665,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759694,
+    "uuid": "2710025088287524117",
+    "draft": true
    }
   },
   {
@@ -663,6 +693,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759725,
+    "uuid": "3794596972598805104",
+    "draft": true
    }
   },
   {
@@ -686,6 +721,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759782,
+    "uuid": "8083664154096910698",
+    "draft": true
    }
   },
   {
@@ -716,6 +756,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759888,
+    "uuid": "-2547014774047947338",
+    "draft": true
    }
   },
   {
@@ -746,6 +791,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370759956,
+    "uuid": "6091782877072933877",
+    "draft": true
    }
   },
   {
@@ -769,6 +819,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "photoCoverIndex": 0
+   },
+   "metricool": {
+    "id": 370760016,
+    "uuid": "7761235619531868825",
+    "draft": true
    }
   }
  ]

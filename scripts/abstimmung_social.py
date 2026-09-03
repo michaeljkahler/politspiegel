@@ -139,11 +139,14 @@ def serie(slug, daten, bilder, ordner):
          f"3. Bei einem Nein: {v['bei_nein']}" + fuss, t(22))
     kr = daten.get("kantonsrat") or {}
     if "kantonsrat" in vorhanden:
-        zeilen = [f"{i}. {a.get('titel', '')}: {a.get('ja')} Ja, {a.get('nein')} Nein"
+        import re
+        zeilen = [f"{i}. {(a.get('details') or a.get('titel', '')).rstrip('.')}: {a.get('ja')} Ja, {a.get('nein')} Nein"
                   for i, a in enumerate(kr.get("abstimmungen", []), 1)]
+        m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", kr.get("sitzung") or "")
+        wann = f", Sitzung vom {datum_lang(f'{m.group(3)}-{m.group(2)}-{m.group(1)}')}" if m else ""
         post(["kantonsrat"],
-             f"{v['titel']}: Wie der Kantonsrat Schaffhausen gestimmt hat"
-             + (f" (Sitzung vom {kr.get('sitzung')})" if kr.get("sitzung") else "") + ".\n\n"
+             f"{v['titel']}: Wie der Kantonsrat Schaffhausen gestimmt hat{wann}. "
+             "Namentliche Abstimmungen, gezählt aus dem Wortprotokoll.\n\n"
              + "\n".join(zeilen) + fuss, t(19))
     def punkte(a):
         if a.get("typ") == "wertung":
