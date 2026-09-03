@@ -89,6 +89,13 @@ Auf der obersten Ebene der Datei:
 | Feld | Bedeutung |
 |---|---|
 | `stand` | Datum des Inhaltsstands, `JJJJ-MM-TT` |
+| `hinweis_quellen` | Ein Satz zur Herkunft der Argumente, steht im Kasten «Quellen und Methode» |
+| `lesehilfe` | Ein Absatz unter den Netzgrafiken, optional |
+| `vorlage.seiten` | Namen der beiden Seiten: je `name`, `komitee`, `empfehlung`. Ohne Angabe: «Für die Vorlage / Befürworter / Ja» und «Gegen die Vorlage / Gegner / Nein» |
+| `vorlage.ja_titel`, `nein_titel` | Überschriften der beiden Folgenkästen, Voreinstellung «Bei einem Ja» und «Bei einem Nein» |
+| `vorlage.doppelvorlage`, `doppelvorlage_titel`, `rechtsrahmen`, `kontext` | Kontextabsätze im Kopf, alle optional; `kontext` ist eine Liste von `{titel, text}` |
+| `vorlage.kantonsrat_suche`, `kantonsrat_hinweis` | Suchwort für die Ratsdaten und ein optionaler Satz dazu |
+| `argumente`, `textkritik`, `karte` | Dürfen leer sein. Ohne Aussagen zeigt die Seite einen Platzhalter, ohne `karte.gemeinden` keine Karte |
 | `status` | `entwurf` oder `veroeffentlicht`. Ein Entwurf erscheint in der Übersicht mit dem Vermerk «noch nicht veröffentlichungsreif». Fehlt das Feld, gilt Entwurf |
 | `vorlage.abstimmung` | Abstimmungstermin, `JJJJ-MM-TT`. Daran entscheidet die Übersicht, ob die Abstimmung kommend oder vergangen ist |
 | `ergebnis` | Wird nach dem Abstimmungssonntag nachgetragen, Schema unten. Ohne das Feld steht in der Übersicht «Ergebnis noch nicht nachgetragen» |
@@ -121,6 +128,15 @@ Entscheid zu wissen war. Das Ergebnis steht in der Übersicht daneben.
 | `grafiken` | Liste, je mit `datei`, `titel`, `hinweis`, `quelle` |
 | `kritische_fragen` | Die Prüffragen zum Argumenttyp, mit Antwortstand |
 | `belege` | Die Quellen, je mit Art und Verweis |
+
+Textform in allen Feldern (`trifft_zu`, `fehlt`, `kommentar`, `zahlhinweis`,
+`problem`, `folge`, `bei_ja`, `bei_nein`): Absätze durch eine Leerzeile getrennt.
+Aufzählungen als nummerierte Liste, eine Zeile je Punkt, beginnend mit `1. `,
+`2. ` und so weiter; die Seite macht daraus eine Liste, das Social-Media-Bild
+setzt sie mit hängendem Einzug. Nur prüfbare Fakten, keine Wertungen, keine
+Verweise auf interne Dokumente. Zahlen, die aus Unterlagen nicht direkt
+hervorgehen, werden nachgerechnet und als Ergebnis genannt, nicht als Hinweis
+auf eine Differenz.
 
 Drei Regeln dazu:
 
@@ -158,6 +174,14 @@ hat: neben dem Argument steht, wie die Fraktionen tatsächlich abgestimmt haben,
 als dieselbe Frage im Rat lag.
 
 ---
+
+## 4a · Eine Vorlage als Rohling
+
+Ein neuer Ordner braucht nur eine `vorlage.json` mit `vorlage.titel`,
+`vorlage.abstimmung`, `achsen` und leeren `argumente`. Die Seite baut dann Kopf,
+Platzhalter, Ratsblock (falls das Suchwort trifft) und Methode; die Übersicht
+zeigt den Kasten mit «Entwurf, noch nicht veröffentlichungsreif». Muster:
+`abstimmungen/2026-11-29-spitalgesetz/`, angelegt am 4. September 2026.
 
 ## 5 · Veröffentlichung
 

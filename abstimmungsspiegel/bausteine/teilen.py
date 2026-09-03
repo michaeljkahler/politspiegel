@@ -200,16 +200,28 @@ JS = r"""
   function SANS(px, w){ return (w || 400) + ' ' + sk(px) + 'px "Public Sans", "Helvetica Neue", Arial, sans-serif'; }
 
   /* ---- Text ------------------------------------------------------------ */
+  /* Umbruch. Absaetze sind durch Leerzeile getrennt, Zeilen innerhalb eines
+     Absatzes durch einen Zeilenwechsel; so stehen nummerierte Listen
+     («1. …» je Zeile) in der Vorlage. Eine Listenzeile bekommt einen
+     haengenden Einzug: Fortsetzungszeilen beginnen mit einem Tabulator, den
+     text() als Einzug zeichnet. Rueckgabe: Zeilen, '' fuer Absatzabstand. */
+  var EINZUG = 44;
   function zeilen(x, str, maxW){
     var out = [];
     String(str || '').split(/\n\s*\n/).forEach(function(abs, i){
       if (i) out.push('');
-      var z = '';
-      abs.replace(/\s+/g, ' ').trim().split(' ').forEach(function(wd){
-        var t = z ? z + ' ' + wd : wd;
-        if (x.measureText(t).width > maxW && z) { out.push(z); z = wd; } else z = t;
+      abs.split(/\n/).forEach(function(hart){
+        hart = hart.replace(/\s+/g, ' ').trim();
+        if (!hart) return;
+        var liste = /^\d+\.\s/.test(hart), z = '', breite = maxW;
+        hart.split(' ').forEach(function(wd){
+          var t = z ? z + ' ' + wd : wd;
+          if (x.measureText(t).width > breite && z) {
+            out.push(z); z = (liste ? '\t' : '') + wd; breite = liste ? maxW - EINZUG * S : maxW;
+          } else z = t;
+        });
+        if (z) out.push(z);
       });
-      if (z) out.push(z);
     });
     return out;
   }
@@ -220,7 +232,10 @@ JS = r"""
   function text(x, str, px, y, maxW, lh){
     lh = lh * S;
     var zs = zeilen(x, str, maxW);
-    zs.forEach(function(z){ if (z) x.fillText(z, px, y); pruefe(y); y += z ? lh : lh * 0.55; });
+    zs.forEach(function(z){
+      if (z) x.fillText(z.charAt(0) === '\t' ? z.slice(1) : z, z.charAt(0) === '\t' ? px + EINZUG * S : px, y);
+      pruefe(y); y += z ? lh : lh * 0.55;
+    });
     return y;
   }
   function hoehe(x, str, maxW, lh){
@@ -470,26 +485,42 @@ JS = r"""
     var s0 = S; S = 1;
     MX.font = SANS(24, 400);
     var lh = Math.round(24 * 1.45), maxL = Math.floor(frei / lh);
-    var out = [], akt = [], n = 0;
-    String(str || '').split(/\n\s*\n/).forEach(function(abs){
-      var zs = zeilen(MX, abs, INNEN);
-      /* Ein Absatz wechselt lieber ganz auf die naechste Folie, als dass er
-         mitten im Satz bricht; nur ein Absatz laenger als eine Folie wird geteilt. */
-      if (akt.length && n + 0.55 + zs.length > maxL && zs.length <= maxL){ out.push(akt); akt = []; n = 0; }
-      if (akt.length){ n += 0.55; }
-      zs.forEach(function(z){
-        if (n + 1 > maxL){ out.push(akt); akt = []; n = 0; }
-        akt.push(z); n += 1;
+    /* Einheit der Verteilung ist die harte Zeile (ein Absatz oder ein
+       Listenpunkt). Eine Einheit wechselt lieber ganz auf die naechste Folie,
+       als mitten im Satz zu brechen; nur eine Einheit laenger als eine Folie
+       wird geteilt. Zusammengesetzt wird der Text wieder aus den Einheiten,
+       mit Leerzeile zwischen Absaetzen und Zeilenwechsel zwischen
+       Listenpunkten, damit die Folie dieselbe Form zeigt wie die Seite. */
+    var einheiten = [];
+    String(str || '').split(/\n\s*\n/).forEach(function(abs, i){
+      abs.split(/\n/).forEach(function(hart, j){
+        hart = hart.replace(/\s+/g, ' ').trim();
+        if (hart) einheiten.push({ t: hart, trenner: j ? '\n' : (i ? '\n\n' : ''), h: zeilen(MX, hart, INNEN).length });
       });
-      akt.push('');   /* Absatzende, wird beim Zusammensetzen zur Leerzeile */
+    });
+    var out = [], akt = [], n = 0;
+    einheiten.forEach(function(u){
+      var abstand = u.trenner === '\n\n' ? 0.55 : 0;
+      if (akt.length && n + abstand + u.h > maxL){
+        if (u.h <= maxL){ out.push(akt); akt = []; n = 0; }
+        else {
+          /* Einheit laenger als eine Folie: zeilenweise auffuellen und teilen */
+          var zs = zeilen(MX, u.t, INNEN), rest = [];
+          zs.forEach(function(z){ if (n + abstand + 1 <= maxL){ rest.push(z); n += 1; } });
+          var kopf = rest.map(function(z){ return z.replace(/^\t/, ''); }).join(' ');
+          var schwanz = zs.slice(rest.length).map(function(z){ return z.replace(/^\t/, ''); }).join(' ');
+          if (kopf) akt.push({ t: kopf, trenner: u.trenner });
+          out.push(akt); akt = []; n = 0;
+          if (schwanz){ u = { t: schwanz, trenner: '', h: zeilen(MX, schwanz, INNEN).length }; }
+          else return;
+        }
+      }
+      akt.push({ t: u.t, trenner: akt.length ? u.trenner : '' }); n += (akt.length > 1 ? abstand : 0) + u.h;
     });
     if (akt.length) out.push(akt);
     S = s0;
     return out.map(function(seite){
-      var abs = [], z = [];
-      seite.forEach(function(l){ if (l === ''){ if (z.length) abs.push(z.join(' ')); z = []; } else z.push(l); });
-      if (z.length) abs.push(z.join(' '));
-      return abs.join('\n\n');
+      return seite.map(function(u){ return u.trenner + u.t; }).join('');
     }).filter(function(s){ return s; });
   }
   function textFolien(f, name, str, extra){
@@ -606,8 +637,8 @@ JS = r"""
   }
 
   /* ---- Motivliste ------------------------------------------------------ */
-  var MOTIVE = [{ k: 'vorlage', g: 'Vorlage', l: 'Die Vorlage' },
-                { k: 'gegen', g: 'Vorlage', l: 'Gegenüberstellung der Belegqualität' }];
+  var MOTIVE = [{ k: 'vorlage', g: 'Vorlage', l: 'Die Vorlage' }];
+  if (D.argumente.length) MOTIVE.push({ k: 'gegen', g: 'Vorlage', l: 'Gegenüberstellung der Belegqualität' });
   var nPaare = Math.min(D.argumente.filter(function(a){ return a.seite === 'pro'; }).length,
                         D.argumente.filter(function(a){ return a.seite === 'contra'; }).length);
   for (var i = 0; i < nPaare; i++) MOTIVE.push({ k: 'paar:' + i, g: 'Aussagenpaare', l: 'Aussagenpaar ' + (i+1) });

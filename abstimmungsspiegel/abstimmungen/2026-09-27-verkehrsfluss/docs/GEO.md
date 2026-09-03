@@ -78,8 +78,8 @@ Zufall, sondern zeigt, dass das Prüfschema die richtigen Fragen stellt.
 |---|---|
 | pro-1, Blaulicht: keine Zahl, und Sonderrechte nach Art. 100 Ziff. 4 SVG | G6 mit Richtwerten von +0,5 bis +2,5 Minuten und derselben Rechtslage |
 | pro-2, öV: keine Schaffhauser Zahl | G5 mit Zusatzzeit je Buslinie, Linie 21 rund +7,8 Minuten |
-| contra-1, Unfälle: keine kantonale Zahl | 1184 Unfälle über 15 Jahre, davon 140 mit Fussgängern |
-| contra-4, Lärm: «Tausende» unbeziffert | 1707 Fassaden über dem Immissionsgrenzwert, davon 1164 auf betroffenen Abschnitten |
+| contra-1, Unfälle: keine kantonale Zahl | 1189 Unfälle über 15 Jahre, davon 144 mit Fussgängern; 901 auf verkehrsorientierten Abschnitten |
+| contra-4, Lärm: «Tausende» unbeziffert | 1816 Fassaden über dem Immissionsgrenzwert, davon 1164 auf verkehrsorientierten Abschnitten |
 
 **Wichtig für die Redlichkeit:** Die Punktzahl der Karten ändert sich dadurch
 **nicht**. Bewertet wird, ob das Komitee einen Beleg genannt hat, nicht ob
@@ -319,17 +319,25 @@ den Gesundheitsnutzen von Fuss- und Veloverkehr. Beides müsste geprüft und auf
 Schaffhausen übertragbar sein. Solange die Nutzenseite unvollständig bleibt,
 bleibt die Rechnung draussen.
 
-### Zwei Zahlen, die nicht ganz zusammenpassen
+### Zwei Zählebenen: Gemeinde und benannter Abschnitt
 
-Der Bericht nennt 1189 Unfälle und 1816 Fassaden über dem Immissionsgrenzwert.
-Aus der gelieferten Abschnittstabelle nachgerechnet ergeben sich 1184 und 1707.
-Die Streckenlängen stimmen dagegen auf die Kommastelle überein, es ist also
-dieselbe Netzbasis. Vermutlich zählt der Bericht auch Unfälle und Fassaden mit,
-die keinem benannten Abschnitt zugeordnet werden konnten; die Zuordnung läuft
-über eine Nachbarschaftssuche mit 20 beziehungsweise 25 Metern Fangdistanz.
-Aufgelöst ist es nicht. Auf der Seite steht die kleinere, nachrechenbare Zahl,
-zusammen mit einem sichtbaren Hinweis auf die Abweichung. Das ist derselbe
-Massstab, den wir an die Komitees anlegen.
+Die Datengrundlage zählt auf zwei Ebenen, nachgerechnet am 4. September 2026 aus
+`geo/02_aufbereitet/`:
+
+1. Blatt «Gemeinden» (Kantonsstrassen innerorts je Gemeinde, vollständig):
+   1189 Unfälle mit Personenschaden 2011 bis 2025, davon 144 mit Fussgängern und
+   327 mit Velofahrenden; 1816 Fassaden über dem Immissionsgrenzwert.
+2. `per_abschnitt.json` (nur die 163 benannten Abschnitte aus den
+   Verkehrszähldaten, Zuordnung per Nachbarschaftssuche mit 20 beziehungsweise
+   25 Metern Fangdistanz): 1184 Unfälle (140 Fussgänger, 322 Velo) und 1707
+   Fassaden. Davon auf den 75 verkehrsorientierten Abschnitten 901 Unfälle und
+   1164 Fassaden, auf den 88 siedlungsorientierten 283 und 543.
+
+Die Differenz (5 Unfälle, 109 Fassaden) sind Fälle ausserhalb der Fangdistanz
+eines benannten Abschnitts. Auf der Seite stehen die Kantonswerte der ersten
+Ebene (1189, 144, 327, 1816) und für die von der Initiative erfassten Strassen
+die Werte der verkehrsorientierten Abschnitte (901, 1164). Die Grafiken G8 und
+G10 zeigen dieselben Zahlen.
 
 ### Zur Umfärbung, mit einer Korrektur an mir selbst
 

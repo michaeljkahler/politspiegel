@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.5",
+  "stand": "2026-09-04",
+  "status": "entwurf",
+  "hinweis_quellen": "Argumentarien liegen noch nicht vor. Grundlage bis dahin: Abstimmungsvorlage und Bericht und Antrag des Regierungsrats vom 29. Oktober 2024.",
+  "lesehilfe": "",
+  "vorlage": {
+    "id": "sh-spitalgesetz-2026",
+    "titel": "Änderung des Spitalgesetzes",
+    "untertitel": "Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»",
+    "ebene": "Kanton Schaffhausen",
+    "abstimmung": "2026-11-29",
+    "seiten": {
+      "pro": {
+        "name": "Für die Änderung",
+        "komitee": "Befürworter",
+        "empfehlung": "Ja"
+      },
+      "contra": {
+        "name": "Gegen die Änderung",
+        "komitee": "Gegner",
+        "empfehlung": "Nein"
+      }
+    },
+    "worum_geht_es": "Noch offen. Hier steht in drei bis vier Sätzen, was die Vorlage ändert und wer sie vorgelegt hat.",
+    "bei_ja": "1. Noch offen: erste Folge eines Ja.\n2. Noch offen: zweite Folge eines Ja.",
+    "bei_nein": "1. Noch offen: Es bleibt beim geltenden Spitalgesetz.\n2. Noch offen: zweite Folge eines Nein.",
+    "ja_titel": "Bei einem Ja",
+    "nein_titel": "Bei einem Nein",
+    "doppelvorlage": "",
+    "rechtsrahmen": "",
+    "kontext": [],
+    "kantonsrat_suche": "Änderung des Spitalgesetzes",
+    "kantonsrat_hinweis": "",
+    "quellen": [
+      {
+        "titel": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes",
+        "url": "",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Schaffhauser Abstimmungs-Magazin zur Volksabstimmung vom 29. November 2026",
+        "url": "",
+        "art": "amtlich"
+      }
+    ]
+  },
+  "achsen": [
+    {
+      "id": "quelle",
+      "kurz": "Quellenlage",
+      "frage": "Nennt die Seite für ihre Aussage eine überprüfbare Quelle?",
+      "null": "keine Quelle genannt",
+      "voll": "amtliche Statistik, Gesetzestext oder begutachtete Studie"
+    },
+    {
+      "id": "zahl",
+      "kurz": "Zahlenfestigkeit",
+      "frage": "Ist die Zahl belastbar und richtig bezogen?",
+      "null": "Zahl fehlt oder ist falsch bezogen",
+      "voll": "Zahl, Bezugsgrösse, Zeitraum und Unsicherheit genannt"
+    },
+    {
+      "id": "ursache",
+      "kurz": "Ursachennachweis",
+      "frage": "Ist der behauptete Zusammenhang belegt?",
+      "null": "blosse Gleichzeitigkeit oder Behauptung",
+      "voll": "Wirkungskette belegt, Vergleichsfall vorhanden"
+    },
+    {
+      "id": "reichweite",
+      "kurz": "Reichweite",
+      "frage": "Gilt die Aussage so allgemein, wie sie formuliert ist?",
+      "null": "unzulässig verallgemeinert",
+      "voll": "Bedingungen und Ausnahmen benannt"
+    },
+    {
+      "id": "transfer",
+      "kurz": "Übertragbarkeit",
+      "frage": "Passt der Beleg auf Schaffhausen und auf diese Vorlage?",
+      "null": "anderer Zusammenhang, andere Grössenordnung",
+      "voll": "Daten oder Texte aus dem Kanton, direkt zur Vorlage"
+    }
+  ],
+  "argumente": [],
+  "textkritik": {
+    "einleitung": "",
+    "stellen": []
+  },
+  "karte": null
+}

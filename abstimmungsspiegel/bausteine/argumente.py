@@ -63,6 +63,15 @@ def adresse() -> str:
         return ""
 
 
+def quellcode_adresse() -> str:
+    """Das oeffentliche Repository, fuer den Verweis im Fuss der Seite."""
+    try:
+        z = json.loads(ZUGANG.read_text(encoding="utf-8"))
+        return f"https://github.com/{z['benutzer']}/{z['repo']}"
+    except Exception:
+        return ""
+
+
 def kopfzeilen(v: dict, url: str) -> str:
     """Vorschauangaben fuer geteilte Links, wie sie publish.py fuer den
     Kantonsratsspiegel setzt. Das Vorschaubild ist das des Politspiegels."""
@@ -90,8 +99,25 @@ def kopfzeilen(v: dict, url: str) -> str:
           '<meta name="theme-color" content="#0B0F14">']
     return "\n".join(z)
 
-SEITE_NAME = {"pro": "Für die Initiative", "contra": "Gegen die Initiative"}
-SEITE_KOMITEE = {"pro": "Initiativkomitee", "contra": "Bündnis Pro30"}
+# Die beiden Seiten. Namen kommen aus vorlage.json («seiten»), hier stehen
+# die Voreinstellungen fuer eine Vorlage ohne benannte Komitees. Die Module
+# lesen SEITE_NAME und SEITE_KOMITEE; bauen() fuellt sie aus der Vorlage.
+SEITE_NAME = {"pro": "Für die Vorlage", "contra": "Gegen die Vorlage"}
+SEITE_KOMITEE = {"pro": "Befürworter", "contra": "Gegner"}
+SEITE_EMPFEHLUNG = {"pro": "Ja", "contra": "Nein"}
+
+
+def seiten_setzen(v: dict) -> None:
+    """Uebernimmt die Seitennamen aus vorlage.json:
+        "seiten": {"pro": {"name": "Für die Initiative", "komitee": "Initiativkomitee",
+                           "empfehlung": "Ja zur Initiative, Nein zum Gegenvorschlag"},
+                   "contra": {...}}
+    Fehlt ein Feld, bleibt die Voreinstellung."""
+    for s in ("pro", "contra"):
+        d = (v.get("seiten") or {}).get(s) or {}
+        SEITE_NAME[s] = d.get("name", SEITE_NAME[s])
+        SEITE_KOMITEE[s] = d.get("komitee", SEITE_KOMITEE[s])
+        SEITE_EMPFEHLUNG[s] = d.get("empfehlung", SEITE_EMPFEHLUNG[s])
 
 TYP_NAME = {"tatsache": "Tatsachenbehauptung", "prognose": "Prognose", "wertung": "Werturteil"}
 TYP_HINWEIS = {
@@ -326,13 +352,33 @@ def anriss(text: str, laenge: int = 78) -> str:
     return t[:laenge].rsplit(" ", 1)[0] + " …"
 
 
+NUMMER = re.compile(r"^\d+\.\s+")
+
+
+def absaetze(text: str) -> str:
+    """Text zu HTML: Absaetze durch Leerzeile getrennt, nummerierte Listen als
+    Liste. Ein Absatz, dessen Zeilen alle mit «1.», «2.» … beginnen, wird zur
+    <ol>; die Nummer im Text faellt weg, der Browser zaehlt. Regel seit dem
+    3. September 2026: Aufzaehlungen stehen als nummerierte Liste, nicht als
+    Fliesstext, damit die Seite schnell zu lesen ist und die Punkte sich
+    einzeln zitieren lassen."""
+    teile = []
+    for a in text.split("\n\n"):
+        zeilen = [z.strip() for z in a.strip().split("\n") if z.strip()]
+        if zeilen and all(NUMMER.match(z) for z in zeilen):
+            li = "".join(f"<li>{e(NUMMER.sub('', z))}</li>" for z in zeilen)
+            teile.append(f"<ol>{li}</ol>")
+        elif zeilen:
+            teile.append(f"<p>{e(' '.join(zeilen))}</p>")
+    return "".join(teile)
+
+
 def klappe(titel: str, text: str, art: str) -> str:
     """Aufklappbarer Block. Zu heisst Anriss sichtbar, auf heisst voller Text."""
-    absaetze = "".join(f"<p>{e(a)}</p>" for a in text.split("\n\n"))
     return (f'<details class="pk pk-{e(art)}">'
             f'<summary><span class="pk-titel">{e(titel)}</span>'
             f'<span class="pk-anriss">{e(anriss(text))}</span></summary>'
-            f'<div class="pk-inhalt">{absaetze}</div></details>')
+            f'<div class="pk-inhalt">{absaetze(text)}</div></details>')
 
 
 def zahlhinweis_block(arg) -> str:
@@ -380,7 +426,7 @@ def grafik_block(arg) -> str:
                    f'<b>{e(g["titel"])}</b> {e(g.get("hinweis", ""))}'
                    f'<span class="agrafik-quelle">{e(g["quelle"])}</span></figcaption></figure>')
     if h:
-        inhalt += f'<p class="zahlhinweis">{e(h)}</p>'
+        inhalt += f'<div class="zahlhinweis">{absaetze(h)}</div>'
 
     anriss = (" · ".join(g["titel"] for g in grafiken) if grafiken
               else "Hinweis zur Herleitung der Zahlen")
@@ -429,8 +475,8 @@ def uebersicht(args, achsen) -> str:
         "passen, senken die erreichbare Zahl, statt eine Null zu erzeugen. Darum steht überall "
         "«x von y» und nicht ein Prozentwert.",
         f'<div class="ue-liste">{"".join(zeilen)}</div>'
-        f'<p class="ue-summe">Zusammengezählt: Initiativkomitee <b>{ep} von {mp}</b> Punkten, '
-        f'Bündnis Pro30 <b>{ec} von {mc}</b>. Die Werturteile sind in beiden Zahlen nicht '
+        f'<p class="ue-summe">Zusammengezählt: {e(SEITE_KOMITEE["pro"])} <b>{ep} von {mp}</b> Punkten, '
+        f'{e(SEITE_KOMITEE["contra"])} <b>{ec} von {mc}</b>. Die Werturteile sind in beiden Zahlen nicht '
         f'enthalten.</p>')
 
 
@@ -456,12 +502,12 @@ def textkritik_block(tk) -> str:
     <div><h3>{e(s['begriff'])}</h3><span class="tk-wo">{e(s['wo'])}</span></div></div>
   <blockquote class="tk-wortlaut">{e(s['wortlaut'])}</blockquote>
   <div class="praezis">
-    <div class="praezis-teil"><h4>Was offen bleibt</h4><p>{e(s['problem'])}</p></div>
+    <div class="praezis-teil"><h4>Was offen bleibt</h4>{absaetze(s['problem'])}</div>
   </div>
   {tab}
   <div class="praezis">
     <div class="praezis-teil praezis-zu"><h4>Was das bedeutet</h4>
-      {"".join(f"<p>{e(t)}</p>" for t in s["folge"].split(chr(10) + chr(10)))}</div>
+      {absaetze(s['folge'])}</div>
   </div>
   <p class="tk-quelle">{e(s['quelle'])}</p>
 </article>""")
@@ -506,9 +552,13 @@ def karte_block(k) -> str:
 
     quellen = "".join(f'<li>{e(q["titel"])}</li>' for q in k["quellen"])
 
+    # Der erste Absatz der Einleitung steht in der Kopfzeile des Abschnitts,
+    # der Rest (meist eine Liste) im Inhalt: In einer Kopfzeile ist keine
+    # Liste moeglich.
+    ein_kopf, _, ein_rest = k["einleitung"].partition("\n\n")
     return abschnitt("karte", "Wo die Vorlage gilt, und wer in der Nähe ist",
-        marke("eigen") + e(k["einleitung"]), f"""
-
+        marke("eigen") + e(ein_kopf), f"""
+  <div class="km-einleitung">{absaetze(ein_rest)}</div>
   <div class="km-block">
     <div class="km-knoepfe">{knoepfe}</div>
     <div class="km-buehne">
@@ -769,8 +819,9 @@ def kantonsrat_daten(suchwort: str) -> dict | None:
     return None
 
 
-def kantonsrat_block(kr: dict | None) -> str:
-    """Der Seitenblock aus kantonsrat_daten()."""
+def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
+    """Der Seitenblock aus kantonsrat_daten(). «hinweis» kommt aus
+    vorlage.kantonsrat_hinweis, etwa eine Gegenprobe mit dem Abstimmungsmagazin."""
     if not kr:
         return ""
     prot = (f' · <a href="{e(kr["protokoll"])}" target="_blank" rel="noopener">Wortprotokoll</a>'
@@ -805,9 +856,9 @@ def kantonsrat_block(kr: dict | None) -> str:
 </div>""")
     n = len(kr["abstimmungen"])
     return abschnitt("kantonsrat", "Wie der Kantonsrat dazu gestimmt hat",
-        f"Dieselbe Vorlage, {n} namentliche Abstimmungen am {e(kr['sitzung'])}{prot}. "
-        f"Die Zahlen sind aus den Wortprotokollen gezählt und deckungsgleich mit den "
-        f"Angaben im amtlichen Abstimmungsmagazin.",
+        f"Dieselbe Vorlage, {n} namentliche Abstimmung{'en' if n != 1 else ''} am "
+        f"{e(kr['sitzung'])}{prot}. Gezählt aus den vom Kantonsrat publizierten "
+        f"Abstimmungsergebnissen." + (f" {e(hinweis)}" if hinweis else ""),
         f'<div class="kr-raster">{"".join(karten)}</div>')
 
 
@@ -1024,6 +1075,15 @@ html{scroll-behavior:smooth}
 .pk-inhalt{padding:0 15px 13px}
 .pk-inhalt p{margin:0 0 9px;font-size:15px}
 .pk-inhalt p:last-child{margin:0}
+.rohling{border:1px dashed var(--linie);border-radius:14px;padding:22px 24px;margin:0 0 30px;color:var(--text-leise)}
+.rohling h2{margin:0 0 8px;font-size:20px;color:var(--text)} .rohling p{margin:0}
+.folge ol{margin:0;padding-left:20px} .folge p{margin:0 0 8px} .folge p:last-child{margin:0}
+.km-einleitung{margin:0 0 16px;font-size:15px} .km-einleitung ol{margin:0;padding-left:22px} .km-einleitung li{margin:0 0 5px}
+.pk-inhalt ol,.praezis-teil ol,.zahlhinweis ol{margin:0 0 9px;padding-left:22px;font-size:15px}
+.pk-inhalt ol:last-child,.praezis-teil ol:last-child,.zahlhinweis ol:last-child{margin-bottom:0}
+.pk-inhalt ol li,.praezis-teil ol li,.zahlhinweis ol li{margin:0 0 6px;padding-left:4px}
+.pk-inhalt ol li::marker,.praezis-teil ol li::marker{font-family:Archivo,sans-serif;font-weight:600;color:var(--text-leise)}
+.praezis-teil p{margin:0 0 9px} .praezis-teil p:last-child{margin:0}
 
 /* Klappkästen unterhalb der Wertung */
 .karte-kaesten{display:flex;flex-direction:column;gap:7px;margin-top:10px}
@@ -1594,12 +1654,26 @@ def mittelwerte(argumente, achsen, seite):
     return werte, len(passend)
 
 
+ROHLING = """
+<section class="ab"><div class="rohling">
+  <h2>Die Argumente folgen</h2>
+  <p>Für diese Vorlage sind noch keine Aussagen erfasst. Sobald die Argumentarien beider Seiten
+  vorliegen, stehen hier je Aussage der Wortlaut, die Fundstelle und die Prüfung des Belegs.</p>
+</div></section>"""
+
+
 def bauen() -> str:
     daten = json.loads(QUELLE.read_text(encoding="utf-8"))
-    v, achsen, args = daten["vorlage"], daten["achsen"], daten["argumente"]
+    v, achsen, args = daten["vorlage"], daten["achsen"], daten.get("argumente") or []
+    seiten_setzen(v)
+    karte_daten = daten.get("karte") if (daten.get("karte") or {}).get("gemeinden") else None
+    tk_daten = daten.get("textkritik") if (daten.get("textkritik") or {}).get("stellen") else None
 
     tag, monat, jahr = v["abstimmung"].split("-")[::-1]
     url = adresse()
+    repo = quellcode_adresse()
+    quellcode = (f' Vorlage, Daten und Skripte: <a href="{e(repo)}" target="_blank" '
+                 f'rel="noopener">Quellcode auf GitHub</a>.' if repo else "")
     kr = kantonsrat_daten(v.get("kantonsrat_suche", ""))
     bild_daten = teilen.bild_daten(daten, achsen, args, kr, url, punkte, mittelwerte,
                                    SEITE_KOMITEE, SEITE_NAME, TYP_NAME)
@@ -1614,21 +1688,48 @@ def bauen() -> str:
         for q in v["quellen"])
 
     n_wertung = sum(1 for a in args if a.get("typ") == "wertung")
+    aussagen_satz = (f" Von den {len(args)} Aussagen sind {n_wertung} Werturteile; sie stehen ohne "
+                     f"Note und gehen nicht in die Netzgrafik ein." if args
+                     else " Aussagen sind noch keine erfasst.")
 
+    # Kontextabsaetze im Kopf. «doppelvorlage» und «rechtsrahmen» bleiben als
+    # Kurzform erhalten; frei benannte Absaetze stehen unter «kontext».
+    kontext_teile = []
+    if v.get("doppelvorlage"):
+        kontext_teile.append((v.get("doppelvorlage_titel", "Mehrere Fragen auf einem Zettel."), v["doppelvorlage"]))
+    if v.get("rechtsrahmen"):
+        kontext_teile.append(("Was der Kanton nicht allein entscheiden kann.", v["rechtsrahmen"]))
+    for kx in v.get("kontext") or []:
+        kontext_teile.append((kx.get("titel", ""), kx.get("text", "")))
+    kontext = ('<div class="kontext">' + "".join(
+        f"<p><b>{e(ti)}</b> {e(tx)}</p>" for ti, tx in kontext_teile) + "</div>") if kontext_teile else ""
+
+    # Das Inhaltsverzeichnis fuehrt nur, was die Vorlage hat. Eine Vorlage
+    # ohne raeumliche Wirkung hat keine Karte, eine ohne Ratsgeschaeft
+    # keinen Ratsblock, und ein leerer Rohling hat nur Kopf und Methode.
     verzeichnis = [
         ("uebersicht", "Alle Argumente auf einen Blick", f"{len(args)} Aussagen mit Punktzahl"),
         ("belegqualitaet", "Wie gut sind die Argumente belegt?", "ein Netz je Aussage"),
         ("argumente", "Die Argumente im Einzelnen", "Wortlaut, Fundstelle, Prüfung"),
-        ("textkritik", "Was der Abstimmungstext offen lässt",
-         f"{len(daten.get('textkritik', {}).get('stellen', []))} unbestimmte Begriffe"),
-        ("karte", "Wo die Vorlage gilt", "17 Gemeinden"),
-        ("viewer", "Selber nachschauen", "Karte zum Bewegen"),
-        ("kantonsrat", "Wie der Kantonsrat gestimmt hat", "sechs namentliche Abstimmungen"),
-        ("methode", "Methode und Quellen", "wie geprüft wird"),
-    ]
+    ] if args else []
+    if tk_daten:
+        verzeichnis.append(("textkritik", "Was der Abstimmungstext offen lässt",
+                            f"{len(tk_daten['stellen'])} unbestimmte Begriffe"))
+    if karte_daten:
+        verzeichnis.append(("karte", "Wo die Vorlage gilt", f"{len(karte_daten['gemeinden'])} Gemeinden"))
+        if GEOJSON.exists():
+            verzeichnis.append(("viewer", "Selber nachschauen", "Karte zum Bewegen"))
+    if kr:
+        n_kr = len(kr["abstimmungen"])
+        verzeichnis.append(("kantonsrat", "Wie der Kantonsrat gestimmt hat",
+                            f"{n_kr} namentliche Abstimmung" + ("en" if n_kr != 1 else "")))
+    verzeichnis.append(("methode", "Methode und Quellen", "wie geprüft wird"))
     iv = "".join(
         f'<li><a href="#{e(k)}">{e(t)}</a></li>' for k, t, _ in verzeichnis)
 
+    # Lesehilfe unter den Netzen, je Vorlage in vorlage.json «lesehilfe».
+    lesehilfe = (f'<p class="lesehilfe"><b>Zur Lesart.</b> {e(daten["lesehilfe"])}</p>'
+                 if daten.get("lesehilfe") else "")
     block_belegqualitaet = abschnitt("belegqualitaet", "Wie gut sind die Argumente belegt?",
   "Ein Netz je Aussage, alle im selben Massstab: fünf Achsen, je 0 bis 4 Punkte. Bewertet "
   "wird die einzelne Aussage, nicht die Seite; zwei Aussagen mit derselben Punktzahl können "
@@ -1637,14 +1738,14 @@ def bauen() -> str:
   <div class="netz-block">
     <div class="netz-multi">
       <div class="netz-reihe">
-        <span class="netz-reihe-titel netz-reihe-pro">Initiativkomitee</span>
+        <span class="netz-reihe-titel netz-reihe-pro">{e(SEITE_KOMITEE["pro"])}</span>
         <div class="netz-zellen">{''.join(
           f'<a class="netz-zelle" href="#arg-{e(a["id"])}">{mininetz(achsen, a["pruefung"], "pro")}'
           f'<span class="netz-zelle-zahl">{punkte(a, achsen)[0]} von {punkte(a, achsen)[1]}</span></a>'
           for a in args if a['seite'] == 'pro' and a.get('typ') != 'wertung')}</div>
       </div>
       <div class="netz-reihe">
-        <span class="netz-reihe-titel netz-reihe-contra">Bündnis Pro30</span>
+        <span class="netz-reihe-titel netz-reihe-contra">{e(SEITE_KOMITEE["contra"])}</span>
         <div class="netz-zellen">{''.join(
           f'<a class="netz-zelle" href="#arg-{e(a["id"])}">{mininetz(achsen, a["pruefung"], "contra")}'
           f'<span class="netz-zelle-zahl">{punkte(a, achsen)[0]} von {punkte(a, achsen)[1]}</span></a>'
@@ -1659,23 +1760,18 @@ def bauen() -> str:
     <div><ul class="achsenliste">{achsenliste}</ul></div>
   </div>
 
-  <p class="lesehilfe"><b>Zur Lesart.</b> Der Abstand zwischen den beiden Reihen beruht
-  überwiegend auf der Quellenlage: Das Nein-Komitee verweist auf Initiativtext, auf die
-  Würdigung von Regierungsrat und Kantonsrat und auf einen internationalen Vergleichsbericht,
-  das Initiativkomitee überwiegend ohne Quellenangabe. Ein guter Beleg macht eine Aussage
-  nicht richtig, und eine unbelegte Aussage nicht falsch. Ob Reisezeit oder Wohnruhe schwerer
-  wiegt, messen diese Achsen nicht.</p>""")
+  {lesehilfe}""")
 
     block_argumente = abschnitt("argumente", "Die Argumente im Einzelnen",
   "Je Aussage der Wortlaut, der Träger und die Fundstelle, danach was zutrifft und was "
   "fehlt.", f"""
   <div class="spalten">
     <div class="spalte">
-      <div class="spaltenkopf kopf-pro">Für die Initiative<em>Initiativkomitee · Ja zur Initiative, Nein zum Gegenvorschlag</em></div>
+      <div class="spaltenkopf kopf-pro">{e(SEITE_NAME["pro"])}<em>{e(SEITE_KOMITEE["pro"])} · {e(SEITE_EMPFEHLUNG["pro"])}</em></div>
       <div class="stapel">{''.join(karte(a, achsen) for a in args if a['seite'] == 'pro')}</div>
     </div>
     <div class="spalte">
-      <div class="spaltenkopf kopf-contra">Gegen die Initiative<em>Bündnis Pro30 · zweimal Nein</em></div>
+      <div class="spaltenkopf kopf-contra">{e(SEITE_NAME["contra"])}<em>{e(SEITE_KOMITEE["contra"])} · {e(SEITE_EMPFEHLUNG["contra"])}</em></div>
       <div class="stapel">{''.join(karte(a, achsen) for a in args if a['seite'] == 'contra')}</div>
     </div>
   </div>""")
@@ -1706,19 +1802,15 @@ def bauen() -> str:
   <p class="lead">{e(v['worum_geht_es'])}</p>
 
   <div class="folgen">
-    <div class="folge folge-ja"><h3>Bei einem Ja zur Initiative</h3><p>{e(v['bei_ja'])}</p></div>
-    <div class="folge folge-nein"><h3>Bei einem Nein</h3><p>{e(v['bei_nein'])}</p></div>
+    <div class="folge folge-ja"><h3>{e(v.get('ja_titel', 'Bei einem Ja'))}</h3>{absaetze(v.get('bei_ja', ''))}</div>
+    <div class="folge folge-nein"><h3>{e(v.get('nein_titel', 'Bei einem Nein'))}</h3>{absaetze(v.get('bei_nein', ''))}</div>
   </div>
 
-  <div class="kontext">
-    <p><b>Drei Fragen auf einem Zettel.</b> {e(v['doppelvorlage'])}</p>
-    <p><b>Was der Kanton nicht allein entscheiden kann.</b> {e(v['rechtsrahmen'])}</p>
-  </div>
+  {kontext}
 
   <p class="warn"><strong>Quellen und Methode.</strong>
-  {e(daten['hinweis_prototyp'])} Bewertet wird der Beleg einer Aussage, nicht die Aussage
-  selbst. Von den {len(args)} Aussagen sind {n_wertung} Werturteile; sie stehen ohne Note und
-  gehen nicht in die Netzgrafik ein.</p>
+  {e(daten.get('hinweis_quellen') or daten.get('hinweis_prototyp') or '')} Bewertet wird der Beleg
+  einer Aussage, nicht die Aussage selbst.{aussagen_satz}</p>
 
   <div class="hk-legende"><b>Woher stammt was</b>
     <div class="hk-raster">
@@ -1737,19 +1829,15 @@ def bauen() -> str:
   </nav>
 </header>
 
-{uebersicht(args, achsen)}
+{(uebersicht(args, achsen) + block_belegqualitaet + block_argumente) if args else ROHLING}
 
-{block_belegqualitaet}
+{textkritik_block(tk_daten)}
 
-{block_argumente}
+{karte_block(karte_daten)}
 
-{textkritik_block(daten.get('textkritik'))}
+{viewer_block(karte_daten)}
 
-{karte_block(daten.get('karte'))}
-
-{viewer_block(daten.get('karte'))}
-
-{kantonsrat_block(kr)}
+{kantonsrat_block(kr, v.get('kantonsrat_hinweis', ''))}
 
 <footer class="fuss" id="methode">
   <h2>Methode</h2>
@@ -1765,16 +1853,14 @@ def bauen() -> str:
       Zitat aufgenommen, nicht weggeschrieben.</li>
     <li>Korrekturen werden sichtbar protokolliert, nicht stillschweigend nachgeführt.</li>
   </ol>
-  <p>Ausführlich in <code>abstimmungsspiegel/docs/10_METHODE.md</code>. Grundlagen: Toulmin-Schema,
-  Argumentationsschemata mit kritischen Fragen nach Walton, IFCN- und EFCSN-Kodex für
-  Faktenprüfung, statistische Prüfregeln der empirischen Sozialforschung.</p>
+  <p>Grundlagen: Toulmin-Schema, Argumentationsschemata mit kritischen Fragen nach Walton,
+  IFCN- und EFCSN-Kodex für Faktenprüfung, statistische Prüfregeln der empirischen
+  Sozialforschung.</p>
 
   <h2>Quellen zur Vorlage</h2>
   <ul>{quellen}</ul>
 
-  <p>Stand {e(daten['stand'])}, erzeugt am {date.today().strftime('%d.%m.%Y')} aus
-  <code>abstimmungsspiegel/abstimmungen/{SLUG}/vorlage.json</code> und
-  <code>data/all_sessions.json</code>.
+  <p>Stand {e(daten['stand'])}, erzeugt am {date.today().strftime('%d.%m.%Y')}.{quellcode}
   Aufbereitung ohne Gewähr.</p>
 </footer>
 
@@ -1858,7 +1944,8 @@ def main() -> None:
         raise SystemExit(1)
     fehlend = [p.name for p in (GEOJSON, HALTESTELLEN, BUSNETZ, KANTONSSTRASSEN)
                if not p.is_file()]
-    if fehlend:
+    hat_karte = bool((json.loads(QUELLE.read_text(encoding="utf-8")).get("karte") or {}).get("gemeinden"))
+    if fehlend and hat_karte:
         print("Hinweis: nicht freigegebene Ebenen, sie fehlen auf der Karte: "
               + ", ".join(fehlend), file=sys.stderr)
     ZIEL.parent.mkdir(parents=True, exist_ok=True)

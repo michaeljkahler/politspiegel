@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abstimmungsspiegel · Änderung des Spitalgesetzes</title>
+<meta name="description" content="Abstimmung vom 29. November 2026: Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen». Die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Politspiegel Schaffhausen">
+<meta property="og:title" content="Abstimmungsspiegel · Änderung des Spitalgesetzes">
+<meta property="og:description" content="Abstimmung vom 29. November 2026: Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen». Die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<meta property="og:locale" content="de_CH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abstimmungsspiegel · Änderung des Spitalgesetzes">
+<meta name="twitter:description" content="Abstimmung vom 29. November 2026: Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen». Die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<meta property="og:url" content="https://michaeljkahler.github.io/politspiegel/abstimmung/2026-11-29-spitalgesetz/">
+<meta property="og:image" content="https://michaeljkahler.github.io/politspiegel/vorschau.png">
+<meta name="twitter:image" content="https://michaeljkahler.github.io/politspiegel/vorschau.png">
+<link rel="canonical" href="https://michaeljkahler.github.io/politspiegel/abstimmung/2026-11-29-spitalgesetz/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="theme-color" content="#0B0F14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{
+  --pro:#0F766E; --pro-text:#0C6A62; --contra:#8E44AD; --contra-text:#7E3C9A;
+  --grund:#FFFFFF; --flaeche:#F7F8FA; --karte:#FFFFFF;
+  --text:#12161C; --text-leise:#5A626D; --linie:#E2E6EB;
+  --seg-voll:#3C4652; --seg-leer:#E2E6EB;
+  /* Kartenebenen nach Herkunft. Fuenf Linienebenen lagen zuvor im selben
+     Graphitgrau und waren zu zweit nicht auseinanderzuhalten. Die Farbe sagt
+     jetzt, wessen Linie das ist, und die Strichart unterscheidet innerhalb
+     einer Herkunft, damit die Unterscheidung nicht allein an der Farbe haengt.
+
+     Diese vier Werte aendern mit dem Farbschema NICHT. Kartenkacheln sind in
+     beiden Schemata hell, ob von OpenStreetMap oder von swisstopo. Eine im
+     dunklen Schema aufgehellte Linie waere auf der hellen Kachel unsichtbar.
+     Getrennt davon stehen die Legendenstriche in der Bedienleiste, die auf
+     dem Seitenhintergrund liegen und darum dem Schema folgen. */
+  --geo-eigen:#12161C; --geo-kanton:#0F766E; --geo-bund:#8E44AD; --geo-osm:#6E7783;
+  --leg-eigen:#12161C; --leg-kanton:#0F766E; --leg-osm:#6E7783;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --pro:#3FB3A8; --pro-text:#3FB3A8; --contra:#C08AD8; --contra-text:#C08AD8;
+  --grund:#12161C; --flaeche:#171C24; --karte:#1B212B;
+  --text:#EEF1F5; --text-leise:#9AA3AF; --linie:#2C3440;
+  --seg-voll:#B9C2CE; --seg-leer:#2C3440;
+  /* nur die Legendenstriche, nicht die Kartenlinien, siehe oben */
+  --leg-eigen:#EEF1F5; --leg-kanton:#3FB3A8; --leg-osm:#9AA3AF; } }
+:root[data-theme="dark"]{
+  --pro:#3FB3A8; --pro-text:#3FB3A8; --contra:#C08AD8; --contra-text:#C08AD8;
+  --grund:#12161C; --flaeche:#171C24; --karte:#1B212B;
+  --text:#EEF1F5; --text-leise:#9AA3AF; --linie:#2C3440;
+  --seg-voll:#B9C2CE; --seg-leer:#2C3440; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--grund);color:var(--text);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.55}
+h1,h2,h3,h4{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;font-weight:600}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px}
+a{color:inherit}
+
+.kopf{border-bottom:1px solid var(--linie);padding:34px 0 26px;margin-bottom:30px}
+.kopf .ober{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.marke-seite{font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--text-leise);
+  font-family:Archivo,sans-serif;font-weight:600}
+h1{font-size:clamp(28px,4.2vw,42px);line-height:1.12;margin:12px 0 4px;letter-spacing:-.01em}
+.untertitel{color:var(--text-leise);margin:0 0 18px;font-size:17px}
+.termin{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--linie);
+  border-radius:999px;padding:5px 14px;font-size:14px;font-variant-numeric:tabular-nums}
+.lead{margin:18px 0 0;font-size:17px}
+.warn{margin:22px 0 0;padding:14px 16px;border:1px dashed var(--linie);
+  border-radius:12px;background:var(--flaeche);font-size:14.5px;color:var(--text-leise)}
+.warn strong{color:var(--text)}
+
+.folgen{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 0}
+.folge{border:1px solid var(--linie);border-radius:14px;padding:16px 18px;background:var(--karte)}
+.folge h3{margin:0 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.folge p{margin:0;font-size:15px;color:var(--text-leise)}
+.folge-ja h3{color:var(--pro-text)} .folge-nein h3{color:var(--contra-text)}
+.kontext{margin:16px 0 0;padding:14px 16px;background:var(--flaeche);border-radius:12px;
+  font-size:14.5px;color:var(--text-leise)}
+.kontext b{color:var(--text);font-family:Archivo,sans-serif;font-weight:600}
+.kontext p{margin:0 0 8px} .kontext p:last-child{margin:0}
+
+section{margin-top:52px}
+section > h2{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+section > .hint{color:var(--text-leise);margin:0 0 22px;font-size:15.5px}
+
+/* Übersicht */
+.ue-liste{border-top:1px solid var(--linie)}
+.ue-zeile{display:grid;grid-template-columns:118px 1fr 132px 92px 78px;gap:14px;align-items:center;
+  padding:11px 8px;border-bottom:1px solid var(--linie);text-decoration:none;color:inherit;
+  border-radius:8px}
+.ue-zeile:hover{background:var(--flaeche)}
+.ue-marke{font-family:Archivo,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.07em;
+  text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid currentColor;
+  justify-self:start;white-space:nowrap}
+.ue-marke-pro{color:var(--pro-text)} .ue-marke-contra{color:var(--contra-text)}
+.ue-text{font-size:14.5px;line-height:1.4}
+.ue-typ{font-size:12.5px;color:var(--text-leise);white-space:nowrap}
+.ue-spur{display:block;height:9px;border-radius:3px;background:var(--seg-leer);overflow:hidden}
+.ue-fuell{display:block;height:100%;border-radius:3px}
+.ue-pro{background:var(--pro)} .ue-contra{background:var(--contra)}
+.ue-spur-na{grid-column:4 / 6;font-size:12px;color:var(--text-leise);font-style:italic;
+  text-align:right;white-space:nowrap}
+.ue-zahl{font-family:Archivo,sans-serif;font-size:13px;color:var(--text-leise);text-align:right;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.ue-zahl b{color:var(--text);font-size:16px}
+.ue-na{font-size:12px;color:var(--text-leise);text-align:right;font-style:italic}
+.ue-summe{margin:16px 0 0;font-size:14.5px;color:var(--text-leise)}
+.ue-summe b{color:var(--text);font-family:Archivo,sans-serif;font-variant-numeric:tabular-nums}
+
+.netz-block{display:grid;grid-template-columns:minmax(340px,1fr) minmax(300px,420px);gap:36px;
+  align-items:start;border:1px solid var(--linie);border-radius:16px;padding:22px;
+  background:var(--karte)}
+.netz{width:100%;height:auto;overflow:visible}
+.netz-ring,.netz-speiche{fill:none;stroke:var(--linie);stroke-width:1}
+.netz-speiche-na{stroke-dasharray:3 3;opacity:.55}
+
+/* Small Multiples */
+.netz-multi{display:flex;flex-direction:column;gap:18px}
+.netz-reihe-titel{font-family:Archivo,sans-serif;font-size:11.5px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise);display:block;
+  margin-bottom:6px}
+.netz-reihe-pro{color:var(--pro-text)} .netz-reihe-contra{color:var(--contra-text)}
+.netz-zellen{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px}
+.netz-zelle{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;
+  color:inherit;border:1px solid transparent;border-radius:10px;padding:4px}
+a.netz-zelle:hover{border-color:var(--linie);background:var(--flaeche)}
+.netz-zelle-legende{padding:0}
+.mininetz{width:100%;max-width:130px;height:auto;overflow:visible}
+/* Das Legendennetz traegt Achsenbeschriftungen, die ueber den Rahmen der
+   Zeichnung hinausragen. Es steht darum in einer eigenen, ueber die ganze
+   Reihe gehenden Zelle und wird darin mittig gesetzt, statt in der ersten
+   Rasterspalte zu kleben, wo die linke Beschriftung aus dem Kasten faellt. */
+.netz-zelle-legende{grid-column:1 / -1;align-items:center;padding:6px 0 0}
+.netz-zelle-legende .mininetz{max-width:230px}
+.netz-zelle-zahl{font-family:Archivo,sans-serif;font-size:11.5px;color:var(--text-leise);
+  font-variant-numeric:tabular-nums}
+.netz-mini-titel{font-family:Archivo,sans-serif;font-size:10px;font-weight:600;fill:var(--text-leise)}
+.netz-legende{fill:var(--linie);fill-opacity:.35;stroke:var(--linie);stroke-width:1}
+.netz-legende-punkt{fill:var(--linie)}
+.netz-pro{fill:var(--pro);fill-opacity:.20;stroke:var(--pro);stroke-width:2}
+.netz-contra{fill:var(--contra);fill-opacity:.20;stroke:var(--contra);stroke-width:2}
+.netz-pro-punkt{fill:var(--pro)} .netz-contra-punkt{fill:var(--contra)}
+.netz-titel{font-family:Archivo,sans-serif;font-size:13px;font-weight:600;fill:var(--text)}
+.netz-wert{font-family:Archivo,sans-serif;font-size:12px;fill:var(--text-leise);
+  font-variant-numeric:tabular-nums}
+.legende{display:flex;gap:18px;margin:0 0 14px;font-size:14px;flex-wrap:wrap}
+.legende span{display:inline-flex;align-items:center;gap:7px}
+.punkt{width:12px;height:12px;border-radius:3px;display:inline-block}
+.punkt-pro{background:var(--pro)} .punkt-contra{background:var(--contra)}
+.achsenliste{margin:0;padding:0;list-style:none;border-top:1px solid var(--linie)}
+.achsenliste li{padding:11px 0;border-bottom:1px solid var(--linie);font-size:14.5px}
+.achsenliste b{font-family:Archivo,sans-serif}
+.achsenliste span{color:var(--text-leise);display:block;font-size:13.5px}
+.lesehilfe{margin:16px 0 0;padding:14px 16px;border-left:3px solid var(--linie);
+  font-size:14.5px;color:var(--text-leise)}
+.lesehilfe b{color:var(--text)}
+
+.spalten{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.spaltenkopf{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;letter-spacing:.05em;
+  text-transform:uppercase;padding:0 0 10px;border-bottom:2px solid currentColor;margin-bottom:16px}
+.spaltenkopf em{display:block;font-style:normal;text-transform:none;letter-spacing:0;
+  font-size:13px;font-weight:400;color:var(--text-leise);margin-top:3px}
+.kopf-pro{color:var(--pro-text)} .kopf-contra{color:var(--contra-text)}
+.stapel{display:flex;flex-direction:column;gap:20px}
+
+.karte{background:var(--karte);border:1px solid var(--linie);border-radius:14px;padding:20px 20px 16px;
+  box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.karte-offen{border-style:dashed}
+.karte-wertung{background:var(--flaeche)}
+.karte-kopf{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap;
+  margin-bottom:12px}
+.marke{font-family:Archivo,sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid currentColor}
+.marke-pro{color:var(--pro-text)} .marke-contra{color:var(--contra-text)}
+.typ{font-size:12.5px;color:var(--text-leise);text-align:right}
+.typ em{display:block;font-style:normal;opacity:.85}
+.karte-note{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  margin:0 0 10px;padding-bottom:9px;border-bottom:1px solid var(--linie)}
+.karte-punkte{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;
+  font-variant-numeric:tabular-nums}
+.karte-punkte-na{font-weight:400;font-size:13px;color:var(--text-leise);font-style:italic}
+.karte-zurueck{font-size:12.5px;color:var(--text-leise);text-decoration:none;white-space:nowrap}
+.karte-zurueck:hover{text-decoration:underline}
+.karte:target{outline:2px solid var(--text-leise);outline-offset:3px}
+html{scroll-behavior:smooth}
+:target{scroll-margin-top:18px}
+.aussage{margin:0 0 8px;font-family:Archivo,sans-serif;font-weight:500;font-size:18px;
+  line-height:1.36;letter-spacing:-.005em;border:0;padding:0}
+.traeger{margin:0 0 4px;font-size:14px;color:var(--text-leise)}
+.fundstelle{margin:0 0 14px;font-size:13.5px;color:var(--text-leise)}
+.fundstelle a{color:var(--text)}
+.fundstelle-offen{background:var(--flaeche);border-radius:8px;padding:9px 11px}
+.wertung-hinweis{font-size:14px;background:var(--grund);border:1px solid var(--linie);
+  border-radius:8px;padding:10px 12px;margin:0 0 14px;color:var(--text-leise)}
+
+.balken-block{margin:0 0 16px;border-top:1px solid var(--linie);padding-top:12px}
+.balken{display:grid;grid-template-columns:112px 1fr 20px;align-items:center;gap:10px;padding:3px 0}
+.balken-name{font-size:12.5px;color:var(--text-leise)}
+.balken-spur{display:flex;gap:3px}
+.balken-spur-na{font-size:11.5px;color:var(--text-leise);opacity:.7;font-style:italic}
+.seg{height:9px;flex:1;border-radius:2px}
+.seg-voll{background:var(--seg-voll)} .seg-leer{background:var(--seg-leer)}
+.balken-zahl{font-family:Archivo,sans-serif;font-size:13px;font-variant-numeric:tabular-nums;
+  text-align:right;color:var(--text-leise)}
+
+.praezis{display:flex;flex-direction:column;gap:8px;margin:0 0 6px}
+.praezis-teil{border-left:3px solid var(--linie);padding-left:13px}
+.praezis-zu{border-left-color:var(--seg-voll)}
+.praezis h4{margin:0 0 3px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-leise)}
+.praezis p{margin:0 0 8px;font-size:15px}
+.praezis p:last-child{margin-bottom:0}
+
+/* Aufklappbare Präzisierung */
+.pk{border-radius:10px;border:1px solid var(--linie);background:var(--grund);overflow:hidden}
+.pk summary{list-style:none;cursor:pointer;padding:10px 13px 10px 15px;position:relative;
+  display:flex;flex-direction:column;gap:2px;font-size:inherit;color:inherit}
+.pk summary::-webkit-details-marker{display:none}
+.pk summary::after{content:"";position:absolute;right:13px;top:15px;width:7px;height:7px;
+  border-right:2px solid var(--text-leise);border-bottom:2px solid var(--text-leise);
+  transform:rotate(45deg);transition:transform .15s}
+.pk[open] summary::after{transform:rotate(-135deg);top:18px}
+.pk summary:hover{background:var(--flaeche)}
+.pk-titel{font-family:Archivo,sans-serif;font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--text-leise);padding-right:22px}
+.pk-anriss{font-size:14px;color:var(--text-leise);padding-right:22px;line-height:1.4}
+.pk[open] .pk-anriss{display:none}
+.pk-inhalt{padding:0 15px 13px}
+.pk-inhalt p{margin:0 0 9px;font-size:15px}
+.pk-inhalt p:last-child{margin:0}
+.rohling{border:1px dashed var(--linie);border-radius:14px;padding:22px 24px;margin:0 0 30px;color:var(--text-leise)}
+.rohling h2{margin:0 0 8px;font-size:20px;color:var(--text)} .rohling p{margin:0}
+.folge ol{margin:0;padding-left:20px} .folge p{margin:0 0 8px} .folge p:last-child{margin:0}
+.km-einleitung{margin:0 0 16px;font-size:15px} .km-einleitung ol{margin:0;padding-left:22px} .km-einleitung li{margin:0 0 5px}
+.pk-inhalt ol,.praezis-teil ol,.zahlhinweis ol{margin:0 0 9px;padding-left:22px;font-size:15px}
+.pk-inhalt ol:last-child,.praezis-teil ol:last-child,.zahlhinweis ol:last-child{margin-bottom:0}
+.pk-inhalt ol li,.praezis-teil ol li,.zahlhinweis ol li{margin:0 0 6px;padding-left:4px}
+.pk-inhalt ol li::marker,.praezis-teil ol li::marker{font-family:Archivo,sans-serif;font-weight:600;color:var(--text-leise)}
+.praezis-teil p{margin:0 0 9px} .praezis-teil p:last-child{margin:0}
+
+/* Klappkästen unterhalb der Wertung */
+.karte-kaesten{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+.pk-neben,.pk-eigen{background:var(--karte)}
+.pk-neben .pk-titel,.pk-eigen .pk-titel{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.pk-eigen{border-left:3px solid var(--text)}
+.pk-inhalt .agrafik{margin:4px 0 0}
+.pk-inhalt .agrafik + .agrafik{margin-top:12px}
+.pk-inhalt .zahlhinweis{margin:10px 0 0}
+.kf-liste,.beleg-liste{margin:0;padding:0;list-style:none}
+
+/* «Was zutrifft» ruhig, «Was fehlt» mit Nachdruck */
+.pk-zu{border-left:3px solid var(--seg-leer)}
+.pk-fehlt{border-left:4px solid var(--text);background:var(--flaeche)}
+.pk-fehlt .pk-titel{color:var(--text);font-weight:700}
+.pk-fehlt .pk-anriss{color:var(--text)}
+.pk-fehlt summary::after{border-color:var(--text)}
+.pk-fehlt summary:hover{background:var(--grund)}
+
+details{font-size:14px}
+details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:13.5px}
+.schema{font-family:Archivo,sans-serif;border:1px solid var(--linie);border-radius:999px;
+  padding:1px 8px;font-size:11.5px;margin-left:6px;color:var(--text-leise)}
+.fragen ul,.belege ul{margin:6px 0 10px;padding:0;list-style:none}
+.kf{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:8px 0;
+  border-top:1px solid var(--linie)}
+.kf-frage{font-weight:500}
+.kf-status{font-size:11.5px;font-family:Archivo,sans-serif;color:var(--text-leise);
+  border:1px solid var(--linie);border-radius:999px;padding:1px 8px;white-space:nowrap;height:fit-content}
+.kf-nein{border-style:solid;border-width:1.5px}
+.kf-kommentar{grid-column:1/-1;color:var(--text-leise);font-size:13.5px}
+.belege li{padding:6px 0;border-top:1px solid var(--linie);font-size:13.5px}
+.quellenart{font-size:11.5px;color:var(--text-leise);border:1px solid var(--linie);
+  border-radius:999px;padding:0 7px;margin-left:4px;white-space:nowrap}
+
+.zahlhinweis{margin:0 0 10px;padding:9px 12px;border-radius:8px;background:var(--flaeche);
+  font-size:12.5px;color:var(--text-leise);border-left:3px solid var(--linie)}
+
+/* Abschnitte als Klappblöcke */
+.ab{margin-top:34px}
+.ab-klapp{border-top:1px solid var(--linie);padding-top:4px}
+.ab-klapp > summary{list-style:none;cursor:pointer;padding:12px 34px 12px 0;position:relative}
+.ab-klapp > summary::-webkit-details-marker{display:none}
+.ab-klapp > summary::after{content:"";position:absolute;right:6px;top:24px;width:9px;height:9px;
+  border-right:2px solid var(--text-leise);border-bottom:2px solid var(--text-leise);
+  transform:rotate(45deg);transition:transform .15s}
+.ab-klapp[open] > summary::after{transform:rotate(-135deg);top:28px}
+.ab-klapp > summary h2{display:inline;font-size:24px;letter-spacing:-.01em;margin:0}
+.ab-hinweis{display:block;color:var(--text-leise);margin-top:5px;font-size:15.5px}
+.ab-inhalt{padding-top:8px}
+
+/* Inhaltsverzeichnis */
+.iv{margin:26px 0 0;border:1px solid var(--linie);border-radius:14px;background:var(--karte);
+  padding:16px 20px}
+.iv h2{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--text-leise);
+  margin:0 0 10px}
+.iv ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:2px 20px;counter-reset:iv}
+.iv li{counter-increment:iv}
+.iv a{display:flex;gap:9px;padding:6px 0;text-decoration:none;font-size:14.5px;
+  border-bottom:1px solid transparent}
+.iv a:hover{border-bottom-color:var(--linie)}
+.iv a::before{content:counter(iv);font-family:Archivo,sans-serif;font-size:11.5px;
+  color:var(--text-leise);min-width:14px;padding-top:2px}
+.iv-schalter{margin-top:12px;display:flex;gap:8px}
+.iv-schalter button{font-family:Archivo,sans-serif;font-size:12.5px;padding:5px 12px;
+  border-radius:999px;border:1px solid var(--linie);background:none;color:var(--text-leise);
+  cursor:pointer}
+.iv-schalter button:hover{background:var(--flaeche);color:var(--text)}
+
+/* Grafik vergrössern */
+.zoombar{cursor:zoom-in}
+.lupe{position:fixed;inset:0;z-index:9000;background:rgba(10,14,20,.88);display:flex;
+  flex-direction:column;align-items:center;justify-content:center;padding:16px;gap:10px}
+.lupe[hidden]{display:none}
+.lupe img{max-width:100%;max-height:calc(100vh - 96px);background:#fff;border-radius:8px;
+  object-fit:contain}
+.lupe-kopf{display:flex;align-items:center;gap:14px;color:#fff;font-size:14px;
+  max-width:100%;flex-wrap:wrap;justify-content:center}
+.lupe-zu{border:1px solid rgba(255,255,255,.5);background:none;color:#fff;border-radius:999px;
+  padding:5px 14px;font-family:Archivo,sans-serif;font-size:13px;cursor:pointer}
+.lupe-zu:hover{background:rgba(255,255,255,.15)}
+
+/* Herkunftsmarken */
+.hk{display:inline-block;font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:4px;
+  margin:0 6px 4px 0;vertical-align:middle;white-space:nowrap}
+.hk-eigen{background:var(--text);color:var(--grund)}
+.hk-amtlich{border:1px solid var(--text-leise);color:var(--text-leise)}
+.hk-komitee{border:1px dashed var(--text-leise);color:var(--text-leise)}
+.hk-extern{border:1px solid var(--linie);color:var(--text-leise)}
+.hk-legende{margin:18px 0 0;padding:14px 16px;border:1px solid var(--linie);
+  border-radius:12px;background:var(--karte);font-size:13px;color:var(--text-leise)}
+.hk-legende b{display:block;color:var(--text);font-family:Archivo,sans-serif;font-size:11px;
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+/* Zwei Spalten, damit die drei Marken links an derselben Kante stehen und die
+   Erklaerungen daneben ebenfalls fluchten. Eine Flex-Zeile ergab drei
+   verschieden weit eingerueckte Zeilen. */
+.hk-raster{display:grid;grid-template-columns:max-content 1fr;gap:7px 12px;align-items:baseline}
+.hk-raster span.hk{margin:0;justify-self:start}
+
+/* Grafik in der Argumentkarte */
+.agrafik{margin:14px 0 6px;padding:0;border:1px solid var(--linie);border-radius:12px;overflow:hidden;
+  background:#F7F6F2}
+.agrafik img{display:block;width:100%;height:auto}
+.agrafik figcaption{padding:9px 12px;font-size:12.5px;color:var(--text-leise);background:var(--karte);
+  border-top:1px solid var(--linie)}
+.agrafik-eigen{border-color:var(--text)}
+.agrafik figcaption b{color:var(--text);font-family:Archivo,sans-serif;display:block;font-size:13px}
+.agrafik-quelle{display:block;margin-top:3px;font-size:11.5px;opacity:.85}
+
+/* Textkritik */
+.tk-liste{display:flex;flex-direction:column;gap:18px}
+.tk-karte{border:1px solid var(--linie);border-radius:14px;padding:20px;background:var(--karte)}
+.tk-kopf{display:flex;gap:13px;align-items:flex-start;margin-bottom:12px}
+.tk-nr{font-family:Archivo,sans-serif;font-weight:600;font-size:13px;border:1px solid var(--linie);
+  border-radius:999px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;
+  color:var(--text-leise);flex:none}
+.tk-karte h3{margin:0;font-size:18px;letter-spacing:-.005em}
+.tk-wo{font-size:12.5px;color:var(--text-leise)}
+.tk-wortlaut{margin:0 0 14px;padding:11px 14px;background:var(--flaeche);border-radius:10px;
+  border-left:3px solid var(--linie);font-size:15px;font-style:italic}
+.tk-tabelle{margin:14px 0}
+.tk-tab-titel{margin:0 0 7px;font-family:Archivo,sans-serif;font-size:12.5px;font-weight:600;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--text-leise)}
+.tk-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tk-scroll table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:460px}
+.tk-scroll th{text-align:left;font-family:Archivo,sans-serif;font-size:11.5px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--text-leise);font-weight:600;padding:7px 10px 7px 0;
+  border-bottom:1px solid var(--linie);white-space:nowrap}
+.tk-scroll td{padding:7px 10px 7px 0;border-bottom:1px solid var(--linie);
+  font-variant-numeric:tabular-nums}
+.tk-scroll td.z{text-align:right;padding-right:14px}
+.tk-scroll td.z-leise{color:var(--text-leise);font-size:12.5px}
+.tk-tab-fuss{margin:8px 0 0;font-size:12.5px;color:var(--text-leise)}
+.tk-quelle{margin:10px 0 0;font-size:12px;color:var(--text-leise);padding-top:9px;
+  border-top:1px solid var(--linie)}
+
+/* Karte */
+.km-block{border:1px solid var(--linie);border-radius:16px;padding:18px;background:var(--karte)}
+.km-knoepfe{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.km-knopf{font-family:Archivo,sans-serif;font-size:12.5px;padding:5px 11px;border-radius:999px;
+  border:1px solid var(--linie);background:none;color:var(--text-leise);cursor:pointer}
+.km-knopf:hover{background:var(--flaeche);color:var(--text)}
+.km-aktiv{background:var(--text);color:var(--grund);border-color:var(--text)}
+.km-buehne{background:#FCFCFA;border:1px solid var(--linie);border-radius:12px;overflow:hidden}
+.km-buehne img{display:block;width:100%;height:auto}
+.km-zahlen{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.km-kachel{border:1px solid var(--linie);border-radius:10px;padding:9px 13px;min-width:118px}
+.km-kachel span{display:block;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--text-leise);font-family:Archivo,sans-serif}
+.km-kachel b{font-family:Archivo,sans-serif;font-size:19px;font-variant-numeric:tabular-nums}
+.km-kachel i{font-style:normal;font-size:12.5px;color:var(--text-leise);margin-left:5px}
+.km-summe td{font-family:Archivo,sans-serif;font-weight:600;border-top:2px solid var(--linie)}
+.km-tabelle{margin-top:16px}
+
+/* Viewer */
+.vw-block{display:grid;grid-template-columns:236px 1fr;gap:16px;align-items:stretch;border:1px solid var(--linie);
+  border-radius:16px;padding:16px;background:var(--karte)}
+.vw-steuer{display:flex;flex-direction:column;gap:16px}
+.vw-gruppe h4{margin:0 0 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-leise)}
+.vw-opt{display:flex;align-items:flex-start;gap:8px;padding:3px 0;font-size:13.5px;cursor:pointer}
+.vw-opt input{margin:3px 0 0;flex:none;accent-color:var(--text)}
+.vw-opt span{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.vw-opt em{display:block;width:100%;font-style:normal;font-size:11.5px;color:var(--text-leise)}
+.vw-linie{display:inline-block;width:18px;height:0;flex:none}
+.vw-l100{border-top:5px solid var(--leg-eigen)}
+.vw-l300{border-top:3px dashed var(--leg-eigen)}
+.vw-lbus{border-top:3px dotted var(--leg-osm)}
+.vw-punkt{display:inline-block;width:9px;height:9px;border-radius:50%;background:#fff;
+  border:1.5px solid #1F2833;flex:none}
+.vw-regler{margin-top:12px;padding-top:12px;border-top:1px solid var(--linie);
+  font-size:12.5px;color:var(--text-leise)}
+.vw-regler label{display:block;margin-bottom:5px}
+.vw-regler input[type=range]{width:calc(100% - 46px);accent-color:var(--text);vertical-align:middle}
+.vw-regler output{display:inline-block;width:42px;text-align:right;
+  font-family:Archivo,sans-serif;font-variant-numeric:tabular-nums;color:var(--text)}
+/* Legende der amtlichen Rasterebenen. Das Bild kommt vom Amt, damit die
+   Farbskala und ihre Bedeutung aus derselben Hand stammen wie die Kacheln. */
+.vw-amtleg{position:absolute;right:10px;top:10px;z-index:500;max-width:min(320px,46%);
+  background:var(--karte);border:1px solid var(--linie);border-radius:10px;
+  box-shadow:0 2px 12px rgba(16,24,40,.16)}
+.vw-amtleg[hidden]{display:none}
+.vw-amtleg > summary{cursor:pointer;list-style:none;padding:8px 11px;
+  font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--text-leise);display:flex;justify-content:space-between;
+  gap:10px;align-items:center}
+.vw-amtleg > summary::-webkit-details-marker{display:none}
+.vw-amtleg-pfeil{flex:none;font-size:10px;transition:transform .12s}
+.vw-amtleg[open] .vw-amtleg-pfeil{transform:rotate(180deg)}
+/* Die amtlichen Legendenbilder sind gross und viersprachig. Eingeklappt
+   nimmt der Kasten eine Zeile, aufgeklappt hoechstens die halbe Kartenhoehe. */
+.vw-amtleg-inhalt{max-height:min(52vh,calc(100% - 60px));overflow:auto;padding:0 11px 10px}
+.vw-amtleg h5{margin:0 0 5px;font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--text-leise)}
+.vw-amtleg h5 + img{margin-bottom:9px}
+.vw-amtleg img{display:block;max-width:100%;background:#fff;border-radius:4px}
+.vw-gruppe select{width:100%;padding:6px 8px;font:inherit;font-size:13.5px;border-radius:8px;
+  border:1px solid var(--linie);background:var(--grund);color:var(--text)}
+.vw-buehne{position:relative;display:flex;min-height:560px}
+.vw-karte{flex:1;min-height:560px;border-radius:12px;overflow:hidden;border:1px solid var(--linie);
+  background:var(--flaeche)}
+.vw-legende{position:absolute;right:10px;bottom:26px;background:var(--karte);
+  border:1px solid var(--linie);border-radius:10px;padding:10px 13px;z-index:500;
+  box-shadow:0 2px 8px rgba(16,24,40,.12);font-size:12.5px;color:var(--text-leise)}
+.vw-legende[hidden]{display:none}
+.vw-legende p{margin:0 0 5px;display:flex;align-items:center;gap:8px}
+.vw-legende p:last-child{margin:0}
+.vw-legtitel{font-family:Archivo,sans-serif;font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--text);font-weight:600}
+.vw-legfuss{font-size:11.5px;font-style:italic;margin-top:6px !important}
+.vw-lueber{border-top:5px solid var(--leg-kanton);width:22px}
+.vw-lreg{border-top:3px solid var(--leg-kanton);width:22px;opacity:.6}
+.vw-lstr{border-top:4px solid var(--leg-kanton)}
+.vw-geltung{margin:0 0 14px;border:1px solid var(--linie);border-radius:14px;padding:14px 16px;
+  background:var(--karte)}
+.vw-gknoepfe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.vw-glabel{font-family:Archivo,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-leise);margin-right:4px}
+.vw-gknopf{font-family:Archivo,sans-serif;font-size:13.5px;font-weight:600;padding:6px 14px;
+  border-radius:999px;border:1px solid var(--linie);background:none;color:var(--text-leise);
+  cursor:pointer}
+.vw-gknopf:hover{background:var(--flaeche);color:var(--text)}
+.vw-gaktiv{background:var(--text);color:var(--grund);border-color:var(--text)}
+.vw-gaus{font-weight:400;font-size:12.5px}
+.vw-gtext{margin-top:12px;font-size:14.5px}
+.vw-gtext[hidden]{display:none}
+.vw-gtext p{margin:0 0 7px} .vw-gtext p:last-child{margin:0;color:var(--text-leise)}
+.vw-gkrit{padding:9px 12px;background:var(--flaeche);border-radius:8px;
+  border-left:3px solid var(--seg-voll)}
+.leaflet-container{font:inherit;background:var(--flaeche)}
+.vw-pop{font-size:13px;line-height:1.45}
+.vw-pop b{font-family:Archivo,sans-serif}
+@media (max-width:900px){
+  .vw-block{grid-template-columns:1fr}
+  .vw-karte{height:420px}
+  .vw-steuer{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+}
+
+/* Kantonsrat */
+.kr-raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.kr-karte{border:1px solid var(--linie);border-radius:14px;padding:16px 18px;
+  background:var(--karte);display:flex;flex-direction:column}
+.kr-karte .kr-detail{flex:1}
+.kr-kopf{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  font-size:12.5px;color:var(--text-leise)}
+.kr-nr{font-family:Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px}
+.kr-ergebnis{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;color:var(--text);
+  font-variant-numeric:tabular-nums}
+.kr-karte h4{margin:6px 0 3px;font-size:15.5px}
+.kr-detail{margin:0 0 10px;font-size:14px;color:var(--text-leise)}
+.kr-umkehr{margin:0 0 10px;font-size:13px;background:var(--flaeche);border-radius:8px;
+  padding:8px 10px;color:var(--text-leise)}
+.kr-gesamt,.kr-fbalken{display:flex;height:10px;border-radius:3px;overflow:hidden;
+  background:var(--seg-leer)}
+.kr-ja{background:var(--pro)} .kr-nein{background:var(--contra)} .kr-rest{background:transparent}
+.kr-neben{margin:7px 0 0;font-size:12.5px;color:var(--text-leise)}
+.kr-frakt-liste{display:flex;flex-direction:column;gap:6px;padding:4px 0 8px}
+.kr-frakt{display:grid;grid-template-columns:1fr 90px 44px;align-items:center;gap:8px;font-size:12.5px}
+.kr-fname{color:var(--text-leise);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kr-fbalken{height:8px}
+.kr-fzahl{text-align:right;font-family:Archivo,sans-serif;font-variant-numeric:tabular-nums;
+  color:var(--text-leise)}
+
+.fuss{margin-top:64px;border-top:1px solid var(--linie);padding-top:24px;font-size:14px;
+  color:var(--text-leise)}
+.fuss h2{font-size:17px;color:var(--text);margin:22px 0 8px}
+.fuss h2:first-child{margin-top:0}
+.fuss ol,.fuss ul{padding-left:20px} .fuss li{margin:5px 0}
+
+.schalter{position:fixed;right:18px;bottom:18px;border:1px solid var(--linie);background:var(--karte);
+  color:var(--text);border-radius:999px;padding:9px 16px;font-size:13.5px;cursor:pointer;
+  font-family:Archivo,sans-serif;box-shadow:0 2px 10px rgba(16,24,40,.10)}
+
+@media (max-width:900px){
+  .netz-block,.spalten,.folgen{grid-template-columns:1fr}
+  .spalten .spalte + .spalte{margin-top:14px}
+  .ue-zeile{grid-template-columns:1fr 78px;gap:6px 12px;padding:12px 8px}
+  .ue-marke{grid-column:1} .ue-zahl,.ue-na{grid-column:2;grid-row:1}
+  .ue-text{grid-column:1/-1} .ue-typ{grid-column:1} .ue-spur{grid-column:2;align-self:center}
+  .ue-spur-na{grid-column:2;grid-row:1;white-space:normal;font-size:11px;line-height:1.3}
+  .vw-block{grid-template-columns:1fr}
+  .vw-buehne{min-height:420px} .vw-karte{min-height:420px}
+}
+
+.bildstart{position:fixed;left:18px;bottom:18px;z-index:30;display:flex;align-items:center;gap:8px;
+  border:1px solid var(--linie);background:var(--karte);color:var(--text);border-radius:999px;
+  padding:9px 16px;font-size:13.5px;cursor:pointer;font-family:Archivo,sans-serif;font-weight:600;
+  box-shadow:0 2px 10px rgba(16,24,40,.10)}
+.bildmodal{position:fixed;inset:0;z-index:80;background:rgba(8,12,16,.55);display:flex;
+  align-items:center;justify-content:center;padding:22px}
+.bildmodal[hidden]{display:none}
+.bildbox{background:var(--grund);border:1px solid var(--linie);border-radius:16px;
+  width:min(980px,100%);max-height:92vh;overflow:auto;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.bildkopf{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;
+  border-bottom:1px solid var(--linie);position:sticky;top:0;background:var(--grund);z-index:2}
+.bildkopf h2{margin:0;font-size:19px}
+.bildzu{background:none;border:0;font-size:26px;line-height:1;color:var(--text-leise);cursor:pointer;padding:0 4px}
+.bildbody{display:grid;grid-template-columns:300px 1fr;gap:24px;padding:22px}
+.bildwahl label{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--text-leise);margin:14px 0 7px}
+.bildwahl label:first-child{margin-top:0}
+.bildwahl select{width:100%;background:var(--flaeche);border:1px solid var(--linie);border-radius:8px;
+  padding:10px 12px;font-size:13.5px;color:var(--text)}
+.bildnote{font-size:12.5px;color:var(--text-leise);line-height:1.5;margin:14px 0 14px}
+.bildwahl .bildknopf{display:block;width:100%;margin-top:8px;border:1px solid var(--text);background:var(--text);
+  color:var(--grund);border-radius:8px;padding:10px 12px;font-size:13.5px;font-family:Archivo,sans-serif;
+  font-weight:600;cursor:pointer}
+.bildwahl .bildknopf.leise{background:transparent;color:var(--text);border-color:var(--linie)}
+.bildwahl .bildknopf[hidden]{display:none}
+.bildregel{font-size:12px;color:var(--text-leise);line-height:1.5;margin:16px 0 0;padding-top:12px;
+  border-top:1px solid var(--linie)}
+.bildvorschau{display:flex;justify-content:center;align-items:flex-start}
+.bildvorschau canvas{width:100%;max-width:340px;height:auto;border-radius:10px;border:1px solid var(--linie);
+  box-shadow:0 8px 24px rgba(16,24,40,.12)}
+@media (max-width:900px){.bildbody{grid-template-columns:1fr}.bildstart{left:14px;bottom:14px}}
+@media print{.bildstart,.bildmodal{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="kopf">
+  <div class="ober">
+    <span class="marke-seite">Abstimmungsspiegel · Kanton Schaffhausen</span>
+    <span class="termin">Abstimmung 29.11.2026</span>
+  </div>
+  <h1>Änderung des Spitalgesetzes</h1>
+  <p class="untertitel">Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»</p>
+  <p class="lead">Noch offen. Hier steht in drei bis vier Sätzen, was die Vorlage ändert und wer sie vorgelegt hat.</p>
+
+  <div class="folgen">
+    <div class="folge folge-ja"><h3>Bei einem Ja</h3><ol><li>Noch offen: erste Folge eines Ja.</li><li>Noch offen: zweite Folge eines Ja.</li></ol></div>
+    <div class="folge folge-nein"><h3>Bei einem Nein</h3><ol><li>Noch offen: Es bleibt beim geltenden Spitalgesetz.</li><li>Noch offen: zweite Folge eines Nein.</li></ol></div>
+  </div>
+
+  
+
+  <p class="warn"><strong>Quellen und Methode.</strong>
+  Argumentarien liegen noch nicht vor. Grundlage bis dahin: Abstimmungsvorlage und Bericht und Antrag des Regierungsrats vom 29. Oktober 2024. Bewertet wird der Beleg
+  einer Aussage, nicht die Aussage selbst. Aussagen sind noch keine erfasst.</p>
+
+  <div class="hk-legende"><b>Woher stammt was</b>
+    <div class="hk-raster">
+      <span class="hk hk-komitee">Aussage eines Komitees</span><span>steht so im Argumentarium oder auf der Website eines Komitees</span>
+      <span class="hk hk-amtlich">Amtliche Quelle</span><span>Erlasstext, Abstimmungsmagazin, Bundesgericht, Statistik von Bund oder Kanton</span>
+      <span class="hk hk-eigen">Eigene Auswertung</span><span>Auswertung aus diesem Projekt, mit offengelegter Rechnung</span>
+    </div>
+  </div>
+  <nav class="iv" aria-label="Inhalt">
+    <h2>Inhalt</h2>
+    <ol><li><a href="#kantonsrat">Wie der Kantonsrat gestimmt hat</a></li><li><a href="#methode">Methode und Quellen</a></li></ol>
+    <div class="iv-schalter">
+      <button id="iv-auf" type="button">alles aufklappen</button>
+      <button id="iv-zu" type="button">alles zuklappen</button>
+    </div>
+  </nav>
+</header>
+
+
+<section class="ab"><div class="rohling">
+  <h2>Die Argumente folgen</h2>
+  <p>Für diese Vorlage sind noch keine Aussagen erfasst. Sobald die Argumentarien beider Seiten
+  vorliegen, stehen hier je Aussage der Wortlaut, die Fundstelle und die Prüfung des Belegs.</p>
+</div></section>
+
+
+
+
+
+
+
+<section id="kantonsrat" class="ab"><details class="ab-klapp" open><summary><h2>Wie der Kantonsrat dazu gestimmt hat</h2><span class="ab-hinweis">Dieselbe Vorlage, 4 namentliche Abstimmungen am 11. und 12. Sitzung 2026 · 24.08.2026 (Vormittag) · <a href="https://sh.ch/CMS/get/file/fdb10c56-6e84-4a8d-b8ff-eb1d838e3953" target="_blank" rel="noopener">Wortprotokoll</a>. Gezählt aus den vom Kantonsrat publizierten Abstimmungsergebnissen.</span></summary><div class="ab-inhalt"><div class="kr-raster">
+<div class="kr-karte">
+  <div class="kr-kopf"><span class="kr-nr">Abstimmung 2</span>
+    <span class="kr-ergebnis">1 Ja : 52 Nein</span></div>
+  <h4>Antrag RR M. Montanari</h4>
+  <p class="kr-detail">Anpassung Art. 14 Abs. 3 lit. l wie folgt: den Erlass sämtlicher arbeitsrechtlicher Grundlagen sowie den Abschluss bzw. den Erlass eines Gesamtarbeitsvertrages in Verhandlung mit den Sozialpartnern und der Personalkommission.</p>
+  <p class="kr-umkehr">Richtungsverkehrt: «Ja bedeutet        Zustimmung Antrag Gesko». Angezeigt ist das protokollierte Ergebnis.</p>
+  <div class="kr-gesamt"><span class="kr-ja" style="flex:1"></span>
+    <span class="kr-nein" style="flex:52"></span></div>
+  <p class="kr-neben">0 Enthaltungen · 7 abwesend oder nicht teilgenommen</p>
+  <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:9"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">0:9</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:7"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">0:7</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:17"></span><span class="kr-rest" style="flex:0.017"></span></span><span class="kr-fzahl">0:17</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:1"></span><span class="kr-nein" style="flex:19"></span><span class="kr-rest" style="flex:0.02"></span></span><span class="kr-fzahl">1:19</span></div></div></details>
+</div>
+<div class="kr-karte">
+  <div class="kr-kopf"><span class="kr-nr">Abstimmung 3</span>
+    <span class="kr-ergebnis">0 Ja : 53 Nein</span></div>
+  <h4>Antrag RR M. Montanari</h4>
+  <p class="kr-detail">Einführung eines Art. 17 Abs. 3 lit. f wie folgt: die schuldrechtlichen Bestimmungen über die Rechte und Pflichten der Vertragsparteien.</p>
+  <p class="kr-umkehr">Richtungsverkehrt: «Ja bedeutet        Zustimmung Antrag Gesko». Angezeigt ist das protokollierte Ergebnis.</p>
+  <div class="kr-gesamt"><span class="kr-ja" style="flex:0.001"></span>
+    <span class="kr-nein" style="flex:53"></span></div>
+  <p class="kr-neben">0 Enthaltungen · 7 abwesend oder nicht teilgenommen</p>
+  <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:9"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">0:9</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:7"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">0:7</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:16"></span><span class="kr-rest" style="flex:0.016"></span></span><span class="kr-fzahl">0:16</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:21"></span><span class="kr-rest" style="flex:0.021"></span></span><span class="kr-fzahl">0:21</span></div></div></details>
+</div>
+<div class="kr-karte">
+  <div class="kr-kopf"><span class="kr-nr">Abstimmung 4</span>
+    <span class="kr-ergebnis">43 Ja : 0 Nein</span></div>
+  <h4>Schlussabstimmung Spitalgesetz</h4>
+  <p class="kr-detail">obligatorisches Referendum</p>
+  
+  <div class="kr-gesamt"><span class="kr-ja" style="flex:43"></span>
+    <span class="kr-nein" style="flex:0.001"></span></div>
+  <p class="kr-neben">12 Enthaltungen · 5 abwesend oder nicht teilgenommen</p>
+  <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:9"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">9:0</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:7"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">7:0</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:6"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.006"></span></span><span class="kr-fzahl">6:0</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:21"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.021"></span></span><span class="kr-fzahl">21:0</span></div></div></details>
+</div>
+<div class="kr-karte">
+  <div class="kr-kopf"><span class="kr-nr">Abstimmung 5</span>
+    <span class="kr-ergebnis">51 Ja : 3 Nein</span></div>
+  <h4>Motion Nr. 2019/9 von Christian Heydecker vom 19. November 2029 mit dem Titel «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»</h4>
+  <p class="kr-detail"></p>
+  
+  <div class="kr-gesamt"><span class="kr-ja" style="flex:51"></span>
+    <span class="kr-nein" style="flex:3"></span></div>
+  <p class="kr-neben">0 Enthaltungen · 6 abwesend oder nicht teilgenommen</p>
+  <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:9"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">9:0</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:6"></span><span class="kr-nein" style="flex:1"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">6:1</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:18"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.018000000000000002"></span></span><span class="kr-fzahl">18:0</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:18"></span><span class="kr-nein" style="flex:2"></span><span class="kr-rest" style="flex:0.02"></span></span><span class="kr-fzahl">18:2</span></div></div></details>
+</div></div></div></details></section>
+
+<footer class="fuss" id="methode">
+  <h2>Methode</h2>
+  <ol>
+    <li>Argumente werden aus denselben Quellenarten für beide Seiten gesammelt: Website des
+      Komitees, amtliches Abstimmungsmagazin, Medienmitteilungen. Gleiche Anzahl je Seite.</li>
+    <li>Jede Aussage wird als Tatsachenbehauptung, Prognose oder Werturteil eingestuft.
+      Werturteile werden nicht bewertet.</li>
+    <li>Geprüft wird der Beleg, nicht die Politik: Quellenlage, Zahlenfestigkeit,
+      Ursachennachweis, Reichweite, Übertragbarkeit. Achsen, die auf eine Aussage nicht
+      passen, bleiben leer statt null.</li>
+    <li>Beide Komitees können sich jederzeit zu ihren Karten äussern. Widerspruch wird als
+      Zitat aufgenommen, nicht weggeschrieben.</li>
+    <li>Korrekturen werden sichtbar protokolliert, nicht stillschweigend nachgeführt.</li>
+  </ol>
+  <p>Grundlagen: Toulmin-Schema, Argumentationsschemata mit kritischen Fragen nach Walton,
+  IFCN- und EFCSN-Kodex für Faktenprüfung, statistische Prüfregeln der empirischen
+  Sozialforschung.</p>
+
+  <h2>Quellen zur Vorlage</h2>
+  <ul><li><a href="" target="_blank" rel="noopener">Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes</a> <span class="quellenart">amtlich</span></li><li><a href="" target="_blank" rel="noopener">Schaffhauser Abstimmungs-Magazin zur Volksabstimmung vom 29. November 2026</a> <span class="quellenart">amtlich</span></li></ul>
+
+  <p>Stand 2026-09-04, erzeugt am 03.09.2026. Vorlage, Daten und Skripte: <a href="https://github.com/michaeljkahler/politspiegel" target="_blank" rel="noopener">Quellcode auf GitHub</a>.
+  Aufbereitung ohne Gewähr.</p>
+</footer>
+
+</div>
+<div class="lupe" id="lupe" hidden>
+  <div class="lupe-kopf"><span id="lupe-titel"></span>
+    <button class="lupe-zu" id="lupe-zu">schliessen</button></div>
+  <img id="lupe-bild" alt="">
+</div>
+<button class="schalter" id="schalter">Hell / Dunkel</button>
+
+<div class="bildmodal" id="bildModal" hidden>
+  <div class="bildbox" role="dialog" aria-modal="true" aria-labelledby="bildTitel">
+    <div class="bildkopf">
+      <h2 id="bildTitel">Bild für Social Media</h2>
+      <button type="button" class="bildzu" id="bildZu" aria-label="Schliessen">&times;</button>
+    </div>
+    <div class="bildbody">
+      <div class="bildwahl">
+        <label for="bildMotiv">Motiv</label>
+        <select id="bildMotiv"></select>
+        <div id="bildFolieWrap" hidden>
+          <label for="bildFolie">Folie</label>
+          <select id="bildFolie"></select>
+        </div>
+        <p class="bildnote">Hochformat 1080 × 1350, das Standardmass für Beiträge auf
+        Instagram, LinkedIn und Facebook. Die Farben folgen dem gewählten Hell- oder
+        Dunkelmodus der Seite.</p>
+        <button type="button" class="bildknopf" id="bildLaden">Als PNG herunterladen</button>
+        <button type="button" class="bildknopf leise" id="bildAlle" hidden>Alle Folien als ZIP herunterladen</button>
+        <p class="bildregel">Das Karussell zeigt die Karte einer Seite, Folie für Folie. Die letzte
+        Folie zeigt immer die Aussage der Gegenseite mit gleicher Nummer, damit kein Bild ohne
+        Gegenseite in Umlauf kommt. Bewertet wird der Beleg, nicht das Argument. Kein Text wird
+        abgeschnitten: Was nicht Platz hat, wird kleiner gesetzt oder auf eine weitere Folie verteilt.</p>
+      </div>
+      <div class="bildvorschau"><canvas id="bildCanvas" width="1080" height="1350"></canvas></div>
+    </div>
+  </div>
+</div>
+<button type="button" class="bildstart" id="bildStart">
+  <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+    <rect x="2" y="3" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/>
+    <circle cx="6" cy="7" r="1.4" fill="currentColor"/>
+    <path d="M3 12l3.5-3.5 2.5 2.5 2-2L13 12" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+  </svg>Bild für Social Media</button>
+
+<script id="bild-daten" type="application/json">{"url": "https://michaeljkahler.github.io/politspiegel/abstimmung/2026-11-29-spitalgesetz/", "vorlage": {"titel": "Änderung des Spitalgesetzes", "untertitel": "Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»", "ebene": "Kanton Schaffhausen", "datum": "29. November 2026", "worum": "Noch offen. Hier steht in drei bis vier Sätzen, was die Vorlage ändert und wer sie vorgelegt hat.", "bei_ja": "1. Noch offen: erste Folge eines Ja.\n2. Noch offen: zweite Folge eines Ja.", "bei_nein": "1. Noch offen: Es bleibt beim geltenden Spitalgesetz.\n2. Noch offen: zweite Folge eines Nein."}, "seiten": {"pro": {"name": "Für die Änderung", "komitee": "Befürworter"}, "contra": {"name": "Gegen die Änderung", "komitee": "Gegner"}}, "achsen": [{"id": "quelle", "kurz": "Quellenlage"}, {"id": "zahl", "kurz": "Zahlenfestigkeit"}, {"id": "ursache", "kurz": "Ursachennachweis"}, {"id": "reichweite", "kurz": "Reichweite"}, {"id": "transfer", "kurz": "Übertragbarkeit"}], "mittel": {"pro": {"quelle": 0.0, "zahl": 0.0, "ursache": 0.0, "reichweite": 0.0, "transfer": 0.0}, "contra": {"quelle": 0.0, "zahl": 0.0, "ursache": 0.0, "reichweite": 0.0, "transfer": 0.0}}, "summe": {"pro": [0, 0], "contra": [0, 0]}, "argumente": [], "kantonsrat": {"sitzung": "11. und 12. Sitzung 2026 · 24.08.2026 (Vormittag)", "protokoll": "https://sh.ch/CMS/get/file/fdb10c56-6e84-4a8d-b8ff-eb1d838e3953", "abstimmungen": [{"nr": 2, "titel": "Antrag RR M. Montanari", "details": "Anpassung Art. 14 Abs. 3 lit. l wie folgt: den Erlass sämtlicher arbeitsrechtlicher Grundlagen sowie den Abschluss bzw. den Erlass eines Gesamtarbeitsvertrages in Verhandlung mit den Sozialpartnern und der Personalkommission.", "ja": 1, "nein": 52, "enth": 0, "abw": 7, "umkehr": "Ja bedeutet        Zustimmung Antrag Gesko", "fraktionen": [{"name": "FDP-Die Mitte", "ja": 0, "nein": 9}, {"name": "GLP-EVP", "ja": 0, "nein": 7}, {"name": "SP-JUSO-GRÜNE-Junge Grüne", "ja": 0, "nein": 17}, {"name": "SVP-EDU", "ja": 1, "nein": 19}]}, {"nr": 3, "titel": "Antrag RR M. Montanari", "details": "Einführung eines Art. 17 Abs. 3 lit. f wie folgt: die schuldrechtlichen Bestimmungen über die Rechte und Pflichten der Vertragsparteien.", "ja": 0, "nein": 53, "enth": 0, "abw": 7, "umkehr": "Ja bedeutet        Zustimmung Antrag Gesko", "fraktionen": [{"name": "FDP-Die Mitte", "ja": 0, "nein": 9}, {"name": "GLP-EVP", "ja": 0, "nein": 7}, {"name": "SP-JUSO-GRÜNE-Junge Grüne", "ja": 0, "nein": 16}, {"name": "SVP-EDU", "ja": 0, "nein": 21}]}, {"nr": 4, "titel": "Schlussabstimmung Spitalgesetz", "details": "obligatorisches Referendum", "ja": 43, "nein": 0, "enth": 12, "abw": 5, "umkehr": "", "fraktionen": [{"name": "FDP-Die Mitte", "ja": 9, "nein": 0}, {"name": "GLP-EVP", "ja": 7, "nein": 0}, {"name": "SP-JUSO-GRÜNE-Junge Grüne", "ja": 6, "nein": 0}, {"name": "SVP-EDU", "ja": 21, "nein": 0}]}, {"nr": 5, "titel": "Motion Nr. 2019/9 von Christian Heydecker vom 19. November 2029 mit dem Titel «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»", "details": "", "ja": 51, "nein": 3, "enth": 0, "abw": 6, "umkehr": "", "fraktionen": [{"name": "FDP-Die Mitte", "ja": 9, "nein": 0}, {"name": "GLP-EVP", "ja": 6, "nein": 1}, {"name": "SP-JUSO-GRÜNE-Junge Grüne", "ja": 18, "nein": 0}, {"name": "SVP-EDU", "ja": 18, "nein": 2}]}]}, "stand": "2026-09-04"}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const w=document.documentElement, k=document.getElementById('schalter');
+const g=localStorage.getItem('abstimmungsspiegel-theme'); if(g) w.setAttribute('data-theme',g);
+k.addEventListener('click',()=>{
+  const d = w.getAttribute('data-theme')==='dark'
+    || (!w.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+  const n = d?'light':'dark'; w.setAttribute('data-theme',n);
+  localStorage.setItem('abstimmungsspiegel-theme',n);
+});
+
+// Grafiken vergrössern
+const lupe=document.getElementById('lupe'), lupeBild=document.getElementById('lupe-bild'),
+      lupeTitel=document.getElementById('lupe-titel');
+function zeigeLupe(img){
+  lupeBild.src=img.currentSrc||img.src;
+  lupeBild.alt=img.alt||'';
+  lupeTitel.textContent=img.dataset.titel||img.alt||'';
+  lupe.hidden=false; document.body.style.overflow='hidden';
+  document.getElementById('lupe-zu').focus();
+}
+function schliesseLupe(){ lupe.hidden=true; lupeBild.src=''; document.body.style.overflow=''; }
+document.addEventListener('click',ev=>{
+  const img=ev.target.closest('img.zoombar');
+  if(img){ ev.preventDefault(); zeigeLupe(img); return; }
+  if(ev.target.closest('#lupe')) schliesseLupe();
+});
+document.addEventListener('keydown',ev=>{
+  if(ev.key==='Escape' && !lupe.hidden) schliesseLupe();
+  const img=ev.target.closest && ev.target.closest('img.zoombar');
+  if(img && (ev.key==='Enter'||ev.key===' ')){ ev.preventDefault(); zeigeLupe(img); }
+});
+
+// Inhaltsverzeichnis: alles auf oder zu
+const klappen=()=>[...document.querySelectorAll('details.ab-klapp')];
+const auf=document.getElementById('iv-auf'), zu=document.getElementById('iv-zu');
+if(auf) auf.addEventListener('click',()=>klappen().forEach(d=>d.open=true));
+if(zu)  zu.addEventListener('click',()=>klappen().forEach(d=>d.open=false));
+// Sprungziel in einem zugeklappten Abschnitt vorher aufklappen
+function oeffneZiel(){
+  const id=location.hash.slice(1); if(!id) return;
+  const el=document.getElementById(id); if(!el) return;
+  let p=el.closest('details'); 
+  while(p){ p.open=true; p=p.parentElement && p.parentElement.closest('details'); }
+  setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),40);
+}
+window.addEventListener('hashchange',oeffneZiel);
+document.addEventListener('click',ev=>{
+  const a=ev.target.closest('a[href^="#"]'); if(!a) return;
+  const el=document.getElementById(a.getAttribute('href').slice(1)); if(!el) return;
+  let p=el.closest('details');
+  while(p){ p.open=true; p=p.parentElement && p.parentElement.closest('details'); }
+});
+
+// Kartenviewer
+const vwEl=document.getElementById('vw-geo');
+if(vwEl && window.L){
+  const geo=JSON.parse(vwEl.textContent);
+  const karte=L.map('vw-karte',{scrollWheelZoom:false}).setView([47.7234,8.6636],11);
+  window.vwKarte=karte;   // Zugriff fuer die Layoutpruefung
+  karte.on('click',()=>karte.scrollWheelZoom.enable());
+  karte.on('mouseout',()=>karte.scrollWheelZoom.disable());
+  L.control.scale({imperial:false}).addTo(karte);
+
+  const wmts=(id,ts,fmt)=>L.tileLayer(
+    `https://wmts.geo.admin.ch/1.0.0/${id}/default/${ts}/3857/{z}/{x}/{y}.${fmt}`,
+    {maxZoom:19, attribution:'&copy; <a href="https://www.geo.admin.ch/">geo.admin.ch</a>'});
+  const basen={
+    'osm': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {maxZoom:19, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}),
+    'ch.swisstopo.pixelkarte-grau': wmts('ch.swisstopo.pixelkarte-grau','current','jpeg'),
+    'ch.swisstopo.swisstlm3d-karte-grau': wmts('ch.swisstopo.swisstlm3d-karte-grau','current','png')
+  };
+  // Im dunklen Schema ist die OSM-Kachel ein hell leuchtendes Rechteck. Die
+  // Graukarte von swisstopo ist ruhiger; die Wahl bleibt umschaltbar.
+  const dunkel=()=>document.documentElement.getAttribute('data-theme')==='dark'
+    || (!document.documentElement.getAttribute('data-theme')
+        && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const startBasis=dunkel()?'ch.swisstopo.swisstlm3d-karte-grau':'osm';
+  let aktiveBasis=basen[startBasis].addTo(karte);
+  const bAus=document.querySelector(`input[name="vw-base"][value="${startBasis}"]`);
+  if(bAus) bAus.checked=true;
+  document.querySelectorAll('input[name="vw-base"]').forEach(r=>r.addEventListener('change',()=>{
+    karte.removeLayer(aktiveBasis); aktiveBasis=basen[r.value].addTo(karte); aktiveBasis.bringToBack();
+  }));
+
+  // Farbe aus den CSS-Variablen lesen, damit hell und dunkel dieselbe Quelle haben
+  const farbe=n=>getComputedStyle(document.documentElement).getPropertyValue('--geo-'+n).trim();
+  const stil=r=>r===100
+    ? {color:farbe('eigen'),weight:5,opacity:.95}
+    : {color:farbe('eigen'),weight:3,opacity:.9,dashArray:'7 5'};
+  const mach=r=>L.geoJSON(geo,{filter:f=>f.properties.r===r, style:()=>stil(r),
+    onEachFeature:(f,l)=>l.bindPopup(
+      `<div class="vw-pop"><b>${f.properties.g}</b><br>betroffener Abschnitt innerhalb `+
+      `${f.properties.r} m einer Schule, eines Kindergartens oder eines Heims</div>`)});
+  const ebenen={100:mach(100).addTo(karte), 300:mach(300).addTo(karte)};
+  ebenen[100].bringToFront();
+  const bind=(id,r)=>document.getElementById(id).addEventListener('change',ev=>{
+    if(ev.target.checked){ebenen[r].addTo(karte); if(r===100) ebenen[r].bringToFront();}
+    else karte.removeLayer(ebenen[r]);});
+  bind('vw-k100',100); bind('vw-k300',300);
+
+  const vorn=()=>Object.values(ebenen).forEach(l=>karte.hasLayer(l)&&l.bringToFront());
+  const amt={};
+  const regler=document.getElementById('vw-deck');
+  const reglerAus=document.getElementById('vw-deck-aus');
+  const deckung=()=>regler?Number(regler.value)/100:0.55;
+
+  // Legende: das Bild liegt beim Bund je Ebene bereit. Kommt keines, bleibt
+  // der Kasten leer statt eine erfundene Skala zu zeigen.
+  const legKasten=document.getElementById('vw-amtleg');
+  const legInhalt=document.getElementById('vw-amtleg-inhalt');
+  const legTitel=document.getElementById('vw-amtleg-titel');
+  const legenden={};
+  const legZeichnen=()=>{
+    const eintraege=Object.entries(legenden);
+    // Bei einer Ebene steht ihr Name schon in der Kopfzeile, dann keine
+    // Zwischenueberschrift; bei mehreren braucht jedes Bild seine.
+    const eine=eintraege.length===1;
+    legInhalt.innerHTML=eintraege.map(([id,n])=>
+      (eine?'':`<h5>${n}</h5>`)+`<img alt="Legende ${n}" loading="lazy"`+
+      ` src="https://api3.geo.admin.ch/static/images/legends/${id}_de.png">`).join('');
+    legTitel.textContent=eine
+      ? 'Legende: '+eintraege[0][1]
+      : `Amtliche Legenden (${eintraege.length})`;
+    legKasten.hidden=eintraege.length===0;
+  };
+  document.querySelectorAll('.vw-wmts').forEach(c=>c.addEventListener('change',()=>{
+    const id=c.dataset.id;
+    const name=(c.parentElement.querySelector('span')?.firstChild?.textContent||id).trim();
+    if(c.checked){
+      amt[id]=wmts(id,c.dataset.ts,c.dataset.fmt);
+      amt[id].setOpacity(deckung()); amt[id].addTo(karte);
+      legenden[id]=name; vorn();
+    } else if(amt[id]){
+      karte.removeLayer(amt[id]); delete amt[id]; delete legenden[id];
+    }
+    legZeichnen();
+  }));
+  if(regler) regler.addEventListener('input',()=>{
+    reglerAus.textContent=regler.value+' %';
+    Object.values(amt).forEach(l=>l.setOpacity(deckung()));
+    Object.values(kant).forEach(l=>l.setOpacity(deckung()));
+  });
+
+  // Kantonale WMS-Ebenen
+  const shWms=id=>L.tileLayer.wms('https://wms.geo.sh.ch/wms',
+    {layers:id, format:'image/png', transparent:true, version:'1.3.0', maxZoom:19,
+     attribution:'&copy; <a href="https://agi.sh.ch/">Amt für Geoinformation Kanton Schaffhausen</a>'});
+  const kant={};
+  const schalte=(id,an)=>{
+    if(an && !kant[id]){ kant[id]=shWms(id); kant[id].setOpacity(deckung());
+      kant[id].addTo(karte); vorn(); }
+    else if(!an && kant[id]){ karte.removeLayer(kant[id]); delete kant[id]; }
+    const box=document.querySelector(`.vw-shwms[data-id="${id}"]`);
+    if(box) box.checked=an;
+  };
+  document.querySelectorAll('.vw-shwms').forEach(c=>
+    c.addEventListener('change',()=>schalte(c.dataset.id, c.checked)));
+
+  // Verkehrsorientierte Kantonsstrassen aus dem Strassenrichtplan, als Vektoren
+  let strassen=null;
+  const sEl=document.getElementById('vw-strassen-daten');
+  if(sEl){
+    strassen=L.geoJSON(JSON.parse(sEl.textContent),{
+      style:f=>f.properties.k==='ueberregional'
+        ? {color:farbe('kanton'),weight:5,opacity:.9}
+        : {color:farbe('kanton'),weight:3,opacity:.55},
+      onEachFeature:(f,l)=>l.bindPopup('<div class="vw-pop"><b>'+
+        (f.properties.k==='ueberregional'?'Überregionale':'Regionale')+
+        ' Kantonsstrasse</b><br>verkehrsorientiert laut Strassenrichtplan</div>')});
+  }
+  const zeigeStrassen=an=>{
+    if(!strassen) return;
+    if(an){ strassen.addTo(karte); strassen.bringToBack(); if(aktiveBasis) aktiveBasis.bringToBack(); }
+    else karte.removeLayer(strassen);
+    const b=document.getElementById('vw-strassen'); if(b) b.checked=an;
+    const lg=document.getElementById('vw-legende'); if(lg) lg.hidden=!an;
+  };
+  const sBox=document.getElementById('vw-strassen');
+  if(sBox) sBox.addEventListener('change',()=>zeigeStrassen(sBox.checked));
+
+  // Busnetz aus den OSM-Linienrelationen
+  let busnetz=null;
+  const bEl=document.getElementById('vw-bus-daten');
+  if(bEl){
+    busnetz=L.geoJSON(JSON.parse(bEl.textContent),
+      {style:{color:farbe('osm'),weight:3,opacity:.9,dashArray:'2 5'}, interactive:false});
+  }
+  const zeigeBus=an=>{
+    if(!busnetz) return;
+    if(an) busnetz.addTo(karte); else karte.removeLayer(busnetz);
+    const b=document.getElementById('vw-bus'); if(b) b.checked=an;
+  };
+  const bBox=document.getElementById('vw-bus');
+  if(bBox) bBox.addEventListener('change',()=>zeigeBus(bBox.checked));
+
+  // Bushaltestellen, eigene Punktebene aus den BAV-Daten
+  let halte=null;
+  const hEl=document.getElementById('vw-halte-daten');
+  if(hEl){
+    halte=L.geoJSON(JSON.parse(hEl.textContent),{
+      pointToLayer:(f,ll)=>L.circleMarker(ll,{radius:4,color:farbe('osm'),weight:1.5,
+        fillColor:'#FFFFFF',fillOpacity:1}),
+      onEachFeature:(f,l)=>l.bindPopup(
+        `<div class="vw-pop"><b>${f.properties.n}</b><br>Bushaltestelle, ${f.properties.tu}</div>`)});
+  }
+  const zeigeHalte=an=>{
+    if(!halte) return;
+    if(an){ halte.addTo(karte); halte.bringToFront(); } else karte.removeLayer(halte);
+    const b=document.getElementById('vw-halte'); if(b) b.checked=an;
+  };
+  const hBox=document.getElementById('vw-halte');
+  if(hBox) hBox.addEventListener('change',()=>zeigeHalte(hBox.checked));
+
+  // Geltungsbereich der beiden Erlasstexte
+  const gDaten=JSON.parse(document.getElementById('vw-geltung-daten').textContent);
+  const gText=document.getElementById('vw-gtext');
+  document.querySelectorAll('.vw-gknopf').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.key;
+    document.querySelectorAll('.vw-gknopf').forEach(x=>x.classList.toggle('vw-gaktiv',x===b));
+    Object.keys(kant).forEach(id=>schalte(id,false));
+    zeigeHalte(false); zeigeBus(false); zeigeStrassen(false);
+    if(!k){ gText.innerHTML=''; gText.hidden=true; return; }
+    const g=gDaten[k];
+    g.l.forEach(id=>schalte(id,true));
+    if(g.s) zeigeStrassen(true);
+    if(g.b) zeigeBus(true);
+    if(g.h) zeigeHalte(true);
+    gText.hidden=false;
+    gText.innerHTML='<p class="vw-gkrit">Gilt für: '+g.k+'</p><p>'+g.t+'</p>';
+  }));
+
+  const alle=L.geoJSON(geo);
+  document.getElementById('vw-sprung').addEventListener('change',ev=>{
+    const g=ev.target.value;
+    if(!g){ karte.fitBounds(alle.getBounds(),{padding:[20,20]}); return; }
+    const t=L.geoJSON(geo,{filter:f=>f.properties.g===g});
+    const b=t.getBounds();
+    if(b.isValid()) karte.fitBounds(b,{padding:[30,30]});
+  });
+  karte.fitBounds(alle.getBounds(),{padding:[20,20]});
+}
+
+// Gemeindeauswahl der Karte
+const kmEl=document.getElementById('km-daten');
+if(kmEl){
+  const daten=JSON.parse(kmEl.textContent);
+  const bild=document.getElementById('km-bild'), zahlen=document.getElementById('km-zahlen');
+  const komma=v=>String(v).replace('.',',');
+  function zeige(i){
+    const x=daten[i];
+    bild.src='grafiken/gemeinden/karte_'+x.d+'.svg';
+    bild.alt='Karte '+x.n+': betroffene Kantonsstrassen und Umkreise sensibler Nutzungen';
+    zahlen.innerHTML=
+      '<div class="km-kachel"><span>betroffen</span><b>'+komma(x.b)+'</b><i>km</i></div>'+
+      '<div class="km-kachel"><span>bis 100 m</span><b>'+komma(x.k1)+'</b><i>km · '+x.p1+' %</i></div>'+
+      '<div class="km-kachel"><span>bis 300 m</span><b>'+komma(x.k3)+'</b><i>km · '+x.p3+' %</i></div>'+
+      '<div class="km-kachel"><span>bis 500 m</span><b>'+komma(x.k5)+'</b><i>km · '+x.p5+' %</i></div>'+
+      '<div class="km-kachel"><span>Anlagen S/K/H/So</span><b>'+x.a+'</b></div>';
+    document.querySelectorAll('.km-knopf').forEach(b=>
+      b.classList.toggle('km-aktiv', +b.dataset.i===i));
+  }
+  document.querySelectorAll('.km-knopf').forEach(b=>
+    b.addEventListener('click',()=>zeige(+b.dataset.i)));
+  zeige(0);
+}
+</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('bild-daten').textContent);
+  var W = 1080, H = 1350, M = 72, INNEN = W - 2*M;
+  var $ = function(s){ return document.querySelector(s); };
+  var FUSS = H - 132;          // oberhalb liegt der Inhalt, darunter das Wasserzeichen
+  var LIMIT = FUSS - 14;       // unterste erlaubte Grundlinie fuer Text
+  var BILDER = {};             // geladene Grafiken, Schluessel: Datei
+
+  /* Kein Text wird abgeschnitten. Jeder Textblock meldet, wenn er unter die
+     Fusslinie geraet (UEBERLAUF), und zeichne() setzt das ganze Motiv dann in
+     der naechstkleineren Stufe neu, bis alles Platz hat. S ist der Massstab
+     der Schrift; Kopf und Fuss bleiben davon unberuehrt. */
+  var S = 1, UEBERLAUF = false;
+  function sk(px){ return Math.round(px * S); }
+  function pruefe(y){ if (y > LIMIT) UEBERLAUF = true; }
+
+  function farbe(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888'; }
+  function palette(){
+    return { bg: farbe('--grund'), karte: farbe('--karte'), flaeche: farbe('--flaeche'),
+             ink: farbe('--text'), leise: farbe('--text-leise'), linie: farbe('--linie'),
+             pro: farbe('--pro'), contra: farbe('--contra'),
+             segVoll: farbe('--seg-voll'), segLeer: farbe('--seg-leer') };
+  }
+  function seitenFarbe(p, s){ return s === 'pro' ? p.pro : p.contra; }
+  function gegen(s){ return s === 'pro' ? 'contra' : 'pro'; }
+  function ARCH(px, w){ return (w || 600) + ' ' + sk(px) + 'px Archivo, "Helvetica Neue", Arial, sans-serif'; }
+  function SANS(px, w){ return (w || 400) + ' ' + sk(px) + 'px "Public Sans", "Helvetica Neue", Arial, sans-serif'; }
+
+  /* ---- Text ------------------------------------------------------------ */
+  /* Umbruch. Absaetze sind durch Leerzeile getrennt, Zeilen innerhalb eines
+     Absatzes durch einen Zeilenwechsel; so stehen nummerierte Listen
+     («1. …» je Zeile) in der Vorlage. Eine Listenzeile bekommt einen
+     haengenden Einzug: Fortsetzungszeilen beginnen mit einem Tabulator, den
+     text() als Einzug zeichnet. Rueckgabe: Zeilen, '' fuer Absatzabstand. */
+  var EINZUG = 44;
+  function zeilen(x, str, maxW){
+    var out = [];
+    String(str || '').split(/\n\s*\n/).forEach(function(abs, i){
+      if (i) out.push('');
+      abs.split(/\n/).forEach(function(hart){
+        hart = hart.replace(/\s+/g, ' ').trim();
+        if (!hart) return;
+        var liste = /^\d+\.\s/.test(hart), z = '', breite = maxW;
+        hart.split(' ').forEach(function(wd){
+          var t = z ? z + ' ' + wd : wd;
+          if (x.measureText(t).width > breite && z) {
+            out.push(z); z = (liste ? '\t' : '') + wd; breite = liste ? maxW - EINZUG * S : maxW;
+          } else z = t;
+        });
+        if (z) out.push(z);
+      });
+    });
+    return out;
+  }
+  /* Zeichnet einen Text mit Umbruch und gibt die naechste freie Zeile zurueck.
+     Es wird nie gekuerzt: Was nicht mehr ueber der Fusslinie Platz hat,
+     loest den Ueberlauf aus, und das Motiv wird kleiner neu gesetzt. Der
+     dritte Zahlenparameter frueherer Fassungen (Zeilenlimit) wird ignoriert. */
+  function text(x, str, px, y, maxW, lh){
+    lh = lh * S;
+    var zs = zeilen(x, str, maxW);
+    zs.forEach(function(z){
+      if (z) x.fillText(z.charAt(0) === '\t' ? z.slice(1) : z, z.charAt(0) === '\t' ? px + EINZUG * S : px, y);
+      pruefe(y); y += z ? lh : lh * 0.55;
+    });
+    return y;
+  }
+  function hoehe(x, str, maxW, lh){
+    lh = lh * S;
+    var zs = zeilen(x, str, maxW);
+    var h = 0; zs.forEach(function(z){ h += z ? lh : lh * 0.55; }); return h;
+  }
+  /* Fliesstext, der den Platz nutzt: die groesste Schrift aus der Reihe, bei
+     der der ganze Text in die freie Hoehe passt. Passt er auch in der
+     kleinsten nicht, wird dort gekuerzt. So bleibt eine kurze Antwort gross
+     und eine lange lesbar, statt beide gleich klein zu setzen. */
+  function fliess(x, str, px, y, maxW, frei, groessen){
+    groessen = groessen || [34, 30, 27, 24];
+    for (var i = 0; i < groessen.length; i++){
+      var g = groessen[i], lh = Math.round(g * 1.45);
+      x.font = SANS(g, 400);
+      if (hoehe(x, str, maxW, lh) <= frei || i === groessen.length - 1)
+        return text(x, str, px, y, maxW, lh);
+    }
+  }
+  function linie(x, x1, y1, x2, y2, f, b){
+    x.strokeStyle = f; x.lineWidth = b || 1; x.beginPath(); x.moveTo(x1, y1); x.lineTo(x2, y2); x.stroke();
+  }
+  function rundrect(x, px, py, w, h, r){
+    x.beginPath(); x.moveTo(px + r, py); x.arcTo(px + w, py, px + w, py + h, r);
+    x.arcTo(px + w, py + h, px, py + h, r); x.arcTo(px, py + h, px, py, r); x.arcTo(px, py, px + w, py, r); x.closePath();
+  }
+  /* Marke: Umriss-Pille mit Versalien, wie auf der Seite. Gibt die Breite zurueck. */
+  function marke(x, str, px, py, f){
+    x.font = ARCH(17, 600); var s = str.toUpperCase(); var w = x.measureText(s).width + 30;
+    x.strokeStyle = f; x.lineWidth = 2; rundrect(x, px, py - 24, w, 36, 18); x.stroke();
+    x.fillStyle = f; x.fillText(s, px + 15, py + 1);
+    return w;
+  }
+  function pille(x, str, px, py, fg, bg){
+    x.font = ARCH(15, 600); var w = x.measureText(str).width + 24;
+    x.fillStyle = bg; rundrect(x, px, py - 20, w, 30, 15); x.fill();
+    x.fillStyle = fg; x.fillText(str, px + 12, py + 1);
+    return w;
+  }
+
+  /* ---- Rahmen ---------------------------------------------------------- */
+  function kopf(x, p){
+    var s0 = S; S = 1;
+    x.fillStyle = p.bg; x.fillRect(0, 0, W, H);
+    x.textBaseline = 'alphabetic';
+    x.fillStyle = p.ink; x.font = ARCH(28, 700); x.fillText('ABSTIMMUNGSSPIEGEL', M, 92);
+    x.fillStyle = p.leise; x.font = SANS(19, 600);
+    x.fillText((D.vorlage.ebene + ' · Abstimmung vom ' + D.vorlage.datum).toUpperCase(), M, 126);
+    linie(x, M, 152, W - M, 152, p.ink, 3);
+    S = s0;
+    return 226;
+  }
+  function fuss(x, p, rechts){
+    var s0 = S; S = 1;
+    linie(x, M, FUSS, W - M, FUSS, p.linie, 1);
+    x.fillStyle = p.ink; x.font = SANS(22, 700);
+    x.fillText('Politspiegel Schaffhausen · Abstimmungsspiegel', M, FUSS + 40);
+    x.fillStyle = p.leise; x.font = SANS(18, 400);
+    x.fillText(D.url ? D.url.replace(/^https?:\/\//, '') : 'Bewertet wird der Beleg einer Aussage, nicht die Aussage.', M, FUSS + 70);
+    if (rechts) { x.textAlign = 'right'; x.font = SANS(18, 600); x.fillText(rechts, W - M, FUSS + 70); x.textAlign = 'left'; }
+    S = s0;
+  }
+  function titel(x, p, str, y, px){
+    x.fillStyle = p.ink; x.font = ARCH(px || 40, 600);
+    return text(x, str, M, y, INNEN, (px || 40) * 1.18, 3) + 10;
+  }
+
+  /* ---- Netz ------------------------------------------------------------ */
+  function netz(x, p, cx, cy, r, reihen, beschriftet, pruefung){
+    var n = D.achsen.length;
+    function pol(i, f){ var w = -Math.PI/2 + i*2*Math.PI/n; return [cx + r*f*Math.cos(w), cy + r*f*Math.sin(w)]; }
+    x.strokeStyle = p.linie; x.lineWidth = 1.5;
+    [1,2,3,4].forEach(function(st){
+      x.beginPath(); for (var i = 0; i < n; i++){ var q = pol(i, st/4); i ? x.lineTo(q[0], q[1]) : x.moveTo(q[0], q[1]); }
+      x.closePath(); x.stroke();
+    });
+    for (var i = 0; i < n; i++){
+      var q = pol(i, 1); var na = pruefung && pruefung[D.achsen[i].id] == null;
+      x.setLineDash(na ? [6, 6] : []); linie(x, cx, cy, q[0], q[1], p.linie, 1.5); x.setLineDash([]);
+    }
+    reihen.forEach(function(rw){
+      var pts = [];
+      for (var i = 0; i < n; i++){ var v = rw.werte[D.achsen[i].id]; if (v == null) continue; pts.push(pol(i, v/4)); }
+      if (pts.length >= 3){
+        x.beginPath(); pts.forEach(function(q, k){ k ? x.lineTo(q[0], q[1]) : x.moveTo(q[0], q[1]); }); x.closePath();
+        x.globalAlpha = 0.18; x.fillStyle = rw.farbe; x.fill(); x.globalAlpha = 1;
+        x.strokeStyle = rw.farbe; x.lineWidth = 3.5; x.stroke();
+      }
+      pts.forEach(function(q){ x.beginPath(); x.arc(q[0], q[1], 6, 0, 2*Math.PI); x.fillStyle = rw.farbe; x.fill(); });
+    });
+    if (beschriftet){
+      for (var i = 0; i < n; i++){
+        var q = pol(i, 1.24); var a = D.achsen[i];
+        x.textAlign = Math.abs(q[0] - cx) <= 10 ? 'center' : (q[0] < cx ? 'right' : 'left');
+        x.fillStyle = p.ink; x.font = ARCH(21, 600); x.fillText(a.kurz, q[0], q[1] + 7);
+        if (reihen.length === 2){
+          x.fillStyle = p.leise; x.font = SANS(18, 400);
+          x.fillText(f1(reihen[0].werte[a.id]) + ' zu ' + f1(reihen[1].werte[a.id]), q[0], q[1] + 32);
+        } else if (pruefung){
+          x.fillStyle = p.leise; x.font = SANS(18, 400);
+          x.fillText(pruefung[a.id] == null ? 'nicht anwendbar' : pruefung[a.id] + ' von 4', q[0], q[1] + 32);
+        }
+      }
+      x.textAlign = 'left';
+    }
+  }
+  function f1(v){ return (Math.round(v*10)/10).toFixed(1).replace('.', ','); }
+
+  /* Fuenf Balken, einer je Achse, wie auf der Karte. */
+  function balken(x, p, y, pruefung, f){
+    D.achsen.forEach(function(a){
+      var v = pruefung[a.id];
+      x.fillStyle = p.ink; x.font = SANS(22, 600); x.fillText(a.kurz, M, y + 8);
+      var bx = M + 250, bw = 120, gap = 12;
+      if (v == null){
+        x.fillStyle = p.leise; x.font = SANS(19, 400); x.fillText('nicht anwendbar', bx, y + 8);
+      } else {
+        for (var k = 0; k < 4; k++){ x.fillStyle = k < v ? f : p.segLeer; rundrect(x, bx + k*(bw+gap), y - 10, bw, 22, 5); x.fill(); }
+        x.fillStyle = p.ink; x.font = SANS(22, 700); x.textAlign = 'right'; x.fillText(String(v), W - M, y + 8); x.textAlign = 'left';
+      }
+      y += 48;
+    });
+    return y;
+  }
+
+  /* ---- Motive ---------------------------------------------------------- */
+  function mVorlage(x, p, y){
+    var v = D.vorlage;
+    y = titel(x, p, v.titel, y + 30, 50);
+    x.fillStyle = p.leise; x.font = SANS(25, 400);
+    y = text(x, v.untertitel, M, y, INNEN, 34, 3) + 26;
+    x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('WORUM ES GEHT', M, y); y += 34;
+    x.fillStyle = p.ink; x.font = SANS(24, 400);
+    y = text(x, v.worum, M, y, INNEN, 34, 8) + 22;
+    var kasten = [['Bei einem Ja', v.bei_ja], ['Bei einem Nein', v.bei_nein]];
+    var frei = FUSS - 20 - y, kh = Math.floor((frei - 16) / 2);
+    kasten.forEach(function(k){
+      x.fillStyle = p.flaeche; rundrect(x, M, y, INNEN, kh, 14); x.fill();
+      x.fillStyle = p.ink; x.font = ARCH(22, 600); x.fillText(k[0], M + 26, y + 40);
+      x.fillStyle = p.ink; x.font = SANS(20, 400);
+      var ende = text(x, k[1], M + 26, y + 74, INNEN - 52, 28);
+      if (ende > y + kh - 4) UEBERLAUF = true;
+      y += kh + 16;
+    });
+  }
+
+  function mGegen(x, p, y){
+    y = titel(x, p, 'Wie gut sind die Argumente belegt?', y + 24, 40);
+    x.fillStyle = p.leise; x.font = SANS(22, 400);
+    y = text(x, 'Mittelwert je Achse über die geprüften Aussagen, 0 bis 4 Punkte. ' +
+             'Gemessen wird der Beleg, nicht die Richtigkeit.', M, y, INNEN, 31, 3);
+    netz(x, p, W/2, y + 330, 230,
+         [{ werte: D.mittel.pro, farbe: p.pro }, { werte: D.mittel.contra, farbe: p.contra }], true);
+    y += 690;
+    ['pro', 'contra'].forEach(function(s){
+      var f = seitenFarbe(p, s), su = D.summe[s];
+      x.fillStyle = f; rundrect(x, M, y - 14, 22, 22, 5); x.fill();
+      x.fillStyle = p.ink; x.font = ARCH(24, 600); x.fillText(D.seiten[s].komitee, M + 38, y + 6);
+      x.fillStyle = p.leise; x.font = SANS(21, 400); x.textAlign = 'right';
+      x.fillText(su[0] + ' von ' + su[1] + ' Punkten, Werturteile ausgenommen', W - M, y + 6); x.textAlign = 'left';
+      y += 48;
+    });
+    x.fillStyle = p.leise; x.font = SANS(19, 400);
+    text(x, 'Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch. ' +
+         'Ob Reisezeit oder Wohnruhe schwerer wiegt, messen diese Achsen nicht.', M, y + 10, INNEN, 27, 3);
+  }
+
+  function argHalb(x, p, a, y, hh){
+    var f = seitenFarbe(p, a.seite), ende = y + hh;
+    var mw = marke(x, D.seiten[a.seite].komitee, M, y, f);
+    x.fillStyle = p.leise; x.font = SANS(17, 400); x.fillText(a.typ_name, M + mw + 16, y);
+    y += 44;
+    x.fillStyle = p.ink; x.font = ARCH(27, 600);
+    y = text(x, '«' + a.aussage + '»', M, y, INNEN, 36, 5) + 6;
+    x.fillStyle = p.leise; x.font = SANS(18, 400);
+    y = text(x, a.traeger, M, y, INNEN, 24, 1) + 18;
+    if (a.typ === 'wertung'){
+      x.fillStyle = p.leise; x.font = SANS(20, 400);
+      if (text(x, 'Werturteil. Steht ohne Note, weil sich kein Beleg dafür prüfen lässt.', M, y + 8, INNEN, 28) > ende) UEBERLAUF = true;
+      return ende;
+    }
+    var r = Math.min(70, (ende - y - 10) / 2);
+    netz(x, p, M + r + 10, y + r + 4, r, [{ werte: a.pruefung, farbe: f }], false, a.pruefung);
+    x.fillStyle = p.ink; x.font = ARCH(36, 700); x.fillText(a.erreicht + ' von ' + a.moeglich, M + 2*r + 50, y + r - 4);
+    x.fillStyle = p.leise; x.font = SANS(18, 400); x.fillText('Punkten für den Beleg', M + 2*r + 50, y + r + 24);
+    var tx = M + 2*r + 50, ty = y + r + 58; x.font = SANS(17, 400);
+    var teile = D.achsen.map(function(ax){ var v = a.pruefung[ax.id]; return ax.kurz + ' ' + (v == null ? '–' : v); });
+    if (text(x, teile.join('  ·  '), tx, ty, W - M - tx, 24) > ende + 10) UEBERLAUF = true;
+    if (y + 2*r + 12 > ende + 10) UEBERLAUF = true;
+    return ende;
+  }
+
+  function mPaar(x, p, y, n){
+    var pro = D.argumente.filter(function(a){ return a.seite === 'pro'; })[n],
+        con = D.argumente.filter(function(a){ return a.seite === 'contra'; })[n];
+    x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText(('Aussagenpaar ' + (n+1)).toUpperCase(), M, y);
+    y += 40;
+    var hh = (FUSS - 40 - y) / 2;
+    if (pro) argHalb(x, p, pro, y + 26, hh - 30);
+    linie(x, M, y + hh, W - M, y + hh, p.linie, 1.5);
+    if (con) argHalb(x, p, con, y + hh + 40, hh - 30);
+  }
+
+  function mKantonsrat(x, p, y){
+    var kr = D.kantonsrat;
+    y = titel(x, p, 'Wie der Kantonsrat gestimmt hat', y + 24, 40);
+    x.fillStyle = p.leise; x.font = SANS(21, 400);
+    y = text(x, 'Dieselbe Vorlage im Rat: namentliche Abstimmungen am ' + kr.sitzung +
+             ', gezählt aus dem Wortprotokoll.', M, y, INNEN, 30, 2) + 14;
+    /* Die Zeilen fliessen; passt die Folge nicht bis zur Fusslinie, setzt
+       zeichne() das Motiv kleiner. Ein festes Budget je Zeile hatte zuvor
+       zweizeilige Antraege in die naechste Zeile laufen lassen. */
+    var n = kr.abstimmungen.length, luft = n > 4 ? 16 : 30;
+    kr.abstimmungen.forEach(function(v){
+      x.fillStyle = p.leise; x.font = ARCH(15, 600);
+      x.fillText(('Abstimmung ' + v.nr + ' · ' + v.titel).toUpperCase(), M, y + 2);
+      x.fillStyle = p.ink; x.font = SANS(22, 600); x.textAlign = 'right';
+      x.fillText(v.ja + ' Ja : ' + v.nein + ' Nein', W - M, y + 2); x.textAlign = 'left';
+      y += 30;
+      x.fillStyle = p.ink; x.font = ARCH(21, 600);
+      y = text(x, v.details || v.titel, M, y, INNEN, 27) + 6;
+      /* Ja dunkel, Nein hell. Die Seitenfarben waeren hier irrefuehrend: Wer fuer
+         die Initiative ist, stimmt beim Gegenvorschlag mit Nein. */
+      var s = Math.max(v.ja + v.nein, 1), bw = INNEN;
+      x.fillStyle = p.linie; rundrect(x, M, y, bw, 18, 4); x.fill();
+      x.fillStyle = p.ink; rundrect(x, M, y, bw * v.ja / s, 18, 4); x.fill();
+      y += 34;
+      x.fillStyle = p.leise; x.font = SANS(16, 400);
+      var fr = v.fraktionen.map(function(f){ return f.name + ' ' + f.ja + ':' + f.nein; }).join('  ·  ');
+      y = text(x, fr + (v.enth ? '  ·  ' + v.enth + ' Enth.' : ''), M, y, INNEN, 22) + luft;
+    });
+    x.fillStyle = p.leise; x.font = SANS(15, 400);
+    pruefe(y + 6);
+    x.fillText('Balken: Anteil Ja dunkel, Anteil Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 14);
+  }
+
+  /* ---- Karussell ------------------------------------------------------- */
+  /* Ein langer Text wird auf mehrere Folien verteilt statt abgeschnitten.
+     Gemessen wird in der kleinsten Schrift, die fliess() noch waehlt; was
+     dort nicht auf eine Folie passt, bekommt eine zweite. Absatzgrenzen
+     bleiben erhalten, damit kein Satz ueber den Folienrand springt. */
+  var MX = document.createElement('canvas').getContext('2d');
+  function seiten(str, frei){
+    /* Immer im Massstab 1 gemessen: Die Zahl der Folien darf sich nicht
+       aendern, wenn zeichne() eine Folie kleiner setzt. */
+    var s0 = S; S = 1;
+    MX.font = SANS(24, 400);
+    var lh = Math.round(24 * 1.45), maxL = Math.floor(frei / lh);
+    /* Einheit der Verteilung ist die harte Zeile (ein Absatz oder ein
+       Listenpunkt). Eine Einheit wechselt lieber ganz auf die naechste Folie,
+       als mitten im Satz zu brechen; nur eine Einheit laenger als eine Folie
+       wird geteilt. Zusammengesetzt wird der Text wieder aus den Einheiten,
+       mit Leerzeile zwischen Absaetzen und Zeilenwechsel zwischen
+       Listenpunkten, damit die Folie dieselbe Form zeigt wie die Seite. */
+    var einheiten = [];
+    String(str || '').split(/\n\s*\n/).forEach(function(abs, i){
+      abs.split(/\n/).forEach(function(hart, j){
+        hart = hart.replace(/\s+/g, ' ').trim();
+        if (hart) einheiten.push({ t: hart, trenner: j ? '\n' : (i ? '\n\n' : ''), h: zeilen(MX, hart, INNEN).length });
+      });
+    });
+    var out = [], akt = [], n = 0;
+    einheiten.forEach(function(u){
+      var abstand = u.trenner === '\n\n' ? 0.55 : 0;
+      if (akt.length && n + abstand + u.h > maxL){
+        if (u.h <= maxL){ out.push(akt); akt = []; n = 0; }
+        else {
+          /* Einheit laenger als eine Folie: zeilenweise auffuellen und teilen */
+          var zs = zeilen(MX, u.t, INNEN), rest = [];
+          zs.forEach(function(z){ if (n + abstand + 1 <= maxL){ rest.push(z); n += 1; } });
+          var kopf = rest.map(function(z){ return z.replace(/^\t/, ''); }).join(' ');
+          var schwanz = zs.slice(rest.length).map(function(z){ return z.replace(/^\t/, ''); }).join(' ');
+          if (kopf) akt.push({ t: kopf, trenner: u.trenner });
+          out.push(akt); akt = []; n = 0;
+          if (schwanz){ u = { t: schwanz, trenner: '', h: zeilen(MX, schwanz, INNEN).length }; }
+          else return;
+        }
+      }
+      akt.push({ t: u.t, trenner: akt.length ? u.trenner : '' }); n += (akt.length > 1 ? abstand : 0) + u.h;
+    });
+    if (akt.length) out.push(akt);
+    S = s0;
+    return out.map(function(seite){
+      return seite.map(function(u){ return u.trenner + u.t; }).join('');
+    }).filter(function(s){ return s; });
+  }
+  function textFolien(f, name, str, extra){
+    var frei = FUSS - 30 - (226 + 20 + 52 + 8) - (extra ? 130 : 0);
+    var st = seiten(str, frei);
+    st.forEach(function(teil, i){
+      var nm = name + (st.length > 1 ? ' (' + (i+1) + '/' + st.length + ')' : '');
+      f.push({ name: nm, z: function(x, p, y){
+        y = titel(x, p, nm, y + 20, 36);
+        var res = (extra && i === st.length - 1) ? 130 : 0;
+        x.fillStyle = p.ink; y = fliess(x, teil, M, y + 8, INNEN, FUSS - 30 - res - y);
+        if (extra && i === st.length - 1){ x.fillStyle = p.leise; x.font = SANS(19, 400); text(x, extra, M, y + 14, INNEN, 26, 4); }
+      }});
+    });
+  }
+  function folien(a){
+    var f = [], w = a.typ === 'wertung';
+    f.push({ name: 'Aussage', z: function(x, p, y){
+      var fb = seitenFarbe(p, a.seite);
+      var mw = marke(x, D.seiten[a.seite].komitee, M, y + 10, fb);
+      x.fillStyle = p.leise; x.font = SANS(18, 400); x.fillText(a.typ_name, M + mw + 16, y + 10);
+      y += 76;
+      x.fillStyle = p.ink;
+      var gr = [54, 48, 42, 36], k;
+      for (k = 0; k < gr.length; k++){ x.font = ARCH(gr[k], 600);
+        if (hoehe(x, '«' + a.aussage + '»', INNEN, gr[k]*1.25) <= 620 || k === gr.length-1) break; }
+      y = text(x, '«' + a.aussage + '»', M, y, INNEN, gr[k]*1.25) + 18;
+      x.fillStyle = p.leise; x.font = SANS(22, 400);
+      y = text(x, a.traeger, M, y, INNEN, 30, 2) + 12;
+      if (a.fundstelle){ x.font = SANS(19, 400);
+        text(x, 'Fundstelle: ' + a.fundstelle.titel + (a.fundstelle.datum ? ' · ' + a.fundstelle.datum : ''), M, y, INNEN, 26, 2); }
+      else if (a.offen){ x.font = SANS(19, 400); text(x, 'Fundstelle offen: noch nicht mit Urheber und Datum belegt.', M, y, INNEN, 26, 2); }
+    }});
+    f.push({ name: w ? 'Ohne Note' : 'Belegprüfung', z: function(x, p, y){
+      var fb = seitenFarbe(p, a.seite);
+      y = titel(x, p, w ? 'Warum diese Aussage ohne Note steht' : 'Wie gut ist die Aussage belegt?', y + 20, 36);
+      x.fillStyle = p.leise; x.font = SANS(22, 400);
+      y = text(x, '«' + a.aussage + '»', M, y, INNEN, 30, 3) + 20;
+      if (w){
+        x.fillStyle = p.ink; x.font = SANS(28, 400);
+        text(x, 'Werturteil. Es ist weder wahr noch falsch, und es lässt sich kein Beleg dafür prüfen. ' +
+             'Es wird dargestellt, aber nicht benotet, und geht nicht in die Netzgrafik ein.', M, y + 10, INNEN, 38, 8);
+        return;
+      }
+      x.fillStyle = p.ink; x.font = ARCH(56, 700); x.fillText(a.erreicht + ' von ' + a.moeglich, M, y + 46);
+      x.fillStyle = p.leise; x.font = SANS(22, 400); x.fillText('Punkten, 4 je anwendbare Achse', M + 30 + x.measureText('').width + (function(){ x.font = ARCH(56, 700); var w = x.measureText(a.erreicht + ' von ' + a.moeglich).width; x.font = SANS(22, 400); return w; })(), y + 46);
+      netz(x, p, W/2, y + 290, 150, [{ werte: a.pruefung, farbe: fb }], true, a.pruefung);
+      y += 520;
+      pruefe(balken(x, p, y, a.pruefung, fb) - 30);
+    }});
+    textFolien(f, w ? 'Was daran stimmt' : 'Was zutrifft', a.trifft_zu, '');
+    textFolien(f, w ? 'Warum ohne Note' : 'Was fehlt', a.fehlt, a.zahlhinweis || '');
+    a.grafiken.forEach(function(g){
+      f.push({ name: 'Grafik: ' + g.titel, bild: g.datei, z: function(x, p, y){
+        pille(x, g.eigen ? 'Eigene Auswertung' : 'Fremde Quelle', M, y + 6, g.eigen ? p.bg : p.ink, g.eigen ? p.ink : p.flaeche);
+        y += 66;
+        x.fillStyle = p.ink; x.font = ARCH(30, 600); y = text(x, g.titel, M, y, INNEN, 38, 2) + 10;
+        var im = BILDER[g.datei], boxH = FUSS - 130 - y;
+        if (im && im.complete && im.naturalWidth){
+          var sc = Math.min(INNEN / im.naturalWidth, boxH / im.naturalHeight);
+          var iw = im.naturalWidth * sc, ih = im.naturalHeight * sc;
+          x.fillStyle = '#FFFFFF'; rundrect(x, M, y, INNEN, ih + 24, 12); x.fill();
+          x.drawImage(im, M + (INNEN - iw)/2, y + 12, iw, ih); y += ih + 40;
+        } else {
+          x.fillStyle = p.flaeche; rundrect(x, M, y, INNEN, boxH, 12); x.fill();
+          x.fillStyle = p.leise; x.font = SANS(20, 400); x.fillText('Grafik konnte nicht geladen werden.', M + 24, y + 44); y += boxH + 16;
+        }
+        x.fillStyle = p.leise; x.font = SANS(19, 400);
+        y = text(x, g.hinweis, M, y, INNEN, 26, 3); text(x, g.quelle, M, y + 4, INNEN, 24, 2);
+      }});
+    });
+    if (a.kritische_fragen.length) f.push({ name: 'Kritische Fragen', z: function(x, p, y){
+      y = titel(x, p, 'Kritische Fragen', y + 20, 36);
+      x.fillStyle = p.leise; x.font = SANS(20, 400);
+      y = text(x, 'Die Prüffragen zum Argumenttyp' + (a.schema ? ' «' + a.schema + '»' : '') + '.', M, y, INNEN, 28, 2) + 14;
+      a.kritische_fragen.forEach(function(k){
+        var st = k.status === 'beantwortet' ? 'beantwortet' : (k.status === 'offen' ? 'offen' : 'nicht erfüllt');
+        pille(x, st, M, y + 14, k.status === 'beantwortet' ? p.bg : p.ink, k.status === 'beantwortet' ? p.ink : p.flaeche);
+        y += 46;
+        x.fillStyle = p.ink; x.font = ARCH(22, 600); y = text(x, k.frage, M, y, INNEN, 29, 2) + 2;
+        x.fillStyle = p.leise; x.font = SANS(19, 400);
+        y = text(x, k.kommentar, M, y, INNEN, 26) + 34;
+      });
+    }});
+    f.push({ name: 'Grundlagen', z: function(x, p, y){
+      y = titel(x, p, 'Grundlagen der Prüfung', y + 20, 36);
+      if (a.fundstelle){
+        x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('FUNDSTELLE DER AUSSAGE', M, y); y += 34;
+        x.fillStyle = p.ink; x.font = SANS(23, 400);
+        y = text(x, a.fundstelle.titel + (a.fundstelle.datum ? ' · ' + a.fundstelle.datum : ''), M, y, INNEN, 32, 3) + 24;
+      }
+      x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('QUELLEN DER PRÜFUNG', M, y); y += 34;
+      if (!a.belege.length){ x.fillStyle = p.ink; x.font = SANS(23, 400); x.fillText('Keine weiteren Quellen herangezogen.', M, y); return; }
+      a.belege.forEach(function(b){
+        var art = { amtlich: 'amtlich', wissenschaft: 'Wissenschaft', medien: 'Medien', interessengruppe: 'Interessengruppe', komitee: 'Komitee' }[b.art] || b.art;
+        var pw = art ? pille(x, art, M, y + 4, p.ink, p.flaeche) + 14 : 0;
+        x.fillStyle = p.ink; x.font = SANS(22, 400); y = text(x, b.titel, M + pw, y + 8, INNEN - pw, 30, 2) + 14;
+      });
+    }});
+    var g = gegenstueck(a);
+    f.push({ name: 'Die andere Seite', z: function(x, p, y){
+      y = titel(x, p, 'Die andere Seite', y + 20, 36);
+      x.fillStyle = p.leise; x.font = SANS(21, 400);
+      y = text(x, 'Zu jeder Aussage steht eine der Gegenseite. Beide sind nach denselben fünf Achsen geprüft.', M, y, INNEN, 29, 2) + 30;
+      if (g) argHalb(x, p, g, y + 10, FUSS - 60 - y);
+      else { x.fillStyle = p.ink; x.font = SANS(24, 400); x.fillText('Für diese Aussage steht kein Gegenstück bereit.', M, y + 20); }
+    }});
+    return f;
+  }
+  function gegenstueck(a){
+    var eig = D.argumente.filter(function(b){ return b.seite === a.seite; }),
+        and = D.argumente.filter(function(b){ return b.seite !== a.seite; });
+    return and[eig.indexOf(a)] || null;
+  }
+
+  /* ---- Motivliste ------------------------------------------------------ */
+  var MOTIVE = [{ k: 'vorlage', g: 'Vorlage', l: 'Die Vorlage' }];
+  if (D.argumente.length) MOTIVE.push({ k: 'gegen', g: 'Vorlage', l: 'Gegenüberstellung der Belegqualität' });
+  var nPaare = Math.min(D.argumente.filter(function(a){ return a.seite === 'pro'; }).length,
+                        D.argumente.filter(function(a){ return a.seite === 'contra'; }).length);
+  for (var i = 0; i < nPaare; i++) MOTIVE.push({ k: 'paar:' + i, g: 'Aussagenpaare', l: 'Aussagenpaar ' + (i+1) });
+  if (D.kantonsrat && D.kantonsrat.abstimmungen.length) MOTIVE.push({ k: 'kantonsrat', g: 'Kantonsrat', l: 'Wie der Kantonsrat gestimmt hat' });
+  D.argumente.forEach(function(a, i){
+    var nr = D.argumente.filter(function(b){ return b.seite === a.seite; }).indexOf(a) + 1;
+    MOTIVE.push({ k: 'karussell:' + a.id, g: 'Karussell ' + D.seiten[a.seite].komitee, l: nr + '. ' + kurz(a.aussage, 60), arg: a });
+  });
+  function kurz(s, n){ return s.length <= n ? s : s.slice(0, n).replace(/\s*\S*$/, '') + ' …'; }
+  function motivVon(k){ for (var i = 0; i < MOTIVE.length; i++) if (MOTIVE[i].k === k) return MOTIVE[i]; return MOTIVE[0]; }
+
+  /* ---- Bilder laden ---------------------------------------------------- */
+  function ladeBild(datei){
+    return new Promise(function(res){
+      if (BILDER[datei]) return res();
+      var im = new Image(); im.onload = function(){ BILDER[datei] = im; res(); }; im.onerror = function(){ res(); };
+      im.src = 'grafiken/' + datei + '.svg';
+    });
+  }
+
+  /* ---- Zeichnen -------------------------------------------------------- */
+  function zeichne(k, folie){
+    var c = $('#bildCanvas'), x = c.getContext('2d'), p = palette(), m = motivVon(k);
+    var warten = [document.fonts ? document.fonts.ready : Promise.resolve()];
+    if (m.arg){ var f = folien(m.arg)[folie || 0]; if (f && f.bild) warten.push(ladeBild(f.bild)); }
+    return Promise.all(warten).then(function(){
+      /* Erst in voller Groesse, dann stufenweise kleiner, bis nichts mehr
+         unter die Fusslinie geraet. Die letzte Stufe wird auf jeden Fall
+         gezeichnet; bei den vorhandenen Texten reicht die zweite oder dritte. */
+      var stufen = [1, 0.94, 0.88, 0.82, 0.76, 0.7, 0.64, 0.58, 0.52, 0.46];
+      for (var i = 0; i < stufen.length; i++){
+        S = stufen[i]; UEBERLAUF = false;
+        var y = kopf(x, p), rechts = '';
+        if (k === 'vorlage') mVorlage(x, p, y);
+        else if (k === 'gegen') mGegen(x, p, y);
+        else if (k === 'kantonsrat') mKantonsrat(x, p, y);
+        else if (k.indexOf('paar:') === 0) mPaar(x, p, y, +k.slice(5));
+        else if (m.arg){
+          var fs = folien(m.arg), n = (folie || 0);
+          fs[n].z(x, p, y);
+          rechts = (n + 1) + ' von ' + fs.length;
+        }
+        fuss(x, p, rechts);
+        if (!UEBERLAUF) break;
+      }
+      /* Fuer die Pruefung von aussen: welche Stufe es wurde, und ob selbst
+         die kleinste noch ueberlief. Letzteres ist ein Fehler im Motiv. */
+      window.bildStufe = S; window.bildUeberlauf = UEBERLAUF;
+      S = 1;
+    });
+  }
+
+  /* ---- Bedienung ------------------------------------------------------- */
+  var sel = $('#bildMotiv'), selF = $('#bildFolie');
+  var gruppen = {};
+  MOTIVE.forEach(function(m){
+    if (!gruppen[m.g]){ gruppen[m.g] = document.createElement('optgroup'); gruppen[m.g].label = m.g; sel.appendChild(gruppen[m.g]); }
+    var o = document.createElement('option'); o.value = m.k; o.textContent = m.l; gruppen[m.g].appendChild(o);
+  });
+  function folienListe(){
+    var m = motivVon(sel.value); selF.innerHTML = '';
+    $('#bildFolieWrap').hidden = !m.arg; $('#bildAlle').hidden = !m.arg;
+    if (!m.arg) return;
+    folien(m.arg).forEach(function(f, i){
+      var o = document.createElement('option'); o.value = i; o.textContent = (i+1) + ' · ' + f.name; selF.appendChild(o);
+    });
+  }
+  function dateiname(k, folie){
+    var slug = (location.pathname.match(/abstimmung\/([^\/]+)/) || [0, 'vorlage'])[1];
+    var teil = k.replace(/:/g, '-');
+    return 'abstimmungsspiegel-' + slug + '-' + teil + (folie != null ? '-folie-' + (folie+1) : '') + '.png';
+  }
+  function neu(){ zeichne(sel.value, +selF.value || 0); }
+  sel.addEventListener('change', function(){ folienListe(); neu(); });
+  selF.addEventListener('change', neu);
+  $('#bildLaden').addEventListener('click', function(){
+    var m = motivVon(sel.value), fo = m.arg ? (+selF.value || 0) : null;
+    zeichne(sel.value, fo).then(function(){
+      var a = document.createElement('a'); a.download = dateiname(sel.value, fo);
+      a.href = $('#bildCanvas').toDataURL('image/png'); a.click();
+    });
+  });
+  /* Alle Folien in einer ZIP-Datei. Mehrere Einzeldownloads hintereinander
+     blockieren die Browser oder fragen nach; eine Datei geht immer. Das
+     ZIP wird hier ohne Fremdbibliothek geschrieben, unkomprimiert (PNG ist
+     schon gepackt). Format: lokale Kopfzeile je Datei, Zentralverzeichnis,
+     Endeintrag; alles Little-Endian. */
+  var CRC = (function(){ var t = [], c; for (var n = 0; n < 256; n++){ c = n;
+    for (var k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); t[n] = c >>> 0; } return t; })();
+  function crc32(b){ var c = 0xFFFFFFFF; for (var i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zip(dateien){
+    var enc = new TextEncoder(), teile = [], zentral = [], offset = 0;
+    var d = new Date(), zeit = (d.getHours() << 11) | (d.getMinutes() << 5) | (d.getSeconds() >> 1),
+        datum = ((d.getFullYear() - 1980) << 9) | ((d.getMonth() + 1) << 5) | d.getDate();
+    function u16(v){ return [v & 255, (v >>> 8) & 255]; }
+    function u32(v){ return [v & 255, (v >>> 8) & 255, (v >>> 16) & 255, (v >>> 24) & 255]; }
+    dateien.forEach(function(f){
+      var name = enc.encode(f.name), crc = crc32(f.data), n = f.data.length;
+      var lokal = new Uint8Array([].concat(u32(0x04034b50), u16(20), u16(0x0800), u16(0), u16(zeit), u16(datum),
+        u32(crc), u32(n), u32(n), u16(name.length), u16(0)));
+      teile.push(lokal, name, f.data);
+      zentral.push(new Uint8Array([].concat(u32(0x02014b50), u16(20), u16(20), u16(0x0800), u16(0), u16(zeit), u16(datum),
+        u32(crc), u32(n), u32(n), u16(name.length), u16(0), u16(0), u16(0), u16(0), u32(0), u32(offset))), name);
+      offset += lokal.length + name.length + n;
+    });
+    var zLaenge = zentral.reduce(function(s, z){ return s + z.length; }, 0);
+    var ende = new Uint8Array([].concat(u32(0x06054b50), u16(0), u16(0), u16(dateien.length), u16(dateien.length),
+      u32(zLaenge), u32(offset), u16(0)));
+    return new Blob(teile.concat(zentral, [ende]), { type: 'application/zip' });
+  }
+  function pngDaten(){
+    return new Promise(function(res){
+      $('#bildCanvas').toBlob(function(b){ b.arrayBuffer().then(function(ab){ res(new Uint8Array(ab)); }); }, 'image/png');
+    });
+  }
+  $('#bildAlle').addEventListener('click', function(){
+    var m = motivVon(sel.value); if (!m.arg) return;
+    var knopf = $('#bildAlle'), n = folien(m.arg).length, i = 0, dateien = [];
+    knopf.disabled = true; knopf.textContent = 'Folien werden gezeichnet …';
+    (function schritt(){
+      if (i >= n){
+        var a = document.createElement('a'), url = URL.createObjectURL(zip(dateien));
+        a.download = dateiname(sel.value, null).replace(/\.png$/, '.zip'); a.href = url; a.click();
+        setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+        knopf.disabled = false; knopf.textContent = 'Alle Folien als ZIP herunterladen'; neu(); return;
+      }
+      zeichne(sel.value, i).then(pngDaten).then(function(b){
+        dateien.push({ name: dateiname(sel.value, i), data: b }); i++; schritt();
+      });
+    })();
+  });
+  function modal(auf){
+    $('#bildModal').hidden = !auf;
+    document.body.style.overflow = auf ? 'hidden' : '';
+    if (auf){ folienListe(); neu(); }
+  }
+  $('#bildStart').addEventListener('click', function(){ modal(true); });
+  $('#bildZu').addEventListener('click', function(){ modal(false); });
+  $('#bildModal').addEventListener('click', function(e){ if (e.target === $('#bildModal')) modal(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !$('#bildModal').hidden) modal(false); });
+  /* Wechselt das Farbschema, wird das Bild neu gezeichnet. */
+  new MutationObserver(function(){ if (!$('#bildModal').hidden) neu(); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
+</body>
+</html>
