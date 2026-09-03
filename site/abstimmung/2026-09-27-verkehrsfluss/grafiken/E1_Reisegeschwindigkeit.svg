@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 860" width="1000" height="860" font-family="Public Sans, Helvetica, Arial, sans-serif">
+<rect width="1000" height="860" fill="#f7f8fa"/>
+<text x="40" y="52" font-size="27" font-weight="700" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">Wie schnell sind die Schaffhauser Busse wirklich?</text>
+<text x="40" y="80" font-size="15" fill="#5a626d">Dunkel die Reisegeschwindigkeit samt Haltezeit, hell die reine Fahrgeschwindigkeit ohne Halte.</text>
+<text x="40" y="101" font-size="13" fill="#5a626d">Fahrplan vom 8. September 2026, Haltestellen des Bundesamts für Verkehr, Weglänge entlang der Strassenachsen aus OpenStreetMap.</text>
+<line x1="250.0" y1="142" x2="250.0" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="250.0" y="134" font-size="12" fill="#5a626d" text-anchor="middle">0</text>
+<line x1="362.7" y1="142" x2="362.7" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="362.7" y="134" font-size="12" fill="#5a626d" text-anchor="middle">10</text>
+<line x1="475.5" y1="142" x2="475.5" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="475.5" y="134" font-size="12" fill="#5a626d" text-anchor="middle">20</text>
+<line x1="588.2" y1="142" x2="588.2" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="588.2" y="134" font-size="12" fill="#5a626d" text-anchor="middle">30</text>
+<line x1="700.9" y1="142" x2="700.9" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="700.9" y="134" font-size="12" fill="#5a626d" text-anchor="middle">40</text>
+<line x1="813.6" y1="142" x2="813.6" y2="572" stroke="#e2e6eb" stroke-width="1"/>
+<text x="813.6" y="134" font-size="12" fill="#5a626d" text-anchor="middle">50</text>
+<text x="870.0" y="112" font-size="12" fill="#5a626d" text-anchor="end">km/h</text>
+<line x1="813.6" y1="142" x2="813.6" y2="572" stroke="#8b93a1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="588.2" y1="142" x2="588.2" y2="572" stroke="#8b93a1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="630.9" y1="142" x2="630.9" y2="572" stroke="#12161c" stroke-width="2"/>
+<text x="813.6" y="592" font-size="12.5" fill="#5a626d" text-anchor="middle">signalisiert 50</text>
+<text x="588.2" y="592" font-size="12.5" fill="#5a626d" text-anchor="middle">signalisiert 30</text>
+<text x="630.9" y="612" font-size="12.5" fill="#12161c" text-anchor="middle" font-weight="600">physikalisch erreichbar 34</text>
+<text x="238" y="172" font-size="13" fill="#12161c" text-anchor="end">1 Waldfriedhof → Herbstäcker</text>
+<rect x="250" y="161" width="209.7" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="161" width="179.2" height="15" rx="3" fill="#3c4652"/>
+<text x="467.7" y="173" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">15,9 / 18,6</text>
+<text x="238" y="202" font-size="13" fill="#12161c" text-anchor="end">4 Birch → Gruben</text>
+<rect x="250" y="191" width="223.2" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="191" width="184.9" height="15" rx="3" fill="#3c4652"/>
+<text x="481.2" y="203" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">16,4 / 19,8</text>
+<text x="238" y="232" font-size="13" fill="#12161c" text-anchor="end">1 Herbstäcker → Waldfriedhof</text>
+<rect x="250" y="221" width="220.9" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="221" width="187.1" height="15" rx="3" fill="#3c4652"/>
+<text x="478.9" y="233" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">16,6 / 19,6</text>
+<text x="238" y="262" font-size="13" fill="#12161c" text-anchor="end">4 Gruben → Birch</text>
+<rect x="250" y="251" width="224.3" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="251" width="189.4" height="15" rx="3" fill="#3c4652"/>
+<text x="482.3" y="263" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">16,8 / 19,9</text>
+<text x="238" y="292" font-size="13" fill="#12161c" text-anchor="end">3 Krummacker → Sommerwies</text>
+<rect x="250" y="281" width="254.8" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="281" width="210.8" height="15" rx="3" fill="#3c4652"/>
+<text x="512.8" y="293" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">18,7 / 22,6</text>
+<text x="238" y="322" font-size="13" fill="#12161c" text-anchor="end">3 Sommerwies → Krummacker</text>
+<rect x="250" y="311" width="257.0" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="311" width="210.8" height="15" rx="3" fill="#3c4652"/>
+<text x="515.0" y="323" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">18,7 / 22,8</text>
+<text x="238" y="352" font-size="13" fill="#12161c" text-anchor="end">6 Falkeneck → Buchthalen</text>
+<rect x="250" y="341" width="255.9" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="341" width="211.9" height="15" rx="3" fill="#3c4652"/>
+<text x="513.9" y="353" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">18,8 / 22,7</text>
+<text x="238" y="382" font-size="13" fill="#12161c" text-anchor="end">6 Buchthalen → Falkeneck</text>
+<rect x="250" y="371" width="272.8" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="371" width="219.8" height="15" rx="3" fill="#3c4652"/>
+<text x="530.8" y="383" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">19,5 / 24,2</text>
+<text x="238" y="412" font-size="13" fill="#12161c" text-anchor="end">7 Neuhausen → Bahnhof</text>
+<rect x="250" y="401" width="278.4" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="401" width="225.5" height="15" rx="3" fill="#3c4652"/>
+<text x="536.4" y="413" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">20,0 / 24,7</text>
+<text x="238" y="442" font-size="13" fill="#12161c" text-anchor="end">5 Schlossweiher → Bahnhof</text>
+<rect x="250" y="431" width="286.3" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="431" width="233.3" height="15" rx="3" fill="#3c4652"/>
+<text x="544.3" y="443" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">20,7 / 25,4</text>
+<text x="238" y="472" font-size="13" fill="#12161c" text-anchor="end">8 Im Freien → Bahnhof</text>
+<rect x="250" y="461" width="279.6" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="461" width="235.6" height="15" rx="3" fill="#3c4652"/>
+<text x="537.6" y="473" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">20,9 / 24,8</text>
+<text x="238" y="502" font-size="13" fill="#12161c" text-anchor="end">8 Bahnhof → Im Freien</text>
+<rect x="250" y="491" width="321.3" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="491" width="264.9" height="15" rx="3" fill="#3c4652"/>
+<text x="579.3" y="503" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">23,5 / 28,5</text>
+<text x="238" y="532" font-size="13" fill="#12161c" text-anchor="end">7 Bahnhof → Neuhausen</text>
+<rect x="250" y="521" width="341.6" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="521" width="268.3" height="15" rx="3" fill="#3c4652"/>
+<text x="599.6" y="533" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">23,8 / 30,3</text>
+<text x="238" y="562" font-size="13" fill="#12161c" text-anchor="end">5 Bahnhof → Schlossweiher</text>
+<rect x="250" y="551" width="352.8" height="15" rx="3" fill="#8b93a1" fill-opacity="0.45"/>
+<rect x="250" y="551" width="271.7" height="15" rx="3" fill="#3c4652"/>
+<text x="610.8" y="563" font-size="12.5" font-weight="600" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">24,1 / 31,3</text>
+<rect x="40" y="638" width="920" height="166" rx="10" fill="none" stroke="#e2e6eb"/>
+<text x="60" y="663" font-size="14" font-weight="700" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">Einordnung</text>
+<text x="60" y="684" font-size="13" fill="#5a626d">Alle sieben Stadtlinien in beiden Richtungen. Samt Haltezeit erreicht kein Kurs 30 km/h:</text>
+<text x="60" y="702" font-size="13" fill="#5a626d">15,9 bis 24,1, im Mittel 19,6.</text>
+<text x="60" y="720" font-size="13" fill="#5a626d">Ohne Haltezeit, mit 12 Sekunden je Halt, liegen 12 der 14 Kurse weiterhin unter 30.</text>
+<text x="60" y="738" font-size="13" fill="#5a626d">Nur die Auswärtsrichtungen der Linien 5 und 7 kommen mit 31,3 und 30,3 knapp darüber.</text>
+<text x="60" y="756" font-size="13" fill="#5a626d">Bei Haltestellen alle 369 Meter sind ohnehin höchstens rund 34 km/h möglich,</text>
+<text x="60" y="774" font-size="13" fill="#5a626d">weil Beschleunigen und Bremsen den Abschnitt aufbrauchen. Tempo 30 kostet also etwas,</text>
+<text x="60" y="792" font-size="13" fill="#5a626d">aber nur auf wenigen Abschnitten und viel weniger, als die Spanne 50 zu 30 nahelegt.</text>
+<text x="40" y="830" font-size="11" fill="#5a626d">Quellen: transport.opendata.ch, ch.bav.haltestellen-oev, OpenStreetMap. Fahrdynamik 1,0 und 1,2 m/s². Haltezeit 12 s je Halt, aus den Daten hergeleitet: höhere Werte</text>
+<text x="40" y="845" font-size="11" fill="#5a626d">ergäben für die schnellsten Kurse eine physikalisch unmögliche Fahrgeschwindigkeit. Von 246 Abschnitten liessen sich 79 nicht über das Netz führen, dort Luftlinie mal 1,2. Eigene Auswertung, ohne Gewähr.</text>
+</svg>

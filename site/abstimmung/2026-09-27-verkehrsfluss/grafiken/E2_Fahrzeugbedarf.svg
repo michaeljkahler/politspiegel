@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" width="1000" height="740" font-family="Public Sans, Helvetica, Arial, sans-serif">
+<rect width="1000" height="740" fill="#f7f8fa"/>
+<text x="40" y="52" font-size="27" font-weight="700" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">Braucht Tempo 30 einen zusätzlichen Bus?</text>
+<text x="40" y="80" font-size="15" fill="#5a626d">Wendezeit je Umlauf: was vorhanden ist, was Tempo 30 davon braucht, was mindestens bleiben muss.</text>
+<text x="40" y="101" font-size="13" fill="#5a626d">Fahrzeiten, Wendezeiten und Takt aus dem Fahrplan vom 8. September 2026, alles gemessen statt angenommen.</text>
+<rect x="40" y="138" width="16" height="12" rx="2" fill="#c3c9d2"/>
+<text x="62" y="148" font-size="12.5" fill="#5a626d">vorhandene Wendezeit</text>
+<rect x="220.0" y="138" width="16" height="12" rx="2" fill="#3c4652"/>
+<text x="242.0" y="148" font-size="12.5" fill="#5a626d">Tempo 30 nach ASTRA</text>
+<line x1="393.4" y1="138" x2="393.4" y2="150" stroke="#12161c" stroke-width="3"/>
+<text x="403.4" y="148" font-size="12.5" fill="#5a626d">nötige Mindestwende</text>
+<line x1="168.0" y1="168" x2="168.0" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="168.0" y="452" font-size="11" fill="#5a626d" text-anchor="middle">0</text>
+<line x1="238.4" y1="168" x2="238.4" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="238.4" y="452" font-size="11" fill="#5a626d" text-anchor="middle">2</text>
+<line x1="308.7" y1="168" x2="308.7" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="308.7" y="452" font-size="11" fill="#5a626d" text-anchor="middle">4</text>
+<line x1="379.1" y1="168" x2="379.1" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="379.1" y="452" font-size="11" fill="#5a626d" text-anchor="middle">6</text>
+<line x1="449.5" y1="168" x2="449.5" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="449.5" y="452" font-size="11" fill="#5a626d" text-anchor="middle">8</text>
+<line x1="519.9" y1="168" x2="519.9" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="519.9" y="452" font-size="11" fill="#5a626d" text-anchor="middle">10</text>
+<line x1="590.2" y1="168" x2="590.2" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="590.2" y="452" font-size="11" fill="#5a626d" text-anchor="middle">12</text>
+<line x1="660.6" y1="168" x2="660.6" y2="436" stroke="#e2e6eb" stroke-width="1"/>
+<text x="660.6" y="452" font-size="11" fill="#5a626d" text-anchor="middle">14</text>
+<text x="700.0" y="452" font-size="11" fill="#5a626d" text-anchor="start"> Minuten</text>
+<text x="154" y="189" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 1</text>
+<text x="154" y="204" font-size="11.5" fill="#5a626d" text-anchor="end">6 Fahrzeuge, 10-Min-Takt</text>
+<rect x="168" y="178" width="175.9" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="178" width="119.6" height="20" rx="3" fill="#3c4652"/>
+<line x1="273.6" y1="174" x2="273.6" y2="202" stroke="#12161c" stroke-width="3"/>
+<text x="355.9" y="186" font-size="12" fill="#12161c">5 vorhanden, 3,4 gebraucht, 1,6 bleiben</text>
+<text x="355.9" y="201" font-size="12" fill="#12161c" font-weight="700">zusätzliches Fahrzeug nötig</text>
+<text x="154" y="235" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 3</text>
+<text x="154" y="250" font-size="11.5" fill="#5a626d" text-anchor="end">6 Fahrzeuge, 10-Min-Takt</text>
+<rect x="168" y="224" width="140.7" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="224" width="116.1" height="20" rx="3" fill="#3c4652"/>
+<text x="320.7" y="232" font-size="12" fill="#12161c">4 vorhanden, 3,3 gebraucht, 0,7 bleiben</text>
+<text x="320.7" y="247" font-size="12" fill="#5a626d" font-weight="400">reicht aus</text>
+<text x="154" y="281" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 4</text>
+<text x="154" y="296" font-size="11.5" fill="#5a626d" text-anchor="end">4 Fahrzeuge, 10-Min-Takt</text>
+<rect x="168" y="270" width="70.4" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="270" width="52.8" height="20" rx="3" fill="#3c4652"/>
+<text x="250.4" y="278" font-size="12" fill="#12161c">2 vorhanden, 1,5 gebraucht, 0,5 bleiben</text>
+<text x="250.4" y="293" font-size="12" fill="#5a626d" font-weight="400">reicht aus</text>
+<text x="154" y="327" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 5</text>
+<text x="154" y="342" font-size="11.5" fill="#5a626d" text-anchor="end">4 Fahrzeuge, 10-Min-Takt</text>
+<rect x="168" y="316" width="387.0" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="316" width="52.8" height="20" rx="3" fill="#3c4652"/>
+<line x1="250.0" y1="316" x2="250.0" y2="336" stroke="#f7f8fa" stroke-width="2" stroke-dasharray="3 2"/>
+<line x1="449.5" y1="312" x2="449.5" y2="340" stroke="#12161c" stroke-width="3"/>
+<text x="567.0" y="324" font-size="12" fill="#12161c">11 vorhanden, 1,5 gebraucht, 9,5 bleiben</text>
+<text x="567.0" y="339" font-size="12" fill="#5a626d" font-weight="400">reicht aus</text>
+<text x="154" y="373" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 6</text>
+<text x="154" y="388" font-size="11.5" fill="#5a626d" text-anchor="end">6 Fahrzeuge, 10-Min-Takt</text>
+<rect x="168" y="362" width="175.9" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="362" width="116.1" height="20" rx="3" fill="#3c4652"/>
+<line x1="308.7" y1="358" x2="308.7" y2="386" stroke="#12161c" stroke-width="3"/>
+<text x="355.9" y="370" font-size="12" fill="#12161c">5 vorhanden, 3,3 gebraucht, 1,7 bleiben</text>
+<text x="355.9" y="385" font-size="12" fill="#5a626d" font-weight="400">reicht aus</text>
+<text x="154" y="419" font-size="15" fill="#12161c" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="600">Linie 7</text>
+<text x="154" y="434" font-size="11.5" fill="#5a626d" text-anchor="end">3 Fahrzeuge, 15-Min-Takt</text>
+<rect x="168" y="408" width="492.6" height="20" rx="3" fill="#c3c9d2"/>
+<rect x="168" y="408" width="38.7" height="20" rx="3" fill="#3c4652"/>
+<line x1="238.7" y1="408" x2="238.7" y2="428" stroke="#f7f8fa" stroke-width="2" stroke-dasharray="3 2"/>
+<line x1="414.3" y1="404" x2="414.3" y2="432" stroke="#12161c" stroke-width="3"/>
+<text x="672.6" y="416" font-size="12" fill="#12161c">14 vorhanden, 1,1 gebraucht, 12,9 bleiben</text>
+<text x="672.6" y="431" font-size="12" fill="#5a626d" font-weight="400">reicht aus</text>
+<rect x="40" y="472" width="920" height="184" rx="10" fill="none" stroke="#e2e6eb"/>
+<text x="60" y="497" font-size="14" font-weight="700" fill="#12161c" font-family="Archivo, Helvetica, Arial, sans-serif">Einordnung</text>
+<text x="60" y="518" font-size="13" fill="#5a626d">Der Fahrzeugbedarf ist eine Treppenfunktion: Solange die Zusatzzeit in die Wendezeit</text>
+<text x="60" y="536" font-size="13" fill="#5a626d">passt, kostet sie nichts. Reicht die Wendezeit nicht mehr, braucht es ein ganzes</text>
+<text x="60" y="554" font-size="13" fill="#5a626d">Fahrzeug samt Personal.</text>
+<text x="60" y="572" font-size="13" fill="#5a626d">Nach dem physikalischen Modell braucht keine Linie ein zusätzliches Fahrzeug, weil vier</text>
+<text x="60" y="590" font-size="13" fill="#5a626d">der sechs schon heute langsamer fahren, als Tempo 30 zuliesse. Nach dem ASTRA-Richtwert</text>
+<text x="60" y="608" font-size="13" fill="#5a626d">kippt Linie 1: ihre 5 Minuten Reserve reichen nach Abzug von 3,4 nicht mehr für die</text>
+<text x="60" y="626" font-size="13" fill="#5a626d">2 Minuten, die in Neuhausen Herbstäcker planmässig gewendet werden.</text>
+<text x="60" y="644" font-size="13" fill="#5a626d">Die ehrliche Antwort lautet damit: null bis ein zusätzliches Fahrzeug.</text>
+<text x="40" y="696" font-size="11" fill="#5a626d">Quellen: Fahrplan transport.opendata.ch, Kurse vom 08.09.2026. Zusatzzeit physikalisch aus Haltestellenabstand und Fahrdynamik,</text>
+<text x="40" y="711" font-size="11" fill="#5a626d">oder nach ASTRA-Forschungsbericht 1663 mit 20 s je km. Nicht dargestellt: Linie 8 (Taktprobe nicht bestanden) und die Regionallinien 21 bis 25</text>
+<text x="40" y="726" font-size="11" fill="#5a626d">mit mehreren Ästen. Eigene Auswertung, ohne Gewähr.</text>
+</svg>

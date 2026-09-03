@@ -1,0 +1,179 @@
+{
+ "verfahren": "Weglänge entlang der Buslinien-Achsen. Graph aus 2566 unvereinfachten OpenStreetMap-Wegen mit 16'521 Knoten, Haltestellen darauf gezogen (Median 4 m), Dijkstra von Halt zu Halt. Alle sieben Stadtlinien in beiden Richtungen.",
+ "quelle": "Busnetz OpenStreetMap; Haltestellen ch.bav.haltestellen-oev; Fahrplan transport.opendata.ch, Kurse vom 08.09.2026, Hauptverkehrszeit",
+ "gemessener_umwegfaktor": {
+  "min": 1.078,
+  "max": 1.333,
+  "mittel": 1.153
+ },
+ "vorbehalt": "Von 246 Abschnitten liessen sich 79 nicht über das Netz führen, weil der OpenStreetMap-Graph nicht überall zusammenhängt; dort steht Luftlinie mal 1,2. Linie 8 hat mit 1,33 den höchsten Umwegfaktor, dort ist nur die Hälfte der Abschnitte geführt.",
+ "hinweis": "Fahrplanzeiten auf ganze Minuten gerundet; Werte je Abschnitt unsicher, die Gesamtgeschwindigkeit je Kurs ist belastbar.",
+ "kurse": [
+  {
+   "kurs": "1 Waldfriedhof → Herbstäcker",
+   "halte": 23,
+   "minuten": 30,
+   "weg_km": 7.94,
+   "luftlinie_km": 6.89,
+   "umwegfaktor": 1.153,
+   "v_kmh": 15.9,
+   "abschnitte_ohne_netzweg": 5,
+   "v_fahrt_kmh": 18.6
+  },
+  {
+   "kurs": "4 Birch → Gruben",
+   "halte": 18,
+   "minuten": 20,
+   "weg_km": 5.47,
+   "luftlinie_km": 4.77,
+   "umwegfaktor": 1.147,
+   "v_kmh": 16.4,
+   "abschnitte_ohne_netzweg": 6,
+   "v_fahrt_kmh": 19.8
+  },
+  {
+   "kurs": "1 Herbstäcker → Waldfriedhof",
+   "halte": 20,
+   "minuten": 25,
+   "weg_km": 6.91,
+   "luftlinie_km": 6.13,
+   "umwegfaktor": 1.128,
+   "v_kmh": 16.6,
+   "abschnitte_ohne_netzweg": 5,
+   "v_fahrt_kmh": 19.6
+  },
+  {
+   "kurs": "4 Gruben → Birch",
+   "halte": 15,
+   "minuten": 18,
+   "weg_km": 5.05,
+   "luftlinie_km": 4.27,
+   "umwegfaktor": 1.183,
+   "v_kmh": 16.8,
+   "abschnitte_ohne_netzweg": 7,
+   "v_fahrt_kmh": 19.9
+  },
+  {
+   "kurs": "3 Krummacker → Sommerwies",
+   "halte": 25,
+   "minuten": 28,
+   "weg_km": 8.72,
+   "luftlinie_km": 7.89,
+   "umwegfaktor": 1.106,
+   "v_kmh": 18.7,
+   "abschnitte_ohne_netzweg": 9,
+   "v_fahrt_kmh": 22.6
+  },
+  {
+   "kurs": "3 Sommerwies → Krummacker",
+   "halte": 26,
+   "minuten": 28,
+   "weg_km": 8.75,
+   "luftlinie_km": 7.89,
+   "umwegfaktor": 1.109,
+   "v_kmh": 18.7,
+   "abschnitte_ohne_netzweg": 11,
+   "v_fahrt_kmh": 22.8
+  },
+  {
+   "kurs": "6 Falkeneck → Buchthalen",
+   "halte": 25,
+   "minuten": 28,
+   "weg_km": 8.76,
+   "luftlinie_km": 7.86,
+   "umwegfaktor": 1.115,
+   "v_kmh": 18.8,
+   "abschnitte_ohne_netzweg": 6,
+   "v_fahrt_kmh": 22.7
+  },
+  {
+   "kurs": "6 Buchthalen → Falkeneck",
+   "halte": 27,
+   "minuten": 27,
+   "weg_km": 8.78,
+   "luftlinie_km": 7.88,
+   "umwegfaktor": 1.114,
+   "v_kmh": 19.5,
+   "abschnitte_ohne_netzweg": 8,
+   "v_fahrt_kmh": 24.2
+  },
+  {
+   "kurs": "7 Neuhausen → Bahnhof",
+   "halte": 17,
+   "minuten": 17,
+   "weg_km": 5.68,
+   "luftlinie_km": 5.0,
+   "umwegfaktor": 1.136,
+   "v_kmh": 20.0,
+   "abschnitte_ohne_netzweg": 4,
+   "v_fahrt_kmh": 24.7
+  },
+  {
+   "kurs": "5 Schlossweiher → Bahnhof",
+   "halte": 16,
+   "minuten": 16,
+   "weg_km": 5.51,
+   "luftlinie_km": 5.05,
+   "umwegfaktor": 1.093,
+   "v_kmh": 20.7,
+   "abschnitte_ohne_netzweg": 4,
+   "v_fahrt_kmh": 25.4
+  },
+  {
+   "kurs": "8 Im Freien → Bahnhof",
+   "halte": 8,
+   "minuten": 9,
+   "weg_km": 3.14,
+   "luftlinie_km": 2.36,
+   "umwegfaktor": 1.333,
+   "v_kmh": 20.9,
+   "abschnitte_ohne_netzweg": 3,
+   "v_fahrt_kmh": 24.8
+  },
+  {
+   "kurs": "8 Bahnhof → Im Freien",
+   "halte": 8,
+   "minuten": 8,
+   "weg_km": 3.14,
+   "luftlinie_km": 2.36,
+   "umwegfaktor": 1.333,
+   "v_kmh": 23.5,
+   "abschnitte_ohne_netzweg": 3,
+   "v_fahrt_kmh": 28.5
+  },
+  {
+   "kurs": "7 Bahnhof → Neuhausen",
+   "halte": 16,
+   "minuten": 14,
+   "weg_km": 5.55,
+   "luftlinie_km": 4.98,
+   "umwegfaktor": 1.114,
+   "v_kmh": 23.8,
+   "abschnitte_ohne_netzweg": 4,
+   "v_fahrt_kmh": 30.3
+  },
+  {
+   "kurs": "5 Bahnhof → Schlossweiher",
+   "halte": 16,
+   "minuten": 13,
+   "weg_km": 5.21,
+   "luftlinie_km": 4.83,
+   "umwegfaktor": 1.078,
+   "v_kmh": 24.1,
+   "abschnitte_ohne_netzweg": 4,
+   "v_fahrt_kmh": 31.3
+  }
+ ],
+ "haltezeit": {
+  "angesetzt_s": 12,
+  "begruendung": "Aus den Daten hergeleitet: Höhere Werte ergäben für die schnellsten Kurse eine Fahrgeschwindigkeit über der physikalischen Obergrenze. Die schärfste Schranke liegt bei 14 Sekunden je Halt. In der Literatur wird 10 Sekunden als Planungsrichtwert für die Fahrgastwechselzeit genannt; die Haltezeit umfasst zusätzlich Türöffnen und -schliessen.",
+  "bandbreite_s": [
+   10,
+   15
+  ],
+  "quellen": [
+   "Uhl, Modellierung des Zeitbedarfs für Verkehrshalte im ÖPNV, Universität Stuttgart",
+   "Fahrgastwechselzeit, Übersicht der Einflussgrössen"
+  ]
+ }
+}

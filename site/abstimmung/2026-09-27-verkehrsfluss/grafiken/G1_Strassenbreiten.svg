@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1560" viewBox="0 0 1120 1560" font-family="Arial, 'Helvetica Neue', system-ui, sans-serif">
+<rect x="0.0" y="0.0" width="1120.0" height="1560.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="0.0" y="0.0" width="1120.0" height="8.0" fill="#3c4652" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<text x="70.0" y="58.0" font-size="30" fill="#12161c" text-anchor="start" font-weight="bold">Minimale Strassenbreiten auf Ortsdurchfahrten</text>
+<text x="70.0" y="90.0" font-size="16" fill="#5a626d" text-anchor="start" font-weight="normal">Was auf einer typischen, schmalen Kantonsstrasse innerorts Platz hat, und wo es eng wird. Breiten massstäblich.</text>
+<rect x="70.0" y="130.0" width="980.0" height="300.0" fill="#ffffff" rx="14" stroke="#e2e6eb" stroke-width="1.5" opacity="1"/>
+<text x="94.0" y="164.0" font-size="18" fill="#12161c" text-anchor="start" font-weight="bold">Typische Ortsdurchfahrt im Querschnitt</text>
+<rect x="164.0" y="344.0" width="792.0" height="14.0" fill="#b7b6af" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="296.0" y="342.0" width="528.0" height="16.0" fill="#d5dae1" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="304.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="330.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="356.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="382.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="408.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="434.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="460.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="486.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="512.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="538.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="564.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="590.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="616.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="642.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="668.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="694.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="720.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="746.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="772.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="798.0" y="349.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="164.0" y="332.0" width="132.0" height="12.0" fill="#e2e6eb" rx="0" stroke="#8b93a1" stroke-width="1" opacity="1"/>
+<rect x="824.0" y="332.0" width="132.0" height="12.0" fill="#e2e6eb" rx="0" stroke="#8b93a1" stroke-width="1" opacity="1"/>
+<circle cx="230.0" cy="316.0" r="4.5" fill="#5a626d"/>
+<rect x="227.0" y="321.0" width="6" height="13" rx="3" fill="#5a626d"/>
+<circle cx="890.0" cy="316.0" r="4.5" fill="#5a626d"/>
+<rect x="887.0" y="321.0" width="6" height="13" rx="3" fill="#5a626d"/>
+<rect x="383.1" y="348.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="490.8" y="348.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="375.2" y="294.0" width="158.4" height="64.0" rx="10" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="405.3" y="274.0" width="98.2" height="26.0" rx="8" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="411.3" y="278.0" width="86.2" height="18.0" rx="4" fill="#e2e6eb" opacity="0.9"/>
+<circle cx="400.5" cy="306.0" r="4" fill="#eceff3"/>
+<circle cx="508.3" cy="306.0" r="4" fill="#eceff3"/>
+<rect x="594.3" y="348.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="702.0" y="348.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="586.4" y="294.0" width="158.4" height="64.0" rx="10" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="616.5" y="274.0" width="98.2" height="26.0" rx="8" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="622.5" y="278.0" width="86.2" height="18.0" rx="4" fill="#e2e6eb" opacity="0.9"/>
+<circle cx="611.7" cy="306.0" r="4" fill="#eceff3"/>
+<circle cx="719.5" cy="306.0" r="4" fill="#eceff3"/>
+<line x1="164.0" y1="380.0" x2="296.0" y2="380.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="164.0" y1="375.0" x2="164.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="296.0" y1="375.0" x2="296.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="230.0" y="372.0" font-size="14" fill="#5a626d" text-anchor="middle" font-weight="bold">1,50 m</text>
+<line x1="296.0" y1="380.0" x2="824.0" y2="380.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="296.0" y1="375.0" x2="296.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="824.0" y1="375.0" x2="824.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="560.0" y="372.0" font-size="14" fill="#5a626d" text-anchor="middle" font-weight="bold">6,00 m</text>
+<line x1="824.0" y1="380.0" x2="956.0" y2="380.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="824.0" y1="375.0" x2="824.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="956.0" y1="375.0" x2="956.0" y2="385.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="890.0" y="372.0" font-size="14" fill="#5a626d" text-anchor="middle" font-weight="bold">1,50 m</text>
+<line x1="164.0" y1="414.0" x2="956.0" y2="414.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="164.0" y1="409.0" x2="164.0" y2="419.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="956.0" y1="409.0" x2="956.0" y2="419.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="560.0" y="406.0" font-size="14" fill="#5a626d" text-anchor="middle" font-weight="bold">Strassenraum 9,00 m</text>
+<text x="230.0" y="306.0" font-size="11.5" fill="#5a626d" text-anchor="middle" font-weight="normal">Trottoir</text>
+<text x="890.0" y="306.0" font-size="11.5" fill="#5a626d" text-anchor="middle" font-weight="normal">Trottoir</text>
+<text x="560.0" y="360.0" font-size="1" fill="#12161c" text-anchor="start" font-weight="normal"></text>
+<text x="70.0" y="476.0" font-size="22" fill="#12161c" text-anchor="start" font-weight="bold">Was passt auf eine 6,0 m breite Fahrbahn?</text>
+<text x="70.0" y="500.0" font-size="14.5" fill="#5a626d" text-anchor="start" font-weight="normal">Benötigte Fahrbahnbreite je Begegnungsfall (VSS-Planungswerte). Bei Tempo 50 braucht es grössere seitliche Abstände als bei Tempo 30.</text>
+<rect x="70.0" y="540.0" width="980.0" height="234.0" fill="#ffffff" rx="12" stroke="#e2e6eb" stroke-width="1.3" opacity="1"/>
+<text x="88.0" y="636.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Personenwagen /</text>
+<text x="88.0" y="656.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Personenwagen</text>
+<rect x="290.0" y="704.0" width="528.0" height="16.0" fill="#d5dae1" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="298.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="324.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="350.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="376.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="402.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="428.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="454.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="480.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="506.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="532.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="558.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="584.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="610.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="636.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="662.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="688.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="714.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="740.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="766.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="792.0" y="711.0" width="12" height="2.4" fill="#f7f8fa"/>
+<line x1="290.0" y1="666.0" x2="290.0" y2="726.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<line x1="818.0" y1="666.0" x2="818.0" y2="726.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<rect x="368.3" y="710.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="476.0" y="710.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="360.4" y="656.0" width="158.4" height="64.0" rx="10" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="390.5" y="636.0" width="98.2" height="26.0" rx="8" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="396.5" y="640.0" width="86.2" height="18.0" rx="4" fill="#e2e6eb" opacity="0.9"/>
+<circle cx="385.7" cy="668.0" r="4" fill="#eceff3"/>
+<circle cx="493.5" cy="668.0" r="4" fill="#eceff3"/>
+<rect x="597.1" y="710.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="704.8" y="710.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="589.2" y="656.0" width="158.4" height="64.0" rx="10" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="619.3" y="636.0" width="98.2" height="26.0" rx="8" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="625.3" y="640.0" width="86.2" height="18.0" rx="4" fill="#e2e6eb" opacity="0.9"/>
+<circle cx="614.5" cy="668.0" r="4" fill="#eceff3"/>
+<circle cx="722.3" cy="668.0" r="4" fill="#eceff3"/>
+<line x1="290.0" y1="742.0" x2="818.0" y2="742.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="290.0" y1="737.0" x2="290.0" y2="747.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="818.0" y1="737.0" x2="818.0" y2="747.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="554.0" y="734.0" font-size="13.5" fill="#5a626d" text-anchor="middle" font-weight="bold">verfügbar 6,00 m</text>
+<text x="290.0" y="570.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">benötigt:</text>
+<rect x="858.0" y="592.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#a9b1be" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="614.0" r="12" fill="#a9b1be"/>
+<path d="M875.0,614.0 L878.5,618.0 L886.0,609.0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="900.0" y="610.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 50: 5,2 m</text>
+<text x="900.0" y="627.0" font-size="11.5" fill="#a9b1be" text-anchor="start" font-weight="bold">passt</text>
+<rect x="858.0" y="644.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#a9b1be" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="666.0" r="12" fill="#a9b1be"/>
+<path d="M875.0,666.0 L878.5,670.0 L886.0,661.0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="900.0" y="662.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 30: 4,8 m</text>
+<text x="900.0" y="679.0" font-size="11.5" fill="#a9b1be" text-anchor="start" font-weight="bold">passt</text>
+<rect x="70.0" y="790.0" width="980.0" height="234.0" fill="#ffffff" rx="12" stroke="#e2e6eb" stroke-width="1.3" opacity="1"/>
+<text x="88.0" y="886.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Personenwagen /</text>
+<text x="88.0" y="906.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Lastwagen, Bus</text>
+<rect x="290.0" y="954.0" width="528.0" height="16.0" fill="#d5dae1" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="298.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="324.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="350.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="376.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="402.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="428.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="454.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="480.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="506.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="532.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="558.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="584.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="610.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="636.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="662.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="688.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="714.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="740.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="766.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="792.0" y="961.0" width="12" height="2.4" fill="#f7f8fa"/>
+<line x1="290.0" y1="916.0" x2="290.0" y2="976.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<line x1="818.0" y1="916.0" x2="818.0" y2="976.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<rect x="346.3" y="960.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="454.0" y="960.0" width="34.8" height="12" rx="4" fill="#12161c"/>
+<rect x="338.4" y="906.0" width="158.4" height="64.0" rx="10" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="368.5" y="886.0" width="98.2" height="26.0" rx="8" fill="#3c4652" stroke="#2b3440" stroke-width="1.5"/>
+<rect x="374.5" y="890.0" width="86.2" height="18.0" rx="4" fill="#e2e6eb" opacity="0.9"/>
+<circle cx="363.7" cy="918.0" r="4" fill="#eceff3"/>
+<circle cx="471.5" cy="918.0" r="4" fill="#eceff3"/>
+<rect x="551.9" y="958.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="709.0" y="958.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="545.2" y="838.0" width="224.4" height="132.0" rx="8" fill="#4a5563" stroke="#4a5563" stroke-width="1.5"/>
+<rect x="553.2" y="852.0" width="208.4" height="34" rx="5" fill="#e2e6eb" opacity="0.92"/>
+<rect x="555.2" y="936.0" width="204.4" height="10" rx="3" fill="#4a5563" opacity="0.5"/>
+<rect x="574.1" y="948.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<rect x="726.7" y="948.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<line x1="290.0" y1="992.0" x2="818.0" y2="992.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="290.0" y1="987.0" x2="290.0" y2="997.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="818.0" y1="987.0" x2="818.0" y2="997.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="554.0" y="984.0" font-size="13.5" fill="#5a626d" text-anchor="middle" font-weight="bold">verfügbar 6,00 m</text>
+<text x="290.0" y="820.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">benötigt:</text>
+<rect x="858.0" y="842.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#6e7783" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="864.0" r="12" fill="#6e7783"/>
+<rect x="878.6" y="858.0" width="2.8" height="7.5" rx="1.4" fill="#fff"/>
+<circle cx="880.0" cy="869.0" r="1.7" fill="#fff"/>
+<text x="900.0" y="860.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 50: 6,4 m</text>
+<text x="900.0" y="877.0" font-size="11.5" fill="#6e7783" text-anchor="start" font-weight="bold">knapp</text>
+<rect x="858.0" y="894.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#a9b1be" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="916.0" r="12" fill="#a9b1be"/>
+<path d="M875.0,916.0 L878.5,920.0 L886.0,911.0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="900.0" y="912.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 30: 5,5 m</text>
+<text x="900.0" y="929.0" font-size="11.5" fill="#a9b1be" text-anchor="start" font-weight="bold">passt</text>
+<rect x="70.0" y="1040.0" width="980.0" height="234.0" fill="#ffffff" rx="12" stroke="#e2e6eb" stroke-width="1.3" opacity="1"/>
+<text x="88.0" y="1136.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Lastwagen /</text>
+<text x="88.0" y="1156.0" font-size="15.5" fill="#12161c" text-anchor="start" font-weight="bold">Lastwagen</text>
+<rect x="290.0" y="1204.0" width="528.0" height="16.0" fill="#d5dae1" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="298.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="324.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="350.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="376.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="402.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="428.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="454.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="480.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="506.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="532.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="558.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="584.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="610.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="636.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="662.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="688.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="714.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="740.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="766.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<rect x="792.0" y="1211.0" width="12" height="2.4" fill="#f7f8fa"/>
+<line x1="290.0" y1="1166.0" x2="290.0" y2="1226.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<line x1="818.0" y1="1166.0" x2="818.0" y2="1226.0" stroke="#8b93a1" stroke-width="1.4" stroke-dasharray="none"/>
+<rect x="323.1" y="1208.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="480.2" y="1208.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="316.4" y="1088.0" width="224.4" height="132.0" rx="8" fill="#4a5563" stroke="#4a5563" stroke-width="1.5"/>
+<rect x="324.4" y="1102.0" width="208.4" height="34" rx="5" fill="#e2e6eb" opacity="0.92"/>
+<rect x="326.4" y="1186.0" width="204.4" height="10" rx="3" fill="#4a5563" opacity="0.5"/>
+<rect x="345.3" y="1198.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<rect x="497.9" y="1198.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<rect x="573.9" y="1208.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="731.0" y="1208.0" width="53.9" height="14" rx="4" fill="#12161c"/>
+<rect x="567.2" y="1088.0" width="224.4" height="132.0" rx="8" fill="#4a5563" stroke="#4a5563" stroke-width="1.5"/>
+<rect x="575.2" y="1102.0" width="208.4" height="34" rx="5" fill="#e2e6eb" opacity="0.92"/>
+<rect x="577.2" y="1186.0" width="204.4" height="10" rx="3" fill="#4a5563" opacity="0.5"/>
+<rect x="596.1" y="1198.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<rect x="748.7" y="1198.0" width="14" height="9" rx="2" fill="#eceff3"/>
+<line x1="290.0" y1="1242.0" x2="818.0" y2="1242.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="290.0" y1="1237.0" x2="290.0" y2="1247.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<line x1="818.0" y1="1237.0" x2="818.0" y2="1247.0" stroke="#5a626d" stroke-width="1.3" stroke-dasharray="none"/>
+<text x="554.0" y="1234.0" font-size="13.5" fill="#5a626d" text-anchor="middle" font-weight="bold">verfügbar 6,00 m</text>
+<text x="290.0" y="1070.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">benötigt:</text>
+<rect x="858.0" y="1092.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#1f2833" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="1114.0" r="12" fill="#1f2833"/>
+<path d="M875.5,1109.5 L884.5,1118.5 M884.5,1109.5 L875.5,1118.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<text x="900.0" y="1110.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 50: 6,7 m</text>
+<text x="900.0" y="1127.0" font-size="11.5" fill="#1f2833" text-anchor="start" font-weight="bold">zu schmal</text>
+<rect x="858.0" y="1144.0" width="230.0" height="44.0" fill="#ffffff" rx="8" stroke="#6e7783" stroke-width="1.6" opacity="1"/>
+<circle cx="880.0" cy="1166.0" r="12" fill="#6e7783"/>
+<rect x="878.6" y="1160.0" width="2.8" height="7.5" rx="1.4" fill="#fff"/>
+<circle cx="880.0" cy="1171.0" r="1.7" fill="#fff"/>
+<text x="900.0" y="1162.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 30: 6,0 m</text>
+<text x="900.0" y="1179.0" font-size="11.5" fill="#6e7783" text-anchor="start" font-weight="bold">knapp</text>
+<rect x="70.0" y="1300.0" width="980.0" height="182.0" fill="#ffffff" rx="12" stroke="#e2e6eb" stroke-width="1.3" opacity="1"/>
+<text x="88.0" y="1334.0" font-size="17" fill="#12161c" text-anchor="start" font-weight="bold">Velostreifen brauchen Platz</text>
+<text x="88.0" y="1385.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">heute oft</text>
+<rect x="320.0" y="1368.0" width="316.4" height="24.0" fill="#3c4652" rx="4" stroke="none" stroke-width="1" opacity="1"/>
+<text x="646.4" y="1385.0" font-size="13" fill="#12161c" text-anchor="start" font-weight="bold">6,0 m</text>
+<text x="88.0" y="1427.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">nötig für 2 Velostreifen</text>
+<rect x="320.0" y="1410.0" width="316.4" height="24.0" fill="#1f2833" rx="4" stroke="none" stroke-width="1" opacity="0.13"/>
+<rect x="320.0" y="1410.0" width="474.5" height="24.0" fill="none" rx="4" stroke="#1f2833" stroke-width="2" opacity="1"/>
+<text x="804.5" y="1427.0" font-size="13" fill="#1f2833" text-anchor="start" font-weight="bold">9,0 m</text>
+<text x="320.0" y="1446.0" font-size="11" fill="#5a626d" text-anchor="start" font-weight="normal">2 × 3,0 m Fahrstreifen + 2 × 1,5 m Velostreifen</text>
+<text x="88.0" y="1472.0" font-size="12.5" fill="#5a626d" text-anchor="start" font-weight="normal">Auf 6,0 m sind keine zwei normgerechten Velostreifen möglich, es bleibt Mischverkehr (bei tiefem Verkehr) oder eine Kernfahrbahn.</text>
+<text x="70.0" y="1512.0" font-size="11.5" fill="#8b93a1" text-anchor="start" font-weight="normal">Quelle: VSS-Planungswerte (Fahrbahnbreiten, Begegnungsfälle innerorts, SN 640 201); Fahrzeugbreiten PW 1,8 m, Lastwagen/Bus 2,55 m.</text>
+<text x="70.0" y="1530.0" font-size="11.5" fill="#8b93a1" text-anchor="start" font-weight="normal">Tempo 50 gemäss Initiative, Tempo 30 als Vergleich.</text>
+</svg>

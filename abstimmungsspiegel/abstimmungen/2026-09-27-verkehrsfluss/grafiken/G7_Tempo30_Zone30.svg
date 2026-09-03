@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="740" viewBox="0 0 1120 740" font-family="Arial, 'Helvetica Neue', system-ui, sans-serif">
+<rect x="0.0" y="0.0" width="1120.0" height="740.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<rect x="0.0" y="0.0" width="1120.0" height="8.0" fill="#3c4652" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="54.0" font-size="29" fill="#12161c" text-anchor="start" font-weight="bold">Tempo 30 oder Zone 30? Zwei verschiedene Instrumente</text>
+<text x="70.0" y="86.0" font-size="16" fill="#5a626d" text-anchor="start" font-weight="normal">Beide bedeuten 30 km/h, unterscheiden sich aber rechtlich und in der Anwendung deutlich.</text>
+<rect x="306.0" y="150.0" width="358.0" height="64.0" fill="#3c4652" rx="10" stroke="none" stroke-width="1"/>
+<text x="485.0" y="182.0" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">Tempo 30</text>
+<text x="485.0" y="204.0" font-size="12.5" fill="#e2e6eb" text-anchor="middle" font-weight="normal">streckenbezogen (Signal 2.30)</text>
+<rect x="688.0" y="150.0" width="358.0" height="64.0" fill="#8b93a1" rx="10" stroke="none" stroke-width="1"/>
+<text x="867.0" y="182.0" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">Zone 30</text>
+<text x="867.0" y="204.0" font-size="12.5" fill="#eceff3" text-anchor="middle" font-weight="normal">Zonensignal (2.59.1)</text>
+<rect x="64.0" y="250.0" width="992.0" height="40.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="276.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Wofür / Strassentyp</text>
+<text x="320.0" y="276.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">verkehrsorientierte Haupt- und Kantonsstrassen</text>
+<text x="702.0" y="276.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">siedlungsorientierte Quartier- und Nebenstrassen</text>
+<text x="70.0" y="316.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Signal</text>
+<text x="320.0" y="316.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Streckensignal 2.30, gilt bis zur Aufhebung</text>
+<text x="702.0" y="316.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Zonensignal 2.59.1 mit Endsignal 2.59.2</text>
+<rect x="64.0" y="330.0" width="992.0" height="40.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="356.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Vortritt</text>
+<text x="320.0" y="356.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">bleibt: die Durchgangsstrasse behält den Vortritt</text>
+<text x="702.0" y="356.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Rechtsvortritt an allen Verzweigungen</text>
+<text x="70.0" y="396.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Fussgängerstreifen</text>
+<text x="320.0" y="396.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">bleiben bestehen</text>
+<text x="702.0" y="396.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">grundsätzlich keine; queren überall (Ausnahme</text>
+<text x="702.0" y="416.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Schulen, Heime)</text>
+<rect x="64.0" y="430.0" width="992.0" height="40.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="456.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Gestaltung</text>
+<text x="320.0" y="456.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Signalisation genügt, keine Pflicht-Elemente</text>
+<text x="702.0" y="456.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Eingangstore und kontrastreiche Gestaltung nötig</text>
+<text x="70.0" y="496.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Gutachten</text>
+<text x="320.0" y="496.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">erforderlich (Art. 108 SSV)</text>
+<text x="702.0" y="496.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">vereinfacht möglich (Selbstdeklaration)</text>
+<rect x="64.0" y="510.0" width="992.0" height="40.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="536.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Zuständigkeit (hier)</text>
+<text x="320.0" y="536.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Kanton (auf Kantonsstrassen)</text>
+<text x="702.0" y="536.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Gemeinde (auf Gemeindestrassen)</text>
+<text x="70.0" y="576.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">Rechtsgrundlage</text>
+<text x="320.0" y="576.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Art. 108 SSV</text>
+<text x="702.0" y="576.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">SSV Art. 22a, Verordnung SR 741.213.3</text>
+<rect x="70.0" y="606.0" width="980.0" height="84.0" fill="#eaf1fb" rx="12" stroke="#3c4652" stroke-width="1.4"/>
+<text x="92.0" y="640.0" font-size="15" fill="#12161c" text-anchor="start" font-weight="bold">Was heisst das für die Initiative?</text>
+<text x="92.0" y="662.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">Die Verkehrsflussinitiative betrifft verkehrsorientierte Kantonsstrassen. Dort ist das mögliche Instrument die Tempo-30-Strecke,</text>
+<text x="92.0" y="681.0" font-size="13.5" fill="#5a626d" text-anchor="start" font-weight="normal">nicht die Zone 30 (diese gilt für Quartierstrassen der Gemeinden).</text>
+<text x="70.0" y="716.0" font-size="11" fill="#8b93a1" text-anchor="start" font-weight="normal">Quellen: SSV (Art. 22a, 108); UVEK-Verordnung über die Tempo-30-Zonen SR 741.213.3; ACS; bfu.</text>
+</svg>

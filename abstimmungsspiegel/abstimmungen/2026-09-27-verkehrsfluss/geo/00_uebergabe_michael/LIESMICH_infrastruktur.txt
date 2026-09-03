@@ -1,0 +1,24 @@
+Sensible Nutzungen an den betroffenen Kantonsstrassen - Grundlage "kurze Abschnitte"
+Verkehrsflussinitiative Kanton Schaffhausen (aktualisiert: 100/300/500 m, 4 Gruppen)
+
+INHALT
+- Karten_Infrastruktur_kurze_Abschnitte_SH.pdf : Bericht mit Deckblatt, Uebersichtstabelle,
+  17 Gemeindekarten (je mit benannten engen Beispiel-Abschnitten <=100 m) und Hinweisen.
+- Auswertung_Infrastruktur_kurze_Abschnitte_SH.xlsx : Blatt "Uebersicht" (100/300/500 m je Gemeinde),
+  Blatt "Nach_Gruppe" (km je Gruppe und Umkreis), Blatt "Kandidaten_Beispiele" (benannte Abschnitte
+  <=100 m und <=300 m je Gemeinde).
+- kandidaten_kurze_abschnitte.geojson : Linien der betroffenen Strassen innerhalb 100 m und 300 m
+  einer Nutzung, Attribut radius_m (100/300), LV95 (EPSG:2056), fuer Ihr GIS.
+- Karten_Gemeinden/ : je Gemeinde eine Karte als PNG und SVG.
+
+METHODE (Kurz)
+Betroffen = verkehrsorientierte Kantonsstrassen (ueberregional/regional) innerorts (Baugebiet).
+Infrastruktur = geliefertes GeoPackage v2, 213 Standorte: 91 Schulen, 77 Kindergaerten,
+30 Alters-/Pflegeheime (inkl. Wohngruppen/betreutes Wohnen) und 15 weitere Sozialeinrichtungen.
+Umkreise 100 m, 300 m und 500 m (Luftlinie), je Gruppe eigene Farbe. Kandidat kurzer Abschnitt =
+betroffene Strasse innerhalb 100 m (eng, rot) bzw. 300 m (weiter, blass). Alles in LV95.
+
+KERNZAHLEN
+Kantonsweit 43,9 km betroffen; 5,7 km (13%) innerhalb 100 m, 24,6 km (56%) innerhalb 300 m,
+32,1 km (73%) innerhalb 500 m. Selbst 100 m entspricht entlang der Strasse bis rund 200 m Fahrbahn
+je Anlage. Details, Beispiele und Vorbehalte siehe PDF.

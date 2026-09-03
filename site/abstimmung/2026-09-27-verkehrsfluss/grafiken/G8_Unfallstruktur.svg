@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" font-family="Arial, 'Helvetica Neue', system-ui, sans-serif">
+<rect x="0.0" y="0.0" width="1120.0" height="680.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1"/>
+<rect x="0.0" y="0.0" width="1120.0" height="8.0" fill="#3c4652" rx="0" stroke="none" stroke-width="1"/>
+<text x="70.0" y="54.0" font-size="29" fill="#12161c" text-anchor="start" font-weight="bold">Wer verunfallt auf den Ortsdurchfahrten?</text>
+<text x="70.0" y="86.0" font-size="16" fill="#5a626d" text-anchor="start" font-weight="normal">1’189 Unfälle mit Personenschaden auf Kantonsstrassen innerorts, 2011 bis 2025.</text>
+<rect x="70.0" y="120.0" width="980.0" height="150.0" fill="#ffffff" rx="14" stroke="#e2e6eb" stroke-width="1.5"/>
+<text x="94.0" y="154.0" font-size="17" fill="#12161c" text-anchor="start" font-weight="bold">Nach Schwere des Unfalls</text>
+<rect x="94.0" y="180.0" width="749.4" height="40.0" fill="#3c4652" rx="0" stroke="none" stroke-width="1"/>
+<rect x="843.4" y="180.0" width="179.5" height="40.0" fill="#e0932a" rx="0" stroke="none" stroke-width="1"/>
+<rect x="1022.9" y="180.0" width="3.1" height="40.0" fill="#1f2833" rx="0" stroke="none" stroke-width="1"/>
+<rect x="94.0" y="243.0" width="13.0" height="13.0" fill="#3c4652" rx="2" stroke="none" stroke-width="1"/>
+<text x="113.0" y="254.0" font-size="12.5" fill="#5a626d" text-anchor="start" font-weight="normal">956 Unfälle mit Leichtverletzten (80%)</text>
+<rect x="344.0" y="243.0" width="13.0" height="13.0" fill="#e0932a" rx="2" stroke="none" stroke-width="1"/>
+<text x="363.0" y="254.0" font-size="12.5" fill="#5a626d" text-anchor="start" font-weight="normal">229 mit Schwerverletzten (19%)</text>
+<rect x="594.0" y="243.0" width="13.0" height="13.0" fill="#1f2833" rx="2" stroke="none" stroke-width="1"/>
+<text x="613.0" y="254.0" font-size="12.5" fill="#5a626d" text-anchor="start" font-weight="normal">4 mit Getöteten</text>
+<rect x="70.0" y="292.0" width="980.0" height="210.0" fill="#ffffff" rx="14" stroke="#e2e6eb" stroke-width="1.5"/>
+<text x="94.0" y="326.0" font-size="17" fill="#12161c" text-anchor="start" font-weight="bold">Verletzliche Verkehrsteilnehmer</text>
+<text x="94.0" y="348.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">Sie profitieren am stärksten von tieferem Tempo.</text>
+<rect x="94.0" y="364.0" width="454.0" height="96.0" fill="#f7f9fc" rx="10" stroke="#e2e6eb" stroke-width="1"/>
+<circle cx="132.0" cy="412.0" r="22" fill="#5a626d"/>
+<text x="132.0" y="418.0" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">F</text>
+<text x="168.0" y="408.0" font-size="30" fill="#12161c" text-anchor="start" font-weight="bold">144</text>
+<text x="168.0" y="436.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">Unfälle mit Fussgängerbeteiligung</text>
+<rect x="572.0" y="364.0" width="454.0" height="96.0" fill="#f7f9fc" rx="10" stroke="#e2e6eb" stroke-width="1"/>
+<circle cx="610.0" cy="412.0" r="22" fill="#8b93a1"/>
+<text x="610.0" y="418.0" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">V</text>
+<text x="646.0" y="408.0" font-size="30" fill="#12161c" text-anchor="start" font-weight="bold">327</text>
+<text x="646.0" y="436.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">Unfälle mit Velobeteiligung</text>
+<text x="94.0" y="484.0" font-size="14.5" fill="#12161c" text-anchor="start" font-weight="bold">Zusammen rund 40 % aller Unfälle betreffen Fussgänger oder Velofahrer.</text>
+<rect x="70.0" y="522.0" width="980.0" height="66.0" fill="#fdecec" rx="12" stroke="#1f2833" stroke-width="1.2"/>
+<text x="92.0" y="550.0" font-size="14" fill="#1f2833" text-anchor="start" font-weight="bold">Warum Tempo wirkt (bfu):</text>
+<text x="92.0" y="572.0" font-size="13" fill="#5a626d" text-anchor="start" font-weight="normal">Anhalteweg 20 m statt 40 m. Das Risiko, als Fussgänger bei einer Kollision getötet zu werden, ist bei Tempo 50 rund sechsmal höher als bei Tempo 30.</text>
+<text x="70.0" y="660.0" font-size="11" fill="#8b93a1" text-anchor="start" font-weight="normal">Quelle: ASTRA-Unfalldaten (data.geo.admin.ch), 2011 bis 2025; bfu, Fakten Tempo 30.</text>
+</svg>

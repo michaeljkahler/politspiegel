@@ -1,0 +1,949 @@
+{
+  "schema_version": "0.4",
+  "stand": "2026-09-03",
+  "status": "entwurf",
+  "hinweis_prototyp": "Argumente erhoben von den Websites beider Komitees und aus dem amtlichen Abstimmungsmagazin, je fünf pro Seite. Räumliche Auswertung, Kennzahlen und Grafiken aus eigener Geoanalyse, Juli und August 2026.",
+  "vorlage": {
+    "id": "sh-verkehrsfluss-2026",
+    "titel": "Verkehrsflussinitiative",
+    "untertitel": "Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen», mit Gegenvorschlag des Kantonsrats",
+    "ebene": "Kanton Schaffhausen",
+    "abstimmung": "2026-09-27",
+    "worum_geht_es": "Die Initiative will im kantonalen Strassengesetz festschreiben, dass auf Kantonsstrassen innerorts, die auch vom öffentlichen Verkehr genutzt werden, generell Tempo 50 gilt und der Verkehrsfluss weder durch bauliche Massnahmen noch durch Verkehrsanordnungen verlangsamt werden darf. Ausnahmen wären nur auf kurzen Strecken und nur mit Festlegung im kantonalen Strassenrichtplan möglich. Der Kantonsrat lehnt die Initiative ab und stellt ihr einen Gegenvorschlag gegenüber, der dasselbe Grundanliegen aufnimmt, aber auf das Bauverbot und den Richtplanvorbehalt verzichtet.",
+    "bei_ja": "Neuer Art. 12 Abs. 3 und 4 Strassengesetz: generell Tempo 50 auf diesen Strassen, kein Verlangsamen durch Bau oder Anordnung, Ausnahmen nur auf kurzen Strecken und nur mit Eintrag im kantonalen Strassenrichtplan, den der Kantonsrat beschliesst.",
+    "bei_nein": "Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag käme in Art. 12 Abs. 3 der Satz: «Auf verkehrsorientierten Kantonsstrassen innerorts gilt grundsätzlich als allgemeine Höchstgeschwindigkeit 50 km/h. Der Verkehrsablauf darf nicht behindert werden.»",
+    "doppelvorlage": "Abgestimmt wird über Initiative und Gegenvorschlag getrennt, dazu über die Stichfrage. Das Initiativkomitee empfiehlt Ja zur Initiative, Nein zum Gegenvorschlag, Stichfrage Initiative. Das Bündnis Pro30 empfiehlt zweimal Nein. Regierungsrat und Kantonsrat empfehlen Nein zur Initiative, Ja zum Gegenvorschlag, Stichfrage Gegenvorschlag.",
+    "rechtsrahmen": "Die Höchstgeschwindigkeit ist bundesrechtlich geregelt (SVG, Signalisationsverordnung Art. 108). Abweichungen setzen ein Gutachten voraus und müssen verhältnismässig sein; wo Lärmgrenzwerte überschritten sind, verpflichten Umweltschutzgesetz und Lärmschutz-Verordnung zur Sanierung. Das Bundesgericht hat am 31. März 2026 (Urteil 1C_345/2025) eine Stimmrechtsbeschwerde abgewiesen und die Initiative für zulässig erklärt, dabei aber festgehalten, dass das Bundesrecht wenig Spielraum lässt, in gewissen Fällen sogar eine Pflicht zur Herabsetzung besteht und stets eine Einzelfallprüfung erfolgen muss.",
+    "kantonsrat_suche": "Verkehrsflussinitiative",
+    "quellen": [
+      {
+        "titel": "Schaffhauser Abstimmungs-Magazin zur Volksabstimmung vom 27. September 2026",
+        "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Bundesgericht weist Beschwerde gegen Verkehrsflussinitiative ab, Staatskanzlei Kanton Schaffhausen",
+        "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei-21924773-DE.html",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Initiativkomitee: verkehrsflussinitiative.ch",
+        "url": "https://verkehrsflussinitiative.ch/",
+        "art": "komitee"
+      },
+      {
+        "titel": "Bündnis Pro30: pro30.ch",
+        "url": "https://www.pro30.ch/",
+        "art": "komitee"
+      }
+    ]
+  },
+  "achsen": [
+    {
+      "id": "quelle",
+      "kurz": "Quellenlage",
+      "frage": "Nennt die Seite für ihre Aussage eine überprüfbare Quelle?",
+      "null": "keine Quelle genannt",
+      "voll": "amtliche Statistik, Gesetzestext oder begutachtete Studie"
+    },
+    {
+      "id": "zahl",
+      "kurz": "Zahlenfestigkeit",
+      "frage": "Ist die Zahl belastbar und richtig bezogen?",
+      "null": "Zahl fehlt oder ist falsch bezogen",
+      "voll": "Zahl, Bezugsgrösse, Zeitraum und Unsicherheit genannt"
+    },
+    {
+      "id": "ursache",
+      "kurz": "Ursachennachweis",
+      "frage": "Ist der behauptete Zusammenhang belegt?",
+      "null": "blosse Gleichzeitigkeit oder Behauptung",
+      "voll": "Wirkungskette belegt, Vergleichsfall vorhanden"
+    },
+    {
+      "id": "reichweite",
+      "kurz": "Reichweite",
+      "frage": "Gilt die Aussage so allgemein, wie sie formuliert ist?",
+      "null": "unzulässig verallgemeinert",
+      "voll": "Bedingungen und Ausnahmen benannt"
+    },
+    {
+      "id": "transfer",
+      "kurz": "Übertragbarkeit",
+      "frage": "Passt der Beleg auf Schaffhausen und auf diese Vorlage?",
+      "null": "anderer Zusammenhang, andere Grössenordnung",
+      "voll": "Daten oder Texte aus dem Kanton, direkt zur Vorlage"
+    }
+  ],
+  "argumente": [
+    {
+      "id": "pro-1",
+      "seite": "pro",
+      "aussage": "Temporeduktionen führen zu längeren Fahrzeiten für Busse, Krankenwagen, Feuerwehr und Polizei, die nicht behindert werden dürfen.",
+      "traeger": "Initiativkomitee, offizielles Argument im Abstimmungsmagazin",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Argumente des Initiativkomitees», S. 13",
+        "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+        "datum": "2026",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 0,
+        "ursache": 2,
+        "reichweite": 1,
+        "transfer": 1
+      },
+      "trifft_zu": "Für den Busverkehr stimmt die Richtung. Tempo 30 verlängert die Fahrzeit, die publizierten Werte für Hauptstrassen liegen zwischen rund 15 und 30 Sekunden pro Kilometer: das ASTRA nennt als Faustregel 2 Sekunden pro 100 Meter, der VCS 15 Sekunden pro Kilometer, die SVI rund 20, Messungen in Zürich 10 bis 30. Auch der Kanton hält im Abstimmungsmagazin fest, eine Temporeduktion könne auf längeren Abschnitten die Reisezeit erhöhen, was für den öffentlichen Verkehr nachteilig sein kann.",
+      "fehlt": "Zwei Dinge. Erstens die Grössenordnung, und die ist klein: Der Richtwert von +30 Sekunden je Kilometer ergibt auf einer 1 km langen Tempo-30-Strecke eine halbe Minute, auf 5 km zweieinhalb Minuten. Zweitens gilt der Mechanismus für Blaulichtfahrzeuge rechtlich gar nicht: Nach Art. 100 Ziff. 4 des Strassenverkehrsgesetzes dürfen Führer von Feuerwehr-, Sanitäts- und Polizeifahrzeugen auf dringlicher Dienstfahrt mit Warnvorrichtung die signalisierte Höchstgeschwindigkeit überschreiten, sofern sie die erhöhte Sorgfalt wahren. Eine reine Signalisation Tempo 30 verlängert die Einsatzfahrt also nicht zwingend. Für die Einsatzzeit ist die Verkehrsdichte wichtiger als das Tempolimit. Was Einsatzfahrzeuge tatsächlich bremst, sind bauliche Elemente wie Schwellen und Vertikalversätze, weil diese nicht umfahrbar sind: also genau die Massnahmen, welche die Initiative verhindern will. Für den Bus trifft der Einwand dagegen zu, siehe die Karte nebenan.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie gross ist die Folge?",
+          "status": "offen",
+          "kommentar": "keine Zahl genannt"
+        },
+        {
+          "frage": "Gilt die Folge für alle genannten Gruppen?",
+          "status": "nein",
+          "kommentar": "für Blaulichtfahrzeuge im Einsatz gelten Sonderrechte"
+        },
+        {
+          "frage": "Gibt es einen stärkeren Einflussfaktor?",
+          "status": "nein",
+          "kommentar": "der Kanton nennt die Ampelsteuerung"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Merkblatt zur Verwendung von Blaulicht und Wechselklanghorn, ASTRA",
+          "url": "https://www.astra.admin.ch/dam/astra/de/dokumente/fahrzeuge/merkblaetter/merkblatt-verwendung-blaulicht.pdf.download.pdf/Merkblatt%20zur%20Verwendung%20von%20Blaulicht%20und%20Wechselklanghorn.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Tempo 30 bremst den ÖV laut Studie kaum aus, SRF",
+          "url": "https://www.srf.ch/news/schweiz/verkehrsberuhigung-tempo-30-bremst-den-oev-laut-studie-kaum-aus",
+          "art": "medien"
+        },
+        {
+          "titel": "Studie zu Vorteilen von Tempo 30, VCS",
+          "url": "https://www.verkehrsclub.ch/schwerpunkte/studie-vorteile-tempo-30",
+          "art": "interessengruppe"
+        }
+      ],
+      "grafik": {
+        "datei": "G6_Blaulicht",
+        "titel": "Tempo 30 und die Blaulichtorganisationen",
+        "hinweis": "Rechnerische Richtwerte, keine Einsatzstatistik.",
+        "quelle": "Eigene Auswertung; ASTRA-Merkblatt Blaulicht (Art. 100 Ziff. 4 SVG), Polizei Freiburg (+30 s/km), Studie Luzern"
+      }
+    },
+    {
+      "id": "pro-2",
+      "seite": "pro",
+      "aussage": "Zusätzlich verteuert Tempo 30 den öffentlichen Verkehr. Der ÖV wird unattraktiv und teurer, wenn mehr Busse und Personal eingesetzt werden müssen.",
+      "traeger": "Initiativkomitee, Abstimmungsmagazin, und Michael Mundt, Kantonsrat",
+      "fundstelle": {
+        "titel": "Abstimmungs-Magazin S. 13 und verkehrsflussinitiative.ch",
+        "url": "https://verkehrsflussinitiative.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 0,
+        "ursache": 2,
+        "reichweite": 2,
+        "transfer": 1
+      },
+      "trifft_zu": "Der Mechanismus ist richtig beschrieben und in der Fahrplanung anerkannt. Steigt die Umlaufzeit einer Linie über eine Taktschwelle, braucht es ein zusätzliches Fahrzeug samt Personal. Das ist ein Sprungkostenfeffekt, nicht ein gleichmässiger Aufschlag, und er kann eine Linie tatsächlich spürbar verteuern.",
+      "fehlt": "Die Zahlen, die das Argument tragen würden, nennt das Komitee nicht. Die eigene Rechnung stützt es teilweise und begrenzt es zugleich. Entscheidend ist nicht die Zusatzzeit, sondern ob sie die Wendezeit an der Endstation aufbraucht: Fahrzeit plus Wendezeit muss ein ganzes Vielfaches des Takts ergeben. Bei Linie 1 geht das exakt auf, 55 Minuten Fahrzeit plus 5 Minuten Wende ergeben 60 Minuten, also sechs Fahrzeuge im Zehnminutentakt; nach Abzug der Zusatzzeit bliebe weniger Wende, als planmässig gebraucht wird.\n\nBegrenzt wird das Argument durch die tatsächliche Geschwindigkeit. Auf allen vierzehn gemessenen Kursen, sieben Stadtlinien in beiden Richtungen, liegt die Reisegeschwindigkeit zwischen 15,9 und 24,1 km/h. Rechnet man die Haltezeit heraus, mit 12 Sekunden je Halt, bleiben 12 der 14 Kurse unter 30 km/h; nur die Auswärtsrichtungen der Linien 5 und 7 kommen mit 31,3 und 30,3 knapp darüber. Tempo 30 kostet also etwas, aber nur auf wenigen Abschnitten. Dazu kommt: Bei Haltestellen alle 369 Meter kann ein Bus auch ohne jeden Verkehr höchstens rund 34 km/h Schnitt fahren, weil Beschleunigen und Bremsen den Abschnitt aufbrauchen. Die Spanne zwischen 50 und 30, um die gestritten wird, ist für einen Stadtbus deutlich kleiner, als sie klingt.\n\nBei den Regionallinien greift das Fahrzeugmodell nicht, weil sie von Schaffhausen aus mehrere Äste bedienen. Dort stellt sich eine andere Frage: Von 82 gemessenen Anschlüssen an den Bahnhof haben 41 weniger als 5 Minuten Luft, bei den Linien 632 und 634 jeder einzelne. Ein System mit so knappen Umsteigezeiten hat keine Reserve. Und der grösste Vorbehalt bleibt, dass flächendeckendes Tempo 30 gerechnet ist, was gar nicht zur Abstimmung steht.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die Folge?",
+          "status": "offen",
+          "kommentar": "hängt von der Fahrplanreserve je Linie ab, dazu keine Angabe"
+        },
+        {
+          "frage": "Wie gross ist die Folge?",
+          "status": "offen",
+          "kommentar": "keine Kostenzahl genannt"
+        },
+        {
+          "frage": "Gibt es andere Wege zum Ziel?",
+          "status": "offen",
+          "kommentar": "Busspuren und Ampelbevorzugung nicht erwähnt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Tempo 30 bremst den ÖV laut Studie kaum aus, SRF",
+          "url": "https://www.srf.ch/news/schweiz/verkehrsberuhigung-tempo-30-bremst-den-oev-laut-studie-kaum-aus",
+          "art": "medien"
+        }
+      ],
+      "zahlhinweis": "Fahrzeiten, Wendezeiten und Anschlüsse aus dem Fahrplan von transport.opendata.ch, Kurse vom 8. September 2026. Weglänge entlang der Strassenachsen, Dijkstra über einen Graphen aus 2566 OpenStreetMap-Wegen; von 246 Abschnitten liessen sich 79 nicht führen, dort Luftlinie mal 1,2. Die Haltezeit von 12 Sekunden ist nicht gesetzt, sondern aus den Daten hergeleitet: Höhere Werte ergäben für die schnellsten Kurse eine Fahrgeschwindigkeit über der physikalischen Obergrenze, die schärfste Schranke liegt bei 14 Sekunden. Die Taktprobe besteht nur für die Linien 1, 3, 4, 6 und 8. Herleitung in docs/KONZEPT_abstimmungsspiegel.md, Kapitel 16a.",
+      "grafiken": [
+        {
+          "datei": "E1_Reisegeschwindigkeit",
+          "titel": "Wie schnell die Schaffhauser Busse wirklich sind",
+          "hinweis": "Reisegeschwindigkeit je Kurs gegen die signalisierten Grenzwerte.",
+          "quelle": "Eigene Auswertung; Fahrplan transport.opendata.ch, Haltestellen ch.bav.haltestellen-oev"
+        },
+        {
+          "datei": "G5_Buslinien",
+          "titel": "Buslinien und Tempo 30: zusätzliche Fahrzeit",
+          "hinweis": "Rechnung mit dem ASTRA-Richtwert von 20 Sekunden je Kilometer.",
+          "quelle": "Eigene Auswertung; Linienführung OpenStreetMap, Zeitwirkung ASTRA-Forschungsbericht 1663"
+        },
+        {
+          "datei": "E2_Fahrzeugbedarf",
+          "titel": "Braucht Tempo 30 einen zusätzlichen Bus?",
+          "hinweis": "Wendezeit je Umlauf gegen die Zusatzzeit, die Tempo 30 verbraucht. Der Fahrzeugbedarf springt erst, wenn die Wendezeit nicht mehr reicht.",
+          "quelle": "Eigene Auswertung; Fahrplan transport.opendata.ch, Zeitwirkung physikalisch oder nach ASTRA-Forschungsbericht 1663"
+        }
+      ]
+    },
+    {
+      "id": "pro-3",
+      "seite": "pro",
+      "aussage": "Die Verkehrsflussinitiative trägt dazu bei, den Verkehr auf die Hauptverkehrsachsen zu lenken und den Schleichverkehr in den Quartieren zu reduzieren.",
+      "traeger": "Initiativkomitee, offizielles Argument im Abstimmungsmagazin",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Argumente des Initiativkomitees», S. 13",
+        "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+        "datum": "2026",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 0,
+        "ursache": 2,
+        "reichweite": 2,
+        "transfer": 2
+      },
+      "trifft_zu": "Das Grundanliegen wird amtlich geteilt, und zwar wörtlich. Der Kanton schreibt im Abstimmungsmagazin: «Ein Ausweichen des Verkehrs auf die untergeordnete Netzebene, insbesondere auf Quartierstrassen in den Siedlungsgebieten, ist nicht erwünscht. Es ist deshalb naheliegend, dass die verkehrsorientierten Strassen grundsätzlich ohne Widerstände, d. h. mit Tempo 50 signalisiert sein sollen.» Das ist die stärkste Stütze, die dieses Argument hat.",
+      "fehlt": "Der Nachweis, dass die Initiative das auch bewirkt. Für Schaffhausen liegt keine Verkehrszählung vor, die Ausweichverkehr als Folge einer Temporeduktion misst. Der Kanton nennt im selben Abschnitt einen anderen Haupttreiber: In der Spitzenzeit ist die Kapazität der Nationalstrasse erreicht, weshalb der Verkehr auf das untergeordnete Netz ausweicht; und die Ampelsteuerung habe grösseren Einfluss auf den Verkehrsfluss als die signalisierte Höchstgeschwindigkeit. Ausserdem gilt in den Wohnquartieren bereits weitgehend Tempo 30, was den Zeitvorteil einer Ausweichroute begrenzt.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist die Wirkungskette lückenlos?",
+          "status": "offen",
+          "kommentar": "setzt voraus, dass die Nebenroute relativ attraktiver wird"
+        },
+        {
+          "frage": "Gibt es eine dritte Ursache?",
+          "status": "nein",
+          "kommentar": "Kapazitätsgrenze der Nationalstrasse, vom Kanton genannt"
+        },
+        {
+          "frage": "Gibt es einen Vergleichsfall?",
+          "status": "offen",
+          "kommentar": "keine Messung aus Schaffhausen oder vergleichbaren Städten genannt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, «Zur Sache», S. 6 und 7",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-4",
+      "seite": "pro",
+      "aussage": "Der Gegenvorschlag verlangt, dass Tempo 50 «grundsätzlich» eingehalten wird, während die Initiative den Begriff «generell» verwendet. «Grundsätzlich» bedeutet: im Prinzip ja, im Einzelfall jedoch mit Ausnahmen. «Generell» bedeutet: allgemein gültig, ohne Ausnahmen bereits einzukalkulieren.",
+      "traeger": "Initiativkomitee, offizielles Argument im Abstimmungsmagazin",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Argumente des Initiativkomitees», S. 13",
+        "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+        "datum": "2026",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 1,
+        "transfer": 3
+      },
+      "trifft_zu": "Der Wortlautunterschied besteht tatsächlich, beide Texte sind im Abstimmungsmagazin abgedruckt und nachlesbar. Und in der Gesetzessprache ist die Unterscheidung nicht bedeutungslos: «generell» ist die striktere Formulierung. Auch der Kantonsrat räumt ein, dass der Gegenvorschlag auf die weitergehenden Forderungen der Initiative verzichtet, der Unterschied also real ist.",
+      "fehlt": "Die rechtliche Obergrenze. Kantonales Recht kann Bundesrecht nicht übersteuern, und das Bundesgericht hat im Urteil 1C_345/2025 festgehalten, dass das Bundesrecht wenig Spielraum lässt, dass in gewissen Fällen sogar eine Pflicht zur Herabsetzung der Höchstgeschwindigkeit besteht und dass stets eine Einzelfallprüfung erfolgen muss, allenfalls auch auf längeren Strecken. Eine Regel «ohne Ausnahmen» ist damit auch mit dem Wort «generell» nicht erreichbar. Beide Texte binden nur den verbleibenden kantonalen Ermessensspielraum; der praktische Unterschied ist deshalb kleiner, als die Gegenüberstellung nahelegt. Um wie viel kleiner, sagt keine der beiden Seiten.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist die behauptete Rechtsfolge erreichbar?",
+          "status": "nein",
+          "kommentar": "Bundesrecht verlangt Einzelfallprüfung, teils sogar Herabsetzung"
+        },
+        {
+          "frage": "Wird der Wortlaut korrekt wiedergegeben?",
+          "status": "beantwortet",
+          "kommentar": "beide Texte sind im Abstimmungsmagazin abgedruckt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, Bundesgerichtsurteil und Initiativtext, S. 9 und 19",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-5",
+      "seite": "pro",
+      "aussage": "Flächendeckendes Tempo 30 ist nicht zielführend und muss gestoppt werden. Tempo 30 macht Sinn in Wohnquartieren, nicht auf Hauptverkehrsachsen.",
+      "traeger": "Sabrina Colluto, Vorstand ACS Schaffhausen und Grossstadträtin",
+      "fundstelle": {
+        "titel": "verkehrsflussinitiative.ch",
+        "url": "https://verkehrsflussinitiative.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "wertung",
+      "schema": "Werturteil",
+      "pruefung": {},
+      "trifft_zu": "Die Aussage benennt eine Abwägung: Erreichbarkeit und Reisezeit auf den Hauptachsen gegen Schutz und Ruhe entlang derselben Achsen. Beide Güter sind real, beide sind rechtlich geschützt.",
+      "fehlt": "Nichts, was sich prüfen liesse. Wo die Grenze zwischen «sinnvoll» und «übertrieben» liegt, ist keine Frage der Daten, sondern eine Gewichtung. Sie steht hier, damit sichtbar ist, dass ein Teil des Abstimmungskampfs aus solchen Sätzen besteht und nicht aus prüfbaren Behauptungen.",
+      "kritische_fragen": [],
+      "belege": []
+    },
+    {
+      "id": "contra-1",
+      "seite": "contra",
+      "aussage": "In der Schweiz sterben immer mehr Menschen im Strassenverkehr: +34 % innert 5 Jahren. Das ist die höchste Zunahme in ganz Europa. In Schaffhausen hat die Zahl der verletzten Fussgänger besonders stark zugenommen.",
+      "traeger": "Bündnis Pro30",
+      "fundstelle": {
+        "titel": "pro30.ch, Abschnitt «Sicherheit»",
+        "url": "https://www.pro30.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Korrelation zu Ursache",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": 2,
+        "ursache": 0,
+        "reichweite": 1,
+        "transfer": 1
+      },
+      "trifft_zu": "Die nationale Zahl ist auffindbar und trifft zu. Nach dem Bericht «Ranking EU Progress on Road Safety» des European Transport Safety Council stieg die Zahl der Verkehrstoten in der Schweiz innert fünf Jahren um 34 Prozent, während der europäische Durchschnitt um 12 Prozent sank. Das ist tatsächlich der schlechteste Wert Europas.",
+      "fehlt": "Drei Dinge. Erstens die Niveauangabe: Mit rund 28 Verkehrstoten je Million Einwohner liegt die Schweiz auf Rang sieben und damit in der europäischen Spitzengruppe. Der Satz beschreibt eine Trendumkehr, nicht einen schlechten Stand, und «immer mehr» legt das Gegenteil nahe. Zweitens die Schaffhauser Zahl: Für den Teilsatz zu den verletzten Fussgängern werden weder Werte noch Zeitraum noch Bezugsgrösse genannt. Die eigene Auswertung der ASTRA-Unfalldaten zählt auf den Kantonsstrassen innerorts über 15 Jahre 1184 Unfälle mit Personenschaden, davon 140 mit Fussgängern und 322 mit Velofahrenden; auf den von der Initiative erfassten verkehrsorientierten Abschnitten sind es 901. Über 15 Jahre ergibt das rund neun Fussgängerunfälle je Jahr im ganzen Kanton. Bei so kleinen Jahreszahlen dominiert die Zufallsschwankung jeden Prozentwert: Bei einem Anstieg von 2 auf 6 Fälle wären es rechnerisch 200 Prozent und statistisch nicht von Zufall zu unterscheiden, der exakte Test ergibt p = 0,29. Drittens der Bezug zur Vorlage: Es fehlt der Nachweis, dass die Zunahme mit der Höchstgeschwindigkeit auf Kantonsstrassen zusammenhängt oder dass die Initiative sie verschärfen würde.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist die Veränderung von Zufall unterscheidbar?",
+          "status": "offen",
+          "kommentar": "für den Schaffhauser Teil keine Zahlen genannt"
+        },
+        {
+          "frage": "Ist die Zahl richtig bezogen?",
+          "status": "nein",
+          "kommentar": "Trend statt Niveau, national statt kantonal"
+        },
+        {
+          "frage": "Gibt es eine plausible Wirkungskette zur Vorlage?",
+          "status": "offen",
+          "kommentar": "Zusammenhang zur Signalisation nicht hergestellt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Weshalb die Schweiz im europäischen Vergleich zurückfällt, Aargauer Zeitung",
+          "url": "https://www.aargauerzeitung.ch/schweiz/verkehrstote-weshalb-die-schweiz-im-europaeischen-vergleich-zurueckfaellt-ld.4039694",
+          "art": "medien"
+        },
+        {
+          "titel": "Zu viele Getötete im Strassenverkehr, BFU",
+          "url": "https://www.bfu.ch/de/die-bfu/medien/zu-viele-getoetete-im-strassenverkehr",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Verkehrstote in der EU, Europäisches Parlament",
+          "url": "https://www.europarl.europa.eu/topics/de/article/20190410STO36615/verkehrstote-in-der-eu-statistiken-und-infografik",
+          "art": "amtlich"
+        }
+      ],
+      "grafik": {
+        "datei": "G8_Unfallstruktur",
+        "titel": "Unfallstruktur auf den Kantonsstrassen innerorts",
+        "hinweis": "Unfälle mit Personenschaden 2011 bis 2025, 15 Jahre.",
+        "quelle": "Eigene Auswertung; ASTRA-Datensatz Strassenverkehrsunfallorte"
+      },
+      "zahlhinweis": "Die 1184 Unfälle sind aus der gelieferten Abschnittstabelle nachgerechnet. Der zugehörige Bericht nennt 1189; die Differenz von fünf Fällen dürfte daher rühren, dass einige Unfälle keinem benannten Abschnitt zugeordnet werden konnten. Für die Grössenordnung ist das ohne Belang, der Hinweis gehört trotzdem hierhin."
+    },
+    {
+      "id": "contra-2",
+      "seite": "contra",
+      "aussage": "Zusätzlich will die Initiative Sicherheitselemente wie Mittelschutzinseln bei Fussgängerstreifen oder Ortseingängen abschaffen.",
+      "traeger": "Bündnis Pro30",
+      "fundstelle": {
+        "titel": "pro30.ch, FAQ «Was will die Initiative genau?»",
+        "url": "https://www.pro30.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 4,
+        "zahl": null,
+        "ursache": 3,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "Der Kern ist durch den Initiativtext und die amtliche Würdigung gedeckt, und zwar mit genau diesen Beispielen. Der Initiativtext verbietet, den Verkehrsfluss «weder durch bauliche Massnahmen noch durch Verkehrsanordnungen» zu behindern oder zu verlangsamen. Regierungsrat und Kantonsrat halten dazu im Abstimmungsmagazin fest: «Beispielsweise sind die gezielte Reduktion der gefahrenen Geschwindigkeit bei Ortseingängen mit ‹Eingangsbremsen› oder der Bau von Mittelschutzinseln bei Fussgängerquerungen Massnahmen, welche die Verkehrssicherheit wesentlich verbessern können.» Ebendarum verzichtet der Gegenvorschlag auf diesen Satz. Das ist die bestbelegte Aussage im ganzen Abstimmungskampf.",
+      "fehlt": "Die Genauigkeit im Verb und im Geltungsbereich. Die Initiative ordnet keinen Rückbau bestehender Anlagen an, sie verhindert künftige Massnahmen, die den Verkehrsfluss verlangsamen. «Abschaffen» geht darum weiter als der Text. Und das Verbot gilt nach dem Wortlaut nur auf Kantonsstrassen innerorts, die auch vom öffentlichen Verkehr genutzt werden, nicht auf allen Strassen. Ausserdem lässt die Initiative Ausnahmen auf kurzen Strecken ausdrücklich zu.",
+      "kritische_fragen": [
+        {
+          "frage": "Wird der Wortlaut korrekt wiedergegeben?",
+          "status": "nein",
+          "kommentar": "«abschaffen» statt «künftig nicht mehr zulassen»"
+        },
+        {
+          "frage": "Stimmt der Geltungsbereich?",
+          "status": "nein",
+          "kommentar": "nur Kantonsstrassen innerorts mit öffentlichem Verkehr"
+        },
+        {
+          "frage": "Ist die Quelle unabhängig?",
+          "status": "beantwortet",
+          "kommentar": "Initiativtext und amtliche Würdigung von Regierungs- und Kantonsrat"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, Text der Initiative, S. 19",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, Politische Beurteilung, S. 10",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        }
+      ],
+      "grafik": {
+        "datei": "G1_Strassenbreiten",
+        "titel": "Wie viel Platz eine Ortsdurchfahrt braucht",
+        "hinweis": "Planungswerte, für rechtsverbindliche Masse gelten die aktuellen VSS-Normen.",
+        "quelle": "Eigene Auswertung; kantonale Handbücher, gegengeprüft an RASt 06"
+      }
+    },
+    {
+      "id": "contra-3",
+      "seite": "contra",
+      "aussage": "Mit der Initiative wird ein Eintrag in den Richtplan vorausgesetzt. Der Richtplan wird jedoch nur alle 10 Jahre überarbeitet und muss vom Kantonsrat genehmigt werden. Das bedeutet: Die Höchstgeschwindigkeit ist künftig keine fachliche Entscheidung mehr, die aufgrund von Sicherheitskriterien oder Lärmschutz getroffen wird.",
+      "traeger": "Bündnis Pro30",
+      "fundstelle": {
+        "titel": "pro30.ch, FAQ «Was will die Initiative genau?»",
+        "url": "https://www.pro30.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 2,
+        "ursache": 3,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "Der Kern deckt sich mit der amtlichen Beurteilung. Der Kantonsrat hält fest, der kantonale Strassenrichtplan sei das falsche Instrument, die Umsetzung sei nicht praktikabel, der Richtplan sei ein strategisches Führungsinstrument und kein Planungsinstrument der Exekutive. Das Bundesgericht selbst nennt die Regelung im Urteil 1C_345/2025 «unzweckmässig und kompliziert», hält sie aber für zulässig. Dass der Kantonsrat und nicht mehr die Fachbehörde entscheidet, steht so im Initiativtext.",
+      "fehlt": "Zwei Präzisierungen. Die Zehnjahresangabe betrifft die Gesamtüberprüfung: Nach Art. 9 des Raumplanungsgesetzes werden Richtpläne in der Regel alle zehn Jahre gesamthaft überprüft, aber angepasst, sobald sich die Verhältnisse geändert haben oder neue Aufgaben anstehen. Eine Anpassung ist also auch dazwischen möglich, wenn auch aufwendig. Und «keine fachliche Entscheidung mehr» überzeichnet: Das Bundesgericht hat im selben Urteil festgehalten, dass die bundesrechtliche Einzelfallprüfung bestehen bleibt und in gewissen Fällen sogar eine Pflicht zur Herabsetzung besteht. Was die Initiative ändert, ist das Bewilligungsverfahren, nicht der fachliche Prüfmassstab.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist die Zahl richtig bezogen?",
+          "status": "nein",
+          "kommentar": "zehn Jahre gilt für die Gesamtüberprüfung, nicht für jede Anpassung"
+        },
+        {
+          "frage": "Ist die Folge so absolut?",
+          "status": "nein",
+          "kommentar": "bundesrechtliche Einzelfallprüfung bleibt bestehen"
+        },
+        {
+          "frage": "Ist die Quelle unabhängig?",
+          "status": "beantwortet",
+          "kommentar": "Kantonsratserwägungen und Bundesgerichtsurteil stützen den Kern"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, Erwägungen des Kantonsrates, S. 11",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Raumplanungsgesetz Art. 9, Anpassung und Überprüfung der Richtpläne",
+          "url": "https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/de#art_9",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-4",
+      "seite": "contra",
+      "aussage": "Tausende Schaffhauserinnen und Schaffhauser sind in ihrer Wohnung schädlichem Verkehrslärm ausgesetzt. Grenzwerte werden heute nicht eingehalten.",
+      "traeger": "Bündnis Pro30",
+      "fundstelle": {
+        "titel": "pro30.ch, Abschnitt «Lebensqualität»",
+        "url": "https://www.pro30.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Expertenargument",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 1,
+        "ursache": 3,
+        "reichweite": 2,
+        "transfer": 3
+      },
+      "trifft_zu": "Die Grenzwertüberschreitung ist amtlich bestätigt. Der kantonale Richtplan hält fest: «Entlang von Ortsdurchfahrten sind oftmals die Immissionsgrenzwerte gemäss Lärmschutzverordnung überschritten.» Umweltschutzgesetz und Lärmschutz-Verordnung verpflichten die öffentliche Hand zur Sanierung solcher Abschnitte, und das Abstimmungsmagazin hält fest, dass die Behörde zur Reduktion der signalisierten Höchstgeschwindigkeit verpflichtet wird, wenn die Grenzwerte anders nicht eingehalten werden. Auch die Wirkung ist gemessen und nicht nur berechnet: In der Stadt Zürich ging der Strassenlärmpegel am lautesten Fassadenpunkt im Mittel um 1,6 Dezibel am Tag und 1,7 in der Nacht zurück, die empfundene Belästigung zusätzlich um rund 2 Dezibel am Tag und 4 in der Nacht.",
+      "fehlt": "Die Zahl hinter «Tausende» nennt das Komitee nicht, obwohl sie vorliegt. Die eigene Auswertung der kantonalen Lärmbelastung zählt entlang der Kantonsstrassen innerorts 1707 Gebäudefassaden über dem Immissionsgrenzwert, davon 1164 an den verkehrsorientierten Abschnitten, die von der Initiative erfasst würden. «Tausende» ist damit für Fassaden belegbar, für Personen weiterhin nicht. Und eine Reihenfolge fehlt: Der Kanton setzt an verkehrsorientierten Strassen in erster Linie lärmreduzierende Beläge ein, die neu 6 bis 8 Dezibel bringen, am Lebensende noch rund 3; eine Temporeduktion mit rund 3 Dezibel wird erst nötig, wenn die Grenzwerte trotz Belagswechsel überschritten bleiben. Tempo 30 ist die nachgelagerte Massnahme, nicht die erste.",
+      "kritische_fragen": [
+        {
+          "frage": "Nennt die Quelle eigene Daten?",
+          "status": "nein",
+          "kommentar": "«Tausende» ohne Zahl und ohne Kataster-Beleg"
+        },
+        {
+          "frage": "Gibt es alternative Mittel zum selben Ziel?",
+          "status": "nein",
+          "kommentar": "lärmarme Beläge nicht erwähnt, laut Kanton aber erste Massnahme"
+        },
+        {
+          "frage": "Ist die Wirkung belegt?",
+          "status": "beantwortet",
+          "kommentar": "gemessene Pegelreduktion aus Zürich vorhanden"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Strassenlärm: Tempo 30 entlastet deutlich stärker als gedacht, Stadt Zürich",
+          "url": "https://www.stadt-zuerich.ch/de/aktuell/medienmitteilungen/2022/04/220427a.html",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Tempo 30 als Lärmschutzmassnahme, Grundlagenpapier EKLB",
+          "url": "https://www.cerclebruit.ch/studies/vreduktion/0675_1_EKLB_Grundlagenpapier_d_Tempo_30.pdf",
+          "art": "wissenschaft"
+        },
+        {
+          "titel": "Schaffhauser Abstimmungs-Magazin, Zur Sache, S. 8",
+          "url": "https://sh.ch/CMS/get/file/084ad050-773b-45ee-b639-e1d4a22e2310",
+          "art": "amtlich"
+        }
+      ],
+      "grafik": {
+        "datei": "G10_Laerm",
+        "titel": "Lärm und Temporeduktion",
+        "hinweis": "Kennwerte aus BAFU und EKLB, kantonale Fassadenzahlen aus der eigenen Auswertung.",
+        "quelle": "Eigene Auswertung; BAFU 2025, EKLB/Cercle Bruit 2015, Lärmbelastung geo.sh.ch"
+      },
+      "zahlhinweis": "Die 1707 Fassaden sind aus der gelieferten Abschnittstabelle nachgerechnet. Der zugehörige Bericht nennt 1816, rund sechs Prozent mehr. Die Differenz ist nicht aufgelöst, vermutlich sind im Bericht auch Fassaden mitgezählt, die keinem benannten Abschnitt zugeordnet wurden. Bis das geklärt ist, gilt hier die kleinere, nachrechenbare Zahl."
+    },
+    {
+      "id": "contra-5",
+      "seite": "contra",
+      "aussage": "Wer an einer Kantonsstrasse wohnt, will sein Fenster öffnen können. Will, dass Kinder draussen spielen. Will nicht, dass Lärm und Tempo den Alltag bestimmen.",
+      "traeger": "Bündnis Pro30",
+      "fundstelle": {
+        "titel": "pro30.ch, Abschnitt «Lebensqualität»",
+        "url": "https://www.pro30.ch/",
+        "datum": "2026",
+        "art": "komitee"
+      },
+      "stand": "geprueft",
+      "typ": "wertung",
+      "schema": "Werturteil",
+      "pruefung": {},
+      "trifft_zu": "Die Aussage benennt dieselbe Abwägung wie die Gegenseite, nur von der anderen Seite: Wohnruhe entlang der Achse gegen Erreichbarkeit auf der Achse.",
+      "fehlt": "Nichts, was sich prüfen liesse. Wie viel Ruhe wie viel Reisezeit wert ist, entscheidet keine Statistik. Diese Karte steht als Gegenstück zur Wertung der Initiativseite, damit das Verhältnis von prüfbaren und nicht prüfbaren Aussagen auf beiden Seiten sichtbar bleibt.",
+      "kritische_fragen": [],
+      "belege": []
+    }
+  ],
+  "textkritik": {
+    "einleitung": "Ein Gesetzestext wirkt über seine Begriffe. Wo ein Begriff offen bleibt, entscheidet später die Auslegung. Die folgenden fünf Stellen halten fest, was der Text nicht festlegt. Wer Ja stimmt, stimmt diesen offenen Stellen zu, wer Nein stimmt, lehnt sie mit ab. Der Gegenvorschlag hat eigene offene Stellen, sie sind mitvermerkt.",
+    "stellen": [
+      {
+        "begriff": "«kurze Strecken»",
+        "wo": "Initiative, Art. 12 Abs. 4 (neu)",
+        "wortlaut": "Ausnahmen von Abs. 3 dürfen nur über kurze Strecken bewilligt werden.",
+        "problem": "Der Text nennt weder einen Meterwert noch eine Norm noch ein Kriterium. Dabei entscheidet gerade dieses Wort, wie viel von der Regel überhaupt ausgenommen werden kann. Es ist die folgenreichste offene Stelle der ganzen Vorlage.",
+        "tabelle": {
+          "titel": "Was verschiedene Auslegungen bedeuten würden",
+          "kopf": [
+            "Auslegung von «kurz»",
+            "Abschnitte",
+            "Länge",
+            "Anteil des betroffenen Netzes"
+          ],
+          "zeilen": [
+            [
+              "bis 50 m",
+              "6 von 75",
+              "0,10 km",
+              "0,2 %"
+            ],
+            [
+              "bis 100 m",
+              "12 von 75",
+              "0,57 km",
+              "1,3 %"
+            ],
+            [
+              "bis 200 m",
+              "18 von 75",
+              "1,37 km",
+              "3,1 %"
+            ],
+            [
+              "bis 300 m",
+              "25 von 75",
+              "3,21 km",
+              "7,3 %"
+            ],
+            [
+              "bis 500 m",
+              "40 von 75",
+              "8,98 km",
+              "20,4 %"
+            ],
+            [
+              "bis 1000 m",
+              "63 von 75",
+              "25,73 km",
+              "58,6 %"
+            ]
+          ],
+          "fuss": "Grundlage sind die 75 verkehrsorientierten Kantonsstrassen-Abschnitte innerorts mit zusammen 43,9 km. Der mittlere Abschnitt ist 435 m lang, liegt also je nach Auslegung innerhalb oder ausserhalb der Ausnahme."
+        },
+        "folge": "Legt man «kurz» bei 100 Metern aus, wären 1,3 Prozent des betroffenen Netzes ausnahmefähig, bei 500 Metern gut 20 Prozent. Dazu kommt die räumliche Seite: 13 Prozent der betroffenen Strassen liegen innerhalb von 100 Metern einer Schule, eines Kindergartens oder eines Heims, 56 Prozent innerhalb von 300 Metern und 73 Prozent innerhalb von 500 Metern. Ob vor einer Schule eine Ausnahme möglich wäre, hängt damit an einem Wort, das der Text nicht definiert.\n\nEin Umkreis ist dafür ohnehin grobkörnig: 100 Meter Luftlinie um eine Anlage entsprechen entlang der Strasse bis zu rund 200 Metern Fahrbahn, 300 Meter bis zu rund 600. Auf anlagendichten Achsen summiert sich das, an der Bachstrasse in Schaffhausen kommen schon bei 100 Metern rund 560 Meter zusammen. Wer den Passus wirklich eng fassen will, müsste ihn anders knüpfen: an die tatsächliche Strassenfront oder Querung statt an einen Kreis, an eine Längenobergrenze je Abschnitt in der Grössenordnung von 50 bis 150 Metern, oder an ein Sicherheits- und Querungskriterium. Nichts davon steht im Initiativtext.",
+        "quelle": "Eigene Auswertung der Kantonsstrassen innerorts, Funktionszuweisung aus dem kantonalen Strassenrichtplan"
+      },
+      {
+        "begriff": "«verkehrsorientiert» gegen «vom öffentlichen Verkehr genutzt»",
+        "wo": "Gegenvorschlag gegen Initiative, je Art. 12 Abs. 3",
+        "wortlaut": "Initiative: «Auf Kantonsstrassen innerorts, die auch durch den öffentlichen Verkehr genutzt werden …» — Gegenvorschlag: «Auf verkehrsorientierten Kantonsstrassen innerorts …»",
+        "problem": "Die beiden Texte grenzen ihr Netz nach völlig verschiedenen Kriterien ab. Das eine fragt, ob ein Bus fährt, das andere nach der Funktion der Strasse. Keiner der beiden Begriffe wird im jeweiligen Text definiert.",
+        "tabelle": {
+          "titel": "Kantonsstrassen innerorts nach Funktion im Strassenrichtplan",
+          "kopf": [
+            "Funktion",
+            "Abschnitte",
+            "Länge",
+            "Unfälle 2011–2025",
+            "Fassaden über Grenzwert"
+          ],
+          "zeilen": [
+            [
+              "verkehrsorientiert (überregional, regional)",
+              "75",
+              "43,9 km",
+              "901",
+              "1164"
+            ],
+            [
+              "siedlungsorientiert (überlokal)",
+              "88",
+              "36,5 km",
+              "283",
+              "543"
+            ]
+          ],
+          "fuss": "Der Gegenvorschlag greift auf der ersten Zeile. Das Netz der Initiative, Strassen mit Busbetrieb, ist eine andere Menge und deckt sich damit nur teilweise. Wie gross die Schnittmenge genau ist, lässt sich aus den vorliegenden Daten nicht sauber beziffern und wäre nachzuliefern."
+        },
+        "folge": "Die beiden Vorlagen regeln nicht dasselbe Strassennetz. Wer beide annimmt, entscheidet mit der Stichfrage auch darüber, welche Abgrenzung gilt. In keinem der beiden Argumentarien wird das erwähnt.",
+        "quelle": "Kantonaler Strassenrichtplan, Funktionszuweisung; eigene Auswertung"
+      },
+      {
+        "begriff": "«behindert oder verlangsamt»",
+        "wo": "Initiative, Art. 12 Abs. 3 (neu)",
+        "wortlaut": "Der Verkehrsfluss auf diesen Strassen darf grundsätzlich weder durch bauliche Massnahmen noch durch Verkehrsanordnungen behindert oder verlangsamt werden.",
+        "problem": "Verlangsamen ist der Zweck fast jeder Sicherheitsmassnahme. Ein Fussgängerstreifen, eine Mittelinsel, eine Eingangsbremse, ein Lichtsignal: alle verlangsamen. Der Kanton hält im Abstimmungsmagazin ausdrücklich fest, Tempo 30 störe den Verkehrsfluss in der Regel nicht, sondern verlangsame ihn gegenüber Tempo 50 lediglich. Nach dem Wortlaut wäre damit auch die blosse Temporeduktion erfasst.",
+        "tabelle": null,
+        "folge": "Das Wort «grundsätzlich» im selben Satz relativiert das Verbot wieder, sagt aber nicht, wie stark. Zwischen «jede Verlangsamung ist untersagt» und «nur unverhältnismässige Verlangsamungen sind untersagt» liegt der gesamte praktische Unterschied der Vorlage, und der Text entscheidet ihn nicht.",
+        "quelle": "Initiativtext und Abstimmungsmagazin, «Zur Sache», S. 6"
+      },
+      {
+        "begriff": "«Verkehrsfluss»",
+        "wo": "Initiative, Titel und Art. 12 Abs. 3 (neu)",
+        "wortlaut": "Der Verkehrsfluss auf diesen Strassen darf grundsätzlich weder …",
+        "problem": "Das Bundesrecht kennt den Begriff nicht. Das Abstimmungsmagazin vermerkt: «In den Bundesgesetzen wird der Ausdruck ‹Verkehrsablauf› statt ‹Verkehrsfluss› verwendet.» Der Gegenvorschlag verwendet darum «Verkehrsablauf». Das Bundesgericht hat den Titel «Verkehrsflussinitiative» als problematisch bezeichnet, weil ihr Zweck nur zusammen mit der Begründung verständlich sei, hielt ihn aber nicht für so irreführend, dass die Initiative ungültig wäre.",
+        "tabelle": null,
+        "folge": "Ein kantonaler Text, der einen im Bundesrecht unbekannten Begriff einführt, verlagert die Auslegung an die Gerichte. Wie weit «Verkehrsfluss» und «Verkehrsablauf» auseinanderliegen, ist offen.",
+        "quelle": "Abstimmungsmagazin S. 10 und S. 9, Bundesgerichtsurteil 1C_345/2025"
+      },
+      {
+        "begriff": "«Festlegung im kantonalen Strassenrichtplan»",
+        "wo": "Initiative, Art. 12 Abs. 4 (neu)",
+        "wortlaut": "Diese Ausnahmen bedürfen einer Festlegung im kantonalen Strassenrichtplan.",
+        "problem": "Der Text sagt nicht, wie lange das dauert. Nach Art. 9 des Raumplanungsgesetzes werden Richtpläne in der Regel alle zehn Jahre gesamthaft überprüft, angepasst aber, sobald sich die Verhältnisse geändert haben oder neue Aufgaben anstehen. Beides ist möglich, und die Frist unterscheidet sich um Jahre.",
+        "tabelle": null,
+        "folge": "Das Bundesgericht nennt die Regelung «unzweckmässig und kompliziert», hält sie aber für zulässig. Wie schnell eine dringende Sicherheitsmassnahme in den Richtplan käme, entscheidet nicht der Initiativtext, sondern die spätere Praxis des Kantonsrats.",
+        "quelle": "Initiativtext, RPG Art. 9, Bundesgerichtsurteil 1C_345/2025"
+      }
+    ]
+  },
+  "karte": {
+    "einleitung": "Die Karte zeigt den Geltungsbereich, nicht die Wirkung. Welche Strassen die Initiative erfasst, folgt aus ihrem Wortlaut und aus amtlichen Geodaten und ist damit nachrechenbar. Was auf diesen Strassen dann geschieht, ist Prognose und steht auf den Argumentkarten. Eingezeichnet sind zusätzlich die Umkreise um Schulen, Kindergärten, Alters- und Pflegeheime sowie weitere Sozialeinrichtungen, weil die Nähe zu solchen Nutzungen darüber entscheidet, wo eine Ausnahme überhaupt zur Debatte stünde.",
+    "warnung": "Eine Häufung farbiger Kreise heisst nicht «hier ist es gefährlich». Sie heisst, dass dort viele Menschen wohnen und viele Einrichtungen stehen. Die Karte beantwortet die Frage «wo gilt das» und «wer ist in der Nähe», nicht die Frage «wo passiert etwas».",
+    "total": {
+      "gemeinde": "Kanton total",
+      "betroffen_km": 43.87,
+      "km100": 5.68,
+      "p100": 13.0,
+      "km300": 24.55,
+      "p300": 56.0,
+      "km500": 32.05,
+      "p500": 73.0,
+      "anlagen": "79/69/29/14"
+    },
+    "gemeinden": [
+      {
+        "gemeinde": "Schaffhausen",
+        "betroffen_km": 15.09,
+        "km100": 3.13,
+        "p100": 21.0,
+        "km300": 10.19,
+        "p300": 68.0,
+        "km500": 12.05,
+        "p500": 80.0,
+        "anlagen": "39/33/16/8",
+        "linien": 211
+      },
+      {
+        "gemeinde": "Stein am Rhein",
+        "betroffen_km": 5.36,
+        "km100": 0.91,
+        "p100": 17.0,
+        "km300": 2.65,
+        "p300": 49.0,
+        "km500": 3.88,
+        "p500": 72.0,
+        "anlagen": "4/4/1/0",
+        "linien": 70
+      },
+      {
+        "gemeinde": "Neuhausen am Rheinfall",
+        "betroffen_km": 4.5,
+        "km100": 0.19,
+        "p100": 4.0,
+        "km300": 2.38,
+        "p300": 53.0,
+        "km500": 3.49,
+        "p500": 78.0,
+        "anlagen": "5/7/3/0",
+        "linien": 41
+      },
+      {
+        "gemeinde": "Thayngen",
+        "betroffen_km": 3.48,
+        "km100": 0.28,
+        "p100": 8.0,
+        "km300": 1.79,
+        "p300": 51.0,
+        "km500": 2.47,
+        "p500": 71.0,
+        "anlagen": "11/6/1/0",
+        "linien": 37
+      },
+      {
+        "gemeinde": "Wilchingen",
+        "betroffen_km": 2.67,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 1.15,
+        "p300": 43.0,
+        "km500": 1.16,
+        "p500": 43.0,
+        "anlagen": "2/2/2/0",
+        "linien": 19
+      },
+      {
+        "gemeinde": "Ramsen",
+        "betroffen_km": 2.55,
+        "km100": 0.59,
+        "p100": 23.0,
+        "km300": 2.23,
+        "p300": 87.0,
+        "km500": 2.5,
+        "p500": 98.0,
+        "anlagen": "1/1/2/6",
+        "linien": 38
+      },
+      {
+        "gemeinde": "Neunkirch",
+        "betroffen_km": 2.1,
+        "km100": 0.19,
+        "p100": 9.0,
+        "km300": 1.2,
+        "p300": 57.0,
+        "km500": 1.66,
+        "p500": 79.0,
+        "anlagen": "3/3/1/0",
+        "linien": 20
+      },
+      {
+        "gemeinde": "Hallau",
+        "betroffen_km": 1.87,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 1.07,
+        "p300": 57.0,
+        "km500": 1.56,
+        "p500": 83.0,
+        "anlagen": "3/2/1/0",
+        "linien": 32
+      },
+      {
+        "gemeinde": "Schleitheim",
+        "betroffen_km": 1.29,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.17,
+        "p300": 13.0,
+        "km500": 0.76,
+        "p500": 59.0,
+        "anlagen": "3/1/1/0",
+        "linien": 5
+      },
+      {
+        "gemeinde": "Siblingen",
+        "betroffen_km": 1.02,
+        "km100": 0.19,
+        "p100": 19.0,
+        "km300": 0.61,
+        "p300": 60.0,
+        "km500": 0.9,
+        "p500": 89.0,
+        "anlagen": "1/1/0/0",
+        "linien": 17
+      },
+      {
+        "gemeinde": "Buch",
+        "betroffen_km": 0.76,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.0,
+        "p300": 0.0,
+        "km500": 0.0,
+        "p500": 0.0,
+        "anlagen": "1/0/0/0",
+        "linien": 0
+      },
+      {
+        "gemeinde": "Löhningen",
+        "betroffen_km": 0.7,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.54,
+        "p300": 77.0,
+        "km500": 0.7,
+        "p500": 100.0,
+        "anlagen": "1/1/0/0",
+        "linien": 10
+      },
+      {
+        "gemeinde": "Trasadingen",
+        "betroffen_km": 0.68,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.0,
+        "p300": 0.0,
+        "km500": 0.0,
+        "p500": 0.0,
+        "anlagen": "1/1/0/0",
+        "linien": 0
+      },
+      {
+        "gemeinde": "Bargen",
+        "betroffen_km": 0.63,
+        "km100": 0.21,
+        "p100": 33.0,
+        "km300": 0.59,
+        "p300": 94.0,
+        "km500": 0.63,
+        "p500": 100.0,
+        "anlagen": "0/1/0/0",
+        "linien": 17
+      },
+      {
+        "gemeinde": "Hemishofen",
+        "betroffen_km": 0.57,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.0,
+        "p300": 0.0,
+        "km500": 0.0,
+        "p500": 0.0,
+        "anlagen": "0/0/0/0",
+        "linien": 0
+      },
+      {
+        "gemeinde": "Beringen",
+        "betroffen_km": 0.3,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.0,
+        "p300": 0.0,
+        "km500": 0.29,
+        "p500": 97.0,
+        "anlagen": "2/4/1/0",
+        "linien": 0
+      },
+      {
+        "gemeinde": "Rüdlingen",
+        "betroffen_km": 0.3,
+        "km100": 0.0,
+        "p100": 0.0,
+        "km300": 0.0,
+        "p300": 0.0,
+        "km500": 0.0,
+        "p500": 0.0,
+        "anlagen": "2/2/0/0",
+        "linien": 0
+      }
+    ],
+    "anlagen_total": "213 Standorte: 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Sozialeinrichtungen",
+    "quellen": [
+      {
+        "titel": "Kantonsstrassen und Baugebiet: Amt für Geoinformation Kanton Schaffhausen (geo.sh.ch)",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Unfälle mit Personenschaden seit 2011: ASTRA, Strassenverkehrsunfallorte",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Lärmbelastung: geo.sh.ch und BAFU sonBASE",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Standorte sensibler Nutzungen: eigenes GeoPackage aus OpenStreetMap und kantonalen Quellen",
+        "art": "eigen"
+      }
+    ]
+  }
+}

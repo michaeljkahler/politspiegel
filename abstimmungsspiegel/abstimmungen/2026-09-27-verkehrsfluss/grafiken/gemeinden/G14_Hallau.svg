@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="880" viewBox="0 0 1420 880" font-family="Arial, 'Helvetica Neue', system-ui, sans-serif">
+<rect x="0.0" y="0.0" width="1420.0" height="880.0" fill="#f7f8fa" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="0.0" y="0.0" width="1420.0" height="8.0" fill="#3c4652" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<text x="46.0" y="50.0" font-size="27" fill="#12161c" text-anchor="start" font-weight="bold">Massnahmeneignung der Kantonsstrassen: Hallau</text>
+<text x="46.0" y="78.0" font-size="15" fill="#5a626d" text-anchor="start" font-weight="normal">Je benannter Strassenabschnitt ein Kreis. Waagrecht die Verkehrsmenge (Zeitkosten), senkrecht die Unfallrate, Kreisgrösse = Lärmfassaden.</text>
+<text x="46.0" y="99.0" font-size="13" fill="#8b93a1" text-anchor="start" font-weight="normal">Farbig und nummeriert: verkehrsorientierte Abschnitte (von der Initiative betroffen). Blass: siedlungsorientierte Abschnitte (Kontext).</text>
+<rect x="86.0" y="150.0" width="622.0" height="620.0" fill="#ffffff" rx="0" stroke="#e2e6eb" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="666.7" width="622.0" height="103.3" fill="#f4f7fb" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="563.3" width="622.0" height="103.3" fill="#eaf1f8" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="460.0" width="622.0" height="103.3" fill="#e0eaf4" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="356.7" width="622.0" height="103.3" fill="#d6e2f0" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="253.3" width="622.0" height="103.3" fill="#ccdbec" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="86.0" y="150.0" width="622.0" height="103.3" fill="#c2d4e8" rx="0" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="86.0" y1="150.0" x2="86.0" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="86.0" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">0</text>
+<line x1="210.4" y1="150.0" x2="210.4" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="210.4" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">5’000</text>
+<line x1="334.8" y1="150.0" x2="334.8" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="334.8" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">10’000</text>
+<line x1="459.2" y1="150.0" x2="459.2" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="459.2" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">15’000</text>
+<line x1="583.6" y1="150.0" x2="583.6" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="583.6" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">20’000</text>
+<line x1="708.0" y1="150.0" x2="708.0" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="708.0" y="790.0" font-size="11" fill="#8b93a1" text-anchor="middle" font-weight="normal">25’000</text>
+<line x1="86.0" y1="770.0" x2="708.0" y2="770.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="774.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">0,0</text>
+<line x1="86.0" y1="666.7" x2="708.0" y2="666.7" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="670.7" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">1,0</text>
+<line x1="86.0" y1="563.3" x2="708.0" y2="563.3" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="567.3" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">2,0</text>
+<line x1="86.0" y1="460.0" x2="708.0" y2="460.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="464.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">3,0</text>
+<line x1="86.0" y1="356.7" x2="708.0" y2="356.7" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="360.7" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">4,0</text>
+<line x1="86.0" y1="253.3" x2="708.0" y2="253.3" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="257.3" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">5,0</text>
+<line x1="86.0" y1="150.0" x2="708.0" y2="150.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<text x="78.0" y="154.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="normal">6,0</text>
+<line x1="86.0" y1="692.4" x2="708.0" y2="692.4" stroke="#1f2833" stroke-width="1.6" stroke-dasharray="6 3"/>
+<text x="94.0" y="687.4" font-size="10.5" fill="#1f2833" text-anchor="start" font-weight="bold">Median verkehrsorientierte Kt-Strassen SH: 0,75</text>
+<text x="397.0" y="812.0" font-size="13" fill="#5a626d" text-anchor="middle" font-weight="normal">Verkehrsleistung  (Fz-km pro Tag)  →</text>
+<text x="34.0" y="460.0" font-size="13" fill="#5a626d" text-anchor="middle" transform="rotate(-90 34.0 460.0)">Unfälle pro km und Jahr  →</text>
+<circle cx="93.8" cy="746.6" r="8.0" fill="#cbc9c2" fill-opacity="0.5" stroke="#a7a59e" stroke-width="1" stroke-dasharray="3 2"/>
+<circle cx="90.3" cy="770.0" r="8.0" fill="#cbc9c2" fill-opacity="0.5" stroke="#a7a59e" stroke-width="1" stroke-dasharray="3 2"/>
+<circle cx="90.2" cy="734.5" r="8.0" fill="#cbc9c2" fill-opacity="0.5" stroke="#a7a59e" stroke-width="1" stroke-dasharray="3 2"/>
+<circle cx="150.2" cy="743.1" r="14.0" fill="#dfe3e8" fill-opacity="0.9" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="150.2" y="746.7" font-size="10.5" fill="#12161c" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="105.7" cy="723.0" r="11.7" fill="#dfe3e8" fill-opacity="0.9" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="105.7" y="726.6" font-size="10.5" fill="#12161c" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="123.7" cy="739.4" r="9.7" fill="#dfe3e8" fill-opacity="0.9" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="123.7" y="743.0" font-size="10.5" fill="#12161c" text-anchor="middle" font-weight="bold">3</text>
+<rect x="768.0" y="150.0" width="624.0" height="620.0" fill="#ffffff" rx="10" stroke="#e2e6eb" stroke-width="1.2" opacity="1"/>
+<text x="786.0" y="175.0" font-size="13.5" fill="#12161c" text-anchor="start" font-weight="bold">3 verkehrsorientierte Abschnitte, nach Eignung</text>
+<line x1="784.0" y1="187.0" x2="1376.0" y2="187.0" stroke="#e2e6eb" stroke-width="1" stroke-dasharray="none"/>
+<circle cx="798.0" cy="224.0" r="12" fill="#dfe3e8" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="798.0" y="227.8" font-size="11" fill="#12161c" text-anchor="middle" font-weight="bold">1</text>
+<text x="820.0" y="227.0" font-size="13" fill="#12161c" text-anchor="start" font-weight="bold">Hauptstrasse</text>
+<text x="820.0" y="242.0" font-size="10.5" fill="#5a626d" text-anchor="start" font-weight="normal">2’923 DTV · 0,3 Unf./km·J · 13 Lärmfass.</text>
+<text x="1376.0" y="227.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="bold">geringe Eignung</text>
+<line x1="784.0" y1="260.0" x2="1376.0" y2="260.0" stroke="#eeede8" stroke-width="1" stroke-dasharray="none"/>
+<circle cx="798.0" cy="284.0" r="12" fill="#dfe3e8" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="798.0" y="287.8" font-size="11" fill="#12161c" text-anchor="middle" font-weight="bold">2</text>
+<text x="820.0" y="287.0" font-size="13" fill="#12161c" text-anchor="start" font-weight="bold">Neunkircherstrasse</text>
+<text x="820.0" y="302.0" font-size="10.5" fill="#5a626d" text-anchor="start" font-weight="normal">3’569 DTV · 0,4 Unf./km·J · 5 Lärmfass.</text>
+<text x="1376.0" y="287.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="bold">geringe Eignung</text>
+<line x1="784.0" y1="320.0" x2="1376.0" y2="320.0" stroke="#eeede8" stroke-width="1" stroke-dasharray="none"/>
+<circle cx="798.0" cy="344.0" r="12" fill="#dfe3e8" stroke="#b9c2ce" stroke-width="1.4"/>
+<text x="798.0" y="347.8" font-size="11" fill="#12161c" text-anchor="middle" font-weight="bold">3</text>
+<text x="820.0" y="347.0" font-size="13" fill="#12161c" text-anchor="start" font-weight="bold">Bahnhofstrasse</text>
+<text x="820.0" y="362.0" font-size="10.5" fill="#5a626d" text-anchor="start" font-weight="normal">2’091 DTV · 0,3 Unf./km·J · 1 Lärmfass.</text>
+<text x="1376.0" y="347.0" font-size="11" fill="#8b93a1" text-anchor="end" font-weight="bold">geringe Eignung</text>
+<circle cx="798.0" cy="752.0" r="8" fill="#cbc9c2" fill-opacity="0.5" stroke="#a7a59e" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="820.0" y="756.0" font-size="11" fill="#8b93a1" text-anchor="start" font-weight="normal">+ 3 siedlungsorientierte Abschnitte (blass, im Diagramm)</text>
+<text x="46.0" y="840.0" font-size="11.5" fill="#8b93a1" text-anchor="start" font-weight="normal">Alle Gemeinden mit gleicher Skala (Kantonsmassstab), dadurch untereinander vergleichbar. Überlappende Kreise leicht entzerrt; massgebend ist die Tabelle.</text>
+<text x="46.0" y="862.0" font-size="11" fill="#8b93a1" text-anchor="start" font-weight="normal">Quellen: geo.sh.ch (Kantonsstrassen/Richtplan, DTV, Lärmbelastungskataster), ASTRA-Unfälle 2011 bis 2025. Verkehrsorientiert = überregionale/regionale Strasse.</text>
+</svg>

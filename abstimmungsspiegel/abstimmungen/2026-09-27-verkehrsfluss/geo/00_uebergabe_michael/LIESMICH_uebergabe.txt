@@ -1,0 +1,25 @@
+UEBERGABE-BUNDLE: Verkehrsflussinitiative Kanton Schaffhausen
+=============================================================
+
+Dieses Bundle macht das Projekt (Konversation + Berechnungen) fuer ein anderes
+Cowork-Projekt zugaenglich.
+
+INHALT
+- PROJEKT_KONTEXT.md : Vollstaendiges Uebergabe-/Kontextdokument. Zweck, Datengrundlagen,
+  komplette Methodik samt Formeln (KNV, Eignung, Infrastruktur-Puffer), Ergebnisse,
+  Dateiinventar, Skripte, Reproduktion, Quellen, Vorbehalte. DIESE DATEI ZUERST LESEN.
+- Skripte/ : Rekonstruierte Python-Rechenskripte (knv, suit, map_lib, Infrastruktur-Pipeline,
+  report_notes, ausgewaehlte Grafik-Builder).
+
+SO NUTZT MAN ES IM ANDEREN PROJEKT
+1. Dieses ZIP im anderen Cowork-Projekt hochladen. Claude dort PROJEKT_KONTEXT.md lesen lassen;
+   damit ist der volle Kontext vorhanden.
+2. Fuer Neuberechnungen zusaetzlich die Datendateien bereitstellen (siehe PROJEKT_KONTEXT.md,
+   Abschnitt 8/9). Die fertigen Ergebnisse und Daten liegen in den frueher gelieferten ZIPs
+   (Verkehrsflussinitiative_SH_komplett.zip, Karten_Infrastruktur_kurze_Abschnitte_SH.zip)
+   sowie den Nutzer-Uploads (Infrastruktur-GeoPackage, Strassenrichtplan).
+
+HINWEIS
+Die urspruengliche Cloud-Arbeitsumgebung wurde zwischenzeitlich zurueckgesetzt; Rohdaten und
+Zwischenergebnisse liegen daher in den gelieferten Paketen, nicht in der Sitzung. Die Skripte
+hier sind aus dem Gespraech rekonstruiert (Stand 3. September 2026).

@@ -1,0 +1,49 @@
+{
+ "schwellen": [
+  {
+   "m": 50,
+   "anzahl": 6,
+   "km": 0.1,
+   "anteil_laenge": 0.2,
+   "anteil_anzahl": 8.0
+  },
+  {
+   "m": 100,
+   "anzahl": 12,
+   "km": 0.57,
+   "anteil_laenge": 1.3,
+   "anteil_anzahl": 16.0
+  },
+  {
+   "m": 200,
+   "anzahl": 18,
+   "km": 1.37,
+   "anteil_laenge": 3.1,
+   "anteil_anzahl": 24.0
+  },
+  {
+   "m": 300,
+   "anzahl": 25,
+   "km": 3.21,
+   "anteil_laenge": 7.3,
+   "anteil_anzahl": 33.3
+  },
+  {
+   "m": 500,
+   "anzahl": 40,
+   "km": 8.98,
+   "anteil_laenge": 20.4,
+   "anteil_anzahl": 53.3
+  },
+  {
+   "m": 1000,
+   "anzahl": 63,
+   "km": 25.73,
+   "anteil_laenge": 58.6,
+   "anteil_anzahl": 84.0
+  }
+ ],
+ "n_vo": 75,
+ "km_vo": 43.92,
+ "median_m": 435
+}
