@@ -1,0 +1,492 @@
+{
+  "gerechnet_am": "2026-09-03",
+  "regeln": {
+    "kantonsstrasse": "Stueckmitte hoechstens 15 m von einer Kantonsstrassenachse",
+    "innerorts": "signalisiertes Tempo am Tag <= 50 km/h und Siedlungslage (>= 10% im Baugebiet mit 30 m Puffer, oder Haltestelle in 150 m, oder Ortstafel in 250 m)",
+    "bus": "Teil des Stuecks in 20 m einer OSM-Buslinie (ab 10% der Laenge; unter 90% wird das Stueck auf den befahrenen Teil geschnitten), oder BAV-Haltestelle in 30 m",
+    "verkehrsorientiert": "Feld typ der Kantonsstrassenachse: Ueberregionale oder Regionale Strassen"
+  },
+  "kantonsstrassen_km": 231.5,
+  "stuecke_auf_kantonsstrassen": 786,
+  "innerorts_km": 78.0,
+  "innerorts_stuecke": 363,
+  "initiative_km": 58.7,
+  "initiative_stuecke": 297,
+  "gegenvorschlag_km": 43.1,
+  "gegenvorschlag_stuecke": 191,
+  "beide_km": 35.1,
+  "nur_initiative_km": 23.6,
+  "nur_gegenvorschlag_km": 7.9,
+  "ohne_abschnittsdaten_km": 2.3,
+  "puffer_probe_km": {
+    "10": 56.8,
+    "15": 57.2,
+    "20": 57.5,
+    "30": 58.0,
+    "40": 58.4
+  },
+  "je_gemeinde": {
+    "initiative": {
+      "Schaffhausen": {
+        "km": 19.58,
+        "stuecke": 99
+      },
+      "Thayngen": {
+        "km": 4.92,
+        "stuecke": 29
+      },
+      "Stein am Rhein": {
+        "km": 3.81,
+        "stuecke": 24
+      },
+      "Neuhausen am Rheinfall": {
+        "km": 3.7,
+        "stuecke": 15
+      },
+      "Beringen": {
+        "km": 3.06,
+        "stuecke": 7
+      },
+      "Wilchingen": {
+        "km": 2.68,
+        "stuecke": 9
+      },
+      "Dörflingen": {
+        "km": 1.95,
+        "stuecke": 13
+      },
+      "Hallau": {
+        "km": 1.76,
+        "stuecke": 5
+      },
+      "Ramsen": {
+        "km": 1.76,
+        "stuecke": 11
+      },
+      "Stetten (SH)": {
+        "km": 1.73,
+        "stuecke": 7
+      },
+      "Neunkirch": {
+        "km": 1.53,
+        "stuecke": 15
+      },
+      "Schleitheim": {
+        "km": 1.5,
+        "stuecke": 3
+      },
+      "Gächlingen": {
+        "km": 1.44,
+        "stuecke": 6
+      },
+      "Merishausen": {
+        "km": 1.18,
+        "stuecke": 4
+      },
+      "Lohn (SH)": {
+        "km": 1.06,
+        "stuecke": 8
+      },
+      "Löhningen": {
+        "km": 0.98,
+        "stuecke": 4
+      },
+      "Siblingen": {
+        "km": 0.96,
+        "stuecke": 4
+      },
+      "Hemishofen": {
+        "km": 0.91,
+        "stuecke": 6
+      },
+      "Rüdlingen": {
+        "km": 0.87,
+        "stuecke": 9
+      },
+      "Beggingen": {
+        "km": 0.81,
+        "stuecke": 2
+      },
+      "Buch (SH)": {
+        "km": 0.72,
+        "stuecke": 6
+      },
+      "Büttenhardt": {
+        "km": 0.59,
+        "stuecke": 2
+      },
+      "Oberhallau": {
+        "km": 0.57,
+        "stuecke": 2
+      },
+      "Bargen (SH)": {
+        "km": 0.33,
+        "stuecke": 3
+      },
+      "Buchberg": {
+        "km": 0.29,
+        "stuecke": 4
+      }
+    },
+    "gegenvorschlag": {
+      "Schaffhausen": {
+        "km": 13.96,
+        "stuecke": 70
+      },
+      "Stein am Rhein": {
+        "km": 4.44,
+        "stuecke": 26
+      },
+      "Neuhausen am Rheinfall": {
+        "km": 3.9,
+        "stuecke": 14
+      },
+      "Wilchingen": {
+        "km": 3.0,
+        "stuecke": 9
+      },
+      "Thayngen": {
+        "km": 2.75,
+        "stuecke": 13
+      },
+      "Ramsen": {
+        "km": 2.51,
+        "stuecke": 13
+      },
+      "Beringen": {
+        "km": 2.45,
+        "stuecke": 5
+      },
+      "Neunkirch": {
+        "km": 2.18,
+        "stuecke": 12
+      },
+      "Hallau": {
+        "km": 2.05,
+        "stuecke": 5
+      },
+      "Merishausen": {
+        "km": 1.18,
+        "stuecke": 4
+      },
+      "Löhningen": {
+        "km": 0.95,
+        "stuecke": 3
+      },
+      "Siblingen": {
+        "km": 0.91,
+        "stuecke": 3
+      },
+      "Schleitheim": {
+        "km": 0.83,
+        "stuecke": 3
+      },
+      "Trasadingen": {
+        "km": 0.71,
+        "stuecke": 3
+      },
+      "Bargen (SH)": {
+        "km": 0.66,
+        "stuecke": 4
+      },
+      "Buch (SH)": {
+        "km": 0.63,
+        "stuecke": 4
+      }
+    }
+  },
+  "ausgeschlossen_tempo50_ohne_siedlung": [
+    {
+      "strasse": "Im Gehren",
+      "gemeinde": "Schaffhausen",
+      "tempo": 40,
+      "laenge_m": 947,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 183,
+      "ortstafel_m": 822
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 933,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 847,
+      "ortstafel_m": 814
+    },
+    {
+      "strasse": "Im Gehren",
+      "gemeinde": "Schaffhausen",
+      "tempo": 40,
+      "laenge_m": 609,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 783,
+      "ortstafel_m": 575
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 439,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 902,
+      "ortstafel_m": 1585
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 431,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 249,
+      "ortstafel_m": 2071
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 386,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 853,
+      "ortstafel_m": 328
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 384,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1131,
+      "ortstafel_m": 1733
+    },
+    {
+      "strasse": "Im Gehren",
+      "gemeinde": "Schaffhausen",
+      "tempo": 40,
+      "laenge_m": 378,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 216,
+      "ortstafel_m": 2015
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 264,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 780,
+      "ortstafel_m": 2134
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 254,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 962,
+      "ortstafel_m": 1752
+    },
+    {
+      "strasse": "Gennersbrunnerstrasse",
+      "gemeinde": "Schaffhausen",
+      "tempo": 50,
+      "laenge_m": 225,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 173,
+      "ortstafel_m": 663
+    },
+    {
+      "strasse": "Bachstrasse",
+      "gemeinde": "Schaffhausen",
+      "tempo": 50,
+      "laenge_m": 204,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 167,
+      "ortstafel_m": 419
+    },
+    {
+      "strasse": "Dorfstrasse",
+      "gemeinde": "Buchberg",
+      "tempo": 50,
+      "laenge_m": 189,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 10944,
+      "ortstafel_m": 346
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 181,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1268,
+      "ortstafel_m": 1930
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 171,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 539,
+      "ortstafel_m": 2104
+    },
+    {
+      "strasse": "Bergstrasse",
+      "gemeinde": "Hallau",
+      "tempo": 50,
+      "laenge_m": 167,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1385,
+      "ortstafel_m": 1271
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 151,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1018,
+      "ortstafel_m": 2115
+    },
+    {
+      "strasse": "Im Gehren",
+      "gemeinde": "Schaffhausen",
+      "tempo": 40,
+      "laenge_m": 143,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 782,
+      "ortstafel_m": 563
+    },
+    {
+      "strasse": "Hemishoferstrasse",
+      "gemeinde": "Stein am Rhein",
+      "tempo": 50,
+      "laenge_m": 140,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 203,
+      "ortstafel_m": 530
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 128,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 672,
+      "ortstafel_m": 2150
+    },
+    {
+      "strasse": "Grabenstrasse",
+      "gemeinde": "Schaffhausen",
+      "tempo": 50,
+      "laenge_m": 125,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 153,
+      "ortstafel_m": 516
+    },
+    {
+      "strasse": "Im Gehren",
+      "gemeinde": "Schaffhausen",
+      "tempo": 40,
+      "laenge_m": 124,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 803,
+      "ortstafel_m": 569
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 116,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1227,
+      "ortstafel_m": 698
+    },
+    {
+      "strasse": "Grosser Letten",
+      "gemeinde": "Neunkirch",
+      "tempo": 50,
+      "laenge_m": 113,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 254,
+      "ortstafel_m": 451
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 111,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 1169,
+      "ortstafel_m": 2063
+    },
+    {
+      "strasse": "Oehningerstrasse",
+      "gemeinde": "Stein am Rhein",
+      "tempo": 50,
+      "laenge_m": 105,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 177,
+      "ortstafel_m": 651
+    },
+    {
+      "strasse": "Langstuck",
+      "gemeinde": "Stein am Rhein",
+      "tempo": 40,
+      "laenge_m": 102,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 164,
+      "ortstafel_m": 524
+    },
+    {
+      "strasse": "Kaltenbacherstrasse",
+      "gemeinde": "Stein am Rhein",
+      "tempo": 50,
+      "laenge_m": 99,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 154,
+      "ortstafel_m": 293
+    },
+    {
+      "strasse": "Randenstrasse",
+      "gemeinde": "Beggingen",
+      "tempo": 40,
+      "laenge_m": 65,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 802,
+      "ortstafel_m": 273
+    },
+    {
+      "strasse": "Dorfstrasse",
+      "gemeinde": "Buchberg",
+      "tempo": 50,
+      "laenge_m": 57,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 10889,
+      "ortstafel_m": 289
+    },
+    {
+      "strasse": "Wilchingerstrasse",
+      "gemeinde": "Neunkirch",
+      "tempo": 50,
+      "laenge_m": 46,
+      "baugebiet_anteil": 0.0,
+      "haltestelle_m": 253,
+      "ortstafel_m": 407
+    }
+  ],
+  "kontrolle_uebergabe_juli_2026": {
+    "innerorts_km": 80.4,
+    "verkehrsorientiert_innerorts_km": 43.9
+  },
+  "quellen": {
+    "kantonsstrassen": "sh.verkehr.individual.kantonsstrassen, wfs.geo.sh.ch",
+    "stuecke": "sh.verkehr.laermbelastung.haupt_uebrigestrassen.linie.strassenachse, wfs.geo.sh.ch (Strassenname, signalisierte Geschwindigkeit, DTV, Emissionswert)",
+    "ortstafeln": "sh.richtplan.strassenrichtplan.kanton.ortstafeln, wfs.geo.sh.ch",
+    "baugebiet": "sh.nutzungsplanung.rechtsgueltig.baugebiet, wfs.geo.sh.ch (auch Gemeinde)",
+    "busnetz": "OpenStreetMap, Linienrelationen VBSH, PostAuto, PAZ, Ostwind, ZVV, via Overpass",
+    "haltestellen": "Bundesamt fuer Verkehr, ch.bav.haltestellen-oev",
+    "abschnitte": "per_abschnitt.json (Unfaelle ASTRA 2011 bis 2025, Laermfassaden geo.sh.ch)"
+  }
+}

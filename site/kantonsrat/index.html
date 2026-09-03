@@ -3588,19 +3588,45 @@ function initNetz(){
     $$("[data-goto]", el).forEach(function (b) {
       b.addEventListener("click", function () {
         var teile = b.getAttribute("data-goto").split("|");
-        st.scope = { typ: "sess", wert: teile[0] };
-        st.tab = "votes";
-        st.mitglied = null;
-        fuelleScope();
-        render();
-        var karte = $$(".vcard", $("#p-votes"))[parseInt(teile[1], 10)];
-        if (karte) {
-          karte.scrollIntoView({ behavior: "smooth", block: "center" });
-          karte.classList.add("blitz");
-          setTimeout(function () { karte.classList.remove("blitz"); }, 2200);
-        }
+        springeZu(teile[0], null, parseInt(teile[1], 10));
       });
     });
+  }
+
+  /* Zu einer Abstimmung springen: Sitzung als Bereich, Rubrik Abstimmungen,
+     Karte in die Mitte und kurz aufblitzen. Angesprochen entweder ueber den
+     Index der Karte (interne Verweise) oder ueber die Nummer der Abstimmung
+     (Sprungadresse von aussen, siehe leseAdresse). */
+  function springeZu(sitzung, nr, idx) {
+    if (!D.sessions.some(function (s) { return s.s === sitzung; })) return false;
+    st.scope = { typ: "sess", wert: sitzung };
+    st.tab = "votes";
+    st.mitglied = null;
+    st.suche = "";
+    fuelleScope();
+    render();
+    var karte = null;
+    if (nr != null) karte = document.getElementById("v-" + sitzung.replace(/[^a-z0-9]/gi, "") + "-" + nr);
+    if (!karte && idx != null) karte = $$(".vcard", $("#p-votes"))[idx];
+    if (karte) {
+      karte.scrollIntoView({ behavior: "smooth", block: "center" });
+      karte.classList.add("blitz");
+      setTimeout(function () { karte.classList.remove("blitz"); }, 2200);
+    }
+    return true;
+  }
+
+  /* Sprungadresse: kantonsrat/#s=<Sitzung>&nr=<Nummer>. So verweist der
+     Abstimmungsspiegel auf die einzelne namentliche Abstimmung im Rat. Die
+     Sitzung steht in der Adresse so, wie sie in den Daten heisst, kodiert
+     mit encodeURIComponent. Ohne Treffer bleibt die Startrubrik. */
+  function leseAdresse() {
+    var h = (location.hash || "").replace(/^#/, "");
+    if (!h) return false;
+    var q = new URLSearchParams(h);
+    var s = q.get("s"), nr = q.get("nr");
+    if (!s) return false;
+    return springeZu(s, nr, null);
   }
 
   function fuelleScope() {
@@ -3721,7 +3747,8 @@ function initNetz(){
   fuelleScope();
   initRahmen();
   initBild();
-  render();
+  if (!leseAdresse()) render();
+  window.addEventListener("hashchange", leseAdresse);
 })();
 
 </script>

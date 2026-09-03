@@ -4,6 +4,29 @@ Stand 3. September 2026, nachgeführt.
 
 ---
 
+## Erledigt am 4. September 2026
+
+- **Geltungsbereiche als Vektorebenen.** `geltung_initiative` und
+  `geltung_gegenvorschlag` mit Attributen je Strassenstück (Tempo, DTV, Bus, Unfälle,
+  Lärmfassaden), gerechnet aus Lärmkataster, Kantonsstrassen, Ortstafeln, Baugebiet, OSM-Bus
+  und BAV-Haltestellen. Initiative 58,7 km, Gegenvorschlag 43,1 km, beide 35,1 km. Die
+  falsche Ebene mit 106,8 km ist entfernt. Viewer mit Blau/Rot, Kontur, Popup.
+- **Heimlink** auf allen Seiten, **ein Kasten** für den Abstimmungsspiegel mit Aufklappfeld,
+  Liste unter `/abstimmung/`.
+- **Verweise in den Kantonsratsspiegel** je namentlicher Abstimmung, Sprungadresse
+  `kantonsrat/#s=…&nr=…`.
+- **Impressum** auf allen Seiten, aus `politspiegel/politspiegel.json`.
+- **Rohling** für den 29. November 2026 (Spitalgesetz).
+
+## Offen bei den Geodaten
+
+1. Betroffene Haushalte: STATPOP-Hektarraster mit der Lärmkarte verschneiden.
+2. Stichprobe der Bus-Zuordnung in Stein am Rhein, Trasadingen und Neunkirch (verkehrsorientiert
+   ohne Buslinie laut OSM, 7,9 km).
+3. Die Karten der Gemeinden (`grafiken/gemeinden/karte_*.svg`) und die Kennzahlen unter
+   `karte.gemeinden` in `vorlage.json` stammen noch aus der Übergabe (43,9 km); auf die neue
+   Rechnung umstellen.
+
 ## Erledigt am 3. September 2026: Umbau auf drei Ebenen
 
 - **Namensraum.** Politspiegel (Dach, `/`), Kantonsratsspiegel (vorher «Abstimmungsspiegel

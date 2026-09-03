@@ -44,6 +44,9 @@ import sys
 from datetime import date
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
+
 WURZEL = Path(__file__).resolve().parent.parent
 QUELLE = WURZEL / "politspiegel" / "politspiegel.json"
 VORLAGEN = WURZEL / "abstimmungsspiegel" / "abstimmungen"
@@ -170,7 +173,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .fuss{margin-top:52px;padding-top:22px;border-top:1px solid var(--linie);
   font-size:13.5px;color:var(--text-leise)}
 .fuss a{text-decoration:underline}
-"""
+""" + IMPRESSUM_CSS
 
 
 # ---------------------------------------------------------------- Quellen
@@ -401,6 +404,7 @@ def bauen(d, zeilen) -> str:
   gekennzeichnet.</p>
 
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
+  {impressum_html()}
 </footer>
 
 </div>
@@ -460,6 +464,7 @@ def listenseite(zeilen) -> str:
 
 <footer class="fuss">
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
+  {impressum_html()}
 </footer>
 
 </div>

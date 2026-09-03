@@ -107,6 +107,10 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .fuss{margin-top:52px;padding-top:22px;border-top:1px solid var(--linie);
   font-size:13.5px;color:var(--text-leise)}
 .fuss a{text-decoration:underline}
+
+.impressum{margin-top:18px;padding-top:16px;border-top:1px solid var(--linie);font-size:13px;color:var(--text-leise)}
+.impressum p{margin:0 0 8px} .impressum p:last-child{margin:0}
+.impressum b{color:var(--text)} .impressum a{color:inherit}
 </style>
 </head>
 <body>
@@ -147,6 +151,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
   gekennzeichnet.</p>
 
   <p>Erzeugt am 03.09.2026. Aufbereitung ohne Gewähr.</p>
+  <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="michael.j.kahler" data-d="gmail.com">michael.j.kahler (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 
 </div>

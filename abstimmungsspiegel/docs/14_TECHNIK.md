@@ -252,6 +252,22 @@ Im Bild des Kantonsrats sind die Balken bewusst nicht in den Seitenfarben
 gehalten (Ja dunkel, Nein hell): Wer für die Initiative ist, stimmt beim
 Gegenvorschlag mit Nein, und eine grüne Nein-Stimme wäre irreführend.
 
+### Verweise in den Kantonsratsspiegel
+
+Jede namentliche Abstimmung im Ratsblock verweist auf die Karte im
+Kantonsratsspiegel: `kantonsrat/#s=<Sitzung>&nr=<Nummer>`, die Sitzung so, wie
+sie in den Daten heisst, mit `encodeURIComponent` kodiert. `dashboard.js` liest
+die Adresse beim Laden (`leseAdresse`), setzt die Sitzung als Bereich, öffnet
+die Rubrik Abstimmungen und lässt die Karte kurz aufblitzen.
+
+### Impressum
+
+`politspiegel/politspiegel.json` trägt unter `impressum` die verantwortliche
+Person, die Mailadresse (zweiteilig, wird im Browser zusammengesetzt), einen
+Satz zum Projekt und den Datenschutzhinweis. `politspiegel/impressum.py` baut
+daraus den Block, den Übersicht, Abstimmungsliste und jede Abstimmungsseite im
+Fuss einbinden; der Kantonsratsspiegel führt dieselben Angaben in seinem Fuss.
+
 ### Die alte Adresse
 
 Bis zum Umbau lag der Kantonsratsspiegel unter der blanken Adresse. Er liegt

@@ -362,3 +362,40 @@ neu zu erzeugen; vorhanden sind nur die abgeleiteten Ergebnisse. Ebenso
 `master_gemeinde.json`.
 
 ---
+
+## Betroffene Strassen beider Vorlagen (Stand 4. September 2026)
+
+Zwei Vektorebenen mit Attributen je Strassenstück, gerechnet von
+`geo/skripte/geltungsbereich.py`, freigegeben als
+`geo/03_freigegeben/geltung_initiative.geojson` und `geltung_gegenvorschlag.geojson`.
+
+1. Grundlage: die Strassenstücke des kantonalen Lärmkatasters (Strassenname,
+   signalisierte Höchstgeschwindigkeit, DTV, Emissionswert), auf den
+   Kantonsstrassenachsen (Funktion, Nummer, Achsenname aus dem Feld `typ`).
+2. Innerorts: Tempo bis 50 km/h und Siedlungslage (Baugebiet mit 30 m Puffer zu
+   mindestens 10 %, oder Haltestelle in 150 m, oder Ortstafel in 250 m).
+   Ergebnis 78,0 km; Übergabe Juli 2026: 80,4 km.
+3. Initiative: innerorts mit Buslinie (OpenStreetMap, 20 m) oder Haltestelle
+   (BAV, 30 m); befährt die Linie nur einen Teil, zählt der Teil.
+   58,7 km in 297 Stücken.
+4. Gegenvorschlag: innerorts und verkehrsorientiert (überregional, regional).
+   43,1 km in 191 Stücken; Übergabe: 43,9 km.
+5. Schnittmenge: beide 35,1 km, nur Initiative 23,6 km,
+   nur Gegenvorschlag 7,9 km.
+6. Attribute je Stück: Nummer, Achse, Strassenname, Gemeinde, Funktion, Tempo,
+   DTV, Emissionswert, Bus (ja, teilweise, nein) mit Liniennummern und
+   Haltestellen, Länge, und aus `per_abschnitt.json` Unfälle 2011 bis 2025 und
+   Fassaden über dem Immissionsgrenzwert des benannten Abschnitts.
+7. Nicht als Innerortsgrenze tauglich: das Baugebiet allein (deckt die
+   Stadtkerne nicht, 0 % an Bahnhof-, Hoch- und Fulachstrasse) und die
+   Ortstafeln allein (140 Punkte, unvollständig). Beides steht darum nur als
+   Siedlungsmerkmal neben dem Tempo.
+8. Ausgeschlossen als Ausserortsstrecken mit Tempo 40 oder 50:
+   31 Stücke,
+   7,8 km
+   (Randenstrasse, Im Gehren und weitere), Liste in `geltungsbereich.json`.
+9. Die frühere Ebene `kantonsstrassen_vo_wgs84` (106,8 km, das ganze
+   verkehrsorientierte Netz ohne Innerortsschnitt) ist entfernt.
+10. Darstellung im Viewer: Initiative blau (5 px), Gegenvorschlag rot (11 px),
+    beide mit heller Kontur; wo beide gelten, liegt Blau auf Rot. Klick auf ein
+    Stück zeigt die Attribute.

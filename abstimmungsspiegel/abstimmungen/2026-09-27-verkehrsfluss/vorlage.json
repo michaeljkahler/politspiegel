@@ -687,9 +687,9 @@
               "543"
             ]
           ],
-          "fuss": "Der Gegenvorschlag greift auf der ersten Zeile. Das Netz der Initiative, Kantonsstrassen innerorts mit Busbetrieb, ist eine andere Menge und deckt sich nur teilweise mit der ersten Zeile."
+          "fuss": "Der Gegenvorschlag greift auf der ersten Zeile. Das Netz der Initiative, Kantonsstrassen innerorts mit Busbetrieb, ist eine andere Menge: 58,7 km, davon 35,1 km auch im Gegenvorschlag, 23,6 km nur in der Initiative (siedlungsorientierte Strassen mit Bus). Umgekehrt erfasst der Gegenvorschlag 7,9 km ohne Buslinie, die die Initiative nicht erfasst. Rechnung in der Karte «Selber nachschauen»."
         },
-        "folge": "1. Die beiden Vorlagen regeln nicht dasselbe Strassennetz.\n2. Wer beide annimmt, entscheidet mit der Stichfrage auch darüber, welche Abgrenzung gilt.\n3. Keines der beiden Argumentarien erwähnt das.",
+        "folge": "1. Die beiden Vorlagen regeln nicht dasselbe Strassennetz.\n2. Beide erfassen 35,1 km; nur die Initiative 23,6 km, nur der Gegenvorschlag 7,9 km.\n3. Wer beide annimmt, entscheidet mit der Stichfrage auch darüber, welche Abgrenzung gilt.\n4. Keines der beiden Argumentarien erwähnt das.",
         "quelle": "Kantonaler Strassenrichtplan, Funktionszuweisung; eigene Auswertung"
       },
       {
@@ -957,6 +957,10 @@
       },
       {
         "titel": "Standorte sensibler Nutzungen: eigenes GeoPackage aus OpenStreetMap und kantonalen Quellen",
+        "art": "eigen"
+      },
+      {
+        "titel": "Betroffene Strassen beider Vorlagen: eigene Rechnung aus Kantonsstrassen, Lärmkataster (Tempo, DTV), Ortstafeln und Baugebiet (geo.sh.ch), Buslinien (OpenStreetMap), Haltestellen (BAV)",
         "art": "eigen"
       }
     ]

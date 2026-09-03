@@ -2,7 +2,7 @@
 
 Erzeugt am 03.09.2026 von `abstimmungsspiegel/bausteine/geo_freigeben.py`. Nicht von Hand aendern, die Datei wird bei jedem Lauf neu geschrieben.
 
-**4 Ebenen freigegeben, keine zurueckgehalten.**
+**5 Ebenen freigegeben, keine zurueckgehalten.**
 
 Freigegeben heisst: jede Koordinate liegt im Rahmen des Kantons, jede Geometrie ist vollstaendig, jede Eigenschaft, welche die Karte braucht, ist vorhanden. Zurueckgehalten heisst: die Ebene erscheint nicht auf der Seite, der Grund steht unten.
 
@@ -11,9 +11,10 @@ Freigegeben heisst: jede Koordinate liegt im Rahmen des Kantons, jede Geometrie 
 | Ebene | Objekte | vorher | freigegeben | Stand | Anmerkung |
 |---|---|---|---|---|---|
 | `busnetz_wgs84` | 448 | 74 kB | 74 kB | freigegeben | keine |
+| `geltung_gegenvorschlag` | 191 | 220 kB | 161 kB | freigegeben | keine |
+| `geltung_initiative` | 297 | 338 kB | 248 kB | freigegeben | keine |
 | `haltestellen_bus_wgs84` | 283 | 38 kB | 38 kB | freigegeben | keine |
 | `kandidaten_wgs84` | 517 | 115 kB | 109 kB | freigegeben | keine |
-| `kantonsstrassen_vo_wgs84` | 34 | 19 kB | 19 kB | freigegeben | keine |
 
 ## Herkunft je Ebene
 
@@ -23,6 +24,22 @@ OpenStreetMap, Buslinien im Kanton, ueber die Overpass-API abgerufen.
 
 - Rohdaten: `01_roh/busnetz_roh.json`
 - Objekte: 448
+- Stand: freigegeben
+
+### `geltung_gegenvorschlag`
+
+Eigene Rechnung (geo/skripte/geltungsbereich.py): verkehrsorientierte Kantonsstrassen innerorts (ueberregional, regional nach Feld typ der Achsen), Stuecke des Laermkatasters mit Tempo bis 50. Attribute je Stueck.
+
+- Rohdaten: `01_roh/laerm_strassenachse_roh.xml, kantonsstrassen_alle_roh.xml`
+- Objekte: 191
+- Stand: freigegeben
+
+### `geltung_initiative`
+
+Eigene Rechnung (geo/skripte/geltungsbereich.py): Kantonsstrassen innerorts, die vom oeffentlichen Verkehr genutzt werden. Stuecke des kantonalen Laermkatasters mit Tempo bis 50, auf Kantonsstrassenachsen, mit Buslinie (OpenStreetMap) oder Haltestelle (BAV). Attribute je Stueck.
+
+- Rohdaten: `01_roh/laerm_strassenachse_roh.xml, kantonsstrassen_alle_roh.xml, busnetz_linien_roh.json`
+- Objekte: 297
 - Stand: freigegeben
 
 ### `haltestellen_bus_wgs84`
@@ -39,14 +56,6 @@ Eigene Auswertung aus der Uebergabe vom Juli 2026: Kantonsstrassen innerorts im 
 
 - Rohdaten: `01_roh/kandidaten_kurze_abschnitte.geojson (LV95)`
 - Objekte: 517
-- Stand: freigegeben
-
-### `kantonsstrassen_vo_wgs84`
-
-Kanton Schaffhausen, Kantonaler Strassenrichtplan, Funktionszuweisung verkehrsorientiert, ueber wfs.geo.sh.ch abgerufen.
-
-- Rohdaten: `01_roh/kantonsstrassen_vo_roh.json`
-- Objekte: 34
 - Stand: freigegeben
 
 ## Was gepruefte Koordinaten heisst

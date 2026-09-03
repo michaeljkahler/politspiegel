@@ -1,0 +1,2552 @@
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:qgs="http://www.qgis.org/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd http://www.qgis.org/gml https://wfs.geo.sh.ch/wfs?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=sh.richtplan.strassenrichtplan.kanton.ortstafeln&amp;OUTPUTFORMAT=text/xml; subtype%3Dgml/3.1.1">
+<gml:boundedBy>
+ <gml:Envelope srsName="EPSG:2056">
+  <gml:lowerCorner>2675008.251 1269874.68</gml:lowerCorner>
+  <gml:upperCorner>2707798.105 1294230.329</gml:upperCorner>
+ </gml:Envelope>
+</gml:boundedBy>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.acafc477-1274-463e-8b2f-a99b389eb71d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2675008.251 1280114.063</gml:lowerCorner>
+    <gml:upperCorner>2675008.251 1280114.063</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2675008.251 1280114.063</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>acafc477-1274-463e-8b2f-a99b389eb71d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Trasadingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.65299735-d484-4c02-92ec-d0a517a8df9a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677085.028 1281711.268</gml:lowerCorner>
+    <gml:upperCorner>2677085.028 1281711.268</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677085.028 1281711.268</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>65299735-d484-4c02-92ec-d0a517a8df9a</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.6f7144f8-b47b-4eaf-908c-2fc3c241ed1f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677320.17 1281522.54</gml:lowerCorner>
+    <gml:upperCorner>2677320.17 1281522.54</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677320.17 1281522.54</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>6f7144f8-b47b-4eaf-908c-2fc3c241ed1f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.f350f977-98a8-4d9a-91b2-092ca057bc1e">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677039.422 1280663.273</gml:lowerCorner>
+    <gml:upperCorner>2677039.422 1280663.273</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677039.422 1280663.273</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>f350f977-98a8-4d9a-91b2-092ca057bc1e</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1f045ca4-3630-488e-9d37-fc33cce3b47d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677368.99 1279807.782</gml:lowerCorner>
+    <gml:upperCorner>2677368.99 1279807.782</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677368.99 1279807.782</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1f045ca4-3630-488e-9d37-fc33cce3b47d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.2304ed48-a44c-415b-8b86-4f43cf87f7aa">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678447.883 1279476.859</gml:lowerCorner>
+    <gml:upperCorner>2678447.883 1279476.859</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678447.883 1279476.859</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>2304ed48-a44c-415b-8b86-4f43cf87f7aa</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.484abd6c-c2d2-4bb0-be37-1d174a1ef49a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676525.205 1281192.537</gml:lowerCorner>
+    <gml:upperCorner>2676525.205 1281192.537</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676525.205 1281192.537</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>484abd6c-c2d2-4bb0-be37-1d174a1ef49a</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c7c813ca-ecfb-4d7b-99d7-6287d64514d0">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676871.481 1281337.816</gml:lowerCorner>
+    <gml:upperCorner>2676871.481 1281337.816</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676871.481 1281337.816</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c7c813ca-ecfb-4d7b-99d7-6287d64514d0</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Wilchingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.f5d2a5dd-13e7-4063-bdf3-4f748f939590">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676610.533 1282580.79</gml:lowerCorner>
+    <gml:upperCorner>2676610.533 1282580.79</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676610.533 1282580.79</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>f5d2a5dd-13e7-4063-bdf3-4f748f939590</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.a11b9a46-2d81-4cfc-8a2f-cc2b61305b3d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677100.746 1283187.981</gml:lowerCorner>
+    <gml:upperCorner>2677100.746 1283187.981</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677100.746 1283187.981</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>a11b9a46-2d81-4cfc-8a2f-cc2b61305b3d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.a75c60ef-61dd-4eaf-9bd8-1829f8911db6">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677241.852 1283569.522</gml:lowerCorner>
+    <gml:upperCorner>2677241.852 1283569.522</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677241.852 1283569.522</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>a75c60ef-61dd-4eaf-9bd8-1829f8911db6</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1e2002f3-6c58-444d-aa54-353fdd34b5e4">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676870.518 1283673.198</gml:lowerCorner>
+    <gml:upperCorner>2676870.518 1283673.198</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676870.518 1283673.198</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1e2002f3-6c58-444d-aa54-353fdd34b5e4</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3441107e-d0b1-4cfc-9976-5506d77a0d25">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676036.365 1283349.826</gml:lowerCorner>
+    <gml:upperCorner>2676036.365 1283349.826</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676036.365 1283349.826</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3441107e-d0b1-4cfc-9976-5506d77a0d25</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c1083ee7-fd9a-48b3-a878-d74ac9926f94">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2679497.14 1282886.668</gml:lowerCorner>
+    <gml:upperCorner>2679497.14 1282886.668</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2679497.14 1282886.668</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c1083ee7-fd9a-48b3-a878-d74ac9926f94</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.95ec9b73-3dd1-403c-af86-c71f67b9d288">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678897.363 1282776.439</gml:lowerCorner>
+    <gml:upperCorner>2678897.363 1282776.439</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678897.363 1282776.439</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>95ec9b73-3dd1-403c-af86-c71f67b9d288</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.f15361f9-53b4-4a3f-83e6-e6da9620d8ad">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2680228.593 1282793.755</gml:lowerCorner>
+    <gml:upperCorner>2680228.593 1282793.755</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2680228.593 1282793.755</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>f15361f9-53b4-4a3f-83e6-e6da9620d8ad</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.664b5bc5-cfbf-4f79-802b-ba03c292361b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2679735.371 1283137.177</gml:lowerCorner>
+    <gml:upperCorner>2679735.371 1283137.177</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2679735.371 1283137.177</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>664b5bc5-cfbf-4f79-802b-ba03c292361b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.77846b96-ac69-4912-ba00-5117d25c030d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678996.794 1282137.918</gml:lowerCorner>
+    <gml:upperCorner>2678996.794 1282137.918</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678996.794 1282137.918</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>77846b96-ac69-4912-ba00-5117d25c030d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.18ea1026-52e9-4f1a-b19f-b3ece9c4cd8e">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2680009.583 1282443.185</gml:lowerCorner>
+    <gml:upperCorner>2680009.583 1282443.185</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2680009.583 1282443.185</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>18ea1026-52e9-4f1a-b19f-b3ece9c4cd8e</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Neunkirch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.41e68040-f4a0-49e3-b27c-6ece732c4e88">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2679082.592 1283908.474</gml:lowerCorner>
+    <gml:upperCorner>2679082.592 1283908.474</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2679082.592 1283908.474</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>41e68040-f4a0-49e3-b27c-6ece732c4e88</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Gächlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1e5e85a2-014c-4fe0-b2a3-9b39fd9bfa1c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2679669.725 1283635.456</gml:lowerCorner>
+    <gml:upperCorner>2679669.725 1283635.456</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2679669.725 1283635.456</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1e5e85a2-014c-4fe0-b2a3-9b39fd9bfa1c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Gächlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1ceaf288-4855-441f-bb33-553369174059">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2680122.404 1284498.102</gml:lowerCorner>
+    <gml:upperCorner>2680122.404 1284498.102</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2680122.404 1284498.102</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1ceaf288-4855-441f-bb33-553369174059</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Gächlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9deab1e6-cb01-46a6-97e9-4fc757b6a036">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2679818.721 1284649.977</gml:lowerCorner>
+    <gml:upperCorner>2679818.721 1284649.977</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2679818.721 1284649.977</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9deab1e6-cb01-46a6-97e9-4fc757b6a036</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Gächlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.14979a61-1a8f-4ab6-8c70-bcd9307e48e1">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677726.974 1284065.027</gml:lowerCorner>
+    <gml:upperCorner>2677726.974 1284065.027</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677726.974 1284065.027</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>14979a61-1a8f-4ab6-8c70-bcd9307e48e1</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Oberhallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b6068538-0d8b-4238-82b2-d534c9e383b1">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678136.185 1284084.691</gml:lowerCorner>
+    <gml:upperCorner>2678136.185 1284084.691</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678136.185 1284084.691</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b6068538-0d8b-4238-82b2-d534c9e383b1</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Oberhallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7db535f0-aca4-41be-a5f9-d957d11c2a84">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677862.877 1284540.442</gml:lowerCorner>
+    <gml:upperCorner>2677862.877 1284540.442</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677862.877 1284540.442</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7db535f0-aca4-41be-a5f9-d957d11c2a84</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Oberhallau</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ea80e15d-34ec-4f6e-b6eb-102956923688">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676598.334 1288964.833</gml:lowerCorner>
+    <gml:upperCorner>2676598.334 1288964.833</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676598.334 1288964.833</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ea80e15d-34ec-4f6e-b6eb-102956923688</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.abe9f7ce-7b02-4b61-9c58-6c69ccc5b748">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677833.272 1289015.411</gml:lowerCorner>
+    <gml:upperCorner>2677833.272 1289015.411</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677833.272 1289015.411</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>abe9f7ce-7b02-4b61-9c58-6c69ccc5b748</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.331c0c57-2aac-4edc-91bb-bab75743f433">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2677912.905 1288668.934</gml:lowerCorner>
+    <gml:upperCorner>2677912.905 1288668.934</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2677912.905 1288668.934</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>331c0c57-2aac-4edc-91bb-bab75743f433</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ded2a23b-0d3a-49a2-9263-ae003516ab62">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678083.885 1288712.514</gml:lowerCorner>
+    <gml:upperCorner>2678083.885 1288712.514</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678083.885 1288712.514</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ded2a23b-0d3a-49a2-9263-ae003516ab62</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.52a7f664-2fd7-430f-985c-b1d9a014f2c3">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2676334.647 1289206.214</gml:lowerCorner>
+    <gml:upperCorner>2676334.647 1289206.214</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2676334.647 1289206.214</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>52a7f664-2fd7-430f-985c-b1d9a014f2c3</qgs:uuid>
+  <qgs:bemerkung>Lage unbekannt  </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b832dd26-89df-49d7-9ff2-18904daf5527">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2678914.661 1289696.623</gml:lowerCorner>
+    <gml:upperCorner>2678914.661 1289696.623</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2678914.661 1289696.623</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b832dd26-89df-49d7-9ff2-18904daf5527</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schleitheim</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.dd8067e6-7a45-43dc-841d-da2f8acfc437">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2680820.905 1285426.244</gml:lowerCorner>
+    <gml:upperCorner>2680820.905 1285426.244</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2680820.905 1285426.244</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>dd8067e6-7a45-43dc-841d-da2f8acfc437</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Siblingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.023550c0-781e-473b-a5b4-8da3cdcd783b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2680791.632 1285386.901</gml:lowerCorner>
+    <gml:upperCorner>2680791.632 1285386.901</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2680791.632 1285386.901</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>023550c0-781e-473b-a5b4-8da3cdcd783b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Siblingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b31518c2-25c0-441a-9c19-81db9ec0ba8f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2681596.72 1285104.058</gml:lowerCorner>
+    <gml:upperCorner>2681596.72 1285104.058</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2681596.72 1285104.058</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b31518c2-25c0-441a-9c19-81db9ec0ba8f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Siblingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.5b6208ec-f0c4-4c93-88ad-6189915ea23b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2683098.614 1284096.174</gml:lowerCorner>
+    <gml:upperCorner>2683098.614 1284096.174</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2683098.614 1284096.174</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>5b6208ec-f0c4-4c93-88ad-6189915ea23b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Löhningen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.59f616f9-bd28-4924-acf7-e0f5a6bf467d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2683107.308 1283918.814</gml:lowerCorner>
+    <gml:upperCorner>2683107.308 1283918.814</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2683107.308 1283918.814</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>59f616f9-bd28-4924-acf7-e0f5a6bf467d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Löhningen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3b8f4ddb-11c3-4d48-a02a-26adbadb82e1">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2683709.823 1283747.636</gml:lowerCorner>
+    <gml:upperCorner>2683709.823 1283747.636</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2683709.823 1283747.636</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3b8f4ddb-11c3-4d48-a02a-26adbadb82e1</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Löhningen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3857f5c9-9e01-4e4a-8a4a-ac815c57fc22">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684016.103 1283994.317</gml:lowerCorner>
+    <gml:upperCorner>2684016.103 1283994.317</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684016.103 1283994.317</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3857f5c9-9e01-4e4a-8a4a-ac815c57fc22</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Löhningen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.958236cb-c014-42be-8300-919f4ccad184">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2683982.405 1282482.838</gml:lowerCorner>
+    <gml:upperCorner>2683982.405 1282482.838</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2683982.405 1282482.838</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>958236cb-c014-42be-8300-919f4ccad184</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beringen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.0f50be57-49ef-4aab-9481-fd8691ab7510">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684706.294 1283751.124</gml:lowerCorner>
+    <gml:upperCorner>2684706.294 1283751.124</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684706.294 1283751.124</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>0f50be57-49ef-4aab-9481-fd8691ab7510</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beringen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9e9dc85f-236a-4cfa-bc95-ca8182ddd53c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684746.756 1283204.759</gml:lowerCorner>
+    <gml:upperCorner>2684746.756 1283204.759</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684746.756 1283204.759</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9e9dc85f-236a-4cfa-bc95-ca8182ddd53c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beringen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.4df879e7-234b-491a-8865-168f6840cc32">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687650.102 1283191.197</gml:lowerCorner>
+    <gml:upperCorner>2687650.102 1283191.197</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687650.102 1283191.197</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>4df879e7-234b-491a-8865-168f6840cc32</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beringen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.11a92cc9-3f34-40b9-ab1e-2660fc698d67">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2681603.455 1291107.033</gml:lowerCorner>
+    <gml:upperCorner>2681603.455 1291107.033</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2681603.455 1291107.033</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>11a92cc9-3f34-40b9-ab1e-2660fc698d67</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beggingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.23831ff4-10b4-4b26-ae9d-0831b8224792">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2682166.702 1291464.466</gml:lowerCorner>
+    <gml:upperCorner>2682166.702 1291464.466</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2682166.702 1291464.466</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>23831ff4-10b4-4b26-ae9d-0831b8224792</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beggingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.12bd4a70-a748-4358-a8f4-56585b6537ab">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2682604.28 1290885.177</gml:lowerCorner>
+    <gml:upperCorner>2682604.28 1290885.177</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2682604.28 1290885.177</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>12bd4a70-a748-4358-a8f4-56585b6537ab</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beggingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.42808ef5-3a85-4e8b-a7fb-129387c4edad">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2686307.968 1287707.516</gml:lowerCorner>
+    <gml:upperCorner>2686307.968 1287707.516</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2686307.968 1287707.516</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>42808ef5-3a85-4e8b-a7fb-129387c4edad</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+  <qgs:ortsteil>Hemmental</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7a619ac1-3a5b-4b6a-9016-41182eded682">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2686433.378 1287172.632</gml:lowerCorner>
+    <gml:upperCorner>2686433.378 1287172.632</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2686433.378 1287172.632</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7a619ac1-3a5b-4b6a-9016-41182eded682</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+  <qgs:ortsteil>Hemmental</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.f1a19ff7-eff7-456d-9112-6507fbf9a054">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684846.574 1270047.143</gml:lowerCorner>
+    <gml:upperCorner>2684846.574 1270047.143</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684846.574 1270047.143</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>f1a19ff7-eff7-456d-9112-6507fbf9a054</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buchberg</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b7e7edfc-c32b-40ea-a873-f60a0e8b8643">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684593.196 1270623.467</gml:lowerCorner>
+    <gml:upperCorner>2684593.196 1270623.467</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684593.196 1270623.467</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b7e7edfc-c32b-40ea-a873-f60a0e8b8643</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c45459f8-dd80-441d-a9b0-a4219ca7c5ee">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684406.718 1270711.658</gml:lowerCorner>
+    <gml:upperCorner>2684406.718 1270711.658</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684406.718 1270711.658</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c45459f8-dd80-441d-a9b0-a4219ca7c5ee</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.12cfc4cf-e040-424f-a7f7-a8ae77bebde1">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684479.92 1270766.332</gml:lowerCorner>
+    <gml:upperCorner>2684479.92 1270766.332</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684479.92 1270766.332</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>12cfc4cf-e040-424f-a7f7-a8ae77bebde1</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.cd499740-7886-4ace-85ca-fe9dd8fd9547">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684524.614 1270996.884</gml:lowerCorner>
+    <gml:upperCorner>2684524.614 1270996.884</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684524.614 1270996.884</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>cd499740-7886-4ace-85ca-fe9dd8fd9547</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b8b26f47-1047-4398-8b6d-75fc7c4a965b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2685100.094 1270805.303</gml:lowerCorner>
+    <gml:upperCorner>2685100.094 1270805.303</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2685100.094 1270805.303</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b8b26f47-1047-4398-8b6d-75fc7c4a965b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.24be7327-0c51-411d-8152-7777ba78776f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684964.217 1271262.343</gml:lowerCorner>
+    <gml:upperCorner>2684964.217 1271262.343</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684964.217 1271262.343</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>24be7327-0c51-411d-8152-7777ba78776f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.60dddfeb-4d49-4890-9bd3-e7d69dcf8d5d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2684890.083 1271523.963</gml:lowerCorner>
+    <gml:upperCorner>2684890.083 1271523.963</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2684890.083 1271523.963</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>60dddfeb-4d49-4890-9bd3-e7d69dcf8d5d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b4e44d74-4471-4b3a-a83f-b0df2c5a1d42">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2685475.68 1270460.49</gml:lowerCorner>
+    <gml:upperCorner>2685475.68 1270460.49</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2685475.68 1270460.49</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b4e44d74-4471-4b3a-a83f-b0df2c5a1d42</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Rüdlingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.6b678722-7212-4395-9207-21ee0a8d8c0a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688004.761 1294123.651</gml:lowerCorner>
+    <gml:upperCorner>2688004.761 1294123.651</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688004.761 1294123.651</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>6b678722-7212-4395-9207-21ee0a8d8c0a</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Bargen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c8c0a31d-a6ac-4c34-8e4b-51f6abce756a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688080.25 1294089.297</gml:lowerCorner>
+    <gml:upperCorner>2688080.25 1294089.297</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688080.25 1294089.297</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c8c0a31d-a6ac-4c34-8e4b-51f6abce756a</qgs:uuid>
+  <qgs:bemerkung>Lage ungenau  </qgs:bemerkung>
+  <qgs:gemeinde>Bargen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ebb2a9a5-aae9-4513-9132-ac16fd90ffff">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687885.659 1294166.995</gml:lowerCorner>
+    <gml:upperCorner>2687885.659 1294166.995</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687885.659 1294166.995</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ebb2a9a5-aae9-4513-9132-ac16fd90ffff</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Bargen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7c82e2ce-d67b-4fbc-9124-fbf66f2a2f6f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688000.2 1290059.8</gml:lowerCorner>
+    <gml:upperCorner>2688000.2 1290059.8</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688000.2 1290059.8</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7c82e2ce-d67b-4fbc-9124-fbf66f2a2f6f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Merishausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.22196bd2-510f-4bc4-82d7-4b50b7c76879">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687739.45 1291155.3</gml:lowerCorner>
+    <gml:upperCorner>2687739.45 1291155.3</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687739.45 1291155.3</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>22196bd2-510f-4bc4-82d7-4b50b7c76879</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Merishausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9d6637da-3f94-4c8d-8eaf-d2adb7f5952b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2700974.84 1287181.007</gml:lowerCorner>
+    <gml:upperCorner>2700974.84 1287181.007</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2700974.84 1287181.007</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9d6637da-3f94-4c8d-8eaf-d2adb7f5952b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b7e42850-c666-4867-aeeb-cf52ff4c084e">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2701174.931 1286875.019</gml:lowerCorner>
+    <gml:upperCorner>2701174.931 1286875.019</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2701174.931 1286875.019</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b7e42850-c666-4867-aeeb-cf52ff4c084e</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.bf66c699-10c1-4baf-854f-e217c8e64065">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2701186.737 1286456.374</gml:lowerCorner>
+    <gml:upperCorner>2701186.737 1286456.374</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2701186.737 1286456.374</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>bf66c699-10c1-4baf-854f-e217c8e64065</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ccda39fb-9dd0-4e2a-b396-8daefe0bdfea">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2701122.688 1286210.198</gml:lowerCorner>
+    <gml:upperCorner>2701122.688 1286210.198</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2701122.688 1286210.198</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ccda39fb-9dd0-4e2a-b396-8daefe0bdfea</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c27b415d-8b21-4afc-9df3-005b4bbb2a1f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2701001.833 1286132.351</gml:lowerCorner>
+    <gml:upperCorner>2701001.833 1286132.351</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2701001.833 1286132.351</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c27b415d-8b21-4afc-9df3-005b4bbb2a1f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3d278558-b990-4a36-8c36-8e13bc9b5231">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2700412.445 1286045.551</gml:lowerCorner>
+    <gml:upperCorner>2700412.445 1286045.551</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2700412.445 1286045.551</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3d278558-b990-4a36-8c36-8e13bc9b5231</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buch</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.5f1af5ad-bf4b-49e9-bf4d-384a0a46f014">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2702536.146 1284644.545</gml:lowerCorner>
+    <gml:upperCorner>2702536.146 1284644.545</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2702536.146 1284644.545</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>5f1af5ad-bf4b-49e9-bf4d-384a0a46f014</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Ramsen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c7c05a23-1eea-4543-9f7a-f4a1f9993ec8">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2702736.28 1285026.237</gml:lowerCorner>
+    <gml:upperCorner>2702736.28 1285026.237</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2702736.28 1285026.237</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c7c05a23-1eea-4543-9f7a-f4a1f9993ec8</qgs:uuid>
+  <qgs:bemerkung>Lage unbekannt  </qgs:bemerkung>
+  <qgs:gemeinde>Ramsen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.42f83919-2631-4d37-9f28-e511815c95e0">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2703752.108 1284553.806</gml:lowerCorner>
+    <gml:upperCorner>2703752.108 1284553.806</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2703752.108 1284553.806</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>42f83919-2631-4d37-9f28-e511815c95e0</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Ramsen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.82df285e-6fcf-4b98-ae28-0ac5e69a633e">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2703882.946 1285599.483</gml:lowerCorner>
+    <gml:upperCorner>2703882.946 1285599.483</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2703882.946 1285599.483</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>82df285e-6fcf-4b98-ae28-0ac5e69a633e</qgs:uuid>
+  <qgs:bemerkung>unbekannt   </qgs:bemerkung>
+  <qgs:gemeinde>Ramsen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.bea47950-4e2c-46a6-9852-c86fe12ded49">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2704460.956 1282130.852</gml:lowerCorner>
+    <gml:upperCorner>2704460.956 1282130.852</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2704460.956 1282130.852</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>bea47950-4e2c-46a6-9852-c86fe12ded49</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hemishofen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.d6bf7087-a728-4e18-8261-f49c0368561c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2704890.575 1281411.635</gml:lowerCorner>
+    <gml:upperCorner>2704890.575 1281411.635</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2704890.575 1281411.635</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>d6bf7087-a728-4e18-8261-f49c0368561c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hemishofen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.d8668506-8feb-44bc-b59d-4c73916bd09c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2704957.927 1281348.885</gml:lowerCorner>
+    <gml:upperCorner>2704957.927 1281348.885</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2704957.927 1281348.885</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>d8668506-8feb-44bc-b59d-4c73916bd09c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hemishofen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.d522b52c-227c-4748-af68-1b67cc3b0fb3">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2705163.419 1281121.438</gml:lowerCorner>
+    <gml:upperCorner>2705163.419 1281121.438</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2705163.419 1281121.438</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>d522b52c-227c-4748-af68-1b67cc3b0fb3</qgs:uuid>
+  <qgs:bemerkung>ungenau   </qgs:bemerkung>
+  <qgs:gemeinde>Hemishofen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.8c12cafc-194f-4275-9ca0-1d3af16f853d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2705722.603 1280513.579</gml:lowerCorner>
+    <gml:upperCorner>2705722.603 1280513.579</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2705722.603 1280513.579</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>8c12cafc-194f-4275-9ca0-1d3af16f853d</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Stein am Rhein</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ca78e58d-9778-4ca0-a3e5-4ce7bd9de8de">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2707798.105 1279782.878</gml:lowerCorner>
+    <gml:upperCorner>2707798.105 1279782.878</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2707798.105 1279782.878</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ca78e58d-9778-4ca0-a3e5-4ce7bd9de8de</qgs:uuid>
+  <qgs:bemerkung>Lage ungenau</qgs:bemerkung>
+  <qgs:gemeinde>Stein am Rhein</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1086eb4b-6f44-4b84-a920-308c1ec4f197">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2706194.795 1279561.018</gml:lowerCorner>
+    <gml:upperCorner>2706194.795 1279561.018</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2706194.795 1279561.018</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1086eb4b-6f44-4b84-a920-308c1ec4f197</qgs:uuid>
+  <qgs:bemerkung>Lage ungenau</qgs:bemerkung>
+  <qgs:gemeinde>Stein am Rhein</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.08a0aa47-81d4-4ea2-9867-0310cd07a9b5">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2706849.053 1279100.12</gml:lowerCorner>
+    <gml:upperCorner>2706849.053 1279100.12</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2706849.053 1279100.12</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>08a0aa47-81d4-4ea2-9867-0310cd07a9b5</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Stein am Rhein</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.bd29d5c7-e10a-4ef0-938f-7e89c3b2dfaa">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2706158.98 1278797.38</gml:lowerCorner>
+    <gml:upperCorner>2706158.98 1278797.38</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2706158.98 1278797.38</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>bd29d5c7-e10a-4ef0-938f-7e89c3b2dfaa</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Stein am Rhein</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.b5a69d81-3f90-4023-b1cb-736f1aac2e41">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696389.091 1284527.33</gml:lowerCorner>
+    <gml:upperCorner>2696389.091 1284527.33</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696389.091 1284527.33</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>b5a69d81-3f90-4023-b1cb-736f1aac2e41</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3816c10c-26ef-4cf6-9c6e-d4e6d0732365">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695704.104 1284631.601</gml:lowerCorner>
+    <gml:upperCorner>2695704.104 1284631.601</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695704.104 1284631.601</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3816c10c-26ef-4cf6-9c6e-d4e6d0732365</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.96f40c7e-aed2-41aa-8760-e49996e4bc07">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696016.476 1285046.836</gml:lowerCorner>
+    <gml:upperCorner>2696016.476 1285046.836</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696016.476 1285046.836</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>96f40c7e-aed2-41aa-8760-e49996e4bc07</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.69f03497-462f-42be-9505-b5e0faa2ec24">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696380.201 1285497.104</gml:lowerCorner>
+    <gml:upperCorner>2696380.201 1285497.104</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696380.201 1285497.104</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>69f03497-462f-42be-9505-b5e0faa2ec24</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.17a06b0e-add7-48dd-99d8-3ff05aee5a80">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696518.607 1285513.811</gml:lowerCorner>
+    <gml:upperCorner>2696518.607 1285513.811</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696518.607 1285513.811</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>17a06b0e-add7-48dd-99d8-3ff05aee5a80</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.e5590163-f043-4001-87f6-5f96b11a4a0b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2693868.329 1285518.842</gml:lowerCorner>
+    <gml:upperCorner>2693868.329 1285518.842</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2693868.329 1285518.842</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>e5590163-f043-4001-87f6-5f96b11a4a0b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+  <qgs:ortsteil>Gennersbrunn</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.632357a4-2614-4e74-a468-d6d551ba91f3">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2693583.078 1285335.863</gml:lowerCorner>
+    <gml:upperCorner>2693583.078 1285335.863</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2693583.078 1285335.863</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>632357a4-2614-4e74-a468-d6d551ba91f3</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+  <qgs:ortsteil>Gennersbrunn</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9796af83-7f28-4bab-ae79-b318d3cf0542">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695910.777 1290727.705</gml:lowerCorner>
+    <gml:upperCorner>2695910.777 1290727.705</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695910.777 1290727.705</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9796af83-7f28-4bab-ae79-b318d3cf0542</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Barzheim</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.a96fbcce-fb3b-475d-9558-ee9fa04f1da4">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695176.615 1290058.221</gml:lowerCorner>
+    <gml:upperCorner>2695176.615 1290058.221</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695176.615 1290058.221</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>a96fbcce-fb3b-475d-9558-ee9fa04f1da4</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.69733907-c84c-426d-971a-f36de814bc7d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2694295.666 1289989</gml:lowerCorner>
+    <gml:upperCorner>2694295.666 1289989</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2694295.666 1289989</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>69733907-c84c-426d-971a-f36de814bc7d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.766c277e-14b7-4bd2-a455-34a5f709e48d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2693959.61 1290125.188</gml:lowerCorner>
+    <gml:upperCorner>2693959.61 1290125.188</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2693959.61 1290125.188</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>766c277e-14b7-4bd2-a455-34a5f709e48d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7d229b45-63da-4618-8901-f52b3ba56857">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2694216.053 1289335.442</gml:lowerCorner>
+    <gml:upperCorner>2694216.053 1289335.442</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2694216.053 1289335.442</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7d229b45-63da-4618-8901-f52b3ba56857</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.83db3060-acb0-4cc4-a506-1cd3f7a26b3b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2694798.407 1289770.623</gml:lowerCorner>
+    <gml:upperCorner>2694798.407 1289770.623</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2694798.407 1289770.623</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>83db3060-acb0-4cc4-a506-1cd3f7a26b3b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.0cb57524-edab-43e0-8638-4b855bf0611f">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695014.32 1288829.178</gml:lowerCorner>
+    <gml:upperCorner>2695014.32 1288829.178</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695014.32 1288829.178</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>0cb57524-edab-43e0-8638-4b855bf0611f</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.bfbceacf-c1c5-4974-9987-aefdc9a34263">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695855.157 1288762.25</gml:lowerCorner>
+    <gml:upperCorner>2695855.157 1288762.25</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695855.157 1288762.25</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>bfbceacf-c1c5-4974-9987-aefdc9a34263</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7d8854ec-c630-4244-a6bc-084a0f6267ae">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695773.183 1289178.325</gml:lowerCorner>
+    <gml:upperCorner>2695773.183 1289178.325</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695773.183 1289178.325</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7d8854ec-c630-4244-a6bc-084a0f6267ae</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.341c2915-e782-4a03-8d05-053d5d4d28a9">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696895.776 1289199.826</gml:lowerCorner>
+    <gml:upperCorner>2696895.776 1289199.826</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696895.776 1289199.826</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>341c2915-e782-4a03-8d05-053d5d4d28a9</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.0a867a3e-4460-4538-9200-d83302608e86">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2693125.802 1291876.477</gml:lowerCorner>
+    <gml:upperCorner>2693125.802 1291876.477</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2693125.802 1291876.477</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>0a867a3e-4460-4538-9200-d83302608e86</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Bibern</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.624657ae-0450-4867-9490-48ebab541f3d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692530.412 1292279.557</gml:lowerCorner>
+    <gml:upperCorner>2692530.412 1292279.557</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692530.412 1292279.557</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>624657ae-0450-4867-9490-48ebab541f3d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Bibern</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.88e10eb7-5647-49f3-b408-0d074d7eb3d4">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692758.565 1293054.397</gml:lowerCorner>
+    <gml:upperCorner>2692758.565 1293054.397</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692758.565 1293054.397</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>88e10eb7-5647-49f3-b408-0d074d7eb3d4</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Hofen</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.2eb7a67f-e3e1-4240-8b5b-04591c0a9990">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2693074.952 1293570.647</gml:lowerCorner>
+    <gml:upperCorner>2693074.952 1293570.647</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2693074.952 1293570.647</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>2eb7a67f-e3e1-4240-8b5b-04591c0a9990</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Hofen</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.8bbd3970-bcaa-4b3d-b844-333a521ba3ba">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691484.732 1292184.946</gml:lowerCorner>
+    <gml:upperCorner>2691484.732 1292184.946</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691484.732 1292184.946</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>8bbd3970-bcaa-4b3d-b844-333a521ba3ba</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Opfertshofen</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.503b0433-f9d0-4579-ad62-99a58e6a5927">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691704.613 1292722.228</gml:lowerCorner>
+    <gml:upperCorner>2691704.613 1292722.228</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691704.613 1292722.228</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>503b0433-f9d0-4579-ad62-99a58e6a5927</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Opfertshofen</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.29eb5508-3132-4a54-8324-be7ba1f4f234">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691175.695 1293290.657</gml:lowerCorner>
+    <gml:upperCorner>2691175.695 1293290.657</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691175.695 1293290.657</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>29eb5508-3132-4a54-8324-be7ba1f4f234</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Altdorf</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7f00f42a-599a-4b10-85a0-d1a18a5c2d85">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691338.561 1293244.681</gml:lowerCorner>
+    <gml:upperCorner>2691338.561 1293244.681</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691338.561 1293244.681</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7f00f42a-599a-4b10-85a0-d1a18a5c2d85</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Altdorf</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.70743fb9-df06-4cf3-86cb-f32d34225972">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691683.554 1293358.357</gml:lowerCorner>
+    <gml:upperCorner>2691683.554 1293358.357</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691683.554 1293358.357</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>70743fb9-df06-4cf3-86cb-f32d34225972</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Altdorf</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.3c491498-8c38-4df7-af9f-c105cffe7d1c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692235.979 1290491.403</gml:lowerCorner>
+    <gml:upperCorner>2692235.979 1290491.403</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692235.979 1290491.403</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>3c491498-8c38-4df7-af9f-c105cffe7d1c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Lohn</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.f096c506-3992-4e0b-8d62-a3fba39bd904">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692639.625 1290013.774</gml:lowerCorner>
+    <gml:upperCorner>2692639.625 1290013.774</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692639.625 1290013.774</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>f096c506-3992-4e0b-8d62-a3fba39bd904</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Lohn</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.fde7a2a6-88ab-48dc-ab98-95e1cec39e2d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692174.907 1289853.486</gml:lowerCorner>
+    <gml:upperCorner>2692174.907 1289853.486</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692174.907 1289853.486</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>fde7a2a6-88ab-48dc-ab98-95e1cec39e2d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Lohn</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.23ed68b8-7f4e-4780-b586-8cefeb6097dd">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692101.421 1290033.877</gml:lowerCorner>
+    <gml:upperCorner>2692101.421 1290033.877</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692101.421 1290033.877</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>23ed68b8-7f4e-4780-b586-8cefeb6097dd</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Lohn</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.bfea7677-6d02-468f-b51b-05949ad66efa">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691213.127 1290138.233</gml:lowerCorner>
+    <gml:upperCorner>2691213.127 1290138.233</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691213.127 1290138.233</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>bfea7677-6d02-468f-b51b-05949ad66efa</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Büttenhardt</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.aa442b7a-2c6a-4764-a00d-a2b1f89c53a5">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691124.52 1290560.82</gml:lowerCorner>
+    <gml:upperCorner>2691124.52 1290560.82</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691124.52 1290560.82</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>aa442b7a-2c6a-4764-a00d-a2b1f89c53a5</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Büttenhardt</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.da67c663-e005-46ac-b4df-52489a0cc9d8">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691235.745 1287803.505</gml:lowerCorner>
+    <gml:upperCorner>2691235.745 1287803.505</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691235.745 1287803.505</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>da67c663-e005-46ac-b4df-52489a0cc9d8</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Stetten</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.069b86bc-6faf-40e4-af1c-2f0b98fc7cea">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691767.36 1287932.242</gml:lowerCorner>
+    <gml:upperCorner>2691767.36 1287932.242</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691767.36 1287932.242</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>069b86bc-6faf-40e4-af1c-2f0b98fc7cea</qgs:uuid>
+  <qgs:bemerkung>ungenau   </qgs:bemerkung>
+  <qgs:gemeinde>Stetten</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.86fb7de5-8d30-464c-b566-7adc54853e25">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691792.47 1288942.634</gml:lowerCorner>
+    <gml:upperCorner>2691792.47 1288942.634</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691792.47 1288942.634</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>86fb7de5-8d30-464c-b566-7adc54853e25</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Stetten</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ce702402-85a4-4915-ac32-48260f47bf8d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688059.963 1286309.588</gml:lowerCorner>
+    <gml:upperCorner>2688059.963 1286309.588</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688059.963 1286309.588</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ce702402-85a4-4915-ac32-48260f47bf8d</qgs:uuid>
+  <qgs:bemerkung>ungenau   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.40af7462-c2fc-40f2-be08-327004f1a08a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688679.103 1287739.393</gml:lowerCorner>
+    <gml:upperCorner>2688679.103 1287739.393</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688679.103 1287739.393</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>40af7462-c2fc-40f2-be08-327004f1a08a</qgs:uuid>
+  <qgs:bemerkung>ungenau   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.23eb0b5f-d63c-4fff-95a3-81ddcda3e3a8">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2690070.147 1286791.822</gml:lowerCorner>
+    <gml:upperCorner>2690070.147 1286791.822</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2690070.147 1286791.822</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>23eb0b5f-d63c-4fff-95a3-81ddcda3e3a8</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ccd59865-6f1b-445f-991a-15b8b3d67b96">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691711.647 1287227.7</gml:lowerCorner>
+    <gml:upperCorner>2691711.647 1287227.7</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691711.647 1287227.7</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ccd59865-6f1b-445f-991a-15b8b3d67b96</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9713d288-8d49-4214-b7ec-3c84549efdb4">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691949.03 1287258.611</gml:lowerCorner>
+    <gml:upperCorner>2691949.03 1287258.611</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691949.03 1287258.611</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9713d288-8d49-4214-b7ec-3c84549efdb4</qgs:uuid>
+  <qgs:bemerkung>unbekannt   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.5678f918-b0aa-442d-8e9e-1084f57f4947">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2692142.428 1285419.861</gml:lowerCorner>
+    <gml:upperCorner>2692142.428 1285419.861</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2692142.428 1285419.861</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>5678f918-b0aa-442d-8e9e-1084f57f4947</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.73855671-4fc1-4f4e-bbdd-20f6a7e3a57a">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691982.699 1282476.613</gml:lowerCorner>
+    <gml:upperCorner>2691982.699 1282476.613</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691982.699 1282476.613</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>73855671-4fc1-4f4e-bbdd-20f6a7e3a57a</qgs:uuid>
+  <qgs:bemerkung>unbekannt   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.0e05634d-e996-4cc3-88ff-f5c064aea84c">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2690240.335 1283326.216</gml:lowerCorner>
+    <gml:upperCorner>2690240.335 1283326.216</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2690240.335 1283326.216</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>0e05634d-e996-4cc3-88ff-f5c064aea84c</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.7c971e61-497c-4222-8a36-0729b72969f3">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2690253.28 1283339.206</gml:lowerCorner>
+    <gml:upperCorner>2690253.28 1283339.206</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2690253.28 1283339.206</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>7c971e61-497c-4222-8a36-0729b72969f3</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.e2e4525e-10b1-4df7-90aa-93f3b03cc9fb">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2689209.206 1283039.443</gml:lowerCorner>
+    <gml:upperCorner>2689209.206 1283039.443</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2689209.206 1283039.443</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>e2e4525e-10b1-4df7-90aa-93f3b03cc9fb</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.9308a3e1-ba6d-4f9a-b721-d104161d51b0">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688883.998 1283101.979</gml:lowerCorner>
+    <gml:upperCorner>2688883.998 1283101.979</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688883.998 1283101.979</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>9308a3e1-ba6d-4f9a-b721-d104161d51b0</qgs:uuid>
+  <qgs:bemerkung>unbekannt   </qgs:bemerkung>
+  <qgs:gemeinde>Schaffhausen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.e05903d5-bde2-496d-9b38-a26c3818edf0">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2688863.227 1282779.15</gml:lowerCorner>
+    <gml:upperCorner>2688863.227 1282779.15</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2688863.227 1282779.15</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>e05903d5-bde2-496d-9b38-a26c3818edf0</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Neuhausen am Rheinfall</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.63f6b7e2-939f-456e-aeba-73fd30663a7b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687903.246 1281433.191</gml:lowerCorner>
+    <gml:upperCorner>2687903.246 1281433.191</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687903.246 1281433.191</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>63f6b7e2-939f-456e-aeba-73fd30663a7b</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Neuhausen am Rheinfall</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.cbfbe58e-5534-4ee9-9f17-3b1d0378d235">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687226.991 1281263.998</gml:lowerCorner>
+    <gml:upperCorner>2687226.991 1281263.998</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687226.991 1281263.998</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>cbfbe58e-5534-4ee9-9f17-3b1d0378d235</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Neuhausen am Rheinfall</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.49a609fb-47a8-43c0-b5ea-cd15f8327478">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687987.3 1282715.984</gml:lowerCorner>
+    <gml:upperCorner>2687987.3 1282715.984</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687987.3 1282715.984</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>49a609fb-47a8-43c0-b5ea-cd15f8327478</qgs:uuid>
+  <qgs:bemerkung> </qgs:bemerkung>
+  <qgs:gemeinde>Neuhausen am Rheinfall</qgs:gemeinde>
+  <qgs:ortsteil></qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.59047ff2-098d-4283-a143-9e42a45896e2">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2683950.812 1269874.68</gml:lowerCorner>
+    <gml:upperCorner>2683950.812 1269874.68</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2683950.812 1269874.68</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>59047ff2-098d-4283-a143-9e42a45896e2</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Buchberg</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.cff4454a-60ef-4911-b3f2-0cc9e083bce9">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2687768.19 1294230.329</gml:lowerCorner>
+    <gml:upperCorner>2687768.19 1294230.329</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2687768.19 1294230.329</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>cff4454a-60ef-4911-b3f2-0cc9e083bce9</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Bargen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.1bcd8f6b-5005-4b5f-b22f-a64dfa9979c9">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695805.856 1290386.206</gml:lowerCorner>
+    <gml:upperCorner>2695805.856 1290386.206</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695805.856 1290386.206</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>1bcd8f6b-5005-4b5f-b22f-a64dfa9979c9</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+  <qgs:ortsteil>Barzheim</qgs:ortsteil>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.38147884-3af6-4979-9c5c-29ebb74b90a9">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2695326.499 1289881.667</gml:lowerCorner>
+    <gml:upperCorner>2695326.499 1289881.667</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2695326.499 1289881.667</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>38147884-3af6-4979-9c5c-29ebb74b90a9</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.c9d9793a-4a42-433e-b262-3326ef0e6e61">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2704167.225 1281723.034</gml:lowerCorner>
+    <gml:upperCorner>2704167.225 1281723.034</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2704167.225 1281723.034</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>c9d9793a-4a42-433e-b262-3326ef0e6e61</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Hemishofen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.4eeddad7-74e4-4119-b9d1-2a05b6747438">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2685616.521 1282945.392</gml:lowerCorner>
+    <gml:upperCorner>2685616.521 1282945.392</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2685616.521 1282945.392</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>4eeddad7-74e4-4119-b9d1-2a05b6747438</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Beringen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.42e5c01b-f197-4cd6-b4d4-bcd700e342d4">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2691065.504 1289681.141</gml:lowerCorner>
+    <gml:upperCorner>2691065.504 1289681.141</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2691065.504 1289681.141</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>42e5c01b-f197-4cd6-b4d4-bcd700e342d4</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Büttenhardt</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.ab95ae47-52d1-4f2b-9546-015193ff512d">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2696804.049 1284336.769</gml:lowerCorner>
+    <gml:upperCorner>2696804.049 1284336.769</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2696804.049 1284336.769</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>ab95ae47-52d1-4f2b-9546-015193ff512d</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Dörflingen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+<gml:featureMember>
+ <qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln gml:id="sh.richtplan.strassenrichtplan.kanton.ortstafeln.6d67f0b7-fc9f-447a-87e3-dea7e73b6c9b">
+  <gml:boundedBy>
+   <gml:Envelope srsName="EPSG:2056">
+    <gml:lowerCorner>2694111.812 1289752.951</gml:lowerCorner>
+    <gml:upperCorner>2694111.812 1289752.951</gml:upperCorner>
+   </gml:Envelope>
+  </gml:boundedBy>
+  <qgs:geometry>
+   <Point xmlns="http://www.opengis.net/gml" srsName="EPSG:2056">
+    <pos xmlns="http://www.opengis.net/gml" srsDimension="2">2694111.812 1289752.951</pos>
+   </Point>
+  </qgs:geometry>
+  <qgs:uuid>6d67f0b7-fc9f-447a-87e3-dea7e73b6c9b</qgs:uuid>
+  <qgs:bemerkung>   </qgs:bemerkung>
+  <qgs:gemeinde>Thayngen</qgs:gemeinde>
+ </qgs:sh.richtplan.strassenrichtplan.kanton.ortstafeln>
+</gml:featureMember>
+</wfs:FeatureCollection>

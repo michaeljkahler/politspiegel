@@ -29,6 +29,7 @@ from __future__ import annotations
 import collections
 import html
 import json
+import urllib.parse
 import math
 import re
 import shutil
@@ -38,6 +39,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import teilen  # noqa: E402  Bilder fuer Social Media, gleicher Ordner
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent / "politspiegel"))
+from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402  ein Impressum fuer alle Seiten
 
 WURZEL = Path(__file__).resolve().parent.parent.parent
 SLUG = sys.argv[1] if len(sys.argv) > 1 else "2026-09-27-verkehrsfluss"
@@ -593,7 +596,9 @@ FREIGEGEBEN = VORLAGE / "geo" / "03_freigegeben"
 GEOJSON = FREIGEGEBEN / "kandidaten_wgs84.geojson"
 HALTESTELLEN = FREIGEGEBEN / "haltestellen_bus_wgs84.geojson"
 BUSNETZ = FREIGEGEBEN / "busnetz_wgs84.geojson"
-KANTONSSTRASSEN = FREIGEGEBEN / "kantonsstrassen_vo_wgs84.geojson"
+GELTUNG_INI = FREIGEGEBEN / "geltung_initiative.geojson"
+GELTUNG_GV = FREIGEGEBEN / "geltung_gegenvorschlag.geojson"
+GELTUNG_KENN = VORLAGE / "geo" / "02_aufbereitet" / "geltungsbereich.json"
 
 # Amtliche Kachelebenen, alle am 3.9.2026 gegen wmts.geo.admin.ch geprueft.
 WMTS = [
@@ -623,30 +628,46 @@ SH_LAYER = [
      "hinweis": "In der Auswertung als Näherung für innerorts verwendet, nicht deckungsgleich mit den Ortstafeln."},
 ]
 
-# Was die beiden Erlasstexte als Geltungsbereich bestimmen.
-GELTUNG = [
-    {"key": "initiative", "name": "Initiative",
-     "kriterium": "Kantonsstrassen innerorts, <b>die auch durch den öffentlichen Verkehr genutzt werden</b>",
-     "ebenen": ["sh.richtplan.strassenrichtplan.kanton.ortstafeln"],
-     "strassen": True, "halte": True, "bus": True,
-     "text": ("Die Initiative knüpft nicht an die Funktion der Strasse an, sondern daran, ob ein Bus "
-              "fährt. Eingeblendet sind darum das Busnetz, 242 Kilometer befahrene Strassen aus den "
-              "Linienrelationen von OpenStreetMap für VBSH, PostAuto und PAZ, sowie die 283 "
-              "Bushaltestellen aus der Ebene des Bundesamts für Verkehr. Wo eine dunkle "
-              "Busnetz-Linie auf einer Kantonsstrasse innerorts liegt, greift die Initiative. "
-              "Die beiden Quellen stützen sich gegenseitig: 24 von 25 stichprobenweise geprüften "
-              "Haltestellen liegen weniger als 50 Meter von der Linienführung entfernt, der Median "
-              "beträgt 4 Meter. Die Linienführung ist allerdings betrieblich und nicht amtlich, "
-              "und sie ändert mit jedem Fahrplanwechsel.")},
-    {"key": "gegenvorschlag", "name": "Gegenvorschlag",
-     "kriterium": "<b>verkehrsorientierte</b> Kantonsstrassen innerorts, ohne Bedingung zum öffentlichen Verkehr",
-     "ebenen": ["sh.richtplan.strassenrichtplan.kanton.ortstafeln"],
-     "strassen": True,
-     "text": ("Der Gegenvorschlag knüpft genau an das an, was der eingeblendete Richtplan zeigt: "
-              "die Funktionszuweisung. Verkehrsorientiert sind die überregionalen und regionalen "
-              "Kantonsstrassen, zusammen 43,9 km innerorts. Dieser Geltungsbereich ist damit direkt "
-              "aus amtlichen Daten ablesbar, der der Initiative nicht.")},
-]
+# Was die beiden Erlasstexte als Geltungsbereich bestimmen. Die Zahlen kommen
+# aus geo/02_aufbereitet/geltungsbereich.json, das geo/skripte/geltungsbereich.py
+# schreibt; hier steht nichts von Hand.
+def kmz(v) -> str:
+    return f"{v:.1f}".replace(".", ",") + " km"
+
+
+def geltung_liste() -> list[dict]:
+    kz = json.loads(GELTUNG_KENN.read_text(encoding="utf-8")) if GELTUNG_KENN.exists() else {}
+    ini, gv = kz.get("initiative_km", 0), kz.get("gegenvorschlag_km", 0)
+    beide, nur_ini, nur_gv = kz.get("beide_km", 0), kz.get("nur_initiative_km", 0), kz.get("nur_gegenvorschlag_km", 0)
+    return [
+        {"key": "initiative", "name": "Initiative",
+         "kriterium": "Kantonsstrassen innerorts, <b>die auch durch den öffentlichen Verkehr genutzt werden</b>",
+         "ebenen": [], "ini": True, "gv": False, "halte": True, "bus": True,
+         "text": (f"1. {kmz(ini)} in {kz.get('initiative_stuecke', 0)} Strassenstücken, "
+                  f"davon {kmz(nur_ini)} siedlungsorientierte Strassen mit Bus, die der Gegenvorschlag nicht erfasst.\n"
+                  "2. Innerorts heisst hier: signalisierte Höchstgeschwindigkeit bis 50 km/h nach dem "
+                  "kantonalen Lärmkataster, in Siedlungslage (Baugebiet, Haltestelle oder Ortstafel in der Nähe).\n"
+                  "3. Bus heisst: Linienführung aus OpenStreetMap (VBSH, PostAuto, Ostwind) innerhalb von 20 m "
+                  "oder eine Haltestelle des Bundesamts für Verkehr direkt an der Strasse. Fährt die Linie nur "
+                  "über einen Teil eines Stücks, zählt dieser Teil.\n"
+                  "4. Die Linienführung ist betrieblich, nicht amtlich, und ändert mit dem Fahrplanwechsel.")},
+        {"key": "gegenvorschlag", "name": "Gegenvorschlag",
+         "kriterium": "<b>verkehrsorientierte</b> Kantonsstrassen innerorts, ohne Bedingung zum öffentlichen Verkehr",
+         "ebenen": [], "ini": False, "gv": True, "halte": False, "bus": False,
+         "text": (f"1. {kmz(gv)} in {kz.get('gegenvorschlag_stuecke', 0)} Strassenstücken, "
+                  f"davon {kmz(nur_gv)} ohne Buslinie, die die Initiative nicht erfasst.\n"
+                  "2. Verkehrsorientiert sind die überregionalen und regionalen Kantonsstrassen nach dem "
+                  "kantonalen Strassenrichtplan; die Funktion steht an jeder Achse.\n"
+                  "3. Innerorts wie bei der Initiative: bis 50 km/h in Siedlungslage.")},
+        {"key": "beide", "name": "Beide im Vergleich",
+         "kriterium": "was die beiden Texte gemeinsam und was sie verschieden erfassen",
+         "ebenen": [], "ini": True, "gv": True, "halte": False, "bus": False,
+         "text": (f"1. Beide Vorlagen: {kmz(beide)}.\n"
+                  f"2. Nur die Initiative: {kmz(nur_ini)} (siedlungsorientierte Strassen mit Bus).\n"
+                  f"3. Nur der Gegenvorschlag: {kmz(nur_gv)} (verkehrsorientierte Strassen ohne Bus).\n"
+                  "4. Wo beide gelten, liegt die blaue Linie der Initiative auf der breiteren roten Linie "
+                  "des Gegenvorschlags.")},
+    ]
 
 
 def viewer_block(k) -> str:
@@ -661,10 +682,10 @@ def viewer_block(k) -> str:
         for i, b in enumerate(GRUNDKARTEN))
 
     eigene = (
-        '<label class="vw-opt"><input type="checkbox" id="vw-k100" checked>'
-        '<span><i class="vw-linie vw-l100"></i>Kandidat bis 100 m</span></label>'
-        '<label class="vw-opt"><input type="checkbox" id="vw-k300" checked>'
-        '<span><i class="vw-linie vw-l300"></i>Kandidat bis 300 m</span></label>')
+        '<label class="vw-opt"><input type="checkbox" id="vw-k100">'
+        '<span><i class="vw-linie vw-l100"></i>Nähe Schule, Kindergarten, Heim: bis 100 m</span></label>'
+        '<label class="vw-opt"><input type="checkbox" id="vw-k300">'
+        '<span><i class="vw-linie vw-l300"></i>Nähe Schule, Kindergarten, Heim: bis 300 m</span></label>')
 
     amtlich = "".join(
         f'<label class="vw-opt" title="{e(w["hinweis"])}">'
@@ -684,21 +705,36 @@ def viewer_block(k) -> str:
         f'<input type="checkbox" class="vw-shwms" data-id="{e(w["id"])}">'
         f'<span>{e(w["name"])}<em>Kanton Schaffhausen</em></span></label>' for w in SH_LAYER)
 
+    GELTUNG = geltung_liste()
     geltung = "".join(
         f'<button class="vw-gknopf" data-key="{e(g["key"])}">{e(g["name"])}</button>'
         for g in GELTUNG)
-    geltung_daten = json.dumps({g["key"]: {"k": g["kriterium"], "t": g["text"], "l": g["ebenen"],
+    geltung_daten = json.dumps({g["key"]: {"k": g["kriterium"], "t": absaetze(g["text"]), "l": g["ebenen"],
                                            "h": bool(g.get("halte")), "b": bool(g.get("bus")),
-                                           "s": bool(g.get("strassen"))}
+                                           "i": bool(g.get("ini")), "g": bool(g.get("gv"))}
                                 for g in GELTUNG}, ensure_ascii=False)
 
-    strassen = KANTONSSTRASSEN.read_text(encoding="utf-8") if KANTONSSTRASSEN.exists() else ""
-    strassen_opt = ('<label class="vw-opt" title="Überregional und regional gelten als verkehrsorientiert.">'
-                    '<input type="checkbox" id="vw-strassen">'
-                    '<span><i class="vw-linie vw-lstr"></i>Kantonsstrassen, verkehrsorientiert'
-                    '<em>Strassenrichtplan, 107 km</em></span></label>') if strassen else ""
-    strassen_script = (f'<script id="vw-strassen-daten" type="application/json">{strassen}</script>'
-                       if strassen else "")
+    # Die beiden Geltungsbereiche als eigene Vektorebenen, mit Attributen je
+    # Strassenstueck. Kraeftige Farben, die auf keiner Grundkarte vorkommen
+    # (Blau und Rot, beide mit heller Kontur), und deutlich breiter als die
+    # Strassen der Karte. Der Gegenvorschlag liegt breiter unter der
+    # Initiative, damit dort, wo beide gelten, beide sichtbar bleiben.
+    kz = json.loads(GELTUNG_KENN.read_text(encoding="utf-8")) if GELTUNG_KENN.exists() else {}
+    g_ini = GELTUNG_INI.read_text(encoding="utf-8") if GELTUNG_INI.exists() else ""
+    g_gv = GELTUNG_GV.read_text(encoding="utf-8") if GELTUNG_GV.exists() else ""
+    geltung_opt = ""
+    if g_ini:
+        geltung_opt += ('<label class="vw-opt" title="Kantonsstrassen innerorts mit Buslinie oder Haltestelle">'
+                        '<input type="checkbox" id="vw-gini" checked>'
+                        f'<span><i class="vw-linie vw-lini"></i>Betroffen bei der Initiative'
+                        f'<em>{e(kmz(kz.get("initiative_km", 0)))}, {kz.get("initiative_stuecke", 0)} Strassenstücke</em></span></label>')
+    if g_gv:
+        geltung_opt += ('<label class="vw-opt" title="Verkehrsorientierte Kantonsstrassen innerorts">'
+                        '<input type="checkbox" id="vw-ggv" checked>'
+                        f'<span><i class="vw-linie vw-lgv"></i>Betroffen beim Gegenvorschlag'
+                        f'<em>{e(kmz(kz.get("gegenvorschlag_km", 0)))}, {kz.get("gegenvorschlag_stuecke", 0)} Strassenstücke</em></span></label>')
+    geltung_scripts = ((f'<script id="vw-gini-daten" type="application/json">{g_ini}</script>' if g_ini else "")
+                       + (f'<script id="vw-ggv-daten" type="application/json">{g_gv}</script>' if g_gv else ""))
 
     halte = HALTESTELLEN.read_text(encoding="utf-8") if HALTESTELLEN.exists() else ""
     bus = BUSNETZ.read_text(encoding="utf-8") if BUSNETZ.exists() else ""
@@ -727,10 +763,10 @@ def viewer_block(k) -> str:
                  f'darum nicht anspringen.') if len(ohne) > 1 else ""
 
     return abschnitt("viewer", "Selber nachschauen",
-        "Dieselben Daten als Karte zum Bewegen und Zoomen. Die dunklen Linien sind die betroffenen "
-        "Strassenabschnitte in der Nähe einer Schule, eines Kindergartens oder eines Heims, aus der "
-        "eigenen Auswertung. Die übrigen Ebenen kommen live von Bund und Kanton, sie werden hier "
-        "nicht kopiert, sondern jedes Mal frisch geladen." + e(ohne_satz), f"""
+        "Die betroffenen Strassen beider Vorlagen als Karte zum Bewegen und Zoomen, blau die "
+        "Initiative, rot der Gegenvorschlag. Jedes Strassenstück trägt seine Daten: Tempo, Verkehr, "
+        "Buslinien, Unfälle, Lärmfassaden. Die amtlichen Ebenen von Bund und Kanton werden nicht "
+        "kopiert, sondern jedes Mal frisch geladen." + e(ohne_satz), f"""
 
   <div class="vw-geltung">
     <div class="vw-gknoepfe"><span class="vw-glabel">Geltungsbereich zeigen</span>
@@ -741,8 +777,8 @@ def viewer_block(k) -> str:
   <div class="vw-block">
     <div class="vw-steuer">
       <div class="vw-gruppe"><h4>Grundkarte</h4>{basen}</div>
-      <div class="vw-gruppe"><h4>{marke('eigen')}</h4>{eigene}</div>
-      <div class="vw-gruppe"><h4>Kanton Schaffhausen</h4>{strassen_opt}{kantonal}</div>
+      <div class="vw-gruppe"><h4>{marke('eigen')}</h4>{geltung_opt}{eigene}</div>
+      <div class="vw-gruppe"><h4>Kanton Schaffhausen</h4>{kantonal}</div>
       <div class="vw-gruppe"><h4>Bund</h4>{amtlich}{halte_opt}</div>
       <div class="vw-gruppe"><h4>Öffentlicher Verkehr</h4>{bus_opt}</div>
       <div class="vw-gruppe"><h4>Hinspringen</h4>
@@ -754,11 +790,12 @@ def viewer_block(k) -> str:
         <summary><span id="vw-amtleg-titel">Amtliche Legende</span><span class="vw-amtleg-pfeil" aria-hidden="true">&#9660;</span></summary>
         <div class="vw-amtleg-inhalt" id="vw-amtleg-inhalt"></div>
       </details>
-      <div id="vw-legende" class="vw-legende" hidden>
-        <p class="vw-legtitel">Strassenrichtplan</p>
-        <p><i class="vw-linie vw-lueber"></i>überregional</p>
-        <p><i class="vw-linie vw-lreg"></i>regional</p>
-        <p class="vw-legfuss">beides gilt als verkehrsorientiert</p>
+      <div id="vw-legende" class="vw-legende">
+        <p class="vw-legtitel">Betroffene Strassen</p>
+        <p><i class="vw-linie vw-lini"></i>Initiative</p>
+        <p><i class="vw-linie vw-lgv"></i>Gegenvorschlag</p>
+        <p><i class="vw-linie vw-lbeide"></i>beide</p>
+        <p class="vw-legfuss">Klick auf eine Linie zeigt die Daten des Stücks</p>
       </div>
     </div>
   </div>
@@ -766,7 +803,7 @@ def viewer_block(k) -> str:
   <script id="vw-geltung-daten" type="application/json">{geltung_daten}</script>
   {halte_script}
   {bus_script}
-  {strassen_script}
+  {geltung_scripts}
 
   <p class="lesehilfe"><b>Zur Unfallebene.</b> Eine Häufung heisst nicht «hier ist es
   gefährlich». Sie heisst zuerst, dass dort viel Verkehr ist. Ein Risikovergleich bräuchte eine
@@ -853,6 +890,7 @@ def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
     <span class="kr-nein" style="flex:{max(nein,0.001)}"></span></div>
   <p class="kr-neben">{enth} Enthaltungen · {abw} abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste">{''.join(zeilen)}</div></details>
+  <p class="kr-link"><a href="../../kantonsrat/#s={urllib.parse.quote(kr['sitzung'], safe='')}&amp;nr={e(v['nr'])}">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
 </div>""")
     n = len(kr["abstimmungen"])
     return abschnitt("kantonsrat", "Wie der Kantonsrat dazu gestimmt hat",
@@ -881,6 +919,7 @@ CSS = """
      Getrennt davon stehen die Legendenstriche in der Bedienleiste, die auf
      dem Seitenhintergrund liegen und darum dem Schema folgen. */
   --geo-eigen:#12161C; --geo-kanton:#0F766E; --geo-bund:#8E44AD; --geo-osm:#6E7783;
+  --geo-ini:#1D4ED8; --geo-gv:#DC2626; --geo-kontur:#FFFFFF;
   --leg-eigen:#12161C; --leg-kanton:#0F766E; --leg-osm:#6E7783;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
@@ -1301,7 +1340,15 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .vw-legfuss{font-size:11.5px;font-style:italic;margin-top:6px !important}
 .vw-lueber{border-top:5px solid var(--leg-kanton);width:22px}
 .vw-lreg{border-top:3px solid var(--leg-kanton);width:22px;opacity:.6}
-.vw-lstr{border-top:4px solid var(--leg-kanton)}
+.vw-lini{border-top:5px solid var(--geo-ini);width:22px}
+.vw-lgv{border-top:11px solid var(--geo-gv);width:22px}
+.vw-lbeide{border-top:11px solid var(--geo-gv);width:22px;position:relative}
+.vw-lbeide::after{content:"";position:absolute;left:0;right:0;top:-8px;border-top:5px solid var(--geo-ini)}
+.vw-pop table{border-collapse:collapse;margin-top:6px}
+.vw-pop td{padding:1px 8px 1px 0;vertical-align:top;font-size:12.5px}
+.vw-pop td:first-child{color:#5A626D;white-space:nowrap}
+.vw-pop .vw-pop-marke{display:inline-block;font-family:Archivo,sans-serif;font-size:10px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;color:#fff;margin:0 4px 4px 0}
 .vw-geltung{margin:0 0 14px;border:1px solid var(--linie);border-radius:14px;padding:14px 16px;
   background:var(--karte)}
 .vw-gknoepfe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
@@ -1335,6 +1382,8 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .kr-kopf{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
   font-size:12.5px;color:var(--text-leise)}
 .kr-nr{font-family:Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px}
+.kr-link{margin:10px 0 0;font-size:13px} .kr-link a{color:var(--pro-text);text-decoration:none;font-weight:600}
+.kr-link a:hover{text-decoration:underline}
 .kr-ergebnis{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;color:var(--text);
   font-variant-numeric:tabular-nums}
 .kr-karte h4{margin:6px 0 3px;font-size:15.5px}
@@ -1468,8 +1517,7 @@ if(vwEl && window.L){
     onEachFeature:(f,l)=>l.bindPopup(
       `<div class="vw-pop"><b>${f.properties.g}</b><br>betroffener Abschnitt innerhalb `+
       `${f.properties.r} m einer Schule, eines Kindergartens oder eines Heims</div>`)});
-  const ebenen={100:mach(100).addTo(karte), 300:mach(300).addTo(karte)};
-  ebenen[100].bringToFront();
+  const ebenen={100:mach(100), 300:mach(300)};
   const bind=(id,r)=>document.getElementById(id).addEventListener('change',ev=>{
     if(ev.target.checked){ebenen[r].addTo(karte); if(r===100) ebenen[r].bringToFront();}
     else karte.removeLayer(ebenen[r]);});
@@ -1533,28 +1581,53 @@ if(vwEl && window.L){
   document.querySelectorAll('.vw-shwms').forEach(c=>
     c.addEventListener('change',()=>schalte(c.dataset.id, c.checked)));
 
-  // Verkehrsorientierte Kantonsstrassen aus dem Strassenrichtplan, als Vektoren
-  let strassen=null;
-  const sEl=document.getElementById('vw-strassen-daten');
-  if(sEl){
-    strassen=L.geoJSON(JSON.parse(sEl.textContent),{
-      style:f=>f.properties.k==='ueberregional'
-        ? {color:farbe('kanton'),weight:5,opacity:.9}
-        : {color:farbe('kanton'),weight:3,opacity:.55},
-      onEachFeature:(f,l)=>l.bindPopup('<div class="vw-pop"><b>'+
-        (f.properties.k==='ueberregional'?'Überregionale':'Regionale')+
-        ' Kantonsstrasse</b><br>verkehrsorientiert laut Strassenrichtplan</div>')});
-  }
-  const zeigeStrassen=an=>{
-    if(!strassen) return;
-    if(an){ strassen.addTo(karte); strassen.bringToBack(); if(aktiveBasis) aktiveBasis.bringToBack(); }
-    else karte.removeLayer(strassen);
-    const b=document.getElementById('vw-strassen'); if(b) b.checked=an;
-    const lg=document.getElementById('vw-legende'); if(lg) lg.hidden=!an;
+  // Die beiden Geltungsbereiche, mit Attributen je Strassenstueck.
+  // Konturlinie darunter, damit die Farbe auf jeder Grundkarte steht;
+  // der Gegenvorschlag breiter und unter der Initiative, damit beide
+  // sichtbar bleiben, wo beide gelten.
+  const fmt=v=>v==null?'–':String(v).replace(/\B(?=(\d{3})+(?!\d))/g,' ');
+  const popup=(p,titel,farbe)=>{
+    const bus=p.bus_text==='ja'?'ja':p.bus_text==='teilweise'?'teilweise':'nein';
+    const linien=(p.linien||[]).length?', Linien '+p.linien.join(', '):'';
+    const halte=(p.haltestellen||[]).length?'<tr><td>Haltestelle</td><td>'+p.haltestellen.join('; ')+'</td></tr>':'';
+    const ab=p.abschnitt?'<tr><td>Abschnitt</td><td>'+p.abschnitt+' ('+fmt(Math.round((p.abschnitt_km||0)*1000))+' m)</td></tr>'+
+      '<tr><td>Unfälle 2011–2025</td><td>'+fmt(p.unfaelle)+', davon Fussgänger '+fmt(p.unf_fuss)+', Velo '+fmt(p.unf_velo)+'</td></tr>'+
+      '<tr><td>Fassaden über Grenzwert</td><td>'+fmt(p.fassaden_igw)+'</td></tr>':'<tr><td>Abschnitt</td><td>keine Abschnittsdaten</td></tr>';
+    return '<div class="vw-pop"><span class="vw-pop-marke" style="background:'+farbe+'">'+titel+'</span>'+
+      '<b>'+(p.strasse||'ohne Namen')+'</b>, '+p.gemeinde+'<table>'+
+      '<tr><td>Kantonsstrasse</td><td>'+p.nr+' · '+p.achse+'</td></tr>'+
+      '<tr><td>Funktion</td><td>'+p.fkt_text+'</td></tr>'+
+      '<tr><td>Signalisiert</td><td>'+p.tempo+' km/h</td></tr>'+
+      '<tr><td>Verkehr</td><td>'+fmt(p.dtv)+' Fahrzeuge pro Tag</td></tr>'+
+      '<tr><td>Bus</td><td>'+bus+linien+'</td></tr>'+halte+
+      '<tr><td>Länge des Stücks</td><td>'+fmt(p.laenge_m)+' m</td></tr>'+ab+'</table></div>';
   };
-  const sBox=document.getElementById('vw-strassen');
-  if(sBox) sBox.addEventListener('change',()=>zeigeStrassen(sBox.checked));
-
+  const geltungEbene=(id,name,breite,titel,rand)=>{
+    const el=document.getElementById(id); if(!el) return null;
+    const daten=JSON.parse(el.textContent);
+    const kontur=L.geoJSON(daten,{style:{color:farbe('kontur'),weight:breite+rand,opacity:.9,lineCap:'round'},interactive:false});
+    const linie=L.geoJSON(daten,{style:{color:farbe(name),weight:breite,opacity:.95,lineCap:'round'},
+      onEachFeature:(f,l)=>l.bindPopup(popup(f.properties,titel,farbe(name)),{maxWidth:360})});
+    return L.layerGroup([kontur,linie]);
+  };
+  // Rand: beim Gegenvorschlag 4 px heller Rand, bei der Initiative nur 2 px,
+  // sonst deckt ihr Rand den roten Strich darunter ganz ab.
+  const gGv=geltungEbene('vw-ggv-daten','gv',11,'Gegenvorschlag',4);
+  const gIni=geltungEbene('vw-gini-daten','ini',5,'Initiative',2);
+  const ordne=()=>{ if(aktiveBasis) aktiveBasis.bringToBack();
+    [gGv,gIni].forEach(g=>{ if(g&&karte.hasLayer(g)) g.eachLayer(l=>l.bringToFront()); });
+    vorn(); };
+  const zeigeGeltung=(welche,an)=>{
+    const g=welche==='ini'?gIni:gGv; if(!g) return;
+    if(an){ g.addTo(karte); } else karte.removeLayer(g);
+    ordne();
+    const b=document.getElementById(welche==='ini'?'vw-gini':'vw-ggv'); if(b) b.checked=an;
+  };
+  if(gGv) gGv.addTo(karte);
+  if(gIni) gIni.addTo(karte);
+  ordne();
+  ['ini','gv'].forEach(w=>{ const b=document.getElementById(w==='ini'?'vw-gini':'vw-ggv');
+    if(b) b.addEventListener('change',()=>zeigeGeltung(w,b.checked)); });
   // Busnetz aus den OSM-Linienrelationen
   let busnetz=null;
   const bEl=document.getElementById('vw-bus-daten');
@@ -1595,22 +1668,26 @@ if(vwEl && window.L){
     const k=b.dataset.key;
     document.querySelectorAll('.vw-gknopf').forEach(x=>x.classList.toggle('vw-gaktiv',x===b));
     Object.keys(kant).forEach(id=>schalte(id,false));
-    zeigeHalte(false); zeigeBus(false); zeigeStrassen(false);
-    if(!k){ gText.innerHTML=''; gText.hidden=true; return; }
+    zeigeHalte(false); zeigeBus(false);
+    if(!k){ gText.innerHTML=''; gText.hidden=true; zeigeGeltung('ini',true); zeigeGeltung('gv',true); return; }
     const g=gDaten[k];
     g.l.forEach(id=>schalte(id,true));
-    if(g.s) zeigeStrassen(true);
+    zeigeGeltung('ini',!!g.i); zeigeGeltung('gv',!!g.g);
     if(g.b) zeigeBus(true);
     if(g.h) zeigeHalte(true);
     gText.hidden=false;
-    gText.innerHTML='<p class="vw-gkrit">Gilt für: '+g.k+'</p><p>'+g.t+'</p>';
+    gText.innerHTML='<p class="vw-gkrit">Gilt für: '+g.k+'</p>'+g.t;
   }));
 
-  const alle=L.geoJSON(geo);
+  const gvEl=document.getElementById('vw-ggv-daten'), iniEl=document.getElementById('vw-gini-daten');
+  const geltAlle=[gvEl,iniEl].filter(Boolean).map(x=>JSON.parse(x.textContent).features).flat();
+  const alle=geltAlle.length?L.geoJSON({type:'FeatureCollection',features:geltAlle}):L.geoJSON(geo);
   document.getElementById('vw-sprung').addEventListener('change',ev=>{
     const g=ev.target.value;
     if(!g){ karte.fitBounds(alle.getBounds(),{padding:[20,20]}); return; }
-    const t=L.geoJSON(geo,{filter:f=>f.properties.g===g});
+    const t=geltAlle.length
+      ? L.geoJSON({type:'FeatureCollection',features:geltAlle.filter(f=>(f.properties.gemeinde||'').split(' (')[0]===g)})
+      : L.geoJSON(geo,{filter:f=>f.properties.g===g});
     const b=t.getBounds();
     if(b.isValid()) karte.fitBounds(b,{padding:[30,30]});
   });
@@ -1790,7 +1867,7 @@ def bauen() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<style>{CSS}{teilen.CSS}</style>
+<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}</style>
 </head>
 <body>
 <div class="wrap">
@@ -1865,6 +1942,7 @@ def bauen() -> str:
 
   <p>Stand {e(daten['stand'])}, erzeugt am {date.today().strftime('%d.%m.%Y')}.{quellcode}
   Aufbereitung ohne Gewähr.</p>
+  {impressum_html()}
 </footer>
 
 </div>
@@ -1945,7 +2023,7 @@ def main() -> None:
     if not QUELLE.is_file():
         print(f"nicht gefunden: {QUELLE}", file=sys.stderr)
         raise SystemExit(1)
-    fehlend = [p.name for p in (GEOJSON, HALTESTELLEN, BUSNETZ, KANTONSSTRASSEN)
+    fehlend = [p.name for p in (GEOJSON, HALTESTELLEN, BUSNETZ, GELTUNG_INI, GELTUNG_GV)
                if not p.is_file()]
     hat_karte = bool((json.loads(QUELLE.read_text(encoding="utf-8")).get("karte") or {}).get("gemeinden"))
     if fehlend and hat_karte:

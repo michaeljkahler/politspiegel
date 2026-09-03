@@ -49,6 +49,10 @@ ERWARTET = {
     "haltestellen_bus_wgs84":  {"pflicht": {"n"},       "geometrie": {"Point"}},
     "busnetz_wgs84":           {"pflicht": set(),       "geometrie": {"LineString"}},
     "kantonsstrassen_vo_wgs84": {"pflicht": {"k"},      "geometrie": {"LineString"}},
+    "geltung_initiative":       {"pflicht": {"strasse", "gemeinde", "fkt", "tempo", "laenge_m", "bus"},
+                                 "geometrie": {"LineString", "MultiLineString"}},
+    "geltung_gegenvorschlag":   {"pflicht": {"strasse", "gemeinde", "fkt", "tempo", "laenge_m", "bus"},
+                                 "geometrie": {"LineString", "MultiLineString"}},
 }
 
 # Woher die Ebene stammt. Steht im Bericht und in der Legende der Karte, damit
@@ -68,6 +72,17 @@ HERKUNFT = {
         "Kanton Schaffhausen, Kantonaler Strassenrichtplan, Funktionszuweisung "
         "verkehrsorientiert, ueber wfs.geo.sh.ch abgerufen.",
         "01_roh/kantonsstrassen_vo_roh.json"),
+    "geltung_initiative": (
+        "Eigene Rechnung (geo/skripte/geltungsbereich.py): Kantonsstrassen innerorts, "
+        "die vom oeffentlichen Verkehr genutzt werden. Stuecke des kantonalen "
+        "Laermkatasters mit Tempo bis 50, auf Kantonsstrassenachsen, mit Buslinie "
+        "(OpenStreetMap) oder Haltestelle (BAV). Attribute je Stueck.",
+        "01_roh/laerm_strassenachse_roh.xml, kantonsstrassen_alle_roh.xml, busnetz_linien_roh.json"),
+    "geltung_gegenvorschlag": (
+        "Eigene Rechnung (geo/skripte/geltungsbereich.py): verkehrsorientierte "
+        "Kantonsstrassen innerorts (ueberregional, regional nach Feld typ der "
+        "Achsen), Stuecke des Laermkatasters mit Tempo bis 50. Attribute je Stueck.",
+        "01_roh/laerm_strassenachse_roh.xml, kantonsstrassen_alle_roh.xml"),
 }
 
 

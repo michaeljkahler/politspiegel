@@ -42,6 +42,7 @@
      Getrennt davon stehen die Legendenstriche in der Bedienleiste, die auf
      dem Seitenhintergrund liegen und darum dem Schema folgen. */
   --geo-eigen:#12161C; --geo-kanton:#0F766E; --geo-bund:#8E44AD; --geo-osm:#6E7783;
+  --geo-ini:#1D4ED8; --geo-gv:#DC2626; --geo-kontur:#FFFFFF;
   --leg-eigen:#12161C; --leg-kanton:#0F766E; --leg-osm:#6E7783;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
@@ -462,7 +463,15 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .vw-legfuss{font-size:11.5px;font-style:italic;margin-top:6px !important}
 .vw-lueber{border-top:5px solid var(--leg-kanton);width:22px}
 .vw-lreg{border-top:3px solid var(--leg-kanton);width:22px;opacity:.6}
-.vw-lstr{border-top:4px solid var(--leg-kanton)}
+.vw-lini{border-top:5px solid var(--geo-ini);width:22px}
+.vw-lgv{border-top:11px solid var(--geo-gv);width:22px}
+.vw-lbeide{border-top:11px solid var(--geo-gv);width:22px;position:relative}
+.vw-lbeide::after{content:"";position:absolute;left:0;right:0;top:-8px;border-top:5px solid var(--geo-ini)}
+.vw-pop table{border-collapse:collapse;margin-top:6px}
+.vw-pop td{padding:1px 8px 1px 0;vertical-align:top;font-size:12.5px}
+.vw-pop td:first-child{color:#5A626D;white-space:nowrap}
+.vw-pop .vw-pop-marke{display:inline-block;font-family:Archivo,sans-serif;font-size:10px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;color:#fff;margin:0 4px 4px 0}
 .vw-geltung{margin:0 0 14px;border:1px solid var(--linie);border-radius:14px;padding:14px 16px;
   background:var(--karte)}
 .vw-gknoepfe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
@@ -496,6 +505,8 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .kr-kopf{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
   font-size:12.5px;color:var(--text-leise)}
 .kr-nr{font-family:Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px}
+.kr-link{margin:10px 0 0;font-size:13px} .kr-link a{color:var(--pro-text);text-decoration:none;font-weight:600}
+.kr-link a:hover{text-decoration:underline}
 .kr-ergebnis{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;color:var(--text);
   font-variant-numeric:tabular-nums}
 .kr-karte h4{margin:6px 0 3px;font-size:15.5px}
@@ -566,6 +577,10 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
   box-shadow:0 8px 24px rgba(16,24,40,.12)}
 @media (max-width:900px){.bildbody{grid-template-columns:1fr}.bildstart{left:14px;bottom:14px}}
 @media print{.bildstart,.bildmodal{display:none}}
+
+.impressum{margin-top:18px;padding-top:16px;border-top:1px solid var(--linie);font-size:13px;color:var(--text-leise)}
+.impressum p{margin:0 0 8px} .impressum p:last-child{margin:0}
+.impressum b{color:var(--text)} .impressum a{color:inherit}
 </style>
 </head>
 <body>
@@ -632,6 +647,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
     <span class="kr-nein" style="flex:52"></span></div>
   <p class="kr-neben">0 Enthaltungen · 7 abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:9"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">0:9</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:7"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">0:7</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:17"></span><span class="kr-rest" style="flex:0.017"></span></span><span class="kr-fzahl">0:17</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:1"></span><span class="kr-nein" style="flex:19"></span><span class="kr-rest" style="flex:0.02"></span></span><span class="kr-fzahl">1:19</span></div></div></details>
+  <p class="kr-link"><a href="../../kantonsrat/#s=11.%20und%2012.%20Sitzung%202026%20%C2%B7%2024.08.2026%20%28Vormittag%29&amp;nr=2">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
 </div>
 <div class="kr-karte">
   <div class="kr-kopf"><span class="kr-nr">Abstimmung 3</span>
@@ -643,6 +659,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
     <span class="kr-nein" style="flex:53"></span></div>
   <p class="kr-neben">0 Enthaltungen · 7 abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:9"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">0:9</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:7"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">0:7</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:16"></span><span class="kr-rest" style="flex:0.016"></span></span><span class="kr-fzahl">0:16</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:0"></span><span class="kr-nein" style="flex:21"></span><span class="kr-rest" style="flex:0.021"></span></span><span class="kr-fzahl">0:21</span></div></div></details>
+  <p class="kr-link"><a href="../../kantonsrat/#s=11.%20und%2012.%20Sitzung%202026%20%C2%B7%2024.08.2026%20%28Vormittag%29&amp;nr=3">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
 </div>
 <div class="kr-karte">
   <div class="kr-kopf"><span class="kr-nr">Abstimmung 4</span>
@@ -654,6 +671,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
     <span class="kr-nein" style="flex:0.001"></span></div>
   <p class="kr-neben">12 Enthaltungen · 5 abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:9"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">9:0</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:7"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">7:0</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:6"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.006"></span></span><span class="kr-fzahl">6:0</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:21"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.021"></span></span><span class="kr-fzahl">21:0</span></div></div></details>
+  <p class="kr-link"><a href="../../kantonsrat/#s=11.%20und%2012.%20Sitzung%202026%20%C2%B7%2024.08.2026%20%28Vormittag%29&amp;nr=4">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
 </div>
 <div class="kr-karte">
   <div class="kr-kopf"><span class="kr-nr">Abstimmung 5</span>
@@ -665,6 +683,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
     <span class="kr-nein" style="flex:3"></span></div>
   <p class="kr-neben">0 Enthaltungen · 6 abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste"><div class="kr-frakt"><span class="kr-fname">FDP-Die Mitte</span><span class="kr-fbalken"><span class="kr-ja" style="flex:9"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.009000000000000001"></span></span><span class="kr-fzahl">9:0</span></div><div class="kr-frakt"><span class="kr-fname">GLP-EVP</span><span class="kr-fbalken"><span class="kr-ja" style="flex:6"></span><span class="kr-nein" style="flex:1"></span><span class="kr-rest" style="flex:0.007"></span></span><span class="kr-fzahl">6:1</span></div><div class="kr-frakt"><span class="kr-fname">SP-JUSO-GRÜNE-Junge Grüne</span><span class="kr-fbalken"><span class="kr-ja" style="flex:18"></span><span class="kr-nein" style="flex:0"></span><span class="kr-rest" style="flex:0.018000000000000002"></span></span><span class="kr-fzahl">18:0</span></div><div class="kr-frakt"><span class="kr-fname">SVP-EDU</span><span class="kr-fbalken"><span class="kr-ja" style="flex:18"></span><span class="kr-nein" style="flex:2"></span><span class="kr-rest" style="flex:0.02"></span></span><span class="kr-fzahl">18:2</span></div></div></details>
+  <p class="kr-link"><a href="../../kantonsrat/#s=11.%20und%2012.%20Sitzung%202026%20%C2%B7%2024.08.2026%20%28Vormittag%29&amp;nr=5">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
 </div></div></div></details></section>
 
 <footer class="fuss" id="methode">
@@ -690,6 +709,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 
   <p>Stand 2026-09-04, erzeugt am 03.09.2026. Vorlage, Daten und Skripte: <a href="https://github.com/michaeljkahler/politspiegel" target="_blank" rel="noopener">Quellcode auf GitHub</a>.
   Aufbereitung ohne Gewähr.</p>
+  <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="michael.j.kahler" data-d="gmail.com">michael.j.kahler (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 
 </div>
@@ -831,8 +851,7 @@ if(vwEl && window.L){
     onEachFeature:(f,l)=>l.bindPopup(
       `<div class="vw-pop"><b>${f.properties.g}</b><br>betroffener Abschnitt innerhalb `+
       `${f.properties.r} m einer Schule, eines Kindergartens oder eines Heims</div>`)});
-  const ebenen={100:mach(100).addTo(karte), 300:mach(300).addTo(karte)};
-  ebenen[100].bringToFront();
+  const ebenen={100:mach(100), 300:mach(300)};
   const bind=(id,r)=>document.getElementById(id).addEventListener('change',ev=>{
     if(ev.target.checked){ebenen[r].addTo(karte); if(r===100) ebenen[r].bringToFront();}
     else karte.removeLayer(ebenen[r]);});
@@ -896,28 +915,53 @@ if(vwEl && window.L){
   document.querySelectorAll('.vw-shwms').forEach(c=>
     c.addEventListener('change',()=>schalte(c.dataset.id, c.checked)));
 
-  // Verkehrsorientierte Kantonsstrassen aus dem Strassenrichtplan, als Vektoren
-  let strassen=null;
-  const sEl=document.getElementById('vw-strassen-daten');
-  if(sEl){
-    strassen=L.geoJSON(JSON.parse(sEl.textContent),{
-      style:f=>f.properties.k==='ueberregional'
-        ? {color:farbe('kanton'),weight:5,opacity:.9}
-        : {color:farbe('kanton'),weight:3,opacity:.55},
-      onEachFeature:(f,l)=>l.bindPopup('<div class="vw-pop"><b>'+
-        (f.properties.k==='ueberregional'?'Überregionale':'Regionale')+
-        ' Kantonsstrasse</b><br>verkehrsorientiert laut Strassenrichtplan</div>')});
-  }
-  const zeigeStrassen=an=>{
-    if(!strassen) return;
-    if(an){ strassen.addTo(karte); strassen.bringToBack(); if(aktiveBasis) aktiveBasis.bringToBack(); }
-    else karte.removeLayer(strassen);
-    const b=document.getElementById('vw-strassen'); if(b) b.checked=an;
-    const lg=document.getElementById('vw-legende'); if(lg) lg.hidden=!an;
+  // Die beiden Geltungsbereiche, mit Attributen je Strassenstueck.
+  // Konturlinie darunter, damit die Farbe auf jeder Grundkarte steht;
+  // der Gegenvorschlag breiter und unter der Initiative, damit beide
+  // sichtbar bleiben, wo beide gelten.
+  const fmt=v=>v==null?'–':String(v).replace(/\B(?=(\d{3})+(?!\d))/g,' ');
+  const popup=(p,titel,farbe)=>{
+    const bus=p.bus_text==='ja'?'ja':p.bus_text==='teilweise'?'teilweise':'nein';
+    const linien=(p.linien||[]).length?', Linien '+p.linien.join(', '):'';
+    const halte=(p.haltestellen||[]).length?'<tr><td>Haltestelle</td><td>'+p.haltestellen.join('; ')+'</td></tr>':'';
+    const ab=p.abschnitt?'<tr><td>Abschnitt</td><td>'+p.abschnitt+' ('+fmt(Math.round((p.abschnitt_km||0)*1000))+' m)</td></tr>'+
+      '<tr><td>Unfälle 2011–2025</td><td>'+fmt(p.unfaelle)+', davon Fussgänger '+fmt(p.unf_fuss)+', Velo '+fmt(p.unf_velo)+'</td></tr>'+
+      '<tr><td>Fassaden über Grenzwert</td><td>'+fmt(p.fassaden_igw)+'</td></tr>':'<tr><td>Abschnitt</td><td>keine Abschnittsdaten</td></tr>';
+    return '<div class="vw-pop"><span class="vw-pop-marke" style="background:'+farbe+'">'+titel+'</span>'+
+      '<b>'+(p.strasse||'ohne Namen')+'</b>, '+p.gemeinde+'<table>'+
+      '<tr><td>Kantonsstrasse</td><td>'+p.nr+' · '+p.achse+'</td></tr>'+
+      '<tr><td>Funktion</td><td>'+p.fkt_text+'</td></tr>'+
+      '<tr><td>Signalisiert</td><td>'+p.tempo+' km/h</td></tr>'+
+      '<tr><td>Verkehr</td><td>'+fmt(p.dtv)+' Fahrzeuge pro Tag</td></tr>'+
+      '<tr><td>Bus</td><td>'+bus+linien+'</td></tr>'+halte+
+      '<tr><td>Länge des Stücks</td><td>'+fmt(p.laenge_m)+' m</td></tr>'+ab+'</table></div>';
   };
-  const sBox=document.getElementById('vw-strassen');
-  if(sBox) sBox.addEventListener('change',()=>zeigeStrassen(sBox.checked));
-
+  const geltungEbene=(id,name,breite,titel,rand)=>{
+    const el=document.getElementById(id); if(!el) return null;
+    const daten=JSON.parse(el.textContent);
+    const kontur=L.geoJSON(daten,{style:{color:farbe('kontur'),weight:breite+rand,opacity:.9,lineCap:'round'},interactive:false});
+    const linie=L.geoJSON(daten,{style:{color:farbe(name),weight:breite,opacity:.95,lineCap:'round'},
+      onEachFeature:(f,l)=>l.bindPopup(popup(f.properties,titel,farbe(name)),{maxWidth:360})});
+    return L.layerGroup([kontur,linie]);
+  };
+  // Rand: beim Gegenvorschlag 4 px heller Rand, bei der Initiative nur 2 px,
+  // sonst deckt ihr Rand den roten Strich darunter ganz ab.
+  const gGv=geltungEbene('vw-ggv-daten','gv',11,'Gegenvorschlag',4);
+  const gIni=geltungEbene('vw-gini-daten','ini',5,'Initiative',2);
+  const ordne=()=>{ if(aktiveBasis) aktiveBasis.bringToBack();
+    [gGv,gIni].forEach(g=>{ if(g&&karte.hasLayer(g)) g.eachLayer(l=>l.bringToFront()); });
+    vorn(); };
+  const zeigeGeltung=(welche,an)=>{
+    const g=welche==='ini'?gIni:gGv; if(!g) return;
+    if(an){ g.addTo(karte); } else karte.removeLayer(g);
+    ordne();
+    const b=document.getElementById(welche==='ini'?'vw-gini':'vw-ggv'); if(b) b.checked=an;
+  };
+  if(gGv) gGv.addTo(karte);
+  if(gIni) gIni.addTo(karte);
+  ordne();
+  ['ini','gv'].forEach(w=>{ const b=document.getElementById(w==='ini'?'vw-gini':'vw-ggv');
+    if(b) b.addEventListener('change',()=>zeigeGeltung(w,b.checked)); });
   // Busnetz aus den OSM-Linienrelationen
   let busnetz=null;
   const bEl=document.getElementById('vw-bus-daten');
@@ -958,22 +1002,26 @@ if(vwEl && window.L){
     const k=b.dataset.key;
     document.querySelectorAll('.vw-gknopf').forEach(x=>x.classList.toggle('vw-gaktiv',x===b));
     Object.keys(kant).forEach(id=>schalte(id,false));
-    zeigeHalte(false); zeigeBus(false); zeigeStrassen(false);
-    if(!k){ gText.innerHTML=''; gText.hidden=true; return; }
+    zeigeHalte(false); zeigeBus(false);
+    if(!k){ gText.innerHTML=''; gText.hidden=true; zeigeGeltung('ini',true); zeigeGeltung('gv',true); return; }
     const g=gDaten[k];
     g.l.forEach(id=>schalte(id,true));
-    if(g.s) zeigeStrassen(true);
+    zeigeGeltung('ini',!!g.i); zeigeGeltung('gv',!!g.g);
     if(g.b) zeigeBus(true);
     if(g.h) zeigeHalte(true);
     gText.hidden=false;
-    gText.innerHTML='<p class="vw-gkrit">Gilt für: '+g.k+'</p><p>'+g.t+'</p>';
+    gText.innerHTML='<p class="vw-gkrit">Gilt für: '+g.k+'</p>'+g.t;
   }));
 
-  const alle=L.geoJSON(geo);
+  const gvEl=document.getElementById('vw-ggv-daten'), iniEl=document.getElementById('vw-gini-daten');
+  const geltAlle=[gvEl,iniEl].filter(Boolean).map(x=>JSON.parse(x.textContent).features).flat();
+  const alle=geltAlle.length?L.geoJSON({type:'FeatureCollection',features:geltAlle}):L.geoJSON(geo);
   document.getElementById('vw-sprung').addEventListener('change',ev=>{
     const g=ev.target.value;
     if(!g){ karte.fitBounds(alle.getBounds(),{padding:[20,20]}); return; }
-    const t=L.geoJSON(geo,{filter:f=>f.properties.g===g});
+    const t=geltAlle.length
+      ? L.geoJSON({type:'FeatureCollection',features:geltAlle.filter(f=>(f.properties.gemeinde||'').split(' (')[0]===g)})
+      : L.geoJSON(geo,{filter:f=>f.properties.g===g});
     const b=t.getBounds();
     if(b.isValid()) karte.fitBounds(b,{padding:[30,30]});
   });
