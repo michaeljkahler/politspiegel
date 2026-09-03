@@ -884,8 +884,6 @@ __CSS__
   </div>
 </div>
 
-<div class="beta" aria-hidden="true"><span>Betaversion</span></div>
-<p class="beta-text">Diese Seite ist eine Betaversion: die Daten werden noch geprüft.</p>
 
 <script id="daten" type="application/json">__DATEN__</script>
 <script>
