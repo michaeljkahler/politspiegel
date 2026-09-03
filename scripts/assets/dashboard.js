@@ -408,7 +408,7 @@
      die Seite ausführt, sieht sie. Ein wirksamerer Schutz wäre ein Formular,
      und das hiesse einen Server zu betreiben, was diese Seite gerade nicht tut. */
   function kontakt() {
-    var a = ["michael.j.kahler", "gmail.com"].join("@");
+    var a = ["politspiegel.sh", "gmail.com"].join("@");
     return '<a href="' + "mail" + "to:" + a + '">' + a + "</a>";
   }
 
