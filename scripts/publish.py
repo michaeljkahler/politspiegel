@@ -12,20 +12,33 @@ geteilte Links. Und sie liegt in einem eigenen Ordner site/, damit ins
 Repository nur das kommt, was veröffentlicht werden soll, und nicht die
 143 MB Wortprotokolle daneben.
 
+Seit dem Umbau vom 3. September 2026 steht der Kantonsratsspiegel nicht mehr an
+der blossen Adresse, sondern unter kantonsrat/. An der Wurzel liegt die
+Übersicht «Politspiegel Schaffhausen», gebaut von politspiegel/bauen.py. Grund:
+Der Kantonsratsspiegel ist 2,7 MB. Wer nur die kommende Abstimmung ansehen will,
+soll ihn nicht laden müssen, und jede weitere Rubrik würde die Datei weiter
+aufblähen. Die Übersicht bleibt unter 10 kB.
+
+Die geteilten Zeichen, das Vorschaubild und die Anwendungsangaben liegen
+weiterhin in site/ und werden aus dem Unterordner mit ../ angesprochen.
+
 Zugang
 ------
 data/github_zugang.json, in .gitignore ausgeschlossen:
 
-    {"benutzer": "...", "repo": "...", "token": "ghp_..."}
+    {"benutzer": "...", "repo": "politspiegel", "token": "github_pat_..."}
 
 Das Token ist ein Personal Access Token mit Schreibrecht auf Inhalte dieses
 einen Repositories (fine-grained, Contents: Read and write). Es steht nie im
-Repository und nie in einer Commit-Nachricht.
+Repository, nie in einer Commit-Nachricht und seit dem 3. September 2026 auch
+nicht mehr in der Fernadresse: es wird nur dem Push-Befehl mitgegeben. Die
+Fernadresse ist damit dieselbe wie in Claude Code oder auf der Kommandozeile.
 
 Ausführen:
     python3 scripts/publish.py            # Probelauf, zeigt was passieren würde
     python3 scripts/publish.py --apply    # schreibt, committet und pusht
 """
+import base64
 import json
 import re
 import subprocess
@@ -37,15 +50,16 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = ROOT / "site"
 QUELLE = ROOT / "output" / "dashboard.html"
+UNTER = "kantonsrat"   # Unterordner der Kantonsratsseite in site/
 ZUGANG = DATA / "github_zugang.json"
 
-TITEL = "Abstimmungsspiegel Kantonsrat Schaffhausen"
+TITEL = "Kantonsratsspiegel Schaffhausen"
 BESCHREIBUNG = ("Wie der Schaffhauser Kantonsrat abstimmt: alle namentlichen "
                 "Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema. "
                 "Mit Vergleich der eigenen Haltung.")
 
 
-def kopfzeilen(url):
+def kopfzeilen(url, praefix=""):
     """Vorschauangaben für geteilte Links.
 
     Ohne sie erscheint ein geteilter Link als nackte Adresse. Mit ihnen als
@@ -70,16 +84,16 @@ def kopfzeilen(url):
         # Zeichen und Startbildschirm. Die Dateien liegen fest in site/ und
         # werden nicht bei jedem Lauf neu erzeugt. Relative Pfade, damit
         # nichts bricht, wenn das Repository einmal umzieht.
-        '<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
-        '<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">\n'
-        '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n'
-        '<link rel="manifest" href="manifest.webmanifest">\n'
+        f'<link rel="icon" href="{praefix}favicon.svg" type="image/svg+xml">\n'
+        f'<link rel="icon" href="{praefix}favicon.png" sizes="32x32" type="image/png">\n'
+        f'<link rel="apple-touch-icon" href="{praefix}apple-touch-icon.png">\n'
+        f'<link rel="manifest" href="{praefix}manifest.webmanifest">\n'
         '<meta name="theme-color" content="#0B0F14">\n'
-        '<meta name="apple-mobile-web-app-title" content="Abstimmungsspiegel">\n'
+        '<meta name="apple-mobile-web-app-title" content="Kantonsratsspiegel">\n'
     )
 
 
-def seite_bauen(url):
+def seite_bauen(url, praefix=""):
     html = QUELLE.read_text(encoding="utf-8")
     # Vorhandene Vorschauangaben aus einem früheren Lauf entfernen, sonst
     # sammeln sie sich bei jeder Veröffentlichung an.
@@ -92,7 +106,7 @@ def seite_bauen(url):
     if einf < 0:
         raise SystemExit("Kein <title> in der Ausgabe gefunden, Abbruch.")
     einf += len("</title>")
-    return html[:einf] + "\n" + kopfzeilen(url) + html[einf:]
+    return html[:einf] + "\n" + kopfzeilen(url, praefix) + html[einf:]
 
 
 def lauf(*args, pruefen=True):
@@ -119,12 +133,13 @@ def main():
     url = f"https://{z['benutzer']}.github.io/{z['repo']}/"
 
     SITE.mkdir(exist_ok=True)
-    seite = seite_bauen(url)
-    ziel = SITE / "index.html"
+    seite = seite_bauen(url + UNTER + "/", praefix="../")
+    ziel = SITE / UNTER / "index.html"
     alt = ziel.read_text(encoding="utf-8") if ziel.exists() else ""
     gleich = alt == seite
 
-    print(f"Adresse:   {url}")
+    print(f"Adresse:   {url}{UNTER}/")
+    print(f"Übersicht: {url}")
     print(f"Seite:     {len(seite) / 1048576:.2f} MB"
           + ("  (unverändert gegenüber der letzten Veröffentlichung)" if gleich else ""))
 
@@ -132,8 +147,14 @@ def main():
         print("\n(Probelauf, nichts geschrieben. Mit --apply veröffentlichen.)")
         return
 
+    ziel.parent.mkdir(parents=True, exist_ok=True)
     ziel.write_text(seite, encoding="utf-8")
     (SITE / ".nojekyll").write_text("", encoding="utf-8")
+
+    # Die Übersicht an der Wurzel wird bei jeder Veröffentlichung erneuert.
+    # Sie trägt das Erzeugungsdatum und soll nicht altern, während die
+    # Kantonsratsseite darunter aktuell ist.
+    lauf(sys.executable, "politspiegel/bauen.py")
 
     if not (ROOT / ".git").exists():
         print("Kein Repository, wird angelegt.")
@@ -141,14 +162,18 @@ def main():
     lauf("git", "config", "user.name", "Kantonsrats-Dashboard")
     lauf("git", "config", "user.email", f"{z['benutzer']}@users.noreply.github.com")
 
-    # Der Token steht in der Fernadresse und darf darum nie in einen Commit
-    # oder in eine Ausgabe geraten. Er wird bei jedem Lauf frisch gesetzt.
+    # Die Fernadresse bleibt ohne Token. Bis zum 3. September 2026 stand er
+    # in der Adresse und damit in .git/config auf der Platte; ausserdem
+    # konnte dann nur dieses Skript pushen. Jetzt reden Cowork und Claude
+    # Code mit derselben sauberen Adresse: dieses Skript gibt den Token nur
+    # dem einen Push-Befehl mit (unten), Claude Code nutzt den Git-Zugang des
+    # Rechners. Eine alte Adresse mit Token wird dabei überschrieben.
     # «remote remove» löscht auch die Fernzweige und braucht dafür
     # packed-refs. Bleibt dort eine Sperrdatei liegen, was auf einem
     # eingehängten Laufwerk vorkommt, scheitert das Entfernen still und das
     # folgende «add» meldet «origin already exists». Darum die Adresse
     # setzen, wenn origin schon da ist, und nur sonst neu anlegen.
-    fern = f"https://{z['benutzer']}:{z['token']}@github.com/{z['benutzer']}/{z['repo']}.git"
+    fern = f"https://github.com/{z['benutzer']}/{z['repo']}.git"
     vorhanden = "origin" in lauf("git", "remote").stdout.split()
     if vorhanden:
         lauf("git", "remote", "set-url", "origin", fern)
@@ -172,7 +197,11 @@ def main():
         nachricht += f", neueste Sitzung: {datenstand}"
     lauf("git", "commit", "-m", nachricht)
 
-    r = lauf("git", "push", "-u", "origin", "main", pruefen=False)
+    # Der Token geht als Kopfzeile nur an diesen einen Befehl. Er landet so
+    # weder in .git/config noch in der Historie noch in einer Ausgabe.
+    kennung = base64.b64encode(f"{z['benutzer']}:{z['token']}".encode()).decode()
+    r = lauf("git", "-c", f"http.extraheader=AUTHORIZATION: basic {kennung}",
+             "push", "-u", "origin", "main", pruefen=False)
     if r.returncode:
         # Fehlertext säubern, damit der Token nicht in der Ausgabe landet
         fehler = (r.stderr or "").replace(z["token"], "***")

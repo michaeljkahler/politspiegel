@@ -53,3 +53,20 @@ archiv/
 # Bauergebnis. Es steckt identisch in site/index.html, das veröffentlicht wird.
 # Beides zu versionieren verdoppelt jede Fassung in der Historie.
 output/
+
+# Abstimmungsspiegel: je Vorlage bleibt draussen, was gross ist und nicht in die
+# Seite eingeht. Drin bleibt die ganze Datenkette von roh bis freigegeben
+# (zusammen gut 1 MB), die Skripte, die Dokumentation und die SVGs: bei einem
+# Transparenzprojekt gehoert die Herleitung offengelegt, nicht nur das Ergebnis.
+#   00_uebergabe_michael/berichte, grafiken, karten_gemeinden
+#                          Originalstand der Uebergabe als PDF und PNG (28 MB);
+#                          die Skripte und Notizen daneben bleiben drin
+#   grafiken/**/*.png      Druckfassungen; die Seite bindet nur SVG ein
+abstimmungsspiegel/abstimmungen/*/geo/00_uebergabe_michael/berichte/
+abstimmungsspiegel/abstimmungen/*/geo/00_uebergabe_michael/grafiken/
+abstimmungsspiegel/abstimmungen/*/geo/00_uebergabe_michael/karten_gemeinden/
+abstimmungsspiegel/abstimmungen/*/grafiken/**/*.png
+abstimmungsspiegel/abstimmungen/*/grafiken/*.png
+
+# Sonden und Reste eines Baulaufs in der Ausgabe.
+site/abstimmung/*/grafiken/_probe
