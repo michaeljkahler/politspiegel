@@ -4,13 +4,13 @@
     "betroffen_km": 67.77,
     "initiative_km": 60.22,
     "gegenvorschlag_km": 43.13,
-    "km100": 3.79,
-    "p100": 6,
-    "km300": 21.39,
-    "p300": 32,
-    "km500": 31.84,
-    "p500": 47,
-    "anlagen": "42/31/19/0"
+    "km100": 8.9,
+    "p100": 13,
+    "km300": 38.3,
+    "p300": 57,
+    "km500": 50.63,
+    "p500": 75,
+    "anlagen": "91/77/30/15"
   },
   "gemeinden": [
     {
@@ -18,14 +18,15 @@
       "betroffen_km": 20.22,
       "initiative_km": 19.97,
       "gegenvorschlag_km": 13.96,
-      "km100": 0.62,
-      "p100": 3,
-      "km300": 1.82,
-      "p300": 9,
-      "km500": 3.87,
-      "p500": 19,
-      "anlagen": "6/4/3/0",
-      "linien": 93
+      "km100": 4.48,
+      "p100": 22,
+      "km300": 13.27,
+      "p300": 66,
+      "km500": 15.94,
+      "p500": 79,
+      "anlagen": "39/33/16/8",
+      "linien": 776,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Thayngen",
@@ -34,54 +35,58 @@
       "gegenvorschlag_km": 2.75,
       "km100": 0.27,
       "p100": 5,
-      "km300": 2.63,
-      "p300": 43,
+      "km300": 2.68,
+      "p300": 44,
       "km500": 3.19,
       "p500": 52,
-      "anlagen": "7/5/1/0",
-      "linien": 106
+      "anlagen": "11/6/1/0",
+      "linien": 110,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Stein am Rhein",
       "betroffen_km": 4.45,
       "initiative_km": 3.82,
       "gegenvorschlag_km": 4.45,
-      "km100": 0.0,
-      "p100": 0,
-      "km300": 0.0,
-      "p300": 0,
-      "km500": 0.0,
-      "p500": 0,
-      "anlagen": "0/0/0/0",
-      "linien": 0
+      "km100": 0.91,
+      "p100": 20,
+      "km300": 2.28,
+      "p300": 51,
+      "km500": 3.36,
+      "p500": 75,
+      "anlagen": "4/4/1/0",
+      "linien": 143,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Neuhausen am Rheinfall",
       "betroffen_km": 4.13,
       "initiative_km": 3.7,
       "gegenvorschlag_km": 3.9,
-      "km100": 0.02,
-      "p100": 1,
-      "km300": 0.94,
-      "p300": 23,
-      "km500": 1.72,
-      "p500": 42,
-      "anlagen": "1/2/0/0",
-      "linien": 50
+      "km100": 0.14,
+      "p100": 3,
+      "km300": 2.63,
+      "p300": 64,
+      "km500": 3.76,
+      "p500": 91,
+      "anlagen": "5/7/3/0",
+      "linien": 121,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Wilchingen",
       "betroffen_km": 3.54,
       "initiative_km": 3.05,
       "gegenvorschlag_km": 3.0,
-      "km100": 0.07,
-      "p100": 2,
-      "km300": 1.14,
-      "p300": 32,
-      "km500": 1.82,
-      "p500": 51,
-      "anlagen": "1/1/2/0",
-      "linien": 62
+      "km100": 0.14,
+      "p100": 4,
+      "km300": 1.49,
+      "p300": 42,
+      "km500": 1.89,
+      "p500": 53,
+      "anlagen": "2/2/2/0",
+      "linien": 74,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Beringen",
@@ -95,35 +100,38 @@
       "km500": 2.0,
       "p500": 65,
       "anlagen": "2/4/1/0",
-      "linien": 102
+      "linien": 102,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Neunkirch",
       "betroffen_km": 2.95,
       "initiative_km": 1.53,
       "gegenvorschlag_km": 2.18,
-      "km100": 0.38,
-      "p100": 13,
-      "km300": 2.02,
-      "p300": 69,
-      "km500": 2.34,
+      "km100": 0.42,
+      "p100": 14,
+      "km300": 1.97,
+      "p300": 67,
+      "km500": 2.32,
       "p500": 79,
-      "anlagen": "3/1/1/0",
-      "linien": 85
+      "anlagen": "3/3/1/0",
+      "linien": 96,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Ramsen",
       "betroffen_km": 2.52,
       "initiative_km": 1.76,
       "gegenvorschlag_km": 2.51,
-      "km100": 0.7,
-      "p100": 28,
+      "km100": 0.59,
+      "p100": 24,
       "km300": 2.27,
       "p300": 90,
       "km500": 2.47,
       "p500": 98,
-      "anlagen": "2/1/8/0",
-      "linien": 125
+      "anlagen": "1/1/2/6",
+      "linien": 119,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Schleitheim",
@@ -132,12 +140,13 @@
       "gegenvorschlag_km": 0.83,
       "km100": 0.0,
       "p100": 0,
-      "km300": 0.91,
-      "p300": 38,
-      "km500": 1.85,
-      "p500": 78,
+      "km300": 0.98,
+      "p300": 41,
+      "km500": 1.89,
+      "p500": 80,
       "anlagen": "3/1/1/0",
-      "linien": 11
+      "linien": 17,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Hallau",
@@ -151,7 +160,8 @@
       "km500": 1.81,
       "p500": 77,
       "anlagen": "3/2/1/0",
-      "linien": 85
+      "linien": 85,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Dörflingen",
@@ -165,7 +175,8 @@
       "km500": 1.38,
       "p500": 71,
       "anlagen": "2/1/0/0",
-      "linien": 7
+      "linien": 7,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Stetten (SH)",
@@ -178,8 +189,9 @@
       "p300": 74,
       "km500": 1.73,
       "p500": 100,
-      "anlagen": "1/1/0/0",
-      "linien": 11
+      "anlagen": "0/0/0/0",
+      "linien": 11,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Gächlingen",
@@ -193,7 +205,8 @@
       "km500": 0.87,
       "p500": 61,
       "anlagen": "1/1/0/0",
-      "linien": 4
+      "linien": 4,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Buch (SH)",
@@ -206,36 +219,39 @@
       "p300": 38,
       "km500": 0.72,
       "p500": 53,
-      "anlagen": "1/0/0/0",
-      "linien": 7
+      "anlagen": "0/0/0/0",
+      "linien": 7,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Merishausen",
       "betroffen_km": 1.18,
       "initiative_km": 1.18,
       "gegenvorschlag_km": 1.18,
-      "km100": 0.0,
-      "p100": 0,
-      "km300": 0.0,
-      "p300": 0,
-      "km500": 0.0,
-      "p500": 0,
-      "anlagen": "0/0/0/0",
-      "linien": 0
+      "km100": 0.2,
+      "p100": 17,
+      "km300": 0.75,
+      "p300": 64,
+      "km500": 1.16,
+      "p500": 99,
+      "anlagen": "1/1/1/0",
+      "linien": 54,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Lohn (SH)",
       "betroffen_km": 1.07,
       "initiative_km": 1.07,
       "gegenvorschlag_km": 0.0,
-      "km100": 0.04,
-      "p100": 4,
+      "km100": 0.06,
+      "p100": 5,
       "km300": 0.97,
       "p300": 91,
       "km500": 1.07,
       "p500": 100,
-      "anlagen": "1/1/0/0",
-      "linien": 9
+      "anlagen": "0/0/0/0",
+      "linien": 9,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Löhningen",
@@ -249,7 +265,8 @@
       "km500": 0.98,
       "p500": 100,
       "anlagen": "1/1/0/0",
-      "linien": 35
+      "linien": 35,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Siblingen",
@@ -258,12 +275,13 @@
       "gegenvorschlag_km": 0.91,
       "km100": 0.19,
       "p100": 20,
-      "km300": 0.61,
-      "p300": 64,
+      "km300": 0.62,
+      "p300": 65,
       "km500": 0.88,
       "p500": 91,
-      "anlagen": "1/0/0/0",
-      "linien": 55
+      "anlagen": "1/1/0/0",
+      "linien": 55,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Hemishofen",
@@ -277,7 +295,8 @@
       "km500": 0.0,
       "p500": 0,
       "anlagen": "0/0/0/0",
-      "linien": 0
+      "linien": 0,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Rüdlingen",
@@ -286,26 +305,28 @@
       "gegenvorschlag_km": 0.0,
       "km100": 0.0,
       "p100": 0,
-      "km300": 0.15,
-      "p300": 18,
+      "km300": 0.18,
+      "p300": 21,
       "km500": 0.73,
       "p500": 84,
-      "anlagen": "3/1/0/0",
-      "linien": 3
+      "anlagen": "2/2/0/0",
+      "linien": 3,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Beggingen",
       "betroffen_km": 0.81,
       "initiative_km": 0.81,
       "gegenvorschlag_km": 0.0,
-      "km100": 0.15,
+      "km100": 0.16,
       "p100": 19,
       "km300": 0.53,
       "p300": 66,
       "km500": 0.69,
       "p500": 86,
-      "anlagen": "1/1/0/0",
-      "linien": 2
+      "anlagen": "2/1/0/0",
+      "linien": 2,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Trasadingen",
@@ -318,8 +339,9 @@
       "p300": 0,
       "km500": 0.0,
       "p500": 0,
-      "anlagen": "0/1/0/0",
-      "linien": 0
+      "anlagen": "1/1/0/0",
+      "linien": 0,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Bargen (SH)",
@@ -332,8 +354,9 @@
       "p300": 49,
       "km500": 0.33,
       "p500": 49,
-      "anlagen": "0/1/0/0",
-      "linien": 33
+      "anlagen": "0/0/0/0",
+      "linien": 33,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Büttenhardt",
@@ -346,8 +369,9 @@
       "p300": 64,
       "km500": 0.59,
       "p500": 100,
-      "anlagen": "1/0/1/0",
-      "linien": 2
+      "anlagen": "1/0/0/1",
+      "linien": 2,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Oberhallau",
@@ -361,7 +385,8 @@
       "km500": 0.57,
       "p500": 100,
       "anlagen": "1/1/0/0",
-      "linien": 4
+      "linien": 4,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     },
     {
       "gemeinde": "Buchberg",
@@ -370,12 +395,13 @@
       "gegenvorschlag_km": 0.0,
       "km100": 0.0,
       "p100": 0,
-      "km300": 0.0,
-      "p300": 0,
-      "km500": 0.2,
-      "p500": 69,
-      "anlagen": "0/0/0/0",
-      "linien": 0
+      "km300": 0.29,
+      "p300": 100,
+      "km500": 0.29,
+      "p500": 100,
+      "anlagen": "1/1/0/0",
+      "linien": 4,
+      "quelle_anlagen": "GeoPackage infra_SH_v2"
     }
   ]
 }

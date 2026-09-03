@@ -449,15 +449,25 @@ Abstand zur nächsten OSM-Buslinie und zur nächsten BAV-Haltestelle:
 1. Jede Karte zeigt beide Vorlagen (Rot Gegenvorschlag, Blau Initiative),
    Umkreise 100, 300 und 500 m um die Anlagen, betroffene Strassen in 100 m
    (schwarz) und 300 m (grau) hervorgehoben.
-2. Anlagen: OpenStreetMap (amenity school, college, kindergarten, childcare,
-   nursing_home, social_facility, hospital), 42 / 31 / 19 / 0 nach Schulen,
-   Kindergärten, Heimen, weiteren. Liegt das GeoPackage der Übergabe
-   (`infra_SH_v2.gpkg`, 213 Standorte aus OSM und kantonalen Quellen) unter
-   `geo/01_roh/`, nimmt das Skript dieses; die OSM-Liste ist dünner (im
-   Stadtgebiet Schaffhausen 6 Schulen statt rund 15).
+2. Anlagen: das GeoPackage der Übergabe (`geo/01_roh/infra_SH_v2.gpkg`, seit
+   4. September 2026 im Repository), 213 Standorte aus OpenStreetMap und
+   kantonalen Quellen: 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime,
+   15 weitere Sozialeinrichtungen; jedes Gebäude zählt. Fehlt die Datei, nimmt
+   das Skript OpenStreetMap direkt (92 Standorte, deutlich dünner). Die
+   Gemeindegrenzen der Karten stammen aus demselben GeoPackage.
 3. Kanton: betroffen 67,77 km (mindestens eine Vorlage), davon
-   6 Prozent in 100 m, 32 Prozent in 300 m, 47 Prozent in 500 m einer
-   Anlage. Übergabe: 13, 56 und 73 Prozent, bezogen auf 43,9 km und 213 Standorte.
+   13 Prozent in 100 m, 57 Prozent in 300 m, 75 Prozent in 500 m einer
+   Anlage. Übergabe: 13, 56 und 73 Prozent, bezogen auf 43,9 km.
 4. `kandidaten_wgs84` (Strassen in 100 und 300 m) ist neu gerechnet, die Zahlen
    in `karte.gemeinden`, `karte.total`, `karte.anlagen_total` und in der
    Textkritik (Stelle 1, Punkt 2) sind eingetragen (`zahlen_eintragen.py`).
+
+## Rüdlingen und Buchberg (4. September 2026)
+
+Die Initiative erfasst dort 0,9 und 0,3 km Kantonsstrasse (Dorfstrasse,
+Buchbergerstrasse, Steinenkreuzstrasse). Grund: PostAuto-Linie 675
+Rafz–Rüdlingen–Buchberg–Henggart, im Halbstundentakt, Haltestellen
+«Rüdlingen, Gemeindehaus», «Rüdlingen, Steinenkreuz», «Buchberg, Kirche»,
+«Buchberg, Engel» (Fahrplan transport.opendata.ch, abgefragt am 4. September
+2026). Die Haltestellenebene des Projekts (283 Punkte aus der Übergabe) führt
+diese Haltestellen nicht, die OSM-Linienführung schon.

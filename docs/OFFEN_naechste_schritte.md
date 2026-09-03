@@ -28,8 +28,9 @@ Stand 3. September 2026, nachgeführt.
 
 ## Offen bei den Geodaten
 
-1. `infra_SH_v2.gpkg` (Übergabe, 213 Standorte) nach `geo/01_roh/` legen; `gemeindekarten.py`
-   nimmt es dann statt der dünneren OSM-Liste, danach `zahlen_eintragen.py` und neu bauen.
+1. Haltestellenebene erneuern: die 283 Punkte der Übergabe führen die PostAuto-Haltestellen
+   in Rüdlingen und Buchberg (Linie 675) nicht; Ebene ch.bav.haltestellen-oev ohne
+   Betreiberfilter neu holen.
 2. Empfindlichkeitsstufen je Gebäude, falls der Kanton sie als Ebene liefert; dann eine
    Grenzwertzahl statt zwei.
 

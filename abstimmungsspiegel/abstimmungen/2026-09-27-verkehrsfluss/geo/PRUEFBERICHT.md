@@ -10,13 +10,13 @@ Freigegeben heisst: jede Koordinate liegt im Rahmen des Kantons, jede Geometrie 
 
 | Ebene | Objekte | vorher | freigegeben | Stand | Anmerkung |
 |---|---|---|---|---|---|
-| `anlagen` | 92 | 17 kB | 15 kB | freigegeben | keine Erwartung hinterlegt, nur Rahmen und Geometrie geprueft |
+| `anlagen` | 213 | 40 kB | 36 kB | freigegeben | keine Erwartung hinterlegt, nur Rahmen und Geometrie geprueft |
 | `anwohner_hektaren` | 681 | 228 kB | 164 kB | freigegeben | keine |
 | `busnetz_wgs84` | 448 | 74 kB | 74 kB | freigegeben | keine |
 | `geltung_gegenvorschlag` | 191 | 220 kB | 162 kB | freigegeben | keine |
 | `geltung_initiative` | 302 | 347 kB | 254 kB | freigegeben | keine |
 | `haltestellen_bus_wgs84` | 283 | 38 kB | 38 kB | freigegeben | keine |
-| `kandidaten_wgs84` | 891 | 204 kB | 148 kB | freigegeben | keine |
+| `kandidaten_wgs84` | 1873 | 402 kB | 300 kB | freigegeben | keine |
 
 ## Herkunft je Ebene
 
@@ -25,7 +25,7 @@ Freigegeben heisst: jede Koordinate liegt im Rahmen des Kantons, jede Geometrie 
 nicht hinterlegt
 
 - Rohdaten: `unbekannt`
-- Objekte: 92
+- Objekte: 213
 - Stand: freigegeben
 
 ### `anwohner_hektaren`
@@ -73,7 +73,7 @@ Bundesamt fuer Verkehr, Ebene ch.bav.haltestellen-oev, ueber map.geo.admin.ch ab
 Eigene Auswertung aus der Uebergabe vom Juli 2026: Kantonsstrassen innerorts im Umkreis von Schule, Kindergarten oder Heim.
 
 - Rohdaten: `01_roh/kandidaten_kurze_abschnitte.geojson (LV95)`
-- Objekte: 891
+- Objekte: 1873
 - Stand: freigegeben
 
 ## Was gepruefte Koordinaten heisst

@@ -131,8 +131,10 @@ def anlagen_aus_gpkg(pfad: Path, gemeinde_an):
         geo_sp = next((s for s in spalten if s.lower() in ("geom", "geometry", "the_geom")), None)
         if not geo_sp:
             continue
-        name_sp = next((s for s in spalten if s.lower() in ("name", "bezeichnung")), None)
-        for row in con.execute(f'SELECT "{geo_sp}"{", " + chr(34) + name_sp + chr(34) if name_sp else ""} FROM "{layer}"'):
+        name_sp = next((s for s in spalten if s.lower() in ("bezeichnung", "name")), None)
+        gem_sp = "gemeinde" if "gemeinde" in spalten else None
+        sel = ", ".join(f'"{s}"' for s in [geo_sp, name_sp or geo_sp, gem_sp or geo_sp])
+        for row in con.execute(f'SELECT {sel} FROM "{layer}"'):
             blob = row[0]
             if not blob:
                 continue
@@ -142,9 +144,27 @@ def anlagen_aus_gpkg(pfad: Path, gemeinde_an):
             g = wkb.loads(bytes(blob[8 + env_len:]))
             if g.geom_type != "Point":
                 g = g.centroid
-            gem = gemeinde_an(g)
+            gem = (row[2] if gem_sp else "") or gemeinde_an(g)
             if gem:
                 aus.append({"cat": cat, "name": (row[1] if name_sp else "") or "", "gem": gem, "x": g.x, "y": g.y})
+    return aus
+
+
+def gemeindegrenzen_aus_gpkg(pfad: Path) -> dict:
+    """Gemeindegrenzen (Layer gemeindegrenzen) aus dem GeoPackage, falls vorhanden."""
+    import sqlite3
+    from shapely import wkb
+    aus = {}
+    if not pfad.exists():
+        return aus
+    con = sqlite3.connect(str(pfad))
+    try:
+        for blob, gem in con.execute('SELECT geom, gemeinde FROM gemeindegrenzen'):
+            flags = blob[3]
+            env_len = {0: 0, 1: 32, 2: 48, 3: 48, 4: 64}.get((flags >> 1) & 7, 0)
+            aus[gem] = wkb.loads(bytes(blob[8 + env_len:])).buffer(0)
+    except sqlite3.Error:
+        pass
     return aus
 
 
@@ -191,7 +211,16 @@ def main() -> int:
                         if ja:
                             innen[gem].append(pg)
     gem_baum = STRtree([p for p, _ in gem_fl])
-    innen_u = {g: unary_union(v) for g, v in innen.items()}
+    # Siedlungsflaeche fuer die Karte: Baugebiet zusammengefasst und geglaettet
+    # (30 m nach aussen, 20 m zurueck), damit nicht die einzelnen Zonenflecken
+    # mit ihren Loechern fuer die Strassen erscheinen.
+    innen_u = {g: unary_union(v).buffer(30).buffer(-20) for g, v in innen.items()}
+    grenzen = gemeindegrenzen_aus_gpkg(ROH / "infra_SH_v2.gpkg")
+    def grenze_von(gem):
+        for k, g in grenzen.items():
+            if k == gem or k == gem.replace(" (SH)", "") or gem.startswith(k):
+                return g
+        return None
 
     def gemeinde_an(pt: Point) -> str:
         """Gemeinde, in deren Flaeche der Punkt liegt; die Flaechen der
@@ -228,13 +257,15 @@ def main() -> int:
         if not gem:
             continue
         anlagen.append({"cat": cat, "name": tags.get("name", ""), "gem": gem, "x": p.x, "y": p.y})
-    # Doppelte (Node und Flaeche derselben Anlage) auf 40 m zusammenfassen
-    eindeutig = []
-    for a in anlagen:
-        if any(b["cat"] == a["cat"] and abs(b["x"] - a["x"]) < 40 and abs(b["y"] - a["y"]) < 40 for b in eindeutig):
-            continue
-        eindeutig.append(a)
-    anlagen = eindeutig
+    # Doppelte (Node und Flaeche derselben Anlage) auf 40 m zusammenfassen;
+    # das GeoPackage ist bereits bereinigt und zaehlt jedes Gebaeude.
+    if not gpkg.exists():
+        eindeutig = []
+        for a in anlagen:
+            if any(b["cat"] == a["cat"] and abs(b["x"] - a["x"]) < 40 and abs(b["y"] - a["y"]) < 40 for b in eindeutig):
+                continue
+            eindeutig.append(a)
+        anlagen = eindeutig
     zaehl = collections.Counter(a["cat"] for a in anlagen)
     print(f"  {len(anlagen)} Standorte: " + ", ".join(f"{zaehl[c]} {CAT[c]['label']}" for c in CAT_ORDER))
     (FERTIG / "anlagen.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": [
@@ -290,7 +321,7 @@ def main() -> int:
         inner = innen_u.get(gem)
         if inner is None:
             continue
-        svg = karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z)
+        svg = karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, grenze_von(gem))
         (GRAFIKEN / f"karte_{slug(gem)}.svg").write_text(svg, encoding="utf-8")
     print(f"  {len(je)} Karten nach {GRAFIKEN.relative_to(VORLAGE)}")
 
@@ -312,7 +343,7 @@ def main() -> int:
     return 0
 
 
-def karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, W=1500, pad=46, header=74, footer=214):
+def karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, grenze=None, W=1500, pad=46, header=74, footer=214):
     """Eine Gemeindekarte als SVG, Aufbau wie in der Uebergabe vom Juli 2026,
     neu mit beiden Vorlagen."""
     vo = st_ini + st_gv
@@ -367,8 +398,13 @@ def karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, W=1500, pad=4
     A(f'<rect x="0" y="0" width="{W}" height="{H}" fill="#ffffff"/>')
     A(f'<clipPath id="mp"><rect x="0" y="{header}" width="{W}" height="{mapH:.1f}"/></clipPath>')
     A('<g clip-path="url(#mp)">')
-    poly(inner, INNER_FILL, INNER_STROKE, 1.0)
     view = box(minx, miny, maxx, maxy)
+    if grenze is not None and not grenze.is_empty:
+        poly(grenze, "#fbfaf7", "#d9d6cc", 1.2)
+        for g in (grenze.geoms if grenze.geom_type.startswith("Multi") else [grenze]):
+            d = "M" + " L".join(f"{X(x):.1f},{Y(y):.1f}" for x, y in g.exterior.coords) + " Z"
+            A(f'<path d="{d}" fill="none" stroke="#b9b5a8" stroke-width="1.4" stroke-dasharray="6 4"/>')
+    poly(inner, INNER_FILL, "none", 0)
     for g in kontext:
         if g.intersects(view):
             path(g, ROAD_CTX, 1.5)
@@ -385,14 +421,20 @@ def karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, W=1500, pad=4
     if u is not None:
         hi3 = u.intersection(umkreis[300])
         if not hi3.is_empty:
-            path(hi3, CAND300, 9.0, op=0.55)
+            path(hi3, CAND300, 15.0, op=0.45)
         hi1 = u.intersection(umkreis[100])
         if not hi1.is_empty:
-            path(hi1, CAND100, 11.0, op=0.9)
+            path(hi1, CAND100, 15.0, op=0.85)
+    # Wie im Viewer: Gegenvorschlag breit, Initiative schmal darueber, mit
+    # heller Kontur, damit beide lesbar bleiben, wo beide gelten.
     for g in st_gv:
-        path(g, ROAD_GV, 4.2)
+        path(g, "#ffffff", 9.0)
+    for g in st_gv:
+        path(g, ROAD_GV, 7.0)
     for g in st_ini:
-        path(g, ROAD_INI, 2.4)
+        path(g, "#ffffff", 4.6)
+    for g in st_ini:
+        path(g, ROAD_INI, 3.0)
     for a in facs:
         marker(a["cat"], X(a["x"]), Y(a["y"]))
     A("</g>")
@@ -405,18 +447,19 @@ def karte(gem, st_ini, st_gv, inner, kontext, anlagen, umkreis, z, W=1500, pad=4
     A(f'<line x1="0" y1="{fy:.1f}" x2="{W}" y2="{fy:.1f}" stroke="#e4e2da" stroke-width="1"/>')
 
     def leg_line(x, y, col, sw, label, w2=34, extra=None):
-        A(f'<line x1="{x}" y1="{y-4:.1f}" x2="{x+w2}" y2="{y-4:.1f}" stroke="{col}" stroke-width="{sw}"/>')
+        A(f'<line x1="{x}" y1="{y-4:.1f}" x2="{x+w2}" y2="{y-4:.1f}" stroke="{col}" stroke-width="{sw}" opacity="{0.85 if col == CAND100 else 0.45 if col == CAND300 else 1}"/>')
         if extra:
-            A(f'<line x1="{x}" y1="{y-4:.1f}" x2="{x+w2}" y2="{y-4:.1f}" stroke="{extra}" stroke-width="3"/>')
+            A(f'<line x1="{x}" y1="{y-4:.1f}" x2="{x+w2}" y2="{y-4:.1f}" stroke="{extra}" stroke-width="{7 if extra == ROAD_GV else 3}"/>')
         txt(x + w2 + 8, y, label, 12, INK)
         return x + w2 + 8 + len(label) * 6.7 + 26
 
     yA = fy + 24
     x = pad
-    x = leg_line(x, yA, ROAD_GV, 4.2, "Gegenvorschlag")
-    x = leg_line(x, yA, ROAD_INI, 2.6, "Initiative")
-    x = leg_line(x, yA, CAND100, 9, "Anlage in 100 m", 34, ROAD_GV)
-    x = leg_line(x, yA, CAND300, 9, "Anlage in 300 m", 34, ROAD_GV)
+    x = leg_line(x, yA, ROAD_GV, 7, "Gegenvorschlag")
+    x = leg_line(x, yA, ROAD_INI, 3, "Initiative")
+    x = leg_line(x, yA, ROAD_GV, 7, "beide", 34, ROAD_INI)
+    x = leg_line(x, yA, CAND100, 15, "Anlage in 100 m", 34, ROAD_GV)
+    x = leg_line(x, yA, CAND300, 15, "Anlage in 300 m", 34, ROAD_GV)
     x = leg_line(x, yA, ROAD_CTX, 2.2, "übrige Kantonsstrasse")
     yB = fy + 50
     x = pad

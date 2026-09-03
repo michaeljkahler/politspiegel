@@ -69,6 +69,8 @@ abstimmungsspiegel/abstimmungen/*/grafiken/**/*.png
 abstimmungsspiegel/abstimmungen/*/grafiken/*.png
 # 21 MB Fassadenpunkte des Laermkatasters; haushalte.py holt sie in Sekunden neu.
 abstimmungsspiegel/abstimmungen/*/geo/01_roh/laerm_fassadenpunkte_tag_roh.xml
+# Uebergabe-Archiv (17 MB): Karten und Berichte als PDF/PNG, das GeoPackage liegt ausgepackt daneben.
+abstimmungsspiegel/abstimmungen/*/geo/01_roh/unterlagen.zip
 
 # Sonden und Reste eines Baulaufs in der Ausgabe.
 site/abstimmung/*/grafiken/_probe
