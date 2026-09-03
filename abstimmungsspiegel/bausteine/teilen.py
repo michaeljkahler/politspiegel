@@ -90,6 +90,7 @@ def bild_daten(daten: dict, achsen: list, args: list, kr: dict | None,
         "summe": {"pro": summe("pro"), "contra": summe("contra")},
         "argumente": argumente,
         "kantonsrat": kr,
+        "social": daten.get("social") or {},
         "stand": daten.get("stand", ""),
     }
     # «</script>» darf im eingebetteten JSON nicht vorkommen.
@@ -248,7 +249,7 @@ JS = r"""
      kleinsten nicht, wird dort gekuerzt. So bleibt eine kurze Antwort gross
      und eine lange lesbar, statt beide gleich klein zu setzen. */
   function fliess(x, str, px, y, maxW, frei, groessen){
-    groessen = groessen || [34, 30, 27, 24];
+    groessen = groessen || [36, 34, 32, 30];
     for (var i = 0; i < groessen.length; i++){
       var g = groessen[i], lh = Math.round(g * 1.45);
       x.font = SANS(g, 400);
@@ -265,14 +266,14 @@ JS = r"""
   }
   /* Marke: Umriss-Pille mit Versalien, wie auf der Seite. Gibt die Breite zurueck. */
   function marke(x, str, px, py, f){
-    x.font = ARCH(17, 600); var s = str.toUpperCase(); var w = x.measureText(s).width + 30;
-    x.strokeStyle = f; x.lineWidth = 2; rundrect(x, px, py - 24, w, 36, 18); x.stroke();
+    x.font = ARCH(19, 600); var s = str.toUpperCase(); var w = x.measureText(s).width + 32;
+    x.strokeStyle = f; x.lineWidth = 2; rundrect(x, px, py - 26, w, 38, 19); x.stroke();
     x.fillStyle = f; x.fillText(s, px + 15, py + 1);
     return w;
   }
   function pille(x, str, px, py, fg, bg){
-    x.font = ARCH(15, 600); var w = x.measureText(str).width + 24;
-    x.fillStyle = bg; rundrect(x, px, py - 20, w, 30, 15); x.fill();
+    x.font = ARCH(18, 600); var w = x.measureText(str).width + 26;
+    x.fillStyle = bg; rundrect(x, px, py - 22, w, 34, 17); x.fill();
     x.fillStyle = fg; x.fillText(str, px + 12, py + 1);
     return w;
   }
@@ -282,8 +283,8 @@ JS = r"""
     var s0 = S; S = 1;
     x.fillStyle = p.bg; x.fillRect(0, 0, W, H);
     x.textBaseline = 'alphabetic';
-    x.fillStyle = p.ink; x.font = ARCH(28, 700); x.fillText('ABSTIMMUNGSSPIEGEL', M, 92);
-    x.fillStyle = p.leise; x.font = SANS(19, 600);
+    x.fillStyle = p.ink; x.font = ARCH(30, 700); x.fillText('ABSTIMMUNGSSPIEGEL', M, 92);
+    x.fillStyle = p.leise; x.font = SANS(20, 600);
     x.fillText((D.vorlage.ebene + ' · Abstimmung vom ' + D.vorlage.datum).toUpperCase(), M, 126);
     linie(x, M, 152, W - M, 152, p.ink, 3);
     S = s0;
@@ -331,12 +332,12 @@ JS = r"""
       for (var i = 0; i < n; i++){
         var q = pol(i, 1.24); var a = D.achsen[i];
         x.textAlign = Math.abs(q[0] - cx) <= 10 ? 'center' : (q[0] < cx ? 'right' : 'left');
-        x.fillStyle = p.ink; x.font = ARCH(21, 600); x.fillText(a.kurz, q[0], q[1] + 7);
+        x.fillStyle = p.ink; x.font = ARCH(24, 600); x.fillText(a.kurz, q[0], q[1] + 7);
         if (reihen.length === 2){
-          x.fillStyle = p.leise; x.font = SANS(18, 400);
+          x.fillStyle = p.leise; x.font = SANS(22, 400);
           x.fillText(f1(reihen[0].werte[a.id]) + ' zu ' + f1(reihen[1].werte[a.id]), q[0], q[1] + 32);
         } else if (pruefung){
-          x.fillStyle = p.leise; x.font = SANS(18, 400);
+          x.fillStyle = p.leise; x.font = SANS(22, 400);
           x.fillText(pruefung[a.id] == null ? 'nicht anwendbar' : pruefung[a.id] + ' von 4', q[0], q[1] + 32);
         }
       }
@@ -349,22 +350,47 @@ JS = r"""
   function balken(x, p, y, pruefung, f){
     D.achsen.forEach(function(a){
       var v = pruefung[a.id];
-      x.fillStyle = p.ink; x.font = SANS(22, 600); x.fillText(a.kurz, M, y + 8);
-      var bx = M + 250, bw = 120, gap = 12;
+      x.fillStyle = p.ink; x.font = SANS(25, 600); x.fillText(a.kurz, M, y + 8);
+      var bx = M + 270, bw = 112, gap = 12;
       if (v == null){
-        x.fillStyle = p.leise; x.font = SANS(19, 400); x.fillText('nicht anwendbar', bx, y + 8);
+        x.fillStyle = p.leise; x.font = SANS(22, 400); x.fillText('nicht anwendbar', bx, y + 8);
       } else {
-        for (var k = 0; k < 4; k++){ x.fillStyle = k < v ? f : p.segLeer; rundrect(x, bx + k*(bw+gap), y - 10, bw, 22, 5); x.fill(); }
-        x.fillStyle = p.ink; x.font = SANS(22, 700); x.textAlign = 'right'; x.fillText(String(v), W - M, y + 8); x.textAlign = 'left';
+        for (var k = 0; k < 4; k++){ x.fillStyle = k < v ? f : p.segLeer; rundrect(x, bx + k*(bw+gap), y - 10, bw, 24, 5); x.fill(); }
+        x.fillStyle = p.ink; x.font = SANS(25, 700); x.textAlign = 'right'; x.fillText(String(v), W - M, y + 8); x.textAlign = 'left';
       }
-      y += 48;
+      y += 52;
     });
     return y;
   }
 
   /* ---- Motive ---------------------------------------------------------- */
   function mVorlage(x, p, y){
-    var v = D.vorlage;
+    var v = D.vorlage, so = D.social || {};
+    if (so.vorlage_kurz && so.vorlage_kurz.length){
+      /* Kurzfassung fuer Social Media: nummerierte Liste statt Absatz,
+         Mindestschrift 30 px. Die Langfassung steht auf der Seite. */
+      y = titel(x, p, v.titel, y + 30, 54);
+      x.fillStyle = p.leise; x.font = SANS(28, 400);
+      y = text(x, v.untertitel, M, y, INNEN, 38) + 30;
+      x.fillStyle = p.leise; x.font = ARCH(20, 600); x.fillText('WORUM ES GEHT', M, y); y += 44;
+      x.fillStyle = p.ink; x.font = SANS(32, 400);
+      y = text(x, so.vorlage_kurz.map(function(z, i){ return (i+1) + '. ' + z; }).join('\n'), M, y, INNEN, 44) + 26;
+      var kk = [[v.ja_titel || 'Bei einem Ja', so.bei_ja_kurz || v.bei_ja],
+                [v.nein_titel || 'Bei einem Nein', so.bei_nein_kurz || v.bei_nein]];
+      /* Kastenhoehe nach Textbedarf, nicht nach Restplatz: so bleibt die
+         Schrift gross, und nur echter Platzmangel loest den Ueberlauf aus. */
+      kk.forEach(function(k){
+        x.font = SANS(28, 400);
+        var kh2 = 92 + hoehe(x, k[1], INNEN - 56, 38) + 22;
+        x.fillStyle = p.flaeche; rundrect(x, M, y, INNEN, kh2, 14); x.fill();
+        x.fillStyle = p.ink; x.font = ARCH(27, 600); x.fillText(k[0], M + 28, y + 50);
+        x.fillStyle = p.ink; x.font = SANS(28, 400);
+        text(x, k[1], M + 28, y + 96, INNEN - 56, 38);
+        y += kh2 + 16;
+      });
+      pruefe(y - 16);
+      return;
+    }
     y = titel(x, p, v.titel, y + 30, 50);
     x.fillStyle = p.leise; x.font = SANS(25, 400);
     y = text(x, v.untertitel, M, y, INNEN, 34, 3) + 26;
@@ -385,46 +411,46 @@ JS = r"""
 
   function mGegen(x, p, y){
     y = titel(x, p, 'Wie gut sind die Argumente belegt?', y + 24, 40);
-    x.fillStyle = p.leise; x.font = SANS(22, 400);
+    x.fillStyle = p.leise; x.font = SANS(26, 400);
     y = text(x, 'Mittelwert je Achse über die geprüften Aussagen, 0 bis 4 Punkte. ' +
-             'Gemessen wird der Beleg, nicht die Richtigkeit.', M, y, INNEN, 31, 3);
+             'Gemessen wird der Beleg, nicht die Richtigkeit.', M, y, INNEN, 36, 3);
     netz(x, p, W/2, y + 330, 230,
          [{ werte: D.mittel.pro, farbe: p.pro }, { werte: D.mittel.contra, farbe: p.contra }], true);
     y += 690;
     ['pro', 'contra'].forEach(function(s){
       var f = seitenFarbe(p, s), su = D.summe[s];
       x.fillStyle = f; rundrect(x, M, y - 14, 22, 22, 5); x.fill();
-      x.fillStyle = p.ink; x.font = ARCH(24, 600); x.fillText(D.seiten[s].komitee, M + 38, y + 6);
-      x.fillStyle = p.leise; x.font = SANS(21, 400); x.textAlign = 'right';
+      x.fillStyle = p.ink; x.font = ARCH(27, 600); x.fillText(D.seiten[s].komitee, M + 38, y + 6);
+      x.fillStyle = p.leise; x.font = SANS(23, 400); x.textAlign = 'right';
       x.fillText(su[0] + ' von ' + su[1] + ' Punkten, Werturteile ausgenommen', W - M, y + 6); x.textAlign = 'left';
       y += 48;
     });
-    x.fillStyle = p.leise; x.font = SANS(19, 400);
+    x.fillStyle = p.leise; x.font = SANS(23, 400);
     text(x, 'Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch. ' +
-         'Ob Reisezeit oder Wohnruhe schwerer wiegt, messen diese Achsen nicht.', M, y + 10, INNEN, 27, 3);
+         'Ob Reisezeit oder Wohnruhe schwerer wiegt, messen diese Achsen nicht.', M, y + 10, INNEN, 32, 3);
   }
 
   function argHalb(x, p, a, y, hh){
     var f = seitenFarbe(p, a.seite), ende = y + hh;
     var mw = marke(x, D.seiten[a.seite].komitee, M, y, f);
-    x.fillStyle = p.leise; x.font = SANS(17, 400); x.fillText(a.typ_name, M + mw + 16, y);
-    y += 44;
-    x.fillStyle = p.ink; x.font = ARCH(27, 600);
-    y = text(x, '«' + a.aussage + '»', M, y, INNEN, 36, 5) + 6;
-    x.fillStyle = p.leise; x.font = SANS(18, 400);
-    y = text(x, a.traeger, M, y, INNEN, 24, 1) + 18;
+    x.fillStyle = p.leise; x.font = SANS(20, 400); x.fillText(a.typ_name, M + mw + 16, y);
+    y += 50;
+    x.fillStyle = p.ink; x.font = ARCH(32, 600);
+    y = text(x, '«' + a.aussage + '»', M, y, INNEN, 42, 5) + 8;
+    x.fillStyle = p.leise; x.font = SANS(22, 400);
+    y = text(x, a.traeger, M, y, INNEN, 30, 1) + 18;
     if (a.typ === 'wertung'){
-      x.fillStyle = p.leise; x.font = SANS(20, 400);
-      if (text(x, 'Werturteil. Steht ohne Note, weil sich kein Beleg dafür prüfen lässt.', M, y + 8, INNEN, 28) > ende) UEBERLAUF = true;
+      x.fillStyle = p.leise; x.font = SANS(24, 400);
+      if (text(x, 'Werturteil. Steht ohne Note, weil sich kein Beleg dafür prüfen lässt.', M, y + 8, INNEN, 32) > ende) UEBERLAUF = true;
       return ende;
     }
     var r = Math.min(70, (ende - y - 10) / 2);
     netz(x, p, M + r + 10, y + r + 4, r, [{ werte: a.pruefung, farbe: f }], false, a.pruefung);
-    x.fillStyle = p.ink; x.font = ARCH(36, 700); x.fillText(a.erreicht + ' von ' + a.moeglich, M + 2*r + 50, y + r - 4);
-    x.fillStyle = p.leise; x.font = SANS(18, 400); x.fillText('Punkten für den Beleg', M + 2*r + 50, y + r + 24);
-    var tx = M + 2*r + 50, ty = y + r + 58; x.font = SANS(17, 400);
+    x.fillStyle = p.ink; x.font = ARCH(40, 700); x.fillText(a.erreicht + ' von ' + a.moeglich, M + 2*r + 50, y + r - 4);
+    x.fillStyle = p.leise; x.font = SANS(22, 400); x.fillText('Punkten für den Beleg', M + 2*r + 50, y + r + 28);
+    var tx = M + 2*r + 50, ty = y + r + 64; x.font = SANS(20, 400);
     var teile = D.achsen.map(function(ax){ var v = a.pruefung[ax.id]; return ax.kurz + ' ' + (v == null ? '–' : v); });
-    if (text(x, teile.join('  ·  '), tx, ty, W - M - tx, 24) > ende + 10) UEBERLAUF = true;
+    if (text(x, teile.join('  ·  '), tx, ty, W - M - tx, 28) > ende + 10) UEBERLAUF = true;
     if (y + 2*r + 12 > ende + 10) UEBERLAUF = true;
     return ende;
   }
@@ -432,7 +458,7 @@ JS = r"""
   function mPaar(x, p, y, n){
     var pro = D.argumente.filter(function(a){ return a.seite === 'pro'; })[n],
         con = D.argumente.filter(function(a){ return a.seite === 'contra'; })[n];
-    x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText(('Aussagenpaar ' + (n+1)).toUpperCase(), M, y);
+    x.fillStyle = p.leise; x.font = ARCH(20, 600); x.fillText(('Aussagenpaar ' + (n+1)).toUpperCase(), M, y);
     y += 40;
     var hh = (FUSS - 40 - y) / 2;
     if (pro) argHalb(x, p, pro, y + 26, hh - 30);
@@ -441,7 +467,38 @@ JS = r"""
   }
 
   function mKantonsrat(x, p, y){
-    var kr = D.kantonsrat;
+    var kr = D.kantonsrat, so = D.social || {};
+    if (so.kantonsrat && so.kantonsrat.length){
+      /* Social-Fassung: nur die entscheidenden Antraege, mit Kurztitel,
+         grosse Balken mit Zahlen im Balken. */
+      y = titel(x, p, 'Wie der Kantonsrat gestimmt hat', y + 24, 46);
+      x.fillStyle = p.leise; x.font = SANS(26, 400);
+      var sd = (kr.sitzung.match(/\d{2}\.\d{2}\.\d{4}/) || [kr.sitzung])[0];
+      y = text(x, 'Namentliche Abstimmungen vom ' + sd + ', gezählt aus dem Wortprotokoll.', M, y, INNEN, 36) + 30;
+      so.kantonsrat.forEach(function(w, i){
+        var v = null; kr.abstimmungen.forEach(function(a){ if (a.nr === w.nr) v = a; });
+        if (!v) return;
+        x.fillStyle = p.leise; x.font = ARCH(20, 600); x.fillText(('Antrag ' + v.nr).toUpperCase(), M, y);
+        y += 14;
+        x.fillStyle = p.ink; x.font = ARCH(34, 600);
+        y = text(x, w.kurz, M, y + 30, INNEN, 42) + 10;
+        var s = Math.max(v.ja + v.nein, 1), bw = INNEN, bh = 56, jw = bw * v.ja / s;
+        x.fillStyle = p.linie; rundrect(x, M, y, bw, bh, 8); x.fill();
+        x.fillStyle = p.ink; rundrect(x, M, y, jw, bh, 8); x.fill();
+        x.font = ARCH(28, 700); x.textBaseline = 'middle';
+        x.fillStyle = p.bg; x.fillText(v.ja + ' Ja', M + 20, y + bh/2 + 1);
+        x.fillStyle = p.ink; x.textAlign = 'right'; x.fillText(v.nein + ' Nein', W - M - 20, y + bh/2 + 1);
+        x.textAlign = 'left'; x.textBaseline = 'alphabetic';
+        y += bh + 40;
+        x.fillStyle = p.leise; x.font = SANS(22, 400);
+        var fr = v.fraktionen.map(function(f){ return f.name.replace(/-JUSO-GRÜNE-Junge Grüne/, '-JUSO-Grüne') + ' ' + f.ja + ':' + f.nein; }).join('   ');
+        y = text(x, fr + (v.enth ? '   ' + v.enth + ' Enth.' : ''), M, y, INNEN, 30) + (i < so.kantonsrat.length - 1 ? 44 : 10);
+      });
+      x.fillStyle = p.leise; x.font = SANS(20, 400);
+      pruefe(y + 6);
+      x.fillText('Balken: Ja dunkel, Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 16);
+      return;
+    }
     y = titel(x, p, 'Wie der Kantonsrat gestimmt hat', y + 24, 40);
     x.fillStyle = p.leise; x.font = SANS(21, 400);
     y = text(x, 'Dieselbe Vorlage im Rat: namentliche Abstimmungen am ' + kr.sitzung +
@@ -483,8 +540,8 @@ JS = r"""
     /* Immer im Massstab 1 gemessen: Die Zahl der Folien darf sich nicht
        aendern, wenn zeichne() eine Folie kleiner setzt. */
     var s0 = S; S = 1;
-    MX.font = SANS(24, 400);
-    var lh = Math.round(24 * 1.45), maxL = Math.floor(frei / lh);
+    MX.font = SANS(30, 400);
+    var lh = Math.round(30 * 1.45), maxL = Math.floor(frei / lh);
     /* Einheit der Verteilung ist die harte Zeile (ein Absatz oder ein
        Listenpunkt). Eine Einheit wechselt lieber ganz auf die naechste Folie,
        als mitten im Satz zu brechen; nur eine Einheit laenger als eine Folie
@@ -541,26 +598,26 @@ JS = r"""
     f.push({ name: 'Aussage', z: function(x, p, y){
       var fb = seitenFarbe(p, a.seite);
       var mw = marke(x, D.seiten[a.seite].komitee, M, y + 10, fb);
-      x.fillStyle = p.leise; x.font = SANS(18, 400); x.fillText(a.typ_name, M + mw + 16, y + 10);
+      x.fillStyle = p.leise; x.font = SANS(22, 400); x.fillText(a.typ_name, M + mw + 16, y + 10);
       y += 76;
       x.fillStyle = p.ink;
       var gr = [54, 48, 42, 36], k;
       for (k = 0; k < gr.length; k++){ x.font = ARCH(gr[k], 600);
         if (hoehe(x, '«' + a.aussage + '»', INNEN, gr[k]*1.25) <= 620 || k === gr.length-1) break; }
       y = text(x, '«' + a.aussage + '»', M, y, INNEN, gr[k]*1.25) + 18;
-      x.fillStyle = p.leise; x.font = SANS(22, 400);
-      y = text(x, a.traeger, M, y, INNEN, 30, 2) + 12;
-      if (a.fundstelle){ x.font = SANS(19, 400);
+      x.fillStyle = p.leise; x.font = SANS(26, 400);
+      y = text(x, a.traeger, M, y, INNEN, 34, 2) + 12;
+      if (a.fundstelle){ x.font = SANS(23, 400);
         text(x, 'Fundstelle: ' + a.fundstelle.titel + (a.fundstelle.datum ? ' · ' + a.fundstelle.datum : ''), M, y, INNEN, 26, 2); }
-      else if (a.offen){ x.font = SANS(19, 400); text(x, 'Fundstelle offen: noch nicht mit Urheber und Datum belegt.', M, y, INNEN, 26, 2); }
+      else if (a.offen){ x.font = SANS(23, 400); text(x, 'Fundstelle offen: noch nicht mit Urheber und Datum belegt.', M, y, INNEN, 26, 2); }
     }});
     f.push({ name: w ? 'Ohne Note' : 'Belegprüfung', z: function(x, p, y){
       var fb = seitenFarbe(p, a.seite);
       y = titel(x, p, w ? 'Warum diese Aussage ohne Note steht' : 'Wie gut ist die Aussage belegt?', y + 20, 36);
-      x.fillStyle = p.leise; x.font = SANS(22, 400);
-      y = text(x, '«' + a.aussage + '»', M, y, INNEN, 30, 3) + 20;
+      x.fillStyle = p.leise; x.font = SANS(26, 400);
+      y = text(x, '«' + a.aussage + '»', M, y, INNEN, 35, 3) + 20;
       if (w){
-        x.fillStyle = p.ink; x.font = SANS(28, 400);
+        x.fillStyle = p.ink; x.font = SANS(30, 400);
         text(x, 'Werturteil. Es ist weder wahr noch falsch, und es lässt sich kein Beleg dafür prüfen. ' +
              'Es wird dargestellt, aber nicht benotet, und geht nicht in die Netzgrafik ein.', M, y + 10, INNEN, 38, 8);
         return;
@@ -588,43 +645,43 @@ JS = r"""
           x.fillStyle = p.flaeche; rundrect(x, M, y, INNEN, boxH, 12); x.fill();
           x.fillStyle = p.leise; x.font = SANS(20, 400); x.fillText('Grafik konnte nicht geladen werden.', M + 24, y + 44); y += boxH + 16;
         }
-        x.fillStyle = p.leise; x.font = SANS(19, 400);
-        y = text(x, g.hinweis, M, y, INNEN, 26, 3); text(x, g.quelle, M, y + 4, INNEN, 24, 2);
+        x.fillStyle = p.leise; x.font = SANS(23, 400);
+        y = text(x, g.hinweis, M, y, INNEN, 31, 3); text(x, g.quelle, M, y + 4, INNEN, 28, 2);
       }});
     });
     if (a.kritische_fragen.length) f.push({ name: 'Kritische Fragen', z: function(x, p, y){
       y = titel(x, p, 'Kritische Fragen', y + 20, 36);
-      x.fillStyle = p.leise; x.font = SANS(20, 400);
-      y = text(x, 'Die Prüffragen zum Argumenttyp' + (a.schema ? ' «' + a.schema + '»' : '') + '.', M, y, INNEN, 28, 2) + 14;
+      x.fillStyle = p.leise; x.font = SANS(24, 400);
+      y = text(x, 'Die Prüffragen zum Argumenttyp' + (a.schema ? ' «' + a.schema + '»' : '') + '.', M, y, INNEN, 33, 2) + 14;
       a.kritische_fragen.forEach(function(k){
         var st = k.status === 'beantwortet' ? 'beantwortet' : (k.status === 'offen' ? 'offen' : 'nicht erfüllt');
         pille(x, st, M, y + 14, k.status === 'beantwortet' ? p.bg : p.ink, k.status === 'beantwortet' ? p.ink : p.flaeche);
         y += 46;
-        x.fillStyle = p.ink; x.font = ARCH(22, 600); y = text(x, k.frage, M, y, INNEN, 29, 2) + 2;
-        x.fillStyle = p.leise; x.font = SANS(19, 400);
-        y = text(x, k.kommentar, M, y, INNEN, 26) + 34;
+        x.fillStyle = p.ink; x.font = ARCH(26, 600); y = text(x, k.frage, M, y, INNEN, 34, 2) + 4;
+        x.fillStyle = p.leise; x.font = SANS(23, 400);
+        y = text(x, k.kommentar, M, y, INNEN, 31) + 34;
       });
     }});
     f.push({ name: 'Grundlagen', z: function(x, p, y){
       y = titel(x, p, 'Grundlagen der Prüfung', y + 20, 36);
       if (a.fundstelle){
         x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('FUNDSTELLE DER AUSSAGE', M, y); y += 34;
-        x.fillStyle = p.ink; x.font = SANS(23, 400);
-        y = text(x, a.fundstelle.titel + (a.fundstelle.datum ? ' · ' + a.fundstelle.datum : ''), M, y, INNEN, 32, 3) + 24;
+        x.fillStyle = p.ink; x.font = SANS(26, 400);
+        y = text(x, a.fundstelle.titel + (a.fundstelle.datum ? ' · ' + a.fundstelle.datum : ''), M, y, INNEN, 36, 3) + 24;
       }
       x.fillStyle = p.leise; x.font = ARCH(17, 600); x.fillText('QUELLEN DER PRÜFUNG', M, y); y += 34;
       if (!a.belege.length){ x.fillStyle = p.ink; x.font = SANS(23, 400); x.fillText('Keine weiteren Quellen herangezogen.', M, y); return; }
       a.belege.forEach(function(b){
         var art = { amtlich: 'amtlich', wissenschaft: 'Wissenschaft', medien: 'Medien', interessengruppe: 'Interessengruppe', komitee: 'Komitee' }[b.art] || b.art;
         var pw = art ? pille(x, art, M, y + 4, p.ink, p.flaeche) + 14 : 0;
-        x.fillStyle = p.ink; x.font = SANS(22, 400); y = text(x, b.titel, M + pw, y + 8, INNEN - pw, 30, 2) + 14;
+        x.fillStyle = p.ink; x.font = SANS(25, 400); y = text(x, b.titel, M + pw, y + 8, INNEN - pw, 34, 2) + 14;
       });
     }});
     var g = gegenstueck(a);
     f.push({ name: 'Die andere Seite', z: function(x, p, y){
       y = titel(x, p, 'Die andere Seite', y + 20, 36);
-      x.fillStyle = p.leise; x.font = SANS(21, 400);
-      y = text(x, 'Zu jeder Aussage steht eine der Gegenseite. Beide sind nach denselben fünf Achsen geprüft.', M, y, INNEN, 29, 2) + 30;
+      x.fillStyle = p.leise; x.font = SANS(25, 400);
+      y = text(x, 'Zu jeder Aussage steht eine der Gegenseite. Beide sind nach denselben fünf Achsen geprüft.', M, y, INNEN, 34, 2) + 30;
       if (g) argHalb(x, p, g, y + 10, FUSS - 60 - y);
       else { x.fillStyle = p.ink; x.font = SANS(24, 400); x.fillText('Für diese Aussage steht kein Gegenstück bereit.', M, y + 20); }
     }});

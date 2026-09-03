@@ -1186,5 +1186,30 @@
       ],
       "quelle": "BFS STATPOP 2024 (Einwohner je Hektare, Hektaren an einer betroffenen Strasse); Lärmkataster Kanton Schaffhausen, Fassadenpunkte Tag, 25 m; Grenzwerte LSV Anhang 3 (65 dB(A) ES III, 60 dB(A) ES II); 2,1 Personen je Haushalt"
     }
+  },
+  "social": {
+    "hinweis": "Kurzfassungen für die Social-Media-Bilder (bausteine/teilen.py). Inhaltlich aus vorlage.worum_geht_es, bei_ja, bei_nein und den Kantonsratsabstimmungen abgeleitet, nur gekürzt.",
+    "vorlage_kurz": [
+      "Tempo 50 generell auf Kantonsstrassen innerorts mit öffentlichem Verkehr",
+      "Keine Verlangsamung durch Bauten oder Verkehrsanordnungen",
+      "Ausnahmen nur auf kurzen Strecken und nur über den kantonalen Strassenrichtplan",
+      "Kantonsrat: Nein zur Initiative, Gegenvorschlag ohne Bauverbot und Richtplanvorbehalt"
+    ],
+    "bei_ja_kurz": "Tempo 50 und das Verlangsamungsverbot stehen im Strassengesetz. Ausnahmen nur über den Richtplan des Kantonsrats.",
+    "bei_nein_kurz": "Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag gilt Tempo 50 «grundsätzlich», der Verkehrsablauf darf nicht behindert werden.",
+    "kantonsrat": [
+      {
+        "nr": 2,
+        "kurz": "Initiative ablehnen und dem Volk zur Ablehnung empfehlen"
+      },
+      {
+        "nr": 5,
+        "kurz": "Gegenvorschlag zustimmen"
+      },
+      {
+        "nr": 6,
+        "kurz": "Stichfrage: dem Gegenvorschlag den Vorzug geben"
+      }
+    ]
   }
 }
