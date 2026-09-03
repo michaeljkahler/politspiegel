@@ -3,6 +3,15 @@
 Übergabe-Dokumentation für die Weiterarbeit (z. B. in Claude Cowork).
 Stand: Juli 2026 (Projekt in Ordnerstruktur `scripts/`, `data/`, `output/`, `docs/` überführt)
 
+> **Nachtrag 3. September 2026.** Das Projekt heisst jetzt **Politspiegel Schaffhausen**
+> und hat drei Ebenen: die Übersicht (`politspiegel/`), den **Kantonsratsspiegel** (dieses
+> Dashboard, Generator `scripts/build3.py`, veröffentlicht unter `/kantonsrat/`) und den
+> **Abstimmungsspiegel** (`abstimmungsspiegel/`, je kantonale Vorlage eine Seite unter
+> `/abstimmung/<slug>/`). Einstieg für den Betrieb: `docs/UEBERGABE_betrieb-und-hosting.md`
+> und `docs/OFFEN_naechste_schritte.md`; für den Abstimmungsspiegel
+> `abstimmungsspiegel/docs/00_UEBERSICHT.md`. Was unten steht, beschreibt den
+> Kantonsratsspiegel und ist in Teilen älter (build2 ist durch build3 abgelöst).
+
 ---
 
 ## 1. Ziel und Zielgruppe

@@ -2067,7 +2067,7 @@ try{ initNetz(); }catch(e){ console.error("Netz konnte nicht aufgebaut werden:",
 HTML = '''<!DOCTYPE html>
 <html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kantonsrat Schaffhausen · Abstimmungsspiegel</title>
+<title>Kantonsrat Schaffhausen · Kantonsratsspiegel</title>
 <style>__CSS__</style>
 </head><body>
 <div class="wrap">

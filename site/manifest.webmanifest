@@ -1,7 +1,7 @@
 {
-  "name": "Abstimmungsspiegel Kantonsrat Schaffhausen",
-  "short_name": "Abstimmungsspiegel",
-  "description": "Wie der Schaffhauser Kantonsrat abstimmt: alle namentlichen Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema.",
+  "name": "Politspiegel Schaffhausen",
+  "short_name": "Politspiegel",
+  "description": "Wie der Kantonsrat abstimmt, und was bei der nächsten kantonalen Abstimmung auf dem Zettel steht.",
   "lang": "de-CH",
   "start_url": "./",
   "scope": "./",

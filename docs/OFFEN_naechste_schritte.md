@@ -1,10 +1,30 @@
 # Offene Punkte
 
-Stand 2. September 2026, nachgeführt.
+Stand 3. September 2026, nachgeführt.
 
 ---
 
-## Erledigt in dieser Runde
+## Erledigt am 3. September 2026: Umbau auf drei Ebenen
+
+- **Namensraum.** Politspiegel (Dach, `/`), Kantonsratsspiegel (vorher «Abstimmungsspiegel
+  Kantonsrat», `/kantonsrat/`), Abstimmungsspiegel (vorher «Argumentespiegel»,
+  `/abstimmung/<slug>/`). Ordner `argumentespiegel/` heisst jetzt `abstimmungsspiegel/`.
+- **Repository umbenannt** auf `politspiegel`; Adresse
+  `https://michaeljkahler.github.io/politspiegel/`. Fernadresse ohne Token, das Token geht
+  nur noch an den Push-Befehl.
+- **`.gitignore` repariert.** Eine Regel schloss fünf der acht Grafiken aus, die die
+  Verkehrsfluss-Seite einbindet; die Bilder wären online kaputt gewesen. Verwaiste Grafiken
+  räumt `argumente.py` selbst. Von den 45 MB des Abstimmungsordners gehen 6 MB ins
+  Repository: Vorlage, Docs, Skripte, die Datenkette von roh bis freigegeben, die SVGs.
+- **Übersicht aus den Vorlagen.** `politspiegel/bauen.py` liest `abstimmungen/*/vorlage.json`
+  statt einer Handliste; kommend als Kasten, vergangen als Liste mit nachgetragenem
+  Ergebnis (Felder `status` und `ergebnis`, Schema in `abstimmungsspiegel/docs/14_TECHNIK.md`).
+- **Bilder für Social Media im Abstimmungsspiegel**, `bausteine/teilen.py`: Vorlage,
+  Gegenüberstellung, Aussagenpaare, Kantonsrat, und je Argument ein Karussell mit allen
+  Inhalten der Karte. Letzte Folie immer die Gegenseite.
+- **Vorschauangaben** (og-Tags, Beschreibung, Zeichen) auch auf den Abstimmungsseiten.
+
+## Erledigt am 2. September 2026
 
 - **Formfilter als Mehrfachauswahl**, Kästchen statt Auswahlfeld, mit Zähler je Form.
 - **Bilder der Ratsmitglieder** in Tabelle, Profil und Ranglisten, mit Ring in der
@@ -44,7 +64,7 @@ vorkommt, ist unbekannt, weil bisher nur die Umkehrabstimmungen am Protokoll gep
 
 ---
 
-## 2 · Social-Media-Bilder ausbauen
+## 2 · Social-Media-Bilder im Kantonsratsspiegel ausbauen
 
 Noch offen. Beschlossen sind drei neue Motive:
 

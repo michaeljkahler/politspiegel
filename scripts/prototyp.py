@@ -1019,7 +1019,7 @@ h1{{
 
   <aside class="side" id="side">
     <div class="brandrow">
-      <div class="brand">Kantonsrat<br>Schaffhausen<span>Abstimmungsspiegel</span></div>
+      <div class="brand">Kantonsrat<br>Schaffhausen<span>Kantonsratsspiegel</span></div>
       <button class="navtoggle" id="navToggle" type="button"
               aria-label="Seitenleiste einklappen" aria-expanded="true">
         <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">

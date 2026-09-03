@@ -64,7 +64,7 @@ Repository ist lokal angelegt, 44 Dateien, 8,8 MB.
 Drei Schritte, danach läuft es ohne Zutun:
 
 1. **Repository auf GitHub anlegen.** Öffentlich, leer, ohne README (`publish.py` bringt den
-   ganzen Inhalt mit). Der Name wird Teil der Adresse, also etwa `abstimmungsspiegel`.
+   ganzen Inhalt mit). Der Name wird Teil der Adresse, also `politspiegel`.
 2. **Token erzeugen.** GitHub, Settings, Developer settings, Personal access tokens,
    *Fine-grained tokens*. Nur dieses eine Repository auswählen, unter Permissions genau
    **«Contents: Read and write»**, alles andere auf «No access». Laufzeit setzen und den Tag
@@ -73,14 +73,24 @@ Drei Schritte, danach läuft es ohne Zutun:
 3. **Zugang ablegen** in `data/github_zugang.json`:
 
    ```json
-   {"benutzer": "...", "repo": "abstimmungsspiegel", "token": "github_pat_..."}
+   {"benutzer": "...", "repo": "politspiegel", "token": "github_pat_..."}
    ```
 
    Die Datei ist in `.gitignore` ausgeschlossen und darf dort nie entfernt werden.
 
 Danach einmal `python3 scripts/publish.py --apply` von Hand, dann in den
-Repository-Einstellungen **Pages** einschalten: Source «Deploy from a branch», Branch `main`,
-Ordner `/site`. Nach ein bis zwei Minuten steht die Seite.
+Repository-Einstellungen **Pages** einschalten: Source «GitHub Actions». Den Rest erledigt
+der Arbeitsablauf `.github/workflows/pages.yml`, der genau den Ordner `site/` ausliefert
+(«Deploy from a branch» kann nur die Wurzel oder `/docs`). Nach ein bis zwei Minuten steht
+die Seite.
+
+**Nachtrag 3. September 2026.** Das Repository heisst `politspiegel`, die Seite steht unter
+`https://michaeljkahler.github.io/politspiegel/`. Das Token steht nicht mehr in der
+Fernadresse: `publish.py` gibt es nur dem Push-Befehl mit, und `origin` ist die gewöhnliche
+Adresse `https://github.com/michaeljkahler/politspiegel.git`. Damit kann auch Claude Code
+oder die Kommandozeile mit dem eigenen Git-Zugang pushen; Cowork und Claude Code teilen sich
+dasselbe Repository. Cowork bleibt für den halbmonatlichen Auftrag zuständig, Claude Code
+für Umbauten.
 
 ### Läuft das dann wirklich ohne Zutun?
 
@@ -145,17 +155,17 @@ Ohne `github.io` ginge es nur mit einer eigenen Domain. Ein Repository namens
 
 1. **Domain kaufen.** `.ch` verlangt keinen Wohnsitznachweis und kostet bei Schweizer
    Registraren rund 10 bis 15 Franken im Jahr. Vorschläge, in dieser Reihenfolge zu prüfen:
-   `abstimmungsspiegel.ch`, `ratsspiegel.ch`, `stimmspiegel.ch`, `kantonsrat-sh.ch`,
+   `politspiegel.ch`, `ratsspiegel.ch`, `stimmspiegel.ch`, `kantonsrat-sh.ch`,
    `sh-ratsspiegel.ch`. Verfügbarkeit muss beim Registrar geprüft werden, keiner der Namen
    ist hier reserviert. Der Name soll beschreiben, was die Seite zeigt, und keine Wertung
-   enthalten; «Abstimmungsspiegel» ist bereits der Untertitel im Dashboard und passt darum
+   enthalten; «Politspiegel» ist seit dem 3. September 2026 der Name des Dachs und passt darum
    am besten.
 2. **GitHub Pages einrichten.** Öffentliches Repository, Pages aus dem Branch `main`, Ordner
    `/` oder `/docs`. Auf dem Gratisplan funktioniert Pages nur bei öffentlichen
    Repositories.
 3. **Domain verbinden.** Eine Datei `CNAME` mit der blossen Domain ins veröffentlichte
    Verzeichnis, dann beim Registrar setzen:
-   - Apex (`abstimmungsspiegel.ch`): vier A-Records auf `185.199.108.153`,
+   - Apex (`politspiegel.ch`): vier A-Records auf `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `www`: ein CNAME auf `benutzer.github.io`
    Danach in den Pages-Einstellungen **«Enforce HTTPS»** aktivieren, sobald das Zertifikat

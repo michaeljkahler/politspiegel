@@ -302,7 +302,7 @@ Ein Knopf unten rechts öffnet den Bildexport. Vier Motive, alle im Instagram-Ho
 4. **Rangliste Zustimmungsquote** – die ersten acht
 
 Das Bild folgt dem gewählten Hell- oder Dunkelmodus. Wasserzeichen unten:
-«Kantonsrat Schaffhausen · Abstimmungsspiegel» und «Daten: Parlamentsdienste Kanton
+«Kantonsrat Schaffhausen · Kantonsratsspiegel» und «Daten: Parlamentsdienste Kanton
 Schaffhausen».
 
 ---

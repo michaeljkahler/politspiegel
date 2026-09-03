@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Kantonsrat Schaffhausen · Abstimmungsspiegel — Generator
+Kantonsrat Schaffhausen · Kantonsratsspiegel — Generator
 ========================================================
 Baut das vollständige Dashboard im Design vom 01.09.2026 (siehe
 docs/DESIGN_entscheide.md): Seitenleiste, sieben Rubriken, Dunkelmodus,
@@ -798,7 +798,7 @@ SEITE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kantonsrat Schaffhausen · Abstimmungsspiegel</title>
+<title>Kantonsrat Schaffhausen · Kantonsratsspiegel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
@@ -812,7 +812,7 @@ __CSS__
 
   <aside class="side" id="side">
     <div class="brandrow">
-      <div class="brand">Kantonsrat<br>Schaffhausen<span>Abstimmungsspiegel</span></div>
+      <div class="brand">Kantonsrat<br>Schaffhausen<span>Kantonsratsspiegel</span></div>
       <button class="navtoggle" id="navToggle" type="button"
               aria-label="Seitenleiste einklappen" aria-expanded="true">
         <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">

@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Kantonsrat Schaffhausen · Abstimmungsspiegel
+   Kantonsrat Schaffhausen · Kantonsratsspiegel
    Wird von scripts/build3.py eingebettet. Die Daten stehen im Script-Tag
    #daten, die Stimmen kompakt kodiert: J = Ja, N = Nein, E = Enthaltung,
    A = abwesend.
@@ -1278,7 +1278,7 @@
     x.fillText("KANTONSRAT SCHAFFHAUSEN", 72, 96);
     x.fillStyle = ink3;
     x.font = "600 21px 'Public Sans', sans-serif";
-    x.fillText("ABSTIMMUNGSSPIEGEL", 72, 130);
+    x.fillText("KANTONSRATSSPIEGEL", 72, 130);
     x.strokeStyle = ink; x.lineWidth = 3;
     x.beginPath(); x.moveTo(72, 156); x.lineTo(W - 72, 156); x.stroke();
 
@@ -1298,7 +1298,7 @@
     x.beginPath(); x.moveTo(72, H - 132); x.lineTo(W - 72, H - 132); x.stroke();
     x.fillStyle = ink2;
     x.font = "700 22px 'Public Sans', sans-serif";
-    x.fillText("Kantonsrat Schaffhausen · Abstimmungsspiegel", 72, H - 92);
+    x.fillText("Kantonsrat Schaffhausen · Kantonsratsspiegel", 72, H - 92);
     x.fillStyle = ink3;
     x.font = "400 18px 'Public Sans', sans-serif";
     x.fillText("Daten: Parlamentsdienste Kanton Schaffhausen", 72, H - 62);
