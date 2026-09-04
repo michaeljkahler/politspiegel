@@ -41,6 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import teilen  # noqa: E402  Bilder fuer Social Media, gleicher Ordner
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent / "politspiegel"))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402  ein Impressum fuer alle Seiten
+from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 
 WURZEL = Path(__file__).resolve().parent.parent.parent
 SLUG = sys.argv[1] if len(sys.argv) > 1 else "2026-09-27-verkehrsfluss"
@@ -980,6 +981,9 @@ a{color:inherit}
 
 .kopf{border-bottom:1px solid var(--linie);padding:34px 0 26px;margin-bottom:30px}
 .kopf .ober{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+/* Testphasen-Band oben rechts: der Termin rueckt darunter weg (politspiegel/testphase.py). */
+.testphase ~ .wrap .kopf .ober{padding-right:150px}
+@media (max-width:640px){.testphase ~ .wrap .kopf .ober{padding-right:0;padding-top:56px}}
 .marke-seite{font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--text-leise);
   font-family:Archivo,sans-serif;font-weight:600}
 .marke-seite .heim{display:inline-flex;align-items:center;gap:5px;color:inherit;text-decoration:none;
@@ -1926,9 +1930,10 @@ def bauen() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}</style>
+<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}{TESTPHASE_CSS}</style>
 </head>
 <body>
+{testphase_html("oben-rechts")}
 <div class="wrap">
 
 <header class="kopf">

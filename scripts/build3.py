@@ -35,6 +35,8 @@ ASSETS = pathlib.Path(__file__).resolve().parent / "assets"
 OUT = ROOT / "output" / "dashboard.html"
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(ROOT / "politspiegel"))
+from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402  Testphasen-Band, fuer alle Seiten gleich
 from prototyp import (betreff, flach, kuerze, ueberschrift,          # noqa: E402
                       sess_sort_key, de_datum, FRAK_KEY, PARTEI_KEY,
                       frak_key, partei_key, split_titel)
@@ -775,13 +777,14 @@ def bauen():
         "match": matching_payload(d, umkehr),
     }
     daten = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    css = (ASSETS / "dashboard.css").read_text(encoding="utf-8")
+    css = (ASSETS / "dashboard.css").read_text(encoding="utf-8") + TESTPHASE_CSS
     js = (ASSETS / "dashboard.js").read_text(encoding="utf-8")
 
     html = SEITE.replace("__CSS__", css) \
                 .replace("__NAV__", nav_html()) \
                 .replace("__PANELS__", panels_html()) \
                 .replace("__DATEN__", daten) \
+                .replace("__TESTPHASE__", testphase_html("unten-links")) \
                 .replace("__JS__", js)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -885,6 +888,7 @@ __CSS__
 </div>
 
 
+__TESTPHASE__
 <script id="daten" type="application/json">__DATEN__</script>
 <script>
 __JS__

@@ -50,3 +50,7 @@ trägt und ob das Ergebnis fehlt.
 
 Soll eine Abstimmung nicht erscheinen, ohne ihren Ordner anzurühren: Slug in
 `politspiegel.json` unter `ausblenden` eintragen.
+
+`"testphase": true` in `politspiegel.json` blendet auf allen Seiten das
+Eckband «Testphase» ein (`testphase.py`); nach dem Umschalten alle Seiten neu
+bauen (`bauen.py`, `argumente.py` je Abstimmung, `scripts/publish.py`).

@@ -46,6 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
+from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 
 WURZEL = Path(__file__).resolve().parent.parent
 QUELLE = WURZEL / "politspiegel" / "politspiegel.json"
@@ -173,7 +174,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .fuss{margin-top:52px;padding-top:22px;border-top:1px solid var(--linie);
   font-size:13.5px;color:var(--text-leise)}
 .fuss a{text-decoration:underline}
-""" + IMPRESSUM_CSS
+""" + IMPRESSUM_CSS + TESTPHASE_CSS
 
 
 # ---------------------------------------------------------------- Quellen
@@ -383,6 +384,7 @@ def bauen(d, zeilen) -> str:
 <style>{CSS}</style>
 </head>
 <body>
+{testphase_html("oben-rechts")}
 <div class="wrap">
 
 <header class="kopf">
@@ -446,6 +448,7 @@ def listenseite(zeilen) -> str:
 <style>{CSS}</style>
 </head>
 <body>
+{testphase_html("oben-rechts")}
 <div class="wrap">
 
 <header class="kopf">

@@ -154,7 +154,8 @@ body[data-nav="min"] .navtoggle svg{transform:rotate(180deg)}
 .side nav button:hover{background:var(--surface-2); color:var(--ink)}
 .side nav button.on{background:var(--sunken); color:var(--ink)}
 .side nav button.on svg{color:var(--ink); opacity:1}
-.sidefoot{margin-top:auto; display:flex; flex-direction:column; gap:12px; padding-bottom:6px}
+/* Platz unten fuer das Testphasen-Band in der Ecke (politspiegel/testphase.py). */
+.sidefoot{margin-top:auto; display:flex; flex-direction:column; gap:12px; padding-bottom:96px}
 .themetoggle{display:flex; align-items:center; gap:10px; padding:9px 11px;
   border-radius:var(--r-ctl); border:1px solid var(--line); background:var(--surface-2);
   cursor:pointer; font-size:13px; font-weight:600; color:var(--ink-2); white-space:nowrap}

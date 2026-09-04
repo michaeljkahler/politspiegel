@@ -1,31 +1,19 @@
 # Medienmitteilung
 
-Schaffhausen, [Datum einsetzen]
+Schaffhausen, [Datum]
 
-## Politspiegel Schaffhausen: Wie der Kantonsrat abstimmt, und was am Abstimmungssonntag auf dem Zettel steht
+## Neues Portal zeigt, wie der Schaffhauser Kantonsrat abstimmt
 
-Seit September 2026 ist unter politspiegel.sh (michaeljkahler.github.io/politspiegel) ein neues, unabhängiges Angebot für die Schaffhauser Bevölkerung online. Der Politspiegel zeigt, wie die 60 Mitglieder des Kantonsrats abstimmen, und prüft vor kantonalen Volksabstimmungen die Argumente beider Seiten. Er bewertet nicht, er zeigt.
+Wie hat meine Kantonsrätin beim Spitalgesetz gestimmt? Wer war bei der Verkehrsflussinitiative dafür, wer dagegen? Bisher musste man dafür Excel-Tabellen auf sh.ch durchsuchen und im Wortprotokoll nachlesen, worüber überhaupt abgestimmt wurde. Der neue Politspiegel Schaffhausen macht das mit wenigen Klicks sichtbar: alle 1441 namentlichen Abstimmungen seit 2018, für jedes der 60 Ratsmitglieder, nach Fraktion und Thema.
 
-### Zwei Teile
+Das Portal erklärt auch, was ein Ja bedeutet. In 479 Abstimmungen, jeder dritten, stimmt der Rat über einen Gegenantrag ab, und ein Ja in der Tabelle heisst inhaltlich Nein. Der Politspiegel hat jede dieser Abstimmungen am Wortprotokoll geprüft und weist die Richtung aus. Wer will, beantwortet die umstrittensten Sachfragen der laufenden Legislatur selbst und sieht, welche Ratsmitglieder tatsächlich so gestimmt haben. Gezählt werden abgegebene Stimmen, nicht Fragebogen-Antworten.
 
-1. **Kantonsratsspiegel.** Alle 1456 namentlichen Abstimmungen aus 202 Sitzungen seit 2018, aufbereitet nach Ratsmitglied, Fraktion und Thema. Wer wissen will, wie eine Person oder eine Fraktion bei einem Geschäft gestimmt hat, findet es in wenigen Klicks. Mit «Wer stimmt wie ich?» lässt sich die eigene Haltung mit dem tatsächlichen Abstimmungsverhalten der Ratsmitglieder vergleichen. Anders als bei Wahlhilfen zählen hier nicht Fragebogen-Antworten, sondern abgegebene Stimmen.
-2. **Abstimmungsspiegel.** Vor jeder kantonalen Volksabstimmung werden die Argumente der Befürworter und der Gegner erhoben und nach fünf Achsen geprüft: Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit. Bewertet wird der Beleg einer Aussage, nicht die Aussage selbst. Zu jeder Aussage steht eine der Gegenseite. Den Anfang macht die Verkehrsflussinitiative vom 27. September 2026, mit eigenen Auswertungen zu Lärm, Fahrzeiten und Betroffenheit der Gemeinden.
+Zur Abstimmung vom 27. September prüft der Politspiegel zudem die Argumente beider Seiten zur Verkehrsflussinitiative. Je fünf Aussagen des Initiativkomitees und des Bündnisses Pro30 werden nach denselben Fragen beurteilt: Gibt es eine Quelle, stimmen die Zahlen, ist die Ursache belegt, gilt das auch für Schaffhausen? Bewertet wird der Beleg, nicht die Meinung. Eigene Auswertungen aus amtlichen Geodaten zeigen, welche Strassen die Initiative und der Gegenvorschlag erfassen: 60 beziehungsweise 43 Kilometer, an denen rund 20 700 beziehungsweise 14 000 Personen wohnen.
 
-### Grundsätze
+Der Politspiegel wertet nicht und gibt keine Empfehlung ab. Alle Zahlen stammen aus den Protokollen des Kantonsrats, dem Abstimmungsmagazin und den Websites der Komitees; Daten und Methode sind offen einsehbar, die Seiten setzen weder Cookies noch Zählpixel. Nach jeder Ratssitzung erscheinen die Ergebnisse auch auf Instagram, TikTok, Facebook und YouTube (@politspiegel.sh).
 
-1. Keine politische Wertung, keine Abstimmungsempfehlung, keine Links-Rechts-Achse.
-2. Alle Zahlen stammen aus den amtlichen Abstimmungsprotokollen des Kantonsrats (sh.ch), dem Abstimmungsmagazin und den Websites der Komitees. Eigene Auswertungen sind als solche gekennzeichnet.
-3. Daten, Methode und Skripte sind offen auf GitHub einsehbar. Korrekturen werden sichtbar protokolliert.
-4. Die Seiten sammeln keine Daten: kein Konto, kein Cookie, kein Zählpixel.
+Politspiegel Schaffhausen ist ein privates, nichtkommerzielles Projekt von Michael Kahler aus Schaffhausen und unabhängig von Kantonsrat, Verwaltung, Parteien und Komitees.
 
-### Social Media
-
-Der Politspiegel ist auf Instagram, TikTok, Facebook und YouTube als @politspiegel.sh präsent. Nach jeder Kantonsratssitzung erscheinen die Ergebnisse aller namentlichen Abstimmungen als Bildserie und Kurzvideo, vor Abstimmungen die geprüften Argumente.
-
-### Trägerschaft
-
-Der Politspiegel ist ein privates, nichtkommerzielles Projekt von Michael Kahler, Schaffhausen. Es steht in keinem Zusammenhang mit dem Kantonsrat, der Verwaltung oder einer Partei.
-
-**Kontakt:** Michael Kahler, politspiegel.sh@gmail.com
 **Adresse:** https://michaeljkahler.github.io/politspiegel/
-**Bildmaterial:** https://michaeljkahler.github.io/politspiegel/social/profil/ (Profilbild, Titelbilder) und https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-08-24-nachmittag/ (Beispielkarten)
+**Kontakt:** Michael Kahler, politspiegel.sh@gmail.com
+**Bildmaterial:** https://michaeljkahler.github.io/politspiegel/social/profil/ und https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-08-24-nachmittag/, Verwendung mit Quellenangabe «Politspiegel Schaffhausen» frei.

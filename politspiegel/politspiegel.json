@@ -14,5 +14,6 @@
     ],
     "text": "Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.",
     "datenschutz": "Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat."
-  }
+  },
+  "testphase": true
 }

@@ -268,6 +268,14 @@ Satz zum Projekt und den Datenschutzhinweis. `politspiegel/impressum.py` baut
 daraus den Block, den Übersicht, Abstimmungsliste und jede Abstimmungsseite im
 Fuss einbinden; der Kantonsratsspiegel führt dieselben Angaben in seinem Fuss.
 
+### Testphase
+
+`politspiegel.json` trägt `"testphase": true`. Solange das so steht, zeigt
+jede Seite (Übersicht, Abstimmungsliste, Abstimmungsseiten, Kantonsratsspiegel)
+ein rotes Eckband «Testphase»; `politspiegel/testphase.py` liefert HTML und
+CSS, die Ecke ist je Seite gewählt, damit das Band keinen Knopf verdeckt.
+Zum Abschalten den Wert auf `false` setzen und alle Seiten neu bauen.
+
 ### Die alte Adresse
 
 Bis zum Umbau lag der Kantonsratsspiegel unter der blanken Adresse. Er liegt
