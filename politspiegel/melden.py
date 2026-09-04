@@ -55,9 +55,24 @@ ARTEN = [
 ]
 
 
-def melden_html(seite: str = "") -> str:
-    """Knopf und Dialog. «seite» ist eine Bezeichnung der Seite fuer die Mail;
-    die Adresse traegt der Browser selbst ein."""
+KNOPF_SVG = ('<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" '
+             'stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" '
+             'stroke-width="1.6" stroke-linecap="round"/></svg>')
+
+
+def melden_knopf_html(klasse: str = "melden-knopf") -> str:
+    """Ein Ausloeser fuer den Dialog an beliebiger Stelle; jedes Element mit
+    data-melden oeffnet ihn (der Kantonsratsspiegel setzt ihn in die Seitenleiste,
+    weil unten rechts schon der Knopf fuer das Social-Media-Bild liegt)."""
+    return (f'<button type="button" class="{e(klasse)}" data-melden title="Einen Fehler auf dieser Seite melden">'
+            f'{KNOPF_SVG}<span>Fehler melden</span></button>')
+
+
+def melden_html(seite: str = "", schwebend: bool = True) -> str:
+    """Dialog und Skript, mit schwebendem Knopf unten rechts (schwebend=True)
+    oder ohne Knopf, wenn die Seite ihn selbst setzt (melden_knopf_html).
+    «seite» ist eine Bezeichnung der Seite fuer die Mail; die Adresse traegt
+    der Browser selbst ein."""
     k = einstellungen()
     key = k["schluessel"]
     mail = k["mail"] if len(k["mail"]) == 2 else ["", ""]
@@ -67,9 +82,9 @@ def melden_html(seite: str = "") -> str:
              "die Meldung selbst wird als Mail an den Herausgeber weitergeleitet und nicht anderweitig gespeichert."
              if key else
              "Die Meldung öffnet sich als Mail in Ihrem Mailprogramm; abgeschickt wird sie erst dort. Nichts wird auf dieser Seite gespeichert.")
+    knopf = melden_knopf_html() if schwebend else ""
     return f'''
-<button type="button" class="melden-knopf" id="meldenKnopf" title="Einen Fehler auf dieser Seite melden">
-  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Fehler melden</button>
+{knopf}
 <dialog class="melden" id="meldenDialog" aria-labelledby="meldenTitel">
   <form id="meldenForm" method="dialog" novalidate>
     <h2 id="meldenTitel">Fehler melden</h2>
@@ -96,10 +111,13 @@ def melden_html(seite: str = "") -> str:
 <script>
 (function(){{
   var KEY={json.dumps(bool(key))}, MAIL={json.dumps(mail)};
-  var k=document.getElementById("meldenKnopf"), d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
-  if(!k||!d||!f) return;
+  var d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
+  if(!d||!f) return;
   var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos");
-  k.addEventListener("click",function(){{
+  // Jedes Element mit data-melden oeffnet den Dialog, auch spaeter eingefuegtes (Fusszeile je Rubrik)
+  document.addEventListener("click",function(ev){{
+    var a=ev.target.closest && ev.target.closest("[data-melden]"); if(!a) return;
+    ev.preventDefault();
     document.getElementById("meldenSeite").value=location.href;
     st.textContent=""; f.reset();
     if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");

@@ -160,8 +160,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 <body>
 <div class="testphase tp-oben-rechts" aria-hidden="true"><span>Testphase</span></div><p class="testphase-text">Diese Seite ist in der Testphase: die Daten werden noch geprüft. Fehler bitte an die Adresse im Impressum.</p>
 
-<button type="button" class="melden-knopf" id="meldenKnopf" title="Einen Fehler auf dieser Seite melden">
-  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Fehler melden</button>
+<button type="button" class="melden-knopf" data-melden title="Einen Fehler auf dieser Seite melden"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Fehler melden</span></button>
 <dialog class="melden" id="meldenDialog" aria-labelledby="meldenTitel">
   <form id="meldenForm" method="dialog" novalidate>
     <h2 id="meldenTitel">Fehler melden</h2>
@@ -188,10 +187,13 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 <script>
 (function(){
   var KEY=false, MAIL=["politspiegel.sh", "gmail.com"];
-  var k=document.getElementById("meldenKnopf"), d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
-  if(!k||!d||!f) return;
+  var d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
+  if(!d||!f) return;
   var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos");
-  k.addEventListener("click",function(){
+  // Jedes Element mit data-melden oeffnet den Dialog, auch spaeter eingefuegtes (Fusszeile je Rubrik)
+  document.addEventListener("click",function(ev){
+    var a=ev.target.closest && ev.target.closest("[data-melden]"); if(!a) return;
+    ev.preventDefault();
     document.getElementById("meldenSeite").value=location.href;
     st.textContent=""; f.reset();
     if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");

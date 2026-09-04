@@ -1,0 +1,292 @@
+{
+ "quelle": "ASTRA, Strassenverkehrsunfälle mit Personenschaden (data.geo.admin.ch, Stand Februar 2026), Unfälle mit Fussgängerbeteiligung je Unfalljahr",
+ "stand": "2026-09-04",
+ "jahre": [
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "schweiz": [
+  2255,
+  2184,
+  2214,
+  2129,
+  2141,
+  2150,
+  2160,
+  2118,
+  2119,
+  1667,
+  1815,
+  1939,
+  2111,
+  1908,
+  1972
+ ],
+ "schweiz_alle_unfaelle": [
+  18990,
+  18148,
+  17473,
+  17803,
+  17736,
+  17577,
+  17799,
+  18033,
+  17761,
+  16897,
+  17436,
+  18396,
+  18254,
+  17432,
+  18026
+ ],
+ "kanton_sh": [
+  22,
+  28,
+  21,
+  23,
+  18,
+  26,
+  17,
+  19,
+  26,
+  18,
+  14,
+  13,
+  10,
+  32,
+  25
+ ],
+ "kanton_sh_schwere": {
+  "2011": {
+   "Unfall mit Schwerverletzten": 4,
+   "Unfall mit Leichtverletzten": 18
+  },
+  "2012": {
+   "Unfall mit Leichtverletzten": 21,
+   "Unfall mit Schwerverletzten": 7
+  },
+  "2013": {
+   "Unfall mit Leichtverletzten": 14,
+   "Unfall mit Schwerverletzten": 6,
+   "Unfall mit Getöteten": 1
+  },
+  "2014": {
+   "Unfall mit Leichtverletzten": 13,
+   "Unfall mit Schwerverletzten": 10
+  },
+  "2015": {
+   "Unfall mit Leichtverletzten": 14,
+   "Unfall mit Schwerverletzten": 4
+  },
+  "2016": {
+   "Unfall mit Schwerverletzten": 9,
+   "Unfall mit Leichtverletzten": 17
+  },
+  "2017": {
+   "Unfall mit Leichtverletzten": 12,
+   "Unfall mit Schwerverletzten": 4,
+   "Unfall mit Getöteten": 1
+  },
+  "2018": {
+   "Unfall mit Schwerverletzten": 9,
+   "Unfall mit Leichtverletzten": 10
+  },
+  "2019": {
+   "Unfall mit Leichtverletzten": 15,
+   "Unfall mit Schwerverletzten": 11
+  },
+  "2020": {
+   "Unfall mit Schwerverletzten": 5,
+   "Unfall mit Leichtverletzten": 13
+  },
+  "2021": {
+   "Unfall mit Schwerverletzten": 3,
+   "Unfall mit Leichtverletzten": 10,
+   "Unfall mit Getöteten": 1
+  },
+  "2022": {
+   "Unfall mit Leichtverletzten": 10,
+   "Unfall mit Schwerverletzten": 3
+  },
+  "2023": {
+   "Unfall mit Schwerverletzten": 3,
+   "Unfall mit Leichtverletzten": 7
+  },
+  "2024": {
+   "Unfall mit Leichtverletzten": 21,
+   "Unfall mit Schwerverletzten": 11
+  },
+  "2025": {
+   "Unfall mit Schwerverletzten": 9,
+   "Unfall mit Leichtverletzten": 16
+  }
+ },
+ "staedte": {
+  "Zürich": [
+   229,
+   214,
+   223,
+   206,
+   231,
+   223,
+   247,
+   221,
+   222,
+   170,
+   156,
+   220,
+   223,
+   194,
+   218
+  ],
+  "Genf": [
+   83,
+   103,
+   116,
+   126,
+   125,
+   114,
+   108,
+   103,
+   97,
+   57,
+   77,
+   81,
+   99,
+   81,
+   77
+  ],
+  "Basel": [
+   71,
+   59,
+   69,
+   73,
+   61,
+   85,
+   59,
+   56,
+   60,
+   37,
+   46,
+   49,
+   61,
+   49,
+   39
+  ],
+  "Lausanne": [
+   75,
+   79,
+   72,
+   53,
+   57,
+   69,
+   47,
+   57,
+   50,
+   48,
+   68,
+   68,
+   58,
+   51,
+   61
+  ],
+  "Bern": [
+   44,
+   56,
+   54,
+   54,
+   44,
+   48,
+   41,
+   42,
+   52,
+   39,
+   37,
+   32,
+   35,
+   33,
+   41
+  ],
+  "Winterthur": [
+   38,
+   44,
+   20,
+   32,
+   29,
+   28,
+   36,
+   31,
+   33,
+   35,
+   29,
+   37,
+   44,
+   34,
+   46
+  ],
+  "Luzern": [
+   48,
+   34,
+   47,
+   39,
+   46,
+   42,
+   39,
+   34,
+   34,
+   34,
+   35,
+   31,
+   34,
+   29,
+   33
+  ],
+  "St. Gallen": [
+   37,
+   47,
+   33,
+   37,
+   38,
+   33,
+   35,
+   35,
+   33,
+   23,
+   26,
+   38,
+   32,
+   43,
+   33
+  ],
+  "Schaffhausen": [
+   12,
+   17,
+   9,
+   19,
+   11,
+   19,
+   8,
+   9,
+   18,
+   7,
+   8,
+   9,
+   6,
+   16,
+   8
+  ]
+ }
+}

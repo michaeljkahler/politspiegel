@@ -37,7 +37,7 @@ OUT = ROOT / "output" / "dashboard.html"
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 sys.path.insert(0, str(ROOT / "politspiegel"))
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402  Testphasen-Band, fuer alle Seiten gleich
-from melden import MELDEN_CSS, melden_html  # noqa: E402  «Fehler melden», fuer alle Seiten gleich
+from melden import MELDEN_CSS, melden_html, melden_knopf_html  # noqa: E402  «Fehler melden», fuer alle Seiten gleich
 from prototyp import (betreff, flach, kuerze, ueberschrift,          # noqa: E402
                       sess_sort_key, de_datum, FRAK_KEY, PARTEI_KEY,
                       frak_key, partei_key, split_titel)
@@ -818,7 +818,8 @@ def bauen():
                 .replace("__NAV__", nav_html()) \
                 .replace("__PANELS__", panels_html()) \
                 .replace("__DATEN__", daten) \
-                .replace("__TESTPHASE__", testphase_html("unten-links") + melden_html("Kantonsratsspiegel")) \
+                .replace("__TESTPHASE__", testphase_html("unten-links") + melden_html("Kantonsratsspiegel", schwebend=False)) \
+                .replace("__MELDEN_KNOPF__", melden_knopf_html("themetoggle melden-leiste")) \
                 .replace("__JS__", js)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -868,6 +869,7 @@ __CSS__
         <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" id="themeIcon"></svg>
         <span id="themeLabel">Dunkelmodus</span>
       </button>
+      __MELDEN_KNOPF__
       <div class="stand" id="stand"></div>
     </div>
   </aside>

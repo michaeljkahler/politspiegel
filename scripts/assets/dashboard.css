@@ -160,6 +160,11 @@ body[data-nav="min"] .navtoggle svg{transform:rotate(180deg)}
   border-radius:var(--r-ctl); border:1px solid var(--line); background:var(--surface-2);
   cursor:pointer; font-size:13px; font-weight:600; color:var(--ink-2); white-space:nowrap}
 .themetoggle:hover{border-color:var(--ink-3); color:var(--ink)}
+.melden-leiste svg{flex:0 0 auto}
+body[data-nav="min"] .melden-leiste span{display:none}
+body[data-nav="min"] .melden-leiste{justify-content:center; padding:10px 0}
+.foot-melden{margin:0 0 10px}
+.foot-melden a{font-weight:600; color:var(--ink-2)}
 .stand{font-size:11.5px; color:var(--ink-3); line-height:1.45; padding:0 11px}
 
 body[data-nav="min"] .side{padding:18px 9px 16px}

@@ -451,7 +451,8 @@
     var prot = s && s.pu ? (s.pf
       ? " " + protokollFehlt(s) + '; Traktanden und Abstimmungsergebnisse auf der <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite von sh.ch</a>.'
       : ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Wortprotokoll</a>.') : "";
-    return '<footer class="foot"><b>Datenquelle:</b> Kanton Schaffhausen, namentliche ' +
+    return '<footer class="foot"><p class="foot-melden"><a href="#" data-melden>Fehler auf dieser Seite melden &rarr;</a></p>' +
+      "<b>Datenquelle:</b> Kanton Schaffhausen, namentliche " +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
       " Aufbereitung ohne Gewähr." +
 

@@ -191,6 +191,11 @@ body[data-nav="min"] .navtoggle svg{transform:rotate(180deg)}
   border-radius:var(--r-ctl); border:1px solid var(--line); background:var(--surface-2);
   cursor:pointer; font-size:13px; font-weight:600; color:var(--ink-2); white-space:nowrap}
 .themetoggle:hover{border-color:var(--ink-3); color:var(--ink)}
+.melden-leiste svg{flex:0 0 auto}
+body[data-nav="min"] .melden-leiste span{display:none}
+body[data-nav="min"] .melden-leiste{justify-content:center; padding:10px 0}
+.foot-melden{margin:0 0 10px}
+.foot-melden a{font-weight:600; color:var(--ink-2)}
 .stand{font-size:11.5px; color:var(--ink-3); line-height:1.45; padding:0 11px}
 
 body[data-nav="min"] .side{padding:18px 9px 16px}
@@ -873,6 +878,7 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
         <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" id="themeIcon"></svg>
         <span id="themeLabel">Dunkelmodus</span>
       </button>
+      <button type="button" class="themetoggle melden-leiste" data-melden title="Einen Fehler auf dieser Seite melden"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Fehler melden</span></button>
       <div class="stand" id="stand"></div>
     </div>
   </aside>
@@ -928,8 +934,7 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 
 
 <div class="testphase tp-unten-links" aria-hidden="true"><span>Testphase</span></div><p class="testphase-text">Diese Seite ist in der Testphase: die Daten werden noch geprüft. Fehler bitte an die Adresse im Impressum.</p>
-<button type="button" class="melden-knopf" id="meldenKnopf" title="Einen Fehler auf dieser Seite melden">
-  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2.5l6 11H2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M8 6.5v3.2M8 11.6v.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Fehler melden</button>
+
 <dialog class="melden" id="meldenDialog" aria-labelledby="meldenTitel">
   <form id="meldenForm" method="dialog" novalidate>
     <h2 id="meldenTitel">Fehler melden</h2>
@@ -956,10 +961,13 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 <script>
 (function(){
   var KEY=false, MAIL=["politspiegel.sh", "gmail.com"];
-  var k=document.getElementById("meldenKnopf"), d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
-  if(!k||!d||!f) return;
+  var d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
+  if(!d||!f) return;
   var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos");
-  k.addEventListener("click",function(){
+  // Jedes Element mit data-melden oeffnet den Dialog, auch spaeter eingefuegtes (Fusszeile je Rubrik)
+  document.addEventListener("click",function(ev){
+    var a=ev.target.closest && ev.target.closest("[data-melden]"); if(!a) return;
+    ev.preventDefault();
     document.getElementById("meldenSeite").value=location.href;
     st.textContent=""; f.reset();
     if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");
@@ -1448,7 +1456,8 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
     var prot = s && s.pu ? (s.pf
       ? " " + protokollFehlt(s) + '; Traktanden und Abstimmungsergebnisse auf der <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite von sh.ch</a>.'
       : ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Wortprotokoll</a>.') : "";
-    return '<footer class="foot"><b>Datenquelle:</b> Kanton Schaffhausen, namentliche ' +
+    return '<footer class="foot"><p class="foot-melden"><a href="#" data-melden>Fehler auf dieser Seite melden &rarr;</a></p>' +
+      "<b>Datenquelle:</b> Kanton Schaffhausen, namentliche " +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
       " Aufbereitung ohne Gewähr." +
 
