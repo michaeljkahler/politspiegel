@@ -50,7 +50,7 @@ Noch offen: die Motive aus teilen.py werden im Browser gezeichnet. Für Metricoo
 
 1. `python3 scripts/social.py` erzeugt Bilder, Video und `posts.json` für die neueste Sitzung.
 2. Commit und Push nach GitHub, damit die Dateien unter `https://michaeljkahler.github.io/politspiegel/social/…` öffentlich sind. Ein bis zwei Minuten warten.
-3. Claude legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true), Termin nach «beste Zeit» je Netzwerk.
+3. Claude legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true). Sendezeiten fest: 09:00, ein zweiter Beitrag am selben Tag 16:00 (Vorgabe vom 4. September 2026). Kantonsrat: Karussell Teil 1 um 09:00, Reel um 16:00, weitere Teile am Folgetag 09:00.
 4. Michael prüft in Metricool oder im Chat und gibt frei. Claude setzt draft auf false.
 5. `posts.json` wird auf `status: freigegeben` gesetzt, damit nichts doppelt angelegt wird.
 

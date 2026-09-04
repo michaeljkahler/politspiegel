@@ -2,7 +2,7 @@
  "slug": "2026-09-27-verkehrsfluss",
  "vorlage": "Verkehrsflussinitiative",
  "abstimmung": "2026-09-27",
- "status": "entwurf_in_metricool",
+ "status": "freigegeben",
  "bilder": [
   {
    "datei": "vorlage.png",
@@ -535,7 +535,7 @@
    "metricool": {
     "id": 370765798,
     "uuid": "-5766243968222019486",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -563,7 +563,7 @@
    "metricool": {
     "id": 370765847,
     "uuid": "-1192247261613175555",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -591,7 +591,7 @@
    "metricool": {
     "id": 370765880,
     "uuid": "-6880601036237943753",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -619,7 +619,7 @@
    "metricool": {
     "id": 370765941,
     "uuid": "-4036561831005371882",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -647,7 +647,7 @@
    "metricool": {
     "id": 370766091,
     "uuid": "7942033449760411386",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -675,7 +675,7 @@
    "metricool": {
     "id": 370766239,
     "uuid": "2710025088287524117",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -703,7 +703,7 @@
    "metricool": {
     "id": 370766386,
     "uuid": "3794596972598805104",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -731,7 +731,7 @@
    "metricool": {
     "id": 370766434,
     "uuid": "8083664154096910698",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -766,7 +766,7 @@
    "metricool": {
     "id": 370766743,
     "uuid": "-2547014774047947338",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -801,7 +801,7 @@
    "metricool": {
     "id": 370766806,
     "uuid": "6091782877072933877",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -829,7 +829,7 @@
    "metricool": {
     "id": 370766827,
     "uuid": "7761235619531868825",
-    "draft": true
+    "draft": false
    }
   }
  ]
