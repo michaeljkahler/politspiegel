@@ -96,8 +96,11 @@ für Umbauten.
 
 Ja, mit zwei Einschränkungen, die man kennen sollte.
 
-Der wiederkehrende Auftrag hat einen neuen Teil D bekommen, der nach jedem Lauf
-`publish.py --apply` ausführt. Er läuft am 1. und 15. jedes Monats. Gab es nichts Neues,
+Der wiederkehrende Auftrag `kantonsrat-dashboard-update` führt nach jedem Lauf
+`publish.py --apply` aus. Seit dem 4. September 2026 läuft er dienstags um 8 Uhr, am
+Morgen nach einem möglichen Sitzungsmontag; er holt dann auch die Livestream-Zeitmarken
+(`youtube.py`), prüft die Verweise (`linkcheck.py`) und liefert nach einer neuen Sitzung
+den WhatsApp-Beitrag (`whatsapp_text.py`) zum Einfügen in den Kanal. Gab es nichts Neues,
 meldet das Skript das und pusht nichts.
 
 - **Beim ersten Lauf** müssen die Werkzeuge einmal freigegeben werden. Danach merkt sich der
