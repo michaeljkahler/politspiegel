@@ -2,7 +2,7 @@
  "slug": "2026-09-27-verkehrsfluss",
  "vorlage": "Verkehrsflussinitiative",
  "abstimmung": "2026-09-27",
- "status": "freigegeben",
+ "status": "freigegeben_bis_reels",
  "bilder": [
   {
    "datei": "vorlage.png",
@@ -13,506 +13,518 @@
   {
    "datei": "gegen.png",
    "motiv": "gegen",
-   "stufe": 0.94,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-0.png",
-   "motiv": "paar-0",
-   "stufe": 0.88,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-1.png",
-   "motiv": "paar-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-2.png",
-   "motiv": "paar-2",
-   "stufe": 0.82,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-3.png",
-   "motiv": "paar-3",
-   "stufe": 0.82,
-   "ueberlauf": false
-  },
-  {
-   "datei": "paar-4.png",
-   "motiv": "paar-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "kantonsrat.png",
    "motiv": "kantonsrat",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-1.png",
-   "motiv": "karussell-pro-1-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-2.png",
-   "motiv": "karussell-pro-1-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-3.png",
-   "motiv": "karussell-pro-1-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-4.png",
-   "motiv": "karussell-pro-1-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-5.png",
-   "motiv": "karussell-pro-1-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-6.png",
-   "motiv": "karussell-pro-1-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-7.png",
-   "motiv": "karussell-pro-1-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-1-folie-8.png",
-   "motiv": "karussell-pro-1-folie-8",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-1.png",
-   "motiv": "karussell-pro-2-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-2.png",
-   "motiv": "karussell-pro-2-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-3.png",
-   "motiv": "karussell-pro-2-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-4.png",
-   "motiv": "karussell-pro-2-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-5.png",
-   "motiv": "karussell-pro-2-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-6.png",
-   "motiv": "karussell-pro-2-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-7.png",
-   "motiv": "karussell-pro-2-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-8.png",
-   "motiv": "karussell-pro-2-folie-8",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-9.png",
-   "motiv": "karussell-pro-2-folie-9",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-10.png",
-   "motiv": "karussell-pro-2-folie-10",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-2-folie-11.png",
-   "motiv": "karussell-pro-2-folie-11",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-1.png",
-   "motiv": "karussell-pro-3-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-2.png",
-   "motiv": "karussell-pro-3-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-3.png",
-   "motiv": "karussell-pro-3-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-4.png",
-   "motiv": "karussell-pro-3-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-5.png",
-   "motiv": "karussell-pro-3-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-6.png",
-   "motiv": "karussell-pro-3-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-3-folie-7.png",
-   "motiv": "karussell-pro-3-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-1.png",
-   "motiv": "karussell-pro-4-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-2.png",
-   "motiv": "karussell-pro-4-folie-2",
-   "stufe": 0.94,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-3.png",
-   "motiv": "karussell-pro-4-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-4.png",
-   "motiv": "karussell-pro-4-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-5.png",
-   "motiv": "karussell-pro-4-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-6.png",
-   "motiv": "karussell-pro-4-folie-6",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-4-folie-7.png",
-   "motiv": "karussell-pro-4-folie-7",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-1.png",
-   "motiv": "karussell-pro-5-folie-1",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-2.png",
-   "motiv": "karussell-pro-5-folie-2",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-3.png",
-   "motiv": "karussell-pro-5-folie-3",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-4.png",
-   "motiv": "karussell-pro-5-folie-4",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-5.png",
-   "motiv": "karussell-pro-5-folie-5",
-   "stufe": 1,
-   "ueberlauf": false
-  },
-  {
-   "datei": "karussell-pro-5-folie-6.png",
-   "motiv": "karussell-pro-5-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-1.png",
    "motiv": "karussell-contra-1-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-2.png",
    "motiv": "karussell-contra-1-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-3.png",
    "motiv": "karussell-contra-1-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-4.png",
    "motiv": "karussell-contra-1-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-5.png",
    "motiv": "karussell-contra-1-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-6.png",
    "motiv": "karussell-contra-1-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-7.png",
    "motiv": "karussell-contra-1-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-1-folie-8.png",
    "motiv": "karussell-contra-1-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-1.png",
    "motiv": "karussell-contra-2-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-2.png",
    "motiv": "karussell-contra-2-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-3.png",
    "motiv": "karussell-contra-2-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-4.png",
    "motiv": "karussell-contra-2-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-5.png",
    "motiv": "karussell-contra-2-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-6.png",
    "motiv": "karussell-contra-2-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-7.png",
    "motiv": "karussell-contra-2-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-2-folie-8.png",
    "motiv": "karussell-contra-2-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-1.png",
    "motiv": "karussell-contra-3-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-2.png",
    "motiv": "karussell-contra-3-folie-2",
-   "stufe": 0.94,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-3.png",
    "motiv": "karussell-contra-3-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-4.png",
    "motiv": "karussell-contra-3-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-5.png",
    "motiv": "karussell-contra-3-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-6.png",
    "motiv": "karussell-contra-3-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-3-folie-7.png",
    "motiv": "karussell-contra-3-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-1.png",
    "motiv": "karussell-contra-4-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-2.png",
    "motiv": "karussell-contra-4-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-3.png",
    "motiv": "karussell-contra-4-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-4.png",
    "motiv": "karussell-contra-4-folie-4",
-   "stufe": 0.94,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-5.png",
    "motiv": "karussell-contra-4-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-6.png",
    "motiv": "karussell-contra-4-folie-6",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-7.png",
    "motiv": "karussell-contra-4-folie-7",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-4-folie-8.png",
    "motiv": "karussell-contra-4-folie-8",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-1.png",
    "motiv": "karussell-contra-5-folie-1",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-2.png",
    "motiv": "karussell-contra-5-folie-2",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-3.png",
    "motiv": "karussell-contra-5-folie-3",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-4.png",
    "motiv": "karussell-contra-5-folie-4",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-5.png",
    "motiv": "karussell-contra-5-folie-5",
-   "stufe": 1,
+   "stufe": null,
    "ueberlauf": false
   },
   {
    "datei": "karussell-contra-5-folie-6.png",
    "motiv": "karussell-contra-5-folie-6",
-   "stufe": 1,
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-1.png",
+   "motiv": "karussell-pro-1-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-2.png",
+   "motiv": "karussell-pro-1-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-3.png",
+   "motiv": "karussell-pro-1-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-4.png",
+   "motiv": "karussell-pro-1-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-5.png",
+   "motiv": "karussell-pro-1-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-6.png",
+   "motiv": "karussell-pro-1-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-7.png",
+   "motiv": "karussell-pro-1-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-1-folie-8.png",
+   "motiv": "karussell-pro-1-folie-8",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-1.png",
+   "motiv": "karussell-pro-2-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-10.png",
+   "motiv": "karussell-pro-2-folie-10",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-11.png",
+   "motiv": "karussell-pro-2-folie-11",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-2.png",
+   "motiv": "karussell-pro-2-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-3.png",
+   "motiv": "karussell-pro-2-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-4.png",
+   "motiv": "karussell-pro-2-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-5.png",
+   "motiv": "karussell-pro-2-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-6.png",
+   "motiv": "karussell-pro-2-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-7.png",
+   "motiv": "karussell-pro-2-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-8.png",
+   "motiv": "karussell-pro-2-folie-8",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-2-folie-9.png",
+   "motiv": "karussell-pro-2-folie-9",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-1.png",
+   "motiv": "karussell-pro-3-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-2.png",
+   "motiv": "karussell-pro-3-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-3.png",
+   "motiv": "karussell-pro-3-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-4.png",
+   "motiv": "karussell-pro-3-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-5.png",
+   "motiv": "karussell-pro-3-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-6.png",
+   "motiv": "karussell-pro-3-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-3-folie-7.png",
+   "motiv": "karussell-pro-3-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-1.png",
+   "motiv": "karussell-pro-4-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-2.png",
+   "motiv": "karussell-pro-4-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-3.png",
+   "motiv": "karussell-pro-4-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-4.png",
+   "motiv": "karussell-pro-4-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-5.png",
+   "motiv": "karussell-pro-4-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-6.png",
+   "motiv": "karussell-pro-4-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-4-folie-7.png",
+   "motiv": "karussell-pro-4-folie-7",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-1.png",
+   "motiv": "karussell-pro-5-folie-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-2.png",
+   "motiv": "karussell-pro-5-folie-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-3.png",
+   "motiv": "karussell-pro-5-folie-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-4.png",
+   "motiv": "karussell-pro-5-folie-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-5.png",
+   "motiv": "karussell-pro-5-folie-5",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "karussell-pro-5-folie-6.png",
+   "motiv": "karussell-pro-5-folie-6",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-0.png",
+   "motiv": "paar-0",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-1.png",
+   "motiv": "paar-1",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-2.png",
+   "motiv": "paar-2",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-3.png",
+   "motiv": "paar-3",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "paar-4.png",
+   "motiv": "paar-4",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "reel-ueberflug.png",
+   "motiv": "reel-ueberflug",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "reel-zeitstrahl.png",
+   "motiv": "reel-zeitstrahl",
+   "stufe": null,
    "ueberlauf": false
   }
  ],
  "posts": [
   {
    "art": "karussell",
-   "termin": "2026-09-05T12:00",
+   "termin": "2026-09-05T09:00",
    "text": "Kanton Schaffhausen, Abstimmung vom 27. September 2026: Verkehrsflussinitiative.\n\n1. Worum es geht: Die Initiative will im kantonalen Strassengesetz festschreiben, dass auf Kantonsstrassen innerorts, die auch vom öffentlichen Verkehr genutzt werden, generell Tempo 50 gilt und der Verkehrsfluss weder durch bauliche Massnahmen noch durch Verkehrsanordnungen verlangsamt werden darf. Ausnahmen wären nur auf kurzen Strecken und nur mit Festlegung im kantonalen Strassenrichtplan möglich. Der Kantonsrat lehnt die Initiative ab und stellt ihr einen Gegenvorschlag gegenüber, der dasselbe Grundanliegen aufnimmt, aber auf das Bauverbot und den Richtplanvorbehalt verzichtet.\n2. Bei einem Ja: Neuer Art. 12 Abs. 3 und 4 Strassengesetz: generell Tempo 50 auf diesen Strassen, kein Verlangsamen durch Bau oder Anordnung, Ausnahmen nur auf kurzen Strecken und nur mit Eintrag im kantonalen Strassenrichtplan, den der Kantonsrat beschliesst.\n3. Bei einem Nein: Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag käme in Art. 12 Abs. 3 der Satz: «Auf verkehrsorientierten Kantonsstrassen innerorts gilt grundsätzlich als allgemeine Höchstgeschwindigkeit 50 km/h. Der Verkehrsablauf darf nicht behindert werden.»\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/vorlage.png"
@@ -540,7 +552,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-08T12:00",
+   "termin": "2026-09-08T09:00",
    "text": "Verkehrsflussinitiative: Wie der Kantonsrat Schaffhausen gestimmt hat, Sitzung vom 19. Mai 2025. Namentliche Abstimmungen, gezählt aus dem Wortprotokoll.\n\n1. 2. Satz von Art. 12. Abs. 4 (neu) der Verkehrsflussinitiative soll für ungültig erklärt werden: 36 Ja, 17 Nein\n2. Die Verkehrsflussinitiative sei abzulehnen und den Stimmberechtigten des Kantons Schaffhausen mit dem Antrag auf Ablehnung zu unterbreiten: 35 Ja, 20 Nein\n3. Der Verkehrsflussinitiative sei ein Gegenvorschlag gegenüberzustellen: 34 Ja, 20 Nein\n4. Der Gegenvorschlag sei zwecks Überarbeitung an die vorberatende Kommission (BVE) zurückzuweisen: 18 Ja, 34 Nein\n5. Zustimmung zu Gegenvorschlag inkl. von der BVE beschlossene Anpassungen: 39 Ja, 16 Nein\n6. Bei Stichfrage sei dem Gegenvorschlag der Vorzug zu geben: 37 Ja, 17 Nein\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/kantonsrat.png"
@@ -568,7 +580,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-11T12:00",
+   "termin": "2026-09-11T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 1 von 5.\n\n1. Initiativkomitee: «Temporeduktionen führen zu längeren Fahrzeiten für Busse, Krankenwagen, Feuerwehr und Polizei, die nicht behindert werden dürfen.» (5 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «In der Schweiz sterben immer mehr Menschen im Strassenverkehr: +34 % innert 5 Jahren. Das ist die höchste Zunahme in ganz Europa. In Schaffhausen hat die Zahl der verletzten Fussgänger besonders stark zugenommen.» (6 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-0.png"
@@ -596,7 +608,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-13T12:00",
+   "termin": "2026-09-13T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 2 von 5.\n\n1. Initiativkomitee: «Zusätzlich verteuert Tempo 30 den öffentlichen Verkehr. Der ÖV wird unattraktiv und teurer, wenn mehr Busse und Personal eingesetzt werden müssen.» (6 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «Zusätzlich will die Initiative Sicherheitselemente wie Mittelschutzinseln bei Fussgängerstreifen oder Ortseingängen abschaffen.» (13 von 16 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-1.png"
@@ -624,7 +636,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-15T12:00",
+   "termin": "2026-09-15T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 3 von 5.\n\n1. Initiativkomitee: «Die Verkehrsflussinitiative trägt dazu bei, den Verkehr auf die Hauptverkehrsachsen zu lenken und den Schleichverkehr in den Quartieren zu reduzieren.» (7 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «Mit der Initiative wird ein Eintrag in den Richtplan vorausgesetzt. Der Richtplan wird jedoch nur alle 10 Jahre überarbeitet und muss vom Kantonsrat genehmigt werden. Das bedeutet: Die Höchstgeschwindigkeit ist künftig keine fachliche Entscheidung mehr, die aufgrund von Sicherheitskriterien oder Lärmschutz getroffen wird.» (14 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-2.png"
@@ -652,7 +664,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-17T12:00",
+   "termin": "2026-09-17T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 4 von 5.\n\n1. Initiativkomitee: «Der Gegenvorschlag verlangt, dass Tempo 50 «grundsätzlich» eingehalten wird, während die Initiative den Begriff «generell» verwendet. «Grundsätzlich» bedeutet: im Prinzip ja, im Einzelfall jedoch mit Ausnahmen. «Generell» bedeutet: allgemein gültig, ohne Ausnahmen bereits einzukalkulieren.» (7 von 12 Punkten für den Beleg)\n2. Bündnis Pro30: «Tausende Schaffhauserinnen und Schaffhauser sind in ihrer Wohnung schädlichem Verkehrslärm ausgesetzt. Grenzwerte werden heute nicht eingehalten.» (12 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-3.png"
@@ -680,7 +692,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-19T12:00",
+   "termin": "2026-09-19T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 5 von 5.\n\n1. Initiativkomitee: «Flächendeckendes Tempo 30 ist nicht zielführend und muss gestoppt werden. Tempo 30 macht Sinn in Wohnquartieren, nicht auf Hauptverkehrsachsen.» (Werturteil, ohne Note)\n2. Bündnis Pro30: «Wer an einer Kantonsstrasse wohnt, will sein Fenster öffnen können. Will, dass Kinder draussen spielen. Will nicht, dass Lärm und Tempo den Alltag bestimmen.» (Werturteil, ohne Note)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-4.png"
@@ -708,7 +720,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-21T12:00",
+   "termin": "2026-09-21T09:00",
    "text": "Verkehrsflussinitiative: Wie gut sind die Argumente belegt?\n\n1. Mittelwert je Achse über die geprüften Aussagen, 0 bis 4 Punkte.\n2. Gemessen wird der Beleg, nicht die Richtigkeit.\n3. Werturteile sind ausgenommen.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/gegen.png"
@@ -736,7 +748,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-23T12:00",
+   "termin": "2026-09-23T09:00",
    "text": "Verkehrsflussinitiative: eine Aussage von Initiativkomitee im Detail.\n\n«Temporeduktionen führen zu längeren Fahrzeiten für Busse, Krankenwagen, Feuerwehr und Polizei, die nicht behindert werden dürfen.»\n\n1. Was zutrifft und was fehlt, mit eigener Auswertung.\n2. Die letzte Folie zeigt die Aussage der Gegenseite mit gleicher Nummer.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/karussell-pro-1-folie-1.png",
@@ -771,7 +783,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-24T12:00",
+   "termin": "2026-09-24T09:00",
    "text": "Verkehrsflussinitiative: eine Aussage von Bündnis Pro30 im Detail.\n\n«In der Schweiz sterben immer mehr Menschen im Strassenverkehr: +34 % innert 5 Jahren. Das ist die höchste Zunahme in ganz Europa. In Schaffhausen hat die Zahl der verletzten Fussgänger besonders stark zugenommen.»\n\n1. Was zutrifft und was fehlt, mit eigener Auswertung.\n2. Die letzte Folie zeigt die Aussage der Gegenseite mit gleicher Nummer.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/karussell-contra-1-folie-1.png",
@@ -806,7 +818,7 @@
   },
   {
    "art": "karussell",
-   "termin": "2026-09-25T12:00",
+   "termin": "2026-09-25T09:00",
    "text": "Am Sonntag, 27. September 2026: Verkehrsflussinitiative.\n\n1. Alle Argumente beider Seiten, geprüft nach fünf Achsen.\n2. Wie der Kantonsrat gestimmt hat.\n3. Eigene Auswertungen und Karten.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/vorlage.png"
@@ -830,6 +842,94 @@
     "id": 370766827,
     "uuid": "7761235619531868825",
     "draft": false
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "termin": "2026-09-14T16:00",
+   "text": "Verkehrsflussinitiative: Überflug über die betroffenen Kantonsstrassen.\n\n1. Blau: Geltungsbereich der Initiative.\n2. Rot: Geltungsbereich des Gegenvorschlags.\n3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\nKarte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-ueberflug.mp4"
+   ],
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Verkehrsflussinitiative: Welche Strassen die Vorlage erfasst",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "termin": "2026-09-14T16:00",
+   "text": "Verkehrsflussinitiative: Überflug über die betroffenen Kantonsstrassen.\n\n1. Blau: Geltungsbereich der Initiative.\n2. Rot: Geltungsbereich des Gegenvorschlags.\n3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\nKarte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-ueberflug.mp4"
+   ],
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Verkehrsflussinitiative: Welche Strassen die Vorlage erfasst"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "termin": "2026-09-18T16:00",
+   "text": "Verkehrsflussinitiative: Was die Unfallstatistik des Bundes zeigt.\n\n1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
+   ],
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Verkehrsflussinitiative: Fussgängerunfälle 2011 bis 2025",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "termin": "2026-09-18T16:00",
+   "text": "Verkehrsflussinitiative: Was die Unfallstatistik des Bundes zeigt.\n\n1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
+   ],
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Verkehrsflussinitiative: Fussgängerunfälle 2011 bis 2025"
    }
   }
  ]

@@ -193,6 +193,36 @@ def serie(slug, daten, bilder, ordner):
          "2. Wie der Kantonsrat gestimmt hat.\n"
          "3. Eigene Auswertungen und Karten." + fuss, t(2))
 
+    # Datenreels (scripts/datenreel.py), falls vorhanden: je ein Beitrag für
+    # Instagram/Facebook/YouTube und einer für TikTok, in der letzten Woche.
+    reels = {
+        "reel-ueberflug.mp4": (t(13), "Welche Strassen die Vorlage erfasst",
+                               f"{v['titel']}: Überflug über die betroffenen Kantonsstrassen.\n\n"
+                               "1. Blau: Geltungsbereich der Initiative.\n"
+                               "2. Rot: Geltungsbereich des Gegenvorschlags.\n"
+                               "3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\n"
+                               "Karte © swisstopo."),
+        "reel-zeitstrahl.mp4": (t(9), "Fussgängerunfälle 2011 bis 2025",
+                                f"{v['titel']}: Was die Unfallstatistik des Bundes zeigt.\n\n"
+                                "1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\n"
+                                "Unfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA."),
+    }
+    for datei, (wann, titel, text) in reels.items():
+        if not (ordner / datei).exists():
+            continue
+        medien = [url_ordner + datei]
+        text = text + fuss
+        for netz, prov in (("instagram", ["instagram", "facebook", "youtube"]), ("tiktok", ["tiktok"])):
+            po = {"art": "reel", "netz": netz, "termin": wann.isoformat() + "T16:00", "text": text,
+                  "media": medien, "providers": prov}
+            if netz == "instagram":
+                po.update({"instagram": {"type": "REEL", "showReelOnFeed": True}, "facebook": {"type": "REEL"},
+                           "youtube": {"type": "short", "title": f"{v['titel']}: {titel}", "privacy": "public",
+                                       "madeForKids": False, "category": "NEWS_POLITICS"}})
+            else:
+                po["tiktok"] = {"privacyOption": "PUBLIC_TO_EVERYONE", "title": f"{v['titel']}: {titel}"}
+            posts.append(po)
+
     (ordner / "posts.json").write_text(json.dumps({
         "slug": slug, "vorlage": v["titel"], "abstimmung": v["abstimmung"], "status": "entwurf",
         "bilder": bilder, "posts": posts}, ensure_ascii=False, indent=1), encoding="utf-8")

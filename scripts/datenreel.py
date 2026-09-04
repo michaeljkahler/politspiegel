@@ -99,7 +99,8 @@ class Schreiber:
             ["ffmpeg", "-y", "-loglevel", "error",
              "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
              "-i", str(self.ton),
-             "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+             "-c:v", "libx264", "-preset", "medium", "-crf", "25", "-maxrate", "4M", "-bufsize", "8M",
+             "-pix_fmt", "yuv420p",
              "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(self.ziel)],
             stdin=subprocess.PIPE)
         self.n = 0
@@ -151,10 +152,12 @@ class Karte:
             for ty in range(self.ty0, ty1 + 1):
                 p = CACHE / f"grau-{Z}-{tx}-{ty}.jpg"
                 if not p.exists():
+                    # Adressmuster des Dienstes: {z}/{x}/{y}
                     url = (f"https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/"
-                           f"current/3857/{Z}/{ty}/{tx}.jpeg")
+                           f"current/3857/{Z}/{tx}/{ty}.jpeg")
                     try:
-                        urllib.request.urlretrieve(url, p)
+                        req = urllib.request.Request(url, headers={"User-Agent": "Politspiegel Schaffhausen"})
+                        p.write_bytes(urllib.request.urlopen(req, timeout=30).read())
                     except Exception:
                         fehl += 1
                         continue
@@ -166,6 +169,44 @@ class Karte:
             print(f"  {fehl} Kacheln fehlen")
         # Die Karte etwas aufhellen, damit die farbigen Linien vorne stehen.
         self.img = Image.blend(self.img, Image.new("RGB", self.img.size, "white"), 0.25)
+        # Verkleinerte Stufen für die Übersicht: aus der vollen Karte wäre jedes
+        # Übersichtsbild ein Verkleinern von 30 Millionen Pixeln.
+        self.stufen = [(1.0, self.img)]
+        f = 0.5
+        while f >= 0.1:
+            self.stufen.append((f, self.img.resize((int(self.img.size[0] * f), int(self.img.size[1] * f)), Image.LANCZOS)))
+            f /= 2
+
+    def linien_einbrennen(self, L_gv, L_ini):
+        """Zeichnet die Strassen fest in jede Stufe der Karte. So kostet ein
+        Kamerabild nur einen Ausschnitt statt 500 Linienzüge. Die leeren
+        Stufen bleiben für den Aufbau-Effekt der Übersicht erhalten."""
+        self.stufen_leer = [(f, img.copy()) for f, img in self.stufen]
+        for f, img in self.stufen:
+            d = ImageDraw.Draw(img)
+            # In den kleinen Stufen (Übersicht) etwas kräftiger, sonst verschwinden die Linien.
+            bg = max(6 if f < 0.3 else 3, int(11 * f))
+            bi = max(3 if f < 0.3 else 2, int(5 * f))
+            for ls in L_gv:
+                d.line([(x * f, y * f) for x, y in ls], fill=GV, width=bg, joint="curve")
+            for ls in L_ini:
+                d.line([(x * f, y * f) for x, y in ls], fill=INI, width=bi, joint="curve")
+
+    def ausschnitt(self, x0, y0, bw, bh, s, leer=False):
+        """Kartenausschnitt (in Pixeln der vollen Karte) als Bild W x H beim Massstab s."""
+        stufen = self.stufen_leer if leer else self.stufen
+        f, img = stufen[0]
+        for ff, ii in stufen:
+            if ff >= s:
+                f, img = ff, ii
+        box = (int(x0 * f), int(y0 * f), int((x0 + bw) * f) + 1, int((y0 + bh) * f) + 1)
+        # Ausserhalb der Karte bleibt heller Grund, kein Schwarz.
+        grund = Image.new("RGB", (box[2] - box[0], box[3] - box[1]), GRUND)
+        cx0, cy0 = max(box[0], 0), max(box[1], 0)
+        cx1, cy1 = min(box[2], img.size[0]), min(box[3], img.size[1])
+        if cx1 > cx0 and cy1 > cy0:
+            grund.paste(img.crop((cx0, cy0, cx1, cy1)), (cx0 - box[0], cy0 - box[1]))
+        return grund.resize((W, H), Image.BILINEAR)
 
     def px(self, lon, lat):
         x, y = tile_xy(lon, lat)
@@ -193,6 +234,7 @@ def ueberflug(slug, ordner):
         return [[karte.px(*c) for c in f["geometry"]["coordinates"]] for f in features]
 
     L_ini, L_gv = linien(ini), linien(gv)
+    karte.linien_einbrennen(L_gv, L_ini)
     # Mittelpunkte je Gemeinde aus den Linien der Initiative und des Gegenvorschlags
     punkte = {}
     for f, ls in zip(ini + gv, L_ini + L_gv):
@@ -219,30 +261,14 @@ def ueberflug(slug, ordner):
     ziel = ordner / "reel-ueberflug.mp4"
     sw = Schreiber(ziel, dauern)
 
-    def zeichne(zentrum, s, anteil_ini=1.0, anteil_gv=1.0, kopf=None, panel=None, schluss=False):
-        cx, cy = zentrum
-        bw, bh = W / s, H / s
-        x0, y0 = cx - bw / 2, cy - bh / 2
-        ausschnitt = karte.img.crop((int(x0), int(y0), int(x0 + bw) + 1, int(y0 + bh) + 1))
-        frame = ausschnitt.resize((W, H), Image.LANCZOS if s < 1 else Image.BICUBIC).convert("RGBA")
-        d = ImageDraw.Draw(frame)
+    overlays = {}
 
-        def tr(p):
-            return ((p[0] - x0) * s, (p[1] - y0) * s)
-
-        def zeichne_linien(L, anteil, farbe, breite):
-            n = int(len(L) * anteil)
-            for ls in L[:n]:
-                pts = [tr(p) for p in ls]
-                if all(p[0] < -50 or p[0] > W + 50 or p[1] < -50 or p[1] > H + 50 for p in pts):
-                    continue
-                if len(pts) >= 2:
-                    d.line(pts, fill=farbe, width=breite, joint="curve")
-
-        zeichne_linien(L_gv, anteil_gv, GV, max(4, int(11 * min(s, 1.3))))
-        zeichne_linien(L_ini, anteil_ini, INI, max(2, int(5 * min(s, 1.3))))
-
-        # Kopf
+    def overlay(kopf, panel):
+        """Kopf, Legende, Panel und Fuss als eine durchsichtige Ebene, je Station einmal gerechnet."""
+        k = (kopf, panel)
+        if k in overlays:
+            return overlays[k]
+        frame = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         kasten(frame, (48, 150, W - 48, 330))
         d = ImageDraw.Draw(frame)
         d.text((80, 178), "ABSTIMMUNGSSPIEGEL", font=font("a", 24, "Bold"), fill=TEXT)
@@ -278,6 +304,26 @@ def ueberflug(slug, ordner):
         d.text((80, H - 282), SEITE_KURZ + "/abstimmung/" + slug + "/", font=font("a", 24, "SemiBold"), fill=TEXT)
         d.text((80, H - 246), "Karte © swisstopo · Strassen: Geltungsbereich aus Wortlaut und amtlichen Geodaten, eigene Auswertung",
                font=font("p", 19, "Regular"), fill=TEXT3)
+        overlays[k] = frame
+        return frame
+
+    def zeichne(zentrum, s, anteil_ini=1.0, anteil_gv=1.0, kopf=None, panel=None, aufbau=False):
+        cx, cy = zentrum
+        bw, bh = W / s, H / s
+        x0, y0 = cx - bw / 2, cy - bh / 2
+        frame = karte.ausschnitt(x0, y0, bw, bh, s, leer=aufbau).convert("RGBA")
+        if aufbau:
+            d = ImageDraw.Draw(frame)
+
+            def tr(p):
+                return ((p[0] - x0) * s, (p[1] - y0) * s)
+
+            for L, anteil, farbe, breite in ((L_gv, anteil_gv, GV, 5), (L_ini, anteil_ini, INI, 3)):
+                for ls in L[:int(len(L) * anteil)]:
+                    pts = [tr(p) for p in ls]
+                    if len(pts) >= 2:
+                        d.line(pts, fill=farbe, width=breite, joint="curve")
+        frame.alpha_composite(overlay(kopf, panel))
         return frame
 
     print("  Bilder rechnen …")
@@ -297,7 +343,7 @@ def ueberflug(slug, ordner):
                 t = (k + 1) / n
                 a_gv = min(1.0, t * 1.6)
                 a_ini = max(0.0, min(1.0, (t - 0.35) * 1.6))
-                sw.bild(zeichne(zentrum, s, a_ini, a_gv))
+                sw.bild(zeichne(zentrum, s, a_ini, a_gv, aufbau=True))
             elif name == "schluss":
                 sw.bild(zeichne(zentrum, s, panel=(f"{gem['total']['initiative_km']:.1f} km Initiative",
                                                     f"{gem['total']['gegenvorschlag_km']:.1f} km Gegenvorschlag",
