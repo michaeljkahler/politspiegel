@@ -36,8 +36,9 @@ AKKORDE = [
 ]
 
 
-def ton(freq, dauer, form="sinus", rate=RATE):
-    t = np.arange(int(dauer * rate)) / rate
+def ton(freq, dauer, form="sinus", rate=RATE, n=None):
+    """Schwingung; n überschreibt die Länge in Abtastwerten, damit Blöcke exakt passen."""
+    t = np.arange(n if n is not None else int(dauer * rate)) / rate
     if form == "dreieck":
         return 2 * np.abs(2 * ((t * freq) % 1) - 1) - 1
     return np.sin(2 * np.pi * freq * t)
@@ -77,8 +78,8 @@ def flaeche(gesamt):
         for st in stufen:
             f = grund * 2 ** (st / 12)
             for verstimmung in (-0.15, 0.0, 0.15):
-                block += ton(f * 2 ** (verstimmung / 1200) * 2, n / RATE) * 0.5
-                block += ton(f * 2 ** (verstimmung / 1200), n / RATE)
+                block += ton(f * 2 ** (verstimmung / 1200) * 2, 0, n=n) * 0.5
+                block += ton(f * 2 ** (verstimmung / 1200), 0, n=n)
         block *= huelle(n, 0.25, 0.25, 1.0)
         i0 = int(t0 * RATE)
         out[i0:i0 + n] += block[:len(out) - i0]
@@ -100,7 +101,7 @@ def zupfen(gesamt):
         st = stufen[muster[i % 8]]
         f = grund * 4 * 2 ** (st / 12)
         n = int(achtel * 1.6 * RATE)
-        note = ton(f, n / RATE, "dreieck") * huelle(n, 0.01, 0.85, 0.5)
+        note = ton(f, 0, "dreieck", n=n) * huelle(n, 0.01, 0.85, 0.5)
         i0 = int(t0 * RATE)
         out[i0:i0 + n] += note[:len(out) - i0]
         t0 += achtel

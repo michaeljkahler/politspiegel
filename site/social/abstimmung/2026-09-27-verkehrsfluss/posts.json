@@ -2,7 +2,7 @@
  "slug": "2026-09-27-verkehrsfluss",
  "vorlage": "Verkehrsflussinitiative",
  "abstimmung": "2026-09-27",
- "status": "freigegeben_bis_reels",
+ "status": "reels_teilweise_entwurf",
  "bilder": [
   {
    "datei": "vorlage.png",
@@ -509,6 +509,24 @@
    "ueberlauf": false
   },
   {
+   "datei": "reel-anlagen.png",
+   "motiv": "reel-anlagen",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "reel-bus.png",
+   "motiv": "reel-bus",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
+   "datei": "reel-laerm.png",
+   "motiv": "reel-laerm",
+   "stufe": null,
+   "ueberlauf": false
+  },
+  {
    "datei": "reel-ueberflug.png",
    "motiv": "reel-ueberflug",
    "stufe": null,
@@ -902,7 +920,7 @@
    "art": "reel",
    "netz": "instagram",
    "termin": "2026-09-18T16:00",
-   "text": "Verkehrsflussinitiative: Was die Unfallstatistik des Bundes zeigt.\n\n1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "text": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen 2011 bis 2025.\n\n1. Ein Balken je Jahr, gestapelt nach Schwere.\n2. Leichtverletzte, Schwerverletzte, Getötete.\n3. Alle Gemeinden des Kantons.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
    ],
@@ -920,7 +938,7 @@
    },
    "youtube": {
     "type": "short",
-    "title": "Verkehrsflussinitiative: Fussgängerunfälle 2011 bis 2025",
+    "title": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen",
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
@@ -935,7 +953,7 @@
    "art": "reel",
    "netz": "tiktok",
    "termin": "2026-09-18T16:00",
-   "text": "Verkehrsflussinitiative: Was die Unfallstatistik des Bundes zeigt.\n\n1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "text": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen 2011 bis 2025.\n\n1. Ein Balken je Jahr, gestapelt nach Schwere.\n2. Leichtverletzte, Schwerverletzte, Getötete.\n3. Alle Gemeinden des Kantons.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
    ],
@@ -944,12 +962,144 @@
    ],
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
-    "title": "Verkehrsflussinitiative: Fussgängerunfälle 2011 bis 2025"
+    "title": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen"
    },
    "metricool": {
     "id": 370953664,
     "uuid": "5456647536849014744",
     "draft": true
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "termin": "2026-09-16T16:00",
+   "text": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen.\n\n1. Orange: Hektaren mit Fassaden über 65 dB am Tag, dem Immissionsgrenzwert der Wohnzone.\n2. Gebäude mit solchen Fassaden: Initiative 404, Gegenvorschlag 353.\n3. Anwohner an diesen Fassaden: 6481 beziehungsweise 5562.\n\nLärmkataster Kanton Schaffhausen, Hektarraster der Bevölkerungsstatistik, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-laerm.mp4"
+   ],
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "termin": "2026-09-16T16:00",
+   "text": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen.\n\n1. Orange: Hektaren mit Fassaden über 65 dB am Tag, dem Immissionsgrenzwert der Wohnzone.\n2. Gebäude mit solchen Fassaden: Initiative 404, Gegenvorschlag 353.\n3. Anwohner an diesen Fassaden: 6481 beziehungsweise 5562.\n\nLärmkataster Kanton Schaffhausen, Hektarraster der Bevölkerungsstatistik, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-laerm.mp4"
+   ],
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "termin": "2026-09-19T16:00",
+   "text": "Verkehrsflussinitiative: Braucht Tempo 30 einen zusätzlichen Bus?\n\n1. Linie 1 und Linie 6, alle Halte, 12 Sekunden Haltezeit.\n2. Links der Fahrplan von heute, rechts mit Zuschlag für Tempo 30 auf den betroffenen Abschnitten.\n3. Zuschlag zwischen physikalischer Untergrenze und ASTRA-Obergrenze, Fahrzeuge je Linie heute und bei Tempo 30.\n\nFahrplan transport.opendata.ch, Umlaufrechnung eigene Auswertung.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-bus.mp4"
+   ],
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Verkehrsflussinitiative: Bus Linie 1 und 6 bei Tempo 30",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "termin": "2026-09-19T16:00",
+   "text": "Verkehrsflussinitiative: Braucht Tempo 30 einen zusätzlichen Bus?\n\n1. Linie 1 und Linie 6, alle Halte, 12 Sekunden Haltezeit.\n2. Links der Fahrplan von heute, rechts mit Zuschlag für Tempo 30 auf den betroffenen Abschnitten.\n3. Zuschlag zwischen physikalischer Untergrenze und ASTRA-Obergrenze, Fahrzeuge je Linie heute und bei Tempo 30.\n\nFahrplan transport.opendata.ch, Umlaufrechnung eigene Auswertung.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-bus.mp4"
+   ],
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Verkehrsflussinitiative: Bus Linie 1 und 6 bei Tempo 30"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "termin": "2026-09-22T16:00",
+   "text": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime an den betroffenen Strassen.\n\n1. 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Einrichtungen.\n2. Kreise von 300 m um jede Anlage.\n3. 38,3 km der betroffenen Strassen, 57 Prozent, liegen innerhalb dieser Kreise.\n\nStandorte OpenStreetMap und kantonale Quellen, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-anlagen.mp4"
+   ],
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "termin": "2026-09-22T16:00",
+   "text": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime an den betroffenen Strassen.\n\n1. 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Einrichtungen.\n2. Kreise von 300 m um jede Anlage.\n3. 38,3 km der betroffenen Strassen, 57 Prozent, liegen innerhalb dieser Kreise.\n\nStandorte OpenStreetMap und kantonale Quellen, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-anlagen.mp4"
+   ],
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime"
    }
   }
  ]

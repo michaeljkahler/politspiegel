@@ -202,10 +202,29 @@ def serie(slug, daten, bilder, ordner):
                                "2. Rot: Geltungsbereich des Gegenvorschlags.\n"
                                "3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\n"
                                "Karte © swisstopo."),
-        "reel-zeitstrahl.mp4": (t(9), "Fussgängerunfälle 2011 bis 2025",
-                                f"{v['titel']}: Was die Unfallstatistik des Bundes zeigt.\n\n"
-                                "1. Ganze Schweiz.\n2. Die grössten Städte.\n3. Kanton Schaffhausen.\n\n"
-                                "Unfälle mit Personenschaden und Fussgängerbeteiligung je Jahr, Quelle ASTRA."),
+        "reel-zeitstrahl.mp4": (t(9), "Fussgängerunfälle im Kanton Schaffhausen",
+                                f"{v['titel']}: Fussgängerunfälle im Kanton Schaffhausen 2011 bis 2025.\n\n"
+                                "1. Ein Balken je Jahr, gestapelt nach Schwere.\n2. Leichtverletzte, Schwerverletzte, Getötete.\n"
+                                "3. Alle Gemeinden des Kantons.\n\n"
+                                "Unfälle mit Personenschaden und Fussgängerbeteiligung, Quelle ASTRA."),
+        "reel-laerm.mp4": (t(11), "Lärm an den betroffenen Strassen",
+                           f"{v['titel']}: Lärm an den betroffenen Strassen.\n\n"
+                           "1. Orange: Hektaren mit Fassaden über 65 dB am Tag, dem Immissionsgrenzwert der Wohnzone.\n"
+                           "2. Gebäude mit solchen Fassaden: Initiative 404, Gegenvorschlag 353.\n"
+                           "3. Anwohner an diesen Fassaden: 6481 beziehungsweise 5562.\n\n"
+                           "Lärmkataster Kanton Schaffhausen, Hektarraster der Bevölkerungsstatistik, Karte © swisstopo."),
+        "reel-bus.mp4": (t(8), "Bus Linie 1 und 6 bei Tempo 30",
+                         f"{v['titel']}: Braucht Tempo 30 einen zusätzlichen Bus?\n\n"
+                         "1. Linie 1 und Linie 6, alle Halte, 12 Sekunden Haltezeit.\n"
+                         "2. Links der Fahrplan von heute, rechts mit Zuschlag für Tempo 30 auf den betroffenen Abschnitten.\n"
+                         "3. Zuschlag zwischen physikalischer Untergrenze und ASTRA-Obergrenze, Fahrzeuge je Linie heute und bei Tempo 30.\n\n"
+                         "Fahrplan transport.opendata.ch, Umlaufrechnung eigene Auswertung."),
+        "reel-anlagen.mp4": (t(5), "Schulen, Kindergärten und Heime",
+                             f"{v['titel']}: Schulen, Kindergärten und Heime an den betroffenen Strassen.\n\n"
+                             "1. 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Einrichtungen.\n"
+                             "2. Kreise von 300 m um jede Anlage.\n"
+                             "3. 38,3 km der betroffenen Strassen, 57 Prozent, liegen innerhalb dieser Kreise.\n\n"
+                             "Standorte OpenStreetMap und kantonale Quellen, Karte © swisstopo."),
     }
     for datei, (wann, titel, text) in reels.items():
         if not (ordner / datei).exists():
