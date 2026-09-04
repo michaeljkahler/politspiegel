@@ -251,9 +251,9 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370774309,
+    "id": 370926870,
     "uuid": "5610260638388276479",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -311,9 +311,9 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370774344,
+    "id": 370930929,
     "uuid": "-3871439654648527223",
-    "draft": true
+    "draft": false
    }
   },
   {
@@ -331,7 +331,7 @@
     "privacyOption": "PUBLIC_TO_EVERYONE"
    },
    "metricool": {
-    "id": 370774463,
+    "id": 370930585,
     "uuid": "6684486401282294516",
     "draft": true
    }
