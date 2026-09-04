@@ -98,10 +98,20 @@ XLSX_MUSTER = (
 )
 # Dateien, die trotz passendem Muster keine Abstimmungsergebnisse sind
 XLSX_AUSSCHLUSS = ("traktand", "beschluss", "krb ", "protokoll", "einladung", "rangliste")
-# Wortprotokoll erkennen: der Link-Text enthält "protokoll" oder folgt dem Muster
-# "<Nr>. Sitzung vom <Datum>.pdf" (so heissen die Protokolle aktuell auf sh.ch).
+# Wortprotokoll erkennen: der Dateiname enthält "protokoll" (seit 2019
+# "Protokoll <Nr>. Sitzung vom <Datum>.pdf") oder "kr-prot" (2017/2018:
+# "KR-Prot_2018-14.pdf"). Die Datei "<Nr>. Sitzung vom <Datum>.pdf" ohne das
+# Wort Protokoll ist die Einladung mit der Traktandenliste (rund 50 bis 200 KB,
+# publiziert vor der Sitzung) und gilt nicht als Protokoll; bis September 2026
+# wurde sie faelschlich verlinkt, und 86 Protokoll-Links fuehrten zur Einladung.
 # Ausgeschlossen werden Beschlüsse (KRB), Abstimmungsergebnisse und Traktanden.
 PROT_EXCLUDE = ("abstimmungsergebnis", "krb", "traktand", "beschluss")
+
+
+def ist_wortprotokoll(name):
+    nlow = (name or "").lower()
+    return (("protokoll" in nlow or "kr-prot" in nlow)
+            and not any(x in nlow for x in PROT_EXCLUDE))
 
 
 # ---------------------------------------------------------------------------
@@ -341,10 +351,7 @@ def download_protokolle(sessions, mit_pdf=False):
         for f in s["files"]:
             name = (f["name"] or "").strip()
             nlow = name.lower()
-            ist_protokoll = (("protokoll" in nlow
-                              or ("sitzung vom" in nlow and nlow.endswith(".pdf")))
-                             and not any(x in nlow for x in PROT_EXCLUDE))
-            if not ist_protokoll:
+            if not ist_wortprotokoll(name):
                 continue
             uid = hashlib.md5(f["href"].encode()).hexdigest()[:8]
             local = PROT_DIR / f"protokoll_{cid}_{uid}.pdf"

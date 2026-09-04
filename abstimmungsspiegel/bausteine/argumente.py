@@ -864,11 +864,22 @@ def kantonsrat_daten(suchwort: str) -> dict | None:
                if suchwort.lower() in (v.get("geschaeft") or "").lower()]
         if not idx:
             continue
-        protokoll = ""
+        # Wortprotokoll, sofern sh.ch es ausliefert (scripts/linkcheck.py schreibt
+        # data/link_status.json); sonst die Sitzungsseite, beschriftet als solche.
+        status = {}
+        try:
+            status = json.loads((SITZUNGEN.parent / "link_status.json").read_text(encoding="utf-8"))
+        except Exception:
+            pass
+        protokoll, protokoll_art = "", "Wortprotokoll"
         for p in s.get("protokolle", []) or []:
-            if p.get("url"):
+            if p.get("url") and status.get(p["url"], {}).get("status", 200) == 200:
                 protokoll = p["url"]
                 break
+        if not protokoll and s.get("url"):
+            protokoll = s["url"]
+            protokoll_art = ("Sitzungsseite auf sh.ch (Wortprotokoll zurzeit nicht abrufbar)"
+                             if s.get("protokolle") else "Sitzungsseite auf sh.ch (Wortprotokoll noch nicht publiziert)")
         abstimmungen = []
         for i in idx:
             v = s["votes"][i]
@@ -889,7 +900,8 @@ def kantonsrat_daten(suchwort: str) -> dict | None:
                 "fraktionen": [{"name": f, "ja": frakt[f].get("Ja", 0),
                                 "nein": frakt[f].get("Nein", 0)} for f in sorted(frakt)],
             })
-        return {"sitzung": s["sitzung"], "protokoll": protokoll, "abstimmungen": abstimmungen}
+        return {"sitzung": s["sitzung"], "protokoll": protokoll, "protokoll_art": protokoll_art,
+                "abstimmungen": abstimmungen}
     return None
 
 
@@ -898,7 +910,7 @@ def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
     vorlage.kantonsrat_hinweis, etwa eine Gegenprobe mit dem Abstimmungsmagazin."""
     if not kr:
         return ""
-    prot = (f' · <a href="{e(kr["protokoll"])}" target="_blank" rel="noopener">Wortprotokoll</a>'
+    prot = (f' · <a href="{e(kr["protokoll"])}" target="_blank" rel="noopener">{e(kr.get("protokoll_art", "Wortprotokoll"))}</a>'
             if kr["protokoll"] else "")
     karten = []
     for v in kr["abstimmungen"]:

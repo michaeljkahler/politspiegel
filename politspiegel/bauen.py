@@ -424,7 +424,7 @@ def listenseite(zeilen) -> str:
         if not zs:
             return f'<section class="abschnitt"><h2>{e(titel)}</h2><p class="hinweis">{e(leer)}</p></section>'
         li = "".join(f"""
-    <li><a href="../{e(z['pfad'].split('/', 1)[1])}">
+    <li><a href="{e(z['pfad'].split('/', 1)[1])}">
       <time datetime="{e(z['datum'])}">{e(datum_kurz(z['datum']))}</time>
       <span><h3>{e(z['titel'])}{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
       <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if z['datum'] < heute else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>

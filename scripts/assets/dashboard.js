@@ -277,13 +277,17 @@
     return s;
   }
 
+  function protokollFehlt(s) {
+    return s.pf === 2 ? "Wortprotokoll noch nicht publiziert" : "Wortprotokoll zurzeit nicht abrufbar";
+  }
+
   function protokollLink(s, text, tooltip) {
     var t = esc(text);
     if (!s || !s.pu) {
       return '<span title="' + esc(tooltip || text) + '">' + t + "</span>";
     }
     return '<a class="plink" href="' + esc(s.pu) + '" target="_blank" rel="noopener" ' +
-      'title="' + esc(tooltip || text) + ' — Wortprotokoll der Sitzung öffnen">' + t +
+      'title="' + esc(tooltip || text) + (s.pf ? ' — Sitzungsseite auf sh.ch öffnen (' + protokollFehlt(s) + ')' : ' — Wortprotokoll der Sitzung öffnen') + '">' + t +
       '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
       '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
       'stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>';
@@ -414,7 +418,7 @@
 
   function fussHtml(s) {
     var quelle = s ? " (" + esc(s.q) + ")" : "";
-    var prot = s && s.pu ? ' <a href="' + esc(s.pu) + '">Wortprotokoll</a>.' : "";
+    var prot = s && s.pu ? ' <a href="' + esc(s.pu) + '">' + (s.pf ? "Sitzungsseite auf sh.ch (" + protokollFehlt(s) + ")" : "Wortprotokoll") + "</a>." : "";
     return '<footer class="foot"><b>Datenquelle:</b> Kanton Schaffhausen, namentliche ' +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
       " Aufbereitung ohne Gewähr." +
@@ -773,7 +777,7 @@
               '<button type="button" class="lnk" data-goto="' + esc(g.s.s) + "|" + x.i + '">' +
               esc(x.v.t) + "</button>" +
               (g.s.pu ? ' <a class="plink" href="' + esc(g.s.pu) + '" target="_blank" ' +
-                'rel="noopener" title="Wortprotokoll der Sitzung öffnen">' +
+                'rel="noopener" title="' + (g.s.pf ? "Sitzungsseite auf sh.ch öffnen" : "Wortprotokoll der Sitzung öffnen") + '">' +
                 '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
                 '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
                 'stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +

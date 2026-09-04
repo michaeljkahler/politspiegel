@@ -332,11 +332,37 @@ def vote_payload(sess, v, umkehr):
     return p
 
 
+# Erreichbarkeit der Protokolle, aus scripts/linkcheck.py (data/link_status.json).
+# Ein Protokoll, das sh.ch nicht mehr ausliefert (404), wird durch die
+# Sitzungsseite ersetzt; die Karte sagt dann «Sitzungsseite» statt «Wortprotokoll».
+LINK_STATUS = zusatz("link_status.json", {})
+
+
+def protokoll_adresse(s):
+    """(Adresse, Ersatz) fuer den Protokollverweis einer Sitzung; Ersatz 0 = Protokoll,
+    1 = Sitzungsseite, weil das Protokoll nicht abrufbar ist, 2 = Sitzungsseite, weil
+    noch kein Protokoll publiziert ist.
+
+    Liegen mehrere Protokolle vor (Vormittag und Nachmittag je eine Datei),
+    kommt das zur Sitzungshaelfte passende zuerst. Nicht erreichbare Dateien
+    (Status ungleich 200 in link_status.json) werden uebersprungen; bleibt
+    keine, verweist die Karte auf die Sitzungsseite."""
+    prots = [p for p in (s.get("protokolle") or []) if p.get("url")]
+    if not prots:
+        return (s.get("url") or ""), 2          # noch kein Protokoll publiziert
+    zeit = (split_titel(s["sitzung"])[2] or "").lower()
+    prots.sort(key=lambda p: 0 if zeit and zeit[:4] in (p.get("name") or "").lower() else 1)
+    for p in prots:
+        if LINK_STATUS.get(p["url"], {}).get("status", 200) == 200:
+            return p["url"], 0
+    return (s.get("url") or prots[0]["url"]), 1  # Protokoll gelistet, aber nicht abrufbar
+
+
 def sessions_payload(d, umkehr):
     raus = []
     for s in d["sessions"]:
         name, datum, zeit = split_titel(s["sitzung"])
-        prot = (s.get("protokolle") or [{}])[0]
+        pu, pf = protokoll_adresse(s)
         raus.append({
             "s": s["sitzung"],
             "n": name,
@@ -344,7 +370,8 @@ def sessions_payload(d, umkehr):
             "z": zeit,
             "leg": s.get("legislatur"),
             "q": s.get("quelle") or "",
-            "pu": prot.get("url") or "",
+            "pu": pu,
+            **({"pf": pf} if pf else {}),
             "v": [vote_payload(s, v, umkehr) for v in s["votes"]],
             "m": [{"n": f"{m['nachname']}|{m['vorname']}",
                    "f": m["fraktion"],
@@ -580,7 +607,7 @@ def matching_payload(d, umkehr):
             "trenn": round(c["trenn"], 3),
             # Worüber laut Excel abgestimmt wurde, zur Kontrolle auf der Karte
             "roh": kuerze(flach(v.get("details")) or flach(v.get("titel")), 260),
-            "pu": ((s.get("protokolle") or [{}])[0]).get("url") or "",
+            "pu": protokoll_adresse(s)[0],
         })
     if ohne_text:
         print(f"  Hinweis: {ohne_text} Fragen ohne handgeschriebenen Text, "

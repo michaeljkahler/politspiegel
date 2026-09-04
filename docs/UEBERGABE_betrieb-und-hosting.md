@@ -108,6 +108,13 @@ meldet das Skript das und pusht nichts.
   Token an. Das bleibt bewusst eine Handbewegung: ein Werkzeug, das sich selbst neue
   Schreibrechte besorgt, ist keine gute Idee.
 
+Vor jedem Veröffentlichen lohnt sich `python3 scripts/linkcheck.py`: prüft alle
+Protokoll- und Profiladressen auf sh.ch, die Sprünge aus dem Abstimmungsspiegel in
+den Kantonsratsspiegel und die relativen Pfade in `site/`, schreibt
+`data/link_status.json` und gibt Abbruchcode 1, sobald etwas fehlt. `build3.py` und
+`argumente.py` lesen die Datei und ersetzen ein Protokoll, das sh.ch nicht mehr
+ausliefert, durch die Sitzungsseite (beschriftet als solche).
+
 Was der Auftrag von sich aus tut und was nicht, steht in seinem Teil D. Kurz: Er
 veröffentlicht selbständig, schreibt fehlende Fragetexte selbständig, und er fragt nach,
 wenn eine Abstimmung sich aus den Quellen nicht eindeutig klären lässt oder ein Zugang
