@@ -28,16 +28,16 @@ Stand 3. September 2026, nachgeführt.
 
 ## Offen aus den Rückmeldungen der Tester
 
-- **Meldewerkzeug mit Captcha.** Ohne Server braucht es einen Formulardienst.
-  Vorschlag: Web3Forms (kostenlos, hCaptcha eingebaut, Mail an
-  politspiegel.sh@gmail.com); Michael legt den Zugangsschlüssel an und trägt ihn
-  in `politspiegel.json` unter `melden.schluessel` ein, dann erscheint auf jeder
-  Seite «Fehler melden». Der Schlüssel ist öffentlich, nur der Empfänger ist
-  festgelegt; Missbrauch fängt das Captcha.
-- **WhatsApp-Kanal.** Kanäle haben keine Schnittstelle zum Posten. Umsetzbar:
-  `scripts/whatsapp_text.py` schreibt nach jeder Sitzung einen Beitragstext mit
-  Verweis in den Kantonsratsspiegel, den Michael in den Kanal einfügt; die Seite
-  bekommt einen Knopf «Kanal folgen», sobald die Kanaladresse vorliegt.
+- **Meldewerkzeug mit Captcha**, gebaut (`politspiegel/melden.py`), wartet auf
+  den Schlüssel: Michael legt bei https://web3forms.com mit
+  politspiegel.sh@gmail.com einen Zugangsschlüssel an und trägt ihn in
+  `politspiegel.json` unter `melden.schluessel` ein; danach alle Seiten neu
+  bauen. hCaptcha ist Pflicht. Der Schlüssel ist öffentlich, er legt nur den
+  Empfänger fest.
+- **WhatsApp-Kanal**, gebaut: `scripts/whatsapp_text.py` schreibt den
+  Beitragstext je Sitzung; Kanäle haben keine Schnittstelle, der Text wird von
+  Hand eingefügt. Kanaladresse in `politspiegel.json` unter `whatsapp_kanal`
+  eintragen, dann zeigt die Übersicht «dem WhatsApp-Kanal folgen».
 
 ## Erledigt am 4. September 2026
 

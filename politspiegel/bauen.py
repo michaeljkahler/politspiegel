@@ -47,6 +47,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
+from melden import MELDEN_CSS, melden_html  # noqa: E402
 
 WURZEL = Path(__file__).resolve().parent.parent
 QUELLE = WURZEL / "politspiegel" / "politspiegel.json"
@@ -128,6 +129,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
 .k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
+.kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
 
 .kasten-div{cursor:default}
@@ -174,7 +176,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .fuss{margin-top:52px;padding-top:22px;border-top:1px solid var(--linie);
   font-size:13.5px;color:var(--text-leise)}
 .fuss a{text-decoration:underline}
-""" + IMPRESSUM_CSS + TESTPHASE_CSS
+""" + IMPRESSUM_CSS + TESTPHASE_CSS + MELDEN_CSS
 
 
 # ---------------------------------------------------------------- Quellen
@@ -238,6 +240,17 @@ def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
 
 
 # ---------------------------------------------------------------- Bausteine
+
+def kanal_html(d) -> str:
+    """Verweis auf den WhatsApp-Kanal, sobald in politspiegel.json unter
+    «whatsapp_kanal» die Kanaladresse steht (https://whatsapp.com/channel/…).
+    Der Beitragstext nach jeder Sitzung kommt aus scripts/whatsapp_text.py."""
+    u = (d.get("whatsapp_kanal") or "").strip()
+    if not u:
+        return ""
+    return (f'<p class="kanal"><a href="{e(u)}" target="_blank" rel="noopener">'
+            'Nach jeder Sitzung eine Meldung: dem WhatsApp-Kanal folgen &rarr;</a></p>')
+
 
 def kasten(k) -> str:
     zahlen = "".join(
@@ -385,6 +398,7 @@ def bauen(d, zeilen) -> str:
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{melden_html("Übersicht")}
 <div class="wrap">
 
 <header class="kopf">
@@ -396,6 +410,7 @@ def bauen(d, zeilen) -> str:
 <main>
 <div class="kaesten">{html_kaesten}
 </div>
+{kanal_html(d)}
 </main>
 
 <footer class="fuss">
@@ -449,6 +464,7 @@ def listenseite(zeilen) -> str:
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{melden_html("Abstimmungsliste")}
 <div class="wrap">
 
 <header class="kopf">

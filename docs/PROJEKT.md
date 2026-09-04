@@ -185,6 +185,7 @@ dem Desktop.
 | `scripts/matching.py` | erzeugt den Wähler-Matching-Prototyp |
 | `scripts/linkcheck.py` | prüft alle Verweise (Protokolle, Profile, Sprünge, relative Pfade), schreibt `data/link_status.json` |
 | `scripts/youtube.py` | liest die Livestream-Playlist des Kantons, ordnet Kapitel den Abstimmungen zu, schreibt `data/youtube_zuordnung.json` |
+| `scripts/whatsapp_text.py` | Beitragstext für den WhatsApp-Kanal nach einer Sitzung, `output/whatsapp_<datum>.txt` |
 | `data/all_sessions.json` | aktueller Datenstand (46 Sitzungen, 383 Abstimmungen) |
 | `data/themen_zuordnung.json` | geprüfte Themen-Zuordnung der 77 Geschäfte |
 | `data/umkehr_zuordnung.json` | Prüftabelle der 22 Umkehrabstimmungen |

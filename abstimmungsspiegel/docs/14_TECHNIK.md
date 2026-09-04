@@ -276,6 +276,34 @@ ein rotes Eckband «Testphase»; `politspiegel/testphase.py` liefert HTML und
 CSS, die Ecke ist je Seite gewählt, damit das Band keinen Knopf verdeckt.
 Zum Abschalten den Wert auf `false` setzen und alle Seiten neu bauen.
 
+### Fehler melden
+
+`politspiegel/melden.py` liefert Knopf und Dialog «Fehler melden» für alle
+Seiten, sobald in `politspiegel.json` unter `melden.schluessel` der
+Zugangsschlüssel von Web3Forms steht (Einrichtung im Kopf der Datei). Die
+Meldung geht als Mail an die beim Dienst hinterlegte Adresse; hCaptcha ist
+Pflicht, ohne gelöstes Captcha sendet der Browser nichts. Ohne Schlüssel
+erscheint kein Knopf.
+
+### WhatsApp-Kanal
+
+`scripts/whatsapp_text.py` schreibt nach einer Sitzung den Beitragstext
+(Zahl der Abstimmungen, knappe Entscheide, Geschäfte, Verweis in den
+Kantonsratsspiegel, Livestream) nach `output/whatsapp_<datum>.txt`; der Kanal
+hat keine Schnittstelle, der Text wird von Hand eingefügt. Steht in
+`politspiegel.json` unter `whatsapp_kanal` die Kanaladresse, zeigt die
+Übersicht den Verweis «dem WhatsApp-Kanal folgen».
+
+### Livestream
+
+`scripts/youtube.py` liest die Playlist des Kantons, zieht aus jeder
+Videobeschreibung die Kapitel (Zeitmarke je Traktandum) und ordnet sie über
+Sitzungsdatum und Geschäft den namentlichen Abstimmungen zu
+(`data/youtube_zuordnung.json`). Der Kantonsratsspiegel zeigt je Karte
+«Debatte im Livestream, ab h:mm:ss», der Ratsblock des Abstimmungsspiegels
+ebenso. Nach jeder Sitzung laufen lassen; die Kapitel trägt der Kanton
+meist erst einige Tage nach dem Stream ein.
+
 ### Die alte Adresse
 
 Bis zum Umbau lag der Kantonsratsspiegel unter der blanken Adresse. Er liegt

@@ -42,6 +42,7 @@ import teilen  # noqa: E402  Bilder fuer Social Media, gleicher Ordner
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent / "politspiegel"))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402  ein Impressum fuer alle Seiten
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
+from melden import MELDEN_CSS, melden_html  # noqa: E402
 
 WURZEL = Path(__file__).resolve().parent.parent.parent
 SLUG = sys.argv[1] if len(sys.argv) > 1 else "2026-09-27-verkehrsfluss"
@@ -1952,10 +1953,11 @@ def bauen() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}{TESTPHASE_CSS}</style>
+<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}{TESTPHASE_CSS}{MELDEN_CSS}</style>
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{melden_html("Abstimmungsspiegel " + v["titel"])}
 <div class="wrap">
 
 <header class="kopf">
