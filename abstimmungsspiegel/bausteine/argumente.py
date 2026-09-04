@@ -880,9 +880,15 @@ def kantonsrat_daten(suchwort: str) -> dict | None:
             protokoll = s["url"]
             protokoll_art = ("Sitzungsseite auf sh.ch (Wortprotokoll zurzeit nicht abrufbar)"
                              if s.get("protokolle") else "Sitzungsseite auf sh.ch (Wortprotokoll noch nicht publiziert)")
+        # Livestream-Zeitmarken (scripts/youtube.py, data/youtube_zuordnung.json)
+        try:
+            yt = json.loads((SITZUNGEN.parent / "youtube_zuordnung.json").read_text(encoding="utf-8")).get(s["sitzung"], {})
+        except Exception:
+            yt = {}
         abstimmungen = []
         for i in idx:
             v = s["votes"][i]
+            marke = (yt.get("abstimmungen") or {}).get(str(v["nr"]))
             gesamt = collections.Counter()
             frakt = collections.defaultdict(collections.Counter)
             for m in s["members"]:
@@ -899,6 +905,10 @@ def kantonsrat_daten(suchwort: str) -> dict | None:
                           if v.get("richtung_invertiert") else "",
                 "fraktionen": [{"name": f, "ja": frakt[f].get("Ja", 0),
                                 "nein": frakt[f].get("Nein", 0)} for f in sorted(frakt)],
+                "livestream": (f"https://www.youtube.com/watch?v={yt['video']}&t={int(marke['t'])}s"
+                               if marke and yt.get("video") else ""),
+                "livestream_ab": (f"{int(marke['t']) // 3600}:{int(marke['t']) % 3600 // 60:02d}:{int(marke['t']) % 60:02d}"
+                                  if marke else ""),
             })
         return {"sitzung": s["sitzung"], "protokoll": protokoll, "protokoll_art": protokoll_art,
                 "abstimmungen": abstimmungen}
@@ -939,7 +949,7 @@ def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
     <span class="kr-nein" style="flex:{max(nein,0.001)}"></span></div>
   <p class="kr-neben">{enth} Enthaltungen · {abw} abwesend oder nicht teilgenommen</p>
   <details><summary>Fraktionen</summary><div class="kr-frakt-liste">{''.join(zeilen)}</div></details>
-  <p class="kr-link"><a href="../../kantonsrat/#s={urllib.parse.quote(kr['sitzung'], safe='')}&amp;nr={e(v['nr'])}">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a></p>
+  <p class="kr-link"><a href="../../kantonsrat/#s={urllib.parse.quote(kr['sitzung'], safe='')}&amp;nr={e(v['nr'])}">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a>{(' · <a href="' + e(v['livestream']) + '" target="_blank" rel="noopener" title="Livestream der Sitzung auf YouTube, ab Beginn der Debatte zu diesem Geschäft">Debatte im Livestream, ab ' + e(v['livestream_ab']) + '</a>') if v.get('livestream') else ''}</p>
 </div>""")
     n = len(kr["abstimmungen"])
     return abschnitt("kantonsrat", "Wie der Kantonsrat dazu gestimmt hat",

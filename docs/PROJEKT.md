@@ -183,6 +183,8 @@ dem Desktop.
 | `scripts/umkehr.py` | Richtungskorrektur der Umkehrabstimmungen |
 | `scripts/build2.py` | erzeugt das Dashboard-HTML |
 | `scripts/matching.py` | erzeugt den Wähler-Matching-Prototyp |
+| `scripts/linkcheck.py` | prüft alle Verweise (Protokolle, Profile, Sprünge, relative Pfade), schreibt `data/link_status.json` |
+| `scripts/youtube.py` | liest die Livestream-Playlist des Kantons, ordnet Kapitel den Abstimmungen zu, schreibt `data/youtube_zuordnung.json` |
 | `data/all_sessions.json` | aktueller Datenstand (46 Sitzungen, 383 Abstimmungen) |
 | `data/themen_zuordnung.json` | geprüfte Themen-Zuordnung der 77 Geschäfte |
 | `data/umkehr_zuordnung.json` | Prüftabelle der 22 Umkehrabstimmungen |
@@ -202,6 +204,8 @@ python3 scripts/umkehr.py          # Umkehrfälle erfassen     -> data/umkehr_zu
 #   ... themen_zuordnung.json und umkehr_zuordnung.json prüfen ...
 python3 scripts/themen.py --apply  # Themen-Tags schreiben
 python3 scripts/umkehr.py --apply  # Richtungs-Flags schreiben
+python3 scripts/youtube.py         # Livestream-Zeitmarken    -> data/youtube_zuordnung.json
+python3 scripts/linkcheck.py       # Verweise pruefen         -> data/link_status.json
 python3 scripts/build2.py          # Dashboard bauen          -> output/kantonsrat-dashboard.html
 ```
 

@@ -329,6 +329,9 @@ def vote_payload(sess, v, umkehr):
     elif v.get("richtung_invertiert") is None and v.get("inverted_note"):
         p["inv"] = 0                                  # markiert, aber ungeklärt
         p["iv"] = flach(v.get("inverted_note"))
+    yt = YOUTUBE.get(sess["sitzung"], {}).get("abstimmungen", {}).get(str(v.get("nr")))
+    if yt:
+        p["yt"] = f"{YOUTUBE[sess['sitzung']]['video']}|{yt['t']}"   # Video und Sekunde
     return p
 
 
@@ -336,6 +339,8 @@ def vote_payload(sess, v, umkehr):
 # Ein Protokoll, das sh.ch nicht mehr ausliefert (404), wird durch die
 # Sitzungsseite ersetzt; die Karte sagt dann «Sitzungsseite» statt «Wortprotokoll».
 LINK_STATUS = zusatz("link_status.json", {})
+# Livestream-Zeitmarken je Abstimmung, aus scripts/youtube.py
+YOUTUBE = zusatz("youtube_zuordnung.json", {})
 
 
 def protokoll_adresse(s):
@@ -372,6 +377,7 @@ def sessions_payload(d, umkehr):
             "q": s.get("quelle") or "",
             "pu": pu,
             **({"pf": pf} if pf else {}),
+            **({"yt": YOUTUBE[s["sitzung"]]["video"]} if s["sitzung"] in YOUTUBE else {}),
             "v": [vote_payload(s, v, umkehr) for v in s["votes"]],
             "m": [{"n": f"{m['nachname']}|{m['vorname']}",
                    "f": m["fraktion"],

@@ -4,6 +4,41 @@ Stand 3. September 2026, nachgeführt.
 
 ---
 
+## Erledigt am 4. September 2026, Rückmeldungen der Tester
+
+- **Testphase** wieder eingeschaltet: Eckband auf allen Seiten, Schalter
+  `"testphase": true` in `politspiegel/politspiegel.json` (`politspiegel/testphase.py`).
+- **Zwei-Finger-Zoom** im Netz der Interessenbindungen (Pinch, Verschieben mit
+  einem Finger, Tippen wählt den Knoten).
+- **Verweise geprüft** (`scripts/linkcheck.py`). Gefunden und behoben: die
+  Abstimmungsliste verwies mit `../` eine Ebene zu hoch; 86 «Wortprotokoll»-Verweise
+  führten zur Einladung statt zum Protokoll (`scraper.py` erkannte
+  «<Nr>. Sitzung vom <Datum>.pdf» als Protokoll); 2018 hiessen die Protokolle
+  «KR-Prot_…» und fehlten. Zwei Protokolle von 2026 liefert sh.ch selbst nicht aus
+  (404); dort steht die Sitzungsseite, beschriftet als Ersatz. Sitzungen ohne
+  publiziertes Protokoll verweisen ebenfalls auf die Sitzungsseite.
+- **Livestream-Zeitmarken** (`scripts/youtube.py`): Playlist des Kantons, Kapitel
+  aus der Videobeschreibung, Zuordnung über Datum der Sitzung und Datum/Wortlaut
+  des Geschäfts. 110 Sitzungsvideos seit 2020, 88 mit Kapiteln, 657 von 1157
+  Abstimmungen dieser Sitzungen mit Zeitmarke. Auf der Karte «Debatte im
+  Livestream, ab 2:20:20», im Ratsblock des Abstimmungsspiegels ebenso. Das
+  Kapitel beginnt beim Aufruf des Geschäfts, nicht bei der Abstimmung.
+  Nach jeder Sitzung `python3 scripts/youtube.py` laufen lassen; die Kapitel
+  trägt der Kanton meist erst Tage nach dem Stream ein.
+
+## Offen aus den Rückmeldungen der Tester
+
+- **Meldewerkzeug mit Captcha.** Ohne Server braucht es einen Formulardienst.
+  Vorschlag: Web3Forms (kostenlos, hCaptcha eingebaut, Mail an
+  politspiegel.sh@gmail.com); Michael legt den Zugangsschlüssel an und trägt ihn
+  in `politspiegel.json` unter `melden.schluessel` ein, dann erscheint auf jeder
+  Seite «Fehler melden». Der Schlüssel ist öffentlich, nur der Empfänger ist
+  festgelegt; Missbrauch fängt das Captcha.
+- **WhatsApp-Kanal.** Kanäle haben keine Schnittstelle zum Posten. Umsetzbar:
+  `scripts/whatsapp_text.py` schreibt nach jeder Sitzung einen Beitragstext mit
+  Verweis in den Kantonsratsspiegel, den Michael in den Kanal einfügt; die Seite
+  bekommt einen Knopf «Kanal folgen», sobald die Kanaladresse vorliegt.
+
 ## Erledigt am 4. September 2026
 
 - **Geltungsbereiche als Vektorebenen.** `geltung_initiative` und

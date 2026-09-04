@@ -350,6 +350,24 @@
     }).join("") + "</div>";
   }
 
+  /* Livestream des Kantons auf YouTube: v.yt = "<Video-ID>|<Sekunde>", die
+     Sekunde ist der Beginn des Traktandums in der Videobeschreibung (Kapitel),
+     nicht der Moment der Abstimmung. Zuordnung in scripts/youtube.py. */
+  function zeitmarke(sek) {
+    sek = parseInt(sek, 10) || 0;
+    var h = Math.floor(sek / 3600), m = Math.floor((sek % 3600) / 60), s = sek % 60;
+    return (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  }
+  function livestreamHtml(v) {
+    if (!v.yt) return "";
+    var teile = v.yt.split("|");
+    var url = "https://www.youtube.com/watch?v=" + encodeURIComponent(teile[0]) + "&t=" + (parseInt(teile[1], 10) || 0) + "s";
+    return '<p class="vlive"><a href="' + url + '" target="_blank" rel="noopener" ' +
+      'title="Livestream der Sitzung auf YouTube, ab Beginn der Debatte zu diesem Geschäft">' +
+      '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M2.5 3.5h11v9h-11z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M6.8 6v4l3.4-2z" fill="currentColor"/></svg>' +
+      "Debatte im Livestream, ab " + zeitmarke(teile[1]) + "</a></p>";
+  }
+
   function voteCardHtml(s, v, i, opt) {
     opt = opt || {};
     var e = ergebnis(s, i), t = e.t;
@@ -371,6 +389,7 @@
       (v.kx ? '<p class="vkontext">' + esc(v.kx) +
         (v.kq ? '<span class="kq">Einordnung aus ' + esc(v.kq) + "</span>" : "") + "</p>" : "") +
       (v.d && v.d !== v.t ? '<p class="vdetails">' + esc(v.d) + "</p>" : "") +
+      livestreamHtml(v) +
       umkehrHtml(v) +
       tallyHtml(t) + legendeHtml(t) +
       (knappHtml ? '<div class="legende">' + knappHtml + "</div>" : "") +
@@ -476,7 +495,8 @@
       '<p class="subline">Sitzung vom <b>' + esc(deDatum(s.dt)) + "</b>" +
       (s.z ? " · " + esc(s.z) : "") + ". Der Rat hat <b>" + s.v.length + " Mal</b> namentlich " +
       "abgestimmt. Alle " + s.m.length + " Ratsmitglieder und ihre Stimmen sind zu jeder Frage " +
-      "aufklappbar.</p></header>" +
+      "aufklappbar." + (s.yt ? ' <a href="https://www.youtube.com/watch?v=' + encodeURIComponent(s.yt) +
+        '" target="_blank" rel="noopener">Livestream der Sitzung auf YouTube</a>.' : "") + "</p></header>" +
       '<div class="kzs">' + kz.map(function (k) {
         return '<div class="kz"><div class="kzn">' + k[0] + '</div><div class="kzl">' + k[1] +
           '</div><div class="kzsub">' + k[2] + "</div></div>";
