@@ -85,6 +85,7 @@ def melden_html(seite: str = "", schwebend: bool = True) -> str:
     knopf = melden_knopf_html() if schwebend else ""
     return f'''
 {knopf}
+<div class="melden-schleier" id="meldenSchleier" hidden></div>
 <dialog class="melden" id="meldenDialog" aria-labelledby="meldenTitel">
   <form id="meldenForm" method="dialog" novalidate>
     <h2 id="meldenTitel">Fehler melden</h2>
@@ -113,18 +114,25 @@ def melden_html(seite: str = "", schwebend: bool = True) -> str:
   var KEY={json.dumps(bool(key))}, MAIL={json.dumps(mail)};
   var d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
   if(!d||!f) return;
-  var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos");
-  // Jedes Element mit data-melden oeffnet den Dialog, auch spaeter eingefuegtes (Fusszeile je Rubrik)
-  document.addEventListener("click",function(ev){{
-    var a=ev.target.closest && ev.target.closest("[data-melden]"); if(!a) return;
-    ev.preventDefault();
+  var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos"), schleier=document.getElementById("meldenSchleier");
+  // Nicht modal (kein showModal): ein modaler Dialog liegt in der obersten Ebene und
+  // sperrt alles andere, auch das hCaptcha-Raetsel, das am body haengt. Darum ein
+  // eigener Schleier, und das Raetsel bleibt bedienbar.
+  function auf(){{
     document.getElementById("meldenSeite").value=location.href;
     st.textContent=""; f.reset();
-    if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");
+    schleier.hidden=false; d.show(); document.body.classList.add("melden-offen");
     document.getElementById("meldenArt").focus();
+  }}
+  function zu(){{ d.close(); schleier.hidden=true; document.body.classList.remove("melden-offen"); }}
+  document.addEventListener("click",function(ev){{
+    var a=ev.target.closest && ev.target.closest("[data-melden]"); if(!a) return;
+    ev.preventDefault(); auf();
   }});
-  document.getElementById("meldenAb").addEventListener("click",function(){{ d.close(); }});
-  d.addEventListener("click",function(ev){{ if(ev.target===d) d.close(); }});
+  document.getElementById("meldenAb").addEventListener("click",zu);
+  schleier.addEventListener("click",zu);
+  document.addEventListener("keydown",function(ev){{ if(ev.key==="Escape" && d.open) zu(); }});
+  d.addEventListener("cancel",function(ev){{ ev.preventDefault(); zu(); }});
   f.addEventListener("submit",function(ev){{
     ev.preventDefault();
     var art=document.getElementById("meldenArt").value, text=document.getElementById("meldenText").value.trim();
@@ -143,7 +151,7 @@ def melden_html(seite: str = "", schwebend: bool = True) -> str:
     fetch("{ZIEL}",{{method:"POST",body:fd,headers:{{Accept:"application/json"}}}})
       .then(function(r){{ return r.json(); }})
       .then(function(j){{
-        if(j&&j.success){{ st.textContent="Danke, die Meldung ist angekommen."; setTimeout(function(){{ d.close(); }},1600); }}
+        if(j&&j.success){{ st.textContent="Danke, die Meldung ist angekommen."; setTimeout(zu,1600); }}
         else {{ st.textContent="Das hat nicht geklappt: "+((j&&j.message)||"unbekannter Fehler")+". Alternativ per Mail an die Adresse im Impressum."; }}
       }})
       .catch(function(){{ st.textContent="Keine Verbindung zum Formulardienst. Alternativ per Mail an die Adresse im Impressum."; }})
@@ -158,8 +166,10 @@ MELDEN_CSS = """
   padding:8px 12px;border-radius:999px;border:1px solid rgba(17,24,32,.18);background:#FFFFFF;color:#2A3441;
   font:600 12.5px/1 Archivo,"Public Sans","Helvetica Neue",Arial,sans-serif;cursor:pointer;box-shadow:0 2px 10px rgba(17,24,32,.14)}
 .melden-knopf:hover{color:#111820;border-color:rgba(17,24,32,.4)}
-.melden{border:0;border-radius:14px;padding:0;max-width:min(560px,92vw);width:100%;box-shadow:0 20px 60px rgba(17,24,32,.3);background:#FFFFFF;color:#111820}
-.melden::backdrop{background:rgba(17,24,32,.45)}
+.melden{position:fixed;inset:0;margin:auto;z-index:1001;height:fit-content;max-height:calc(100vh - 32px);overflow:auto;
+  border:0;border-radius:14px;padding:0;max-width:min(560px,92vw);width:100%;box-shadow:0 20px 60px rgba(17,24,32,.3);background:#FFFFFF;color:#111820}
+.melden-schleier{position:fixed;inset:0;z-index:1000;background:rgba(17,24,32,.45)}
+body.melden-offen{overflow:hidden}
 .melden form{padding:24px 26px 20px;display:flex;flex-direction:column;gap:12px;font-family:"Public Sans","Helvetica Neue",Arial,sans-serif}
 .melden h2{margin:0;font-size:20px;font-family:Archivo,"Public Sans",Arial,sans-serif}
 .melden-hinweis{margin:0;font-size:14px;line-height:1.5;color:#4A5563}

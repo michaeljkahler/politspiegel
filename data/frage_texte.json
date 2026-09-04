@@ -1,6 +1,6 @@
 {
  "hinweis": "Von Hand geschriebene Fragetexte und neutrale Zusammenfassungen für den Reiter «Wer stimmt wie ich». Die Frage benennt, worüber der Rat wirklich abgestimmt hat, nicht bloss das übergeordnete Geschäft: bei Anträgen innerhalb einer Vorlage sind das zwei verschiedene Dinge. Ein Ja bedeutet immer Zustimmung zu dem, was die Frage nennt; bei Umkehrabstimmungen ist die Richtung dafür bereits korrigiert. Die Zitate stammen wörtlich aus dem Wortprotokoll und sind anonymisiert; belegt ist die Seite durch die Stimmabgabe der sprechenden Person, nicht durch eine Auslegung ihres Inhalts. Zitate erscheinen nur paarweise, sonst läse sich die Karte einseitig. Wo sich in der Debatte kein eigenständiges Sachargument findet, bleiben beide Felder leer.",
- "stand": "2026-09-02",
+ "stand": "2026-09-04",
  "fragen": [
   {
    "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#2",
@@ -98,7 +98,6 @@
    "dafuer": "Grundsätzlich ist es begrüssenswert, dass die Sozialversicherungsanstalt neu eine vom Kanton unabhängige Verwaltungskommission einsetzen wird, die unter anderem die administrative und personelle Aufsicht über die Ausgleichskasse ausübt.",
    "dagegen": "Ich empfehle Ihnen auch, den Antrag abzulehnen. Es ist ein Kompromiss und das Element der Unabhängigkeit finden wir sehr wichtig."
   },
-
   {
    "schluessel": "2. Sitzung 2026 · 16.03.2026 (Vormittag)#3",
    "kontext": "Postulat: Hoheit über den Entscheid zu Tempo 30 auf Kantonsstrassen",
@@ -578,6 +577,54 @@
    "zusammenfassung": "Das Gesetz zur Förderung des öffentlichen Verkehrs regelt, wofür der Kanton zahlt. Der Antrag will eine Bestimmung einfügen, wonach der Kanton bei vorrangigem kantonalem Interesse auch für Güterverkehr, Kursschifffahrt und Ausflugsverkehr Vereinbarungen abschliessen und sich an den ungedeckten Kosten beteiligen kann.",
    "dafuer": null,
    "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Vormittag)#2",
+   "kontext": "Erhöhung des Ortsverkehrsbeitrages, zweite Lesung",
+   "frage": "Soll der Kanton 20 statt 22,5 Prozent der ungedeckten Betriebskosten des Ortsverkehrs übernehmen?",
+   "zusammenfassung": "Die Spezialkommission schlug vor, den Kantonsbeitrag an die ungedeckten Betriebskosten des Ortsverkehrs in Schaffhausen und Neuhausen auf 22,5 Prozent festzulegen. Der Antrag wollte den Satz bei 20 Prozent ansetzen, was dem Wortlaut der ursprünglichen Motion entspricht und den Kanton weniger kostet. Die Gegenseite hielt an der in der Kommission ausgehandelten Fassung fest und verwies darauf, dass die Zentrumsgemeinden weiterhin den grössten Teil der Kosten tragen.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#3",
+   "kontext": "Gesetz über die Förderung des öffentlichen Verkehrs, Schlussabstimmung",
+   "frage": "Soll der Kanton künftig 22,5 Prozent der ungedeckten Kosten des Ortsverkehrs tragen, begrenzt auf 4,5 Millionen Franken im Jahr?",
+   "zusammenfassung": "In der Schlussabstimmung ging es um die bereinigte Gesetzesänderung: Der Kantonsbeitrag an den Ortsverkehr steigt auf 22,5 Prozent der ungedeckten Kosten, gedeckelt bei 4,5 Millionen Franken im Jahr; über eine Anpassung des Deckels befindet der Kantonsrat alle zwei Jahre in einem separaten Beschluss. Befürworter sahen darin einen Kompromiss zwischen fairer Kostenbeteiligung und Kostenkontrolle. Gegner hielten den Beitrag für zu hoch oder lehnten den Deckel ab. Weil die Vier-Fünftel-Mehrheit nicht erreicht wurde, kommt die Vorlage vor das Volk.",
+   "dafuer": "Alle möchten sowohl vom starken Orts- als auch vom Regionalverkehr profitieren, denn es ist eine Verbundaufgabe, an der auch der Kanton interessiert ist.",
+   "dagegen": "Die 20% wären für mich jedoch auch ein Kompromiss gewesen, da sie in der Mitte zwischen 25% und 15% liegen. Deshalb werde ich und wahrscheinlich auch Teile unserer Fraktion bei einer Schlussabstimmung der Vorlage nicht zustimmen."
+  },
+  {
+   "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#10",
+   "kontext": "Kantonaler Strassenrichtplan, Änderung Nr. 4 Spange Beringen West",
+   "frage": "Soll die Spange Beringen West im kantonalen Strassenrichtplan bleiben?",
+   "zusammenfassung": "Der Strassenrichtplan nimmt die Spange Beringen West als langfristiges Projekt neu auf. Zur Abstimmung stand der Antrag, diesen Eintrag zu streichen; ein Ja im Rat bedeutete hier die Ablehnung der Streichung, also den Verbleib im Richtplan. Für die Streichung wurden der Eingriff ins Landschaftsbild, der Verlust an Fruchtfolgeflächen, Kosten von gegen 25 Millionen Franken und eine blosse Verkehrsverlagerung in andere Quartiere angeführt. Für den Verbleib sprach aus Sicht des Regierungsrats, dass der Eintrag den Korridor freihält, ohne dass derzeit eine Planung ausgelöst wird.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)#3",
+   "kontext": "Verkehrsflussinitiative",
+   "frage": "Soll der Verkehrsflussinitiative ein Gegenvorschlag gegenübergestellt werden?",
+   "zusammenfassung": "Die Volksinitiative verlangt auf den vom öffentlichen Verkehr genutzten Kantonsstrassen generell Tempo 50; Ausnahmen wären im kantonalen Richtplan festzusetzen. Nachdem der Rat die Initiative zur Ablehnung empfohlen hatte, ging es um die Frage, ob dem Volk zusätzlich ein Gegenvorschlag unterbreitet wird. Die Kommission wollte das Kernanliegen mit einem eigenen Text aufnehmen, ohne den Weg über den Richtplan. Die Initianten hielten ihren Text für präziser und den Gegenvorschlag für zu unbestimmt; andere lehnten Initiative und Gegenvorschlag als Eingriff in die Gemeindeautonomie ab.",
+   "dafuer": "Die Kommissionsmehrheit erachtet es als richtig, dass man dem Volk die Möglichkeit gibt, einmal die Grundentscheidung zu fällen.",
+   "dagegen": "Der Gegenvorschlag lässt somit deutlich mehr Raum für Interpretationen und Ausnahmen zu, was nicht im Sinne der Initiative ist."
+  },
+  {
+   "schluessel": "10. und 11. Sitzung 2025 · 19.05.2025 (Vormittag)#5",
+   "kontext": "Verkehrsflussinitiative, Gegenvorschlag der Kommission",
+   "frage": "Soll auf verkehrsorientierten Kantonsstrassen grundsätzlich Tempo 50 gelten, ohne dass der Kantonsrat über Ausnahmen entscheidet?",
+   "zusammenfassung": "Der Gegenvorschlag der Kommission für Bau, Verkehr und Energie hält fest, dass auf verkehrsorientierten Kantonsstrassen grundsätzlich die allgemeine Höchstgeschwindigkeit von 50 km/h gilt und der Verkehrsablauf nicht behindert werden darf. Anders als die Initiative verzichtet er auf eine Festsetzung von Ausnahmen im Richtplan; die Tempoanordnung bleibt Sache des Baudepartements. Ein Antrag, den Text zurück in die Kommission zu geben, um eine Mitsprache des Kantonsrats einzubauen, war zuvor abgelehnt worden.",
+   "dafuer": "Der Gegenvorschlag ist nicht schwammig, aber er berücksichtigt, dass es Situationen gibt, in denen sich die allermeisten Menschen wünschen, dass man nicht allzu schnell fährt.",
+   "dagegen": "Im Gegenvorschlag vermisse ich bei einem wesentlichen Teil die Mitbestimmung des Kantonsrats. Für mich ist sie das zentrale Element, welches auch die Initiative beinhaltet."
+  },
+  {
+   "schluessel": "22., 23. und 24. Sitzung 2025 · 17.11.2025 (Nachmittag)#12",
+   "kontext": "Budget 2026, Verpflichtungskredit 31-Tage-Challenge",
+   "frage": "Soll der Kanton den Verpflichtungskredit für die 31-Tage-Challenge zur Förderung ökologischer Mobilität wieder ins Budget 2026 aufnehmen?",
+   "zusammenfassung": "Bei der 31-Tage-Challenge verzichten ausgewählte Teilnehmer einen Monat lang auf das Auto und erhalten dafür ein GA, ein E-Bike und ein Carsharing-Abo; die SBB trägt den grössten Teil der Kosten, der Kanton hätte 230'000 Franken beigesteuert. Die GPK beantragte die Streichung, der Regierungsrat schloss sich an. Der Antrag wollte den Kredit wieder einstellen und verwies auf Erfahrungen aus anderen Kantonen und die Fördergelder. Die Gegenseite bezweifelte die Wirkung und hielt die Ausgabe in der angespannten Finanzlage für nicht vertretbar.",
+   "dafuer": "In unsere Region und in unsere Bevölkerung zu investieren, also Abos oder Vergünstigungen, ist deshalb ein attraktives Projekt, für das sich unser Kanton scheinbar erfolgreich eingesetzt hatte.",
+   "dagegen": "Ganz ehrlich, ein Kanton, der Millionenlöcher stopfen muss, hat keinen Auftrag bei der Bevölkerung, pädagogische Selbstfindungsprogramme zu finanzieren."
   }
  ]
 }
