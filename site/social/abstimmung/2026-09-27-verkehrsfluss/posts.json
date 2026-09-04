@@ -870,6 +870,11 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370953567,
+    "uuid": "-3722647186535856720",
+    "draft": true
    }
   },
   {
@@ -886,6 +891,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Verkehrsflussinitiative: Welche Strassen die Vorlage erfasst"
+   },
+   "metricool": {
+    "id": 370953605,
+    "uuid": "-6788932898583523680",
+    "draft": true
    }
   },
   {
@@ -914,6 +924,11 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370953635,
+    "uuid": "4871037289504719648",
+    "draft": true
    }
   },
   {
@@ -930,6 +945,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Verkehrsflussinitiative: Fussgängerunfälle 2011 bis 2025"
+   },
+   "metricool": {
+    "id": 370953664,
+    "uuid": "5456647536849014744",
+    "draft": true
    }
   }
  ]
