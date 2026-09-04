@@ -944,7 +944,7 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370953635,
+    "id": 370971659,
     "uuid": "4871037289504719648",
     "draft": true
    }
@@ -965,7 +965,7 @@
     "title": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen"
    },
    "metricool": {
-    "id": 370953664,
+    "id": 370971692,
     "uuid": "5456647536849014744",
     "draft": true
    }
@@ -996,6 +996,11 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370971736,
+    "uuid": "6933001402285640171",
+    "draft": true
    }
   },
   {
@@ -1012,6 +1017,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen"
+   },
+   "metricool": {
+    "id": 370971772,
+    "uuid": "2595758876816852225",
+    "draft": true
    }
   },
   {
@@ -1040,6 +1050,11 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370971922,
+    "uuid": "-6824085246254561773",
+    "draft": true
    }
   },
   {
@@ -1056,6 +1071,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Verkehrsflussinitiative: Bus Linie 1 und 6 bei Tempo 30"
+   },
+   "metricool": {
+    "id": 370971982,
+    "uuid": "-3778711478741612911",
+    "draft": true
    }
   },
   {
@@ -1084,6 +1104,11 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 370972023,
+    "uuid": "2061365099648729866",
+    "draft": true
    }
   },
   {
@@ -1100,6 +1125,11 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime"
+   },
+   "metricool": {
+    "id": 370972058,
+    "uuid": "-3245655703517314034",
+    "draft": true
    }
   }
  ]
