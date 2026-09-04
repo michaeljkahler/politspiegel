@@ -6,7 +6,7 @@ Erzeugt aus data/all_sessions.json für eine Sitzung:
 
   site/social/kantonsrat/<slug>/
       feed-00.png … feed-NN.png   Karussell 1080 x 1350 (Deckblatt + je Abstimmung eine Karte)
-      reel.mp4                    Diashow 1080 x 1920, stumm, H.264, für Reel / TikTok / Short
+      reel.mp4                    Diashow 1080 x 1920 mit eigener Tonspur (ton.py), H.264
       reel-00.png … reel-NN.png   die Einzelbilder der Diashow
       posts.json                  Texte, Medienadressen und Kanäle je Beitrag
 
@@ -469,10 +469,15 @@ def schluss(groesse, sess):
 
 # ── Video ────────────────────────────────────────────────────────────────────
 def video(bilder, dauern, ziel):
-    """Diashow aus PNGs. Stumm, aber mit leerer Tonspur, damit keine Plattform meckert."""
+    """Diashow aus PNGs mit selbst erzeugter Tonspur (scripts/ton.py): ruhiger
+    Flächenklang, Impuls bei jedem Bildwechsel, keine fremden Aufnahmen."""
     if not shutil.which("ffmpeg"):
         print("  ffmpeg fehlt, kein Video.")
         return False
+    import tempfile
+    from ton import tonspur
+    ton_datei = Path(tempfile.mkstemp(suffix=".wav")[1])
+    tonspur(dauern, ton_datei)
     # Die Bildliste liegt im Temp-Ordner, nicht neben der Ausgabe: im
     # eingehängten Projektordner darf das Skript keine Dateien löschen.
     import tempfile
@@ -482,11 +487,12 @@ def video(bilder, dauern, ziel):
         fh.write(f"file '{bilder[-1].resolve().as_posix()}'\n")
         liste = Path(fh.name)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(liste),
-           "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+           "-i", str(ton_datei),
            "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
-           "-c:a", "aac", "-b:a", "64k", "-shortest", "-movflags", "+faststart", str(ziel)]
+           "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(ziel)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     liste.unlink(missing_ok=True)
+    ton_datei.unlink(missing_ok=True)
     if r.returncode:
         print("  ffmpeg:", r.stderr[:400])
         return False
