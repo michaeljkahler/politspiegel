@@ -2554,19 +2554,50 @@ function initNetz(){
     zoomSetzen(e.deltaY<0?1.12:0.89, e.clientX-b.left, e.clientY-b.top);
   }, {passive:false});
 
-  /* Ziehen: Knoten verschieben, im leeren Bereich die ganze Ansicht */
+  /* Ziehen: Knoten verschieben, im leeren Bereich die ganze Ansicht.
+     Zwei Finger: Zoom um die Fingermitte und Verschieben mit der Mitte
+     (Pinch). Pointer Events liefern jeden Finger als eigenen Zeiger; die
+     aktiven Zeiger stehen in «finger». Sobald ein zweiter Finger liegt,
+     endet das Ziehen eines Knotens und das Bild folgt den zwei Fingern. */
   let schieben=null, bewegt=false;
+  const finger=new Map();
+  let pinch=null;
+  const pinchStart=()=>{
+    const [p1,p2]=[...finger.values()];
+    const b=c.getBoundingClientRect();
+    pinch={dist:Math.hypot(p1.x-p2.x,p1.y-p2.y), mx:(p1.x+p2.x)/2-b.left, my:(p1.y+p2.y)/2-b.top, zoom:netzZoom, ox:netzOffX, oy:netzOffY};
+    if(netzZieht){ netzZieht=null; netzHeizen(0.3); }
+    schieben=null; bewegt=true;
+  };
   c.addEventListener("pointerdown",(e)=>{
+    finger.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    try{ c.setPointerCapture(e.pointerId); }catch(_e){}
+    if(finger.size===2){ pinchStart(); return; }
+    if(finger.size>2) return;
     const b=c.getBoundingClientRect();
     const sx=e.clientX-b.left, sy=e.clientY-b.top;
     const n=knotenBei(sx,sy);
     bewegt=false;
     if(n){ netzZieht={knoten:n}; netzHeizen(0.5); }
     else { schieben={x:e.clientX, y:e.clientY, ox:netzOffX, oy:netzOffY}; }
-    c.setPointerCapture(e.pointerId);
   });
   c.addEventListener("pointermove",(e)=>{
+    if(finger.has(e.pointerId)) finger.set(e.pointerId,{x:e.clientX,y:e.clientY});
     const b=c.getBoundingClientRect();
+    if(pinch && finger.size>=2){
+      const [p1,p2]=[...finger.values()];
+      const dist=Math.hypot(p1.x-p2.x,p1.y-p2.y);
+      const mx=(p1.x+p2.x)/2-b.left, my=(p1.y+p2.y)/2-b.top;
+      // Weltpunkt unter der Fingermitte beim Start soll unter der Mitte bleiben
+      const wx=(pinch.mx-b.width/2-pinch.ox)/pinch.zoom, wy=(pinch.my-b.height/2-pinch.oy)/pinch.zoom;
+      netzZoom=Math.min(4, Math.max(0.25, pinch.zoom*(dist/Math.max(pinch.dist,1))));
+      netzOffX = mx-b.width/2-wx*netzZoom;
+      netzOffY = my-b.height/2-wy*netzZoom;
+      const a=document.getElementById("zoomWert");
+      if(a) a.textContent=Math.round(netzZoom*100)+" %";
+      netzMalen();
+      return;
+    }
     if(netzZieht){
       bewegt=true;
       const w=zuWelt(e.clientX-b.left, e.clientY-b.top);
@@ -2580,13 +2611,15 @@ function initNetz(){
     }
   });
   const loslassen=(e)=>{
+    finger.delete(e.pointerId);
+    if(finger.size<2) pinch=null;
     if(netzZieht){ netzZieht=null; netzHeizen(0.3); }
     schieben=null;
     try{ c.releasePointerCapture(e.pointerId); }catch(_e){}
   };
   c.addEventListener("pointerup",(e)=>{
     const b=c.getBoundingClientRect();
-    if(!bewegt){
+    if(!bewegt && finger.size===1){
       const n=knotenBei(e.clientX-b.left, e.clientY-b.top);
       netzGewaehlt = (n && netzGewaehlt && n.id===netzGewaehlt.id) ? null : n;
       if(netzGewaehlt) netzInfoZeigen(netzGewaehlt); else netzInfoLeer();
@@ -2595,6 +2628,8 @@ function initNetz(){
     netzMalen();
   });
   c.addEventListener("pointercancel", loslassen);
+  // Safari iOS: Gestenereignisse abfangen, sonst zoomt die ganze Seite
+  ["gesturestart","gesturechange","gestureend"].forEach(n=>c.addEventListener(n,e=>e.preventDefault()));
 
   const leg=document.getElementById("netzLegende");
   leg.innerHTML=Object.entries({Ratsmitglied:netzFarben().mitglied, Organisation:netzFarben().organisation, Branche:netzFarben().branche})
