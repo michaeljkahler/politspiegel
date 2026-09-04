@@ -238,7 +238,7 @@
    "begruendung": "Titel betrifft penkov, das Ja stützt aber spk: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -253,7 +253,7 @@
    "begruendung": "Titel betrifft freivogel, das Ja stützt aber planungserklarung: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -343,7 +343,7 @@
    "begruendung": "Titel betrifft aellig, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -358,7 +358,7 @@
    "begruendung": "Titel betrifft altorfer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -373,7 +373,7 @@
    "begruendung": "Titel betrifft luthi, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -388,7 +388,7 @@
    "begruendung": "Titel betrifft meyer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -403,7 +403,7 @@
    "begruendung": "Titel betrifft portmann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -418,7 +418,7 @@
    "begruendung": "Titel betrifft neumann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -433,7 +433,7 @@
    "begruendung": "Titel betrifft ruedlinger, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -448,7 +448,7 @@
    "begruendung": "Titel betrifft pfalzgraf, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {
@@ -463,7 +463,7 @@
    "begruendung": "Titel betrifft penkov, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
+   "protokoll_status": "kein_text",
    "protokoll_beleg": ""
   },
   {

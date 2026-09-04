@@ -641,7 +641,7 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
   <form id="meldenForm" method="dialog" novalidate>
     <h2 id="meldenTitel">Fehler melden</h2>
     <p class="melden-hinweis">Die Meldung geht als Mail an den Herausgeber. Korrekturen werden sichtbar protokolliert.</p>
-    <input type="hidden" name="access_key" value="">
+    <input type="hidden" name="access_key" value="4a7966d4-e592-41a0-a21e-e915889056a1">
     <input type="hidden" name="subject" id="meldenBetreff" value="Politspiegel: Fehlermeldung · Abstimmungsspiegel Änderung des Spitalgesetzes">
     <input type="hidden" name="from_name" value="Politspiegel Schaffhausen">
     <input type="hidden" name="seite" id="meldenSeite" value="">
@@ -650,19 +650,19 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
     <label>Wo genau? Abschnitt, Abstimmung, Sitzung oder Name<input type="text" name="stelle" id="meldenStelle" maxlength="200" placeholder="Zum Beispiel: Sitzung 24.08.2026, Nr. 7, Fraktionstabelle"></label>
     <label>Was ist falsch, und was wäre richtig?<textarea name="meldung" id="meldenText" rows="4" required maxlength="3000" placeholder="Zum Beispiel: Im Ratsblock steht 35:20, im Abstimmungsmagazin 36:19."></textarea></label>
     <label>Mailadresse für Rückfragen, freiwillig<input type="email" name="email" id="meldenMail" autocomplete="email" placeholder="name@beispiel.ch"></label>
-    
+    <div class="h-captcha" data-captcha="true" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
     <p class="melden-status" id="meldenStatus" aria-live="polite"></p>
     <div class="melden-zeile">
       <button type="button" class="melden-ab" id="meldenAb">Abbrechen</button>
       <button type="submit" class="melden-los" id="meldenLos">Meldung senden</button>
     </div>
-    <p class="melden-klein">Die Meldung öffnet sich als Mail in Ihrem Mailprogramm; abgeschickt wird sie erst dort. Nichts wird auf dieser Seite gespeichert.</p>
+    <p class="melden-klein">Übermittlung über Web3Forms (Formulardienst) und hCaptcha (Spam-Schutz). Beide erhalten dabei Ihre IP-Adresse; die Meldung selbst wird als Mail an den Herausgeber weitergeleitet und nicht anderweitig gespeichert.</p>
   </form>
 </dialog>
-
+<script src="https://web3forms.com/client/script.js" async defer></script>
 <script>
 (function(){
-  var KEY=false, MAIL=["politspiegel.sh", "gmail.com"];
+  var KEY=true, MAIL=["politspiegel.sh", "gmail.com"];
   var d=document.getElementById("meldenDialog"), f=document.getElementById("meldenForm");
   if(!d||!f) return;
   var st=document.getElementById("meldenStatus"), los=document.getElementById("meldenLos");

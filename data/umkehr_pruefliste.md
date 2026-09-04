@@ -7,9 +7,9 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 
 Offen: **69**
 
-- `keine_fundstelle`: 37
+- `kein_text`: 26
+- `keine_fundstelle`: 26
 - `objekt_unklar`: 17
-- `kein_text`: 15
 
 ---
 
@@ -169,7 +169,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung SPK
 - **Stimmen:** 37 Ja : 18 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft penkov, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 37 : 18 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -179,7 +179,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Planungserklärung BVE
 - **Stimmen:** 34 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber planungserklarung: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 34 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -211,7 +211,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 33 Ja : 23 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft aellig, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 33 : 23 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -221,7 +221,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 39 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft altorfer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 39 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -231,7 +231,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 40 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft luthi, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 40 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -241,7 +241,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 38 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft meyer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 38 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -251,7 +251,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 39 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 39 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -261,7 +261,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 37 Ja : 18 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft neumann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 37 : 18 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -271,7 +271,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 38 Ja : 18 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ruedlinger, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 38 : 18 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -281,7 +281,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 39 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 39 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -291,7 +291,7 @@ Offen: **69**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 40 Ja : 19 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft penkov, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 40 : 19 Stimmen im Protokoll gefunden.
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
