@@ -281,10 +281,21 @@
     return s.pf === 2 ? "Wortprotokoll noch nicht publiziert" : "Wortprotokoll zurzeit nicht abrufbar";
   }
 
+  /* Kasten im Sitzungskopf, wenn das Wortprotokoll fehlt. Der Kanton publiziert
+     es meist einige Wochen nach der Sitzung; bis dahin gibt es die Traktanden
+     und die Abstimmungsergebnisse (PDF, Excel) auf der Sitzungsseite. */
+  function protokollHinweis(s) {
+    if (!s || !s.pf) return "";
+    return '<p class="prothinweis">' + protokollFehlt(s) + ". Titel und Ergebnisse stammen aus der Excel-Publikation " +
+      "der Parlamentsdienste; Debattenbelege und Einordnungen folgen, sobald das Protokoll vorliegt." +
+      (s.pu ? ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite mit Traktanden und Abstimmungsergebnissen auf sh.ch &rarr;</a>' : "") + "</p>";
+  }
+
   function protokollLink(s, text, tooltip) {
     var t = esc(text);
-    if (!s || !s.pu) {
-      return '<span title="' + esc(tooltip || text) + '">' + t + "</span>";
+    if (!s || !s.pu || s.pf) {
+      // Ohne Wortprotokoll bleibt der Titel ein Titel; der Hinweis steht im Sitzungskopf und im Fuss.
+      return '<span title="' + esc(tooltip || text) + (s && s.pf ? " — " + protokollFehlt(s) : "") + '">' + t + "</span>";
     }
     return '<a class="plink" href="' + esc(s.pu) + '" target="_blank" rel="noopener" ' +
       'title="' + esc(tooltip || text) + (s.pf ? ' — Sitzungsseite auf sh.ch öffnen (' + protokollFehlt(s) + ')' : ' — Wortprotokoll der Sitzung öffnen') + '">' + t +
@@ -362,7 +373,7 @@
     if (!v.yt) return "";
     var teile = v.yt.split("|");
     var url = "https://www.youtube.com/watch?v=" + encodeURIComponent(teile[0]) + "&t=" + (parseInt(teile[1], 10) || 0) + "s";
-    return '<p class="vlive"><a href="' + url + '" target="_blank" rel="noopener" ' +
+    return '<p class="vlive"><a class="vlive-knopf" href="' + url + '" target="_blank" rel="noopener" ' +
       'title="Livestream der Sitzung auf YouTube, ab Beginn der Debatte zu diesem Geschäft">' +
       '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M2.5 3.5h11v9h-11z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M6.8 6v4l3.4-2z" fill="currentColor"/></svg>' +
       "Debatte im Livestream, ab " + zeitmarke(teile[1]) + "</a></p>";
@@ -437,7 +448,9 @@
 
   function fussHtml(s) {
     var quelle = s ? " (" + esc(s.q) + ")" : "";
-    var prot = s && s.pu ? ' <a href="' + esc(s.pu) + '">' + (s.pf ? "Sitzungsseite auf sh.ch (" + protokollFehlt(s) + ")" : "Wortprotokoll") + "</a>." : "";
+    var prot = s && s.pu ? (s.pf
+      ? " " + protokollFehlt(s) + '; Traktanden und Abstimmungsergebnisse auf der <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite von sh.ch</a>.'
+      : ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Wortprotokoll</a>.') : "";
     return '<footer class="foot"><b>Datenquelle:</b> Kanton Schaffhausen, namentliche ' +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
       " Aufbereitung ohne Gewähr." +
@@ -496,7 +509,8 @@
       (s.z ? " · " + esc(s.z) : "") + ". Der Rat hat <b>" + s.v.length + " Mal</b> namentlich " +
       "abgestimmt. Alle " + s.m.length + " Ratsmitglieder und ihre Stimmen sind zu jeder Frage " +
       "aufklappbar." + (s.yt ? ' <a href="https://www.youtube.com/watch?v=' + encodeURIComponent(s.yt) +
-        '" target="_blank" rel="noopener">Livestream der Sitzung auf YouTube</a>.' : "") + "</p></header>" +
+        '" target="_blank" rel="noopener">Livestream der Sitzung auf YouTube</a>.' : "") + "</p>" +
+      protokollHinweis(s) + "</header>" +
       '<div class="kzs">' + kz.map(function (k) {
         return '<div class="kz"><div class="kzn">' + k[0] + '</div><div class="kzl">' + k[1] +
           '</div><div class="kzsub">' + k[2] + "</div></div>";
@@ -796,8 +810,8 @@
               '<div style="font-size:13.5px;line-height:1.4">' +
               '<button type="button" class="lnk" data-goto="' + esc(g.s.s) + "|" + x.i + '">' +
               esc(x.v.t) + "</button>" +
-              (g.s.pu ? ' <a class="plink" href="' + esc(g.s.pu) + '" target="_blank" ' +
-                'rel="noopener" title="' + (g.s.pf ? "Sitzungsseite auf sh.ch öffnen" : "Wortprotokoll der Sitzung öffnen") + '">' +
+              (g.s.pu && !g.s.pf ? ' <a class="plink" href="' + esc(g.s.pu) + '" target="_blank" ' +
+                'rel="noopener" title="Wortprotokoll der Sitzung öffnen">' +
                 '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
                 '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
                 'stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +

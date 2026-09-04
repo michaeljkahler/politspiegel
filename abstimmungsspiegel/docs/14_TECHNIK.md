@@ -283,7 +283,9 @@ Seiten, sobald in `politspiegel.json` unter `melden.schluessel` der
 Zugangsschlüssel von Web3Forms steht (Einrichtung im Kopf der Datei). Die
 Meldung geht als Mail an die beim Dienst hinterlegte Adresse; hCaptcha ist
 Pflicht, ohne gelöstes Captcha sendet der Browser nichts. Ohne Schlüssel
-erscheint kein Knopf.
+öffnet der Knopf dasselbe Formular (Art des Fehlers als Auswahl, Stelle,
+Beschreibung, Rückfrageadresse) und übergibt es dem Mailprogramm (mailto),
+ohne Captcha; Übergangslösung bis zur Einrichtung.
 
 ### WhatsApp-Kanal
 
