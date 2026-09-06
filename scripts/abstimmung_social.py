@@ -126,9 +126,9 @@ def serie(slug, daten, bilder, ordner):
         # Feste Sendezeiten (Vorgabe Michael, 4. September 2026): 09:00, zweiter Beitrag am selben Tag 16:00.
         zeit = "T16:00" if any(q["termin"].startswith(wann.isoformat()) for q in posts) else "T09:00"
         posts.append({"art": art, "termin": wann.isoformat() + zeit, "text": text,
-                      "media": medien, "providers": ["instagram", "facebook", "tiktok"],
-                      "instagram": {"type": "POST"}, "facebook": {"type": "POST"},
-                      "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE", "photoCoverIndex": 0}})
+                      "media": medien, "providers": ["instagram", "facebook"],
+                      "instagram": {"type": "POST"}, "facebook": {"type": "POST"}})
+        # Bilder nicht auf TikTok: dort nur Videos (TikTok nimmt über Metricool keine PNG-Fotos).
 
     # Termine rückwärts vom Abstimmungssonntag, frühestens morgen.
     def t(tage_vorher):

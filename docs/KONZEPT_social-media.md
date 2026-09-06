@@ -24,8 +24,8 @@ Stand 3. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des P
 
 Erzeugt `scripts/social.py`, Ausgabe in `site/social/kantonsrat/<datum>/`.
 
-1. Karussell (Instagram, Facebook, TikTok-Fotobeitrag), 1080 × 1350: Deckblatt mit nummerierter Liste aller Abstimmungen und Ergebnis, dann je Abstimmung eine Karte mit Titel, Geschäft, Ergebnis, Gesamtbalken, Fraktionsbalken. Höchstens zehn Bilder je Beitrag, bei mehr Abstimmungen Teil 1 und Teil 2.
-2. Reel (Instagram Reel, TikTok, Facebook Reel, YouTube Short), 1080 × 1920: dieselben Karten als Diashow, 3,5 s Deckblatt, 4 s je Abstimmung, 3 s Schlussbild mit Adresse. Stumm, mit leerer Tonspur. Bei 14 Abstimmungen rund 60 s.
+1. Karussell (Instagram, Facebook; nicht TikTok, dort nur Videos, Entscheid vom 6. September 2026, weil TikTok über Metricool keine PNG-Fotos annimmt), 1080 × 1350: Deckblatt mit nummerierter Liste aller Abstimmungen und Ergebnis, dann je Abstimmung eine Karte mit Titel, Geschäft, Ergebnis, Gesamtbalken, Fraktionsbalken. Höchstens zehn Bilder je Beitrag, bei mehr Abstimmungen Teil 1 und Teil 2.
+2. Reel (Instagram Reel, TikTok, Facebook Reel, YouTube Short), 1080 × 1920: dieselben Karten als Diashow, 3,5 s Deckblatt, 4 s je Abstimmung, 3 s Schlussbild mit Adresse. Mit selbst erzeugter Tonspur (scripts/ton.py). Bei 14 Abstimmungen rund 60 s.
 3. Bildtext: Sitzung, Datum, nummerierte Liste mit Ergebnis und Stimmenzahl, Adresse, Quelle, Hashtags.
 
 ### 3.2 Abstimmungsspiegel, vier Wochen vor dem Abstimmungssonntag
@@ -59,6 +59,6 @@ Im wiederkehrenden Auftrag `kantonsrat-dashboard-update` (1. und 15. jedes Monat
 ## 5. Technik
 
 1. Bilder mit Pillow, Schriften Archivo und Public Sans (OFL) in `scripts/assets/fonts/`.
-2. Video mit ffmpeg, H.264, 30 fps, yuv420p, AAC-Stille.
+2. Video mit ffmpeg, H.264, 30 fps, yuv420p, Tonspur aus scripts/ton.py; Datenreels aus scripts/datenreel.py.
 3. Farben und Typografie nach `docs/DESIGN_entscheide.md`.
 4. Metricool-Grenzen: Instagram höchstens 10 Bilder je Karussell und 2200 Zeichen Text; TikTok braucht Bild oder Video; YouTube braucht Titel und Kinder-Kennzeichnung.

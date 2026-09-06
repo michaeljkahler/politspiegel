@@ -549,18 +549,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370765798,
@@ -577,18 +572,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370765847,
@@ -605,18 +595,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370765880,
@@ -633,18 +618,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370765941,
@@ -661,18 +641,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766091,
@@ -689,18 +664,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766239,
@@ -717,18 +687,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766386,
@@ -745,18 +710,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766434,
@@ -780,18 +740,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766743,
@@ -815,18 +770,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766806,
@@ -843,18 +793,13 @@
    ],
    "providers": [
     "instagram",
-    "facebook",
-    "tiktok"
+    "facebook"
    ],
    "instagram": {
     "type": "POST"
    },
    "facebook": {
     "type": "POST"
-   },
-   "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE",
-    "photoCoverIndex": 0
    },
    "metricool": {
     "id": 370766827,

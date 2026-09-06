@@ -587,8 +587,7 @@ def sitzung_bauen(sess, ordner, mit_video=True):
             img.save(pfad, optimize=True)
             medien.append(url_ordner + pfad.name)
             lauf += 1
-        # Zwei Beiträge je Karussell: die @-Erwähnungen der Parteien sind je
-        # Netzwerk andere Konten, und Metricool kennt nur einen Text je Beitrag.
+        # Karussell nur für Instagram und Facebook (mit Instagram-Handles der Parteien).
         posts.append({
             "art": "karussell", "teil": gi, "teile": len(gruppen), "netz": "instagram",
             "text": text_karussell(sess, gruppe, gi, len(gruppen), url_ordner, "instagram"),
@@ -596,13 +595,8 @@ def sitzung_bauen(sess, ordner, mit_video=True):
             "providers": ["instagram", "facebook"],
             "instagram": {"type": "POST"}, "facebook": {"type": "POST"},
         })
-        posts.append({
-            "art": "karussell", "teil": gi, "teile": len(gruppen), "netz": "tiktok",
-            "text": text_karussell(sess, gruppe, gi, len(gruppen), url_ordner, "tiktok"),
-            "media": medien,
-            "providers": ["tiktok"],
-            "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE", "photoCoverIndex": 0},
-        })
+        # Kein TikTok-Fotobeitrag: TikTok nimmt über Metricool nur JPEG oder WebP
+        # an, und Michael will dort ohnehin nur Videos (Entscheid 6. September 2026).
 
     # Reel: Deckblatt, alle Karten, Schlussbild
     if mit_video:
