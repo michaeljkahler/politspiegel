@@ -2,7 +2,7 @@
  "slug": "2026-09-27-verkehrsfluss",
  "vorlage": "Verkehrsflussinitiative",
  "abstimmung": "2026-09-27",
- "status": "reels_teilweise_entwurf",
+ "status": "freigegeben_zwei_wellen",
  "bilder": [
   {
    "datei": "vorlage.png",
@@ -542,7 +542,7 @@
  "posts": [
   {
    "art": "karussell",
-   "termin": "2026-09-05T09:00",
+   "termin": "2026-09-06T09:00",
    "text": "Kanton Schaffhausen, Abstimmung vom 27. September 2026: Verkehrsflussinitiative.\n\n1. Worum es geht: Die Initiative will im kantonalen Strassengesetz festschreiben, dass auf Kantonsstrassen innerorts, die auch vom öffentlichen Verkehr genutzt werden, generell Tempo 50 gilt und der Verkehrsfluss weder durch bauliche Massnahmen noch durch Verkehrsanordnungen verlangsamt werden darf. Ausnahmen wären nur auf kurzen Strecken und nur mit Festlegung im kantonalen Strassenrichtplan möglich. Der Kantonsrat lehnt die Initiative ab und stellt ihr einen Gegenvorschlag gegenüber, der dasselbe Grundanliegen aufnimmt, aber auf das Bauverbot und den Richtplanvorbehalt verzichtet.\n2. Bei einem Ja: Neuer Art. 12 Abs. 3 und 4 Strassengesetz: generell Tempo 50 auf diesen Strassen, kein Verlangsamen durch Bau oder Anordnung, Ausnahmen nur auf kurzen Strecken und nur mit Eintrag im kantonalen Strassenrichtplan, den der Kantonsrat beschliesst.\n3. Bei einem Nein: Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag käme in Art. 12 Abs. 3 der Satz: «Auf verkehrsorientierten Kantonsstrassen innerorts gilt grundsätzlich als allgemeine Höchstgeschwindigkeit 50 km/h. Der Verkehrsablauf darf nicht behindert werden.»\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/vorlage.png"
@@ -558,14 +558,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370765798,
+    "id": 370770494,
     "uuid": "-5766243968222019486",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-08T09:00",
+   "termin": "2026-09-07T09:00",
    "text": "Verkehrsflussinitiative: Wie der Kantonsrat Schaffhausen gestimmt hat, Sitzung vom 19. Mai 2025. Namentliche Abstimmungen, gezählt aus dem Wortprotokoll.\n\n1. 2. Satz von Art. 12. Abs. 4 (neu) der Verkehrsflussinitiative soll für ungültig erklärt werden: 36 Ja, 17 Nein\n2. Die Verkehrsflussinitiative sei abzulehnen und den Stimmberechtigten des Kantons Schaffhausen mit dem Antrag auf Ablehnung zu unterbreiten: 35 Ja, 20 Nein\n3. Der Verkehrsflussinitiative sei ein Gegenvorschlag gegenüberzustellen: 34 Ja, 20 Nein\n4. Der Gegenvorschlag sei zwecks Überarbeitung an die vorberatende Kommission (BVE) zurückzuweisen: 18 Ja, 34 Nein\n5. Zustimmung zu Gegenvorschlag inkl. von der BVE beschlossene Anpassungen: 39 Ja, 16 Nein\n6. Bei Stichfrage sei dem Gegenvorschlag der Vorzug zu geben: 37 Ja, 17 Nein\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/kantonsrat.png"
@@ -581,14 +581,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370765847,
+    "id": 371691454,
     "uuid": "-1192247261613175555",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-11T09:00",
+   "termin": "2026-09-08T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 1 von 5.\n\n1. Initiativkomitee: «Temporeduktionen führen zu längeren Fahrzeiten für Busse, Krankenwagen, Feuerwehr und Polizei, die nicht behindert werden dürfen.» (5 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «In der Schweiz sterben immer mehr Menschen im Strassenverkehr: +34 % innert 5 Jahren. Das ist die höchste Zunahme in ganz Europa. In Schaffhausen hat die Zahl der verletzten Fussgänger besonders stark zugenommen.» (6 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-0.png"
@@ -604,14 +604,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370765880,
+    "id": 371691474,
     "uuid": "-6880601036237943753",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-13T09:00",
+   "termin": "2026-09-09T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 2 von 5.\n\n1. Initiativkomitee: «Zusätzlich verteuert Tempo 30 den öffentlichen Verkehr. Der ÖV wird unattraktiv und teurer, wenn mehr Busse und Personal eingesetzt werden müssen.» (6 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «Zusätzlich will die Initiative Sicherheitselemente wie Mittelschutzinseln bei Fussgängerstreifen oder Ortseingängen abschaffen.» (13 von 16 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-1.png"
@@ -627,14 +627,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370765941,
+    "id": 371691492,
     "uuid": "-4036561831005371882",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-15T09:00",
+   "termin": "2026-09-10T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 3 von 5.\n\n1. Initiativkomitee: «Die Verkehrsflussinitiative trägt dazu bei, den Verkehr auf die Hauptverkehrsachsen zu lenken und den Schleichverkehr in den Quartieren zu reduzieren.» (7 von 20 Punkten für den Beleg)\n2. Bündnis Pro30: «Mit der Initiative wird ein Eintrag in den Richtplan vorausgesetzt. Der Richtplan wird jedoch nur alle 10 Jahre überarbeitet und muss vom Kantonsrat genehmigt werden. Das bedeutet: Die Höchstgeschwindigkeit ist künftig keine fachliche Entscheidung mehr, die aufgrund von Sicherheitskriterien oder Lärmschutz getroffen wird.» (14 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-2.png"
@@ -650,14 +650,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766091,
+    "id": 371691514,
     "uuid": "7942033449760411386",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-17T09:00",
+   "termin": "2026-09-11T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 4 von 5.\n\n1. Initiativkomitee: «Der Gegenvorschlag verlangt, dass Tempo 50 «grundsätzlich» eingehalten wird, während die Initiative den Begriff «generell» verwendet. «Grundsätzlich» bedeutet: im Prinzip ja, im Einzelfall jedoch mit Ausnahmen. «Generell» bedeutet: allgemein gültig, ohne Ausnahmen bereits einzukalkulieren.» (7 von 12 Punkten für den Beleg)\n2. Bündnis Pro30: «Tausende Schaffhauserinnen und Schaffhauser sind in ihrer Wohnung schädlichem Verkehrslärm ausgesetzt. Grenzwerte werden heute nicht eingehalten.» (12 von 20 Punkten für den Beleg)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-3.png"
@@ -673,14 +673,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766239,
+    "id": 371691533,
     "uuid": "2710025088287524117",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-19T09:00",
+   "termin": "2026-09-12T09:00",
    "text": "Verkehrsflussinitiative, Aussagenpaar 5 von 5.\n\n1. Initiativkomitee: «Flächendeckendes Tempo 30 ist nicht zielführend und muss gestoppt werden. Tempo 30 macht Sinn in Wohnquartieren, nicht auf Hauptverkehrsachsen.» (Werturteil, ohne Note)\n2. Bündnis Pro30: «Wer an einer Kantonsstrasse wohnt, will sein Fenster öffnen können. Will, dass Kinder draussen spielen. Will nicht, dass Lärm und Tempo den Alltag bestimmen.» (Werturteil, ohne Note)\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/paar-4.png"
@@ -696,14 +696,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766386,
+    "id": 371691592,
     "uuid": "3794596972598805104",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-21T09:00",
+   "termin": "2026-09-13T09:00",
    "text": "Verkehrsflussinitiative: Wie gut sind die Argumente belegt?\n\n1. Mittelwert je Achse über die geprüften Aussagen, 0 bis 4 Punkte.\n2. Gemessen wird der Beleg, nicht die Richtigkeit.\n3. Werturteile sind ausgenommen.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/gegen.png"
@@ -719,14 +719,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766434,
+    "id": 371691607,
     "uuid": "8083664154096910698",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-23T09:00",
+   "termin": "2026-09-12T16:00",
    "text": "Verkehrsflussinitiative: eine Aussage von Initiativkomitee im Detail.\n\n«Temporeduktionen führen zu längeren Fahrzeiten für Busse, Krankenwagen, Feuerwehr und Polizei, die nicht behindert werden dürfen.»\n\n1. Was zutrifft und was fehlt, mit eigener Auswertung.\n2. Die letzte Folie zeigt die Aussage der Gegenseite mit gleicher Nummer.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/karussell-pro-1-folie-1.png",
@@ -749,14 +749,14 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766743,
+    "id": 371691630,
     "uuid": "-2547014774047947338",
     "draft": false
    }
   },
   {
    "art": "karussell",
-   "termin": "2026-09-24T09:00",
+   "termin": "2026-09-13T16:00",
    "text": "Verkehrsflussinitiative: eine Aussage von Bündnis Pro30 im Detail.\n\n«In der Schweiz sterben immer mehr Menschen im Strassenverkehr: +34 % innert 5 Jahren. Das ist die höchste Zunahme in ganz Europa. In Schaffhausen hat die Zahl der verletzten Fussgänger besonders stark zugenommen.»\n\n1. Was zutrifft und was fehlt, mit eigener Auswertung.\n2. Die letzte Folie zeigt die Aussage der Gegenseite mit gleicher Nummer.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/karussell-contra-1-folie-1.png",
@@ -779,7 +779,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766806,
+    "id": 371691660,
     "uuid": "6091782877072933877",
     "draft": false
    }
@@ -802,7 +802,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 370766827,
+    "id": 371691680,
     "uuid": "7761235619531868825",
     "draft": false
    }
@@ -810,7 +810,7 @@
   {
    "art": "reel",
    "netz": "instagram",
-   "termin": "2026-09-14T16:00",
+   "termin": "2026-09-07T16:00",
    "text": "Verkehrsflussinitiative: Überflug über die betroffenen Kantonsstrassen.\n\n1. Blau: Geltungsbereich der Initiative.\n2. Rot: Geltungsbereich des Gegenvorschlags.\n3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\nKarte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-ueberflug.mp4"
@@ -835,15 +835,15 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370953567,
+    "id": 371691715,
     "uuid": "-3722647186535856720",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-09-14T16:00",
+   "termin": "2026-09-07T16:00",
    "text": "Verkehrsflussinitiative: Überflug über die betroffenen Kantonsstrassen.\n\n1. Blau: Geltungsbereich der Initiative.\n2. Rot: Geltungsbereich des Gegenvorschlags.\n3. Kilometer je Gemeinde und Anwohner an diesen Strassen aus amtlichen Geodaten.\n\nKarte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-ueberflug.mp4"
@@ -856,15 +856,15 @@
     "title": "Verkehrsflussinitiative: Welche Strassen die Vorlage erfasst"
    },
    "metricool": {
-    "id": 370953605,
+    "id": 371691734,
     "uuid": "-6788932898583523680",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "instagram",
-   "termin": "2026-09-18T16:00",
+   "termin": "2026-09-09T16:00",
    "text": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen 2011 bis 2025.\n\n1. Ein Balken je Jahr, gestapelt nach Schwere.\n2. Leichtverletzte, Schwerverletzte, Getötete.\n3. Alle Gemeinden des Kantons.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
@@ -889,15 +889,15 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370971659,
+    "id": 371691813,
     "uuid": "4871037289504719648",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-09-18T16:00",
+   "termin": "2026-09-09T16:00",
    "text": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen 2011 bis 2025.\n\n1. Ein Balken je Jahr, gestapelt nach Schwere.\n2. Leichtverletzte, Schwerverletzte, Getötete.\n3. Alle Gemeinden des Kantons.\n\nUnfälle mit Personenschaden und Fussgängerbeteiligung, Quelle ASTRA.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-zeitstrahl.mp4"
@@ -910,15 +910,15 @@
     "title": "Verkehrsflussinitiative: Fussgängerunfälle im Kanton Schaffhausen"
    },
    "metricool": {
-    "id": 370971692,
+    "id": 371691855,
     "uuid": "5456647536849014744",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "instagram",
-   "termin": "2026-09-16T16:00",
+   "termin": "2026-09-08T16:00",
    "text": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen.\n\n1. Orange: Hektaren mit Fassaden über 65 dB am Tag, dem Immissionsgrenzwert der Wohnzone.\n2. Gebäude mit solchen Fassaden: Initiative 404, Gegenvorschlag 353.\n3. Anwohner an diesen Fassaden: 6481 beziehungsweise 5562.\n\nLärmkataster Kanton Schaffhausen, Hektarraster der Bevölkerungsstatistik, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-laerm.mp4"
@@ -943,15 +943,15 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370971736,
+    "id": 371691769,
     "uuid": "6933001402285640171",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-09-16T16:00",
+   "termin": "2026-09-08T16:00",
    "text": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen.\n\n1. Orange: Hektaren mit Fassaden über 65 dB am Tag, dem Immissionsgrenzwert der Wohnzone.\n2. Gebäude mit solchen Fassaden: Initiative 404, Gegenvorschlag 353.\n3. Anwohner an diesen Fassaden: 6481 beziehungsweise 5562.\n\nLärmkataster Kanton Schaffhausen, Hektarraster der Bevölkerungsstatistik, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-laerm.mp4"
@@ -964,15 +964,15 @@
     "title": "Verkehrsflussinitiative: Lärm an den betroffenen Strassen"
    },
    "metricool": {
-    "id": 370971772,
+    "id": 371691787,
     "uuid": "2595758876816852225",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "instagram",
-   "termin": "2026-09-19T16:00",
+   "termin": "2026-09-10T16:00",
    "text": "Verkehrsflussinitiative: Braucht Tempo 30 einen zusätzlichen Bus?\n\n1. Linie 1 und Linie 6, alle Halte, 12 Sekunden Haltezeit.\n2. Links der Fahrplan von heute, rechts mit Zuschlag für Tempo 30 auf den betroffenen Abschnitten.\n3. Zuschlag zwischen physikalischer Untergrenze und ASTRA-Obergrenze, Fahrzeuge je Linie heute und bei Tempo 30.\n\nFahrplan transport.opendata.ch, Umlaufrechnung eigene Auswertung.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-bus.mp4"
@@ -997,15 +997,15 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370971922,
+    "id": 371691873,
     "uuid": "-6824085246254561773",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-09-19T16:00",
+   "termin": "2026-09-10T16:00",
    "text": "Verkehrsflussinitiative: Braucht Tempo 30 einen zusätzlichen Bus?\n\n1. Linie 1 und Linie 6, alle Halte, 12 Sekunden Haltezeit.\n2. Links der Fahrplan von heute, rechts mit Zuschlag für Tempo 30 auf den betroffenen Abschnitten.\n3. Zuschlag zwischen physikalischer Untergrenze und ASTRA-Obergrenze, Fahrzeuge je Linie heute und bei Tempo 30.\n\nFahrplan transport.opendata.ch, Umlaufrechnung eigene Auswertung.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-bus.mp4"
@@ -1018,15 +1018,15 @@
     "title": "Verkehrsflussinitiative: Bus Linie 1 und 6 bei Tempo 30"
    },
    "metricool": {
-    "id": 370971982,
+    "id": 371691896,
     "uuid": "-3778711478741612911",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "instagram",
-   "termin": "2026-09-22T16:00",
+   "termin": "2026-09-11T16:00",
    "text": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime an den betroffenen Strassen.\n\n1. 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Einrichtungen.\n2. Kreise von 300 m um jede Anlage.\n3. 38,3 km der betroffenen Strassen, 57 Prozent, liegen innerhalb dieser Kreise.\n\nStandorte OpenStreetMap und kantonale Quellen, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-anlagen.mp4"
@@ -1051,15 +1051,15 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 370972023,
+    "id": 371691913,
     "uuid": "2061365099648729866",
-    "draft": true
+    "draft": false
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-09-22T16:00",
+   "termin": "2026-09-11T16:00",
    "text": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime an den betroffenen Strassen.\n\n1. 91 Schulen, 77 Kindergärten, 30 Alters- und Pflegeheime, 15 weitere Einrichtungen.\n2. Kreise von 300 m um jede Anlage.\n3. 38,3 km der betroffenen Strassen, 57 Prozent, liegen innerhalb dieser Kreise.\n\nStandorte OpenStreetMap und kantonale Quellen, Karte © swisstopo.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-09-27-verkehrsfluss/\n\n#Schaffhausen #Abstimmung #Verkehrsflussinitiative #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-09-27-verkehrsfluss/reel-anlagen.mp4"
@@ -1072,10 +1072,195 @@
     "title": "Verkehrsflussinitiative: Schulen, Kindergärten und Heime"
    },
    "metricool": {
-    "id": 370972058,
+    "id": 371691928,
     "uuid": "-3245655703517314034",
-    "draft": true
+    "draft": false
    }
   }
- ]
+ ],
+ "wiederholung": {
+  "hinweis": "Zweite Ausspielung derselben Beiträge in der Woche vor der brieflichen Stimmabgabe (Vorgabe Michael, 6. September 2026).",
+  "beitraege": [
+   {
+    "termin": "2026-09-14T09:00",
+    "datei": "vorlage.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692075
+   },
+   {
+    "termin": "2026-09-14T16:00",
+    "datei": "reel-ueberflug.mp4",
+    "providers": [
+     "instagram",
+     "facebook",
+     "youtube"
+    ],
+    "metricool_id": 371692096
+   },
+   {
+    "termin": "2026-09-14T16:00",
+    "datei": "reel-ueberflug.mp4",
+    "providers": [
+     "tiktok"
+    ],
+    "metricool_id": 371692106
+   },
+   {
+    "termin": "2026-09-15T09:00",
+    "datei": "kantonsrat.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692138
+   },
+   {
+    "termin": "2026-09-15T16:00",
+    "datei": "reel-laerm.mp4",
+    "providers": [
+     "instagram",
+     "facebook",
+     "youtube"
+    ],
+    "metricool_id": 371692153
+   },
+   {
+    "termin": "2026-09-15T16:00",
+    "datei": "reel-laerm.mp4",
+    "providers": [
+     "tiktok"
+    ],
+    "metricool_id": 371692189
+   },
+   {
+    "termin": "2026-09-16T09:00",
+    "datei": "paar-0.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692229
+   },
+   {
+    "termin": "2026-09-16T16:00",
+    "datei": "reel-zeitstrahl.mp4",
+    "providers": [
+     "instagram",
+     "facebook",
+     "youtube"
+    ],
+    "metricool_id": 371692250
+   },
+   {
+    "termin": "2026-09-16T16:00",
+    "datei": "reel-zeitstrahl.mp4",
+    "providers": [
+     "tiktok"
+    ],
+    "metricool_id": 371692264
+   },
+   {
+    "termin": "2026-09-17T09:00",
+    "datei": "paar-1.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692299
+   },
+   {
+    "termin": "2026-09-17T16:00",
+    "datei": "reel-bus.mp4",
+    "providers": [
+     "instagram",
+     "facebook",
+     "youtube"
+    ],
+    "metricool_id": 371692362
+   },
+   {
+    "termin": "2026-09-17T16:00",
+    "datei": "reel-bus.mp4",
+    "providers": [
+     "tiktok"
+    ],
+    "metricool_id": 371692373
+   },
+   {
+    "termin": "2026-09-18T09:00",
+    "datei": "paar-2.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692399
+   },
+   {
+    "termin": "2026-09-18T16:00",
+    "datei": "reel-anlagen.mp4",
+    "providers": [
+     "instagram",
+     "facebook",
+     "youtube"
+    ],
+    "metricool_id": 371692442
+   },
+   {
+    "termin": "2026-09-18T16:00",
+    "datei": "reel-anlagen.mp4",
+    "providers": [
+     "tiktok"
+    ],
+    "metricool_id": 371692462
+   },
+   {
+    "termin": "2026-09-19T09:00",
+    "datei": "paar-3.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692515
+   },
+   {
+    "termin": "2026-09-19T16:00",
+    "datei": "karussell-pro-1-folie-1.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692546
+   },
+   {
+    "termin": "2026-09-20T09:00",
+    "datei": "paar-4.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692566
+   },
+   {
+    "termin": "2026-09-20T16:00",
+    "datei": "karussell-contra-1-folie-1.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692583
+   },
+   {
+    "termin": "2026-09-21T09:00",
+    "datei": "gegen.png",
+    "providers": [
+     "instagram",
+     "facebook"
+    ],
+    "metricool_id": 371692598
+   }
+  ]
+ }
 }

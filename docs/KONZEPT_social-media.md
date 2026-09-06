@@ -38,6 +38,8 @@ Serie je kantonale Vorlage, Bilder aus `abstimmungsspiegel/bausteine/teilen.py` 
 4. Woche 1: Auswertung der Argumente (Motiv «gegen») und eigene Analysen (Karten, Kennzahlen aus der Geoanalyse).
 5. Letzte Woche: Erinnerung mit Termin und Adresse.
 
+Rhythmus nach dem 6. September 2026 verdichtet: Alle Beiträge einer Vorlage laufen in einer Woche (zwei je Tag, 09:00 und 16:00), in der Woche darauf werden sie ein zweites Mal ausgespielt, weil viele brieflich abstimmen und Reels nur kurz sichtbar sind. Die Erinnerung bleibt am Freitag vor dem Abstimmungssonntag.
+
 Noch offen: die Motive aus teilen.py werden im Browser gezeichnet. Für Metricool braucht es PNG-Dateien mit öffentlicher Adresse. Umsetzung als eigener Schritt (Rendering nach dem Muster von social.py).
 
 ### 3.3 Erklärposts, einmalig und bei Bedarf
