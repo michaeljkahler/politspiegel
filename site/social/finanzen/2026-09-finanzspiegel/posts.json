@@ -31,7 +31,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372297835,
+    "id": 372301444,
     "uuid": "-4899473941887433262",
     "draft": true
    }
@@ -54,7 +54,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372297981,
+    "id": 372301467,
     "uuid": "6716636407459040277",
     "draft": true
    }
@@ -77,7 +77,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372298024,
+    "id": 372301524,
     "uuid": "2777396094264953600",
     "draft": true
    }
@@ -100,7 +100,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372298074,
+    "id": 372301558,
     "uuid": "575462720212717315",
     "draft": true
    }
@@ -123,7 +123,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372298125,
+    "id": 372301594,
     "uuid": "-4226142592472103072",
     "draft": true
    }
@@ -146,7 +146,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372298168,
+    "id": 372301653,
     "uuid": "-7724713355745541793",
     "draft": true
    }
@@ -169,11 +169,11 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 372298196,
+    "id": 372301683,
     "uuid": "4592728626271240430",
     "draft": true
    }
   }
  ],
- "hinweis": "Sieben Entwürfe in Metricool, 28.9. bis 4.10.2026, je 09:00, Instagram und Facebook. Freigabe durch Michael. Bilder und Texte am 7.9. auf die beschlossene Fassung des Budgets 2026 umgestellt."
+ "hinweis": "Sieben Entwürfe in Metricool, 28.9. bis 4.10.2026, je 09:00, Instagram und Facebook. Freigabe durch Michael. Bilder und Texte am 7.9. auf die beschlossene Fassung des Budgets 2026 umgestellt. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
 }
