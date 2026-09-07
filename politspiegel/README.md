@@ -20,7 +20,7 @@ Kantonsratsspiegels kommen aus den Ratsdaten, die Abstimmungen aus ihren
 Vorlagen. Von Hand gepflegte Zahlen auf einer Übersichtsseite veralten
 unbemerkt, und zwar genau dann, wenn die Seite darunter aktuell ist.
 
-## Die drei Ebenen
+## Die vier Ebenen
 
 | Adresse | Name | Datei | Grösse |
 |---|---|---|---|
@@ -28,6 +28,7 @@ unbemerkt, und zwar genau dann, wenn die Seite darunter aktuell ist.
 | `/kantonsrat/` | Kantonsratsspiegel | `site/kantonsrat/index.html` | 2,6 MB |
 | `/abstimmung/` | Abstimmungsspiegel, alle Abstimmungen | `site/abstimmung/index.html` | 8 kB |
 | `/abstimmung/<slug>/` | eine Abstimmung | `site/abstimmung/<slug>/index.html` | 0,1 bis 0,5 MB |
+| `/finanzen/` | Finanzspiegel | `site/finanzen/index.html` | 0,3 MB |
 | `/dashboard.html` | Weiterleitung auf `/kantonsrat/` | | |
 
 Bis zum 3. September 2026 lag der Kantonsratsspiegel unter dem Namen

@@ -54,6 +54,7 @@ QUELLE = WURZEL / "politspiegel" / "politspiegel.json"
 VORLAGEN = WURZEL / "abstimmungsspiegel" / "abstimmungen"
 SITE = WURZEL / "site"
 SITZUNGEN = WURZEL / "data" / "all_sessions.json"
+FINANZEN = WURZEL / "finanzspiegel" / "daten" / "finanzspiegel.json"
 
 BESCHREIBUNG = ("Politspiegel Schaffhausen: wie der Kantonsrat abstimmt, und "
                 "was bei der naechsten kantonalen Abstimmung auf dem Zettel "
@@ -118,6 +119,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
   align-self:flex-start;margin-bottom:14px}
 .k-kantonsrat .k-marke{color:var(--pro-text)}
 .k-abstimmung .k-marke{color:var(--contra-text)}
+.k-finanzen .k-marke{color:var(--text)}
 .kasten h2{margin:0 0 8px;font-size:23px;letter-spacing:-.01em}
 .k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise);flex:1}
 .k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;
@@ -131,6 +133,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
+.k-finanzen .k-pfeil{color:var(--text)}
 
 .kasten-div{cursor:default}
 .kasten-div:hover{transform:none}
@@ -196,6 +199,26 @@ def ratszahlen() -> list[dict] | None:
     return [{"wert": f"{sum(len(x.get('votes') or []) for x in s):,}".replace(",", " "),
              "einheit": "namentliche Abstimmungen"},
             {"wert": str(len(s)), "einheit": "Sitzungen"}]
+
+
+def finanzzahlen() -> list[dict] | None:
+    """Kennzahlen des Finanzspiegels aus dessen Datendatei: ordentlicher Aufwand und
+    Ergebnis des juengsten Budgets. Fehlt die Datei, faellt der Kasten weg."""
+    try:
+        d = json.loads(FINANZEN.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    jahre = [j["k"] for j in d.get("jahre") or []]
+    if not jahre or not d.get("z"):
+        return None
+    i = 5 + len(jahre) - 1
+    titel = d["jahre"][-1]["t"]
+    auf = sum(z[i] for z in d["z"] if z[3][0] == "3" and z[3][:2] not in ("38", "39"))
+    gesamt = -sum(z[i] for z in d["z"])
+    mio = lambda v: f"{v / 1e6:,.1f}".replace(",", "'")
+    return [{"wert": f"{mio(auf)} Mio.", "einheit": f"Aufwand {titel}"},
+            {"wert": f"{'−' if gesamt < 0 else '+'}{mio(abs(gesamt))} Mio.",
+             "einheit": "Defizit" if gesamt < 0 else "Überschuss"}]
 
 
 def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
@@ -377,7 +400,17 @@ def bauen(d, zeilen) -> str:
         "titel": kr.get("titel", "Kantonsratsspiegel"), "satz": kr["satz"],
         "kennzahlen": ratszahlen() or [{"wert": "", "einheit": "aus den Ratsdaten"}],
     }]
-    html_kaesten = "".join(kasten(k) for k in kaesten) + abstimmungskasten(zeilen, heute)
+    # Dritter Kasten, Finanzspiegel, nur wenn seine Datendatei da ist. Reihenfolge:
+    # Kantonsrat, Abstimmung, Finanzen, von haeufig genutzt zu neu.
+    fz = finanzzahlen()
+    finanzkasten = ""
+    if fz and d.get("finanzen") and "finanzen" not in set(d.get("ausblenden") or []):
+        fi = d["finanzen"]
+        finanzkasten = kasten({
+            "art": "finanzen", "pfad": "finanzen/", "marke": "Budget und Rechnung",
+            "titel": fi.get("titel", "Finanzspiegel"), "satz": fi["satz"], "kennzahlen": fz,
+        })
+    html_kaesten = "".join(kasten(k) for k in kaesten) + abstimmungskasten(zeilen, heute) + finanzkasten
 
     return f"""<!DOCTYPE html>
 <html lang="de-CH">
@@ -414,8 +447,8 @@ def bauen(d, zeilen) -> str:
 </main>
 
 <footer class="fuss">
-  <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Beide
-  Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats,
+  <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Alle
+  Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats, Budget und Staatsrechnung,
   amtliche Abstimmungsunterlagen, Geodaten von Bund und Kanton. Jede Zahl ist
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>

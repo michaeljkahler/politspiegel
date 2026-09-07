@@ -5,6 +5,10 @@
     "titel": "Kantonsratsspiegel",
     "satz": "Alle namentlichen Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema. Mit Vergleich der eigenen Haltung."
   },
+  "finanzen": {
+    "titel": "Finanzspiegel",
+    "satz": "Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto."
+  },
   "ausblenden": [],
   "impressum": {
     "verantwortlich": "Michael Kahler",

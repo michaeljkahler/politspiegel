@@ -50,6 +50,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
   align-self:flex-start;margin-bottom:14px}
 .k-kantonsrat .k-marke{color:var(--pro-text)}
 .k-abstimmung .k-marke{color:var(--contra-text)}
+.k-finanzen .k-marke{color:var(--text)}
 .kasten h2{margin:0 0 8px;font-size:23px;letter-spacing:-.01em}
 .k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise);flex:1}
 .k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;
@@ -63,6 +64,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
+.k-finanzen .k-pfeil{color:var(--text)}
 
 .kasten-div{cursor:default}
 .kasten-div:hover{transform:none}
@@ -263,18 +265,26 @@ body.melden-offen{overflow:hidden}
       <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li class="k-leer">noch keine</li></ul></div></details>
       <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
     </div>
+    <a class="kasten k-finanzen" href="finanzen/">
+      <span class="k-marke">Budget und Rechnung</span>
+      <h2>Finanzspiegel</h2>
+      <p class="k-satz">Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto.</p>
+      <div class="k-zahlen"><span class="k-zahl">1&#x27;156.5 Mio.<em>Aufwand Budget 2026</em></span><span class="k-zahl">−49.6 Mio.<em>Defizit</em></span></div>
+      
+      <p class="k-pfeil">ansehen &rarr;</p>
+    </a>
 </div>
 
 </main>
 
 <footer class="fuss">
-  <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Beide
-  Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats,
+  <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Alle
+  Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats, Budget und Staatsrechnung,
   amtliche Abstimmungsunterlagen, Geodaten von Bund und Kanton. Jede Zahl ist
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>
 
-  <p>Erzeugt am 04.09.2026. Aufbereitung ohne Gewähr.</p>
+  <p>Erzeugt am 07.09.2026. Aufbereitung ohne Gewähr.</p>
   <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="politspiegel.sh" data-d="gmail.com">politspiegel.sh (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 
