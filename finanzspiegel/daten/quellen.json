@@ -1,0 +1,28 @@
+{
+ "hinweis": "Bekannte PDF auf sh.ch (Finanzverwaltung, Seiten Budget und Staatsrechnung HRM2). Der Auftrag kantonsrat-dashboard-update vergleicht die Dateiliste damit; neue Titel sind ein neues Budget oder eine neue Staatsrechnung.",
+ "seiten": {
+  "budget": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Finanzdepartement/Finanzverwaltung/Budget-2288266-DE.html",
+  "staatsrechnung": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Finanzdepartement/Finanzverwaltung/Staatsrechnung-HRM2--ab-2018--2288272-DE.html"
+ },
+ "verarbeitet": [
+  {
+   "datei": "budget2026.pdf",
+   "titel": "Budget 2026, beschlossen vom Kantonsrat am 17. November 2025",
+   "uuid": "e04347ba-1e5e-4fc0-bba1-ad0ea9935547",
+   "csv": "budget2026.csv"
+  },
+  {
+   "datei": "budget2026_vorlage.pdf",
+   "titel": "Budget 2026, Vorlage des Regierungsrates vom 26. August 2025",
+   "uuid": "c7905294-b095-4653-bb39-8ed60ddbd119",
+   "csv": null,
+   "bemerkung": "abgelöst durch die beschlossene Fassung"
+  },
+  {
+   "datei": "rechnung2025.pdf",
+   "titel": "Staatsrechnung 2025",
+   "uuid": "b061f9be-2848-4a9f-b820-9e3a66be4e13",
+   "csv": "rechnung2025.csv"
+  }
+ ]
+}
