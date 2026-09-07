@@ -142,12 +142,24 @@ def lesen(pfad: str) -> tuple[list[dict], list[str]]:
                 continue
             if not namen:
                 namen = spaltennamen(alle, kant)
+            letzte = None
             for zl in alle:
                 erst = zl[0]["text"]
                 if zl[0]["x0"] > CODE_X:
+                    # Umgebrochene Bezeichnung: beginnt in der Beschreibungsspalte,
+                    # traegt keine Betraege; gehoert zur Zeile davor. Kommentare
+                    # stehen weiter rechts und bleiben aussen vor.
+                    if (letzte is not None and zl[0]["x0"] < WERT_X
+                            and not any(ZAHL.match(w["text"]) and w["x0"] > WERT_X for w in zl)):
+                        rest = [w["text"] for w in zl if w["x0"] < kant[-1] - 60]
+                        if rest:
+                            letzte["bezeichnung"] = (letzte["bezeichnung"] + " " + " ".join(rest)).strip()
+                    else:
+                        letzte = None
                     continue
                 if not (KONTO.match(erst) or DIENST.match(erst)
                         or SPEZ.match(erst) or DEPT.match(erst)):
+                    letzte = None
                     continue
                 werte, text, kommentar = {}, [], []
                 for w in zl[1:]:
@@ -157,7 +169,7 @@ def lesen(pfad: str) -> tuple[list[dict], list[str]]:
                             werte[s] = zu_zahl(w["text"])
                             continue
                     (kommentar if w["x0"] > kant[-1] else text).append(w["text"])
-                zeilenliste.append({
+                letzte = {
                     "typ": ("departement" if DEPT.match(erst)
                             else "dienststelle" if DIENST.match(erst)
                             else "spezialfinanzierung" if SPEZ.match(erst)
@@ -167,7 +179,8 @@ def lesen(pfad: str) -> tuple[list[dict], list[str]]:
                     "kommentar": " ".join(kommentar),
                     "werte": werte,
                     "seite": nr,
-                })
+                }
+                zeilenliste.append(letzte)
     return zeilenliste, namen
 
 

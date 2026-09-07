@@ -142,6 +142,15 @@ def main() -> None:
             w.append(round(v) if v else 0)
         zeilen.append([d, ds, sp, ko, namen[3], *w])
 
+    # Dienststellennummern ohne Kopfzeile im PDF (z. B. 2198, 2398) tragen nur
+    # Fonds und Spezialfinanzierungen; so heissen sie dann auch.
+    nur_fonds = {ds for ds in dst if not dst[ds]}
+    for z in zeilen:
+        if z[1] in nur_fonds and not z[2]:
+            nur_fonds.discard(z[1])
+    for ds in nur_fonds:
+        dst[ds] = "Fonds und Spezialfinanzierungen"
+
     sg = kontenplan()
     daten = {
         "stand": date.today().isoformat(),
