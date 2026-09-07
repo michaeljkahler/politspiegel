@@ -2,7 +2,7 @@
  "serie": "2026-09-start",
  "jahr": "b26",
  "start": "2026-09-28",
- "status": "entwurf",
+ "status": "entwuerfe_angelegt",
  "bilder": [
   "01-ueberblick.png",
   "02-aufwand-departemente.png",
@@ -29,6 +29,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372297835,
+    "uuid": "-4899473941887433262",
+    "draft": true
    }
   },
   {
@@ -47,6 +52,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372297981,
+    "uuid": "6716636407459040277",
+    "draft": true
    }
   },
   {
@@ -65,6 +75,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372298024,
+    "uuid": "2777396094264953600",
+    "draft": true
    }
   },
   {
@@ -83,6 +98,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372298074,
+    "uuid": "575462720212717315",
+    "draft": true
    }
   },
   {
@@ -101,6 +121,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372298125,
+    "uuid": "-4226142592472103072",
+    "draft": true
    }
   },
   {
@@ -119,6 +144,11 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372298168,
+    "uuid": "-7724713355745541793",
+    "draft": true
    }
   },
   {
@@ -137,7 +167,13 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 372298196,
+    "uuid": "4592728626271240430",
+    "draft": true
    }
   }
- ]
+ ],
+ "hinweis": "Sieben Entwürfe in Metricool, 28.9. bis 4.10.2026, je 09:00, Instagram und Facebook. Freigabe durch Michael."
 }
