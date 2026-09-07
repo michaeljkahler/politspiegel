@@ -14,9 +14,12 @@ Dokumenten eindeutig, 2'894 Schluessel in beiden. Budget 2025 stimmt in allen
 gemeinsamen Zeilen ueberein; wo beide Dokumente einen Wert liefern, gilt die
 Staatsrechnung als spaetere Publikation.
 
-Kontrolle gegen den Bericht (Kap. 1.7 und 4.4.1): ordentlicher Aufwand Budget 2026
-1'156.5 Mio., ordentlicher Ertrag 1'063.8 Mio., Gesamtergebnis -49.6 Mio.; Rechnung
-2025 +14.9 Mio.; Budget 2025 -49.0 Mio. Alle Werte fallen auf den Franken.
+Massgebend ist die vom Kantonsrat beschlossene Fassung des Budgets (Budget 2026:
+beschlossen am 17. November 2025, Steuerfuss 76 %), nicht die Vorlage des
+Regierungsrates vom August. sh.ch fuehrt beide; die beschlossene traegt es auf dem
+Deckblatt. Kontrolle gegen den Bericht (Kap. 1.7 und 4.4.1): ordentlicher Aufwand
+Budget 2026 1'161.3 Mio., ordentlicher Ertrag 1'054.0 Mio., Gesamtergebnis
+-62.1 Mio.; Rechnung 2025 +14.9 Mio.; Budget 2025 -49.0 Mio. Alles auf den Franken.
 
 Was zu welcher Sicht gehoert (Artengliederung HRM2):
   30 bis 37, 40 bis 47   ordentlicher Aufwand und Ertrag, die Sichten der Seite

@@ -1,0 +1,179 @@
+{
+ "serie": "2026-09-finanzspiegel",
+ "jahr": "b26",
+ "start": "2026-09-28",
+ "status": "entwuerfe_angelegt",
+ "bilder": [
+  "01-ueberblick.png",
+  "02-aufwand-departemente.png",
+  "03-ertrag-sachgruppen.png",
+  "04-aufwand-sachgruppen.png",
+  "05-erziehungsdepartement.png",
+  "06-departement-innern.png",
+  "07-rechnung.png"
+ ],
+ "posts": [
+  {
+   "art": "bild",
+   "termin": "2026-09-28T09:00",
+   "text": "Neu im Politspiegel: der Finanzspiegel. Budget und Staatsrechnung des Kantons Schaffhausen, vom Gesamtbild bis zum einzelnen Konto.\n\nBudget 2026:\n1. Ordentlicher Ertrag 1'054.0 Mio. Franken.\n2. Ordentlicher Aufwand 1'161.3 Mio. Franken.\n3. Ordentliches Ergebnis −107.3 Mio. Dazu kommen 41.4 Mio. ausserordentlicher Ertrag, vor allem Entnahmen aus Reserven. Gesamtergebnis −62.1 Mio. Franken.\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/01-ueberblick.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372297835,
+    "uuid": "-4899473941887433262",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-09-29T09:00",
+   "text": "Wohin das Geld geht: Aufwand nach Departement, Budget 2026, total 1'161.3 Mio. Franken.\n\n1. Departement des Innern: 439.8 Mio. (37.9 %)\n2. Erziehungsdepartement: 289.6 Mio. (24.9 %)\n3. Finanzdepartement: 181.7 Mio. (15.6 %)\n4. Baudepartement: 114.7 Mio. (9.9 %)\n5. Volkswirtschaftsdepartement: 105.8 Mio. (9.1 %)\n6. Gerichte: 20.1 Mio. (1.7 %)\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/02-aufwand-departemente.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372297981,
+    "uuid": "6716636407459040277",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-09-30T09:00",
+   "text": "Woher das Geld kommt: Ertrag nach Art, Budget 2026, total 1'054.0 Mio. Franken.\n\n1. Fiskalertrag: 438.7 Mio. (41.6 %)\n2. Transferertrag: 364.9 Mio. (34.6 %)\n3. Durchlaufende Beiträge: 116.2 Mio. (11.0 %)\n4. Finanzertrag: 59.0 Mio. (5.6 %)\n5. Entgelte: 56.7 Mio. (5.4 %)\n6. Regalien und Konzessionen: 17.0 Mio. (1.6 %)\n\nFiskalertrag sind Steuern, Transferertrag Anteile an Bundessteuern, Finanzausgleich und Beiträge von Bund und Gemeinden.\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/03-ertrag-sachgruppen.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372298024,
+    "uuid": "2777396094264953600",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-01T09:00",
+   "text": "Wohin das Geld geht: Aufwand nach Art, Budget 2026, total 1'161.3 Mio. Franken.\n\n1. Transferaufwand: 586.5 Mio. (50.5 %)\n2. Personalaufwand: 330.4 Mio. (28.5 %)\n3. Durchlaufende Beiträge: 116.2 Mio. (10.0 %)\n4. Sach- und übriger Betriebsaufwand: 107.0 Mio. (9.2 %)\n5. Abschreibungen Verwaltungsvermögen: 13.3 Mio. (1.1 %)\n6. Finanzaufwand: 7.6 Mio. (0.7 %)\n\nTransferaufwand sind Beiträge an Spitäler, Gemeinden, Hochschulen, Prämienverbilligung und Sozialversicherungen.\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/04-aufwand-sachgruppen.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372298074,
+    "uuid": "575462720212717315",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-02T09:00",
+   "text": "Erziehungsdepartement, Aufwand nach Dienststelle, Budget 2026, total 289.6 Mio. Franken, 24.9 % des Aufwands des Kantons.\n\n1. Primarschulen: 63.6 Mio. (22.0 %)\n2. Sekundarstufe I: 37.0 Mio. (12.8 %)\n3. Sonderschulung: 35.8 Mio. (12.4 %)\n4. Beiträge Hochschulen, Fachhochschulen, Gymnasien, Weiterbildung: 30.3 Mio. (10.5 %)\n5. Berufsbildungszentrum: 21.2 Mio. (7.3 %)\n6. Berufsbildung: 20.4 Mio. (7.0 %)\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/05-erziehungsdepartement.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372298125,
+    "uuid": "-4226142592472103072",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-03T09:00",
+   "text": "Departement des Innern, Aufwand nach Dienststelle, Budget 2026, total 439.8 Mio. Franken, 37.9 % des Aufwands des Kantons.\n\n1. Spitalversorgung: 119.3 Mio. (27.1 %)\n2. Beiträge Krankenversicherung: 83.7 Mio. (19.0 %)\n3. Ergänzungsleistungen: 57.2 Mio. (13.0 %)\n4. Fonds und Spezialfinanzierungen: 44.5 Mio. (10.1 %)\n5. Soziale Einrichtungen: 38.0 Mio. (8.6 %)\n6. Heime und Pflege: 32.9 Mio. (7.5 %)\n\nQuelle: Kanton Schaffhausen, Budget 2026, Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/06-departement-innern.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372298168,
+    "uuid": "-7724713355745541793",
+    "draft": true
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-04T09:00",
+   "text": "Budget und Rechnung im Vergleich, 2025.\n\n1. Ertrag: Budget 998.1 Mio., Rechnung 1'102.7 Mio. (+104.6).\n2. Aufwand: Budget 1'093.8 Mio., Rechnung 1'039.1 Mio. (−54.7).\n3. Gesamtergebnis: Budget −49.0 Mio., Rechnung +14.9 Mio.\n\nQuelle: Kanton Schaffhausen, Budget 2025 und Rechnung 2025, Detailzahlen der Erfolgsrechnung.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-finanzspiegel/07-rechnung.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   },
+   "metricool": {
+    "id": 372298196,
+    "uuid": "4592728626271240430",
+    "draft": true
+   }
+  }
+ ],
+ "hinweis": "Sieben Entwürfe in Metricool, 28.9. bis 4.10.2026, je 09:00, Instagram und Facebook. Freigabe durch Michael. Bilder und Texte am 7.9. auf die beschlossene Fassung des Budgets 2026 umgestellt."
+}

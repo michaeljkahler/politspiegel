@@ -18,7 +18,11 @@ die Detailzahlen der Erfolgsrechnung (Kapitel 6) ueber die Wortpositionen im PDF
 aus und prueft sich selbst: Die Summe der gelesenen Konten je Dienststelle, je
 Spezialfinanzierung und je Departement muss der gedruckten entsprechen. Budget
 2026 und Staatsrechnung 2025: alle Summen exakt, Gesamtergebnisse auf den Franken
-(Budget 2025 −49.0, Rechnung 2025 +14.9, Budget 2026 −49.6 Mio.).
+(Budget 2025 −49.0, Rechnung 2025 +14.9, Budget 2026 −62.1 Mio.).
+
+Massgebend ist die vom Kantonsrat beschlossene Fassung des Budgets (Deckblatt
+«beschlossen vom Kantonsrat am ...»), nicht die Vorlage des Regierungsrates vom
+August. sh.ch fuehrt beide auf der Budgetseite.
 
 Die Sachgruppennamen stammen aus der Artengliederung des FS-Modells der
 Eidgenoessischen Finanzverwaltung (`daten/kontenplan.xlsx`, Blatt fs_er), ergaenzt um
@@ -43,7 +47,9 @@ des Berichts ueberein.
 
 ## Neues Jahr
 
-1. PDF nach `daten/pdf/` legen (nicht im Repo).
+1. PDF nach `daten/pdf/` legen (nicht im Repo). Beim Budget die beschlossene Fassung
+   nehmen, sobald sie da ist (nach der Novembersitzung); bis dahin die Vorlage, mit
+   Hinweis auf der Seite.
 2. `budget_pdf.py` darauf laufen lassen, Selbstpruefung lesen: 0 abweichend.
 3. In `daten.py` die Liste `JAHRE` und die beiden `lade(...)`-Aufrufe ergaenzen.
 4. `daten.py`, `bauen.py`, `politspiegel/bauen.py`.

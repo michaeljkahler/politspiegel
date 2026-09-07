@@ -35,7 +35,7 @@ Warum Aufwand und Ertrag getrennt: Flaechen koennen nicht negativ sein, und 14 d
 Warum nur ordentlich im Drilldown: Interne Verrechnungen (39, 49) stehen beidseits
 gleich und blaehen beide Seiten um 47 Mio. auf; Ausserordentliches (38, 48) sind
 Reservebewegungen. Mit ihnen stimmte kein Total mit dem Bericht ueberein, ohne sie
-stimmen alle: 1'156.5 und 1'063.8 Mio. im Budget 2026, wie in Kapitel 1.7.
+stimmen alle mit Kapitel 1.7 ueberein; die Fusszeile rechnet sie aus den Daten.
 """
 
 from __future__ import annotations
@@ -709,6 +709,25 @@ let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTime
 """
 
 
+def kennzahlen(daten: dict) -> dict:
+    """Ordentlicher Aufwand und Ertrag des juengsten Budgets und die Gesamtergebnisse
+    aller Jahre, fuer die Quellenangabe im Fuss. Dieselbe Rechnung wie im Skript."""
+    ORD = lambda g: g[0] in "34" and g not in ("38", "39", "48", "49")
+    mio = lambda v: f"{v / 1e6:,.1f}".replace(",", "'")
+    vz = lambda v: ("−" if v < 0 else "+") + mio(abs(v))
+    aus = []
+    for i, j in enumerate(daten["jahre"]):
+        g = {}
+        for z in daten["z"]:
+            g[z[3][:2]] = g.get(z[3][:2], 0) + z[5 + i]
+        auf = sum(v for c, v in g.items() if c[0] == "3" and ORD(c))
+        ert = -sum(v for c, v in g.items() if c[0] == "4" and ORD(c))
+        aus.append((j["t"], auf, ert, -sum(g.values())))
+    juengstes_budget = [a for a in aus if a[0].startswith("Budget")][-1]
+    return {"auf": mio(juengstes_budget[1]), "ert": mio(juengstes_budget[2]),
+            "ergebnisse": ", ".join(f"{t} {vz(e)}" for t, _, _, e in aus)}
+
+
 def chips(feld: str, eintraege: list[tuple[str, str]], aktiv: str, klasse: str = "") -> str:
     return f'<div class="chips {klasse}">' + "".join(
         f'<button type="button" data-feld="{feld}" data-wert="{e(k)}" aria-pressed="{str(k == aktiv).lower()}">{e(t)}</button>'
@@ -718,6 +737,7 @@ def chips(feld: str, eintraege: list[tuple[str, str]], aktiv: str, klasse: str =
 def seite(daten: dict) -> str:
     jahre = [(j["k"], j["t"]) for j in daten["jahre"]]
     daten_json = json.dumps(daten, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    kz = kennzahlen(daten)
 
     return f"""<!DOCTYPE html>
 <html lang="de-CH">
@@ -782,11 +802,11 @@ def seite(daten: dict) -> str:
 </div>
 
 <footer class="fuss">
-<p><b>Quellen.</b> Kanton Schaffhausen, Bericht und Antrag des Regierungsrates zum Budget 2026 vom 26. August 2025
+<p><b>Quellen.</b> Kanton Schaffhausen, Budget 2026 in der vom Kantonsrat am 17. November 2025 beschlossenen Fassung
 und Staatsrechnung 2025, je Kapitel 6 Detailzahlen, Erfolgsrechnung. Die Zahlen sind aus den PDF ausgelesen. Die Summen
 je Dienststelle, Fonds und Departement stimmen mit den gedruckten überein, die Totale mit Kapitel 1.7 des Berichts
-(ordentlicher Aufwand 1'156.5, ordentlicher Ertrag 1'063.8 Mio.) und die Ergebnisse mit den ausgewiesenen:
-Budget 2025 −49.0, Rechnung 2025 +14.9, Budget 2026 −49.6 Mio. Franken.</p>
+(ordentlicher Aufwand {kz['auf']}, ordentlicher Ertrag {kz['ert']} Mio.) und die Ergebnisse mit den ausgewiesenen:
+{kz['ergebnisse']} Mio. Franken.</p>
 <p><b>Lesehilfe.</b> Aufwand und Ertrag stehen getrennt, weil Flächen nicht negativ sein können. Gezeigt ist das
 Ordentliche; ausserordentliche Reservebewegungen und Fondsabschlüsse rechnet der Überblick vor, interne
 Verrechnungen stehen auf beiden Seiten gleich und sind weggelassen. Die Sachgruppen folgen dem Kontenrahmen HRM2.
