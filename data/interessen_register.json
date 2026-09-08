@@ -24,7 +24,11 @@
    ],
    "kennung": "acf1a03223e27ca9",
    "status": "bestaetigt",
-   "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: Anna Brügel ist Geschäftsführerin, in der Selbstdeklaration auf sh.ch fehlt die GmbH."
+   "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: Anna Brügel ist Geschäftsführerin, in der Selbstdeklaration auf sh.ch fehlt die GmbH.",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "SAH Services GmbH",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "schluessel": "Arnold Isliker|CHE-106.925.138",
@@ -47,7 +51,11 @@
    "kennung": "0a55056ce89e9af4",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Chlaffental Immobilien AG",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "kennung": "130b777869fd4494",
@@ -80,7 +88,11 @@
    "kennung": "6a754c3d49d2f6c8",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Dr. Bruno Herzer-Stiftung für Kinder und Jugendliche",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "kennung": "f015702b26c2e9d0",
@@ -121,7 +133,11 @@
    "kennung": "50c3232289495fad",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Wärmeverbund Merishausen AG",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "kennung": "ddbf7b1771239162",
@@ -149,7 +165,11 @@
    "kennung": "1893f804a65f0946",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Allsecco Trocknungen AG",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "kennung": "cadbc78640305f04",
@@ -195,7 +215,11 @@
    "kennung": "8052b5d0d7b232c0",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "liquidation",
+   "stand_text": "in Löschung",
+   "stand_name": "RhySauna Schaffhuuse GmbH in Liquidation",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "schluessel": "Nicole Herren|CHE-112.426.777",
@@ -221,7 +245,11 @@
    "kennung": "e073a0d79f0a5b93",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Herren-Metzgerei GmbH",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "schluessel": "Nina Schärrer|CHE-438.141.906",
@@ -245,7 +273,11 @@
    "kennung": "f8c958a19f231872",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Nina Schärrer. Kampagnen und Kommunikation.",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "schluessel": "Nina Schärrer|CHE-108.014.963",
@@ -269,7 +301,11 @@
    "kennung": "4b66632684e831e8",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Stiftung Ungarbühl",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "schluessel": "Peter Neukomm|CHE-103.584.012",
@@ -306,7 +342,11 @@
    "kennung": "3778d859a171081f",
    "status": "bestaetigt",
    "notiz": "Von Michael am 02.09.2026 am Registerauszug geprüft und als zutreffend bestätigt: der Eintrag lautet auf das Ratsmitglied, die Firma besteht, das Mandat ist nicht gestrichen und fehlt in der Selbstdeklaration auf sh.ch.",
-   "geprueft": "2026-09-02"
+   "geprueft": "2026-09-02",
+   "stand_klasse": "aktiv",
+   "stand_text": "aktiv",
+   "stand_name": "Etawatt AG",
+   "stand_geprueft": "2026-09-08"
   },
   {
    "kennung": "dc67e12727dd2b5e",
@@ -353,5 +393,6 @@
    "status": "verworfen",
    "nicht_mehr_gefunden": true
   }
- ]
+ ],
+ "stand_register": "2026-09-08"
 }

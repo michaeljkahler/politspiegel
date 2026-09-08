@@ -258,7 +258,15 @@
     }
     if (hr.length) {
       s += '<ul class="iblist">' + hr.map(function (x) {
-        return '<li class="q-r"><span class="qtag qtag-r">nur Handelsregister</span>' +
+        // Registerstand: aktiv gelb, in Liquidation rot, aufgelöst dunkelgrau.
+        // Der Zustand steht zusätzlich im Text des Abzeichens, damit die
+        // Unterscheidung nicht allein an der Farbe hängt.
+        var st = NETZ_STAND[x.st] ? x.st : "aktiv";
+        var stTxt = st === "aktiv" ? "nur Handelsregister"
+                  : st === "liquidation" ? "Handelsregister: in Liquidation"
+                  : "Handelsregister: aufgelöst";
+        return '<li class="q-r st-' + st + '"><span class="qtag qtag-r st-' + st + '">' +
+          esc(stTxt) + "</span>" +
           "<b>" + esc(x.f) + "</b>" + (x.o ? ", " + esc(x.o) : "") +
           (x.r ? '<span class="ibrolle">' + esc(x.r) + "</span>" : "") +
           (x.url ? ' <a class="plink" href="' + esc(x.url) + '" target="_blank" rel="noopener" ' +
@@ -273,7 +281,12 @@
       (hr.length ? "Gelb: Eintrag im Handelsregister des Kantons Schaffhausen, der in der " +
         "Deklaration fehlt, einzeln am Registerauszug geprüft. Ein fehlender Eintrag muss " +
         "nichts bedeuten: die Deklarationspflicht deckt nicht jedes Mandat, und Angaben " +
-        "können veralten. Verbindlich ist der beglaubigte Registerauszug." : "") + "</p>";
+        "können veralten. Verbindlich ist der beglaubigte Registerauszug." : "") +
+      // Der Registerstand steht auch im Abzeichen, der Satz erklärt die Farbe.
+      (hr.some(function (x) { return x.st && x.st !== "aktiv"; })
+        ? " Rot heisst: die Firma steht in Liquidation. Dunkelgrau heisst: sie ist " +
+          "aufgelöst und im Register gelöscht. Das Mandat bleibt bis zum Abschluss " +
+          "der Liquidation bestehen." : "") + "</p>";
     return s;
   }
 
@@ -2115,12 +2128,26 @@
       return k.typ === "organisation" && k.q === "r";
     }).length;
 
+    // Organisationen aus dem Handelsregister nach ihrem Registerstand zählen:
+    // aktiv gelb, in Liquidation rot, aufgelöst dunkelgrau. Ein Stand, den es
+    // im Bild nicht gibt, erscheint auch nicht in der Legende.
+    var stand = {aktiv:0, liquidation:0, geloescht:0};
+    (N.knoten || []).forEach(function (k) {
+      if (k.typ === "organisation" && k.q === "r")
+        stand[NETZ_STAND[k.st] ? k.st : "aktiv"]++;
+    });
+    var standLeg = ["aktiv","liquidation","geloescht"].filter(function (s) { return stand[s]; })
+      .map(function (s) {
+        return '<span class="qleg"><i class="pkt" style="background:' +
+          cssFarbe(NETZ_STAND[s].v) + '"></i>Handelsregister: ' +
+          NETZ_STAND[s].kurz + " (" + stand[s] + ")</span>";
+      }).join("");
+
     var punkte =
       '<span class="qleg"><i class="pkt pkt-m"></i>Ratsmitglied</span>' +
       '<span class="qleg"><i class="pkt pkt-o"></i>Organisation</span>' +
       '<span class="qleg"><i class="pkt pkt-b"></i>Branche</span>' +
-      (regOrg ? '<span class="qleg"><i class="pkt pkt-r"></i>Organisation nur im ' +
-        "Handelsregister (" + regOrg + ")</span>" : "");
+      (regOrg ? standLeg : "");
 
     var linien =
       '<span class="qleg qleg-d"><i></i>deklariert auf sh.ch</span>' +
@@ -2141,6 +2168,12 @@
         "nichts bedeuten, die Deklarationspflicht deckt nicht jedes Mandat, und der " +
         "Registerstand kann nachhinken. Jeder solche Eintrag ist einzeln am Registerauszug " +
         "geprüft; verbindlich ist allein der beglaubigte Auszug.</p>" : "") +
+      (regOrg ? '<p class="qlegnote qfuss">Die Farbe des Punktes zeigt den Stand im ' +
+        "Register: gelb heisst aktiv eingetragen, rot heisst in Liquidation, dunkelgrau " +
+        "heisst aufgelöst und gelöscht. Ein Mandat bei einer Firma in Liquidation bleibt " +
+        "ein Mandat, solange die Liquidation läuft." +
+        (D.netz && D.netz.reg_geprueft ? " Stand der Registerabfrage: " +
+          esc(D.netz.reg_geprueft.split("-").reverse().join(".")) + "." : "") + "</p>" : "") +
       "</div>";
   }
 
@@ -2217,6 +2250,24 @@
    wird ein Netz mit zweihundert Knoten schnell unleserlich. */
 function netzFarben(){ return {mitglied: cssFarbe("--p-al"), organisation: cssFarbe("--p-fdp"),
                               branche: cssFarbe("--ink-3"), treffer: cssFarbe("--p-evp")}; }
+
+/* Registerstand einer Organisation, die nur im Handelsregister steht: aktiv
+   gelb, in Liquidation rot, aufgelöst dunkelgrau. Der Stand kommt aus
+   data/interessen_register.json und wird von scripts/zefix.py am amtlichen
+   Register nachgeführt. Fehlt er, bleibt es beim bisherigen Gelb: ein leeres
+   Feld heisst «noch nicht geprüft» und nicht «aktiv». */
+const NETZ_STAND = {
+  aktiv:       {v:"--q-reg", i:"--q-reg-ink", kurz:"aktiv",
+                text:"aktiv eingetragen"},
+  liquidation: {v:"--q-liq", i:"--q-liq-ink", kurz:"in Liquidation",
+                text:"in Liquidation"},
+  geloescht:   {v:"--q-weg", i:"--q-weg-ink", kurz:"aufgelöst",
+                text:"aufgelöst, im Register gelöscht"}
+};
+function standFarbe(n){
+  const s = NETZ_STAND[n && n.st] || NETZ_STAND.aktiv;
+  return {fuell: cssFarbe(s.v), rand: cssFarbe(s.i), text: s.text};
+}
 let netzKnoten=[], netzKanten=[], netzGewaehlt=null, netzGeteiltMenge=new Set();
 let netzFilterBranche="", netzFilterText="", netzNurGeteilt=false;
 
@@ -2401,12 +2452,12 @@ function netzMalen(){
     // vorbehalten, die nur im Handelsregister stehen; ein Suchtreffer bekommt
     // darum keine eigene Füllung mehr, sondern einen Ring. Sonst sähen ein
     // gesuchter Verein und ein Registerfund gleich aus.
-    g.fillStyle = (n.typ==="organisation" && n.q==="r") ? cssFarbe("--q-reg")
+    g.fillStyle = (n.typ==="organisation" && n.q==="r") ? standFarbe(n).fuell
                 : netzFarben()[n.typ];
     g.beginPath(); g.arc(n.x,n.y,r,0,Math.PI*2); g.fill();
     if(n.typ==="organisation" && n.q==="r"){
       // Ring auch hier, damit die Unterscheidung nicht allein an der Farbe hängt
-      g.strokeStyle=cssFarbe("--q-reg-ink"); g.lineWidth=1.6/netzZoom;
+      g.strokeStyle=standFarbe(n).rand; g.lineWidth=1.6/netzZoom;
       g.beginPath(); g.arc(n.x,n.y,r+2.5/netzZoom,0,Math.PI*2); g.stroke();
     }
     if(treffer){
@@ -2478,8 +2529,16 @@ function netzInfoZeigen(n){
     return `<li>${esc(anderer.label)}${rolle}</li>`;
   }).join("");
   const typ={mitglied:"Ratsmitglied", organisation:"Organisation", branche:"Branche"}[n.typ];
+  // Der Registerstand steht als Text unter dem Namen, nicht nur als Farbe im
+  // Netz. Ohne Datum der Abfrage wäre die Angabe wertlos: eine Firma kann seit
+  // der letzten Prüfung liquidiert worden sein.
+  const stand = (n.typ==="organisation" && n.q==="r" && NETZ_STAND[n.st])
+    ? `<p><small><i class="ni-stand" style="background:${cssFarbe(NETZ_STAND[n.st].v)}"></i>`
+      + `Handelsregister: ${NETZ_STAND[n.st].text}`
+      + (n.st_am ? `, geprüft am ${esc(n.st_am.split("-").reverse().join("."))}` : "")
+      + `</small></p>` : "";
   const zusatz = n.typ==="mitglied" ? `<p><small>${esc(n.partei||"")}${n.fraktion?" · "+esc(n.fraktion):""}</small></p>`
-               : n.typ==="organisation" ? `<p><small>${esc(n.branche||"")}${n.ort?" · "+esc(n.ort):""}</small></p>` : "";
+               : n.typ==="organisation" ? `<p><small>${esc(n.branche||"")}${n.ort?" · "+esc(n.ort):""}</small></p>`+stand : "";
   const pfad=pfadVon(n, NP.tiefe);
   const nach={}; netzKnoten.forEach(k=>nach[k.id]=k);
   const zaehlung=[...pfad].filter(id=>id!==n.id).map(id=>nach[id]).filter(Boolean);
@@ -2671,8 +2730,17 @@ function initNetz(){
   ["gesturestart","gesturechange","gestureend"].forEach(n=>c.addEventListener(n,e=>e.preventDefault()));
 
   const leg=document.getElementById("netzLegende");
+  // Die drei Registerstände erscheinen nur, wenn im Netz auch Organisationen
+  // aus dem Handelsregister stecken; sonst stünde eine Legende ohne Gegenstück.
+  const staende = new Set((D.netz.knoten||[])
+    .filter(k=>k.typ==="organisation" && k.q==="r")
+    .map(k=>NETZ_STAND[k.st] ? k.st : "aktiv"));
+  const standLeg = ["aktiv","liquidation","geloescht"].filter(s=>staende.has(s))
+    .map(s=>`<span><i style="background:${cssFarbe(NETZ_STAND[s].v)}"></i>`
+            + `Handelsregister: ${NETZ_STAND[s].kurz}</span>`).join("");
   leg.innerHTML=Object.entries({Ratsmitglied:netzFarben().mitglied, Organisation:netzFarben().organisation, Branche:netzFarben().branche})
     .map(([k,v])=>`<span><i style="background:${v}"></i>${k}</span>`).join("")
+    + standLeg
     + `<span><i style="background:${cssFarbe("--p-evp")}"></i>Suchtreffer</span>`;
   netzAufbauen(false);
 }

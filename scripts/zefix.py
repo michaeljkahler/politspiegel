@@ -70,6 +70,7 @@ NETZ = DATA / "interessen_netz.json"
 ZIEL = DATA / "interessen_pruefung.json"
 CACHE = DATA / "zefix_cache.json"
 ZUGANG = DATA / "zefix_zugang.json"
+REGISTER = DATA / "interessen_register.json"
 
 SPARQL = "https://lindas.admin.ch/query"
 ZEFIX_REST = "https://www.zefix.admin.ch/ZefixPublicREST/api/v1"
@@ -293,8 +294,95 @@ STATUS = {"ACTIVE": "aktiv",
           "CANCELLED": "gelöscht",
           "BEING_CANCELLED": "in Löschung"}
 
+# «in Liquidation» ist kein eigener Wert der Schnittstelle. Das Register führt
+# den Zusatz im Firmennamen, solange die Liquidation läuft; erst mit dem
+# Abschluss wird der Eintrag gelöscht. BEING_CANCELLED meint denselben Zustand.
+LIQUIDATION = re.compile(r"in\s+Liquidation|in\s+Liq\.|\bi\.\s?L\.", re.I)
+
+
+def status_klasse(name, api_status, geloescht_am=None):
+    """Registerstand auf drei Klassen bringen: aktiv, liquidation, geloescht.
+
+    Das Dashboard färbt danach ein (gelb, rot, dunkelgrau), darum ist die
+    Reihenfolge der Prüfung fest: eine gelöschte Firma bleibt gelöscht, auch
+    wenn der Name noch den Liquidationszusatz trägt.
+    """
+    if api_status == "CANCELLED" or geloescht_am:
+        return "geloescht"
+    if api_status == "BEING_CANCELLED" or LIQUIDATION.search(name or ""):
+        return "liquidation"
+    return "aktiv"
+
+
+def register_status(zugang, schreiben=False):
+    """Den Registerstand der freigegebenen Registerfunde nachführen.
+
+    Betrifft nur data/interessen_register.json, also die von Hand am
+    Registerauszug bestätigten Funde. Jeder Eintrag trägt danach «stand_klasse»
+    (aktiv, liquidation, geloescht), den Namen laut Register und das Datum der
+    Abfrage. Ohne UID wird nichts geraten, der Eintrag bleibt ohne Klasse.
+    """
+    if not REGISTER.exists():
+        print("   interessen_register.json fehlt, kein Registerstand zu prüfen.")
+        return []
+    reg = json.loads(REGISTER.read_text(encoding="utf-8"))
+    frei = [e for e in reg.get("eintraege", [])
+            if e.get("status") == "bestaetigt" and not e.get("nicht_mehr_gefunden")]
+    print(f"\n   Registerstand von {len(frei)} freigegebenen Funden abfragen")
+    geaendert, fehler = [], []
+    for e in frei:
+        uid = re.sub(r"[^0-9A-Za-z]", "", e.get("uid") or "")
+        if not uid:
+            continue
+        d, f = rest(f"/company/uid/{uid}", zugang)
+        if isinstance(d, list):
+            d = d[0] if d else None
+        if not d:
+            fehler.append(f"{e['firma']}: {f}")
+            continue
+        name = d.get("name") or e["firma"]
+        klasse = status_klasse(name, d.get("status"), d.get("deletionDate"))
+        vorher = e.get("stand_klasse")
+        e["stand_klasse"] = klasse
+        e["stand_text"] = STATUS.get(d.get("status"), d.get("status"))
+        e["stand_name"] = name
+        e["stand_geprueft"] = date.today().isoformat()
+        if d.get("deletionDate"):
+            e["stand_geloescht_am"] = d["deletionDate"]
+        if vorher and vorher != klasse:
+            geaendert.append((e["firma"], vorher, klasse))
+        time.sleep(0.3)
+    zaehler = {}
+    for e in frei:
+        k = e.get("stand_klasse") or "unbekannt"
+        zaehler[k] = zaehler.get(k, 0) + 1
+    print("   " + ", ".join(f"{v} {k}" for k, v in sorted(zaehler.items())))
+    for firma, alt, neu in geaendert:
+        print(f"   ! {firma}: Registerstand von «{alt}» auf «{neu}» gewechselt")
+    if fehler:
+        print(f"   ! {len(fehler)} Abfragen fehlgeschlagen, erste: {fehler[0]}")
+    if schreiben:
+        reg["stand_register"] = date.today().isoformat()
+        REGISTER.write_text(json.dumps(reg, ensure_ascii=False, indent=1),
+                            encoding="utf-8")
+        print(f"   {REGISTER.name} mit dem Registerstand geschrieben.")
+    return geaendert
+
 
 def main():
+    # Nur den Registerstand der freigegebenen Funde nachführen, ohne den
+    # vollen Namensabgleich. Das ist der Lauf, den das Dashboard für die
+    # Einfärbung braucht (aktiv gelb, in Liquidation rot, aufgelöst grau).
+    if "--nur-stand" in sys.argv:
+        if not ZUGANG.exists():
+            print(f"Kein Zefix-Zugang in {ZUGANG.name}, nichts zu tun.")
+            return
+        register_status(json.load(open(ZUGANG, encoding="utf-8")),
+                        schreiben="--apply" in sys.argv)
+        if "--apply" not in sys.argv:
+            print("\n(Probelauf, nichts geschrieben. Mit --apply schreiben.)")
+        return
+
     netz = json.load(open(NETZ, encoding="utf-8"))
     orgs = [k for k in netz["knoten"] if k["typ"] == "organisation"]
     firmen = [o for o in orgs if REGISTERPFLICHTIG.search(o["label"])]
@@ -367,6 +455,10 @@ def main():
                                 "mitglieder": e["mitglieder"],
                                 "text": f"am Register doch gefunden als «{a['name']}» ({treffer})",
                                 "url": a.get("url")})
+        # Registerstand der freigegebenen Funde gleich mitnehmen: das Dashboard
+        # färbt die Organisationen danach ein.
+        register_status(zugang, schreiben="--apply" in sys.argv)
+
         if befunde:
             print(f"\n   {len(befunde)} Befunde aus dem amtlichen Register:")
             for b in befunde:

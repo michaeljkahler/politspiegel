@@ -39,6 +39,12 @@
      zusätzlich Text: Farbe allein trägt hier keine Bedeutung. */
   --q-dekl:#0E4E8A; --q-dekl-ink:#0B3F70; --q-dekl-flaeche:#E7F0F9;
   --q-reg:#F0A202;  --q-reg-ink:#8A5D00;  --q-reg-flaeche:#FDF3DF;
+  /* Registerstand der Organisationen: aktiv bleibt beim Gelb von --q-reg,
+     eine Firma in Liquidation wird rot, eine aufgeloeste dunkelgrau. Die
+     Farbe steht nie allein: Legende und Steckbrief nennen den Stand im Text. */
+  --q-liq:#C1272D;  --q-liq-ink:#8E1B20;  --q-liq-flaeche:#FBEAEA;
+  --q-liq-txt:#FFFFFF; --q-weg-txt:#FFFFFF;
+  --q-weg:#4A5058;  --q-weg-ink:#343940;  --q-weg-flaeche:#ECEEF0;
 
   --card-shadow:0 1px 2px rgba(17,24,32,.05), 0 6px 18px rgba(17,24,32,.045);
   --r-card:14px; --r-ctl:9px;
@@ -68,6 +74,9 @@
     --p-none:#C3C9D0;  --p-none-ink:#C3C9D0;
     --q-dekl:#6FA8DC; --q-dekl-ink:#8FC0E8; --q-dekl-flaeche:#12283C;
     --q-reg:#F5C24B;  --q-reg-ink:#F5C24B;  --q-reg-flaeche:#3A2E10;
+    --q-liq:#F08A85;  --q-liq-ink:#F08A85;  --q-liq-flaeche:#3B1B1B;
+    --q-liq-txt:#2A1012; --q-weg-txt:#1B1F24;
+    --q-weg:#9AA2AB;  --q-weg-ink:#9AA2AB;  --q-weg-flaeche:#252A30;
     --card-shadow:0 1px 2px rgba(0,0,0,.45);
   }
 }
@@ -93,6 +102,9 @@
   --p-none:#C3C9D0;  --p-none-ink:#C3C9D0;
   --q-dekl:#6FA8DC; --q-dekl-ink:#8FC0E8; --q-dekl-flaeche:#12283C;
   --q-reg:#F5C24B;  --q-reg-ink:#F5C24B;  --q-reg-flaeche:#3A2E10;
+  --q-liq:#F08A85;  --q-liq-ink:#F08A85;  --q-liq-flaeche:#3B1B1B;
+  --q-liq-txt:#2A1012; --q-weg-txt:#1B1F24;
+  --q-weg:#9AA2AB;  --q-weg-ink:#9AA2AB;  --q-weg-flaeche:#252A30;
   --card-shadow:0 1px 2px rgba(0,0,0,.45);
 }
 
@@ -634,6 +646,9 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
 .netzinfo .ni-typ{font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
   color:var(--ink-3); margin-bottom:3px}
 .netzinfo h4{font-size:14.5px; font-weight:700; color:var(--ink); line-height:1.25}
+/* Punkt vor dem Registerstand im Steckbrief, in derselben Farbe wie der Knoten */
+.netzinfo .ni-stand{display:inline-block; width:8px; height:8px; border-radius:99px;
+  margin-right:6px; vertical-align:baseline}
 .hreg{margin-top:10px; padding-top:9px; border-top:1px solid var(--line); font-size:12px;
   line-height:1.45; color:var(--ink-2)}
 .hreg b{display:inline; color:var(--ink); font-size:11px; letter-spacing:.06em;
@@ -676,6 +691,12 @@ h1{font-family:"Archivo",sans-serif; font-weight:700; font-size:clamp(26px,4vw,3
       vertical-align:1px}
 .qtag-d{background:var(--q-dekl-flaeche); color:var(--q-dekl-ink)}
 .qtag-r{background:var(--q-reg); color:#2A1E00}
+/* Registerstand: aktiv bleibt gelb, in Liquidation rot, aufgeloest dunkelgrau.
+   Das Abzeichen nennt den Stand zusätzlich im Text. */
+.iblist li.q-r.st-liquidation{border-left-color:var(--q-liq); background:var(--q-liq-flaeche)}
+.iblist li.q-r.st-geloescht{border-left-color:var(--q-weg); background:var(--q-weg-flaeche)}
+.qtag-r.st-liquidation{background:var(--q-liq); color:var(--q-liq-txt)}
+.qtag-r.st-geloescht{background:var(--q-weg); color:var(--q-weg-txt)}
 .ibrolle{display:block; font-size:12px; color:var(--ink-2); margin-top:1px}
 
 .qlegende{margin:0 0 14px; padding:11px 14px; border:1px solid var(--line);

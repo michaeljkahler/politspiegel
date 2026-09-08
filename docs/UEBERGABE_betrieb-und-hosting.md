@@ -313,6 +313,27 @@ Die zwei Befundarten, die das Skript ausdrücklich meldet, heissen `geloescht` u
 `aufgeloest` und stehen unter `befunde` in `data/interessen_pruefung.json`. Der wiederkehrende
 Auftrag ist angewiesen, sie namentlich zu melden.
 
+### Registerstand und Einfärbung im Dashboard
+
+Seit dem 8. September 2026 führt `zefix.py` den Registerstand jedes freigegebenen
+Registerfundes nach und schreibt ihn in `data/interessen_register.json`: `stand_klasse`
+(`aktiv`, `liquidation`, `geloescht`), `stand_text` mit dem Wortlaut der Schnittstelle,
+`stand_name` mit dem Namen laut Register und `stand_geprueft` mit dem Datum der Abfrage.
+Der volle Lauf macht das mit, ein eigener Lauf ohne Namensabgleich geht mit
+
+    python3 scripts/zefix.py --nur-stand --apply
+
+Das Dashboard färbt die Organisationen danach ein: gelb für aktiv eingetragen, rot für in
+Liquidation, dunkelgrau für aufgelöst und gelöscht, im Beziehungsnetz wie in der
+Mandatsliste des Profils. Die Farbe steht nie allein, jedes Abzeichen nennt den Stand im
+Text, und unter der Legende steht das Datum der Registerabfrage.
+
+«In Liquidation» ist kein Wert der Schnittstelle. Das Register führt den Zusatz im
+Firmennamen, solange die Liquidation läuft, und setzt `status` auf `BEING_CANCELLED`;
+`status_klasse()` in `zefix.py` wertet beides aus. Ein fehlender Wert heisst «noch nicht
+geprüft» und nicht «aktiv»: das Dashboard zeigt solche Knoten weiterhin gelb, aber ohne
+Standangabe im Steckbrief.
+
 ### Warum die fehlende Personensuche keine Frage des Logins ist
 
 Der HTTP-Test taugt dafür nicht: die Anmeldung wird vor dem Routing geprüft, darum antwortet

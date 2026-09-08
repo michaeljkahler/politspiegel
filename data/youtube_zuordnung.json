@@ -1527,31 +1527,6 @@
    }
   }
  },
- "Vorbereitung 16. Sitzung 2024 · 09.09.2024 (Vormittag)": {
-  "video": "bHoDuAzTooQ",
-  "abstimmungen": {
-   "1": {
-    "t": 1400,
-    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
-   },
-   "2": {
-    "t": 1400,
-    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
-   },
-   "3": {
-    "t": 1400,
-    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
-   },
-   "4": {
-    "t": 1400,
-    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
-   },
-   "5": {
-    "t": 1400,
-    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
-   }
-  }
- },
  "14. und 15. Sitzung 2024 · 26.08.2024 (Nachmittag 1)": {
   "video": "lXrH14Q8LMA",
   "abstimmungen": {
@@ -3362,5 +3337,30 @@
  "5. und 6. Sitzung des Kantonsrats · 11.05.2020 (Vormittag)": {
   "video": "W-1n6x3OYzU",
   "abstimmungen": {}
+ },
+ "16. Sitzung 2024 · 09.09.2024 (Vormittag)": {
+  "video": "bHoDuAzTooQ",
+  "abstimmungen": {
+   "1": {
+    "t": 1400,
+    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
+   },
+   "2": {
+    "t": 1400,
+    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
+   },
+   "3": {
+    "t": 1400,
+    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
+   },
+   "4": {
+    "t": 1400,
+    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
+   },
+   "5": {
+    "t": 1400,
+    "kapitel": "Bericht und Antrag des Regierungsrats vom 27. Februar 2024 betreffend Schaffung des Energiegesetzes; Fortführung der Ber"
+   }
+  }
  }
 }

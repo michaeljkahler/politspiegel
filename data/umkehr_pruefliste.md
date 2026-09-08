@@ -365,7 +365,7 @@ Offen: **69**
 
 ---
 
-### Vorbereitung 16. Sitzung 2024 · 09.09.2024 (Vormittag) #Nr3
+### 16. Sitzung 2024 · 09.09.2024 (Vormittag) #Nr3
 
 - **Titel:** Antrag Erwin Sutter
 - **Hinweis:** Ja bedeutet Zustimmung Kommissionsvorlage

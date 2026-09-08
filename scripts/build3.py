@@ -114,6 +114,7 @@ def netz_mit_register():
             if e.get("status") == "bestaetigt" and not e.get("nicht_mehr_gefunden")]
     if not frei:
         netz["reg_stand"] = reg.get("stand")
+        netz["reg_geprueft"] = reg.get("stand_register")
         return netz
 
     vorhanden = {n["id"] for n in netz["knoten"]}
@@ -125,10 +126,17 @@ def netz_mit_register():
             continue
         oid = "o:reg:" + re.sub(r"\W+", "", norm_klein(e["firma"]))[:40]
         if oid not in vorhanden:
+            # «st» ist der Registerstand aus zefix.py: aktiv, liquidation oder
+            # geloescht. Das Dashboard färbt die Knoten danach ein. Fehlt der
+            # Wert, weil noch kein Zefix-Lauf stattgefunden hat, bleibt es bei
+            # der bisherigen einheitlichen Farbe.
             netz["knoten"].append({"id": oid, "typ": "organisation",
                                    "label": e["firma"], "ort": e.get("sitz"),
                                    "branche": e.get("branche"),
                                    "q": "r", "uid": e.get("uid"),
+                                   "st": e.get("stand_klasse"),
+                                   "st_txt": e.get("stand_text"),
+                                   "st_am": e.get("stand_geprueft"),
                                    "url": e.get("auszug"), "anzahl": 0})
             vorhanden.add(oid)
             neu_o += 1
@@ -155,6 +163,8 @@ def netz_mit_register():
         if n["typ"] == "organisation":
             n["anzahl"] = sum(1 for k in netz["kanten"] if k["nach"] == n["id"])
     netz["reg_stand"] = reg.get("stand")
+    # Datum der letzten Registerabfrage, für den Hinweis unter der Legende
+    netz["reg_geprueft"] = reg.get("stand_register")
     print(f"  Netz: {neu_k} Kanten und {neu_o} Organisationen aus dem "
           f"Handelsregister ergänzt, {neu_b} neue Branchen (freigegeben von "
           f"{len(reg.get('eintraege', []))} geprüften Funden)")
@@ -258,7 +268,9 @@ def personen_payload():
             continue
         nach_person.setdefault(e["mitglied"], []).append({
             "f": e["firma"], "o": e.get("sitz"), "r": e.get("funktion"),
-            "u": e.get("uid"), "url": e.get("auszug")})
+            "u": e.get("uid"), "url": e.get("auszug"),
+            # Registerstand für die Einfärbung im Profil, siehe zefix.py
+            "st": e.get("stand_klasse"), "st_am": e.get("stand_geprueft")})
 
     raus = []
     for m in d.get("mitglieder", []):

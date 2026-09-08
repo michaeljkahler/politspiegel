@@ -17,6 +17,7 @@ Genau daran lag es, dass früher die ersten Sitzungen eines Jahres fehlten.
 """
 
 import re, json, sys, time, html, hashlib, threading
+import datetime as dt
 import concurrent.futures as cf
 from pathlib import Path
 import requests
@@ -34,12 +35,20 @@ PROT_DIR = DATA / "protokolle"   # heruntergeladene Wortprotokoll-PDFs
 PROT_DIR.mkdir(parents=True, exist_ok=True)
 JSON_OUT = DATA / "all_sessions.json"            # konsolidierte Daten fürs Dashboard
 INDEX_JSON = DATA / "sh_index.json"              # Cache: cid -> Titel, Datum, Dateien
+GESPERRT_JSON = DATA / "sitzungen_gesperrt.json"  # von Hand gesperrte Sitzungen
+# Ab so vielen abweichenden Namen gegenüber der zeitlich benachbarten Sitzung
+# gilt eine Namensliste als verdächtig. Normale Rücktritte und Nachrücker
+# bewegen sich im einstelligen Bereich; ein Legislaturwechsel liegt darüber,
+# wird aber über die festen Amtsdauern erkannt und darum nicht gemeldet.
+NAMEN_ABWEICHUNG = 8
 WORKERS = 8                                      # parallele Abfragen gegen sh.ch
 
 # Frühestes Jahr, das berücksichtigt wird. Elektronische (namentliche)
 # Abstimmungen gibt es im Kantonsrat Schaffhausen seit 2018; ältere Sitzungen
 # haben keine Abstimmungs-Excel und werden ohnehin übersprungen.
 AB_JAHR = 2018
+# So viele Tage lang wird eine Sitzung ohne Abstimmungsdatei erneut abgefragt.
+NACHFRAGE_TAGE = 180
 
 # Amtsdauern des Kantonsrats: vier Jahre, Beginn am 1. Januar nach den
 # Gesamterneuerungswahlen im September davor. Nummer -> (von, bis) als
@@ -219,8 +228,36 @@ def discover_sessions():
             cache = json.load(open(INDEX_JSON, encoding="utf-8"))
         except Exception:
             cache = {}
-    offen = [c for c in ids if c not in cache]
-    print(f"     {len(cache)} aus dem Index bekannt, {len(offen)} neu abzufragen.", flush=True)
+    # Eine Sitzung wird auch dann erneut abgefragt, wenn im Index noch keine
+    # Abstimmungsdatei steht und sie höchstens ein halbes Jahr zurückliegt.
+    # sh.ch hängt am Sitzungstag zuerst nur die Traktandenliste an und liefert
+    # die Abstimmungsergebnisse Tage später nach; ohne diese Auffrischung
+    # bliebe eine so gesehene Sitzung dauerhaft aus dem Datenbestand (die
+    # 13. Sitzung 2026 vom 07.09.2026 fiel genau so durch).
+    def hat_abstimmungsdatei(e):
+        for f in e.get("files") or []:
+            n = f.get("name") or ""
+            if not n.lower().endswith((".xlsx", ".pdf")):
+                continue
+            if any(x in n.lower() for x in XLSX_AUSSCHLUSS):
+                continue
+            if any(m.search(n) for m in XLSX_MUSTER):
+                return True
+        return False
+
+    def jung(e):
+        m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", e.get("datum") or "")
+        if not m:
+            return True          # ohne Datum lieber einmal zu viel fragen
+        d, mo, y = (int(x) for x in m.groups())
+        return (dt.date.today() - dt.date(y, mo, d)).days <= NACHFRAGE_TAGE
+
+    nachfragen = [c for c in ids
+                  if c in cache and not hat_abstimmungsdatei(cache[c]) and jung(cache[c])]
+    offen = [c for c in ids if c not in cache] + nachfragen
+    print(f"     {len(cache)} aus dem Index bekannt, {len(offen)} neu abzufragen"
+          f"{f' (davon {len(nachfragen)} ohne Ergebnisdatei nachgefragt)' if nachfragen else ''}.",
+          flush=True)
 
     lokal = threading.local()
 
@@ -619,6 +656,10 @@ def label_from(titel, dateiname, sitzungsdatum=""):
     # ältere Titel tragen das Datum schon im Text ("7. Kantonsratssitzung vom
     # 14.05.2018"), das käme sonst doppelt vor
     titel = re.sub(r"\s+vom\s+\d{1,2}\.\d{1,2}\.20\d{2}\.?\s*$", "", titel).strip()
+    # Einzelne CMS-Kacheln heissen «Vorbereitung 16. Sitzung 2024», tragen aber
+    # die Abstimmungsergebnisse der Sitzung selbst. Das Wort gehört nicht ins
+    # Label, sonst steht dieselbe Sitzung unter zwei Namen da.
+    titel = re.sub(r"^\s*Vorbereitung\s+(?=\d)", "", titel).strip()
     dl = dateiname.lower()
     half = ""
     if "vormittag" in dl:
@@ -657,6 +698,13 @@ def main():
         sys.exit(1)
 
     print("3/4  Parsen ...")
+    gesperrt = {}
+    if GESPERRT_JSON.exists():
+        try:
+            for e in json.loads(GESPERRT_JSON.read_text(encoding="utf-8"))["gesperrt"]:
+                gesperrt[e["sitzung"]] = e.get("grund", "")
+        except Exception as e:
+            print(f"     ! sitzungen_gesperrt.json unlesbar: {e}")
     parsed = []
     # Erst alle xlsx, danach die PDF-Ausweichfälle: dann steht für das PDF die
     # Mitgliederliste der anderen Sitzungshälfte als Namensraster bereit.
@@ -676,6 +724,10 @@ def main():
                     continue
                 if any(p["sitzung"] == s["sitzung"] for p in parsed):
                     print(f"     · {label}: bereits erfasst, übersprungen")
+                    continue
+                if s["sitzung"] in gesperrt:
+                    print(f"     ⊘ {label}: gesperrt in sitzungen_gesperrt.json, "
+                          f"übersprungen ({gesperrt[s['sitzung']][:90]})")
                     continue
                 parsed.append(s)
                 quelle = "" if durchgang == "xlsx" else "  [aus PDF-Report]"
@@ -732,6 +784,33 @@ def main():
     if unbekannt:
         print(f"     Hinweis: {len(unbekannt)} Sitzungen ausserhalb der "
               f"hinterlegten Amtsdauern, z. B. {unbekannt[0]}")
+
+    # --- Namenslisten auf Plausibilität prüfen ---
+    # Innerhalb einer Legislatur ändert sich der Rat nur durch Rücktritte und
+    # Nachrücker, also um wenige Namen je Sitzung. Eine grössere Abweichung
+    # heisst, dass die Datei auf sh.ch eine veraltete Teilnehmerliste trägt;
+    # dann stehen die Stimmen bei den falschen Personen. Gemeldet wird nur, die
+    # Sitzung kommt trotzdem in den Bestand: der Ausschluss gehört in
+    # sitzungen_gesperrt.json, damit die Entscheidung nachvollziehbar bleibt.
+    auffaellig = []
+    vorher = {}
+    for s in chrono:
+        leg = s["legislatur"]
+        namen = {(mm["nachname"], mm["vorname"]) for mm in s["members"]}
+        alt = vorher.get(leg)
+        if alt is not None:
+            weg, dazu = alt[1] - namen, namen - alt[1]
+            if len(weg) + len(dazu) >= NAMEN_ABWEICHUNG:
+                auffaellig.append((s["sitzung"], alt[0], sorted(weg), sorted(dazu)))
+        vorher[leg] = (s["sitzung"], namen)
+    for sitzung, vgl, weg, dazu in auffaellig:
+        print(f"     ! Namensliste von «{sitzung}» weicht stark von «{vgl}» ab: "
+              f"{len(weg)} fehlen, {len(dazu)} neu. Prüfen, ob die Datei auf "
+              f"sh.ch eine veraltete Teilnehmerliste trägt.")
+        print(f"       fehlen: {', '.join(n for n, _ in weg[:8])}"
+              f"{' …' if len(weg) > 8 else ''}")
+        print(f"       neu   : {', '.join(n for n, _ in dazu[:8])}"
+              f"{' …' if len(dazu) > 8 else ''}")
 
     # Zeitraum-Label + aktuelle Mitglieder je Legislatur
     from collections import defaultdict

@@ -61506,7 +61506,7 @@
    "legislatur": 2
   },
   {
-   "sitzung": "Vorbereitung 16. Sitzung 2024 · 09.09.2024 (Vormittag)",
+   "sitzung": "16. Sitzung 2024 · 09.09.2024 (Vormittag)",
    "n_votes": 5,
    "cid": "15330082",
    "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-15330082-DE.html",
@@ -228394,6 +228394,20 @@
      "details": "der Spitäler Schaffhausen",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "wird zu Ende beraten und mit 49:0 Stimmen genehmigt sowie dem Spitalrat Entlastung erteilt.",
+     "stichworte": [
+      "genehmigung",
+      "spitalrat",
+      "rechnung",
+      "gesundheitskommission",
+      "spitäler",
+      "risiken",
+      "aufgabe",
+      "arbeits",
+      "problem",
+      "geschäftsbericht"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228411,8 +228425,15 @@
      "tags_detail": [
       "Staatsrechnung",
       "Spitäler"
-     ],
-     "kontext": "wird zu Ende beraten und mit 49:0 Stimmen genehmigt sowie dem Spitalrat Entlastung erteilt.",
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Verwendung des Betriebsgewinns 2017 der Spitäler Schaffhausen",
+     "typ": "Verwendung Betriebsgewinn",
+     "details": "Zuweisung an den Kanton: CHF 2'803'000 Franken Zuweisung zu den Reserven der Spitäler Schaffhausen: CHF 8'678'000 Franken",
+     "inverted_note": null,
+     "geschaeft": "",
      "stichworte": [
       "genehmigung",
       "spitalrat",
@@ -228425,15 +228446,7 @@
       "problem",
       "geschäftsbericht"
      ],
-     "kontext_quelle": "protokoll"
-    },
-    {
-     "nr": 2,
-     "titel": "Verwendung des Betriebsgewinns 2017 der Spitäler Schaffhausen",
-     "typ": "Verwendung Betriebsgewinn",
-     "details": "Zuweisung an den Kanton: CHF 2'803'000 Franken Zuweisung zu den Reserven der Spitäler Schaffhausen: CHF 8'678'000 Franken",
-     "inverted_note": null,
-     "geschaeft": "",
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228451,20 +228464,7 @@
      "tags_detail": [
       "Staatsrechnung",
       "Spitäler"
-     ],
-     "stichworte": [
-      "genehmigung",
-      "spitalrat",
-      "rechnung",
-      "gesundheitskommission",
-      "spitäler",
-      "risiken",
-      "aufgabe",
-      "arbeits",
-      "problem",
-      "geschäftsbericht"
-     ],
-     "kontext_quelle": "nachbar"
+     ]
     },
     {
      "nr": 3,
@@ -228473,6 +228473,16 @@
      "details": "2 Die Gemeinden können gegen Entschädigung ihre schriftliche Zustimmung zu einer Unterschreitung des Abstandes nach Abs. 1 lit. a gegenüber öffentlichem Grund geben, sofern es sich nicht um eine Verkehrsfläche handelt.",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "a (Antrag Daniel Preisig) wird mit 51 : 0 Stimmen zugestimmt.",
+     "stichworte": [
+      "gemeinden",
+      "stadt",
+      "verkehrsfläche",
+      "würdigung",
+      "baulinien",
+      "grenzabstände"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228487,17 +228497,7 @@
      ],
      "tags_detail": [
       "Baugesetz"
-     ],
-     "kontext": "a (Antrag Daniel Preisig) wird mit 51 : 0 Stimmen zugestimmt.",
-     "stichworte": [
-      "gemeinden",
-      "stadt",
-      "verkehrsfläche",
-      "würdigung",
-      "baulinien",
-      "grenzabstände"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 4,
@@ -228506,6 +228506,15 @@
      "details": "Sofortige 2. Lesung der Teilrevision des Baugesetzes",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "gemeinden",
+      "stadt",
+      "verkehrsfläche",
+      "würdigung",
+      "baulinien",
+      "grenzabstände"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228523,16 +228532,7 @@
      "tags_detail": [
       "Baugesetz",
       "Traktandenliste"
-     ],
-     "stichworte": [
-      "gemeinden",
-      "stadt",
-      "verkehrsfläche",
-      "würdigung",
-      "baulinien",
-      "grenzabstände"
-     ],
-     "kontext_quelle": "nachbar"
+     ]
     },
     {
      "nr": 5,
@@ -228541,6 +228541,16 @@
      "details": "",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "die Raumplanung und das öffentliche Baurecht mit 49 : 0 Stimmen zugestimmt.",
+     "stichworte": [
+      "zweidrittelmehrheit",
+      "kantonsratspräsident",
+      "staatsschreiber",
+      "bilger",
+      "jetzt",
+      "traktandums"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228558,17 +228568,7 @@
      "tags_detail": [
       "Parlamentsbetrieb",
       "Baugesetz"
-     ],
-     "kontext": "die Raumplanung und das öffentliche Baurecht mit 49 : 0 Stimmen zugestimmt.",
-     "stichworte": [
-      "zweidrittelmehrheit",
-      "kantonsratspräsident",
-      "staatsschreiber",
-      "bilger",
-      "jetzt",
-      "traktandums"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 6,
@@ -228577,6 +228577,15 @@
      "details": "Sofortige 2. Lesung des Erlasses eines Mehrwertausgleichgesetzes (MAG)",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "zweidrittelmehrheit",
+      "kantonsratspräsident",
+      "staatsschreiber",
+      "bilger",
+      "jetzt",
+      "traktandums"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228594,16 +228603,7 @@
      "tags_detail": [
       "Parlamentsbetrieb",
       "Traktandenliste"
-     ],
-     "stichworte": [
-      "zweidrittelmehrheit",
-      "kantonsratspräsident",
-      "staatsschreiber",
-      "bilger",
-      "jetzt",
-      "traktandums"
-     ],
-     "kontext_quelle": "nachbar"
+     ]
     },
     {
      "nr": 7,
@@ -228612,6 +228612,17 @@
      "details": "Publikation Amtsblatt, untersteht dem fakultativen Referendum",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "gleichgesetzes mit 45 : 6 Stimmen zugestimmt.",
+     "stichworte": [
+      "mehrwert",
+      "beispiel",
+      "gemeinde",
+      "somit",
+      "änderung",
+      "kantonsratspräsident",
+      "erlass"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228626,18 +228637,7 @@
      ],
      "tags_detail": [
       "Parlamentsbetrieb"
-     ],
-     "kontext": "gleichgesetzes mit 45 : 6 Stimmen zugestimmt.",
-     "stichworte": [
-      "mehrwert",
-      "beispiel",
-      "gemeinde",
-      "somit",
-      "änderung",
-      "kantonsratspräsident",
-      "erlass"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 8,
@@ -228646,6 +228646,16 @@
      "details": "Verkehrsbetriebe Schaffhausen AG (RVSH AG)",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "a (Antrag Daniel Preisig) wird mit 51 : 0 Stimmen zugestimmt.",
+     "stichworte": [
+      "gemeinden",
+      "stadt",
+      "verkehrsfläche",
+      "würdigung",
+      "baulinien",
+      "grenzabstände"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228660,17 +228670,7 @@
      ],
      "tags_detail": [
       "Staatsrechnung"
-     ],
-     "kontext": "a (Antrag Daniel Preisig) wird mit 51 : 0 Stimmen zugestimmt.",
-     "stichworte": [
-      "gemeinden",
-      "stadt",
-      "verkehrsfläche",
-      "würdigung",
-      "baulinien",
-      "grenzabstände"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 9,
@@ -228679,6 +228679,16 @@
      "details": "Erhöhung der Stimmbeteiligung",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "die Raumplanung und das öffentliche Baurecht mit 49 : 0 Stimmen zugestimmt.",
+     "stichworte": [
+      "zweidrittelmehrheit",
+      "kantonsratspräsident",
+      "staatsschreiber",
+      "bilger",
+      "jetzt",
+      "traktandums"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -228693,17 +228703,7 @@
      ],
      "tags_detail": [
       "Parlamentsbetrieb"
-     ],
-     "kontext": "die Raumplanung und das öffentliche Baurecht mit 49 : 0 Stimmen zugestimmt.",
-     "stichworte": [
-      "zweidrittelmehrheit",
-      "kantonsratspräsident",
-      "staatsschreiber",
-      "bilger",
-      "jetzt",
-      "traktandums"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     }
    ],
    "quelle": "5303e64e_Abst_2018-12.xlsx",
@@ -230920,16 +230920,6 @@
      "details": "",
      "inverted_note": null,
      "geschaeft": "",
-     "thema_gruppe": null,
-     "thema_name": null,
-     "richtung_invertiert": false,
-     "tags_form": [
-      "Rückweisung",
-      "Antrag"
-     ],
-     "tags_ueberthema": [],
-     "tags_unterthema": [],
-     "tags_detail": [],
      "kontext": "Der Rückweisungsantrag von Matthias Frick wird mit 38 : 7 Stimmen und zwei Enthaltungen abgelehnt.",
      "stichworte": [
       "erklärungsnotstand",
@@ -230941,7 +230931,17 @@
       "ebene",
       "ausstand"
      ],
-     "kontext_quelle": "protokoll"
+     "kontext_quelle": "protokoll",
+     "thema_gruppe": null,
+     "thema_name": null,
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Rückweisung",
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
     },
     {
      "nr": 2,
@@ -230950,6 +230950,17 @@
      "details": "Antrag Jürg Tanner (Anheben Sonderleistungen CHF 600'000), Nein-Stimmen Antrag GPK (Sonderleistungen auf CHF 500'000 belassen), Ja-Stimmen",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "erklärungsnotstand",
+      "personal",
+      "leute",
+      "erhöhung",
+      "zuerst",
+      "rückweisungsantrag",
+      "ebene",
+      "ausstand"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -230958,18 +230969,7 @@
      ],
      "tags_ueberthema": [],
      "tags_unterthema": [],
-     "tags_detail": [],
-     "stichworte": [
-      "erklärungsnotstand",
-      "personal",
-      "leute",
-      "erhöhung",
-      "zuerst",
-      "rückweisungsantrag",
-      "ebene",
-      "ausstand"
-     ],
-     "kontext_quelle": "nachbar"
+     "tags_detail": []
     },
     {
      "nr": 3,
@@ -230978,15 +230978,6 @@
      "details": "",
      "inverted_note": null,
      "geschaeft": "",
-     "thema_gruppe": null,
-     "thema_name": null,
-     "richtung_invertiert": false,
-     "tags_form": [
-      "Erheblicherklärung"
-     ],
-     "tags_ueberthema": [],
-     "tags_unterthema": [],
-     "tags_detail": [],
      "stichworte": [
       "erklärungsnotstand",
       "personal",
@@ -230997,7 +230988,16 @@
       "ebene",
       "ausstand"
      ],
-     "kontext_quelle": "nachbar"
+     "kontext_quelle": "nachbar",
+     "thema_gruppe": null,
+     "thema_name": null,
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Erheblicherklärung"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
     }
    ],
    "quelle": "b3a2fea5_Abst_2018-10.xlsx",
@@ -231750,6 +231750,17 @@
      "details": "Ärztliche Notrufnummer und Ausbau der Notfallpraxis zur Entlastung des Notfallzentrums",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "wachstum",
+      "problem",
+      "selbstverständlich",
+      "bereich",
+      "vertrauen",
+      "kanton",
+      "eigenkapitalquote",
+      "kantonsratspräsident"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -231770,7 +231781,16 @@
       "Parlamentsbetrieb",
       "Schulden und Vermögen",
       "Ambulante Versorgung"
-     ],
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Traktandum 2: Geschäftsbericht 2017",
+     "typ": "Genehmigung",
+     "details": "Schaffhauser Kantonalbank",
+     "inverted_note": null,
+     "geschaeft": "",
+     "kontext": "Der Geschäftsbericht 2017 der Schaffhauser Kantonalbank wird mit 50 : 0 Stimmen genehmigt.",
      "stichworte": [
       "wachstum",
       "problem",
@@ -231781,15 +231801,7 @@
       "eigenkapitalquote",
       "kantonsratspräsident"
      ],
-     "kontext_quelle": "nachbar"
-    },
-    {
-     "nr": 2,
-     "titel": "Traktandum 2: Geschäftsbericht 2017",
-     "typ": "Genehmigung",
-     "details": "Schaffhauser Kantonalbank",
-     "inverted_note": null,
-     "geschaeft": "",
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -231811,19 +231823,7 @@
       "Staatsrechnung",
       "Schulden und Vermögen",
       "Kantonalbank"
-     ],
-     "kontext": "Der Geschäftsbericht 2017 der Schaffhauser Kantonalbank wird mit 50 : 0 Stimmen genehmigt.",
-     "stichworte": [
-      "wachstum",
-      "problem",
-      "selbstverständlich",
-      "bereich",
-      "vertrauen",
-      "kanton",
-      "eigenkapitalquote",
-      "kantonsratspräsident"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 3,
@@ -231832,6 +231832,19 @@
      "details": "Sonderschulen Schaffhausen",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Der Geschäftsbericht 2017 der Schaffhauser Sonderschulen wird mit 52 : 0 Stimmen genehmigt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "recht",
+      "sonderschulen",
+      "sonderschulrat",
+      "rapha",
+      "fälle",
+      "betreuung",
+      "kinder",
+      "stunden"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -231846,7 +231859,15 @@
      ],
      "tags_detail": [
       "Staatsrechnung"
-     ],
+     ]
+    },
+    {
+     "nr": 4,
+     "titel": "Traktandum 5: Motion Nr. 2018/2 von Markus Müller",
+     "typ": "Erheblicherklärung",
+     "details": "Revision der Geschäftsordnung des Kantonsrats Schaffhausen",
+     "inverted_note": null,
+     "geschaeft": "",
      "kontext": "Der Geschäftsbericht 2017 der Schaffhauser Sonderschulen wird mit 52 : 0 Stimmen genehmigt.",
      "stichworte": [
       "mitarbeitenden",
@@ -231859,15 +231880,7 @@
       "kinder",
       "stunden"
      ],
-     "kontext_quelle": "protokoll"
-    },
-    {
-     "nr": 4,
-     "titel": "Traktandum 5: Motion Nr. 2018/2 von Markus Müller",
-     "typ": "Erheblicherklärung",
-     "details": "Revision der Geschäftsordnung des Kantonsrats Schaffhausen",
-     "inverted_note": null,
-     "geschaeft": "",
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -231885,20 +231898,7 @@
      "tags_detail": [
       "Geschäftsordnung",
       "Staatsrechnung"
-     ],
-     "kontext": "Der Geschäftsbericht 2017 der Schaffhauser Sonderschulen wird mit 52 : 0 Stimmen genehmigt.",
-     "stichworte": [
-      "mitarbeitenden",
-      "recht",
-      "sonderschulen",
-      "sonderschulrat",
-      "rapha",
-      "fälle",
-      "betreuung",
-      "kinder",
-      "stunden"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     }
    ],
    "quelle": "b199803c_Abst_2018-08.xlsx",
@@ -232766,15 +232766,6 @@
      "details": "Schlussbilanz und Anschlusskonzept zur kantonalen Energiepolitik",
      "inverted_note": null,
      "geschaeft": "",
-     "thema_gruppe": null,
-     "thema_name": null,
-     "richtung_invertiert": false,
-     "tags_form": [
-      "Antrag"
-     ],
-     "tags_ueberthema": [],
-     "tags_unterthema": [],
-     "tags_detail": [],
      "stichworte": [
       "regierung",
       "standort",
@@ -232783,7 +232774,16 @@
       "kommissionspräsident",
       "zeughaus"
      ],
-     "kontext_quelle": "nachbar"
+     "kontext_quelle": "nachbar",
+     "thema_gruppe": null,
+     "thema_name": null,
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
     },
     {
      "nr": 2,
@@ -232792,6 +232792,16 @@
      "details": "Ausbildungszentrum für den Zivilschutz und das Feuerwehrwesen am Standort Beringen",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "mit 30 : 20 Stimmen bei 4 Enthaltungen an die Regierung zurückge- wiesen.",
+     "stichworte": [
+      "regierung",
+      "standort",
+      "kessler",
+      "vorgang",
+      "kommissionspräsident",
+      "zeughaus"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -232809,17 +232819,7 @@
      "tags_detail": [
       "Eignerstrategie",
       "Bevölkerungsschutz"
-     ],
-     "kontext": "mit 30 : 20 Stimmen bei 4 Enthaltungen an die Regierung zurückge- wiesen.",
-     "stichworte": [
-      "regierung",
-      "standort",
-      "kessler",
-      "vorgang",
-      "kommissionspräsident",
-      "zeughaus"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     },
     {
      "nr": 3,
@@ -232828,15 +232828,6 @@
      "details": "Zollübergang Thayngen - Problematik des Schleichverkehrs",
      "inverted_note": null,
      "geschaeft": "",
-     "thema_gruppe": null,
-     "thema_name": null,
-     "richtung_invertiert": false,
-     "tags_form": [
-      "Erheblicherklärung"
-     ],
-     "tags_ueberthema": [],
-     "tags_unterthema": [],
-     "tags_detail": [],
      "stichworte": [
       "regierung",
       "standort",
@@ -232845,7 +232836,16 @@
       "kommissionspräsident",
       "zeughaus"
      ],
-     "kontext_quelle": "nachbar"
+     "kontext_quelle": "nachbar",
+     "thema_gruppe": null,
+     "thema_name": null,
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Erheblicherklärung"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
     },
     {
      "nr": 4,
@@ -232854,6 +232854,15 @@
      "details": "Aktienverkauf der EKS AG neu in der Kompetenz des Kantonsrats",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "regierung",
+      "standort",
+      "kessler",
+      "vorgang",
+      "kommissionspräsident",
+      "zeughaus"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -232868,16 +232877,7 @@
      ],
      "tags_detail": [
       "Energieunternehmen"
-     ],
-     "stichworte": [
-      "regierung",
-      "standort",
-      "kessler",
-      "vorgang",
-      "kommissionspräsident",
-      "zeughaus"
-     ],
-     "kontext_quelle": "nachbar"
+     ]
     },
     {
      "nr": 5,
@@ -232886,6 +232886,15 @@
      "details": "Aktienverkauf der EKS AG neu in der Kompetenz des Kantonsrats",
      "inverted_note": null,
      "geschaeft": "",
+     "stichworte": [
+      "erledigung",
+      "regierung",
+      "kessler",
+      "aktien",
+      "kantons",
+      "lösung"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -232900,16 +232909,7 @@
      ],
      "tags_detail": [
       "Energieunternehmen"
-     ],
-     "stichworte": [
-      "erledigung",
-      "regierung",
-      "kessler",
-      "aktien",
-      "kantons",
-      "lösung"
-     ],
-     "kontext_quelle": "nachbar"
+     ]
     },
     {
      "nr": 6,
@@ -232918,6 +232918,16 @@
      "details": "Aktienverkauf der EKS AG neu in der Kompetenz des Kantonsrats",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Enthaltungen wird die Motion nicht sofort erledigt und mit 30 : 15 Stimmen bei 2 Enthaltungen wird die Motion an eine kantonsrätliche Kommission überwiesen.",
+     "stichworte": [
+      "erledigung",
+      "regierung",
+      "kessler",
+      "aktien",
+      "kantons",
+      "lösung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -232932,17 +232942,7 @@
      ],
      "tags_detail": [
       "Energieunternehmen"
-     ],
-     "kontext": "Enthaltungen wird die Motion nicht sofort erledigt und mit 30 : 15 Stimmen bei 2 Enthaltungen wird die Motion an eine kantonsrätliche Kommission überwiesen.",
-     "stichworte": [
-      "erledigung",
-      "regierung",
-      "kessler",
-      "aktien",
-      "kantons",
-      "lösung"
-     ],
-     "kontext_quelle": "protokoll"
+     ]
     }
    ],
    "quelle": "aceed2e0_Abst_2018_07.xlsx",
