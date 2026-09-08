@@ -46,6 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
+from social import SOCIAL_CSS, social_html  # noqa: E402  Verweise auf die eigenen Konten
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 from melden import MELDEN_CSS, melden_html  # noqa: E402
 
@@ -179,7 +180,7 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .fuss{margin-top:52px;padding-top:22px;border-top:1px solid var(--linie);
   font-size:13.5px;color:var(--text-leise)}
 .fuss a{text-decoration:underline}
-""" + IMPRESSUM_CSS + TESTPHASE_CSS + MELDEN_CSS
+""" + IMPRESSUM_CSS + SOCIAL_CSS + TESTPHASE_CSS + MELDEN_CSS
 
 
 # ---------------------------------------------------------------- Quellen
@@ -454,6 +455,7 @@ def bauen(d, zeilen) -> str:
   gekennzeichnet.</p>
 
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
+  {social_html()}
   {impressum_html()}
 </footer>
 
@@ -516,6 +518,7 @@ def listenseite(zeilen) -> str:
 
 <footer class="fuss">
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
+  {social_html()}
   {impressum_html()}
 </footer>
 

@@ -41,6 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import teilen  # noqa: E402  Bilder fuer Social Media, gleicher Ordner
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent / "politspiegel"))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402  ein Impressum fuer alle Seiten
+from social import SOCIAL_CSS, social_html  # noqa: E402  Verweise auf die eigenen Konten
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 from melden import MELDEN_CSS, melden_html  # noqa: E402
 
@@ -1953,7 +1954,7 @@ def bauen() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}{TESTPHASE_CSS}{MELDEN_CSS}</style>
+<style>{CSS}{teilen.CSS}{IMPRESSUM_CSS}{SOCIAL_CSS}{TESTPHASE_CSS}{MELDEN_CSS}</style>
 </head>
 <body>
 {testphase_html("oben-rechts")}
@@ -2030,6 +2031,7 @@ def bauen() -> str:
 
   <p>Stand {e(daten['stand'])}, erzeugt am {date.today().strftime('%d.%m.%Y')}.{quellcode}
   Aufbereitung ohne Gewähr.</p>
+  {social_html()}
   {impressum_html()}
 </footer>
 
