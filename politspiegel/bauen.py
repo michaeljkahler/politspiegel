@@ -432,6 +432,7 @@ def bauen(d, zeilen) -> str:
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{social_html()}
 {melden_html("Übersicht")}
 <div class="wrap">
 
@@ -455,7 +456,6 @@ def bauen(d, zeilen) -> str:
   gekennzeichnet.</p>
 
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
-  {social_html()}
   {impressum_html()}
 </footer>
 
@@ -499,6 +499,7 @@ def listenseite(zeilen) -> str:
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{social_html()}
 {melden_html("Abstimmungsliste")}
 <div class="wrap">
 
@@ -518,7 +519,6 @@ def listenseite(zeilen) -> str:
 
 <footer class="fuss">
   <p>Erzeugt am {date.today().strftime('%d.%m.%Y')}. Aufbereitung ohne Gewähr.</p>
-  {social_html()}
   {impressum_html()}
 </footer>
 

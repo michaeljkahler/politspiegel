@@ -459,35 +459,6 @@
     return '<a href="' + "mail" + "to:" + a + '">' + a + "</a>";
   }
 
-  /* Verweise auf die eigenen Social-Media-Konten. Die Zeichen stehen als SVG
-     in der Seite, nicht von einem fremden Server geladen: sonst baute jeder
-     Aufruf eine Verbindung zu Meta, Google oder ByteDance auf, und die Zusage
-     «diese Seite sendet nichts» waere hinfaellig. */
-  var SOZIAL = [
-    ["Instagram", "https://www.instagram.com/politspiegel.sh/",
-     '<rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4" fill="none" stroke="currentColor" stroke-width="1.9"/>' +
-     '<circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.9"/>' +
-     '<circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/>'],
-    ["TikTok", "https://www.tiktok.com/@politspiegel.sh",
-     '<path d="M16.1 2.6h-3.2v13.05a2.62 2.62 0 1 1-2.05-2.56v-3.24a5.83 5.83 0 1 0 5.25 5.8V8.9a6.5 6.5 0 0 0 3.9 1.27V6.95a3.34 3.34 0 0 1-2.5-1.05 3.4 3.4 0 0 1-1.4-2.6z" fill="currentColor"/>'],
-    ["Facebook", "https://www.facebook.com/122097032019472255",
-     '<path d="M13.6 21.5v-8.2h2.8l.42-3.2h-3.22V8.03c0-.93.26-1.56 1.6-1.56h1.7V3.6a22 22 0 0 0-2.5-.13c-2.47 0-4.16 1.5-4.16 4.27v2.38H7.4v3.2h2.84v8.2z" fill="currentColor"/>'],
-    ["YouTube", "https://www.youtube.com/@PolitspiegelSchaffhausen",
-     '<rect x="1.6" y="4.9" width="20.8" height="14.2" rx="4.6" fill="none" stroke="currentColor" stroke-width="1.9"/>' +
-     '<path d="M10.2 8.9 15.9 12l-5.7 3.1z" fill="currentColor"/>']
-  ];
-
-  function sozialHtml() {
-    return '<div class="soz"><p class="soz-titel">Politspiegel folgen ' +
-      '<span class="soz-handle">@politspiegel.sh</span></p><div class="soz-reihe">' +
-      SOZIAL.map(function (k) {
-        return '<a class="soz-link" href="' + k[1] + '" target="_blank" rel="noopener me" ' +
-          'title="Politspiegel Schaffhausen auf ' + k[0] + '" aria-label="Politspiegel Schaffhausen auf ' + k[0] + '">' +
-          '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">' + k[2] + "</svg>" +
-          "<span>" + k[0] + "</span></a>";
-      }).join("") + "</div></div>";
-  }
-
   function fussHtml(s) {
     var quelle = s ? " (" + esc(s.q) + ")" : "";
     var prot = s && s.pu ? (s.pf
@@ -526,7 +497,6 @@
       "erreichbar unter " + kontakt() + ". Diese Seite ist ein privates, nichtkommerzielles " +
       "Projekt und steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des " +
       "Kantons Schaffhausen. Wer einen Fehler findet, melde ihn bitte an diese Adresse." +
-      sozialHtml() +
       "</footer>";
   }
 

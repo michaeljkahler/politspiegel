@@ -1958,6 +1958,7 @@ def bauen() -> str:
 </head>
 <body>
 {testphase_html("oben-rechts")}
+{social_html()}
 {melden_html("Abstimmungsspiegel " + v["titel"])}
 <div class="wrap">
 
@@ -2031,7 +2032,6 @@ def bauen() -> str:
 
   <p>Stand {e(daten['stand'])}, erzeugt am {date.today().strftime('%d.%m.%Y')}.{quellcode}
   Aufbereitung ohne Gewähr.</p>
-  {social_html()}
   {impressum_html()}
 </footer>
 
