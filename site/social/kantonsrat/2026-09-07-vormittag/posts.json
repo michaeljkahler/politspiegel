@@ -3,7 +3,7 @@
  "slug": "2026-09-07-vormittag",
  "n_votes": 7,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23474385-DE.html",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "abstimmungen": [
   {
    "nr": 1,
@@ -109,6 +109,13 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 373136839,
+    "uuid": "2127463126686059822",
+    "termin": "2026-09-09T12:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=2127463126686059822"
    }
   },
   {
@@ -137,6 +144,13 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 373136971,
+    "uuid": "4947059817133984624",
+    "termin": "2026-09-09T18:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=4947059817133984624"
    }
   },
   {
@@ -152,7 +166,15 @@
    ],
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE"
+   },
+   "metricool": {
+    "id": 373137061,
+    "uuid": "-5252696579103374407",
+    "termin": "2026-09-09T18:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-5252696579103374407"
    }
   }
- ]
+ ],
+ "termin_hinweis": "Zeitversetzt auf 12:00 und 18:00 statt 09:00 und 16:00, weil die Abstimmungsserie 2026-09-27-verkehrsfluss diese Slots belegt (Entscheid Michael, 09.09.2026)."
 }
