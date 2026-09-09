@@ -1,6 +1,1073 @@
 {
  "sessions": [
   {
+   "sitzung": "13. Sitzung 2026 · 07.09.2026 (Vormittag)",
+   "n_votes": 7,
+   "cid": "23474385",
+   "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23474385-DE.html",
+   "members": [
+    {
+     "nachname": "Aellig",
+     "vorname": "Pentti",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Alaye",
+     "vorname": "Mayowa",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Altorfer",
+     "vorname": "Leonie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "JUSO",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bolli",
+     "vorname": "Fabian",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brenn",
+     "vorname": "Franziska",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Bringolf",
+     "vorname": "Lukas",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Brügel",
+     "vorname": "Anna",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bucher",
+     "vorname": "Tim",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "De Ventura",
+     "vorname": "Linda",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Derksen",
+     "vorname": "Theresia",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Di Ronco",
+     "vorname": "Christian",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Egger",
+     "vorname": "Martin",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Faccani",
+     "vorname": "Diego",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fehr",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fioretti",
+     "vorname": "Mariano",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Flubacher Rüedlinger",
+     "vorname": "Melanie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Freivogel",
+     "vorname": "Matthias",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Graf",
+     "vorname": "Hansueli",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Gruhler Heinzer",
+     "vorname": "Irene",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Hedinger",
+     "vorname": "Beat",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Herren",
+     "vorname": "Nicole",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Hotz",
+     "vorname": "Walter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Arnold",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Deborah",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Enth",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Kräuchi",
+     "vorname": "Raphael",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Laich",
+     "vorname": "Lorenz",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Lang",
+     "vorname": "Svea",
+     "fraktion": "SVP-EDU",
+     "partei": "JSVP",
+     "votes": [
+      "Enth",
+      "Ja",
+      "V/A/N",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Le Donne",
+     "vorname": "Vanessa",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Leu",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Litscher",
+     "vorname": "Monika",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Gianluca",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "Junge Grüne",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Bettina",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Lüthi",
+     "vorname": "Isabelle",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Meyer",
+     "vorname": "Daniel",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Roland",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Andrea",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Mundt",
+     "vorname": "Michael",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Neukomm",
+     "vorname": "Peter",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Neumann",
+     "vorname": "Eva",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Passafaro",
+     "vorname": "Marco",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Penkov",
+     "vorname": "Angela",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Pfalzgraf",
+     "vorname": "Maurus",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Portmann",
+     "vorname": "Patrick",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Rohner",
+     "vorname": "Raphaël",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Salathé",
+     "vorname": "Regula",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schärrer",
+     "vorname": "Nina",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Scheck",
+     "vorname": "Peter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Roman",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Enth",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Hermann",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Martin",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schmidig",
+     "vorname": "Rainer",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schnetzler",
+     "vorname": "Andreas",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schöpfer",
+     "vorname": "Sandra",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schraff",
+     "vorname": "Jannik",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schudel",
+     "vorname": "Erich",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Suter",
+     "vorname": "Roman",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Tognella",
+     "vorname": "Ivo",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Ullmann",
+     "vorname": "Corinne",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Würms",
+     "vorname": "Josef",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    }
+   ],
+   "votes": [
+    {
+     "nr": 1,
+     "titel": "Schlussabstimmung Stipendiendekret",
+     "typ": "Schlussabstimmung",
+     "details": "",
+     "inverted_note": null,
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. Oktober 2025 betreffend Teilrevision des Dekrets über die Erteilung von Stipendien und Studien- darlehen (Stipendiendekret) betreffend Umsetzung der Motion 2021/14 «Starkes Bildungssystem dank doppeltem Fehlbetragsmodell»",
+     "thema_gruppe": "4",
+     "thema_name": "Erziehung, Kultur, Natur",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Schlussabstimmung"
+     ],
+     "tags_ueberthema": [
+      "Bildung, Kultur und Sport"
+     ],
+     "tags_unterthema": [
+      "Weiterführende Bildung"
+     ],
+     "tags_detail": [
+      "Stipendien"
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Motion Nr. 2021/14 von Tim Bucher und Raphaël Rohner vom 1. November 2021 betreffend",
+     "typ": "Abschreibung",
+     "details": "«Starkes Bildungssystem dank doppeltem Fehlbetragsmodell»",
+     "inverted_note": null,
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. Oktober 2025 betreffend Teilrevision des Dekrets über die Erteilung von Stipendien und Studien- darlehen (Stipendiendekret) betreffend Umsetzung der Motion 2021/14 «Starkes Bildungssystem dank doppeltem Fehlbetragsmodell»",
+     "thema_gruppe": "4",
+     "thema_name": "Erziehung, Kultur, Natur",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Abschreibung"
+     ],
+     "tags_ueberthema": [
+      "Bildung, Kultur und Sport"
+     ],
+     "tags_unterthema": [
+      "Weiterführende Bildung"
+     ],
+     "tags_detail": [
+      "Stipendien"
+     ]
+    },
+    {
+     "nr": 3,
+     "titel": "Antrag M. Pfalzgraf",
+     "typ": "Antrag",
+     "details": "Rückweisung der Vorlage an die Regierung verbunden mit dem Auftrag, dass die «dynamsiche Waldgrenze beibehalten werden soll»",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag BVE",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Dezember 2025 betreffend  Genehmigung der Teilrevision «2022» des kantonalen Richtplans (Kapitel L5, L7, VE4 und VE5)/2. Version (ADS 26-18)",
+     "thema_gruppe": "7",
+     "thema_name": "Raumplanung, Bau, Verkehr, Energie",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Raum, Bau und Verkehr",
+      "Umwelt, Energie und Klima"
+     ],
+     "tags_unterthema": [
+      "Raumplanung und Bau",
+      "Klima und Natur"
+     ],
+     "tags_detail": [
+      "Richt- und Zonenplanung",
+      "Wald"
+     ]
+    },
+    {
+     "nr": 4,
+     "titel": "Antrag A. Schnetzler",
+     "typ": "Planungserklärung",
+     "details": "Gutheissung Planungserklärung wie folgt: Ersatz Pflummwis durch Pflummwis-Langwise",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Dezember 2025 betreffend  Genehmigung der Teilrevision «2022» des kantonalen Richtplans (Kapitel L5, L7, VE4 und VE5)/2. Version (ADS 26-18)",
+     "thema_gruppe": "7",
+     "thema_name": "Raumplanung, Bau, Verkehr, Energie",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Planungserklärung",
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Raum, Bau und Verkehr"
+     ],
+     "tags_unterthema": [
+      "Raumplanung und Bau"
+     ],
+     "tags_detail": [
+      "Richt- und Zonenplanung"
+     ]
+    },
+    {
+     "nr": 5,
+     "titel": "Genhmigung Beschluss betreffend Teilrevision «2022» des kantonalen Richtplanes",
+     "typ": "Genehmigung",
+     "details": "betreffend Anpassung in den Kapiteln L5, L7, VE4 und VE5",
+     "inverted_note": null,
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 9. Dezember 2025 betreffend  Genehmigung der Teilrevision «2022» des kantonalen Richtplans (Kapitel L5, L7, VE4 und VE5)/2. Version (ADS 26-18)",
+     "thema_gruppe": "7",
+     "thema_name": "Raumplanung, Bau, Verkehr, Energie",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Genehmigung"
+     ],
+     "tags_ueberthema": [
+      "Raum, Bau und Verkehr"
+     ],
+     "tags_unterthema": [
+      "Raumplanung und Bau"
+     ],
+     "tags_detail": [
+      "Richt- und Zonenplanung"
+     ]
+    },
+    {
+     "nr": 6,
+     "titel": "Antrag E. Neumann",
+     "typ": "Nichteintreten",
+     "details": "Nichteintretensantrag",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend  das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz) (Kapitel L5, L7, VE4 und VE5)/2. Version (ADS 26-18)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Eintreten",
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 7,
+     "titel": "Antrag D. Meyer",
+     "typ": "",
+     "details": "Rückweisung des RMG-Gesetzes an den Regierungsrat mit dem Auftrag zur Bildung einer öffentlich- rechtlichen Anstalt",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend  das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz) (Kapitel L5, L7, VE4 und VE5)/2. Version (ADS 26-18)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    }
+   ],
+   "quelle": "96ef2cf9_20260907_Abstimmungsergebnisse_Vormittag.xlsx",
+   "protokolle": [],
+   "legislatur": 3
+  },
+  {
    "sitzung": "11. und 12. Sitzung 2026 · 24.08.2026 (Nachmittag)",
    "n_votes": 14,
    "cid": "23337193",
@@ -236903,7 +237970,7 @@
    "legislatur": 1
   }
  ],
- "n_sessions": 202,
+ "n_sessions": 203,
  "legislaturen": {
   "1": {
    "nummer": 1,
@@ -237053,7 +238120,7 @@
    "bis": "31-12-2028",
    "label": "Legislatur 2025–2028",
    "erste_sitzung": "13.01.2025",
-   "letzte_sitzung": "24.08.2026",
+   "letzte_sitzung": "07.09.2026",
    "aktive_mitglieder": [
     "Aellig|Pentti",
     "Alaye|Mayowa",
@@ -237116,7 +238183,7 @@
     "Ullmann|Corinne",
     "Würms|Josef"
    ],
-   "n_sitzungen": 38
+   "n_sitzungen": 39
   }
  },
  "aktuelle_legislatur": 3,

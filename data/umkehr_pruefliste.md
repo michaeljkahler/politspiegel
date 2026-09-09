@@ -5,11 +5,51 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **69**
+Offen: **73**
 
-- `kein_text`: 26
+- `kein_text`: 30
 - `keine_fundstelle`: 26
 - `objekt_unklar`: 17
+
+---
+
+### 13. Sitzung 2026 · 07.09.2026 (Vormittag) #Nr3
+
+- **Titel:** Antrag M. Pfalzgraf
+- **Hinweis:** Ja bedeutet Zustimmung Antrag BVE
+- **Stimmen:** 38 Ja : 14 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber bve: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 13. Sitzung 2026 · 07.09.2026 (Vormittag) #Nr4
+
+- **Titel:** Antrag A. Schnetzler
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 34 Ja : 13 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schnetzler, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 13. Sitzung 2026 · 07.09.2026 (Vormittag) #Nr6
+
+- **Titel:** Antrag E. Neumann
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 17 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft neumann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 13. Sitzung 2026 · 07.09.2026 (Vormittag) #Nr7
+
+- **Titel:** Antrag D. Meyer
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 17 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft meyer, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 

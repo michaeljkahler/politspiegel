@@ -1,12 +1,14 @@
 {
- "hinweis": "Sitzungen, die trotz vorhandener Abstimmungsdatei nicht in den Datenbestand aufgenommen werden. Der Scraper vergleicht jeden Schluessel mit dem Sitzungslabel und ueberspringt Treffer. Ein Eintrag wird geloescht, sobald die Quelle korrigiert ist; danach genuegt ein normaler Lauf, um die Sitzung nachzutragen.",
- "gesperrt": [
+ "hinweis": "Sitzungen, die trotz vorhandener Abstimmungsdatei nicht in den Datenbestand aufgenommen werden. Der Scraper vergleicht jeden Schluessel mit dem Sitzungslabel und ueberspringt Treffer. Ein Eintrag wird nach «erledigt» verschoben, sobald die Quelle korrigiert ist; danach genuegt ein normaler Lauf, um die Sitzung nachzutragen.",
+ "gesperrt": [],
+ "erledigt": [
   {
    "sitzung": "13. Sitzung 2026 · 07.09.2026 (Vormittag)",
    "cid": "23474385",
-   "seit": "2026-09-08",
-   "grund": "Die Datei «20260907 Abstimmungsergebnisse Vormittag» fuehrt eine veraltete Namensliste. 19 der 60 aufgefuehrten Personen sind nicht mehr im Rat (Boehni, Bringolf entfaellt, Capaul, Eichenberger, Elaiyathamby, Erb, Heydecker, Hirsiger, Knapp, Lacher, Montanari, Mueller, Preisig, Schmidt, Stamm, Sutter, Tektas, Werner, Zubler), 18 aktuelle Mitglieder fehlen. Die Liste entspricht dem Ratsbestand von September 2024, waehrend Geschaefte und Stimmzahlen aktuell sind. Excel und PDF-Report sind identisch betroffen, es ist also kein Umwandlungsfehler. Die Stimmen waeren damit den falschen Personen zugeordnet.",
-   "pruefen": "Datei auf sh.ch erneut laden und die Namensliste mit data/mitglieder.json vergleichen."
+   "gesperrt_am": "2026-09-08",
+   "freigegeben_am": "2026-09-09",
+   "grund": "Die Datei «20260907 Abstimmungsergebnisse Vormittag» fuehrte eine veraltete Namensliste. 19 der 60 aufgefuehrten Personen waren nicht mehr im Rat, 18 amtierende fehlten; die Liste entsprach dem Ratsbestand von September 2024, waehrend Geschaefte und Stimmzahlen aktuell waren. Excel und PDF-Report waren gleichermassen betroffen.",
+   "aufloesung": "Der Kanton hat beide Dateien am 09.09.2026 ersetzt (neue uuid cd976196-965f-4603-94a5-bff69028234c fuer die Excel, 37fe560e-70c5-4196-8128-09864afc4587 fuer den PDF-Report). Die Namensliste fuehrt jetzt die 60 amtierenden Ratsmitglieder, die Stimmzahlen sind unveraendert."
   }
  ]
 }

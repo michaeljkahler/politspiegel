@@ -228,23 +228,14 @@ def discover_sessions():
             cache = json.load(open(INDEX_JSON, encoding="utf-8"))
         except Exception:
             cache = {}
-    # Eine Sitzung wird auch dann erneut abgefragt, wenn im Index noch keine
-    # Abstimmungsdatei steht und sie höchstens ein halbes Jahr zurückliegt.
-    # sh.ch hängt am Sitzungstag zuerst nur die Traktandenliste an und liefert
-    # die Abstimmungsergebnisse Tage später nach; ohne diese Auffrischung
-    # bliebe eine so gesehene Sitzung dauerhaft aus dem Datenbestand (die
-    # 13. Sitzung 2026 vom 07.09.2026 fiel genau so durch).
-    def hat_abstimmungsdatei(e):
-        for f in e.get("files") or []:
-            n = f.get("name") or ""
-            if not n.lower().endswith((".xlsx", ".pdf")):
-                continue
-            if any(x in n.lower() for x in XLSX_AUSSCHLUSS):
-                continue
-            if any(m.search(n) for m in XLSX_MUSTER):
-                return True
-        return False
-
+    # Sitzungen der letzten Monate werden bei jedem Lauf neu abgefragt, auch
+    # wenn sie im Index schon stehen. sh.ch hängt am Sitzungstag zuerst nur die
+    # Traktandenliste an und liefert die Abstimmungsergebnisse Tage später nach;
+    # und ein bereits veröffentlichtes Ergebnis wird bei einem Fehler durch eine
+    # neue Datei mit neuer uuid ersetzt. Beides ist an der 13. Sitzung 2026
+    # vorgekommen: erst fehlte die Datei, dann trug sie eine veraltete
+    # Namensliste und wurde am 09.09.2026 ausgetauscht. Ein Cache, der nur neue
+    # Kacheln kennt, bekommt keinen der beiden Fälle mit.
     def jung(e):
         m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", e.get("datum") or "")
         if not m:
@@ -252,11 +243,10 @@ def discover_sessions():
         d, mo, y = (int(x) for x in m.groups())
         return (dt.date.today() - dt.date(y, mo, d)).days <= NACHFRAGE_TAGE
 
-    nachfragen = [c for c in ids
-                  if c in cache and not hat_abstimmungsdatei(cache[c]) and jung(cache[c])]
+    nachfragen = [c for c in ids if c in cache and jung(cache[c])]
     offen = [c for c in ids if c not in cache] + nachfragen
     print(f"     {len(cache)} aus dem Index bekannt, {len(offen)} neu abzufragen"
-          f"{f' (davon {len(nachfragen)} ohne Ergebnisdatei nachgefragt)' if nachfragen else ''}.",
+          f"{f' (davon {len(nachfragen)} junge Sitzungen aufgefrischt)' if nachfragen else ''}.",
           flush=True)
 
     lokal = threading.local()
