@@ -1,6 +1,6 @@
 {
  "hinweis": "Von Hand geschriebene Fragetexte und neutrale Zusammenfassungen für den Reiter «Wer stimmt wie ich». Die Frage benennt, worüber der Rat wirklich abgestimmt hat, nicht bloss das übergeordnete Geschäft: bei Anträgen innerhalb einer Vorlage sind das zwei verschiedene Dinge. Ein Ja bedeutet immer Zustimmung zu dem, was die Frage nennt; bei Umkehrabstimmungen ist die Richtung dafür bereits korrigiert. Die Zitate stammen wörtlich aus dem Wortprotokoll und sind anonymisiert; belegt ist die Seite durch die Stimmabgabe der sprechenden Person, nicht durch eine Auslegung ihres Inhalts. Zitate erscheinen nur paarweise, sonst läse sich die Karte einseitig. Wo sich in der Debatte kein eigenständiges Sachargument findet, bleiben beide Felder leer.",
- "stand": "2026-09-04",
+ "stand": "2026-09-16",
  "fragen": [
   {
    "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#2",
@@ -625,6 +625,46 @@
    "zusammenfassung": "Bei der 31-Tage-Challenge verzichten ausgewählte Teilnehmer einen Monat lang auf das Auto und erhalten dafür ein GA, ein E-Bike und ein Carsharing-Abo; die SBB trägt den grössten Teil der Kosten, der Kanton hätte 230'000 Franken beigesteuert. Die GPK beantragte die Streichung, der Regierungsrat schloss sich an. Der Antrag wollte den Kredit wieder einstellen und verwies auf Erfahrungen aus anderen Kantonen und die Fördergelder. Die Gegenseite bezweifelte die Wirkung und hielt die Ausgabe in der angespannten Finanzlage für nicht vertretbar.",
    "dafuer": "In unsere Region und in unsere Bevölkerung zu investieren, also Abos oder Vergünstigungen, ist deshalb ein attraktives Projekt, für das sich unser Kanton scheinbar erfolgreich eingesetzt hatte.",
    "dagegen": "Ganz ehrlich, ein Kanton, der Millionenlöcher stopfen muss, hat keinen Auftrag bei der Bevölkerung, pädagogische Selbstfindungsprogramme zu finanzieren."
+  },
+  {
+   "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag)#1",
+   "kontext": "Teilrevision des Altersbetreuungs- und Pflegegesetzes (Restkostenfinanzierung Pflege)",
+   "frage": "Sollen Gemeinden, die Pflege-Restkosten für Personen zahlen, die beim Heimeintritt den Wohnsitz gewechselt haben, 80 Prozent der Gemeindesteuern dieser Personen zurückerstattet erhalten?",
+   "zusammenfassung": "Wer in ein Pflegeheim in einer anderen Gemeinde zieht, zahlt seine Steuern künftig dort, die bisherige Wohngemeinde trägt aber weiterhin die Restkosten der Pflege. Der Antrag will diesen Effekt abfedern: Die Heimgemeinde soll der zahlenden Gemeinde 80 Prozent der Gemeindesteuern dieser Person zurückerstatten. Befürworter sehen darin einen Ausgleich für die 14 Gemeinden ohne eigenes Heim. Regierung und Kommissionsmehrheit halten den Mechanismus für steuerrechtlich heikel und aufwendig im Verhältnis zu den kleinen Beträgen, weil Heimbewohner meist wenig Steuern zahlen.",
+   "dafuer": "Restpflegekosten bezahlen, aber in den Steuereinnahmen nicht mehr partizipieren ist für die betroffenen Gemeinden hart.",
+   "dagegen": "Personen, die in einem Heim leben, zahlen oft wenig Steuern und ein sehr grosser Teil lebt sogar von Ergänzungsleistungen. Das Steuersubstrat, das zwischen den Gemeinden aufwendig hin- und hergeschoben werden müsste, ist verhältnismässig sehr gering."
+  },
+  {
+   "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag)#4",
+   "kontext": "Änderung des Spitalgesetzes: Anstellung des Spitalpersonals neu über einen Gesamtarbeitsvertrag",
+   "frage": "Soll der Regierungsrat weiterhin Rahmenvorgaben für die Löhne des Kaderpersonals und der leitenden Ärzte der Spitäler Schaffhausen erlassen?",
+   "zusammenfassung": "Die Vorlage überführt das Spitalpersonal aus dem kantonalen Personalrecht in einen Gesamtarbeitsvertrag. Die Kommissionsfassung streicht dabei die Kompetenz des Regierungsrats, Rahmenvorgaben für die Kaderlöhne zu erlassen. Der Antrag will diese Kompetenz im Gesetz behalten, damit eine gewählte Behörde Leitplanken gegen Lohnexzesse setzt. Die Gegenseite verweist auf den Geschäftsbericht als Kontrollinstrument und will den Spitälern die volle Lohnautonomie geben, wie sie andere selbständige Anstalten des Kantons haben.",
+   "dafuer": "Es geht um eine Institution, welche im vollständigen Besitz des Kantons Schaffhausen ist. Insofern ist es auch unsere Verantwortung, dass die Löhne fair und gerecht sind, gerade auch auf der Kaderstufe.",
+   "dagegen": "Haben Sie doch etwas Vertrauen in den Spitalrat. Wir fragen kritisch nach, wenn der Geschäftsbericht kommt und wenn wir nicht zufrieden sind, nehmen wir dort Einfluss."
+  },
+  {
+   "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag)#5",
+   "kontext": "Änderung des Spitalgesetzes: Anstellung des Spitalpersonals neu über einen Gesamtarbeitsvertrag",
+   "frage": "Soll das Spitalgesetz für den Gesamtarbeitsvertrag einen Mindestlohn von 4500 Franken pro Monat bei Vollzeit vorschreiben?",
+   "zusammenfassung": "Das Gesetz zählt auf, was der künftige Gesamtarbeitsvertrag der Spitäler Schaffhausen mindestens regeln muss. Der Antrag ergänzt diese Liste um einen betrieblichen Mindestlohn von 4500 Franken bei einem Vollzeitpensum und einen Teuerungsausgleich für tiefe Einkommen. Befürworter wollen damit Küchenhilfen und Pflegeassistenten eine gesetzliche Lohnuntergrenze sichern, weil sich Gewerkschaften in Verhandlungen nicht immer durchsetzen. Gegner halten Mindestlöhne für Sache der Sozialpartner, verweisen auf die abgelehnte kantonale Mindestlohnabstimmung und warnen vor einer Lohnkaskade nach oben.",
+   "dafuer": "Wir möchten damit gewährleisten, dass alle Spitalmitarbeitenden zu einem fairen Lohn arbeiten, von dem sie leben können, etwa auch Küchenhilfen oder Pflegeassistentinnen, welche für das Funktionieren des Spitals äusserst wichtige Leistungen erbringen.",
+   "dagegen": "Ein Mindestlohn mag im Gesetz gut klingen, gehört aber schlicht nicht hinein. Wir sprechen gerade über eine Spitalsteuerung und nicht über eine generelle Lohnpolitik."
+  },
+  {
+   "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag)#6",
+   "kontext": "Änderung des Spitalgesetzes: Anstellung des Spitalpersonals neu über einen Gesamtarbeitsvertrag",
+   "frage": "Soll der Gesamtarbeitsvertrag der Spitäler Schaffhausen einen Teuerungsausgleich garantieren müssen, der unabhängig vom Betriebsergebnis die Kaufkraft erhält?",
+   "zusammenfassung": "Die Kommissionsfassung verlangt vom Gesamtarbeitsvertrag ein transparentes, marktnahes Lohnsystem mit Lohnbändern und Lohnstufen. Der Antrag fügt an, dass der Teuerungsausgleich unabhängig von der Betriebsrechnung so auszugestalten ist, dass die Kaufkraft erhalten bleibt. Befürworter wollen verhindern, dass der Wechsel aus dem Personalrecht zu einem schleichenden Kaufkraftverlust des Personals führt. Der Regierungsrat teilt das Ziel, warnt aber vor einer absoluten Pflicht, weil die Spitäler ihre Tarife nicht selbst anpassen können und in einer Phase hoher Inflation in Schwierigkeiten geraten könnten.",
+   "dafuer": null,
+   "dagegen": null
+  },
+  {
+   "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag)#7",
+   "kontext": "Änderung des Spitalgesetzes: Anstellung des Spitalpersonals neu über einen Gesamtarbeitsvertrag",
+   "frage": "Soll der Gesamtarbeitsvertrag der Spitäler Schaffhausen zwingend ein Verfahren zum rechtlichen Gehör vor belastenden Entscheidungen wie Kündigungen oder Versetzungen regeln?",
+   "zusammenfassung": "Der Antrag ergänzt die gesetzlichen Mindestinhalte des Gesamtarbeitsvertrags um ein Verfahren, das Mitarbeitenden vor Kündigungen, Versetzungen oder dem Ende der Lohnfortzahlung vorgängige Information und eine Stellungnahme ermöglicht. Befürworter verweisen auf andere Spital-GAV, etwa im Kanton Zug, und auf die Anliegen der Personalverbände. Die Gegenseite hält den Begriff der belastenden Entscheidung für zu weit, sieht Kündigungsmodalitäten bereits als Pflichtinhalt des GAV und will die Frage den Verhandlungen der Sozialpartner überlassen.",
+   "dafuer": "In den Diskussionen oder Streitigkeiten, die wir jeweils bei personalrechtlichen Themen haben, geht es genau um dieses rechtliche Gehör.",
+   "dagegen": "Es schafft mehr Aufwand, verlangsamt Entscheidungen und bringt keinen erkennbaren Mehrwert. Bei organisatorischen Fragen benötigt es schlanke und effiziente Prozesse keine zusätzlichen Verfahrensschritte."
   }
  ]
 }

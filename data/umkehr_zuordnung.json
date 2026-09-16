@@ -328,8 +328,8 @@
    "begruendung": "Titel betrifft ronco, das Ja stützt aber traktandenliste: Ja ist Ablehnung des Antrags",
    "herkunft": "regel",
    "regel_staerke": "stark",
-   "protokoll_status": "keine_fundstelle",
-   "protokoll_beleg": ""
+   "protokoll_status": "objekt_unklar",
+   "protokoll_beleg": "Abstimmung Mit 28 : 14 Stimmen bei 13 Enthaltungen wird der gültigen Traktandenliste zugestimmt."
   },
   {
    "schluessel": "5. und 6. Sitzung 2026 · 18.05.2026 (Vormittag) #Nr2",
@@ -401,10 +401,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft aellig, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Mit 33 : 23 Stimmen bei 1 Enthaltung wird der Kommissionsvorlage zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr4",
@@ -416,10 +416,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft altorfer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Mit 39 : 19 Stimmen wird der Kommissionsvorlage zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr5",
@@ -431,10 +431,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft luthi, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Der Kommissionsvorlage mit 40 : 19 Stimmen zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr6",
@@ -446,10 +446,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft meyer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Der Kommissionsvorlage wird mit 38 : 19 Stimmen zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr7",
@@ -461,10 +461,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft portmann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Mit 39 : 19 Stimmen wird der Kommissionsvorlage zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr8",
@@ -476,10 +476,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft neumann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Dem Antrag zugunsten der Kommissionsvorlage wird mit 37 : 18 Stimmen bei 1 Enthaltung zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr9",
@@ -491,10 +491,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft ruedlinger, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "180 Kantonsrat Schaffhausen Abstimmung Der Kommissionsvorlage wird mit 38 : 18 Stimmen zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr10",
@@ -506,10 +506,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft pfalzgraf, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Mit 39 : 19 Stimmen wird der Kommissionsvorlage zugestimmt."
   },
   {
    "schluessel": "4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr11",
@@ -521,10 +521,10 @@
    "ja_ist_zustimmung": false,
    "geprüft": true,
    "begruendung": "Titel betrifft penkov, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags",
-   "herkunft": "regel",
+   "herkunft": "protokoll",
    "regel_staerke": "stark",
-   "protokoll_status": "kein_text",
-   "protokoll_beleg": ""
+   "protokoll_status": "bestaetigt",
+   "protokoll_beleg": "Abstimmung Der Kommissionsvorlage mit 40 : 19 Stimmen zugestimmt."
   },
   {
    "schluessel": "2. Sitzung 2026 · 16.03.2026 (Vormittag) #Nr1",

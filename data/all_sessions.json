@@ -10075,11 +10075,12 @@
      "details": "",
      "inverted_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 8. April 2026 zum Geschäftsbericht 2025 der Spitäler Schaffhausen",
-     "kontext": "Dem Rückweisungsantrag, die § 17a bis c zu bereinigen, wird mit 55 : 0 Stimmen und 4 Enthaltungen zugestimmt.",
+     "kontext": "werden mit 55 : 0 Stimmen genehmigt und dem Spitalrat Entlastung erteilt.",
      "stichworte": [
-      "rückweisungsantrag",
-      "ansätzen",
-      "meinung"
+      "firma",
+      "spital",
+      "spitäler",
+      "risiko"
      ],
      "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
@@ -10109,9 +10110,10 @@
      "inverted_note": null,
      "geschaeft": "",
      "stichworte": [
-      "rückweisungsantrag",
-      "ansätzen",
-      "meinung"
+      "firma",
+      "spital",
+      "spitäler",
+      "risiko"
      ],
      "kontext_quelle": "nachbar",
      "thema_gruppe": null,
@@ -10121,13 +10123,16 @@
       "Erheblicherklärung"
      ],
      "tags_ueberthema": [
-      "Bildung, Kultur und Sport"
+      "Bildung, Kultur und Sport",
+      "Gesundheit und Soziales"
      ],
      "tags_unterthema": [
-      "Kultur und Sport"
+      "Kultur und Sport",
+      "Gesundheitsversorgung"
      ],
      "tags_detail": [
-      "Sport"
+      "Sport",
+      "Spitäler"
      ]
     },
     {
@@ -10137,12 +10142,15 @@
      "details": "- Lernende und Lehrbetriebe entlasten",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Das Postulat wird mit 27 : 25 Stimmen bei 2 Enthaltungen als erheb- lich erklärt.",
      "stichworte": [
-      "rückweisungsantrag",
-      "ansätzen",
-      "meinung"
+      "lernenden",
+      "lehrbetriebe",
+      "eltern",
+      "kanton",
+      "system"
      ],
-     "kontext_quelle": "nachbar",
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -10166,6 +10174,17 @@
      "details": "vom 3. März 2026 betreffend Einführung eines Teilzeitmodells für die Berufsmaturität 2",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Die Volksmotion wird mit 43 : 9 Stimmen bei 2 Enthaltungen für er- heblich erklärt.",
+     "stichworte": [
+      "lehrbetriebe",
+      "volksmotion",
+      "berufsmaturität",
+      "kanton",
+      "system",
+      "kantonsratspräsident",
+      "mitte"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -10173,14 +10192,17 @@
       "Erheblicherklärung"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Bildung, Kultur und Sport",
       "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
+      "Parlament",
       "Weiterführende Bildung",
       "Arbeit"
      ],
      "tags_detail": [
+      "Parlamentsbetrieb",
       "Mittelschule und Berufsbildung",
       "Arbeitsbedingungen"
      ]
@@ -10191,12 +10213,12 @@
     {
      "name": "Protokoll 5. Sitzung vom 18.05.2026_Vormittags.pdf",
      "dateiname": null,
-     "url": "https://sh.ch/CMS/get/file/814783b5-1b95-4da5-b69d-5b4dcee776e1"
+     "url": "https://sh.ch/CMS/get/file/c10a2833-24e0-4436-a682-b871f6e4b0ac"
     },
     {
      "name": "Protokoll 6. Sitzung vom 18.05.2026_Nachmittags.pdf",
      "dateiname": null,
-     "url": "https://sh.ch/CMS/get/file/bf1c3b6a-a1cf-473a-bddb-9d5911e28a03"
+     "url": "https://sh.ch/CMS/get/file/21159440-2cb6-4d2b-a147-885f869973e7"
     }
    ],
    "legislatur": 3
@@ -11464,12 +11486,12 @@
     {
      "name": "Protokoll 5. Sitzung vom 18.05.2026_Vormittags.pdf",
      "dateiname": null,
-     "url": "https://sh.ch/CMS/get/file/814783b5-1b95-4da5-b69d-5b4dcee776e1"
+     "url": "https://sh.ch/CMS/get/file/c10a2833-24e0-4436-a682-b871f6e4b0ac"
     },
     {
      "name": "Protokoll 6. Sitzung vom 18.05.2026_Nachmittags.pdf",
      "dateiname": null,
-     "url": "https://sh.ch/CMS/get/file/bf1c3b6a-a1cf-473a-bddb-9d5911e28a03"
+     "url": "https://sh.ch/CMS/get/file/21159440-2cb6-4d2b-a147-885f869973e7"
     }
    ],
    "legislatur": 3
@@ -12629,6 +12651,17 @@
      "details": "Einfürhung Art. 10 Abs. 3 (neu) wie folgt: Gemeinden, welche Restfinanzierungen für Personen leisten, welche nach dem Eintritt in das Pflegeheim ihren zivilrechtlichen Wohnsitz gewechselt haben, werden 80% der entsprechenden Steuer- einnahmen der Gemeindesteuer zurückerstattet.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 23. September 2025 betreffend Teilrevision des Altersbetreuungs- und Pflegegesetzes (Restkostenfinanzierung Pflege)",
+     "stichworte": [
+      "arbeitszonenbewirtschaftung",
+      "arbeitszonen",
+      "nutzung",
+      "diskussion",
+      "instrument",
+      "revision",
+      "arbeits",
+      "daten"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12653,6 +12686,18 @@
      "details": "von Rahmenbedingungen für die Pflege von Angehörigen Antrag Diskussion",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Dem Antrag zur Diskussion wird mit 47 : 0 Stimmen und 10 Enthal- tungen zugestimmt.",
+     "stichworte": [
+      "arbeitszonenbewirtschaftung",
+      "arbeitszonen",
+      "nutzung",
+      "diskussion",
+      "instrument",
+      "revision",
+      "arbeits",
+      "daten"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12670,6 +12715,16 @@
      "details": "",
      "inverted_note": null,
      "geschaeft": "",
+     "kontext": "Der Kommissionsvorlage wird mit 38 : 18 Stimmen zugestimmt.",
+     "stichworte": [
+      "rahmenvorgaben",
+      "einfluss",
+      "transparenz",
+      "kantonalbank",
+      "spital",
+      "spitalrat"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12677,12 +12732,18 @@
       "Sonstige"
      ],
      "tags_ueberthema": [
+      "Finanzen und Steuern",
+      "Gesundheit und Soziales",
       "Verfahren im Rat"
      ],
      "tags_unterthema": [
+      "Beteiligungen",
+      "Gesundheitsversorgung",
       "Ratsverfahren"
      ],
      "tags_detail": [
+      "Kantonalbank",
+      "Spitäler",
       "Formelles"
      ]
     },
@@ -12693,6 +12754,15 @@
      "details": "Einfürhung Art. 17 Abs. 1 lit. j wie folgt: Erlass von transparenten Rahmenvorgaben für die Besoldung des vom Spitalrat angestellten Kaderpersonals sowie der leitenden Ärzteschaft.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage wird mit 39 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "gleichgewicht",
+      "gesundheitskommission",
+      "lösung",
+      "problem",
+      "anliegen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12719,6 +12789,17 @@
      "details": "Einfürhung Art. 17 Abs. 3 lit. c wie folgt: Der Gesamtarbeitsvertrag regelt mindestens: das transparente, marktnahme Lohnsystem mit Lohnbändern und Lohnstufen sowie einem betrieblichen Mindestlohn (Grundlohn gemäss Arbeitsvertrag, Basis 100%-Pensum) von mindestens CHF 4500 pro Monat, wobei der Teuerungsausgleich für tiefe Einkommen so auszugestalten ist, dass die Kaufkraft erhalten bleibt.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage mit 40 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "personen",
+      "mindestlohn",
+      "löhne",
+      "gewerkschaften",
+      "mindestlöhne",
+      "berufsausbildung",
+      "druck"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12726,14 +12807,17 @@
       "Antrag"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Gesundheit und Soziales",
       "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
+      "Regierung und Verwaltung",
       "Gesundheitsversorgung",
       "Arbeit"
      ],
      "tags_detail": [
+      "Kantonspersonal",
       "Spitäler",
       "Arbeitsbedingungen"
      ]
@@ -12745,6 +12829,20 @@
      "details": "Einfürhung Art. 17 Abs. 3 lit. c wie folgt: Der Gesamtarbeitsvertrag regelt mindestens: das transparente, marktnahme Lohnsystem mit Lohnbändern und Lohnstufen, wobei der Teuerungsausgleich unabhängig der Betriebsrechnung so auszugestalten ist, dass die Kaufrakft erhalten bleibt.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage wird mit 38 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "teuerungsausgleich",
+      "unternehmen",
+      "personalrecht",
+      "kaufkraft",
+      "effekt",
+      "teuerung",
+      "preise",
+      "inflation",
+      "löhne",
+      "spitäler"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12752,14 +12850,17 @@
       "Antrag"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Gesundheit und Soziales",
       "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
+      "Regierung und Verwaltung",
       "Gesundheitsversorgung",
       "Arbeit"
      ],
      "tags_detail": [
+      "Kantonspersonal",
       "Spitäler",
       "Arbeitsbedingungen"
      ]
@@ -12771,6 +12872,15 @@
      "details": "Einfürhung Art. 17 Abs. 3 lit. f wie folgt: das Verfahren zur Gewährleistung des rechtlichen Gehörs vor belastenden Entscheidungen.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage wird mit 39 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "gleichgewicht",
+      "gesundheitskommission",
+      "lösung",
+      "problem",
+      "anliegen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12794,6 +12904,21 @@
      "details": "Einfürhung Art. 17 Abs. 3 lit. g wie folgt: folgenden Ferienanspruch der Arbeitnehmenden pro Dienstjahr:",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Dem Antrag zugunsten der Kommissionsvorlage wird mit 37 : 18 Stimmen bei 1 Enthaltung zugestimmt.",
+     "stichworte": [
+      "ferien",
+      "gleichgewicht",
+      "personal",
+      "wochen",
+      "lebensjahr",
+      "kantonsspitals",
+      "gesamtarbeitsvertrag",
+      "ferienanspruch",
+      "löhne",
+      "dienstjahr",
+      "personalverordnung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12801,13 +12926,19 @@
       "Antrag"
      ],
      "tags_ueberthema": [
-      "Gesundheit und Soziales"
+      "Staat und Politik",
+      "Gesundheit und Soziales",
+      "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
-      "Gesundheitsversorgung"
+      "Regierung und Verwaltung",
+      "Gesundheitsversorgung",
+      "Arbeit"
      ],
      "tags_detail": [
-      "Spitäler"
+      "Kantonspersonal",
+      "Spitäler",
+      "Arbeitsbedingungen"
      ]
     },
     {
@@ -12817,6 +12948,18 @@
      "details": "Einfürhung Art. 17 Abs. 3 lit. h wie folgt: den Anspruch auf einen bezahlten Urlaub von vier Monaten bei Schwangerschaft und Mutterschaft.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage wird mit 38 : 18 Stimmen zugestimmt.",
+     "stichworte": [
+      "diskussion",
+      "mutterschaftszeit",
+      "arbeitsgesetz",
+      "spitäler",
+      "situation",
+      "personal",
+      "spital",
+      "vertrauen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12824,13 +12967,16 @@
       "Antrag"
      ],
      "tags_ueberthema": [
-      "Gesundheit und Soziales"
+      "Gesundheit und Soziales",
+      "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
-      "Gesundheitsversorgung"
+      "Gesundheitsversorgung",
+      "Arbeit"
      ],
      "tags_detail": [
-      "Spitäler"
+      "Spitäler",
+      "Arbeitsbedingungen"
      ]
     },
     {
@@ -12840,6 +12986,19 @@
      "details": "Anpassung Art. 33a Abs. 1 wie folgt: Sobald Einigung über den GAV besteht, legt der Regierungsrat den Zeitpunkt für die Überführung der bestehenden Arbeitsverhältnisse fest und regelt die weiteren Modalitäten, soweit diese nicht bereits von einem Gesamtarbeitsvertrag bestimmt sind.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage wird mit 39 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "schiedsgericht",
+      "lohnsystem",
+      "entwurf",
+      "überführung",
+      "mitte",
+      "verwaltung",
+      "spitäler",
+      "somit",
+      "gesamtarbeitsverträge"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12866,6 +13025,17 @@
      "details": "Anpassung Art. 33a Abs. 2 wie folgt: Für bestehende Arbeitsverhältnisse gilt ein Lohn-Besitzstand.",
      "inverted_note": "Ja bedeutet Zustimmung Antrag GESKO",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes (Umsetzung der Motion «Mehr Flexibilität  in der Lohnpolitik für die Spitäler Schaffhausen»)",
+     "kontext": "Der Kommissionsvorlage mit 40 : 19 Stimmen zugestimmt.",
+     "stichworte": [
+      "personen",
+      "mindestlohn",
+      "löhne",
+      "gewerkschaften",
+      "mindestlöhne",
+      "berufsausbildung",
+      "druck"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": true,
@@ -12873,13 +13043,19 @@
       "Antrag"
      ],
      "tags_ueberthema": [
-      "Gesundheit und Soziales"
+      "Staat und Politik",
+      "Gesundheit und Soziales",
+      "Wirtschaft und Arbeit"
      ],
      "tags_unterthema": [
-      "Gesundheitsversorgung"
+      "Regierung und Verwaltung",
+      "Gesundheitsversorgung",
+      "Arbeit"
      ],
      "tags_detail": [
-      "Spitäler"
+      "Kantonspersonal",
+      "Spitäler",
+      "Arbeitsbedingungen"
      ]
     }
    ],
@@ -12888,7 +13064,7 @@
     {
      "name": "Protokoll 4. Sitzung vom 04.05.2026.pdf",
      "dateiname": null,
-     "url": "https://sh.ch/CMS/get/file/b658b262-e32f-4bf6-9f1e-15d8db61a77e"
+     "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167"
     }
    ],
    "legislatur": 3

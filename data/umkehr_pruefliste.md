@@ -5,11 +5,11 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **73**
+Offen: **64**
 
-- `kein_text`: 30
-- `keine_fundstelle`: 26
-- `objekt_unklar`: 17
+- `keine_fundstelle`: 25
+- `kein_text`: 21
+- `objekt_unklar`: 18
 
 ---
 
@@ -229,7 +229,9 @@ Offen: **73**
 - **Hinweis:** Ja bedeutet Zustimmung aktuelle Traktandenliste
 - **Stimmen:** 28 Ja : 14 Nein
 - **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ronco, das Ja stützt aber traktandenliste: Ja ist Ablehnung des Antrags
-- **Protokoll:** `keine_fundstelle` — Kein Satz mit 28 : 14 Stimmen im Protokoll gefunden.
+- **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
+
+> Abstimmung Mit 28 : 14 Stimmen bei 13 Enthaltungen wird der gültigen Traktandenliste zugestimmt.
 
 ---
 
@@ -242,96 +244,6 @@ Offen: **73**
 - **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
 
 > Abstimmung Der neuen Lösung wird mit 34 : 23 Stimmen zugestimmt.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr1
-
-- **Titel:** Antrag P. Aellig
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 33 Ja : 23 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft aellig, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr4
-
-- **Titel:** Antrag L. Altorfer
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 39 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft altorfer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr5
-
-- **Titel:** Antrag I. Lüthi
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 40 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft luthi, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr6
-
-- **Titel:** Antrag D. Meyer
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 38 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft meyer, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr7
-
-- **Titel:** Antrag P. Portmann
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 39 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr8
-
-- **Titel:** Antrag E. Neumann
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 37 Ja : 18 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft neumann, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr9
-
-- **Titel:** Antrag M. Flubacher Rüedlinger
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 38 Ja : 18 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ruedlinger, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr10
-
-- **Titel:** Antrag M. Pfalzgraf
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 39 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 4. Sitzung 2026 · 04.05.2026 (Vormittag) #Nr11
-
-- **Titel:** Antrag A. Penkov
-- **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
-- **Stimmen:** 40 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft penkov, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
