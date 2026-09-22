@@ -1,0 +1,342 @@
+{
+ "sitzung": "14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag)",
+ "slug": "2026-09-21-nachmittag",
+ "n_votes": 19,
+ "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
+ "status": "entwurf",
+ "abstimmungen": [
+  {
+   "nr": 1,
+   "titel": "Antrag B. Looser: Anpassung Art. 18 Abs. 1a",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 39,
+    "nein": 15,
+    "enth": 0,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 2,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 20 Abs. 1",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 35,
+    "nein": 15,
+    "enth": 0,
+    "abw": 10
+   }
+  },
+  {
+   "nr": 3,
+   "titel": "Antrag M. Freivogel: Ersatz Art. 20 Abs. 2 (neu)",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 38,
+    "nein": 15,
+    "enth": 0,
+    "abw": 7
+   }
+  },
+  {
+   "nr": 4,
+   "titel": "Antrag B. Looser: Anpassung Art. 20 Abs. 3",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 14,
+    "enth": 0,
+    "abw": 9
+   }
+  },
+  {
+   "nr": 5,
+   "titel": "Antrag R. Müller: Schaffung Art. 20 Abs. 4 (neu)",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 15,
+    "enth": 0,
+    "abw": 8
+   }
+  },
+  {
+   "nr": 6,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 21 Abs. 1",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 31,
+    "nein": 23,
+    "enth": 0,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 7,
+   "titel": "Antrag I. Lüthi: Ergänzung Art. 26 Abs. 1",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 14,
+    "enth": 3,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 8,
+   "titel": "Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 36,
+    "nein": 17,
+    "enth": 0,
+    "abw": 7
+   }
+  },
+  {
+   "nr": 9,
+   "titel": "Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 7,
+    "nein": 38,
+    "enth": 4,
+    "abw": 11
+   }
+  },
+  {
+   "nr": 10,
+   "titel": "Antrag M. Schlatter: Rückkehr auf Vorlage RR",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 35,
+    "nein": 16,
+    "enth": 2,
+    "abw": 7
+   }
+  },
+  {
+   "nr": 11,
+   "titel": "Antrag M. Schlatter: Rückkehr auf Vorlage RR",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 15,
+    "enth": 1,
+    "abw": 7
+   }
+  },
+  {
+   "nr": 12,
+   "titel": "Antrag M. Freivogel: Schaffung Art. 39 Abs. 3 (neu)",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 38,
+    "nein": 16,
+    "enth": 1,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 13,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 41 Abs. 4",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 39,
+    "nein": 12,
+    "enth": 2,
+    "abw": 7
+   }
+  },
+  {
+   "nr": 14,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 48 Abs. 1 lit. c",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 14,
+    "enth": 1,
+    "abw": 8
+   }
+  },
+  {
+   "nr": 15,
+   "titel": "Antrag M. Passafaro: Ergänzung Art. 58 Abs. 3",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 43,
+    "nein": 3,
+    "enth": 8,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 16,
+   "titel": "Ungültige Abstimmung",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 15,
+    "nein": 22,
+    "enth": 1,
+    "abw": 22
+   }
+  },
+  {
+   "nr": 17,
+   "titel": "Antrag B. Looser: Konsultativabstimmung",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 40,
+    "nein": 16,
+    "enth": 0,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 18,
+   "titel": "Antrag B. Looser: Schaffung Art. 69 Abs. 5 (neu)",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 17,
+    "enth": 0,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 19,
+   "titel": "Antrag P. Portmann: Anpassung Art. 69 Abs. 2",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 4,
+    "nein": 47,
+    "enth": 4,
+    "abw": 5
+   }
+  }
+ ],
+ "posts": [
+  {
+   "art": "karussell",
+   "teil": 1,
+   "teile": 3,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 1 von 3.\n\n1. Antrag B. Looser: Anpassung Art. 18 Abs. 1a: Abgelehnt (Ja 39, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n2. Antrag M. Freivogel: Anpassung Art. 20 Abs. 1: Abgelehnt (Ja 35, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n3. Antrag M. Freivogel: Ersatz Art. 20 Abs. 2 (neu): Abgelehnt (Ja 38, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n4. Antrag B. Looser: Anpassung Art. 20 Abs. 3: Abgelehnt (Ja 37, Nein 14). Ja bedeutet Zustimmung Antrag SPK.\n5. Antrag R. Müller: Schaffung Art. 20 Abs. 4 (neu): Abgelehnt (Ja 37, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n6. Antrag M. Freivogel: Anpassung Art. 21 Abs. 1: Abgelehnt (Ja 31, Nein 23). Ja bedeutet Zustimmung Antrag SPK.\n7. Antrag I. Lüthi: Ergänzung Art. 26 Abs. 1: Abgelehnt (Ja 37, Nein 14, Enthaltung 3). Ja bedeutet Zustimmung Antrag SPK.\n8. Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2: Abgelehnt (Ja 36, Nein 17). Ja bedeutet Zustimmung Antrag SPK.\n9. Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2: Angenommen (Ja 7, Nein 38, Enthaltung 4). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-00.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-01.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-02.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-03.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-04.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-05.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-06.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-07.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-08.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-09.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "karussell",
+   "teil": 2,
+   "teile": 3,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 2 von 3.\n\n10. Antrag M. Schlatter: Rückkehr auf Vorlage RR: Abgelehnt (Ja 35, Nein 16, Enthaltung 2). Ja bedeutet Zustimmung Antrag SPK.\n11. Antrag M. Schlatter: Rückkehr auf Vorlage RR: Abgelehnt (Ja 37, Nein 15, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n12. Antrag M. Freivogel: Schaffung Art. 39 Abs. 3 (neu): Abgelehnt (Ja 38, Nein 16, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n13. Antrag M. Freivogel: Anpassung Art. 41 Abs. 4: Abgelehnt (Ja 39, Nein 12, Enthaltung 2). Ja bedeutet Zustimmung Antrag SPK.\n14. Antrag M. Freivogel: Anpassung Art. 48 Abs. 1 lit. c: Abgelehnt (Ja 37, Nein 14, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n15. Antrag M. Passafaro: Ergänzung Art. 58 Abs. 3: Abgelehnt (Ja 43, Nein 3, Enthaltung 8). Ja bedeutet Zustimmung Antrag SPK.\n16. Ungültige Abstimmung: Totalrevision Polizeigesetz: Abgelehnt (Ja 15, Nein 22, Enthaltung 1)\n17. Antrag B. Looser: Konsultativabstimmung: Abgelehnt (Ja 40, Nein 16). Ja bedeutet Zustimmung Antrag SPK.\n18. Antrag B. Looser: Schaffung Art. 69 Abs. 5 (neu): Abgelehnt (Ja 37, Nein 17). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-10.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-11.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-12.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-13.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-14.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-15.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-16.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-17.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-18.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-19.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "karussell",
+   "teil": 3,
+   "teile": 3,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 3 von 3.\n\n19. Antrag P. Portmann: Anpassung Art. 69 Abs. 2: Angenommen (Ja 4, Nein 47, Enthaltung 4). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-20.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-21.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 19 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 82.5,
+   "providers": [
+    "instagram",
+    "facebook",
+    "youtube"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   },
+   "facebook": {
+    "type": "REEL"
+   },
+   "youtube": {
+    "type": "short",
+    "title": "Kantonsrat Schaffhausen, 21. September 2026: 19 Abstimmungen",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 19 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP @sp.schaffhausen FDP GLP GRÜNE Die Mitte EVP EDU @jsvp.sh @juso.schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 82.5,
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE"
+   }
+  }
+ ]
+}

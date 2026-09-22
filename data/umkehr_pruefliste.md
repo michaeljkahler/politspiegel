@@ -5,11 +5,271 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **64**
+Offen: **90**
 
+- `kein_text`: 47
 - `keine_fundstelle`: 25
-- `kein_text`: 21
 - `objekt_unklar`: 18
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr1
+
+- **Titel:** Antrag B. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 39 Ja : 15 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr2
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 35 Ja : 15 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr3
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 38 Ja : 15 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr4
+
+- **Titel:** Antrag B. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 14 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr5
+
+- **Titel:** Antrag R. Müller
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 15 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft muller, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr6
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 31 Ja : 23 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr7
+
+- **Titel:** Antrag I. Lüthi
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 14 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft luthi, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr8
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 36 Ja : 17 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr9
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 7 Ja : 38 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr10
+
+- **Titel:** Antrag M. Schlatter
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 35 Ja : 16 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schlatter, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr11
+
+- **Titel:** Antrag M. Schlatter
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 15 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schlatter, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr12
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 38 Ja : 16 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr13
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 39 Ja : 12 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr14
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 14 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr15
+
+- **Titel:** Antrag M. Passafaro
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 43 Ja : 3 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft passafaro, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr17
+
+- **Titel:** Antrag B. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 40 Ja : 16 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr18
+
+- **Titel:** Antrag B. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 17 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag) #Nr19
+
+- **Titel:** Antrag P. Portmann
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 4 Ja : 47 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr1
+
+- **Titel:** Antrag P. Portmann
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 38 Ja : 16 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr2
+
+- **Titel:** Antrag G. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 19 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr3
+
+- **Titel:** Antrag F. Brenn
+- **Hinweis:** Ja bedeutet Zustimmung Antrag F. Brenn
+- **Stimmen:** 19 Ja : 38 Nein
+- **Regel:** `ja_ist_zustimmung = True` (stark) — Hinweis nennt denselben Akteur (brenn) wie der Titel
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr4
+
+- **Titel:** Antrag M. Alaye
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 30 Ja : 27 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr5
+
+- **Titel:** Antrag M. Alaye
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 25 Ja : 32 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr6
+
+- **Titel:** Antrag F. Brenn
+- **Hinweis:** Ja bedeutet Zustimmung Antrag F. Brenn
+- **Stimmen:** 15 Ja : 42 Nein
+- **Regel:** `ja_ist_zustimmung = True` (stark) — Hinweis nennt denselben Akteur (brenn) wie der Titel
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr7
+
+- **Titel:** Antrag M. Alaye
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 26 Ja : 31 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr8
+
+- **Titel:** Antrag B. Looser
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 39 Ja : 17 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 

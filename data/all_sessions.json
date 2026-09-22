@@ -1,6 +1,3324 @@
 {
  "sessions": [
   {
+   "sitzung": "14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag)",
+   "n_votes": 19,
+   "cid": "23578858",
+   "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
+   "members": [
+    {
+     "nachname": "Aellig",
+     "vorname": "Pentti",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Alaye",
+     "vorname": "Mayowa",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Altorfer",
+     "vorname": "Leonie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "JUSO",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bolli",
+     "vorname": "Fabian",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Brenn",
+     "vorname": "Franziska",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bringolf",
+     "vorname": "Lukas",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brügel",
+     "vorname": "Anna",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bucher",
+     "vorname": "Tim",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "De Ventura",
+     "vorname": "Linda",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Derksen",
+     "vorname": "Theresia",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Di Ronco",
+     "vorname": "Christian",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Egger",
+     "vorname": "Martin",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Faccani",
+     "vorname": "Diego",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Fehr",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Fioretti",
+     "vorname": "Mariano",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Flubacher Rüedlinger",
+     "vorname": "Melanie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Freivogel",
+     "vorname": "Matthias",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Graf",
+     "vorname": "Hansueli",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Gruhler Heinzer",
+     "vorname": "Irene",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Hedinger",
+     "vorname": "Beat",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Herren",
+     "vorname": "Nicole",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Hotz",
+     "vorname": "Walter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Arnold",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Deborah",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Kräuchi",
+     "vorname": "Raphael",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Laich",
+     "vorname": "Lorenz",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Lang",
+     "vorname": "Svea",
+     "fraktion": "SVP-EDU",
+     "partei": "JSVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Le Donne",
+     "vorname": "Vanessa",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Leu",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Litscher",
+     "vorname": "Monika",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Gianluca",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "Junge Grüne",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Bettina",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Lüthi",
+     "vorname": "Isabelle",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Enth"
+     ]
+    },
+    {
+     "nachname": "Meyer",
+     "vorname": "Daniel",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Roland",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Andrea",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Mundt",
+     "vorname": "Michael",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Enth"
+     ]
+    },
+    {
+     "nachname": "Neukomm",
+     "vorname": "Peter",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Neumann",
+     "vorname": "Eva",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Passafaro",
+     "vorname": "Marco",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Penkov",
+     "vorname": "Angela",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Pfalzgraf",
+     "vorname": "Maurus",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Portmann",
+     "vorname": "Patrick",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Rohner",
+     "vorname": "Raphaël",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Salathé",
+     "vorname": "Regula",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schärrer",
+     "vorname": "Nina",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Scheck",
+     "vorname": "Peter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Roman",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Enth"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Hermann",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Enth",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Martin",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schmidig",
+     "vorname": "Rainer",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schnetzler",
+     "vorname": "Andreas",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schöpfer",
+     "vorname": "Sandra",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schraff",
+     "vorname": "Jannik",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schudel",
+     "vorname": "Erich",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Suter",
+     "vorname": "Roman",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Tognella",
+     "vorname": "Ivo",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Ullmann",
+     "vorname": "Corinne",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Würms",
+     "vorname": "Josef",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Enth"
+     ]
+    }
+   ],
+   "votes": [
+    {
+     "nr": 1,
+     "titel": "Antrag B. Looser",
+     "typ": "",
+     "details": "Anpassung Art. 18 Abs. 1a wie folgt: Transport, und Bewachung und Betreuung von bereits festgenommenen oder inhaftierten Personen können an private Sicherheitsunternehmen delegiert werden.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Anpassung Art. 20 Abs. 1 wie folgt: Die verfassungsmässigen Rechte und die Menschenwürde der Einzelnen sind beim polizeilichen Handeln zu achten und zu schützen. Die Polizei achtet und schützt die verfassungsmässigen Rechte und die Menschenwürde der Einzelnen. Bei der Erfüllung ihrer Aufgaben ist die Polizei an die Rechtsordnung gebunden.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 3,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Ersatz Art. 20 Abs. 2 (neu) wie folgt: Bei der Anwednung polizeilichen Zwangs sind insbesondere das Alter, das Geschlecht und der Gesundheitszustand der betroffenen Person zu berücksichtigen. Erniedrigende, beleidigende oder diskriminierende Behandlung ist verboten. (Abs. 2 wird zu Abs. 3)",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 4,
+     "titel": "Antrag B. Looser",
+     "typ": "",
+     "details": "Anpassung Art. 20 Abs. 3  wie folgt: Namentlich sind die besonderen Schutzbedürfnisse von umfassend verbeiständeten Personen sowie von Kindern beziehungsweise Minderjährigen mit deren Entwicklungsstand zu berücksichtigen und die Informationsbedürfnisse der gesetzlichen Vertretung zu wahren, indem diese umgehend informiert werden.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 5,
+     "titel": "Antrag R. Müller",
+     "typ": "",
+     "details": "Schaffung Art. 20 Abs. 4 (neu) wie folgt: Der Beizug eines Rechtbeistandes ist jederzeit und ohne jegliche Einschränkung möglich.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 6,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Anpassung Art. 21 Abs. 1 wie folgt: Polizeiliches Handeln muss zur Erfüllung der polizeilichen Aufgaben notwendig, und geeignet und zumutbar sein.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 7,
+     "titel": "Antrag I. Lüthi",
+     "typ": "",
+     "details": "Ergänzung Art. 26 Abs. 1 wie folgt: Wenn es zur Erfüllung ihrer Aufgaben notwendig ist, darf die Schaffhauser Polizei eine Person anhalten, deren Identität feststellen und abklären, ob nach ihr oder nach Fahrzeugen, anderen Sachen oder Tieren, die sie bei sich hat, gefahndet wird. Anlassunabhängige und diskriminierende Kontrollen sind unzulässig.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 8,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Ergänzung Art. 27 Abs. 2 wie folgt: Vorbehältlich besonderer gesetzlicher Regelung sind erkennungsdienstlich erhobene Daten umgehend zu löschen, sobald die Identität der Person festgestellt wurde oder der Grund für die Erhebung der Daten weggefallen ist.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 9,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Ergänzung Art. 27 Abs. 2 wie folgt: Vorbehältlich besonderer gesetzlicher Regelung sind erkennungsdienstlich erhobene Daten zu löschen beziehungsweise zu vernichten, sobald die Identität der Person festgestellt wurde oder der Grund für die Erhebung der Daten weggefallen ist.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 10,
+     "titel": "Antrag M. Schlatter",
+     "typ": "",
+     "details": "Rückkehr auf Vorlage RR:  Art. 37 Abs. 3 lit a) wie folgt: konkrete hinreichende Anhaltspunkte bestehen, dass es zu Verbrechen oder Vergehen kommen könnte und",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 11,
+     "titel": "Antrag M. Schlatter",
+     "typ": "",
+     "details": "Rückkehr auf Vorlage RR:  Art. 38 Abs. 2 lit a) wie folgt: konkrete hinreichende Anhaltspunkte dafür vorhanden sind, dass es zu Straftaten im Sinne von Art. 286 Abs. 2 StPO kommen könnte,",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 12,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Schaffung Art. 39 Abs. 3 (neu)  wie folgt: Der Einsatz von technischen Geräten zur biometrischen Gesichtserkennung sowie anderen biometrischen Erkennungstechnologien ist nicht zulässig.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 13,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Anpassung Art. 41 Abs. 4  wie folgt: Zur Feststellung des Aufenthaltsortes einer vermissten Person kann die Schaffhauser Polizei von natürlichen und juristischen Personen des Privat- und öffentlichen Rechts verlangen ersuchen, Daten herauszugeben., soweit keine schützenswerten Interessen oder gesetzliche Bestimmungen entgegenstehen.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 14,
+     "titel": "Antrag M. Freivogel",
+     "typ": "",
+     "details": "Anpassung Art. 48 Abs. 1 lit. c  wie folgt: der Verdacht besteht konkrete Anhaltspunkte bestehen, dass sie sicherzustellende Sachen bei sich hat;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 15,
+     "titel": "Antrag M. Passafaro",
+     "typ": "",
+     "details": "Ergänzung Art. 58 Abs. 3 wie folgt: Dem Einsatz einer Schusswaffe gegen Personen hat eine deutliche Warnung, sofern möglich mittels Warnruf, voranzugehen, wenn dies die Umstände zulassen.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 16,
+     "titel": "Ungültige Abstimmung",
+     "typ": "",
+     "details": "",
+     "inverted_note": null,
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Sonstige"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht",
+      "Verfahren im Rat"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit",
+      "Ratsverfahren"
+     ],
+     "tags_detail": [
+      "Polizeigesetz",
+      "Formelles"
+     ]
+    },
+    {
+     "nr": 17,
+     "titel": "Antrag B. Looser",
+     "typ": "",
+     "details": "Konsultativabstimmung: Schaffung gesetzliche Grundlage für Fach- und Beratungsstelle Radikalisierung und Extremisum und dazugehörige Steuerungsgruppe",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 18,
+     "titel": "Antrag B. Looser",
+     "typ": "",
+     "details": "Schaffung Art. 69 Abs. 5 (neu) wie folgt: Die Schaffhauser Polizei hat Betroffenen wie auch Mitbetroffenen von häuslicher Gewalt, insbesondere besonders schutzwürdigen Personen wie Kindern, Minderjährigen und beinträchtigten Personen, unmittelbaren Schutz zu gewähren. Zur Erfüllung dieser Aufgabe und zu ihrem eigenen Schutz sind Polizistinnen und Polizisten in der Regel in Viererteams in Akutsituationen einzusetzen.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 19,
+     "titel": "Antrag P. Portmann",
+     "typ": "",
+     "details": "Anpassung Art. 69 Abs. 2 wie folgt: Die Schaffhauser Polizei kann eine Person bei häuslicher Gewalt aus der gemeinsamen Wohnung und deren unmittelbarer Umgebung wegweisen und die Rückkehr vorübergehend, längstens jedoch für 14 21 Tage, verbieten. Auf Antrag der gefährdeten Person kann das Zwangsmassnahmengericht die Massnahme um längstens 30 Tage verlängern.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    }
+   ],
+   "quelle": "9ec1a099_20260921_Abstimmungsergebnisse_Nachmittag.xlsx",
+   "protokolle": [],
+   "legislatur": 3
+  },
+  {
+   "sitzung": "14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag)",
+   "n_votes": 9,
+   "cid": "23578858",
+   "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
+   "members": [
+    {
+     "nachname": "Aellig",
+     "vorname": "Pentti",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Alaye",
+     "vorname": "Mayowa",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Altorfer",
+     "vorname": "Leonie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "JUSO",
+     "votes": [
+      "Enth",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bolli",
+     "vorname": "Fabian",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brenn",
+     "vorname": "Franziska",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bringolf",
+     "vorname": "Lukas",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brügel",
+     "vorname": "Anna",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bucher",
+     "vorname": "Tim",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Enth",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "De Ventura",
+     "vorname": "Linda",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Derksen",
+     "vorname": "Theresia",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Di Ronco",
+     "vorname": "Christian",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Egger",
+     "vorname": "Martin",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Faccani",
+     "vorname": "Diego",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fehr",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fioretti",
+     "vorname": "Mariano",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Flubacher Rüedlinger",
+     "vorname": "Melanie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Freivogel",
+     "vorname": "Matthias",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Graf",
+     "vorname": "Hansueli",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Gruhler Heinzer",
+     "vorname": "Irene",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Hedinger",
+     "vorname": "Beat",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Herren",
+     "vorname": "Nicole",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Hotz",
+     "vorname": "Walter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Arnold",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Deborah",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Kräuchi",
+     "vorname": "Raphael",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Laich",
+     "vorname": "Lorenz",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Lang",
+     "vorname": "Svea",
+     "fraktion": "SVP-EDU",
+     "partei": "JSVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Le Donne",
+     "vorname": "Vanessa",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Leu",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Litscher",
+     "vorname": "Monika",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Gianluca",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "Junge Grüne",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Bettina",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Lüthi",
+     "vorname": "Isabelle",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Meyer",
+     "vorname": "Daniel",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Roland",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Andrea",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Mundt",
+     "vorname": "Michael",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Neukomm",
+     "vorname": "Peter",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Neumann",
+     "vorname": "Eva",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Passafaro",
+     "vorname": "Marco",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Penkov",
+     "vorname": "Angela",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Pfalzgraf",
+     "vorname": "Maurus",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Portmann",
+     "vorname": "Patrick",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Rohner",
+     "vorname": "Raphaël",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Salathé",
+     "vorname": "Regula",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schärrer",
+     "vorname": "Nina",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Scheck",
+     "vorname": "Peter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Roman",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Hermann",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Martin",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schmidig",
+     "vorname": "Rainer",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schnetzler",
+     "vorname": "Andreas",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schöpfer",
+     "vorname": "Sandra",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schraff",
+     "vorname": "Jannik",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Schudel",
+     "vorname": "Erich",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Suter",
+     "vorname": "Roman",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Tognella",
+     "vorname": "Ivo",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Ullmann",
+     "vorname": "Corinne",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Würms",
+     "vorname": "Josef",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    }
+   ],
+   "votes": [
+    {
+     "nr": 1,
+     "titel": "Antrag P. Portmann",
+     "typ": "Antrag",
+     "details": "Ergänzung Art. 2 Abs. 2 lit. f wie folgt: Präventionsarbeit zu polizeilichen Themenbereichen, namentlich im jugendpolizeilichen Bereich",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Gesundheit und Soziales",
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Gesundheitsversorgung",
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Prävention",
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Antrag G. Looser",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 8 Abs. 3 wie folgt: Uniformierte Polizistinnen und Polizisten tragen in der Regel ein Namensschild oder eine Dienstnummer.",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 3,
+     "titel": "Antrag F. Brenn",
+     "typ": "Ausmehrung",
+     "details": "Anpassung Art. 10 Abs. 2 lit. c wie folgt: zwei drei vom Regierungsrat auf Vorschlag des Kantonsrates auf Amtsdauer gewählten Mitgliedern des Kantonsrats; Antrag M. Alaye Anpassung Art. 10 Abs. 2 lit. c wie folgt: zwei vom Kantonsrat gewählten Mitgliedern des Kantonsrates;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag F. Brenn",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Ausmehrung",
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 4,
+     "titel": "Antrag M. Alaye",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 10 Abs. 2 lit. c wie folgt: zwei vom Kantonsrat gewählten Mitgliedern des Kantonsrates;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 5,
+     "titel": "Antrag M. Alaye",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 10 Abs. 2 lit. h wie folgt: der Polizeikommandantin oder dem Polizeikommandanten mit beratender Stimme und dem Recht, Anträge zu stellen;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 6,
+     "titel": "Antrag F. Brenn",
+     "typ": "Ausmehrung",
+     "details": "Anpassung Art. 10 Abs. 2 lit. i wie folgt: zwei auf Vorschlag der Personalorganisationen vom Regierungsrat auf Amtsdauer gewählten Verbandsmitgliedern mit beratender Stimme; Antrag M. Alaye Anpassung Art. 10 Abs. 2 lit. i wie folgt: zwei auf Vorschlag der Personalorganisationen vom Regierungsrat auf Amtsdauer gewählten Verbandsmitgliedern mit beratender Stimme und dem Recht, Anträge zu stellen;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag F. Brenn",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Ausmehrung",
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 7,
+     "titel": "Antrag M. Alaye",
+     "typ": "",
+     "details": "Anpassung Art. 10 Abs. 2 lit. i wie folgt: zwei auf Vorschlag der Personalorganisationen vom Regierungsrat auf Amtsdauer gewählten Verbandsmitgliedern mit beratender Stimme und dem Recht, Anträge zu stellen;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 8,
+     "titel": "Antrag B. Looser",
+     "typ": "",
+     "details": "Anpassung Art. 11 Abs. 1 lit. b wie folgt:  Tätigkeitsschwerpunkte und Einsatzgrundsätze;",
+     "inverted_note": "Ja bedeutet        Zustimmung Antrag SPK",
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    },
+    {
+     "nr": 9,
+     "titel": "Antrag F. Brenn",
+     "typ": "",
+     "details": "Schaffung Art. 11 Abs. 2 (neu) wie folgt: Weiter kann sich die Polizeikommission im Sinne einer Begleitung mit Belagen der Polizeiarbeit befassen und zuhanden des Regierungsrates Antrag stellen.",
+     "inverted_note": null,
+     "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+     "thema_gruppe": "3",
+     "thema_name": "Strafrecht, Strafvollzug",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Sicherheit und Recht"
+     ],
+     "tags_unterthema": [
+      "Polizei und Sicherheit"
+     ],
+     "tags_detail": [
+      "Polizeigesetz"
+     ]
+    }
+   ],
+   "quelle": "839b24ae_20260921_Abstimmungsergebnisse_Vormittag.xlsx",
+   "protokolle": [],
+   "legislatur": 3
+  },
+  {
    "sitzung": "13. Sitzung 2026 · 07.09.2026 (Vormittag)",
    "n_votes": 7,
    "cid": "23474385",
@@ -238146,7 +241464,7 @@
    "legislatur": 1
   }
  ],
- "n_sessions": 203,
+ "n_sessions": 205,
  "legislaturen": {
   "1": {
    "nummer": 1,
@@ -238296,7 +241614,7 @@
    "bis": "31-12-2028",
    "label": "Legislatur 2025–2028",
    "erste_sitzung": "13.01.2025",
-   "letzte_sitzung": "07.09.2026",
+   "letzte_sitzung": "21.09.2026",
    "aktive_mitglieder": [
     "Aellig|Pentti",
     "Alaye|Mayowa",
@@ -238359,7 +241677,7 @@
     "Ullmann|Corinne",
     "Würms|Josef"
    ],
-   "n_sitzungen": 39
+   "n_sitzungen": 41
   }
  },
  "aktuelle_legislatur": 3,

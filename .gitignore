@@ -75,3 +75,8 @@ abstimmungsspiegel/abstimmungen/*/geo/01_roh/unterlagen.zip
 # Sonden und Reste eines Baulaufs in der Ausgabe.
 site/abstimmung/*/grafiken/_probe
 finanzspiegel/daten/pdf/
+
+# Ausgaben aus Cowork-Sitzungen. Sie liegen im Projektordner, gehoeren aber
+# nicht ins oeffentliche Repository: der Ordner enthielt am 22.09.2026 eine
+# als vertraulich bezeichnete Auswertung zu Gemeindefinanzen.
+Claude outputs/
