@@ -41,7 +41,7 @@ def collect(data):
     faelle = []
     for s in data["sessions"]:
         for v in s["votes"]:
-            if v.get("inverted_note"):
+            if v.get("inverted_note") or v.get("gegen_note"):
                 faelle.append((s, v))
     return faelle
 
@@ -60,6 +60,9 @@ def build_mapping():
         key = schluessel(s["sitzung"], v["nr"])
         if key in existing and existing[key].get("geprüft"):
             row = existing[key]                      # geprüfte Zuordnung bewahren
+            # Die gedruckte Gegenzeile nachtragen: sie kam erst im September
+            # 2026 dazu und fehlt in älteren Zeilen der Tabelle.
+            row["gegen_note"] = (v.get("gegen_note") or "").strip()
         else:
             row = {
                 "schluessel": key,
@@ -68,6 +71,7 @@ def build_mapping():
                 "titel": v.get("titel"),
                 "geschaeft": (v.get("geschaeft") or "")[:200],
                 "inverted_note": (v.get("inverted_note") or "").strip(),
+                "gegen_note": (v.get("gegen_note") or "").strip(),
                 "ja_ist_zustimmung": None,           # true/false, bitte prüfen
                 "geprüft": False,
             }
@@ -95,7 +99,7 @@ def apply_mapping():
     n_inv = n_geklaert = 0
     for s in data["sessions"]:
         for v in s["votes"]:
-            if not v.get("inverted_note"):
+            if not (v.get("inverted_note") or v.get("gegen_note")):
                 v["richtung_invertiert"] = False      # kein Umkehrhinweis
                 continue
             n_inv += 1

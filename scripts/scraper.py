@@ -578,9 +578,39 @@ def parse_xlsx(path, sitzung_label, cid=None):
                     if isinstance(cand, str) and cand.strip():
                         typ = cand
                         break
-                details, inverted = [], None
+                details, inverted, gegen = [], None, None
+
+                def hinweis_ab(rr, cc):
+                    """Der erklärende Text kann über mehrere Spalten verteilt sein
+                    («Ja bedeutet» | «Zustimmung Kommission») und steht nicht in
+                    jeder Datei in derselben Spalte. Darum die Zeile ab der
+                    Fundstelle zusammenziehen."""
+                    teile = [str(txt(rr, c3)).strip()
+                             for c3 in range(cc, cc + 6)
+                             if isinstance(txt(rr, c3), str) and str(txt(rr, c3)).strip()]
+                    return re.sub(r"\s+", " ", " ".join(teile)).strip()
+
+                # Die beiden Bedeutungszeilen. Der Kantonsrat druckt sie paarweise
+                # («Ja bedeutet …» / «Nein bedeutet …»); der Nein-Satz sagt
+                # unmittelbar, ob die Richtung umgekehrt ist, und wird darum
+                # ebenfalls übernommen. Gesucht wird über alle Spalten: die
+                # Dateien setzen den Block mal in Spalte 10, mal in Spalte 12.
+                for rr in range(r, r + 18):
+                    c1n2 = txt(rr, col_nr)
+                    if rr > r and isinstance(c1n2, str) and re.match(r"Abstimmung\s+\d+", c1n2):
+                        break
+                    for cc in range(1, ws.max_column + 1):
+                        w = txt(rr, cc)
+                        if not isinstance(w, str):
+                            continue
+                        klein = w.strip().lower()
+                        if klein.startswith("ja bedeutet") and inverted is None:
+                            inverted = hinweis_ab(rr, cc)
+                        elif klein.startswith("nein bedeutet") and gegen is None:
+                            gegen = hinweis_ab(rr, cc)
+
                 for rr in range(r + 1, r + 14):
-                    t2, t12, c1n = txt(rr, col_trakt), txt(rr, col_inv), txt(rr, col_nr)
+                    t2, c1n = txt(rr, col_trakt), txt(rr, col_nr)
                     if isinstance(c1n, str) and re.match(r"Abstimmung\s+\d+", c1n):
                         break
                     if isinstance(t2, str) and t2.startswith("Die Abstimmung"):
@@ -588,17 +618,10 @@ def parse_xlsx(path, sitzung_label, cid=None):
                     if isinstance(t2, str) and t2.strip() and not t2.startswith(
                         ("Ja bedeutet", "Nein bedeutet", "fakultatives")):
                         details.append(t2.strip())
-                    if isinstance(t12, str) and t12.startswith("Ja bedeutet"):
-                        # Der erklärende Text kann über mehrere Spalten verteilt
-                        # sein (z.B. "Ja bedeutet" | "Zustimmung Kommission").
-                        # Darum die Zellen der Zeile zusammenziehen.
-                        extra = [str(txt(rr, cc)).strip()
-                                 for cc in range(col_inv, col_inv + 6)
-                                 if isinstance(txt(rr, cc), str) and txt(rr, cc).strip()]
-                        inverted = " ".join(extra).strip()
                 votes_meta.append({
                     "nr": nr, "titel": str(titel).strip(), "typ": str(typ).strip(),
                     "details": " ".join(details), "inverted_note": inverted,
+                    "gegen_note": gegen,
                     "geschaeft": geschaeft_map.get(nr, ""),
                 })
     votes_meta.sort(key=lambda x: x["nr"])

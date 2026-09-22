@@ -231,7 +231,49 @@ def wortmenge(s):
     return {w for w in norm(s).split() if len(w) > 2 and w not in FUELL}
 
 
-def _klassiere_roh(titel, note, details=""):
+def kernworte(s):
+    """Tragende Wörter, ohne Füllwörter und ohne die Wörter der Hinweisformel."""
+    return {w for w in norm(s).split()
+            if len(w) > 2 and w not in FUELL
+            and w not in ("bedeutet", "zustimmung", "annahme", "unterstutzung",
+                          "vorlage", "fassung", "version")}
+
+
+def treffen_sich(a, b):
+    """Nennen zwei Wortmengen dieselbe Sache? Abkürzungen zählen mit:
+    «Flubacher Rüedl.» und «Flubacher Rüedlinger» meinen dieselbe Person."""
+    for x in a:
+        for y in b:
+            if x == y or (len(x) >= 4 and (x.startswith(y) or y.startswith(x))):
+                return True
+    return False
+
+
+def aus_gegenzeile(titel, note, gegen):
+    """(ja_ist_zustimmung, Begründung) aus den gedruckten Bedeutungszeilen.
+
+    Der Kantonsrat druckt beide Sätze: «Ja bedeutet …» und «Nein bedeutet …».
+    Nennt der Nein-Satz den Antrag aus dem Titel, ist ein Ja die Ablehnung
+    dieses Antrags. Das steht so in der Quelle und muss nicht erschlossen
+    werden; diese Regel geht darum allen Heuristiken vor.
+    """
+    if not gegen:
+        return (None, None)
+    wt = kernworte(titel)
+    if not wt:
+        return (None, None)
+    wn, wj = kernworte(re.sub(r"^nein bedeutet", "", norm(gegen))), \
+             kernworte(re.sub(r"^ja bedeutet", "", norm(note or "")))
+    if treffen_sich(wt, wn) and not treffen_sich(wt, wj):
+        return (False, f"Die Datei des Kantonsrats druckt «{gegen.strip()}»: "
+                       "ein Ja ist Ablehnung des Antrags im Titel")
+    if treffen_sich(wt, wj) and not treffen_sich(wt, wn):
+        return (True, f"Die Datei des Kantonsrats druckt «{(note or '').strip()}»: "
+                      "ein Ja ist Zustimmung zum Antrag im Titel")
+    return (None, None)
+
+
+def _klassiere_roh(titel, note, details="", gegen=""):
     """(ja_ist_zustimmung, Begründung, entschieden).
 
     ja_ist_zustimmung darf auch bei entschieden=True None sein: bei einer
@@ -250,6 +292,12 @@ def _klassiere_roh(titel, note, details=""):
                       f"zur einen und Ablehnung der anderen Fassung{gegen}. "
                       "Eine einheitliche inhaltliche Richtung gibt es nicht, "
                       "die Abstimmung bleibt aus dem Matching draussen.", True)
+
+    # RQ: die gedruckten Bedeutungszeilen der Datei. Sie sind die Quelle selbst
+    # und gehen den Heuristiken vor.
+    q_wert, q_grund = aus_gegenzeile(titel, note, gegen)
+    if q_wert is not None:
+        return (q_wert, q_grund, True)
 
     # R1: beide Seiten nennen einen Akteur -> vergleichen
     if kenn_t and kenn_n and "kuerzel" not in (art_t, art_n):
@@ -339,13 +387,15 @@ SCHWACHE_REGELN = (
 )
 
 
-def klassiere(titel, note, details=""):
+def klassiere(titel, note, details="", gegen=""):
     """(ja_ist_zustimmung, Begründung, entschieden, Stärke).
 
     Stärke ist «stark», wenn die Regel zwei benannte Akteure vergleichen
     konnte, sonst «schwach».
     """
-    wert, grund, entschieden = _klassiere_roh(titel, note, details)
+    wert, grund, entschieden = _klassiere_roh(titel, note, details, gegen)
+    if grund.startswith("Die Datei des Kantonsrats druckt"):
+        return (wert, grund, entschieden, "quelle")
     schwach = any(m in grund for m in SCHWACHE_REGELN)
     return (wert, grund, entschieden, "schwach" if schwach else "stark")
 
@@ -749,6 +799,39 @@ def sitzungsdaten():
     return stimmen, protokolle
 
 
+def eigenstimmen():
+    """Wie der Antragsteller selbst gestimmt hat, je Abstimmung.
+
+    Wer einen Antrag stellt, stimmt ihm zu. Das ist keine Regel des
+    Ratsbetriebs, aber eine Regelmässigkeit, die sich in den Daten hält, und
+    sie ist eine unabhängige Probe auf die Richtung: sie stammt weder aus der
+    gedruckten Legende noch aus dem Wortprotokoll, sondern aus den Stimmen.
+
+    Liefert je Schlüssel («Sitzung #NrN») (Nachname, Stimme) oder nichts,
+    wenn der Titel keinen Namen nennt oder der Name nicht eindeutig einem
+    Ratsmitglied entspricht.
+    """
+    if not SESSIONS.exists():
+        return {}
+    daten = json.load(open(SESSIONS, encoding="utf-8"))
+    aus = {}
+    for s in daten["sessions"]:
+        nachnamen = collections.Counter(m["nachname"] for m in s["members"])
+        for i, v in enumerate(s["votes"]):
+            name = akteur_titel(v.get("titel") or "")
+            if not name:
+                continue
+            letzter = name.split()[-1]
+            treffer = [m for m in s["members"]
+                       if norm(m["nachname"]) == letzter and nachnamen[m["nachname"]] == 1]
+            if len(treffer) != 1:
+                continue
+            stimme = treffer[0]["votes"][i] if i < len(treffer[0]["votes"]) else None
+            if stimme in ("Ja", "Nein"):
+                aus[f"{s['sitzung']} #Nr{v['nr']}"] = (treffer[0]["nachname"], stimme)
+    return aus
+
+
 def details_lesen():
     """Detailtext je Abstimmung aus all_sessions.json (Schlüssel wie in umkehr.py)."""
     pfad = ROOT / "data" / "all_sessions.json"
@@ -808,6 +891,7 @@ def main():
     rows = daten["zuordnung"]
     details = details_lesen()
     stimmen, sess_protokolle = sitzungsdaten() if mit_protokoll else ({}, {})
+    eigen = eigenstimmen()
 
     zahlen = collections.Counter()
     konflikte, offene = [], []
@@ -831,8 +915,9 @@ def main():
 
         regel_wert, regel_grund, entschieden, staerke = klassiere(
             r.get("titel") or "", r.get("inverted_note") or "",
-            details.get(schluessel, ""))
-        zahlen["regel_" + ("stark" if entschieden and staerke == "stark"
+            details.get(schluessel, ""), r.get("gegen_note") or "")
+        zahlen["regel_" + ("quelle" if entschieden and staerke == "quelle"
+                           else "stark" if entschieden and staerke == "stark"
                            else "schwach" if entschieden else "offen")] += 1
 
         prot = {"status": "uebersprungen", "wert": None, "beleg": "", "hinweis": ""}
@@ -853,6 +938,54 @@ def main():
 
         if prot["status"] == "bestaetigt":
             widerspruch = entschieden and regel_wert is not None and prot["wert"] != regel_wert
+            # Steht die Richtung in der Datei des Kantonsrats selbst («Nein
+            # bedeutet Zustimmung Antrag X»), gilt sie auch gegen das
+            # Wortprotokoll: die Legende gehört zur Abstimmung, die Lesung des
+            # Protokollsatzes ist eine Textprobe und verwechselt bei knappen
+            # Formulierungen die Seiten. Der Fall kommt trotzdem auf die
+            # Konfliktliste.
+            # Dritte Probe: die Stimme des Antragstellers. Stützt sie die
+            # Legende, bleibt es dabei; widerspricht sie ihr, bleibt der Fall
+            # offen statt sich für eine der beiden Lesarten zu entscheiden.
+            eig = eigen.get(schluessel)
+            eigen_wert = None
+            if eig:
+                # Ja des Antragstellers heisst: Ja ist Zustimmung zum Antrag.
+                eigen_wert = (eig[1] == "Ja")
+            if widerspruch and staerke == "quelle" and eigen_wert is not None \
+                    and eigen_wert != regel_wert:
+                zahlen["ungeprueft"] += 1
+                r.update(ja_ist_zustimmung=None, herkunft="offen", geprüft=False,
+                         regel_staerke=staerke,
+                         begruendung=f"{regel_grund}. Das Wortprotokoll liest sich "
+                                     f"anders, und {eig[0]} stimmte «{eig[1]}» zum "
+                                     "eigenen Antrag: Richtung ungeklärt.",
+                         protokoll_status="ungeklaert", protokoll_beleg=prot["beleg"])
+                offene.append({
+                    "schluessel": schluessel, "sitzung": r["sitzung"], "nr": r["nr"],
+                    "titel": r.get("titel"), "inverted_note": r.get("inverted_note"),
+                    "ja": ja, "nein": nein, "regel_wert": regel_wert,
+                    "regel_grund": regel_grund + f"; {eig[0]} stimmte «{eig[1]}» zum eigenen Antrag",
+                    "regel_staerke": staerke, "protokoll_status": "ungeklaert",
+                    "protokoll_hinweis": prot["hinweis"], "beleg": prot["beleg"],
+                })
+                continue
+            if widerspruch and staerke == "quelle":
+                zahlen["konflikt"] += 1
+                konflikte.append({
+                    "schluessel": schluessel, "titel": r.get("titel"),
+                    "inverted_note": r.get("inverted_note"), "ja": ja, "nein": nein,
+                    "regel_wert": regel_wert, "regel_grund": regel_grund,
+                    "regel_staerke": staerke, "protokoll_wert": prot["wert"],
+                    "beleg": prot["beleg"],
+                })
+                r.update(ja_ist_zustimmung=regel_wert, herkunft="quelle",
+                         geprüft=True, regel_staerke=staerke,
+                         begruendung=f"{regel_grund}. Das Wortprotokoll liest sich "
+                                     f"anders ({prot['beleg'][:120]}), die gedruckte "
+                                     "Legende der Abstimmung geht vor.",
+                         protokoll_status="widerspruch", protokoll_beleg=prot["beleg"])
+                continue
             if widerspruch:
                 zahlen["konflikt"] += 1
                 konflikte.append({
@@ -909,6 +1042,7 @@ def main():
     gesamt = len(rows)
     print(f"{gesamt} Umkehrfälle\n")
     print("Regelwerk")
+    print(f"  aus der Legende der Datei{zahlen['regel_quelle']:4d}")
     print(f"  stark entschieden        {zahlen['regel_stark']:4d}")
     print(f"  schwach entschieden      {zahlen['regel_schwach']:4d}   ← die Zweifelsfälle")
     print(f"  nicht entscheidbar       {zahlen['regel_offen']:4d}")
@@ -934,7 +1068,7 @@ def main():
         print(f"Von Hand entschieden       {zahlen['manuell']:4d}")
 
     if konflikte and ("--konflikte" in sys.argv or len(konflikte) <= 12):
-        print(f"\nKorrekturen durch das Protokoll ({len(konflikte)}):")
+        print(f"\nWidersprüche zwischen Regel und Wortprotokoll ({len(konflikte)}):")
         for k in konflikte[: (None if "--konflikte" in sys.argv else 12)]:
             print(f"\n  {k['schluessel']}")
             print(f"    Titel   : {kurz(k['titel'] or '(leer)')}")

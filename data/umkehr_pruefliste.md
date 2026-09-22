@@ -5,11 +5,12 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **90**
+Offen: **95**
 
 - `kein_text`: 47
-- `keine_fundstelle`: 25
-- `objekt_unklar`: 18
+- `keine_fundstelle`: 26
+- `objekt_unklar`: 21
+- `ungeklaert`: 1
 
 ---
 
@@ -18,7 +19,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 39 Ja : 15 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -28,7 +29,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 35 Ja : 15 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -38,7 +39,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 38 Ja : 15 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -48,7 +49,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 14 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -58,7 +59,7 @@ Offen: **90**
 - **Titel:** Antrag R. Müller
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 15 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft muller, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag R. Müller»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -68,7 +69,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 31 Ja : 23 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -78,7 +79,7 @@ Offen: **90**
 - **Titel:** Antrag I. Lüthi
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 14 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft luthi, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag I. Lüthi»: ein Ja ist Ablehnung des Antrags…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -88,7 +89,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 36 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -98,7 +99,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 7 Ja : 38 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -108,7 +109,7 @@ Offen: **90**
 - **Titel:** Antrag M. Schlatter
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 35 Ja : 16 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schlatter, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Schlatter»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -118,7 +119,7 @@ Offen: **90**
 - **Titel:** Antrag M. Schlatter
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 15 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schlatter, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Schlatter»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -128,7 +129,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 38 Ja : 16 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -138,7 +139,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 39 Ja : 12 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -148,7 +149,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 14 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -158,7 +159,7 @@ Offen: **90**
 - **Titel:** Antrag M. Passafaro
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 43 Ja : 3 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft passafaro, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Passafaro»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -168,7 +169,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 40 Ja : 16 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -178,7 +179,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -188,7 +189,7 @@ Offen: **90**
 - **Titel:** Antrag P. Portmann
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 4 Ja : 47 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag P. Portmann»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -198,7 +199,7 @@ Offen: **90**
 - **Titel:** Antrag P. Portmann
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 38 Ja : 16 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag P. Portmann»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -208,7 +209,7 @@ Offen: **90**
 - **Titel:** Antrag G. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag G. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -218,7 +219,7 @@ Offen: **90**
 - **Titel:** Antrag F. Brenn
 - **Hinweis:** Ja bedeutet Zustimmung Antrag F. Brenn
 - **Stimmen:** 19 Ja : 38 Nein
-- **Regel:** `ja_ist_zustimmung = True` (stark) — Hinweis nennt denselben Akteur (brenn) wie der Titel
+- **Regel:** `ja_ist_zustimmung = True` (quelle) — Die Datei des Kantonsrats druckt «Ja bedeutet Zustimmung Antrag F. Brenn»: ein Ja ist Zustimmung zum Antrag…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -228,7 +229,7 @@ Offen: **90**
 - **Titel:** Antrag M. Alaye
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 30 Ja : 27 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Alaye»: ein Ja ist Ablehnung des Antrags…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -238,7 +239,7 @@ Offen: **90**
 - **Titel:** Antrag M. Alaye
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 25 Ja : 32 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Alaye»: ein Ja ist Ablehnung des Antrags…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -248,7 +249,7 @@ Offen: **90**
 - **Titel:** Antrag F. Brenn
 - **Hinweis:** Ja bedeutet Zustimmung Antrag F. Brenn
 - **Stimmen:** 15 Ja : 42 Nein
-- **Regel:** `ja_ist_zustimmung = True` (stark) — Hinweis nennt denselben Akteur (brenn) wie der Titel
+- **Regel:** `ja_ist_zustimmung = True` (quelle) — Die Datei des Kantonsrats druckt «Ja bedeutet Zustimmung Antrag F. Brenn»: ein Ja ist Zustimmung zum Antrag…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -258,7 +259,7 @@ Offen: **90**
 - **Titel:** Antrag M. Alaye
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 26 Ja : 31 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft alaye, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Alaye»: ein Ja ist Ablehnung des Antrags…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -268,7 +269,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 39 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -278,7 +279,7 @@ Offen: **90**
 - **Titel:** Antrag M. Pfalzgraf
 - **Hinweis:** Ja bedeutet Zustimmung Antrag BVE
 - **Stimmen:** 38 Ja : 14 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber bve: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Pfalzgraf»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -288,7 +289,7 @@ Offen: **90**
 - **Titel:** Antrag A. Schnetzler
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 34 Ja : 13 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schnetzler, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag A. Schnetzler»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -298,7 +299,7 @@ Offen: **90**
 - **Titel:** Antrag E. Neumann
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft neumann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag E. Neumann»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -308,7 +309,7 @@ Offen: **90**
 - **Titel:** Antrag D. Meyer
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 37 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft meyer, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag D. Meyer»: ein Ja ist Ablehnung des Antrags…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -368,7 +369,7 @@ Offen: **90**
 - **Titel:** Antrag RR M. Montanari
 - **Hinweis:** Ja bedeutet Zustimmung Antrag Gesko
 - **Stimmen:** 1 Ja : 52 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft montanari, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Montanari»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -378,7 +379,7 @@ Offen: **90**
 - **Titel:** Antrag RR M. Montanari
 - **Hinweis:** Ja bedeutet Zustimmung Antrag Gesko
 - **Stimmen:** 0 Ja : 53 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft montanari, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Montanari»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -388,7 +389,7 @@ Offen: **90**
 - **Titel:** Antrag B. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 27 Ja : 27 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag B. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -398,7 +399,7 @@ Offen: **90**
 - **Titel:** Antrag P. Portmann
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 35 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft portmann, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag P. Portmann»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -408,7 +409,7 @@ Offen: **90**
 - **Titel:** Antrag M. Pfalzgraf
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 36 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Pfalzgraf»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -418,7 +419,7 @@ Offen: **90**
 - **Titel:** Antrag L. De Ventura
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 25 Ja : 24 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ventura, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag L. De Ventura»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -428,7 +429,7 @@ Offen: **90**
 - **Titel:** Antrag L. De Ventura
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 32 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ventura, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag L. De Ventura»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -438,7 +439,7 @@ Offen: **90**
 - **Titel:** Antrag L. De Ventura
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 34 Ja : 17 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ventura, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag L. De Ventura»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -448,7 +449,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 10 Ja : 37 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -458,7 +459,7 @@ Offen: **90**
 - **Titel:** Antrag RR D. Tamagni
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 29 Ja : 20 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft tamagni, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag RR D. Tamagni»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -468,7 +469,7 @@ Offen: **90**
 - **Titel:** Antrag A. Penkov
 - **Hinweis:** Ja bedeutet Zustimmung SPK
 - **Stimmen:** 37 Ja : 18 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft penkov, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag A. Penkov»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -478,7 +479,7 @@ Offen: **90**
 - **Titel:** Antrag Matthias Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Planungserklärung BVE
 - **Stimmen:** 34 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber planungserklarung: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
@@ -488,10 +489,22 @@ Offen: **90**
 - **Titel:** Antrag C. Di Ronco
 - **Hinweis:** Ja bedeutet Zustimmung aktuelle Traktandenliste
 - **Stimmen:** 28 Ja : 14 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft ronco, das Ja stützt aber traktandenliste: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag C. Di Ronco»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
 
 > Abstimmung Mit 28 : 14 Stimmen bei 13 Enthaltungen wird der gültigen Traktandenliste zugestimmt.
+
+---
+
+### 5. und 6. Sitzung 2026 · 18.05.2026 (Vormittag) #Nr1
+
+- **Titel:** Antrag T. Bucher
+- **Hinweis:** Ja bedeutet Zustimmung aktuelle Traktandenliste
+- **Stimmen:** 6 Ja : 52 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag T. Bucher»: ein Ja ist Ablehnung des…
+- **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
+
+> Abstimmung Der Umstellung der Traktandenliste wird mit 52 : 6 Stimmen zugestimmt.
 
 ---
 
@@ -500,10 +513,22 @@ Offen: **90**
 - **Titel:** Planungserklärung M. Pfalzgraf
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GPK
 - **Stimmen:** 23 Ja : 34 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft pfalzgraf, das Ja stützt aber gpk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Planungserklärung»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
 
 > Abstimmung Der neuen Lösung wird mit 34 : 23 Stimmen zugestimmt.
+
+---
+
+### 19. und 20. Sitzung 2025 · 22.09.2025 (Vormittag) #Nr1
+
+- **Titel:** Antrag M. Schlatter
+- **Hinweis:** Ja bedeutet Zustimmung aktuelle Traktandenliste
+- **Stimmen:** 32 Ja : 24 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Schlatter»: ein Ja ist Ablehnung des…
+- **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
+
+> Protokoll der 19. Sitzung vom 22. September 2025 871 Abstimmung Mit 32 : 24 Stimmen bei 1 Enthaltung wird die Änderung der Traktandenliste abgelehnt.
 
 ---
 
@@ -512,7 +537,7 @@ Offen: **90**
 - **Titel:** Antrag G. Looser
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GESKO
 - **Stimmen:** 0 Ja : 56 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft looser, das Ja stützt aber gesko: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag G. Looser»: ein Ja ist Ablehnung des…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 0 : 56 Stimmen im Protokoll gefunden.
 
 ---
@@ -522,7 +547,7 @@ Offen: **90**
 - **Titel:** Antrag M. Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 4 Ja : 47 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 4 : 47 Stimmen im Protokoll gefunden.
 
 ---
@@ -532,8 +557,20 @@ Offen: **90**
 - **Titel:** Antrag Walter Hotz
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
 - **Stimmen:** 34 Ja : 11 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft hotz, das Ja stützt aber gpk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag Walter Hotz»: ein Ja ist Ablehnung des…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 34 : 11 Stimmen im Protokoll gefunden.
+
+---
+
+### 19. Sitzung 2024 · 04.11.2024 (Vormittag) #Nr2
+
+- **Titel:** Antrag Mayowa Alaye
+- **Hinweis:** Ja bedeutet Zustimmung Antrag M. Alaye
+- **Stimmen:** 31 Ja : 23 Nein
+- **Regel:** `ja_ist_zustimmung = True` (quelle) — Die Datei des Kantonsrats druckt «Ja bedeutet Zustimmung Antrag M. Alaye»: ein Ja ist Zustimmung zum Antrag…
+- **Protokoll:** `ungeklaert` — Gegenstand: titelantrag, abgelehnt
+
+> Protokoll der 19. Sitzung vom 04. November 2024 873 Abstimmung Der Antrag von Mayowa Alaye zur Änderung der Traktandenliste – das Postulat «Vertretung der Interessen der betroffenen Schaffhauser Gemeinden beim Nationalstrassenprojekt Fäsenstaub» auf Traktandum 1 vorzuziehen – wird mit 31 : 23 Stimmen bei 1 Enthaltung abgelehnt.
 
 ---
 
@@ -552,7 +589,7 @@ Offen: **90**
 - **Titel:** Antrag Erwin Sutter
 - **Hinweis:** Ja bedeutet Zustimmung Kommissionsvorlage
 - **Stimmen:** 29 Ja : 29 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft sutter, das Ja stützt aber kommissionsvorlage: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag E. Sutter»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -562,7 +599,7 @@ Offen: **90**
 - **Titel:** Antrag Matthias Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Kommissionsvorlage
 - **Stimmen:** 28 Ja : 28 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber kommissionsvorlage: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -572,7 +609,7 @@ Offen: **90**
 - **Titel:** Antrag Christian Heydecker
 - **Hinweis:** Ja bedeutet Zustimmung Kommissionsvorlage
 - **Stimmen:** 29 Ja : 29 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft heydecker, das Ja stützt aber kommissionsvorlage: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag C. Heydecker»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -582,7 +619,7 @@ Offen: **90**
 - **Titel:** Antrag Erwin Sutter
 - **Hinweis:** Ja bedeutet Zustimmung Kommissionsvorlage
 - **Stimmen:** 26 Ja : 26 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft sutter, das Ja stützt aber kommissionsvorlage: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag E. Sutter»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -592,7 +629,7 @@ Offen: **90**
 - **Titel:** Antrag Erwin Sutter
 - **Hinweis:** Ja bedeutet Zustimmung SPK 2023/5
 - **Stimmen:** 34 Ja : 23 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft sutter, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Rückweisung Antrag E. Sutter»: ein Ja ist…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 34 : 23 Stimmen im Protokoll gefunden.
 
 ---
@@ -602,7 +639,7 @@ Offen: **90**
 - **Titel:** Antrag Matthias Freivogel
 - **Hinweis:** Ja bedeutet Zustimmung Antrag Ratsbüro
 - **Stimmen:** 26 Ja : 30 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber ratsburo: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 26 : 30 Stimmen im Protokoll gefunden.
 
 ---
@@ -612,7 +649,7 @@ Offen: **90**
 - **Titel:** Antrag Marcel Montanari
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK 2021/1
 - **Stimmen:** 27 Ja : 27 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft montanari, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Montanari»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -622,7 +659,7 @@ Offen: **90**
 - **Titel:** Antrag Andreas Schnetzler
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
 - **Stimmen:** 28 Ja : 28 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schnetzler, das Ja stützt aber gpk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag A. Schnetzler»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -632,7 +669,7 @@ Offen: **90**
 - **Titel:** Antrag Andreas Schnetzler
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
 - **Stimmen:** 30 Ja : 23 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft schnetzler, das Ja stützt aber gpk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag Andreas Schnetzler»: ein Ja ist Ablehnung…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 30 : 23 Stimmen im Protokoll gefunden.
 
 ---
@@ -642,10 +679,22 @@ Offen: **90**
 - **Titel:** Antrag Christian Heydecker
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK 2021/1
 - **Stimmen:** 24 Ja : 26 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft heydecker, das Ja stützt aber spk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag C. Heydecker»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
 
 > Wiederholung der Abstimmung Mit 26 : 24 Stimmen bei 0 Enthaltungen wird der Beschluss der Verwaltungskommission der Gebäudeversicherung betreffend die Änderung der Gebäudeversicherungsprämien nicht genehmigt.
+
+---
+
+### 10. und 11. Sitzung des Kantonsrats · 19.06.2023 (Vormittag) #Nr1
+
+- **Titel:** Antrag Marco Passafaro
+- **Hinweis:** Ja bedeutet Beibehaltung Traktandenliste
+- **Stimmen:** 24 Ja : 28 Nein
+- **Regel:** `ja_ist_zustimmung = False` (stark) — Ja meint Beibehaltung des bisherigen Zustands, der Titel aber dessen Änderung: Ja ist Ablehnung des Antrags
+- **Protokoll:** `objekt_unklar` — Satz nennt den Akteur aus dem Titel nicht
+
+> Abstimmung Der Umstellung der Traktandenliste wird mit 28 : 24 Stimmen zugestimmt.
 
 ---
 
@@ -654,7 +703,7 @@ Offen: **90**
 - **Titel:** Matthias Freivogel beantragt die ersatzlose Streichung von Art. 12 Abs. 2 lit. c
 - **Hinweis:** Ja bedeutet Zustimmung Antrag GPK
 - **Stimmen:** 33 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Titel betrifft freivogel, das Ja stützt aber gpk: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag Matthias Freivogel»: ein Ja ist Ablehnung…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 33 : 19 Stimmen im Protokoll gefunden.
 
 ---
@@ -694,7 +743,7 @@ Offen: **90**
 - **Titel:** Antrag Erich Schudel
 - **Hinweis:** Ja bedeutet Beibehalten aktuelle Traktandenliste
 - **Stimmen:** 1 Ja : 50 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Ja meint Beibehaltung des bisherigen Zustands, der Titel aber dessen Änderung: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag Erich Schudel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `keine_fundstelle` — Kein Satz mit 1 : 50 Stimmen im Protokoll gefunden.
 
 ---
@@ -794,7 +843,7 @@ Offen: **90**
 - **Titel:** Antrag Stefan Lacher
 - **Hinweis:** Ja bedeutet Beibehalten der Traktandenliste
 - **Stimmen:** 0 Ja : 0 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Ja meint Beibehaltung des bisherigen Zustands, der Titel aber dessen Änderung: Ja ist Ablehnung des Antrags
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag Stefan Lacher»: ein Ja ist Ablehnung des…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
 
 ---
@@ -874,8 +923,18 @@ Offen: **90**
 - **Titel:** Traktandum 8; Bericht und Antrag der Spezialkommission 2018/4
 - **Hinweis:** Ja bedeutet Antrag der Spezialkommission
 - **Stimmen:** 25 Ja : 25 Nein
-- **Regel:** `ja_ist_zustimmung = False` (stark) — Sachtitel, das Ja stützt die Fassung von spezialkommission: inhaltliche Zustimmung zur Änderung entspricht…
+- **Regel:** `ja_ist_zustimmung = True` (quelle) — Die Datei des Kantonsrats druckt «Ja bedeutet Antrag der Spezialkommission»: ein Ja ist Zustimmung zum Antrag…
 - **Protokoll:** `objekt_unklar` — Stimmengleichheit, aus dem Protokoll nicht eindeutig zuzuordnen.
+
+---
+
+### 20. Kantonsratssitzung · 03.12.2018 (Sitzung 20) #Nr1
+
+- **Titel:** Wahl der Fraktionsmitglieder für die Parlamentarische Untersuchungskommission (PUK)
+- **Hinweis:** Ja bedeutet Stille Wahl der vorgeschlagenen Mitglieder
+- **Stimmen:** 23 Ja : 31 Nein
+- **Regel:** `ja_ist_zustimmung = None` (stark) — nicht entscheidbar, am Wortprotokoll zu prüfen
+- **Protokoll:** `keine_fundstelle` — Kein Satz mit 23 : 31 Stimmen im Protokoll gefunden.
 
 ---
 
