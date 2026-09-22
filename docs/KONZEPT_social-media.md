@@ -1,6 +1,6 @@
 # Social Media: Konzept und Ablauf
 
-Stand 3. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des Politspiegels.
+Stand 22. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des Politspiegels sowie den WhatsApp-Kanal.
 
 ## 1. Rahmen
 
@@ -41,6 +41,15 @@ Serie je kantonale Vorlage, Bilder aus `abstimmungsspiegel/bausteine/teilen.py` 
 Rhythmus nach dem 6. September 2026 verdichtet: Alle Beiträge einer Vorlage laufen in einer Woche (zwei je Tag, 09:00 und 16:00), in der Woche darauf werden sie ein zweites Mal ausgespielt, weil viele brieflich abstimmen und Reels nur kurz sichtbar sind. Die Erinnerung bleibt am Freitag vor dem Abstimmungssonntag.
 
 Noch offen: die Motive aus teilen.py werden im Browser gezeichnet. Für Metricool braucht es PNG-Dateien mit öffentlicher Adresse. Umsetzung als eigener Schritt (Rendering nach dem Muster von social.py).
+
+### 3.4 WhatsApp-Kanal, nach jeder Sitzung
+
+Erzeugt `scripts/whatsapp.py`, Ausgabe in `Whatsappkanal/<slug>/` (nicht im Repository, .gitignore). Der Kanal wird von Hand bedient: Michael kopiert den Text und lädt die Bilder hoch.
+
+1. `beitrag.txt`: Kerntext 400 bis 600 Zeichen, danach eine Zeile mit den übrigen Kanälen. Aufbau: Kopfzeile mit Datum, Halbtag und Zahl der Abstimmungen (in WhatsApp-Fettschrift), behandelte Geschäfte, Bilanz aus angenommen und abgelehnt, zwei bis drei Entscheide mit dem kleinsten Stimmenabstand, Adresse des Dashboards, Quelle.
+2. Bilder: die Deckblätter der Karussells aus `site/social/kantonsrat/<slug>/`, als `deckblatt.png` oder `deckblatt-1.png` bis `deckblatt-N.png`. Sie tragen die vollständige nummerierte Liste aller Abstimmungen; einzelne Abstimmungskarten kommen nicht in den Kanal.
+3. Abstimmungen, die das Protokoll als ungültig führt, zählen nicht zur Bilanz und stehen nicht unter den Entscheiden. Die Auswahl nach kleinstem Stimmenabstand ist eine Auswahl nach Zahl, keine Beurteilung.
+4. Das Skript zeichnet nichts neu, es braucht `scripts/social.py` vorher. Zweiter Lauf überschreibt nichts, ausser mit `--neu`.
 
 ### 3.3 Erklärposts, einmalig und bei Bedarf
 

@@ -80,3 +80,9 @@ finanzspiegel/daten/pdf/
 # nicht ins oeffentliche Repository: der Ordner enthielt am 22.09.2026 eine
 # als vertraulich bezeichnete Auswertung zu Gemeindefinanzen.
 Claude outputs/
+
+# Arbeitsordner für den WhatsApp-Kanal. Der Kanal wird von Hand bedient:
+# scripts/whatsapp.py legt Text und Deckblätter zum Kopieren ab, die Bilder
+# stehen bereits unter site/social/kantonsrat/. Eine zweite Kopie im
+# Repository bringt nichts.
+Whatsappkanal/
