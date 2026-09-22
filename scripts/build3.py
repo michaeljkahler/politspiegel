@@ -393,6 +393,94 @@ def protokoll_adresse(s):
     return (s.get("url") or prots[0]["url"]), 1  # Protokoll gelistet, aber nicht abrufbar
 
 
+def halbtag_rang(z):
+    """Vormittag vor Nachmittag vor Abend, mit Durchnummerierung dahinter."""
+    z = (z or "").lower()
+    stufe = 0 if "vormittag" in z else 1 if "nachmittag" in z else 2 if "abend" in z else 3
+    nummer = int(re.search(r"\d+", z).group()) if re.search(r"\d+", z) else 0
+    return (stufe, nummer)
+
+
+def tage_buendeln(teile):
+    """Vormittag, Nachmittag und Abend desselben Datums sind eine Sitzung.
+
+    Der Kantonsrat führt jede Tageshälfte als eigene Sitzung mit eigener
+    Abstimmungsnummerierung, und die Parlamentsdienste liefern je Hälfte eine
+    Datei. Für die Leserin ist das ein Sitzungstag: sonst zeigt «Zuletzt
+    entschieden» nur den Nachmittag, und der Vormittag fehlt stillschweigend.
+
+    Gebündelt wird nur die Ausgabe. In data/all_sessions.json bleibt jede
+    Tageshälfte für sich, damit die Schlüssel «Sitzung #NrN» stabil bleiben,
+    an denen Themen, Umkehrrichtung und Fragetexte hängen. Jede Abstimmung
+    trägt darum den Halbtag (hz) und den Namen ihrer Hälfte (qs) bei sich.
+    """
+    nach_tag = collections.OrderedDict()
+    for t in teile:
+        nach_tag.setdefault(t["dt"], []).append(t)
+
+    raus = []
+    for datum, gruppe in nach_tag.items():
+        gruppe.sort(key=lambda t: halbtag_rang(t.get("z")))
+        erst = gruppe[0]
+        if len(gruppe) == 1:
+            e = dict(erst)
+            e["ts"] = [erst["s"]]
+            e["hz"] = [erst["z"]] if erst.get("z") else []
+            for v in e["v"]:
+                v["qs"] = erst["s"]
+                if erst.get("z"):
+                    v["hz"] = erst["z"]
+            raus.append(e)
+            continue
+
+        # Mitglieder zusammenführen: die Namensliste ist über den Tag dieselbe,
+        # aber nicht garantiert. Wer in einer Hälfte fehlt, gilt dort als
+        # abwesend, damit jede Stimmkette gleich lang bleibt.
+        laengen = [len(t["v"]) for t in gruppe]
+        namen = collections.OrderedDict()
+        for t in gruppe:
+            for m in t["m"]:
+                namen.setdefault(m["n"], {"n": m["n"], "f": m["f"], "p": m["p"], "v": ""})
+        for i, t in enumerate(gruppe):
+            hier = {m["n"]: m["v"] for m in t["m"]}
+            for k, m in namen.items():
+                m["v"] += hier.get(k, "A" * laengen[i])
+                if k in hier:                      # Fraktion des letzten Auftritts
+                    treffer = next(x for x in t["m"] if x["n"] == k)
+                    m["f"], m["p"] = treffer["f"], treffer["p"]
+
+        votes = []
+        for t in gruppe:
+            for v in t["v"]:
+                v = dict(v)
+                v["qs"] = t["s"]
+                if t.get("z"):
+                    v["hz"] = t["z"]
+                votes.append(v)
+
+        raus.append({
+            "s": f"{erst['n']} · {datum}",
+            "n": erst["n"],
+            "dt": datum,
+            "leg": erst.get("leg"),
+            "q": erst.get("q", ""),
+            "pu": erst.get("pu", ""),
+            **({"pf": erst["pf"]} if erst.get("pf") else {}),
+            **({"yt": erst["yt"]} if erst.get("yt") else {}),
+            "ts": [t["s"] for t in gruppe],
+            "hz": [t.get("z") or "" for t in gruppe],
+            # Quellen je Tageshälfte: Datei, Protokolladresse, Livestream.
+            "tl": [{"z": t.get("z") or "", "s": t["s"], "q": t.get("q", ""),
+                    "pu": t.get("pu", ""), "n": len(t["v"]),
+                    **({"pf": t["pf"]} if t.get("pf") else {}),
+                    **({"yt": t["yt"]} if t.get("yt") else {})}
+                   for t in gruppe],
+            "v": votes,
+            "m": list(namen.values()),
+        })
+    return raus
+
+
 def sessions_payload(d, umkehr):
     raus = []
     for s in d["sessions"]:
@@ -415,7 +503,7 @@ def sessions_payload(d, umkehr):
                    "v": "".join(KODE.get(x, "A") for x in m["votes"])}
                   for m in s["members"]],
         })
-    return raus
+    return tage_buendeln(raus)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -819,13 +907,27 @@ def panels_html():
     return "".join(f'<section class="panel" id="p-{key}"></section>' for key, _, _ in NAV)
 
 
+def legislaturen_payload(d, sessions):
+    """Sitzungszahl je Legislatur auf Sitzungstage umstellen.
+
+    In den Daten zählt jede Tageshälfte als Sitzung. Die Auswahlliste zeigt
+    aber Sitzungstage, und beide Zahlen nebeneinander verwirren."""
+    legs = json.loads(json.dumps(d["legislaturen"]))     # Kopie, Daten bleiben
+    tage = collections.Counter(str(s.get("leg")) for s in sessions)
+    for nummer, L in legs.items():
+        if str(nummer) in tage:
+            L["n_sitzungen"] = tage[str(nummer)]
+    return legs
+
+
 def bauen():
     d = sitzungen_lesen()
     umkehr = umkehr_lesen()
 
+    sessions = sessions_payload(d, umkehr)
     payload = {
-        "sessions": sessions_payload(d, umkehr),
-        "leg": d["legislaturen"],
+        "sessions": sessions,
+        "leg": legislaturen_payload(d, sessions),
         "aktLeg": d["aktuelle_legislatur"],
         "weg": ausgeschieden(d),
         "ohneProfil": ohne_profil(d),

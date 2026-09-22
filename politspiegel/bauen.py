@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -197,9 +198,13 @@ def ratszahlen() -> list[dict] | None:
     s = d.get("sessions") or []
     if not s:
         return None
+    # Der Rat führt Vormittag, Nachmittag und Abend als eigene Sitzungen. Gezählt
+    # werden Sitzungstage, wie sie der Kantonsratsspiegel zeigt.
+    tage = {re.search(r"\d{2}\.\d{2}\.\d{4}", x.get("sitzung") or "").group()
+            for x in s if re.search(r"\d{2}\.\d{2}\.\d{4}", x.get("sitzung") or "")}
     return [{"wert": f"{sum(len(x.get('votes') or []) for x in s):,}".replace(",", " "),
              "einheit": "namentliche Abstimmungen"},
-            {"wert": str(len(s)), "einheit": "Sitzungen"}]
+            {"wert": str(len(tage) or len(s)), "einheit": "Sitzungstage"}]
 
 
 def finanzzahlen() -> list[dict] | None:

@@ -290,6 +290,22 @@
     return s;
   }
 
+  /* Ein Sitzungstag kann aus Vormittag, Nachmittag und Abend bestehen. Die
+     Daten je Hälfte (Datei, Wortprotokoll, Livestream) stehen in s.tl; jede
+     Abstimmung trägt ihre Hälfte in v.hz. Ohne Bündelung fällt alles auf die
+     Sitzung selbst zurück. */
+  function teilVon(s, v) {
+    if (!s) return null;
+    if (v && v.hz && s.tl) {
+      for (var i = 0; i < s.tl.length; i++) if (s.tl[i].z === v.hz) return s.tl[i];
+    }
+    return s;
+  }
+
+  function halbtage(s) {
+    return (s && s.hz && s.hz.length > 1) ? s.hz : [];
+  }
+
   function protokollFehlt(s) {
     return s.pf === 2 ? "Wortprotokoll noch nicht publiziert" : "Wortprotokoll zurzeit nicht abrufbar";
   }
@@ -297,11 +313,25 @@
   /* Kasten im Sitzungskopf, wenn das Wortprotokoll fehlt. Der Kanton publiziert
      es meist einige Wochen nach der Sitzung; bis dahin gibt es die Traktanden
      und die Abstimmungsergebnisse (PDF, Excel) auf der Sitzungsseite. */
-  function protokollHinweis(s) {
+  function protokollHinweis(s, zeit) {
     if (!s || !s.pf) return "";
-    return '<p class="prothinweis">' + protokollFehlt(s) + ". Titel und Ergebnisse stammen aus der Excel-Publikation " +
+    return '<p class="prothinweis">' + protokollFehlt(s) + (zeit ? " (" + esc(zeit) + ")" : "") +
+      ". Titel und Ergebnisse stammen aus der Excel-Publikation " +
       "der Parlamentsdienste; Debattenbelege und Einordnungen folgen, sobald das Protokoll vorliegt." +
       (s.pu ? ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite mit Traktanden und Abstimmungsergebnissen auf sh.ch &rarr;</a>' : "") + "</p>";
+  }
+
+  /* Fehlt das Protokoll für mehrere Tageshälften mit demselben Grund, steht
+     der Hinweis einmal und nennt die Hälften zusammen. */
+  function protokollHinweisTag(s) {
+    if (!s.tl || s.tl.length < 2) return protokollHinweis(s);
+    var offen = s.tl.filter(function (x) { return x.pf; });
+    if (!offen.length) return "";
+    var gleich = offen.every(function (x) { return x.pf === offen[0].pf; });
+    if (gleich && offen.length === s.tl.length) {
+      return protokollHinweis(offen[0], offen.map(function (x) { return x.z; }).join(" und "));
+    }
+    return offen.map(function (x) { return protokollHinweis(x, x.z); }).join("");
   }
 
   function protokollLink(s, text, tooltip) {
@@ -401,14 +431,18 @@
     (v.t1 || []).forEach(function (t) { chips.push('<span class="chip chip-thema">' + esc(t) + "</span>"); });
     if (!(v.t1 || []).length && v.th) chips.push('<span class="chip chip-thema">' + esc(v.th) + "</span>");
     if (opt.zeigeSitzung) chips.push('<span class="chip chip-thema">' + esc(s.dt) + "</span>");
+    if (v.hz && halbtage(s).length) chips.push('<span class="chip">' + esc(v.hz) + "</span>");
     var knapp = Math.abs(t.J - t.N);
     var knappHtml = (t.J && t.N && knapp <= 4)
       ? '<span class="knapp">knapp, ' + knapp + " Stimmen Unterschied</span>" : "";
-    var id = "v-" + s.s.replace(/[^a-z0-9]/gi, "") + "-" + v.nr;
+    // Die Kennung folgt der Tageshälfte, damit Verweise von aussen (Adresse,
+    // Abstimmungsspiegel, Matching) weiter auf die einzelne Abstimmung zeigen.
+    var tl = teilVon(s, v);
+    var id = "v-" + (v.qs || s.s).replace(/[^a-z0-9]/gi, "") + "-" + v.nr;
     return '<article class="vcard" id="' + id + '" data-sess="' + esc(s.s) + '" data-idx="' + i + '">' +
       '<header class="vhead"><span class="vnr">Nr. ' + esc(v.nr) + "</span>" + chips.join("") +
       '<span class="badge b-' + e.key + '">' + e.text + "</span></header>" +
-      '<h3 class="vtitel">' + protokollLink(s, v.t, v.tr) + "</h3>" +
+      '<h3 class="vtitel">' + protokollLink(tl, v.t, v.tr) + "</h3>" +
       (v.rf ? '<p class="vref">' + esc(v.rf) + "</p>" : "") +
       (v.kx ? '<p class="vkontext">' + esc(v.kx) +
         (v.kq ? '<span class="kq">Einordnung aus ' + esc(v.kq) + "</span>" : "") + "</p>" : "") +
@@ -460,10 +494,18 @@
   }
 
   function fussHtml(s) {
-    var quelle = s ? " (" + esc(s.q) + ")" : "";
-    var prot = s && s.pu ? (s.pf
-      ? " " + protokollFehlt(s) + '; Traktanden und Abstimmungsergebnisse auf der <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Sitzungsseite von sh.ch</a>.'
-      : ' <a href="' + esc(s.pu) + '" target="_blank" rel="noopener">Wortprotokoll</a>.') : "";
+    var teile = (s && s.tl && s.tl.length > 1) ? s.tl : (s ? [s] : []);
+    var quelle = teile.length
+      ? " (" + teile.map(function (x) {
+          return esc(x.q) + (x.z && teile.length > 1 ? ", " + esc(x.z) : "");
+        }).join("; ") + ")"
+      : "";
+    var prot = teile.filter(function (x) { return x.pu; }).map(function (x) {
+      var wo = (x.z && teile.length > 1) ? " (" + esc(x.z) + ")" : "";
+      return x.pf
+        ? " " + protokollFehlt(x) + wo + '; Traktanden und Abstimmungsergebnisse auf der <a href="' + esc(x.pu) + '" target="_blank" rel="noopener">Sitzungsseite von sh.ch</a>.'
+        : ' <a href="' + esc(x.pu) + '" target="_blank" rel="noopener">Wortprotokoll' + wo + "</a>.";
+    }).join("");
     return '<footer class="foot"><p class="foot-melden"><a href="#" data-melden>Fehler auf dieser Seite melden &rarr;</a></p>' +
       "<b>Datenquelle:</b> Kanton Schaffhausen, namentliche " +
       "Abstimmungen des Kantonsrats, Excel-Publikation der Parlamentsdienste" + quelle + "." + prot +
@@ -517,14 +559,27 @@
       [ohneGegen, "ohne Gegenstimme", "von " + s.v.length + " Abstimmungen"]
     ];
     var vorige = D.sessions.slice(1, 9);
+    var hz = halbtage(s);
+    // Der Rat tagt oft am Vormittag und am Nachmittag desselben Tages, mit
+    // getrennter Zählung. Hier steht der Tag, die Hälften stehen dazu.
+    var hzText = hz.length
+      ? " Davon " + (s.tl || []).map(function (x) {
+          return "<b>" + x.n + "</b> am " + esc(x.z.toLowerCase().indexOf("abend") === 0 ? "Abend" : x.z);
+        }).join(" und ") + "."
+      : "";
+    var streams = (s.tl || []).filter(function (x) { return x.yt; });
+    if (!streams.length && s.yt) streams = [{ z: s.z || "", yt: s.yt }];
     el.innerHTML =
       '<header class="hero"><div class="eyebrow">Zuletzt entschieden</div><h1>' + esc(s.n) + "</h1>" +
       '<p class="subline">Sitzung vom <b>' + esc(deDatum(s.dt)) + "</b>" +
-      (s.z ? " · " + esc(s.z) : "") + ". Der Rat hat <b>" + s.v.length + " Mal</b> namentlich " +
-      "abgestimmt. Alle " + s.m.length + " Ratsmitglieder und ihre Stimmen sind zu jeder Frage " +
-      "aufklappbar." + (s.yt ? ' <a href="https://www.youtube.com/watch?v=' + encodeURIComponent(s.yt) +
-        '" target="_blank" rel="noopener">Livestream der Sitzung auf YouTube</a>.' : "") + "</p>" +
-      protokollHinweis(s) + "</header>" +
+      (hz.length ? "" : (s.z ? " · " + esc(s.z) : "")) + ". Der Rat hat <b>" + s.v.length + " Mal</b> namentlich " +
+      "abgestimmt." + hzText + " Alle " + s.m.length + " Ratsmitglieder und ihre Stimmen sind zu jeder Frage " +
+      "aufklappbar." + streams.map(function (x) {
+        return ' <a href="https://www.youtube.com/watch?v=' + encodeURIComponent(x.yt) +
+          '" target="_blank" rel="noopener">Livestream' +
+          (streams.length > 1 && x.z ? " " + esc(x.z) : "") + ' auf YouTube</a>.';
+      }).join("") + "</p>" +
+      protokollHinweisTag(s) + "</header>" +
       '<div class="kzs">' + kz.map(function (k) {
         return '<div class="kz"><div class="kzn">' + k[0] + '</div><div class="kzl">' + k[1] +
           '</div><div class="kzsub">' + k[2] + "</div></div>";
@@ -640,7 +695,9 @@
       (liste.length ? nachSitzung.map(function (g) {
         return '<section class="gruppe"><div class="ghead"><div>' +
           '<span class="glabel">Sitzung</span><h3>' + esc(g.s.n) + "</h3></div>" +
-          '<span class="gcount">' + esc(g.s.dt) + (g.s.z ? " · " + esc(g.s.z) : "") + "</span></div>" +
+          '<span class="gcount">' + esc(g.s.dt) +
+            (halbtage(g.s).length ? " · " + esc(halbtage(g.s).join(" und ")) :
+              (g.s.z ? " · " + esc(g.s.z) : "")) + "</span></div>" +
           '<div class="cards">' + g.liste.map(function (x) {
             return voteCardHtml(g.s, x.v, x.i);
           }).join("") + "</div></section>";
@@ -824,7 +881,7 @@
               '<div style="font-size:13.5px;line-height:1.4">' +
               '<button type="button" class="lnk" data-goto="' + esc(g.s.s) + "|" + x.i + '">' +
               esc(x.v.t) + "</button>" +
-              (g.s.pu && !g.s.pf ? ' <a class="plink" href="' + esc(g.s.pu) + '" target="_blank" ' +
+              (teilVon(g.s, x.v).pu && !teilVon(g.s, x.v).pf ? ' <a class="plink" href="' + esc(teilVon(g.s, x.v).pu) + '" target="_blank" ' +
                 'rel="noopener" title="Wortprotokoll der Sitzung öffnen">' +
                 '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
                 '<path d="M6 3h7v7M13 3L6.5 9.5M11 9.5V13H3V5h3.5" stroke="currentColor" ' +
@@ -2797,9 +2854,20 @@ function initNetz(){
      Karte in die Mitte und kurz aufblitzen. Angesprochen entweder ueber den
      Index der Karte (interne Verweise) oder ueber die Nummer der Abstimmung
      (Sprungadresse von aussen, siehe leseAdresse). */
+  function tagVon(name) {
+    /* Nimmt den Namen eines Sitzungstags oder einer Tageshälfte. */
+    for (var i = 0; i < D.sessions.length; i++) {
+      var s = D.sessions[i];
+      if (s.s === name) return s.s;
+      if (s.ts && s.ts.indexOf(name) !== -1) return s.s;
+    }
+    return null;
+  }
+
   function springeZu(sitzung, nr, idx) {
-    if (!D.sessions.some(function (s) { return s.s === sitzung; })) return false;
-    st.scope = { typ: "sess", wert: sitzung };
+    var tag = tagVon(sitzung);
+    if (!tag) return false;
+    st.scope = { typ: "sess", wert: tag };
     st.tab = "votes";
     st.mitglied = null;
     st.suche = "";
@@ -2807,6 +2875,17 @@ function initNetz(){
     render();
     var karte = null;
     if (nr != null) karte = document.getElementById("v-" + sitzung.replace(/[^a-z0-9]/gi, "") + "-" + nr);
+    if (!karte && nr != null) {
+      // Verweis auf den Sitzungstag statt auf die Hälfte: erste passende Nummer
+      var tsess = D.sessions.filter(function (s) { return s.s === tag; })[0];
+      if (tsess) {
+        for (var k = 0; k < tsess.v.length && !karte; k++) {
+          if (String(tsess.v[k].nr) === String(nr)) {
+            karte = document.getElementById("v-" + (tsess.v[k].qs || tag).replace(/[^a-z0-9]/gi, "") + "-" + nr);
+          }
+        }
+      }
+    }
     if (!karte && idx != null) karte = $$(".vcard", $("#p-votes"))[idx];
     if (karte) {
       karte.scrollIntoView({ behavior: "smooth", block: "center" });

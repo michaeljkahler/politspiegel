@@ -331,3 +331,32 @@ Schaffhausen».
   «regelbasiert, nicht am Protokoll überprüft», was zutrifft.
 - **Stimmengleichheit.** 15 Fälle endeten unentschieden und wurden per Stichentscheid
   geklärt. Aus dem Ausgang lässt sich die Richtung nicht ableiten, hier hilft nur Lesen.
+
+---
+
+## Sitzungstag statt Tageshälfte (22. September 2026)
+
+Der Rat tagt oft am Vormittag und am Nachmittag desselben Tages. Die
+Parlamentsdienste führen jede Hälfte als eigene Sitzung mit eigener
+Abstimmungsnummerierung und liefern je Hälfte eine Datei. Im Dashboard stand
+darum unter «Zuletzt entschieden» nur der Nachmittag, der Vormittag fehlte
+stillschweigend.
+
+Seit dem 22. September 2026 bündelt `build3.py` die Hälften eines Datums zu
+einem Sitzungstag (`tage_buendeln`). Gebündelt wird allein die Ausgabe:
+
+- In `data/all_sessions.json` bleibt jede Hälfte für sich. Daran hängen die
+  Schlüssel «Sitzung #NrN» für Themen, Umkehrrichtung und Fragetexte, ebenso
+  die Serien für Social Media und den WhatsApp-Kanal.
+- Jede Abstimmung trägt ihre Hälfte bei sich: `hz` («Vormittag») für die
+  Anzeige, `qs` mit dem vollen Namen der Hälfte für die Kennung der Karte.
+  Verweise von aussen (Adresse `#s=…&nr=…`, Abstimmungsspiegel) finden ihre
+  Abstimmung darum weiterhin, mit dem Namen der Hälfte wie mit dem des Tages.
+- `tl` hält je Hälfte Datei, Wortprotokoll und Livestream, weil diese Angaben
+  sich unterscheiden. Der Fuss nennt beide Dateien, der Protokollhinweis fasst
+  gleiche Fälle zusammen.
+- Stimmketten werden aneinandergehängt; wer in einer Hälfte nicht auf der
+  Namensliste steht, gilt dort als abwesend.
+
+Die Zählung nennt seither Sitzungstage: 141 statt 205. Das betrifft die
+Auswahlliste der Legislaturen und die Kachel auf der Übersicht.
