@@ -3,7 +3,7 @@
  "slug": "2026-09-21-nachmittag",
  "n_votes": 19,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "abstimmungen": [
   {
    "nr": 1,
@@ -243,6 +243,13 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 380260144,
+    "uuid": "-2089682050876027192",
+    "termin": "2026-09-24T09:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-2089682050876027192"
    }
   },
   {
@@ -272,6 +279,13 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 380260262,
+    "uuid": "4321877417503508346",
+    "termin": "2026-09-25T12:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=4321877417503508346"
    }
   },
   {
@@ -293,6 +307,13 @@
    },
    "facebook": {
     "type": "POST"
+   },
+   "metricool": {
+    "id": 380260361,
+    "uuid": "35466528295309159",
+    "termin": "2026-09-28T12:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=35466528295309159"
    }
   },
   {
@@ -321,6 +342,13 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 380260446,
+    "uuid": "-8015417242253179972",
+    "termin": "2026-09-24T16:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8015417242253179972"
    }
   },
   {
@@ -336,6 +364,13 @@
    ],
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE"
+   },
+   "metricool": {
+    "id": 380260540,
+    "uuid": "-8013689782472654232",
+    "termin": "2026-09-24T16:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8013689782472654232"
    }
   }
  ]
