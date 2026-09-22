@@ -46,7 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
-from social import SOCIAL_CSS, social_html  # noqa: E402  Verweise auf die eigenen Konten
+from social import SOCIAL_CSS, kanal_html, social_html  # noqa: E402  Verweise auf die eigenen Konten
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 from melden import MELDEN_CSS, melden_html  # noqa: E402
 
@@ -265,17 +265,6 @@ def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
 
 # ---------------------------------------------------------------- Bausteine
 
-def kanal_html(d) -> str:
-    """Verweis auf den WhatsApp-Kanal, sobald in politspiegel.json unter
-    «whatsapp_kanal» die Kanaladresse steht (https://whatsapp.com/channel/…).
-    Der Beitragstext nach jeder Sitzung kommt aus scripts/whatsapp_text.py."""
-    u = (d.get("whatsapp_kanal") or "").strip()
-    if not u:
-        return ""
-    return (f'<p class="kanal"><a href="{e(u)}" target="_blank" rel="noopener">'
-            'Nach jeder Sitzung eine Meldung: dem WhatsApp-Kanal folgen &rarr;</a></p>')
-
-
 def kasten(k) -> str:
     zahlen = "".join(
         f'<span class="k-zahl">{e(z["wert"])}<em>{e(z["einheit"])}</em></span>'
@@ -445,7 +434,7 @@ def bauen(d, zeilen) -> str:
 <main>
 <div class="kaesten">{html_kaesten}
 </div>
-{kanal_html(d)}
+{kanal_html()}
 </main>
 
 <footer class="fuss">

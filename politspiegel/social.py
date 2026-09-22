@@ -37,7 +37,28 @@ ZEICHEN = {
     "tiktok": ('<path d="M16.1 2.6h-3.2v13.05a2.62 2.62 0 1 1-2.05-2.56v-3.24a5.83 5.83 0 1 0 5.25 5.8V8.9'
                'a6.5 6.5 0 0 0 3.9 1.27V6.95a3.34 3.34 0 0 1-2.5-1.05 3.4 3.4 0 0 1-1.4-2.6z" '
                'fill="currentColor"/>'),
+    # Sprechblase mit Hörer, wie die Wortmarke des Dienstes, einfarbig.
+    "whatsapp": ('<path d="M12 2.9a9.1 9.1 0 0 0-7.83 13.73L3 21.1l4.6-1.2A9.1 9.1 0 1 0 12 2.9z" '
+                 'fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>'
+                 '<path d="M9.1 8.1c.26-.02.53-.02.77.02.3.05.4.5.5.77l.36.98c.08.22.03.46-.12.64'
+                 'l-.4.48a.45.45 0 0 0-.07.5 6.1 6.1 0 0 0 2.87 2.62c.19.08.4.03.53-.12l.5-.56'
+                 'c.17-.19.44-.25.67-.15l1.2.5c.25.1.44.33.4.6-.06.4-.24.9-.63 1.2-.5.4-1.2.55-1.9.4'
+                 'a9 9 0 0 1-5.7-5.15c-.3-.72-.24-1.5.15-2.05.25-.35.6-.6.87-.68z" fill="currentColor"/>'),
 }
+
+
+def kanal_html(text: str = "Nach jeder Sitzung eine Meldung: dem WhatsApp-Kanal folgen",
+               klasse: str = "kanal") -> str:
+    """Verweis auf den WhatsApp-Kanal als eigener Absatz, für Seiten, die den
+    Kanal ausserhalb der Leiste nennen (Übersicht, Finanzspiegel). Die Adresse
+    steht in politspiegel.json unter «whatsapp_kanal»; fehlt sie, entfällt der
+    Absatz. Der Beitragstext nach jeder Sitzung kommt aus scripts/whatsapp.py."""
+    u = (json.loads(QUELLE.read_text(encoding="utf-8")).get("whatsapp_kanal") or "").strip()
+    if not u:
+        return ""
+    e = lambda s: html.escape(str(s), quote=True)
+    return (f'<p class="{e(klasse)}"><a href="{e(u)}" target="_blank" rel="noopener">'
+            f'{e(text)} &rarr;</a></p>')
 
 
 def social_html(ueberschrift: str = "Folgen") -> str:

@@ -4,7 +4,7 @@ Stand 22. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des 
 
 ## 1. Rahmen
 
-1. Kanäle: Instagram @politspiegel.sh, TikTok @politspiegel.sh, Facebook-Seite, YouTube (Shorts). Alle in Metricool unter der Marke «politspiegel.sh» (ID 6841058) verbunden.
+1. Kanäle: Instagram @politspiegel.sh, TikTok @politspiegel.sh, Facebook-Seite, YouTube (Shorts). Alle in Metricool unter der Marke «politspiegel.sh» (ID 6841058) verbunden. Dazu der WhatsApp-Kanal (https://whatsapp.com/channel/0029VbDT16R0LKZChkAwY01o), der von Hand bedient wird und nicht über Metricool läuft.
 2. Zuständigkeit: Claude erzeugt Bilder, Videos und Texte, legt Beiträge in Metricool als Entwurf ab. Michael gibt jede Charge frei. Nichts geht ohne Freigabe online.
 3. Kein Community-Management: Kommentare und Nachrichten werden nicht beantwortet. Rückfragen laufen über die Mailadresse im Impressum.
 4. Berührungspunkte für Michael: einmalige Einrichtung, danach ein «ja» je Charge im Chat oder in Metricool.

@@ -11,6 +11,12 @@ Stand 3. September 2026. Bilder liegen in `site/social/profil/` (nach dem Veröf
 
 Instagram und TikTok haben kein Titelbild.
 
+## 1a. WhatsApp-Kanal
+
+Adresse: https://whatsapp.com/channel/0029VbDT16R0LKZChkAwY01o
+
+Verlinkt in der Folgen-Leiste aller Seiten (politspiegel/social.py, Eintrag «whatsapp» in politspiegel.json unter social.kanaele) und als eigener Absatz auf der Übersicht und im Finanzspiegel (kanal_html, Feld «whatsapp_kanal»). Beiträge erzeugt scripts/whatsapp.py, gepostet wird von Hand.
+
 ## 2. Name
 
 Anzeigename überall: **Politspiegel Schaffhausen**

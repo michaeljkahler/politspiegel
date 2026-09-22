@@ -50,6 +50,7 @@ ROOT = HIER.parent
 sys.path.insert(0, str(ROOT / "politspiegel"))
 from impressum import IMPRESSUM_CSS, impressum_html  # noqa: E402
 from melden import MELDEN_CSS, melden_html, melden_knopf_html  # noqa: E402
+from social import kanal_html  # noqa: E402  Verweis auf den WhatsApp-Kanal
 from testphase import TESTPHASE_CSS, testphase_html  # noqa: E402
 
 e = lambda s: html.escape(str(s), quote=True)
@@ -188,6 +189,8 @@ td.plus,td.minus{color:var(--text-leise)}
 
 .fuss{margin-top:44px;padding-top:20px;border-top:1px solid var(--linie);font-size:13.5px;color:var(--text-leise);line-height:1.55}
 .fuss b{color:var(--text)} .fuss p{margin:0 0 10px}
+.fuss-kanal a{color:var(--pro-text);font-weight:600;text-decoration:none}
+.fuss-kanal a:hover{text-decoration:underline}
 .melden-inline{display:inline-flex;align-items:center;gap:6px;margin-left:10px;appearance:none;border:1px solid var(--linie);
   background:var(--karte);color:var(--text);border-radius:999px;padding:4px 11px;font-size:13px;cursor:pointer}
 .melden-inline svg{width:14px;height:14px}
@@ -812,6 +815,7 @@ Ordentliche; ausserordentliche Reservebewegungen und Fondsabschlüsse rechnet de
 Verrechnungen stehen auf beiden Seiten gleich und sind weggelassen. Die Sachgruppen folgen dem Kontenrahmen HRM2.
 Kreditrechtlich verbindlich ist die Gliederung nach Dienststelle.</p>
 <p><b>Stand</b> {e(daten["stand"])}. Aufbereitung ohne Gewähr. {melden_knopf_html("melden-inline")}</p>
+{kanal_html("Politspiegel folgen: der WhatsApp-Kanal meldet jede neue Auswertung", "fuss-kanal")}
 {impressum_html()}
 </footer>
 </div>
