@@ -1,0 +1,32 @@
+{
+ "pdf": "budget2027_vorlage.pdf",
+ "er": {
+  "konten": 2933,
+  "dienststellen": 126,
+  "fonds": 23,
+  "spalten": [
+   "budget_2027",
+   "budget_2026",
+   "rechnung_2025"
+  ],
+  "summen": 471,
+  "abweichend": 0,
+  "kommentare": 586
+ },
+ "ir": {
+  "konten": 77,
+  "vorhaben": 187,
+  "zeilen": 187,
+  "gliederung": "Konto > Vorhaben",
+  "spalten": [
+   "budget_2027_ausgaben",
+   "budget_2027_einnahmen",
+   "budget_2026_ausgaben",
+   "budget_2026_einnahmen",
+   "rechnung_2025_ausgaben",
+   "rechnung_2025_einnahmen"
+  ],
+  "summen": 252,
+  "abweichend": 0
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "pdf": "budget2026.pdf",
+ "er": {
+  "konten": 2951,
+  "dienststellen": 124,
+  "fonds": 26,
+  "spalten": [
+   "budget_2026",
+   "budget_2025",
+   "rechnung_2024"
+  ],
+  "summen": 474,
+  "abweichend": 0,
+  "kommentare": 609
+ },
+ "ir": {
+  "konten": 78,
+  "vorhaben": 188,
+  "zeilen": 188,
+  "gliederung": "Konto > Vorhaben",
+  "spalten": [
+   "budget_2026_ausgaben",
+   "budget_2026_einnahmen",
+   "budget_2025_ausgaben",
+   "budget_2025_einnahmen",
+   "rechnung_2024_ausgaben",
+   "rechnung_2024_einnahmen"
+  ],
+  "summen": 264,
+  "abweichend": 0
+ }
+}

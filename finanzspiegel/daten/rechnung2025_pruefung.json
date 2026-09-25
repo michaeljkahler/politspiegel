@@ -1,0 +1,32 @@
+{
+ "pdf": "rechnung2025.pdf",
+ "er": {
+  "konten": 3034,
+  "dienststellen": 123,
+  "fonds": 26,
+  "spalten": [
+   "rechnung_2025",
+   "budget_2025",
+   "rechnung_2024"
+  ],
+  "summen": 471,
+  "abweichend": 0,
+  "kommentare": 951
+ },
+ "ir": {
+  "konten": 160,
+  "vorhaben": 123,
+  "zeilen": 160,
+  "gliederung": "Vorhaben > Konto",
+  "spalten": [
+   "rechnung_2025_ausgaben",
+   "rechnung_2025_einnahmen",
+   "budget_2025_ausgaben",
+   "budget_2025_einnahmen",
+   "rechnung_2024_ausgaben",
+   "rechnung_2024_einnahmen"
+  ],
+  "summen": 240,
+  "abweichend": 0
+ }
+}

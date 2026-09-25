@@ -126,8 +126,9 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .soz .soz-link:hover,.soz .soz-link:focus-visible{border-color:var(--linie);background:var(--flaeche)}
 .soz-link svg{flex:none;color:var(--text-leise)}
 .soz-link:hover svg,.soz-link:focus-visible svg{color:var(--text)}
-/* Die Leiste liegt ueber dem Seitenkopf: der Kopf rueckt darunter weg. */
-.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:8px}
+/* Die Leiste liegt ueber dem Seitenkopf: der Kopf beginnt unter ihr. Unterkante der Leiste
+   60 px (Desktop), 62 px (bis 1100 px), 58 px (Telefon); dazu mindestens 14 px Abstand. */
+.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:76px}
 @media (max-width:1100px){.soz-titel{display:none}.soz .soz-link span{display:none}
   .soz .soz-link{padding:8px}.soz{padding:5px 6px;gap:2px}}
 @media (max-width:640px){.soz{top:8px;left:8px}}
@@ -288,7 +289,7 @@ body.melden-offen{overflow:hidden}
       <span class="k-marke">Budget und Rechnung</span>
       <h2>Finanzspiegel</h2>
       <p class="k-satz">Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto.</p>
-      <div class="k-zahlen"><span class="k-zahl">1&#x27;161.3 Mio.<em>Aufwand Budget 2026</em></span><span class="k-zahl">−62.1 Mio.<em>Defizit</em></span></div>
+      <div class="k-zahlen"><span class="k-zahl">1&#x27;217.8 Mio.<em>Aufwand Budget 2027 (Vorlage)</em></span><span class="k-zahl">−65.0 Mio.<em>Defizit</em></span></div>
       
       <p class="k-pfeil">ansehen &rarr;</p>
     </a>

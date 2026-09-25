@@ -1,15 +1,32 @@
 {
- "hinweis": "Bekannte PDF auf sh.ch (Finanzverwaltung, Seiten Budget und Staatsrechnung HRM2). Der Auftrag kantonsrat-dashboard-update vergleicht die Dateiliste damit; neue Titel sind ein neues Budget oder eine neue Staatsrechnung.",
+ "hinweis": "Bekannte PDF auf sh.ch (Finanzverwaltung, Seiten Budget und Staatsrechnung HRM2; Budget 2027 zuerst in der Medienmitteilung der Staatskanzlei vom 22.09.2026). Der Auftrag kantonsrat-dashboard-update vergleicht die Dateiliste damit; neue Titel sind ein neues Budget, eine beschlossene Fassung oder eine neue Staatsrechnung. Adresse einer Datei: https://sh.ch/CMS/get/file/<uuid>.",
  "seiten": {
   "budget": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Finanzdepartement/Finanzverwaltung/Budget-2288266-DE.html",
-  "staatsrechnung": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Finanzdepartement/Finanzverwaltung/Staatsrechnung-HRM2--ab-2018--2288272-DE.html"
+  "staatsrechnung": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Finanzdepartement/Finanzverwaltung/Staatsrechnung-HRM2--ab-2018--2288272-DE.html",
+  "staatskanzlei": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei-23785611-DE.html"
  },
  "verarbeitet": [
   {
+   "k": "budget2027",
+   "datei": "budget2027_vorlage.pdf",
+   "titel": "Budget 2027 inklusive Detailzahlen, Finanzplan 2027–2030",
+   "fassung": "Vorlage des Regierungsrates vom 15. September 2026",
+   "publiziert": "2026-09-22",
+   "uuid": "05e3dd14-772f-4003-950c-5d4ee14effa9",
+   "url": "https://sh.ch/CMS/get/file/05e3dd14-772f-4003-950c-5d4ee14effa9",
+   "csv": "budget2027.csv",
+   "verwendet": "Budget 2027, Finanzplan 2028–2030; Abgleich Budget 2026 und Rechnung 2025",
+   "bemerkung": "durch die beschlossene Fassung zu ersetzen, sobald der Kantonsrat entschieden hat"
+  },
+  {
+   "k": "budget2026",
    "datei": "budget2026.pdf",
-   "titel": "Budget 2026, beschlossen vom Kantonsrat am 17. November 2025",
+   "titel": "Budget 2026",
+   "fassung": "beschlossen vom Kantonsrat am 17. November 2025",
    "uuid": "e04347ba-1e5e-4fc0-bba1-ad0ea9935547",
-   "csv": "budget2026.csv"
+   "url": "https://sh.ch/CMS/get/file/e04347ba-1e5e-4fc0-bba1-ad0ea9935547",
+   "csv": "budget2026.csv",
+   "verwendet": "Budget 2026"
   },
   {
    "datei": "budget2026_vorlage.pdf",
@@ -19,10 +36,21 @@
    "bemerkung": "abgelöst durch die beschlossene Fassung"
   },
   {
+   "k": "rechnung2025",
    "datei": "rechnung2025.pdf",
    "titel": "Staatsrechnung 2025",
+   "fassung": "Staatsrechnung",
    "uuid": "b061f9be-2848-4a9f-b820-9e3a66be4e13",
-   "csv": "rechnung2025.csv"
+   "url": "https://sh.ch/CMS/get/file/b061f9be-2848-4a9f-b820-9e3a66be4e13",
+   "csv": "rechnung2025.csv",
+   "verwendet": "Rechnung 2025, Budget 2025"
+  },
+  {
+   "datei": "praesentation_budget2027.pdf",
+   "titel": "Medienpräsentation Budget 2027 und Finanzplan 2027–2030 vom 22. September 2026",
+   "uuid": "479ea3d9-7496-4ed1-a9ad-190167eb2c04",
+   "csv": null,
+   "bemerkung": "Folien der Medienkonferenz; nicht ausgelesen"
   }
  ]
 }

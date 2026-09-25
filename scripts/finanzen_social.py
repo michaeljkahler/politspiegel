@@ -2,14 +2,14 @@
 """
 Social-Media-Serie des Finanzspiegels als PNG
 =============================================
-Die Motive zeichnet die Seite selbst im Browser (Kuchen, Balkenliste, Überblick,
-finanzspiegel/bauen.py). Dieses Skript öffnet die gebaute Seite in einem
-unsichtbaren Chromium, stellt je Beitrag Jahr, Ansicht und Ebene ein wie ein
-Besucher, lässt das Motiv zeichnen und speichert die Leinwand als PNG. Ein
-Zeichenprogramm, deckungsgleich mit der Seite.
+Die Motive zeichnet die Seite selbst im Browser (Dialog «Grafik», finanzspiegel/grafik.js,
+Format Social Media 4:5). Dieses Skript öffnet die gebaute Seite in einem unsichtbaren
+Chromium, stellt je Beitrag die Ansicht über die Adresse ein (#d=b27&g=inst&p=d22, wie
+beim Teilen einer Ansicht), lässt das Motiv zeichnen und speichert die Leinwand als PNG.
+Ein Zeichenprogramm, deckungsgleich mit der Seite.
 
 Ausgabe: site/social/finanzen/<serie>/
-    01-ueberblick.png … 07-rechnung.png, posts.json (Serie mit Texten und Terminen)
+    01-ueberblick.png … 07-finanzplan.png (oder 07-rechnung.png), posts.json (Serie mit Texten und Terminen)
 
 Ausführen:
     bash scripts/browser_einrichten.sh                 # einmal je Sandbox
@@ -63,11 +63,16 @@ def zahlen(d, jahr):
     """Dieselben Summen wie die Seite: ordentlich, Ertrag positiv gedreht."""
     i = 5 + [j["k"] for j in d["jahre"]].index(jahr)
     g, dep, sg, dst = {}, {}, {}, {}
+    ek_entnahme = fipol = 0   # Entnahmen aus dem Eigenkapital (489), davon finanzpolitische Reserve (4894)
     for z in d["z"]:
         konto = z[3]
         k2 = konto[:2]
         w = z[i]
         g[k2] = g.get(k2, 0) + w
+        if konto.startswith("489"):
+            ek_entnahme -= w
+        if konto.startswith("4894"):
+            fipol -= w
         if not ORDENTLICH(k2) or not w:
             continue
         seite = konto[0]
@@ -80,7 +85,7 @@ def zahlen(d, jahr):
     ert = -sum(v for c, v in g.items() if c[0] == "4" and ORDENTLICH(c))
     ao = -(g.get("38", 0) + g.get("48", 0))
     ab = -g.get("90", 0)
-    return {"auf": auf, "ert": ert, "ord": ert - auf, "ao": ao, "ab": ab,
+    return {"auf": auf, "ert": ert, "ord": ert - auf, "ao": ao, "ab": ab, "ek_entnahme": ek_entnahme, "fipol": fipol,
             "gesamt": ert - auf + ao + ab, "dep": dep, "sg": sg, "dst": dst}
 
 
@@ -92,18 +97,25 @@ def top(d, mapping, namen, n, total):
 
 # ---------------------------------------------------------------- Motive
 
-def motive(jahr, jahrzahl, art):
-    """Je Beitrag: Dateiname, Schritte im Browser, Motiv der Leinwand."""
-    grund = [("jahrzahl", str(jahrzahl)), ("art", art)]
-    return [
-        {"datei": "01-ueberblick", "schritte": grund, "motiv": "ueberblick"},
-        {"datei": "02-aufwand-departemente", "schritte": grund + [("seite", "3"), ("gliederung", "inst")], "motiv": "kuchen"},
-        {"datei": "03-ertrag-sachgruppen", "schritte": grund + [("seite", "4"), ("gliederung", "art")], "motiv": "kuchen"},
-        {"datei": "04-aufwand-sachgruppen", "schritte": grund + [("seite", "3"), ("gliederung", "art")], "motiv": "kuchen"},
-        {"datei": "05-erziehungsdepartement", "schritte": grund + [("seite", "3"), ("gliederung", "inst"), ("suche", "Erziehungsdepartement")], "motiv": "kuchen"},
-        {"datei": "06-departement-innern", "schritte": grund + [("seite", "3"), ("gliederung", "inst"), ("suche", "Departement des Innern")], "motiv": "kuchen"},
-        {"datei": "07-rechnung", "schritte": [("jahrzahl", str(jahrzahl - 1)), ("art", "r")], "motiv": "ueberblick"},
+def motive(jahr, jahrzahl, art, rechnung=None, plan=False):
+    """Je Beitrag: Dateiname, Ansicht der Seite (Adresse nach #, wie beim Teilen einer
+    Ansicht) und Motiv der Grafik. Format immer Social Media 4:5 (1080 x 1350)."""
+    grund = f"d={jahr}&r=er&u=ord"
+    liste = [
+        {"datei": "01-ueberblick", "ansicht": grund + "&g=inst&a=A", "motiv": "ueberblick"},
+        {"datei": "02-aufwand-departemente", "ansicht": grund + "&g=inst&a=A", "motiv": "kuchen"},
+        {"datei": "03-ertrag-sachgruppen", "ansicht": grund + "&g=art&a=E", "motiv": "kuchen"},
+        {"datei": "04-aufwand-sachgruppen", "ansicht": grund + "&g=art&a=A", "motiv": "kuchen"},
+        {"datei": "05-erziehungsdepartement", "ansicht": grund + "&g=inst&a=A&p=d22", "motiv": "kuchen"},
+        {"datei": "06-departement-innern", "ansicht": grund + "&g=inst&a=A&p=d21", "motiv": "kuchen"},
     ]
+    if plan:
+        # Entwicklung 2025 bis 2030; die Seite zeigt dort als Vorgabe das Gesamtergebnis
+        liste.append({"datei": "07-finanzplan", "ansicht": grund + "&g=inst&a=A", "motiv": "entwicklung"})
+    if rechnung:
+        liste.append({"datei": ("08" if plan else "07") + "-rechnung",
+                      "ansicht": f"d={rechnung}&r=er&u=ord&g=inst&a=A", "motiv": "ueberblick"})
+    return liste
 
 
 def rendern(liste, ordner):
@@ -119,28 +131,24 @@ def rendern(liste, ordner):
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     fertig = []
     with sync_playwright() as p:
-        b = p.chromium.launch(args=["--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage"])
+        b = p.chromium.launch(args=["--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage", "--no-proxy-server"])
         pg = b.new_page(viewport={"width": 1400, "height": 1000}, color_scheme="light")
         # Schriften kommen von Google; ohne Netz faellt der Browser auf Systemschriften
         # zurueck, das Bild bleibt vollstaendig.
-        pg.goto(f"http://127.0.0.1:{port}/finanzen/index.html")
-        pg.wait_for_load_state("networkidle")
-        pg.evaluate("document.fonts.ready")
         for m in liste:
-            for feld, wert in m["schritte"]:
-                if feld == "suche":
-                    pg.fill("#sucheFeld", wert); pg.wait_for_timeout(150); pg.keyboard.press("Enter")
-                else:
-                    knopf = f'.chips button[data-feld="{feld}"][data-wert="{wert}"]'
-                    if pg.locator(knopf).count() and not pg.locator(knopf).is_disabled():
-                        pg.click(knopf)
-                pg.wait_for_timeout(120)
-            pg.click("#bildAuf"); pg.wait_for_timeout(150)
-            pg.select_option("#bildMotiv", m["motiv"]); pg.wait_for_timeout(300)
-            daten = pg.evaluate("document.querySelector('#bildCanvas').toDataURL('image/png')")
+            # Die Ansicht steht in der Adresse; neu laden, damit die Seite sie liest
+            pg.goto(f"http://127.0.0.1:{port}/finanzen/index.html#{m['ansicht']}")
+            pg.reload()
+            pg.wait_for_load_state("networkidle")
+            pg.evaluate("document.fonts.ready")
+            pg.wait_for_timeout(300)
+            pg.click("#grafikAuf"); pg.wait_for_timeout(150)
+            pg.select_option("#grafikMotiv", m["motiv"])
+            pg.select_option("#grafikFormat", "hoch"); pg.wait_for_timeout(300)
+            daten = pg.evaluate("document.querySelector('#grafikCanvas').toDataURL('image/png')")
             pfad = ordner / f"{m['datei']}.png"
             pfad.write_bytes(base64.b64decode(daten.split(",", 1)[1]))
-            pg.click("#bildZu"); pg.wait_for_timeout(100)
+            pg.keyboard.press("Escape"); pg.wait_for_timeout(100)
             fertig.append(pfad.name)
             print(f"  {pfad.name}")
         b.close()
@@ -152,7 +160,8 @@ def rendern(liste, ordner):
 
 def serie(d, jahr, start, serienname, bilder):
     jahrzahl = 2000 + int(jahr[1:])
-    titel = next(j["t"] for j in d["jahre"] if j["k"] == jahr)
+    eintrag = next(j for j in d["jahre"] if j["k"] == jahr)
+    titel = eintrag["t"] + (" (Vorlage des Regierungsrates)" if eintrag.get("vorlage") else "")
     K = zahlen(d, jahr)
     # Vergleich Budget gegen Rechnung des letzten abgeschlossenen Jahres
     rk = "r" + str(jahrzahl - 1)[2:]
@@ -173,8 +182,21 @@ def serie(d, jahr, start, serienname, bilder):
 
     t = lambda n: start + timedelta(days=n)
 
-    ao = (f" Dazu kommen {mio(K['ao'])} Mio. ausserordentlicher Ertrag, vor allem Entnahmen aus Reserven."
-          if K["ao"] > 0 else f" Davon gehen {mio(-K['ao'])} Mio. ausserordentlicher Aufwand ab." if K["ao"] < 0 else "")
+    # Vom ordentlichen Ergebnis zum Gesamtergebnis: ausserordentlich (38, 48) und Fonds im Eigenkapital (90)
+    if K["ao"] > 0:
+        herkunft = ("Entnahmen aus dem Eigenkapital" if abs(K["ao"] - K["ek_entnahme"]) < 1
+                    else "ausserordentlicher Ertrag, vor allem Entnahmen aus dem Eigenkapital" if K["ek_entnahme"] > K["ao"] / 2
+                    else "ausserordentlicher Ertrag")
+        teile = [f"{mio(K['ao'])} Mio. {herkunft}"
+                 + (f", davon {mio(K['fipol'])} Mio. aus der finanzpolitischen Reserve," if K["fipol"] >= 50_000 else "")]
+    elif K["ao"] < 0:
+        teile = [f"minus {mio(-K['ao'])} Mio. ausserordentlicher Aufwand"]
+    else:
+        teile = []
+    if abs(K["ab"]) >= 50_000:
+        teile.append(f"netto {mio(K['ab'])} Mio. aus Spezialfinanzierungen und Fonds" if K["ab"] > 0
+                     else f"netto minus {mio(-K['ab'])} Mio. an Spezialfinanzierungen und Fonds")
+    ao = f" Dazu kommen {' und '.join(teile)}." if teile else ""
     post("01-ueberblick",
          f"Neu im Politspiegel: der Finanzspiegel. Budget und Staatsrechnung des Kantons Schaffhausen, "
          f"vom Gesamtbild bis zum einzelnen Konto.\n\n{titel}:\n"
@@ -208,16 +230,34 @@ def serie(d, jahr, start, serienname, bilder):
              f"{100 * total / K['auf']:.1f} % des Aufwands des Kantons.\n\n"
              + top(d, ds, lambda k: d["dst"].get(k) or f"Dienststelle {k}", 6, total) + f"\n\n{quelle}{fuss}", tag)
 
+    plan = [p for p in d.get("plan") or [] if p["j"] > jahrzahl]
+    if plan:
+        kz = d["kz"]
+        rechnungen = [j for j in d["jahre"] if j["a"] == "r"]
+        reihe = rechnungen[-1:] + [j for j in d["jahre"] if j["a"] == "b" and rechnungen and j["j"] > rechnungen[-1]["j"]] + plan
+        name = lambda j: j["t"] + (" (Vorlage)" if j.get("vorlage") else "")
+        zeilen = "\n".join(f"{n + 1}. {name(j)}: {vz(kz[j['k']]['gesamt'])} Mio." for n, j in enumerate(reihe))
+        summe = sum(kz[j["k"]]["gesamt"] for j in [eintrag] + plan)
+        ek_von, ek_bis = kz[reihe[0]["k"]].get("ekap"), kz[plan[-1]["k"]].get("ekap")
+        ek = (f" Eigenkapital Ende {reihe[0]['j']}: {mio(ek_von)} Mio., Ende {plan[-1]['j']}: {mio(ek_bis)} Mio. Franken."
+              if ek_von and ek_bis else "")
+        post("07-finanzplan",
+             f"Finanzplan bis {plan[-1]['j']}: Gesamtergebnis der Erfolgsrechnung in Millionen Franken.\n\n{zeilen}\n\n"
+             f"Von {jahrzahl} bis {plan[-1]['j']} zusammen {vz(summe)} Mio. Franken.{ek}\n\n"
+             f"Quelle: Kanton Schaffhausen, {titel.replace(eintrag['t'], eintrag['t'] + ' und Finanzplan ' + str(jahrzahl) + '–' + str(plan[-1]['j']))}, "
+             f"Ziffern 2.1 und 2.3; Staatsrechnung {reihe[0]['j']}.{fuss}",
+             t(6))
+
     if rk in [j["k"] for j in d["jahre"]] and bk in [j["k"] for j in d["jahre"]]:
         R, B = zahlen(d, rk), zahlen(d, bk)
         tr = next(j["t"] for j in d["jahre"] if j["k"] == rk)
-        post("07-rechnung",
+        post("08-rechnung" if plan else "07-rechnung",
              f"Budget und Rechnung im Vergleich, {jahrzahl - 1}.\n\n"
              f"1. Ertrag: Budget {mio(B['ert'])} Mio., Rechnung {mio(R['ert'])} Mio. ({vz(R['ert'] - B['ert'])}).\n"
              f"2. Aufwand: Budget {mio(B['auf'])} Mio., Rechnung {mio(R['auf'])} Mio. ({vz(R['auf'] - B['auf'])}).\n"
              f"3. Gesamtergebnis: Budget {vz(B['gesamt'])} Mio., Rechnung {vz(R['gesamt'])} Mio.\n\n"
              f"Quelle: Kanton Schaffhausen, Budget {jahrzahl - 1} und {tr}, Detailzahlen der Erfolgsrechnung.{fuss}",
-             t(6))
+             t(7) if plan else t(6))
     return posts
 
 
@@ -242,7 +282,9 @@ def main():
         bilder = [p.name for p in ordner.glob("*.png")]
     else:
         print(f"Zeichne Motive für {jahr} nach {ordner.relative_to(ROOT)}")
-        bilder = rendern(motive(jahr, jahrzahl, jahr[0]), ordner)
+        rechnungen = [j["k"] for j in d["jahre"] if j["k"] == "r" + str(jahrzahl - 1)[2:]]
+        plan = any(p["j"] > jahrzahl for p in d.get("plan") or [])
+        bilder = rendern(motive(jahr, jahrzahl, jahr[0], rechnungen[0] if rechnungen else None, plan), ordner)
     posts = serie(d, jahr, start, serienname, bilder)
     alt = {}
     pj = ordner / "posts.json"

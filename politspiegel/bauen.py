@@ -218,7 +218,8 @@ def finanzzahlen() -> list[dict] | None:
     if not jahre or not d.get("z"):
         return None
     i = 5 + len(jahre) - 1
-    titel = d["jahre"][-1]["t"]
+    # Budget, das der Kantonsrat noch nicht beschlossen hat: Zusatz «Vorlage»
+    titel = d["jahre"][-1]["t"] + (" (Vorlage)" if d["jahre"][-1].get("vorlage") else "")
     auf = sum(z[i] for z in d["z"] if z[3][0] == "3" and z[3][:2] not in ("38", "39"))
     gesamt = -sum(z[i] for z in d["z"])
     mio = lambda v: f"{v / 1e6:,.1f}".replace(",", "'")

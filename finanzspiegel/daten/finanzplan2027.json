@@ -1,0 +1,1156 @@
+{
+ "quelle": "budget2027_vorlage.pdf",
+ "fassung": "Vorlage des Regierungsrates vom 15. September 2026",
+ "einheit": "1000 Franken",
+ "spalten": [
+  {
+   "art": "rechnung",
+   "jahr": 2025
+  },
+  {
+   "art": "budget",
+   "jahr": 2026
+  },
+  {
+   "art": "budget",
+   "jahr": 2027
+  },
+  {
+   "art": "finanzplan",
+   "jahr": 2028
+  },
+  {
+   "art": "finanzplan",
+   "jahr": 2029
+  },
+  {
+   "art": "finanzplan",
+   "jahr": 2030
+  }
+ ],
+ "erfolg": {
+  "E": [
+   991377,
+   995042,
+   1018711,
+   1039732,
+   1071916,
+   1102799
+  ],
+  "40": [
+   415569,
+   438732,
+   440175,
+   456375,
+   478775,
+   502275
+  ],
+  "41": [
+   35071,
+   17004,
+   30545,
+   30545,
+   30545,
+   30545
+  ],
+  "42": [
+   57259,
+   56694,
+   57696,
+   57781,
+   57842,
+   57975
+  ],
+  "43": [
+   7874,
+   438,
+   524,
+   524,
+   524,
+   524
+  ],
+  "45": [
+   0,
+   1061,
+   558,
+   1025,
+   1435,
+   1340
+  ],
+  "46": [
+   366501,
+   364913,
+   371504,
+   373763,
+   380024,
+   384951
+  ],
+  "47": [
+   109104,
+   116200,
+   117710,
+   119720,
+   122771,
+   125190
+  ],
+  "A": [
+   -1033983,
+   -1153699,
+   -1210370,
+   -1238287,
+   -1282466,
+   -1311606
+  ],
+  "30": [
+   -307126,
+   -330443,
+   -323926,
+   -329465,
+   -335523,
+   -337774
+  ],
+  "31": [
+   -89161,
+   -106995,
+   -97174,
+   -92642,
+   -92006,
+   -91451
+  ],
+  "33": [
+   -10633,
+   -13266,
+   -14289,
+   -10672,
+   -16936,
+   -18344
+  ],
+  "35": [
+   -1735,
+   -254,
+   -213,
+   -136,
+   -253,
+   -302
+  ],
+  "36": [
+   -516225,
+   -586542,
+   -657058,
+   -685653,
+   -714978,
+   -738545
+  ],
+  "37": [
+   -109104,
+   -116200,
+   -117710,
+   -119720,
+   -122771,
+   -125190
+  ],
+  "betrieb": [
+   -42607,
+   -158658,
+   -191659,
+   -198555,
+   -210550,
+   -208807
+  ],
+  "44": [
+   111323,
+   58952,
+   75069,
+   75023,
+   71633,
+   71633
+  ],
+  "34": [
+   -5121,
+   -7600,
+   -7445,
+   -6188,
+   -2644,
+   -2644
+  ],
+  "finanz": [
+   106202,
+   51352,
+   67625,
+   68836,
+   68990,
+   68990
+  ],
+  "operativ": [
+   63596,
+   -107305,
+   -124035,
+   -129720,
+   -141560,
+   -139817
+  ],
+  "48": [
+   42338,
+   41419,
+   55941,
+   72315,
+   67315,
+   78437
+  ],
+  "38": [
+   -92900,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ao": [
+   -50562,
+   41419,
+   55941,
+   72315,
+   67315,
+   78437
+  ],
+  "zwischen": [
+   13034,
+   -65886,
+   -68094,
+   -57404,
+   -74245,
+   -61380
+  ],
+  "ek_ent": [
+   4271,
+   4417,
+   4459,
+   4485,
+   4554,
+   4521
+  ],
+  "ek_ein": [
+   -2444,
+   -586,
+   -1345,
+   -1939,
+   -2085,
+   -2230
+  ],
+  "90": [
+   1827,
+   3831,
+   3114,
+   2546,
+   2469,
+   2291
+  ],
+  "gesamt": [
+   14860,
+   -62055,
+   -64979,
+   -54859,
+   -71776,
+   -59089
+  ]
+ },
+ "erfolg_namen": {
+  "E": "Ertrag",
+  "40": "Fiskalertrag",
+  "41": "Regalien und Konzessionen",
+  "42": "Entgelte",
+  "43": "Verschiedene Erträge",
+  "45": "Entnahmen aus Spezialfinanzierungen und Fonds Fremdkapital",
+  "46": "Transferertrag",
+  "47": "Durchlaufende Beiträge",
+  "A": "Aufwand",
+  "30": "Personalaufwand",
+  "31": "Sachaufwand",
+  "33": "Abschreibungen",
+  "35": "Einlagen in Spezialfinanzierungen und Fonds Fremdkapital",
+  "36": "Transferaufwand",
+  "37": "Durchlaufende Beiträge",
+  "betrieb": "Ergebnis aus betrieblicher Tätigkeit",
+  "44": "Finanzertrag",
+  "34": "Finanzaufwand",
+  "finanz": "Ergebnis aus Finanzierung",
+  "operativ": "Operatives Ergebnis",
+  "48": "Ausserordentlicher Ertrag",
+  "38": "Ausserordentlicher Aufwand",
+  "ao": "Ausserordentliches Ergebnis",
+  "zwischen": "Zwischenergebnis operativ und ausserordentlich",
+  "ek_ent": "Entnahmen aus Spezialfinanzierungen und Fonds Eigenkapital",
+  "ek_ein": "Einlagen in Spezialfinanzierungen und Fonds Eigenkapital",
+  "90": "Netto Einlagen und Entnahmen Spezialfinanzierungen und Fonds Eigenkapital",
+  "gesamt": "Gesamtergebnis"
+ },
+ "invest": {
+  "netto": [
+   21938,
+   160647,
+   110135,
+   68774,
+   33469,
+   33759
+  ],
+  "ausgaben": [
+   39925,
+   184729,
+   123505,
+   81724,
+   47464,
+   45574
+  ],
+  "einnahmen": [
+   17987,
+   24082,
+   13370,
+   12950,
+   13995,
+   11815
+  ]
+ },
+ "bilanz": {
+  "fluessig": [
+   233165,
+   183362,
+   179424,
+   152923,
+   92829,
+   23119
+  ],
+  "finanzanlagen": [
+   311297,
+   311297,
+   181297,
+   101297,
+   86297,
+   86297
+  ],
+  "uebriges_fv": [
+   679322,
+   537322,
+   537322,
+   537322,
+   537322,
+   537322
+  ],
+  "fv": [
+   1223785,
+   1031981,
+   898043,
+   791543,
+   716448,
+   646738
+  ],
+  "sachanlagen": [
+   117770,
+   173757,
+   244617,
+   285058,
+   291898,
+   290206
+  ],
+  "beteiligungen": [
+   151972,
+   151972,
+   153972,
+   153972,
+   153972,
+   153972
+  ],
+  "investitionsbeitraege": [
+   50834,
+   127166,
+   135837,
+   145651,
+   150524,
+   163449
+  ],
+  "uebriges_vv": [
+   19977,
+   27154,
+   32595,
+   34931,
+   33570,
+   30493
+  ],
+  "vv": [
+   340553,
+   480050,
+   567021,
+   619613,
+   629965,
+   638120
+  ],
+  "aktiven": [
+   1564337,
+   1512031,
+   1465064,
+   1411155,
+   1346413,
+   1284858
+  ],
+  "lang_fv": [
+   41400,
+   41400,
+   41400,
+   41400,
+   41400,
+   41400
+  ],
+  "uebriges_fk": [
+   657651,
+   700644,
+   777699,
+   853510,
+   930328,
+   970207
+  ],
+  "fk": [
+   699051,
+   742044,
+   819099,
+   894910,
+   971728,
+   1011607
+  ],
+  "sf_ek": [
+   68562,
+   68318,
+   69201,
+   70652,
+   72179,
+   73885
+  ],
+  "fonds_ek": [
+   23462,
+   19876,
+   15879,
+   11882,
+   7885,
+   3889
+  ],
+  "vorfinanzierungen": [
+   3210,
+   3021,
+   2832,
+   2643,
+   2454,
+   2265
+  ],
+  "reserven": [
+   331846,
+   303746,
+   249118,
+   176991,
+   109865,
+   70000
+  ],
+  "aufwertung": [
+   2236,
+   1112,
+   0,
+   0,
+   0,
+   0
+  ],
+  "neubewertung": [
+   92678,
+   92678,
+   92678,
+   92678,
+   92678,
+   92678
+  ],
+  "bilanzueberschuss": [
+   343293,
+   281238,
+   216258,
+   161400,
+   89624,
+   30535
+  ],
+  "ek": [
+   865286,
+   769988,
+   645965,
+   516245,
+   374685,
+   273252
+  ],
+  "passiven": [
+   1564337,
+   1512031,
+   1465064,
+   1411155,
+   1346413,
+   1284858
+  ]
+ },
+ "bilanz_namen": {
+  "fluessig": "Flüssige Mittel und kurzfristige Geldanlagen",
+  "finanzanlagen": "Finanzanlagen",
+  "uebriges_fv": "Übriges Finanzvermögen",
+  "fv": "Total Finanzvermögen",
+  "sachanlagen": "Sachanlagen Verwaltungsvermögen",
+  "beteiligungen": "Beteiligungen, Grundkapitalien",
+  "investitionsbeitraege": "Investitionsbeiträge",
+  "uebriges_vv": "Übriges Verwaltungsvermögen",
+  "vv": "Total Verwaltungsvermögen",
+  "aktiven": "Total Aktiven",
+  "lang_fv": "Langfristige Finanzverbindlichkeiten",
+  "uebriges_fk": "Übriges Fremdkapital",
+  "fk": "Total Fremdkapital",
+  "sf_ek": "Spezialfinanzierungen im Eigenkapital",
+  "fonds_ek": "Fonds im Eigenkapital",
+  "vorfinanzierungen": "Vorfinanzierungen",
+  "reserven": "Finanzpolitische Reserven",
+  "aufwertung": "Aufwertungsreserve",
+  "neubewertung": "Neubewertungsreserve Finanzvermögen",
+  "bilanzueberschuss": "Bilanzüberschuss/-fehlbetrag",
+  "ek": "Total Eigenkapital",
+  "passiven": "Total Passiven"
+ },
+ "nettoschuld1": [
+  -524734,
+  -289938,
+  -78944,
+  103367,
+  255280,
+  364868
+ ],
+ "kennzahlen": {
+  "Nettoverschuldungsquotient": [
+   -126.3,
+   -20.2,
+   -17.9,
+   22.6,
+   53.3,
+   72.6
+  ],
+  "Selbstfinanzierungsgrad": [
+   348.2,
+   -54.1,
+   -91.9,
+   -166.3,
+   -357.4,
+   -341.4
+  ],
+  "Zinsbelastungsanteil": [
+   -0.2,
+   -0.2,
+   -0.2,
+   -0.2,
+   -0.2,
+   -0.2
+  ],
+  "Reales Bruttoinlandsprodukt": [
+   1.5,
+   0.9,
+   1.6,
+   2.0,
+   1.9,
+   1.8
+  ],
+  "Generelle Teuerung": [
+   0.2,
+   0.6,
+   0.6,
+   0.7,
+   0.9,
+   1.0
+  ],
+  "Saron": [
+   0.1,
+   0.0,
+   0.2,
+   0.4,
+   0.8,
+   1.0
+  ]
+ },
+ "steuerfuss": {
+  "np": [
+   79,
+   76,
+   76,
+   76,
+   76,
+   76
+  ],
+  "jp": [
+   98,
+   98,
+   98,
+   98,
+   98,
+   98
+  ]
+ },
+ "departemente": {
+  "gesamt": [
+   14860,
+   -62055,
+   -64979
+  ],
+  "10": [
+   -1801,
+   -2275,
+   -2246
+  ],
+  "20": [
+   -6103,
+   -6467,
+   -6217
+  ],
+  "21": [
+   -360027,
+   -298784,
+   -306134
+  ],
+  "22": [
+   -171105,
+   -184819,
+   -183634
+  ],
+  "23": [
+   -36066,
+   -57283,
+   -57440
+  ],
+  "24": [
+   -24289,
+   -26689,
+   -29208
+  ],
+  "25": [
+   624915,
+   527199,
+   533641
+  ],
+  "30": [
+   -10663,
+   -12939,
+   -13742
+  ]
+ },
+ "funktionen": {
+  "0": [
+   -49771,
+   -73467,
+   -73408
+  ],
+  "1": [
+   -54064,
+   -57114,
+   -57581
+  ],
+  "2": [
+   -165493,
+   -178950,
+   -177547
+  ],
+  "3": [
+   -7121,
+   -7260,
+   -7203
+  ],
+  "4": [
+   -237037,
+   -164540,
+   -173119
+  ],
+  "5": [
+   -114917,
+   -122744,
+   -121903
+  ],
+  "6": [
+   -30340,
+   -32213,
+   -34512
+  ],
+  "7": [
+   -2619,
+   -5398,
+   -4992
+  ],
+  "8": [
+   -13511,
+   -16754,
+   -17371
+  ],
+  "9": [
+   689733,
+   596384,
+   602654
+  ],
+  "total": [
+   14860,
+   -62055,
+   -64979
+  ]
+ },
+ "funktionen_namen": {
+  "0": "Allgemeine Verwaltung",
+  "1": "Öffentliche Ordnung und Sicherheit, Verteidigung",
+  "2": "Bildung",
+  "3": "Kultur, Sport und Freizeit, Kirche",
+  "4": "Gesundheit",
+  "5": "Soziale Sicherheit",
+  "6": "Verkehr und Nachrichtenübermittlung",
+  "7": "Umweltschutz und Raumordnung",
+  "8": "Volkswirtschaft",
+  "9": "Finanzen und Steuern"
+ },
+ "invest_dep": {
+  "10": [
+   0,
+   0,
+   0
+  ],
+  "20": [
+   120,
+   92,
+   0
+  ],
+  "21": [
+   2159,
+   74076,
+   7939
+  ],
+  "22": [
+   679,
+   6006,
+   6120
+  ],
+  "23": [
+   14422,
+   66040,
+   78640
+  ],
+  "24": [
+   1975,
+   5593,
+   7313
+  ],
+  "25": [
+   2250,
+   7499,
+   9480
+  ],
+  "30": [
+   333,
+   1340,
+   643
+  ],
+  "total": [
+   21938,
+   160647,
+   110135
+  ]
+ },
+ "sachanlagen": {
+  "50": [
+   20292,
+   74517,
+   84000
+  ],
+  "500": [
+   772,
+   450,
+   0
+  ],
+  "501": [
+   6064,
+   12765,
+   10340
+  ],
+  "502": [
+   11,
+   1000,
+   600
+  ],
+  "504": [
+   11665,
+   53708,
+   65180
+  ],
+  "506": [
+   1781,
+   5994,
+   7030
+  ],
+  "509": [
+   0,
+   600,
+   850
+  ]
+ },
+ "vk_5310": [
+  "IPR0021",
+  "IPR0050",
+  "IPR0064",
+  "IPR0065",
+  "IPR0066",
+  "IPR0066-1",
+  "IPR0105",
+  "IPR0112",
+  "IPR0164",
+  "IPR0166",
+  "IPR0178",
+  "IPR0179",
+  "IPR0190",
+  "IPR0191",
+  "IPR0191-1",
+  "IPR0192",
+  "IPR0202",
+  "IPR0207",
+  "IPR0215",
+  "IPR0218",
+  "IPR0222",
+  "IPR0224",
+  "IPR0227",
+  "IPR0232",
+  "IPR0233",
+  "IPR0236",
+  "IPR0237",
+  "IPR0238",
+  "IPR0239",
+  "IPR0243",
+  "IPR0243-1",
+  "IPR0244",
+  "IPR0244-1",
+  "IPR0245",
+  "IPR0246",
+  "IPR0248",
+  "IPR0249",
+  "IPR0252",
+  "IPR0257",
+  "IPR0259",
+  "IPR0261",
+  "IPR0262",
+  "IPR0263",
+  "IPR0264",
+  "IPR0265",
+  "IPR0266",
+  "IPR0268",
+  "IPR0269-1",
+  "IPR0271",
+  "IPR0272",
+  "IPR0273",
+  "IPR0275",
+  "IPR0276",
+  "IPR0278",
+  "IPR0279",
+  "IPR0282",
+  "IPR0283",
+  "IPR0284",
+  "IPR0285",
+  "IPR0286",
+  "IPR0287",
+  "IPR0288",
+  "IPR0289",
+  "IPR0290",
+  "IPR0291",
+  "IPR0292",
+  "IPR0293",
+  "IPR0294",
+  "IPR0295",
+  "IPR0296",
+  "IPR0298",
+  "IPR0300",
+  "IPR0302",
+  "IPR0302-1",
+  "IPR0302-2",
+  "IPR0305",
+  "IPR0306",
+  "IPR0307",
+  "IPR0308",
+  "IPR0309",
+  "IPR0310",
+  "IPR0311",
+  "IPR0312",
+  "IPR0314",
+  "IPR0315",
+  "IPR0316",
+  "IPR0317",
+  "IPR0318",
+  "IPR0319",
+  "IPR0320",
+  "IPR0321",
+  "IPR0322",
+  "IPR0323",
+  "IPR0324",
+  "IPR0325",
+  "IPR0326",
+  "IPR0327",
+  "IPR0328",
+  "ITP5000",
+  "ITP5008",
+  "ITP5011",
+  "ITP5011-1",
+  "ITP5011-2",
+  "ITP5011-3",
+  "ITP5012",
+  "ITP5014",
+  "ITP5014-1",
+  "ITP5016",
+  "ITP5017",
+  "ITP5018",
+  "ITP5019",
+  "ITP5019-1",
+  "ITP5019-2",
+  "ITP5020",
+  "ITP5021",
+  "ITP5024",
+  "ITP5025",
+  "ITP5026",
+  "ITP5027",
+  "ITP5027-1",
+  "ITP5028",
+  "ITP5029",
+  "ITP5030",
+  "ITP5032",
+  "ITP5033",
+  "ITP5034",
+  "ITP5035",
+  "ITP5036",
+  "ITP5037",
+  "ITP5039"
+ ],
+ "felder": [
+  {
+   "nr": 1,
+   "name": "Volkswirtschaft",
+   "ertrag": [
+    49934,
+    49894,
+    49629,
+    49329
+   ],
+   "aufwand": [
+    64937,
+    64709,
+    65156,
+    65133
+   ],
+   "netto": [
+    15003,
+    14814,
+    15526,
+    15804
+   ],
+   "kumuliert": 61148
+  },
+  {
+   "nr": 2,
+   "name": "Energie und Verkehr",
+   "ertrag": [
+    54037,
+    51158,
+    51882,
+    51908
+   ],
+   "aufwand": [
+    90916,
+    87279,
+    88435,
+    88868
+   ],
+   "netto": [
+    36879,
+    36121,
+    36553,
+    36960
+   ],
+   "kumuliert": 146514
+  },
+  {
+   "nr": 3,
+   "name": "Finanzen und Steuern",
+   "ertrag": [
+    764747,
+    798985,
+    817323,
+    856745
+   ],
+   "aufwand": [
+    162093,
+    176826,
+    193324,
+    208124
+   ],
+   "netto": [
+    -602654,
+    -622160,
+    -623999,
+    -648621
+   ],
+   "kumuliert": -2497433
+  },
+  {
+   "nr": 4,
+   "name": "Bildung",
+   "ertrag": [
+    91123,
+    91092,
+    93790,
+    93790
+   ],
+   "aufwand": [
+    268670,
+    273449,
+    278925,
+    280680
+   ],
+   "netto": [
+    177547,
+    182357,
+    185135,
+    186890
+   ],
+   "kumuliert": 731928
+  },
+  {
+   "nr": 5,
+   "name": "Gesundheit",
+   "ertrag": [
+    5974,
+    5982,
+    5946,
+    5955
+   ],
+   "aufwand": [
+    179093,
+    183001,
+    189354,
+    193375
+   ],
+   "netto": [
+    173119,
+    177019,
+    183408,
+    187420
+   ],
+   "kumuliert": 720964
+  },
+  {
+   "nr": 6,
+   "name": "Soziale Sicherheit",
+   "ertrag": [
+    148253,
+    151818,
+    154724,
+    157518
+   ],
+   "aufwand": [
+    270156,
+    277190,
+    281017,
+    286684
+   ],
+   "netto": [
+    121903,
+    125371,
+    126293,
+    129166
+   ],
+   "kumuliert": 502734
+  },
+  {
+   "nr": 7,
+   "name": "Gesellschaft, Kultur und Freizeit",
+   "ertrag": [
+    7252,
+    7234,
+    7002,
+    7002
+   ],
+   "aufwand": [
+    14455,
+    14251,
+    13987,
+    14125
+   ],
+   "netto": [
+    7203,
+    7017,
+    6985,
+    7123
+   ],
+   "kumuliert": 28329
+  },
+  {
+   "nr": 8,
+   "name": "Öffentliche Ordnung und Sicherheit",
+   "ertrag": [
+    59859,
+    60392,
+    61077,
+    61062
+   ],
+   "aufwand": [
+    117439,
+    117770,
+    120793,
+    121075
+   ],
+   "netto": [
+    57581,
+    57378,
+    59716,
+    60013
+   ],
+   "kumuliert": 234688
+  },
+  {
+   "nr": 9,
+   "name": "Siedlungsentwicklung und Umwelt",
+   "ertrag": [
+    9368,
+    9079,
+    8504,
+    8504
+   ],
+   "aufwand": [
+    14360,
+    13784,
+    12727,
+    12754
+   ],
+   "netto": [
+    4992,
+    4704,
+    4222,
+    4250
+   ],
+   "kumuliert": 18168
+  },
+  {
+   "nr": 10,
+   "name": "Verwaltung, Strukturen und Aussenbeziehungen",
+   "ertrag": [
+    10360,
+    10002,
+    9657,
+    10124
+   ],
+   "aufwand": [
+    83767,
+    82239,
+    87593,
+    90207
+   ],
+   "netto": [
+    73408,
+    72237,
+    77936,
+    80083
+   ],
+   "kumuliert": 303663
+  }
+ ],
+ "pruefung": []
+}
