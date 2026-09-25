@@ -4,6 +4,13 @@ Stand 3. September 2026, nachgeführt.
 
 ---
 
+## Erledigt am 25. September 2026
+
+- **Testphase beendet**: `"testphase": false` in `politspiegel/politspiegel.json`,
+  alle Seiten neu gebaut, das Eckband ist auf keiner Seite mehr. Der Platz
+  dafür unten in der Seitenleiste des Kantonsratsspiegels gilt nur noch,
+  solange das Band gezeigt wird (`scripts/assets/dashboard.css`).
+
 ## Erledigt am 4. September 2026, Rückmeldungen der Tester
 
 - **Testphase** wieder eingeschaltet: Eckband auf allen Seiten, Schalter

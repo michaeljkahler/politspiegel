@@ -270,11 +270,12 @@ Fuss einbinden; der Kantonsratsspiegel führt dieselben Angaben in seinem Fuss.
 
 ### Testphase
 
-`politspiegel.json` trägt `"testphase": true`. Solange das so steht, zeigt
-jede Seite (Übersicht, Abstimmungsliste, Abstimmungsseiten, Kantonsratsspiegel)
-ein rotes Eckband «Testphase»; `politspiegel/testphase.py` liefert HTML und
-CSS, die Ecke ist je Seite gewählt, damit das Band keinen Knopf verdeckt.
-Zum Abschalten den Wert auf `false` setzen und alle Seiten neu bauen.
+Steht in `politspiegel.json` `"testphase": true`, zeigt jede Seite
+(Übersicht, Abstimmungsliste, Abstimmungsseiten, Kantonsratsspiegel,
+Finanzspiegel) ein rotes Eckband «Testphase»; `politspiegel/testphase.py`
+liefert HTML und CSS, die Ecke ist je Seite gewählt, damit das Band keinen
+Knopf verdeckt. Seit dem 25. September 2026 steht der Wert auf `false`, das
+Band ist aus. Nach jedem Umschalten alle Seiten neu bauen.
 
 ### Fehler melden
 

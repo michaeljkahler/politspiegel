@@ -10,7 +10,7 @@
   "satz": "Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto."
  },
  "ausblenden": [],
- "testphase": true,
+ "testphase": false,
  "melden": {
   "schluessel": "4a7966d4-e592-41a0-a21e-e915889056a1"
  },
