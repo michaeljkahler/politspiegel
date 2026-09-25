@@ -70,8 +70,7 @@ a{color:inherit}
 /* Testphasen-Band oben rechts: der Termin rueckt darunter weg (politspiegel/testphase.py). */
 .testphase ~ .wrap .kopf .ober{padding-right:150px}
 @media (max-width:640px){.testphase ~ .wrap .kopf .ober{padding-right:0}}
-/* Telefon: die Kopfzeile rueckt unter die Social-Media-Leiste oben links (politspiegel/social.py). */
-@media (max-width:640px){.soz ~ .wrap .kopf .ober{padding-top:56px}}
+/* Abstand unter der Social-Media-Leiste oben links: SOCIAL_CSS in politspiegel/social.py. */
 .marke-seite{font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--text-leise);
   font-family:Archivo,sans-serif;font-weight:600}
 .marke-seite .heim{display:inline-flex;align-items:center;gap:5px;color:inherit;text-decoration:none;
@@ -602,8 +601,9 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 .soz .soz-link:hover,.soz .soz-link:focus-visible{border-color:var(--linie);background:var(--flaeche)}
 .soz-link svg{flex:none;color:var(--text-leise)}
 .soz-link:hover svg,.soz-link:focus-visible svg{color:var(--text)}
-/* Die Leiste liegt ueber dem Seitenkopf: der Kopf rueckt darunter weg. */
-.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:8px}
+/* Die Leiste liegt ueber dem Seitenkopf: der Kopf beginnt unter ihr. Unterkante der Leiste
+   60 px (Desktop), 62 px (bis 1100 px), 58 px (Telefon); dazu mindestens 14 px Abstand. */
+.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:76px}
 @media (max-width:1100px){.soz-titel{display:none}.soz .soz-link span{display:none}
   .soz .soz-link{padding:8px}.soz{padding:5px 6px;gap:2px}}
 @media (max-width:640px){.soz{top:8px;left:8px}}

@@ -1008,8 +1008,7 @@ a{color:inherit}
 /* Testphasen-Band oben rechts: der Termin rueckt darunter weg (politspiegel/testphase.py). */
 .testphase ~ .wrap .kopf .ober{padding-right:150px}
 @media (max-width:640px){.testphase ~ .wrap .kopf .ober{padding-right:0}}
-/* Telefon: die Kopfzeile rueckt unter die Social-Media-Leiste oben links (politspiegel/social.py). */
-@media (max-width:640px){.soz ~ .wrap .kopf .ober{padding-top:56px}}
+/* Abstand unter der Social-Media-Leiste oben links: SOCIAL_CSS in politspiegel/social.py. */
 .marke-seite{font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--text-leise);
   font-family:Archivo,sans-serif;font-weight:600}
 .marke-seite .heim{display:inline-flex;align-items:center;gap:5px;color:inherit;text-decoration:none;

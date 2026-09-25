@@ -92,8 +92,9 @@ SOCIAL_CSS = """
 .soz .soz-link:hover,.soz .soz-link:focus-visible{border-color:var(--linie);background:var(--flaeche)}
 .soz-link svg{flex:none;color:var(--text-leise)}
 .soz-link:hover svg,.soz-link:focus-visible svg{color:var(--text)}
-/* Die Leiste liegt ueber dem Seitenkopf: der Kopf rueckt darunter weg. */
-.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:8px}
+/* Die Leiste liegt ueber dem Seitenkopf: der Kopf beginnt unter ihr. Unterkante der Leiste
+   60 px (Desktop), 62 px (bis 1100 px), 58 px (Telefon); dazu mindestens 14 px Abstand. */
+.soz ~ .rahmen .kopf,.soz ~ .wrap .kopf{padding-top:76px}
 @media (max-width:1100px){.soz-titel{display:none}.soz .soz-link span{display:none}
   .soz .soz-link{padding:8px}.soz{padding:5px 6px;gap:2px}}
 @media (max-width:640px){.soz{top:8px;left:8px}}
