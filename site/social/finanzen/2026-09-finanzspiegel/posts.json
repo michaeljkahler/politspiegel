@@ -2,7 +2,7 @@
  "serie": "2026-09-finanzspiegel",
  "jahr": "b26",
  "start": "2026-09-28",
- "status": "entwuerfe_angelegt",
+ "status": "ersetzt",
  "bilder": [
   "01-ueberblick.png",
   "02-aufwand-departemente.png",
@@ -175,5 +175,5 @@
    }
   }
  ],
- "hinweis": "Sieben Entwürfe in Metricool, 28.9. bis 4.10.2026, je 09:00, Instagram und Facebook. Freigabe durch Michael. Bilder und Texte am 7.9. auf die beschlossene Fassung des Budgets 2026 umgestellt. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
+ "hinweis": "Am 25.9.2026 ersetzt durch die Serie 2026-09-budget2027 (Budget 2027, Vorlage des Regierungsrates). Die sieben Metricool-Entwürfe vom 28.9. bis 4.10.2026 tragen seither deren Bilder und Texte; die ids unten sind die der Serie zum Budget 2026 und nicht mehr gültig."
 }

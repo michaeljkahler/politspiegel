@@ -1,0 +1,143 @@
+{
+ "serie": "2026-09-budget2027",
+ "jahr": "b27",
+ "start": "2026-09-28",
+ "status": "entwurf",
+ "bilder": [
+  "01-ueberblick.png",
+  "05-erziehungsdepartement.png",
+  "03-ertrag-sachgruppen.png",
+  "06-departement-innern.png",
+  "02-aufwand-departemente.png",
+  "04-aufwand-sachgruppen.png",
+  "07-finanzplan.png"
+ ],
+ "posts": [
+  {
+   "art": "bild",
+   "termin": "2026-09-28T09:00",
+   "text": "Neu im Politspiegel: der Finanzspiegel. Budget und Staatsrechnung des Kantons Schaffhausen, vom Gesamtbild bis zum einzelnen Konto.\n\nBudget 2027 (Vorlage des Regierungsrates):\n1. Ordentlicher Ertrag 1'093.8 Mio. Franken.\n2. Ordentlicher Aufwand 1'217.8 Mio. Franken.\n3. Ordentliches Ergebnis −124.0 Mio. Dazu kommen 55.9 Mio. Entnahmen aus dem Eigenkapital, davon 54.6 Mio. aus der finanzpolitischen Reserve, und netto 3.1 Mio. aus Spezialfinanzierungen und Fonds. Gesamtergebnis −65.0 Mio. Franken.\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/01-ueberblick.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-09-29T09:00",
+   "text": "Wohin das Geld geht: Aufwand nach Departement, Budget 2027 (Vorlage des Regierungsrates), total 1'217.8 Mio. Franken.\n\n1. Departement des Innern: 449.9 Mio. (36.9 %)\n2. Erziehungsdepartement: 285.3 Mio. (23.4 %)\n3. Finanzdepartement: 226.0 Mio. (18.6 %)\n4. Baudepartement: 115.1 Mio. (9.4 %)\n5. Volkswirtschaftsdepartement: 111.6 Mio. (9.2 %)\n6. Gerichte: 20.5 Mio. (1.7 %)\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/02-aufwand-departemente.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-09-30T09:00",
+   "text": "Woher das Geld kommt: Ertrag nach Art, Budget 2027 (Vorlage des Regierungsrates), total 1'093.8 Mio. Franken.\n\n1. Fiskalertrag: 440.2 Mio. (40.2 %)\n2. Transferertrag: 371.5 Mio. (34.0 %)\n3. Durchlaufende Beiträge: 117.7 Mio. (10.8 %)\n4. Finanzertrag: 75.1 Mio. (6.9 %)\n5. Entgelte: 57.7 Mio. (5.3 %)\n6. Regalien und Konzessionen: 30.5 Mio. (2.8 %)\n\nFiskalertrag sind Steuern, Transferertrag Anteile an Bundessteuern, Finanzausgleich und Beiträge von Bund und Gemeinden.\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/03-ertrag-sachgruppen.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-01T09:00",
+   "text": "Wohin das Geld geht: Aufwand nach Art, Budget 2027 (Vorlage des Regierungsrates), total 1'217.8 Mio. Franken.\n\n1. Transferaufwand: 657.1 Mio. (54.0 %)\n2. Personalaufwand: 323.9 Mio. (26.6 %)\n3. Durchlaufende Beiträge: 117.7 Mio. (9.7 %)\n4. Sach- und übriger Betriebsaufwand: 97.2 Mio. (8.0 %)\n5. Abschreibungen Verwaltungsvermögen: 14.3 Mio. (1.2 %)\n6. Finanzaufwand: 7.4 Mio. (0.6 %)\n\nTransferaufwand sind Beiträge an Spitäler, Gemeinden, Hochschulen, Prämienverbilligung und Sozialversicherungen.\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/04-aufwand-sachgruppen.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-02T09:00",
+   "text": "Erziehungsdepartement, Aufwand nach Dienststelle, Budget 2027 (Vorlage des Regierungsrates), total 285.3 Mio. Franken, 23.4 % des Aufwands des Kantons.\n\n1. Primarschulen: 59.5 Mio. (20.8 %)\n2. Sonderschulung: 38.8 Mio. (13.6 %)\n3. Sekundarstufe I: 34.4 Mio. (12.1 %)\n4. Beiträge Hochschulen, Fachhochschulen, Gymnasien, Weiterbildung: 29.7 Mio. (10.4 %)\n5. Berufsbildungszentrum: 22.4 Mio. (7.9 %)\n6. Berufsbildung: 20.7 Mio. (7.3 %)\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/05-erziehungsdepartement.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-03T09:00",
+   "text": "Departement des Innern, Aufwand nach Dienststelle, Budget 2027 (Vorlage des Regierungsrates), total 449.9 Mio. Franken, 36.9 % des Aufwands des Kantons.\n\n1. Spitalversorgung: 127.4 Mio. (28.3 %)\n2. Beiträge Krankenversicherung: 87.1 Mio. (19.4 %)\n3. Ergänzungsleistungen: 57.3 Mio. (12.7 %)\n4. Fonds und Spezialfinanzierungen: 41.1 Mio. (9.1 %)\n5. Soziale Einrichtungen: 38.8 Mio. (8.6 %)\n6. Heime und Pflege: 33.6 Mio. (7.5 %)\n\nQuelle: Kanton Schaffhausen, Budget 2027 (Vorlage des Regierungsrates), Detailzahlen der Erfolgsrechnung. Ordentlicher Aufwand und Ertrag.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/06-departement-innern.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "bild",
+   "termin": "2026-10-04T09:00",
+   "text": "Finanzplan bis 2030: Gesamtergebnis der Erfolgsrechnung in Millionen Franken.\n\n1. Rechnung 2025: +14.9 Mio.\n2. Budget 2026: −62.1 Mio.\n3. Budget 2027 (Vorlage): −65.0 Mio.\n4. Finanzplan 2028: −54.9 Mio.\n5. Finanzplan 2029: −71.8 Mio.\n6. Finanzplan 2030: −59.1 Mio.\n\nVon 2027 bis 2030 zusammen −250.7 Mio. Franken. Eigenkapital Ende 2025: 865.3 Mio., Ende 2030: 273.3 Mio. Franken.\n\nQuelle: Kanton Schaffhausen, Budget 2027 und Finanzplan 2027–2030 (Vorlage des Regierungsrates), Ziffern 2.1 und 2.3; Staatsrechnung 2025.\n\nAlle Zahlen, jeder Klick eine Stufe tiefer: https://michaeljkahler.github.io/politspiegel/finanzen/\n\n#Schaffhausen #Kantonsfinanzen #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/finanzen/2026-09-budget2027/07-finanzplan.png"
+   ],
+   "providers": [
+    "instagram",
+    "facebook"
+   ],
+   "instagram": {
+    "type": "POST"
+   },
+   "facebook": {
+    "type": "POST"
+   }
+  }
+ ]
+}
