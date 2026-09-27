@@ -418,6 +418,21 @@
    "gegen_note": "Nein bedeutet Zustimmung Antrag B. Looser"
   },
   {
+   "schluessel": "14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr9",
+   "sitzung": "14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag)",
+   "nr": 9,
+   "titel": "Antrag F. Brenn",
+   "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
+   "inverted_note": "",
+   "gegen_note": "",
+   "ja_ist_zustimmung": false,
+   "geprüft": true,
+   "herkunft": "stimmbild",
+   "begruendung": "Im Abstimmungsprotokoll fehlt bei dieser Abstimmung der Vermerk «Ja bedeutet …». Die Antragstellerin Franziska Brenn stimmte Nein, ihre Fraktion SP-JUSO-Grüne geschlossen Nein (0 : 17); SVP-EDU, FDP-Die Mitte und GLP-EVP stimmten geschlossen Ja. 58 von 60 Einzelstimmen decken sich mit Abstimmung 8, bei der Ja die Zustimmung zum Antrag der SPK bedeutet. Ein Ja stützte also die Kommissionsfassung, der Antrag Brenn wurde mit 17 : 39 Stimmen abgelehnt. Nach Erscheinen des Wortprotokolls gegenprüfen, dann herkunft auf «manuell» setzen und die Protokollstelle als Beleg eintragen.",
+   "protokoll_status": "stimmbild",
+   "protokoll_beleg": ""
+  },
+  {
    "schluessel": "13. Sitzung 2026 · 07.09.2026 (Vormittag) #Nr3",
    "sitzung": "13. Sitzung 2026 · 07.09.2026 (Vormittag)",
    "nr": 3,

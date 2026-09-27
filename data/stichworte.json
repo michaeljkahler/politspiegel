@@ -1,0 +1,36 @@
+{
+  "hinweis": "Stichworte je Abstimmung für Deckblatt, Karte und Bildtext (scripts/social.py). Geschrieben aus dem Antragstext mit Streichungen und Einfügungen (data/antragstexte.json): was der Antrag will, ohne Wertung, eine Zeile, höchstens rund 55 Zeichen. Der Antragsteller, der Artikel und das Ergebnis stehen nicht hier, die setzt social.py. Ungültige Abstimmungen bekommen kein Stichwort. Fehlt ein Eintrag, zeigt social.py den Titel aus dem Protokoll.",
+  "sitzungen": {
+    "2026-09-21-nachmittag": {
+      "1": "Betreuung Inhaftierter nicht an private Sicherheitsfirmen",
+      "2": "Grundrechte: Neufassung und Bindung an die Rechtsordnung",
+      "3": "Polizeizwang: Rücksichtnahme und Diskriminierungsverbot",
+      "4": "Kinder, umfassend Verbeiständete: Vertretung informieren",
+      "5": "Beizug eines Rechtsbeistands jederzeit und uneingeschränkt",
+      "6": "Polizeiliches Handeln muss auch zumutbar sein",
+      "7": "Verbot anlassunabhängiger und diskriminierender Kontrollen",
+      "8": "Erkennungsdienstliche Daten «umgehend» löschen",
+      "9": "Erhobene Daten löschen beziehungsweise vernichten",
+      "10": "Verdeckte Fahndung: «hinreichende» Anhaltspunkte",
+      "11": "Verdeckte Vorermittlung: «hinreichende» Anhaltspunkte",
+      "12": "Biometrische Erkennung, auch Gesichtserkennung, verbieten",
+      "13": "Vermisste: Daten erbitten statt verlangen",
+      "14": "Durchsuchung: «konkrete Anhaltspunkte» statt «Verdacht»",
+      "15": "Schusswaffe: Warnpflicht nur bei Einsatz gegen Personen",
+      "17": "Gesetzliche Grundlage für Fachstelle Radikalisierung",
+      "18": "Häusliche Gewalt: Schutzpflicht, Viererteams als Regel",
+      "19": "Häusliche Gewalt, Nachstellung: Verbot 21 statt 14 Tage"
+    },
+    "2026-09-21-vormittag": {
+      "1": "Prävention namentlich im jugendpolizeilichen Bereich",
+      "2": "Uniformierte tragen immer Namensschild oder Dienstnummer",
+      "3": "Polizeikommission: drei Ratsmitglieder auf Ratsvorschlag",
+      "4": "Polizeikommission: Ratsmitglieder vom Kantonsrat gewählt",
+      "5": "Polizeikommandant in der Kommission mit Antragsrecht",
+      "6": "Verbandsmitglieder: «mit beratender Stimme» streichen",
+      "7": "Verbandsmitglieder in der Kommission mit Antragsrecht",
+      "8": "Aufgaben der Polizeikommission: auch Einsatzgrundsätze",
+      "9": "Polizeikommission: Begleitung, Anträge an Regierungsrat"
+    }
+  }
+}

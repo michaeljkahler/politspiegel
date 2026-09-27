@@ -907,10 +907,17 @@ def main():
         # Handentscheide haben Vorrang vor allem anderen.
         if schluessel in handentscheide:
             h = handentscheide[schluessel]
-            r.update(ja_ist_zustimmung=h["ja_ist_zustimmung"], herkunft="manuell",
+            # «manuell»: am Wortprotokoll entschieden. «stimmbild»: von Hand nach
+            # dem Stimmbild entschieden, weil das Wortprotokoll noch fehlt.
+            herkunft = h.get("herkunft", "manuell")
+            r.update(ja_ist_zustimmung=h["ja_ist_zustimmung"], herkunft=herkunft,
                      geprüft=True, begruendung=h["begruendung"],
-                     protokoll_status="manuell", protokoll_beleg=h.get("beleg", ""))
+                     protokoll_status=herkunft, protokoll_beleg=h.get("beleg", ""))
             zahlen["manuell"] += 1
+            if herkunft == "stimmbild" and sess_protokolle.get(r["sitzung"]):
+                print(f"GEGENPRÜFEN: {schluessel} ist nach dem Stimmbild entschieden, "
+                      "das Wortprotokoll liegt jetzt vor. Entscheid in "
+                      "data/umkehr_manuell.json am Protokoll prüfen und belegen.")
             continue
 
         regel_wert, regel_grund, entschieden, staerke = klassiere(

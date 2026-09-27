@@ -4,10 +4,13 @@
  "n_votes": 19,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
  "status": "entwurf_in_metricool",
+ "kontingent": 6,
+ "neu_erzeugt": "2026-09-27",
  "abstimmungen": [
   {
    "nr": 1,
    "titel": "Antrag B. Looser: Anpassung Art. 18 Abs. 1a",
+   "stichwort": "Betreuung Inhaftierter nicht an private Sicherheitsfirmen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 39,
@@ -19,6 +22,7 @@
   {
    "nr": 2,
    "titel": "Antrag M. Freivogel: Anpassung Art. 20 Abs. 1",
+   "stichwort": "Grundrechte: Neufassung und Bindung an die Rechtsordnung",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 35,
@@ -30,6 +34,7 @@
   {
    "nr": 3,
    "titel": "Antrag M. Freivogel: Ersatz Art. 20 Abs. 2 (neu)",
+   "stichwort": "Polizeizwang: Rücksichtnahme und Diskriminierungsverbot",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 38,
@@ -41,6 +46,7 @@
   {
    "nr": 4,
    "titel": "Antrag B. Looser: Anpassung Art. 20 Abs. 3",
+   "stichwort": "Kinder, umfassend Verbeiständete: Vertretung informieren",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -52,6 +58,7 @@
   {
    "nr": 5,
    "titel": "Antrag R. Müller: Schaffung Art. 20 Abs. 4 (neu)",
+   "stichwort": "Beizug eines Rechtsbeistands jederzeit und uneingeschränkt",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -63,6 +70,7 @@
   {
    "nr": 6,
    "titel": "Antrag M. Freivogel: Anpassung Art. 21 Abs. 1",
+   "stichwort": "Polizeiliches Handeln muss auch zumutbar sein",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 31,
@@ -74,6 +82,7 @@
   {
    "nr": 7,
    "titel": "Antrag I. Lüthi: Ergänzung Art. 26 Abs. 1",
+   "stichwort": "Verbot anlassunabhängiger und diskriminierender Kontrollen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -85,6 +94,7 @@
   {
    "nr": 8,
    "titel": "Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2",
+   "stichwort": "Erkennungsdienstliche Daten «umgehend» löschen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 36,
@@ -96,6 +106,7 @@
   {
    "nr": 9,
    "titel": "Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2",
+   "stichwort": "Erhobene Daten löschen beziehungsweise vernichten",
    "ergebnis": "Angenommen",
    "c": {
     "ja": 7,
@@ -107,6 +118,7 @@
   {
    "nr": 10,
    "titel": "Antrag M. Schlatter: Rückkehr auf Vorlage RR",
+   "stichwort": "Verdeckte Fahndung: «hinreichende» Anhaltspunkte",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 35,
@@ -118,6 +130,7 @@
   {
    "nr": 11,
    "titel": "Antrag M. Schlatter: Rückkehr auf Vorlage RR",
+   "stichwort": "Verdeckte Vorermittlung: «hinreichende» Anhaltspunkte",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -129,6 +142,7 @@
   {
    "nr": 12,
    "titel": "Antrag M. Freivogel: Schaffung Art. 39 Abs. 3 (neu)",
+   "stichwort": "Biometrische Erkennung, auch Gesichtserkennung, verbieten",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 38,
@@ -140,6 +154,7 @@
   {
    "nr": 13,
    "titel": "Antrag M. Freivogel: Anpassung Art. 41 Abs. 4",
+   "stichwort": "Vermisste: Daten erbitten statt verlangen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 39,
@@ -151,6 +166,7 @@
   {
    "nr": 14,
    "titel": "Antrag M. Freivogel: Anpassung Art. 48 Abs. 1 lit. c",
+   "stichwort": "Durchsuchung: «konkrete Anhaltspunkte» statt «Verdacht»",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -162,6 +178,7 @@
   {
    "nr": 15,
    "titel": "Antrag M. Passafaro: Ergänzung Art. 58 Abs. 3",
+   "stichwort": "Schusswaffe: Warnpflicht nur bei Einsatz gegen Personen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 43,
@@ -173,7 +190,8 @@
   {
    "nr": 16,
    "titel": "Ungültige Abstimmung",
-   "ergebnis": "Abgelehnt",
+   "stichwort": null,
+   "ergebnis": "Ungültig",
    "c": {
     "ja": 15,
     "nein": 22,
@@ -184,6 +202,7 @@
   {
    "nr": 17,
    "titel": "Antrag B. Looser: Konsultativabstimmung",
+   "stichwort": "Gesetzliche Grundlage für Fachstelle Radikalisierung",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 40,
@@ -195,6 +214,7 @@
   {
    "nr": 18,
    "titel": "Antrag B. Looser: Schaffung Art. 69 Abs. 5 (neu)",
+   "stichwort": "Häusliche Gewalt: Schutzpflicht, Viererteams als Regel",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -206,6 +226,7 @@
   {
    "nr": 19,
    "titel": "Antrag P. Portmann: Anpassung Art. 69 Abs. 2",
+   "stichwort": "Häusliche Gewalt, Nachstellung: Verbot 21 statt 14 Tage",
    "ergebnis": "Angenommen",
    "c": {
     "ja": 4,
@@ -221,7 +242,7 @@
    "teil": 1,
    "teile": 3,
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 1 von 3.\n\n1. Antrag B. Looser: Anpassung Art. 18 Abs. 1a: Abgelehnt (Ja 39, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n2. Antrag M. Freivogel: Anpassung Art. 20 Abs. 1: Abgelehnt (Ja 35, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n3. Antrag M. Freivogel: Ersatz Art. 20 Abs. 2 (neu): Abgelehnt (Ja 38, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n4. Antrag B. Looser: Anpassung Art. 20 Abs. 3: Abgelehnt (Ja 37, Nein 14). Ja bedeutet Zustimmung Antrag SPK.\n5. Antrag R. Müller: Schaffung Art. 20 Abs. 4 (neu): Abgelehnt (Ja 37, Nein 15). Ja bedeutet Zustimmung Antrag SPK.\n6. Antrag M. Freivogel: Anpassung Art. 21 Abs. 1: Abgelehnt (Ja 31, Nein 23). Ja bedeutet Zustimmung Antrag SPK.\n7. Antrag I. Lüthi: Ergänzung Art. 26 Abs. 1: Abgelehnt (Ja 37, Nein 14, Enthaltung 3). Ja bedeutet Zustimmung Antrag SPK.\n8. Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2: Abgelehnt (Ja 36, Nein 17). Ja bedeutet Zustimmung Antrag SPK.\n9. Antrag M. Freivogel: Ergänzung Art. 27 Abs. 2: Angenommen (Ja 7, Nein 38, Enthaltung 4). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Teil 1 von 3.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n1. Betreuung Inhaftierter nicht an private Sicherheitsfirmen (B. Looser, SP · Art. 18): Abgelehnt\n2. Grundrechte: Neufassung und Bindung an die Rechtsordnung (M. Freivogel, SP · Art. 20): Abgelehnt\n3. Polizeizwang: Rücksichtnahme und Diskriminierungsverbot (M. Freivogel, SP · Art. 20): Abgelehnt\n4. Kinder, umfassend Verbeiständete: Vertretung informieren (B. Looser, SP · Art. 20): Abgelehnt\n5. Beizug eines Rechtsbeistands jederzeit und uneingeschränkt (R. Müller, Grüne · Art. 20): Abgelehnt\n6. Polizeiliches Handeln muss auch zumutbar sein (M. Freivogel, SP · Art. 21): Abgelehnt\n7. Verbot anlassunabhängiger und diskriminierender Kontrollen (I. Lüthi, SP · Art. 26): Abgelehnt\n8. Erkennungsdienstliche Daten «umgehend» löschen (M. Freivogel, SP · Art. 27): Abgelehnt\n9. Erhobene Daten löschen beziehungsweise vernichten (M. Freivogel, SP · Art. 27, 36, 38, 38a, 38b): Angenommen\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-00.png",
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-01.png",
@@ -235,19 +256,15 @@
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-09.png"
    ],
    "providers": [
-    "instagram",
-    "facebook"
+    "instagram"
    ],
    "instagram": {
     "type": "POST"
    },
-   "facebook": {
-    "type": "POST"
-   },
    "metricool": {
-    "id": 380260144,
+    "id": 382919859,
     "uuid": "-2089682050876027192",
-    "termin": "2026-09-24T09:00",
+    "termin": "2026-10-02T09:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-2089682050876027192"
    }
@@ -257,7 +274,7 @@
    "teil": 2,
    "teile": 3,
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 2 von 3.\n\n10. Antrag M. Schlatter: Rückkehr auf Vorlage RR: Abgelehnt (Ja 35, Nein 16, Enthaltung 2). Ja bedeutet Zustimmung Antrag SPK.\n11. Antrag M. Schlatter: Rückkehr auf Vorlage RR: Abgelehnt (Ja 37, Nein 15, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n12. Antrag M. Freivogel: Schaffung Art. 39 Abs. 3 (neu): Abgelehnt (Ja 38, Nein 16, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n13. Antrag M. Freivogel: Anpassung Art. 41 Abs. 4: Abgelehnt (Ja 39, Nein 12, Enthaltung 2). Ja bedeutet Zustimmung Antrag SPK.\n14. Antrag M. Freivogel: Anpassung Art. 48 Abs. 1 lit. c: Abgelehnt (Ja 37, Nein 14, Enthaltung 1). Ja bedeutet Zustimmung Antrag SPK.\n15. Antrag M. Passafaro: Ergänzung Art. 58 Abs. 3: Abgelehnt (Ja 43, Nein 3, Enthaltung 8). Ja bedeutet Zustimmung Antrag SPK.\n16. Ungültige Abstimmung: Totalrevision Polizeigesetz: Abgelehnt (Ja 15, Nein 22, Enthaltung 1)\n17. Antrag B. Looser: Konsultativabstimmung: Abgelehnt (Ja 40, Nein 16). Ja bedeutet Zustimmung Antrag SPK.\n18. Antrag B. Looser: Schaffung Art. 69 Abs. 5 (neu): Abgelehnt (Ja 37, Nein 17). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Teil 2 von 3.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n10. Verdeckte Fahndung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 37 · Fassung Regierungsrat): Abgelehnt\n11. Verdeckte Vorermittlung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 38 · Fassung Regierungsrat): Abgelehnt\n12. Biometrische Erkennung, auch Gesichtserkennung, verbieten (M. Freivogel, SP · Art. 39): Abgelehnt\n13. Vermisste: Daten erbitten statt verlangen (M. Freivogel, SP · Art. 41): Abgelehnt\n14. Durchsuchung: «konkrete Anhaltspunkte» statt «Verdacht» (M. Freivogel, SP · Art. 48): Abgelehnt\n15. Schusswaffe: Warnpflicht nur bei Einsatz gegen Personen (M. Passafaro, SP · Art. 58): Abgelehnt\n16. Ungültige Abstimmung: Ungültig\n17. Gesetzliche Grundlage für Fachstelle Radikalisierung (B. Looser, SP · Konsultativabstimmung): Abgelehnt\n18. Häusliche Gewalt: Schutzpflicht, Viererteams als Regel (B. Looser, SP · Art. 69): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-10.png",
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-11.png",
@@ -271,19 +288,15 @@
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-19.png"
    ],
    "providers": [
-    "instagram",
-    "facebook"
+    "instagram"
    ],
    "instagram": {
     "type": "POST"
    },
-   "facebook": {
-    "type": "POST"
-   },
    "metricool": {
-    "id": 380260262,
+    "id": 382920017,
     "uuid": "4321877417503508346",
-    "termin": "2026-09-25T12:00",
+    "termin": "2026-10-03T09:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=4321877417503508346"
    }
@@ -293,25 +306,21 @@
    "teil": 3,
    "teile": 3,
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: 19 namentliche Abstimmungen. Teil 3 von 3.\n\n19. Antrag P. Portmann: Anpassung Art. 69 Abs. 2: Angenommen (Ja 4, Nein 47, Enthaltung 4). Ja bedeutet Zustimmung Antrag SPK.\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Teil 3 von 3.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n19. Häusliche Gewalt, Nachstellung: Verbot 21 statt 14 Tage (P. Portmann, SP · Art. 69, 71): Angenommen\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-20.png",
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-21.png"
    ],
    "providers": [
-    "instagram",
-    "facebook"
+    "instagram"
    ],
    "instagram": {
     "type": "POST"
    },
-   "facebook": {
-    "type": "POST"
-   },
    "metricool": {
-    "id": 380260361,
+    "id": 382920038,
     "uuid": "35466528295309159",
-    "termin": "2026-09-28T12:00",
+    "termin": "2026-10-03T16:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=35466528295309159"
    }
@@ -319,42 +328,49 @@
   {
    "art": "reel",
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 19 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/reel.mp4"
    ],
    "dauer_s": 82.5,
    "providers": [
-    "instagram",
-    "facebook",
-    "youtube"
+    "instagram"
    ],
    "instagram": {
     "type": "REEL",
     "showReelOnFeed": true
    },
-   "facebook": {
-    "type": "REEL"
-   },
-   "youtube": {
-    "type": "short",
-    "title": "Kantonsrat Schaffhausen, 21. September 2026: 19 Abstimmungen",
-    "privacy": "public",
-    "madeForKids": false,
-    "category": "NEWS_POLITICS"
-   },
    "metricool": {
-    "id": 380260446,
+    "id": 382919888,
     "uuid": "-8015417242253179972",
-    "termin": "2026-09-24T16:00",
+    "termin": "2026-10-02T16:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8015417242253179972"
    }
   },
   {
    "art": "reel",
+   "netz": "youtube",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, SP, FDP, GLP, Grüne, Die Mitte, EVP, EDU, JSVP, JUSO, Junge Grüne\nMedien: Schaffhauser Nachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, Schaffhauser Fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 82.5,
+   "providers": [
+    "youtube"
+   ],
+   "youtube": {
+    "type": "short",
+    "title": "Kantonsrat Schaffhausen, 21. September 2026: Totalrevision Polizeigesetz",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
    "netz": "tiktok",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 19 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP @sp.schaffhausen FDP GLP GRÜNE Die Mitte EVP EDU @jsvp.sh @juso.schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, @sp.schaffhausen, FDP, GLP, Grüne, Die Mitte, EVP, EDU, @jsvp.sh, @juso.schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, @schaffhauserfernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/reel.mp4"
    ],
@@ -366,12 +382,13 @@
     "privacyOption": "PUBLIC_TO_EVERYONE"
    },
    "metricool": {
-    "id": 380260540,
+    "id": 382919919,
     "uuid": "-8013689782472654232",
-    "termin": "2026-09-24T16:00",
+    "termin": "2026-10-02T16:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8013689782472654232"
    }
   }
- ]
+ ],
+ "hinweis": "Am 27.9.2026 umgestellt: Facebook entfernt, Termine in den Oktober verschoben (Septemberkontingent von Metricool seit 10.9. aufgebraucht). Entwürfe warten auf Freigabe durch Michael. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
 }

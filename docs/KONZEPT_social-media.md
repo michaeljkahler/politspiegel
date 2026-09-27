@@ -1,22 +1,42 @@
 # Social Media: Konzept und Ablauf
 
-Stand 22. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des Politspiegels sowie den WhatsApp-Kanal.
+Stand 27. September 2026. Gilt für Instagram, TikTok und YouTube des Politspiegels sowie den WhatsApp-Kanal. Facebook wird seit 27. September 2026 nicht mehr bespielt.
 
 ## 1. Rahmen
 
-1. Kanäle: Instagram @politspiegel.sh, TikTok @politspiegel.sh, Facebook-Seite, YouTube (Shorts). Alle in Metricool unter der Marke «politspiegel.sh» (ID 6841058) verbunden. Dazu der WhatsApp-Kanal (https://whatsapp.com/channel/0029VbDT16R0LKZChkAwY01o), der von Hand bedient wird und nicht über Metricool läuft.
+1. Kanäle: Instagram @politspiegel.sh, TikTok @politspiegel.sh, YouTube (Shorts). Alle in Metricool unter der Marke «politspiegel.sh» (ID 6841058) verbunden. Die Facebook-Seite bleibt verbunden, bekommt aber seit 27. September 2026 keine Beiträge mehr; Facebook verlangt seit 7. September 2026 zudem eine Identitätsbestätigung der Seite, seither ist dort nichts erschienen. Dazu der WhatsApp-Kanal (https://whatsapp.com/channel/0029VbDT16R0LKZChkAwY01o), der von Hand bedient wird und nicht über Metricool läuft.
 2. Zuständigkeit: Claude erzeugt Bilder, Videos und Texte, legt Beiträge in Metricool als Entwurf ab. Michael gibt jede Charge frei. Nichts geht ohne Freigabe online.
 3. Kein Community-Management: Kommentare und Nachrichten werden nicht beantwortet. Rückfragen laufen über die Mailadresse im Impressum.
 4. Berührungspunkte für Michael: einmalige Einrichtung, danach ein «ja» je Charge im Chat oder in Metricool.
+
+## 1a. Kontingent in Metricool
+
+Metricool läuft im Gratisplan (Entscheid vom 27. September 2026). Grundlage: Metricool-Hilfe, «Main differences between Free and paid plans».
+
+1. Höchstens 20 Veröffentlichungen je Kalendermonat. Der Zähler beginnt am 1. des Monats neu.
+2. Gezählt wird je Netz: ein Reel auf Instagram, YouTube und TikTok zählt 3, ein Karussell auf Instagram 1. Entwürfe zählen erst, wenn sie erscheinen.
+3. Was über die Grenze geht, lehnt Metricool mit «You have reached your Metricool account limit» ab. Im September 2026 griff die Sperre am 10. September nach 20 Beiträgen mit zusammen 30 Netzveröffentlichungen. Ab dem 11. September ist nichts mehr erschienen, auch nicht die zweite Welle Verkehrsfluss. Geplant wird trotzdem je Netz, wie es die Hilfe festlegt.
+4. Planbar sind 17 Veröffentlichungen je Monat. 3 bleiben Reserve für Unvorhergesehenes und werden nur auf Anweisung von Michael belegt.
+5. Kein Posten von Hand: alle Beiträge mit autoPublish: true. Was nicht ins Kontingent passt, entfällt oder geht in den Folgemonat.
+6. Zählung vor jedem Anlegen und vor jeder Freigabe: getScheduledPosts für den Kalendermonat des Termins, Netze aller Beiträge mit Status PUBLISHED oder PENDING zusammenzählen, Entwürfe eingeschlossen. Neue Beiträge nur bis zur Summe 17. Die Skripte schreiben die Zahl ihrer Charge als `kontingent` in `posts.json`.
+7. Vorrang, wenn nicht alles Platz hat:
+   1. Kantonsrat: Reel auf Instagram, YouTube und TikTok, 3 je Sitzungshalbtag.
+   2. Abstimmungsspiegel vor kantonalen Abstimmungen, Reels vor Bildern.
+   3. Kantonsrat: Karussell Teil 1 auf Instagram.
+   4. Weitere Karussell-Teile.
+   5. Serien wie der Finanzspiegel.
+8. Nicht angelegte Beiträge erhalten in `posts.json` den Status `zurueckgestellt` mit Monat oder `entfallen`.
 
 ## 2. Textregeln
 
 1. Nummerierte Listen statt Fliesstext.
 2. Nur prüfbare Fakten. Keine Wertung, keine Zuspitzung, keine Adjektive wie «überraschend» oder «knapp».
-3. Ergebnisse heissen «Angenommen» oder «Abgelehnt», wie im Dashboard. Bei Umkehrabstimmungen steht «Ja bedeutet: …» dabei.
+3. Ergebnisse heissen «Angenommen» oder «Abgelehnt», wie im Dashboard; eine Abstimmung, die das Protokoll als ungültig führt, heisst «Ungültig». Stimmenzahlen und «Ja bedeutet: …» stehen auf der Karte, nicht auf dem Deckblatt und nicht im Bildtext.
 4. Jeder Beitrag nennt die Quelle (sh.ch) und die Adresse der Seite.
 5. Höchstens drei Hashtags: #Schaffhausen #Kantonsrat #Politspiegel, beim Abstimmungsspiegel zusätzlich der Name der Vorlage.
 6. Keine Verweise auf interne Dokumente.
+7. Kantonsrats-Beiträge erwähnen alle Parteien im Rat (`data/parteien_social.json`) und alle Medien (`data/medien_social.json`, geprüft am 27. September 2026). Instagram und TikTok mit @, wo das Netz ein Konto kennt, sonst der Name; YouTube nur Namen, weil die Handles von Instagram und TikTok dort auf fremde Kanäle zeigen könnten. Instagram nimmt höchstens 20 @-Erwähnungen je Bildtext; `social.py` warnt, wenn es mehr werden.
+8. Stichworte je Abstimmung (Entscheid vom 27. September 2026): eine Zeile, höchstens rund 55 Zeichen, sagt, was der Antrag will, ohne Wertung. Grundlage ist der Antragstext mit Streichungen und Einfügungen (`data/antragstexte.json`). Artikelnummern bleiben, Antragsteller mit Initiale, Nachname und Partei («B. Looser (SP)»), keine ausgeschriebenen Vornamen.
 
 ## 3. Formate
 
@@ -24,9 +44,11 @@ Stand 22. September 2026. Gilt für Instagram, TikTok, Facebook und YouTube des 
 
 Erzeugt `scripts/social.py`, Ausgabe in `site/social/kantonsrat/<datum>/`.
 
-1. Karussell (Instagram, Facebook; nicht TikTok, dort nur Videos, Entscheid vom 6. September 2026, weil TikTok über Metricool keine PNG-Fotos annimmt), 1080 × 1350: Deckblatt mit nummerierter Liste aller Abstimmungen und Ergebnis, dann je Abstimmung eine Karte mit Titel, Geschäft, Ergebnis, Gesamtbalken, Fraktionsbalken. Höchstens zehn Bilder je Beitrag, bei mehr Abstimmungen Teil 1 und Teil 2.
-2. Reel (Instagram Reel, TikTok, Facebook Reel, YouTube Short), 1080 × 1920: dieselben Karten als Diashow, 3,5 s Deckblatt, 4 s je Abstimmung, 3 s Schlussbild mit Adresse. Mit selbst erzeugter Tonspur (scripts/ton.py). Bei 14 Abstimmungen rund 60 s.
-3. Bildtext: Sitzung, Datum, nummerierte Liste mit Ergebnis und Stimmenzahl, Adresse, Quelle, Hashtags.
+1. Karussell (nur Instagram; nicht TikTok, dort nur Videos, Entscheid vom 6. September 2026, weil TikTok über Metricool keine PNG-Fotos annimmt), 1080 × 1350. Höchstens zehn Bilder je Beitrag, bei mehr Abstimmungen Teil 1, Teil 2 usw.
+   1. Deckblatt (Entscheid vom 27. September 2026): je Geschäft ein Kasten mit dem Namen des Geschäfts, bei Anträgen aus dem Rat mit der Angabe, zu welcher Fassung sie gestellt sind. Darunter je Abstimmung zwei Zeilen: Stichworte zum Inhalt; Ergebnis, Antragsteller, Artikel. Keine Stimmenzahlen.
+   2. Karte je Abstimmung: Geschäft und Artikel, Stichworte als Titel, Antragsteller (bei einer Ausmehrung beide Anträge), Ergebnis mit Stimmenzahlen, Antragstext mit Streichungen (durchgestrichen) und Einfügungen (markiert), Bedeutung von Ja und Nein, Gesamtbalken, Fraktionsbalken. Passt der Antragstext nicht, kürzt `social.py` zuerst unveränderte Sätze, dann unveränderte Wörter fern der Änderung; die Änderung selbst bleibt immer sichtbar.
+2. Reel (Instagram Reel, TikTok, YouTube Short), 1080 × 1920: Deckblatt mit einer Zeile je Abstimmung ohne Namen (Nummer im Kreis in der Ergebnisfarbe, Stichworte), dann die Karten als Diashow, 3,5 s Deckblatt, 4 s je Abstimmung, 3 s Schlussbild mit Adresse. Mit selbst erzeugter Tonspur (scripts/ton.py). Je Netz ein eigener Beitrag, weil die Erwähnungen je Netz verschieden sind; das Kontingent zählt ohnehin je Netz.
+3. Bildtext: Sitzung, Datum, Geschäft, nummerierte Liste mit Stichworten, Antragsteller, Artikel und Ergebnis, Adresse, Quelle, Parteien und Medien, Hashtags.
 
 ### 3.2 Abstimmungsspiegel, vier Wochen vor dem Abstimmungssonntag
 
@@ -39,6 +61,8 @@ Serie je kantonale Vorlage, Bilder aus `abstimmungsspiegel/bausteine/teilen.py` 
 5. Letzte Woche: Erinnerung mit Termin und Adresse.
 
 Rhythmus nach dem 6. September 2026 verdichtet: Alle Beiträge einer Vorlage laufen in einer Woche (zwei je Tag, 09:00 und 16:00), in der Woche darauf werden sie ein zweites Mal ausgespielt, weil viele brieflich abstimmen und Reels nur kurz sichtbar sind. Die Erinnerung bleibt am Freitag vor dem Abstimmungssonntag.
+
+Seit 27. September 2026 begrenzt das Kontingent (Abschnitt 1a) den Umfang: keine zweite Ausspielung, je Serie nur so viele Beiträge, wie im Monat Platz haben, Reels vor Bildern.
 
 Noch offen: die Motive aus teilen.py werden im Browser gezeichnet. Für Metricool braucht es PNG-Dateien mit öffentlicher Adresse. Umsetzung als eigener Schritt (Rendering nach dem Muster von social.py).
 
@@ -59,10 +83,10 @@ Erzeugt `scripts/whatsapp.py`, Ausgabe in `Whatsappkanal/<slug>/` (nicht im Repo
 
 ## 4. Ablauf je Charge
 
-1. `python3 scripts/social.py` erzeugt Bilder, Video und `posts.json` für die neueste Sitzung.
+1. `python3 scripts/antragstexte.py --neueste 4` liest Streichungen und Einfügungen der neuen Sitzungen aus den Excel-Dateien. Claude schreibt danach je Abstimmung ein Stichwort in `data/stichworte.json` (Regeln in Abschnitt 2, Punkt 8, und im Hinweis der Datei). Dann erzeugt `python3 scripts/social.py` Bilder, Video und `posts.json` für die neueste Sitzung; Abstimmungen ohne Stichwort meldet das Skript, dort steht der Titel aus dem Protokoll.
 2. Commit und Push nach GitHub, damit die Dateien unter `https://michaeljkahler.github.io/politspiegel/social/…` öffentlich sind. Ein bis zwei Minuten warten.
-3. Claude legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true). Sendezeiten fest: 09:00, ein zweiter Beitrag am selben Tag 16:00 (Vorgabe vom 4. September 2026). Kantonsrat: Karussell Teil 1 um 09:00, Reel um 16:00, weitere Teile am Folgetag 09:00.
-4. Michael prüft in Metricool oder im Chat und gibt frei. Claude setzt draft auf false.
+3. Claude zählt das Kontingent des Monats (Abschnitt 1a) und legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true), soweit es reicht, in der Reihenfolge des Vorrangs. Sendezeiten fest: 09:00, ein zweiter Beitrag am selben Tag 16:00 (Vorgabe vom 4. September 2026). Kantonsrat: Karussell Teil 1 um 09:00, Reel um 16:00, weitere Teile am Folgetag 09:00.
+4. Michael prüft in Metricool oder im Chat und gibt frei. Claude zählt das Kontingent nochmals und setzt draft auf false.
 5. `posts.json` wird auf `status: freigegeben` gesetzt, damit nichts doppelt angelegt wird.
 
 Im wiederkehrenden Auftrag `kantonsrat-dashboard-update` (1. und 15. jedes Monats) läuft Schritt 1 bis 3 als Teil E, sobald eine neue Sitzung im Datenbestand ist.
@@ -72,4 +96,4 @@ Im wiederkehrenden Auftrag `kantonsrat-dashboard-update` (1. und 15. jedes Monat
 1. Bilder mit Pillow, Schriften Archivo und Public Sans (OFL) in `scripts/assets/fonts/`.
 2. Video mit ffmpeg, H.264, 30 fps, yuv420p, Tonspur aus scripts/ton.py; Datenreels aus scripts/datenreel.py.
 3. Farben und Typografie nach `docs/DESIGN_entscheide.md`.
-4. Metricool-Grenzen: Instagram höchstens 10 Bilder je Karussell und 2200 Zeichen Text; TikTok braucht Bild oder Video; YouTube braucht Titel und Kinder-Kennzeichnung.
+4. Metricool-Grenzen: Instagram höchstens 10 Bilder je Karussell und 2200 Zeichen Text; TikTok braucht Bild oder Video und nimmt über Metricool keine PNG-Fotos; YouTube braucht Video, Titel und Kinder-Kennzeichnung; Gratisplan 20 Veröffentlichungen je Monat (Abschnitt 1a).

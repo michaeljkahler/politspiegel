@@ -3322,12 +3322,12 @@
      "titel": "Antrag F. Brenn",
      "typ": "",
      "details": "Schaffung Art. 11 Abs. 2 (neu) wie folgt: Weiter kann sich die Polizeikommission im Sinne einer Begleitung mit Belagen der Polizeiarbeit befassen und zuhanden des Regierungsrates Antrag stellen.",
-     "inverted_note": null,
-     "gegen_note": null,
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag F. Brenn",
      "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
      "thema_gruppe": "3",
      "thema_name": "Strafrecht, Strafvollzug",
-     "richtung_invertiert": false,
+     "richtung_invertiert": true,
      "tags_form": [
       "Antrag"
      ],
@@ -3339,7 +3339,8 @@
      ],
      "tags_detail": [
       "Polizeigesetz"
-     ]
+     ],
+     "vermerk_herkunft": "handentscheid"
     }
    ],
    "quelle": "839b24ae_20260921_Abstimmungsergebnisse_Vormittag.xlsx",

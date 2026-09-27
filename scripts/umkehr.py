@@ -37,11 +37,27 @@ def schluessel(sitzung, nr):
     return f"{sitzung} #Nr{nr}"
 
 
+MANUELL = DATA / "umkehr_manuell.json"
+
+
+def handentscheide():
+    """Handentscheide aus data/umkehr_manuell.json, nach Schlüssel."""
+    if not MANUELL.exists():
+        return {}
+    return {e["schluessel"]: e
+            for e in json.load(open(MANUELL, encoding="utf-8"))["entscheide"]}
+
+
 def collect(data):
+    """Umkehrfälle: Abstimmungen mit gedrucktem Vermerk «Ja/Nein bedeutet …»
+    und solche, für die ein Handentscheid vorliegt, obwohl der Vermerk im
+    Abstimmungsprotokoll fehlt (Feld «vermerk_ergaenzt» im Handentscheid)."""
+    hand = handentscheide()
     faelle = []
     for s in data["sessions"]:
         for v in s["votes"]:
-            if v.get("inverted_note") or v.get("gegen_note"):
+            if (v.get("inverted_note") or v.get("gegen_note")
+                    or schluessel(s["sitzung"], v["nr"]) in hand):
                 faelle.append((s, v))
     return faelle
 
@@ -96,9 +112,19 @@ def apply_mapping():
     mp = json.load(open(MAPPING))
     lookup = {r["schluessel"]: r for r in mp["zuordnung"]}
 
+    hand = handentscheide()
     n_inv = n_geklaert = 0
     for s in data["sessions"]:
         for v in s["votes"]:
+            # Fehlt der Vermerk im Abstimmungsprotokoll, trägt ihn ein
+            # Handentscheid nach. Das geschieht bei jedem Lauf neu, weil der
+            # Scraper all_sessions.json aus den Excel-Dateien neu aufbaut.
+            h = hand.get(schluessel(s["sitzung"], v["nr"])) or {}
+            ergaenzt = h.get("vermerk_ergaenzt") or {}
+            if ergaenzt and not (v.get("inverted_note") or v.get("gegen_note")):
+                v["inverted_note"] = ergaenzt.get("ja") or None
+                v["gegen_note"] = ergaenzt.get("nein") or None
+                v["vermerk_herkunft"] = "handentscheid"
             if not (v.get("inverted_note") or v.get("gegen_note")):
                 v["richtung_invertiert"] = False      # kein Umkehrhinweis
                 continue

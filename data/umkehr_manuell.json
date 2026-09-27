@@ -1,5 +1,5 @@
 {
- "hinweis": "Handentscheide zu Umkehrabstimmungen, die der automatische Abgleich nicht klären konnte. Grundlage ist jeweils die zitierte Stelle im Wortprotokoll. Diese Datei hat Vorrang vor Regelwerk und automatischem Protokollabgleich. Wer einen Entscheid ändern will, ändert ihn hier.",
+ "hinweis": "Handentscheide zu Umkehrabstimmungen, die der automatische Abgleich nicht klären konnte. Grundlage ist jeweils die zitierte Stelle im Wortprotokoll. Diese Datei hat Vorrang vor Regelwerk und automatischem Protokollabgleich. Wer einen Entscheid ändern will, ändert ihn hier. Ausnahme: Einträge mit herkunft «stimmbild» sind von Hand nach dem Stimmbild entschieden, weil das Wortprotokoll noch nicht publiziert war; umkehr_regeln.py meldet sie zur Gegenprüfung, sobald das Protokoll vorliegt. «vermerk_ergaenzt» trägt den im Abstimmungsprotokoll fehlenden Vermerk nach (umkehr.py --apply).",
  "entscheide": [
   {
    "schluessel": "1. Sitzung des Kantonsrats · 10.01.2022 (Vormittag) #Nr1",
@@ -290,6 +290,21 @@
    "begruendung": "Der Traktandenlistenänderung wurde mit 51 Stimmen zugestimmt, das sind die Nein-Stimmen. Ein Ja bedeutete Beibehaltung und damit Ablehnung des Antrags Lacher.",
    "beleg": "Abstimmung Der Traktandenlistenänderung wird mit 51 : 0 Stimmen zugestimmt.",
    "geprueft_von": "Claude, Lesung des Wortprotokolls, 01.09.2026"
+  },
+  {
+   "schluessel": "14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag) #Nr9",
+   "titel": "Antrag F. Brenn",
+   "inverted_note": "",
+   "vermerk_ergaenzt": {
+    "ja": "Ja bedeutet Zustimmung Antrag SPK",
+    "nein": "Nein bedeutet Zustimmung Antrag F. Brenn"
+   },
+   "stimmen": "39 Ja : 17 Nein",
+   "ja_ist_zustimmung": false,
+   "herkunft": "stimmbild",
+   "begruendung": "Im Abstimmungsprotokoll fehlt bei dieser Abstimmung der Vermerk «Ja bedeutet …». Die Antragstellerin Franziska Brenn stimmte Nein, ihre Fraktion SP-JUSO-Grüne geschlossen Nein (0 : 17); SVP-EDU, FDP-Die Mitte und GLP-EVP stimmten geschlossen Ja. 58 von 60 Einzelstimmen decken sich mit Abstimmung 8, bei der Ja die Zustimmung zum Antrag der SPK bedeutet. Ein Ja stützte also die Kommissionsfassung, der Antrag Brenn wurde mit 17 : 39 Stimmen abgelehnt. Nach Erscheinen des Wortprotokolls gegenprüfen, dann herkunft auf «manuell» setzen und die Protokollstelle als Beleg eintragen.",
+   "beleg": "",
+   "geprueft_von": "Handentscheid Michael Kahler, 28.09.2026; Begründung Claude aus dem Stimmbild"
   }
  ]
 }

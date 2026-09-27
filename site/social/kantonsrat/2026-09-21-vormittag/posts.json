@@ -4,10 +4,13 @@
  "n_votes": 9,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
  "status": "entwurf_in_metricool",
+ "kontingent": 4,
+ "neu_erzeugt": "2026-09-27",
  "abstimmungen": [
   {
    "nr": 1,
    "titel": "Antrag P. Portmann: Ergänzung Art. 2 Abs. 2 lit. f",
+   "stichwort": "Prävention namentlich im jugendpolizeilichen Bereich",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 38,
@@ -19,6 +22,7 @@
   {
    "nr": 2,
    "titel": "Antrag G. Looser: Anpassung Art. 8 Abs. 3",
+   "stichwort": "Uniformierte tragen immer Namensschild oder Dienstnummer",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 37,
@@ -30,6 +34,7 @@
   {
    "nr": 3,
    "titel": "Antrag F. Brenn: Anpassung Art. 10 Abs. 2 lit. c",
+   "stichwort": "Polizeikommission: drei Ratsmitglieder auf Ratsvorschlag",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 19,
@@ -41,6 +46,7 @@
   {
    "nr": 4,
    "titel": "Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. c",
+   "stichwort": "Polizeikommission: Ratsmitglieder vom Kantonsrat gewählt",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 30,
@@ -52,6 +58,7 @@
   {
    "nr": 5,
    "titel": "Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. h",
+   "stichwort": "Polizeikommandant in der Kommission mit Antragsrecht",
    "ergebnis": "Angenommen",
    "c": {
     "ja": 25,
@@ -63,6 +70,7 @@
   {
    "nr": 6,
    "titel": "Antrag F. Brenn: Anpassung Art. 10 Abs. 2 lit. i",
+   "stichwort": "Verbandsmitglieder: «mit beratender Stimme» streichen",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 15,
@@ -74,6 +82,7 @@
   {
    "nr": 7,
    "titel": "Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. i",
+   "stichwort": "Verbandsmitglieder in der Kommission mit Antragsrecht",
    "ergebnis": "Angenommen",
    "c": {
     "ja": 26,
@@ -85,6 +94,7 @@
   {
    "nr": 8,
    "titel": "Antrag B. Looser: Anpassung Art. 11 Abs. 1 lit. b",
+   "stichwort": "Aufgaben der Polizeikommission: auch Einsatzgrundsätze",
    "ergebnis": "Abgelehnt",
    "c": {
     "ja": 39,
@@ -96,7 +106,8 @@
   {
    "nr": 9,
    "titel": "Antrag F. Brenn: Schaffung Art. 11 Abs. 2 (neu)",
-   "ergebnis": "Angenommen",
+   "stichwort": "Polizeikommission: Begleitung, Anträge an Regierungsrat",
+   "ergebnis": "Abgelehnt",
    "c": {
     "ja": 39,
     "nein": 17,
@@ -111,7 +122,7 @@
    "teil": 1,
    "teile": 1,
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: 9 namentliche Abstimmungen.\n\n1. Antrag P. Portmann: Ergänzung Art. 2 Abs. 2 lit. f: Abgelehnt (Ja 38, Nein 16, Enthaltung 2). Ja bedeutet Zustimmung Antrag SPK.\n2. Antrag G. Looser: Anpassung Art. 8 Abs. 3: Abgelehnt (Ja 37, Nein 19). Ja bedeutet Zustimmung Antrag SPK.\n3. Antrag F. Brenn: Anpassung Art. 10 Abs. 2 lit. c: Abgelehnt (Ja 19, Nein 38)\n4. Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. c: Abgelehnt (Ja 30, Nein 27). Ja bedeutet Zustimmung Antrag SPK.\n5. Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. h: Angenommen (Ja 25, Nein 32). Ja bedeutet Zustimmung Antrag SPK.\n6. Antrag F. Brenn: Anpassung Art. 10 Abs. 2 lit. i: Abgelehnt (Ja 15, Nein 42)\n7. Antrag M. Alaye: Anpassung Art. 10 Abs. 2 lit. i: Angenommen (Ja 26, Nein 31). Ja bedeutet Zustimmung Antrag SPK.\n8. Antrag B. Looser: Anpassung Art. 11 Abs. 1 lit. b: Abgelehnt (Ja 39, Nein 17). Ja bedeutet Zustimmung Antrag SPK.\n9. Antrag F. Brenn: Schaffung Art. 11 Abs. 2 (neu): Angenommen (Ja 39, Nein 17)\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Vormittag: 9 namentliche Abstimmungen.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n1. Prävention namentlich im jugendpolizeilichen Bereich (P. Portmann, SP · Art. 2): Abgelehnt\n2. Uniformierte tragen immer Namensschild oder Dienstnummer (G. Looser, Junge Grüne · Art. 8): Abgelehnt\n3. Polizeikommission: drei Ratsmitglieder auf Ratsvorschlag (F. Brenn, SP gegen M. Alaye, GLP · Art. 10): Abgelehnt\n4. Polizeikommission: Ratsmitglieder vom Kantonsrat gewählt (M. Alaye, GLP · Art. 10): Abgelehnt\n5. Polizeikommandant in der Kommission mit Antragsrecht (M. Alaye, GLP · Art. 10): Angenommen\n6. Verbandsmitglieder: «mit beratender Stimme» streichen (F. Brenn, SP gegen M. Alaye, GLP · Art. 10): Abgelehnt\n7. Verbandsmitglieder in der Kommission mit Antragsrecht (M. Alaye, GLP · Art. 10): Angenommen\n8. Aufgaben der Polizeikommission: auch Einsatzgrundsätze (B. Looser, SP · Art. 11): Abgelehnt\n9. Polizeikommission: Begleitung, Anträge an Regierungsrat (F. Brenn, SP · Art. 11): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/feed-00.png",
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/feed-01.png",
@@ -125,62 +136,66 @@
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/feed-09.png"
    ],
    "providers": [
-    "instagram",
-    "facebook"
+    "instagram"
    ],
    "instagram": {
     "type": "POST"
    },
-   "facebook": {
-    "type": "POST"
-   },
    "metricool": {
-    "id": 380259722,
+    "id": 383040964,
     "uuid": "5178737373801759478",
-    "termin": "2026-09-23T09:00",
-    "draft": true,
-    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=5178737373801759478"
+    "termin": "2026-10-01T09:00",
+    "draft": false,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=5178737373801759478",
+    "hinweis": "Am 27.9.2026 um 22:53 in Metricool freigegeben, noch mit den alten Bildern und dem alten Text."
    }
   },
   {
    "art": "reel",
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 9 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen @sp.schaffhausen @fdp.sh @glp_schaffhausen @gruene_sh @diemitte.sh @evp_schaffhausen EDU @jsvp_sh @juso_schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Vormittag: 9 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/reel.mp4"
    ],
    "dauer_s": 42.5,
    "providers": [
-    "instagram",
-    "facebook",
-    "youtube"
+    "instagram"
    ],
    "instagram": {
     "type": "REEL",
     "showReelOnFeed": true
    },
-   "facebook": {
-    "type": "REEL"
-   },
-   "youtube": {
-    "type": "short",
-    "title": "Kantonsrat Schaffhausen, 21. September 2026: 9 Abstimmungen",
-    "privacy": "public",
-    "madeForKids": false,
-    "category": "NEWS_POLITICS"
-   },
    "metricool": {
-    "id": 380259813,
+    "id": 382919721,
     "uuid": "-8805754913000175173",
-    "termin": "2026-09-23T16:00",
+    "termin": "2026-10-01T16:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8805754913000175173"
    }
   },
   {
    "art": "reel",
+   "netz": "youtube",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Vormittag: 9 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, SP, FDP, GLP, Grüne, Die Mitte, EVP, EDU, JSVP, JUSO, Junge Grüne\nMedien: Schaffhauser Nachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, Schaffhauser Fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/reel.mp4"
+   ],
+   "dauer_s": 42.5,
+   "providers": [
+    "youtube"
+   ],
+   "youtube": {
+    "type": "short",
+    "title": "Kantonsrat Schaffhausen, 21. September 2026: Totalrevision Polizeigesetz",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
    "netz": "tiktok",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026: alle 9 namentlichen Abstimmungen in einer Minute. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP @sp.schaffhausen FDP GLP GRÜNE Die Mitte EVP EDU @jsvp.sh @juso.schaffhausen @jungegruene_sh\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Vormittag: 9 namentliche Abstimmungen. Behandelt: Totalrevision Polizeigesetz. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, @sp.schaffhausen, FDP, GLP, Grüne, Die Mitte, EVP, EDU, @jsvp.sh, @juso.schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, @schaffhauserfernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-vormittag/reel.mp4"
    ],
@@ -192,12 +207,13 @@
     "privacyOption": "PUBLIC_TO_EVERYONE"
    },
    "metricool": {
-    "id": 380259991,
+    "id": 382919744,
     "uuid": "6364025106696127324",
-    "termin": "2026-09-23T16:00",
+    "termin": "2026-10-01T16:00",
     "draft": true,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=6364025106696127324"
    }
   }
- ]
+ ],
+ "hinweis": "Am 27.9.2026 umgestellt: Facebook entfernt, Termine in den Oktober verschoben (Septemberkontingent von Metricool seit 10.9. aufgebraucht). Entwürfe warten auf Freigabe durch Michael. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
 }

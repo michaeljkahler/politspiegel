@@ -350,6 +350,7 @@
   var HERKUNFT = {
     protokoll: "am Wortprotokoll überprüft",
     manuell: "von Hand am Wortprotokoll geprüft",
+    stimmbild: "von Hand nach dem Stimmbild entschieden, Wortprotokoll noch nicht publiziert",
     konvention: "nach Konvention für Sachtitel",
     regel: "regelbasiert, nicht am Protokoll überprüft"
   };
@@ -361,7 +362,8 @@
         "<p>" + esc(v.iv) + ". Für diese Abstimmung ist nicht abschliessend geklärt, " +
         "was ein Ja inhaltlich bedeutet. Sie zählt darum bei den Quoten nicht mit.</p></div>";
     }
-    var beleg = v.bl ? '<span class="ubeleg">Im Wortprotokoll: «' + esc(v.bl) + "»</span>" : "";
+    var beleg = v.bl && v.hk !== "stimmbild"
+      ? '<span class="ubeleg">Im Wortprotokoll: «' + esc(v.bl) + "»</span>" : "";
     var q = HERKUNFT[v.hk] ? '<span class="uquelle">' + HERKUNFT[v.hk] + "</span>" : "";
     return '<div class="umkehr"><b>Umkehrabstimmung</b><p>' + esc(v.iv) +
       ". Ein Ja ist hier also keine Zustimmung zur ursprünglichen Vorlage.</p>" +

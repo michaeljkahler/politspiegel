@@ -1,0 +1,53 @@
+{
+  "hinweis": "Konten der Schaffhauser Medien, geprüft am 27. September 2026 (Links in der Fusszeile der Website oder Profilseite aufgerufen). Werden in den Kantonsrats-Beiträgen als Zeile «Medien» erwähnt, immer alle. Instagram und TikTok mit @, wo ein Konto besteht, sonst der Name; YouTube nur Namen. Kein eigenes Konto gefunden: SRF Regionaljournal Zürich Schaffhausen (nur Konten von SRF gesamt), darum nicht aufgeführt.",
+  "medien": [
+    {
+      "medium": "Schaffhauser Nachrichten",
+      "instagram": "schaffhausernachrichten",
+      "tiktok": "schaffhausernachrichten",
+      "quelle": "shn.ch, Fusszeile (Instagram und TikTok); TikTok-Profil geprüft, 3283 Follower"
+    },
+    {
+      "medium": "Schaffhauser AZ",
+      "instagram": "schaffhauser_az",
+      "tiktok": null,
+      "quelle": "Instagram-Profil geprüft («Die unabhängige Wochenzeitung für Schaffhausen», 2160 Follower); shaz.ch verlinkt nur Facebook und X"
+    },
+    {
+      "medium": "Schaffhauser Bock / Schaffhausen24",
+      "instagram": "bock_schaffhausen24",
+      "tiktok": null,
+      "quelle": "schaffhausen24.ch"
+    },
+    {
+      "medium": "Klettgauer Bote",
+      "instagram": "klettgauerbote",
+      "tiktok": null,
+      "quelle": "klettgauerbote.ch"
+    },
+    {
+      "medium": "Steiner Anzeiger",
+      "instagram": "steiner.anzeiger",
+      "tiktok": null,
+      "quelle": "Instagram-Profil geprüft («Wochenzeitung für den Bezirk Stein am Rhein», verlinkt steineranzeiger.ch)"
+    },
+    {
+      "medium": "Radio Munot",
+      "instagram": "radiomunot",
+      "tiktok": null,
+      "quelle": "radiomunot.ch; TikTok @radiomunot existiert nicht (geprüft)"
+    },
+    {
+      "medium": "Radio RaSA",
+      "instagram": "radio_rasa",
+      "tiktok": null,
+      "quelle": "rasa.ch"
+    },
+    {
+      "medium": "Schaffhauser Fernsehen",
+      "instagram": "schaffhauser.fernsehen",
+      "tiktok": "schaffhauserfernsehen",
+      "quelle": "shf.ch, Fusszeile (Instagram und TikTok); TikTok-Profil geprüft, 173 Follower"
+    }
+  ]
+}
