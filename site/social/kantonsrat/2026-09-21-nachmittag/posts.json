@@ -262,7 +262,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 382919859,
+    "id": 383070352,
     "uuid": "-2089682050876027192",
     "termin": "2026-10-02T09:00",
     "draft": true,
@@ -274,7 +274,7 @@
    "teil": 2,
    "teile": 3,
    "netz": "instagram",
-   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Teil 2 von 3.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n10. Verdeckte Fahndung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 37 · Fassung Regierungsrat): Abgelehnt\n11. Verdeckte Vorermittlung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 38 · Fassung Regierungsrat): Abgelehnt\n12. Biometrische Erkennung, auch Gesichtserkennung, verbieten (M. Freivogel, SP · Art. 39): Abgelehnt\n13. Vermisste: Daten erbitten statt verlangen (M. Freivogel, SP · Art. 41): Abgelehnt\n14. Durchsuchung: «konkrete Anhaltspunkte» statt «Verdacht» (M. Freivogel, SP · Art. 48): Abgelehnt\n15. Schusswaffe: Warnpflicht nur bei Einsatz gegen Personen (M. Passafaro, SP · Art. 58): Abgelehnt\n16. Ungültige Abstimmung: Ungültig\n17. Gesetzliche Grundlage für Fachstelle Radikalisierung (B. Looser, SP · Konsultativabstimmung): Abgelehnt\n18. Häusliche Gewalt: Schutzpflicht, Viererteams als Regel (B. Looser, SP · Art. 69): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "text": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: 19 namentliche Abstimmungen. Teil 2 von 3.\n\nTotalrevision Polizeigesetz (Anträge aus dem Rat zur Fassung der Spezialkommission):\n10. Verdeckte Fahndung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 37 · Fassung Regierungsrat): Abgelehnt\n11. Verdeckte Vorermittlung: «hinreichende» Anhaltspunkte (M. Schlatter, SVP · Art. 38 · Fassung Regierungsrat): Abgelehnt\n12. Biometrische Erkennung, auch Gesichtserkennung, verbieten (M. Freivogel, SP · Art. 39): Abgelehnt\n13. Vermisste: Daten erbitten statt verlangen (M. Freivogel, SP · Art. 41): Abgelehnt\n14. Durchsuchung: «konkrete Anhaltspunkte» statt «Verdacht» (M. Freivogel, SP · Art. 48): Abgelehnt\n15. Schusswaffe: Warnpflicht nur bei Einsatz gegen Personen (M. Passafaro, SP · Art. 58): Abgelehnt\n16. Ungültige Abstimmung\n17. Gesetzliche Grundlage für Fachstelle Radikalisierung (B. Looser, SP · Konsultativabstimmung): Abgelehnt\n18. Häusliche Gewalt: Schutzpflicht, Viererteams als Regel (B. Looser, SP · Art. 69): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-10.png",
     "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-09-21-nachmittag/feed-11.png",
@@ -294,7 +294,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 382920017,
+    "id": 383070395,
     "uuid": "4321877417503508346",
     "termin": "2026-10-03T09:00",
     "draft": true,
@@ -318,7 +318,7 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 382920038,
+    "id": 383070431,
     "uuid": "35466528295309159",
     "termin": "2026-10-03T16:00",
     "draft": true,
@@ -341,7 +341,7 @@
     "showReelOnFeed": true
    },
    "metricool": {
-    "id": 382919888,
+    "id": 383070538,
     "uuid": "-8015417242253179972",
     "termin": "2026-10-02T16:00",
     "draft": true,
@@ -361,10 +361,17 @@
    ],
    "youtube": {
     "type": "short",
-    "title": "Kantonsrat Schaffhausen, 21. September 2026: Totalrevision Polizeigesetz",
+    "title": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: Totalrevision Polizeigesetz",
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
+   },
+   "metricool": {
+    "id": 383070576,
+    "uuid": "-4366495268264852800",
+    "termin": "2026-10-02T16:00",
+    "draft": true,
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-4366495268264852800"
    }
   },
   {
@@ -379,10 +386,11 @@
     "tiktok"
    ],
    "tiktok": {
-    "privacyOption": "PUBLIC_TO_EVERYONE"
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Kantonsrat Schaffhausen, 21. September 2026, Nachmittag: Totalrevision Polizeigesetz"
    },
    "metricool": {
-    "id": 382919919,
+    "id": 383070558,
     "uuid": "-8013689782472654232",
     "termin": "2026-10-02T16:00",
     "draft": true,
@@ -390,5 +398,5 @@
    }
   }
  ],
- "hinweis": "Am 27.9.2026 umgestellt: Facebook entfernt, Termine in den Oktober verschoben (Septemberkontingent von Metricool seit 10.9. aufgebraucht). Entwürfe warten auf Freigabe durch Michael. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
+ "hinweis": "Am 28.9.2026 ersetzt: neue Deckblätter, Karten und Bildtexte (Stichworte, Antragstexte, Parteien und Medien); Reel je Netz ein eigener Beitrag, YouTube neu angelegt. Alle Beiträge als Entwurf, warten auf Freigabe durch Michael. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
 }

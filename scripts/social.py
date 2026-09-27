@@ -1157,7 +1157,8 @@ def text_karussell(sess, votes, teil, teile, url_ordner, netz="instagram"):
             meta = " · ".join(meta_teile(a, komma=True))
             if meta:
                 z += f" ({meta})"
-            zeilen.append(z + f": {a['ergebnis']}")
+            # Ungültige Abstimmung: kein Ergebnis anhängen («Ungültige Abstimmung: Ungültig»)
+            zeilen.append(z if a["ungueltig"] else z + f": {a['ergebnis']}")
     schluss_ = ["", "Alle Details, Fraktionen und Namen: " + SEITE_URL,
                 "Quelle: Abstimmungsprotokolle des Kantonsrats, sh.ch"]
     kb = konten_block(netz, sess)
@@ -1194,11 +1195,14 @@ def text_reel(sess, votes, netz="instagram"):
 
 
 def youtube_titel(sess, votes):
-    datum, _ = datum_lang(sess["sitzung"])
+    """Titel des YouTube-Shorts, mit Halbtag, damit Vormittag und Nachmittag
+    derselben Sitzung nicht gleich heissen. YouTube nimmt höchstens 100 Zeichen."""
+    datum, zeit = datum_lang(sess["sitzung"])
+    kopf = f"Kantonsrat Schaffhausen, {datum}" + (f", {zeit}" if zeit else "")
     gs = list(dict.fromkeys(g["geschaeft"] for g in gruppen(votes) if g["geschaeft"]))
-    t = f"Kantonsrat Schaffhausen, {datum}: {gs[0]}" if len(gs) == 1 else ""
+    t = f"{kopf}: {gs[0]}" if len(gs) == 1 else ""
     if not t or len(t) > 100:
-        t = f"Kantonsrat Schaffhausen, {datum}: {len(votes)} Abstimmungen"
+        t = f"{kopf}: {len(votes)} Abstimmungen"
     return t
 
 
@@ -1307,7 +1311,7 @@ def sitzung_bauen(sess, ordner, mit_video=True):
         posts.append({
             "art": "reel", "netz": "tiktok", "text": text_reel(sess, votes, "tiktok"),
             **gemeinsam, "providers": ["tiktok"],
-            "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE"},
+            "tiktok": {"privacyOption": "PUBLIC_TO_EVERYONE", "title": youtube_titel(sess, votes)},
         })
 
     for p in posts:
