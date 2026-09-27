@@ -3,7 +3,7 @@
  "slug": "2026-09-21-vormittag",
  "n_votes": 9,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23578858-DE.html",
- "status": "entwurf_in_metricool",
+ "status": "freigegeben",
  "kontingent": 4,
  "neu_erzeugt": "2026-09-27",
  "abstimmungen": [
@@ -142,10 +142,10 @@
     "type": "POST"
    },
    "metricool": {
-    "id": 383069807,
+    "id": 383078063,
     "uuid": "5178737373801759478",
     "termin": "2026-10-01T09:00",
-    "draft": true,
+    "draft": false,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=5178737373801759478"
    }
   },
@@ -165,10 +165,10 @@
     "showReelOnFeed": true
    },
    "metricool": {
-    "id": 383070153,
+    "id": 383078343,
     "uuid": "-8805754913000175173",
     "termin": "2026-10-01T16:00",
-    "draft": true,
+    "draft": false,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-8805754913000175173"
    }
   },
@@ -191,10 +191,10 @@
     "category": "NEWS_POLITICS"
    },
    "metricool": {
-    "id": 383070198,
+    "id": 383078416,
     "uuid": "7956109681162143576",
     "termin": "2026-10-01T16:00",
-    "draft": true,
+    "draft": false,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=7956109681162143576"
    }
   },
@@ -214,13 +214,13 @@
     "title": "Kantonsrat Schaffhausen, 21. September 2026, Vormittag: Totalrevision Polizeigesetz"
    },
    "metricool": {
-    "id": 383070172,
+    "id": 383078375,
     "uuid": "6364025106696127324",
     "termin": "2026-10-01T16:00",
-    "draft": true,
+    "draft": false,
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=6364025106696127324"
    }
   }
  ],
- "hinweis": "Am 28.9.2026 ersetzt: neue Deckblätter, Karten und Bildtexte (Stichworte, Antragstexte, Parteien und Medien); Reel je Netz ein eigener Beitrag, YouTube neu angelegt. Alle Beiträge als Entwurf, warten auf Freigabe durch Michael. Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
+ "hinweis": "Am 28.9.2026 ersetzt: neue Deckblätter, Karten und Bildtexte (Stichworte, Antragstexte, Parteien und Medien); Reel je Netz ein eigener Beitrag, YouTube neu angelegt. Am 28.9.2026 von Michael geprüft und freigegeben (draft false). Metricool vergibt bei jeder Änderung eine neue id, die uuid bleibt."
 }
