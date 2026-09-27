@@ -60,6 +60,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-zahl em{display:block;font-style:normal;font-size:12px;font-weight:400;
   letter-spacing:.05em;text-transform:uppercase;color:var(--text-leise);margin-top:2px}
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
+.k-zuletzt{margin:-6px 0 18px;font-size:14px;color:var(--text-leise)}
+.k-zuletzt b{color:var(--text);font-weight:600}
 .k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
@@ -280,9 +282,10 @@ body.melden-offen{overflow:hidden}
     <div class="kasten kasten-div k-abstimmung">
       <span class="k-marke">Laufend</span>
       <a class="k-titel-link" href="abstimmung/"><h2>Abstimmungsspiegel</h2></a>
-      <p class="k-satz">Nächste Abstimmung am 27. September 2026: Verkehrsflussinitiative. Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.</p>
-      <div class="k-zahlen"><span class="k-zahl">10<em>Aussagen geprüft</em></span><span class="k-zahl">2<em>Abstimmungen</em></span></div>
-      <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li class="k-leer">noch keine</li></ul></div></details>
+      <p class="k-satz">Nächste Abstimmung am 29. November 2026: Änderung des Spitalgesetzes. Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.</p>
+      <p class="k-zuletzt">Zuletzt am 27.09.2026: <a href="abstimmung/2026-09-27-verkehrsfluss/">Verkehrsflussinitiative</a>. Initiative <b>46,7 % Ja</b>, abgelehnt &middot; Gegenvorschlag <b>46,3 % Ja</b>, abgelehnt &middot; Stichfrage <b>46,9 % für die Initiative</b> &middot; Stimmbeteiligung 68,5 %</p>
+      <div class="k-zahlen"><span class="k-zahl">2<em>Abstimmungen</em></span></div>
+      <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li class="k-leer">keine weiteren angekündigt</li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div></details>
       <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
     </div>
     <a class="kasten k-finanzen" href="finanzen/">
@@ -304,7 +307,7 @@ body.melden-offen{overflow:hidden}
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>
 
-  <p>Erzeugt am 25.09.2026. Aufbereitung ohne Gewähr.</p>
+  <p>Erzeugt am 27.09.2026. Aufbereitung ohne Gewähr.</p>
   <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="politspiegel.sh" data-d="gmail.com">politspiegel.sh (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 

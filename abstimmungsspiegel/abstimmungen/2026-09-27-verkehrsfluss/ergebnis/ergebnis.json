@@ -1,0 +1,734 @@
+{
+ "vorlage": "sh-verkehrsfluss-2026",
+ "abstimmung": "2026-09-27",
+ "quelle": {
+  "name": "Bundesamt für Statistik, Echtzeitdaten am Abstimmungstag zu kantonalen Abstimmungsvorlagen (opendata.swiss), geliefert vom Kanton Schaffhausen",
+  "url": "https://ogd-static.voteinfo-app.ch/v1/ogd/sd-t-17-02-20260927-kantAbstimmung.json",
+  "stand": "2026-09-27T16:12:19"
+ },
+ "kanton": {
+  "stimmberechtigte": 52932,
+  "eingelegte_stimmzettel": 36254,
+  "stimmbeteiligung": 68.49165
+ },
+ "fragen": [
+  {
+   "id": "initiative",
+   "titel": "Initiative",
+   "titel_amtlich": "A. Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen (Verkehrsflussinitiative)»",
+   "vorlagen_id": 614311,
+   "ja_stimmen": 15555,
+   "nein_stimmen": 17723,
+   "ja": 46.742593,
+   "angenommen": false,
+   "gemeinden_ja": 15,
+   "gemeinden_nein": 11,
+   "gemeinden_gleich": 0
+  },
+  {
+   "id": "gegenvorschlag",
+   "titel": "Gegenvorschlag",
+   "titel_amtlich": "B. Änderung des Strassengesetzes (Gegenvorschlag zur Verkehrsflussinitiative)",
+   "vorlagen_id": 614312,
+   "ja_stimmen": 14623,
+   "nein_stimmen": 16955,
+   "ja": 46.307556,
+   "angenommen": false,
+   "gemeinden_ja": 11,
+   "gemeinden_nein": 14,
+   "gemeinden_gleich": 1
+  },
+  {
+   "id": "stichfrage",
+   "titel": "Stichfrage",
+   "titel_amtlich": "C. Stichfrage: Welche der beiden Vorlagen soll in Kraft treten, falls sowohl die kantonale Volksinitiative als auch der Gegenvorschlag angenommen werden?",
+   "vorlagen_id": 614313,
+   "ja_stimmen": 13622,
+   "nein_stimmen": 15429,
+   "ja": 46.889952,
+   "angenommen": null,
+   "gemeinden_ja": 14,
+   "gemeinden_nein": 12,
+   "gemeinden_gleich": 0,
+   "bezeichnung": "für die Initiative"
+  }
+ ],
+ "gemeinden": [
+  {
+   "bfs": 2931,
+   "name": "Bargen (SH)",
+   "kurz": "Bargen",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 199,
+   "eingelegte_stimmzettel": 136,
+   "stimmbeteiligung": 68.341709,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 78,
+     "nein_stimmen": 48,
+     "ja": 61.904762
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 59,
+     "nein_stimmen": 61,
+     "ja": 49.166667
+    },
+    "stichfrage": {
+     "ja_stimmen": 75,
+     "nein_stimmen": 42,
+     "ja": 64.102564
+    }
+   }
+  },
+  {
+   "bfs": 2951,
+   "name": "Beggingen",
+   "kurz": "Beggingen",
+   "bezirk": "Bezirk Schleitheim",
+   "stimmberechtigte": 343,
+   "eingelegte_stimmzettel": 246,
+   "stimmbeteiligung": 71.720117,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 157,
+     "nein_stimmen": 72,
+     "ja": 68.558952
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 102,
+     "nein_stimmen": 110,
+     "ja": 48.113208
+    },
+    "stichfrage": {
+     "ja_stimmen": 133,
+     "nein_stimmen": 63,
+     "ja": 67.857143
+    }
+   }
+  },
+  {
+   "bfs": 2932,
+   "name": "Beringen",
+   "kurz": "Beringen",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 3260,
+   "eingelegte_stimmzettel": 2287,
+   "stimmbeteiligung": 70.153374,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 1098,
+     "nein_stimmen": 981,
+     "ja": 52.813853
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 1007,
+     "nein_stimmen": 949,
+     "ja": 51.482618
+    },
+    "stichfrage": {
+     "ja_stimmen": 958,
+     "nein_stimmen": 880,
+     "ja": 52.121872
+    }
+   }
+  },
+  {
+   "bfs": 2961,
+   "name": "Buch (SH)",
+   "kurz": "Buch",
+   "bezirk": "Bezirk Stein",
+   "stimmberechtigte": 212,
+   "eingelegte_stimmzettel": 154,
+   "stimmbeteiligung": 72.641509,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 82,
+     "nein_stimmen": 63,
+     "ja": 56.551724
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 67,
+     "nein_stimmen": 67,
+     "ja": 50.0
+    },
+    "stichfrage": {
+     "ja_stimmen": 70,
+     "nein_stimmen": 57,
+     "ja": 55.11811
+    }
+   }
+  },
+  {
+   "bfs": 2933,
+   "name": "Buchberg",
+   "kurz": "Buchberg",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 662,
+   "eingelegte_stimmzettel": 527,
+   "stimmbeteiligung": 79.607251,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 205,
+     "nein_stimmen": 269,
+     "ja": 43.248945
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 241,
+     "nein_stimmen": 203,
+     "ja": 54.279279
+    },
+    "stichfrage": {
+     "ja_stimmen": 182,
+     "nein_stimmen": 240,
+     "ja": 43.127962
+    }
+   }
+  },
+  {
+   "bfs": 2914,
+   "name": "Büttenhardt",
+   "kurz": "Büttenhardt",
+   "bezirk": "Bezirk Reiat",
+   "stimmberechtigte": 316,
+   "eingelegte_stimmzettel": 251,
+   "stimmbeteiligung": 79.43038,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 113,
+     "nein_stimmen": 120,
+     "ja": 48.497854
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 118,
+     "nein_stimmen": 108,
+     "ja": 52.212389
+    },
+    "stichfrage": {
+     "ja_stimmen": 96,
+     "nein_stimmen": 111,
+     "ja": 46.376812
+    }
+   }
+  },
+  {
+   "bfs": 2915,
+   "name": "Dörflingen",
+   "kurz": "Dörflingen",
+   "bezirk": "Bezirk Reiat",
+   "stimmberechtigte": 716,
+   "eingelegte_stimmzettel": 515,
+   "stimmbeteiligung": 71.927374,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 232,
+     "nein_stimmen": 241,
+     "ja": 49.048626
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 233,
+     "nein_stimmen": 222,
+     "ja": 51.208791
+    },
+    "stichfrage": {
+     "ja_stimmen": 208,
+     "nein_stimmen": 211,
+     "ja": 49.642005
+    }
+   }
+  },
+  {
+   "bfs": 2901,
+   "name": "Gächlingen",
+   "kurz": "Gächlingen",
+   "bezirk": "Bezirk Oberklettgau",
+   "stimmberechtigte": 687,
+   "eingelegte_stimmzettel": 510,
+   "stimmbeteiligung": 74.235808,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 247,
+     "nein_stimmen": 226,
+     "ja": 52.219873
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 210,
+     "nein_stimmen": 252,
+     "ja": 45.454545
+    },
+    "stichfrage": {
+     "ja_stimmen": 202,
+     "nein_stimmen": 223,
+     "ja": 47.529412
+    }
+   }
+  },
+  {
+   "bfs": 2971,
+   "name": "Hallau",
+   "kurz": "Hallau",
+   "bezirk": "Bezirk Unterklettgau",
+   "stimmberechtigte": 1675,
+   "eingelegte_stimmzettel": 1100,
+   "stimmbeteiligung": 65.671642,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 478,
+     "nein_stimmen": 549,
+     "ja": 46.54333
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 490,
+     "nein_stimmen": 495,
+     "ja": 49.746193
+    },
+    "stichfrage": {
+     "ja_stimmen": 426,
+     "nein_stimmen": 507,
+     "ja": 45.659164
+    }
+   }
+  },
+  {
+   "bfs": 2962,
+   "name": "Hemishofen",
+   "kurz": "Hemishofen",
+   "bezirk": "Bezirk Stein",
+   "stimmberechtigte": 342,
+   "eingelegte_stimmzettel": 241,
+   "stimmbeteiligung": 70.467836,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 119,
+     "nein_stimmen": 114,
+     "ja": 51.072961
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 112,
+     "nein_stimmen": 109,
+     "ja": 50.678733
+    },
+    "stichfrage": {
+     "ja_stimmen": 102,
+     "nein_stimmen": 108,
+     "ja": 48.571429
+    }
+   }
+  },
+  {
+   "bfs": 2917,
+   "name": "Lohn (SH)",
+   "kurz": "Lohn",
+   "bezirk": "Bezirk Reiat",
+   "stimmberechtigte": 531,
+   "eingelegte_stimmzettel": 401,
+   "stimmbeteiligung": 75.517891,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 186,
+     "nein_stimmen": 169,
+     "ja": 52.394366
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 165,
+     "nein_stimmen": 163,
+     "ja": 50.304878
+    },
+    "stichfrage": {
+     "ja_stimmen": 162,
+     "nein_stimmen": 152,
+     "ja": 51.592357
+    }
+   }
+  },
+  {
+   "bfs": 2903,
+   "name": "Löhningen",
+   "kurz": "Löhningen",
+   "bezirk": "Bezirk Oberklettgau",
+   "stimmberechtigte": 1094,
+   "eingelegte_stimmzettel": 780,
+   "stimmbeteiligung": 71.297989,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 372,
+     "nein_stimmen": 350,
+     "ja": 51.523546
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 302,
+     "nein_stimmen": 365,
+     "ja": 45.277361
+    },
+    "stichfrage": {
+     "ja_stimmen": 332,
+     "nein_stimmen": 301,
+     "ja": 52.448657
+    }
+   }
+  },
+  {
+   "bfs": 2936,
+   "name": "Merishausen",
+   "kurz": "Merishausen",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 652,
+   "eingelegte_stimmzettel": 486,
+   "stimmbeteiligung": 74.539877,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 259,
+     "nein_stimmen": 187,
+     "ja": 58.071749
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 209,
+     "nein_stimmen": 206,
+     "ja": 50.361446
+    },
+    "stichfrage": {
+     "ja_stimmen": 228,
+     "nein_stimmen": 181,
+     "ja": 55.745721
+    }
+   }
+  },
+  {
+   "bfs": 2937,
+   "name": "Neuhausen am Rheinfall",
+   "kurz": "Neuhausen am Rheinfall",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 5587,
+   "eingelegte_stimmzettel": 3354,
+   "stimmbeteiligung": 60.032218,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 1446,
+     "nein_stimmen": 1605,
+     "ja": 47.394297
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 1271,
+     "nein_stimmen": 1588,
+     "ja": 44.456104
+    },
+    "stichfrage": {
+     "ja_stimmen": 1336,
+     "nein_stimmen": 1322,
+     "ja": 50.263356
+    }
+   }
+  },
+  {
+   "bfs": 2904,
+   "name": "Neunkirch",
+   "kurz": "Neunkirch",
+   "bezirk": "Bezirk Oberklettgau",
+   "stimmberechtigte": 1730,
+   "eingelegte_stimmzettel": 1209,
+   "stimmbeteiligung": 69.884393,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 483,
+     "nein_stimmen": 640,
+     "ja": 43.009795
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 493,
+     "nein_stimmen": 602,
+     "ja": 45.022831
+    },
+    "stichfrage": {
+     "ja_stimmen": 421,
+     "nein_stimmen": 555,
+     "ja": 43.135246
+    }
+   }
+  },
+  {
+   "bfs": 2972,
+   "name": "Oberhallau",
+   "kurz": "Oberhallau",
+   "bezirk": "Bezirk Unterklettgau",
+   "stimmberechtigte": 336,
+   "eingelegte_stimmzettel": 227,
+   "stimmbeteiligung": 67.559524,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 115,
+     "nein_stimmen": 89,
+     "ja": 56.372549
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 94,
+     "nein_stimmen": 104,
+     "ja": 47.474747
+    },
+    "stichfrage": {
+     "ja_stimmen": 102,
+     "nein_stimmen": 78,
+     "ja": 56.666667
+    }
+   }
+  },
+  {
+   "bfs": 2963,
+   "name": "Ramsen",
+   "kurz": "Ramsen",
+   "bezirk": "Bezirk Stein",
+   "stimmberechtigte": 926,
+   "eingelegte_stimmzettel": 606,
+   "stimmbeteiligung": 65.442765,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 281,
+     "nein_stimmen": 268,
+     "ja": 51.183971
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 259,
+     "nein_stimmen": 269,
+     "ja": 49.05303
+    },
+    "stichfrage": {
+     "ja_stimmen": 256,
+     "nein_stimmen": 236,
+     "ja": 52.03252
+    }
+   }
+  },
+  {
+   "bfs": 2938,
+   "name": "Rüdlingen",
+   "kurz": "Rüdlingen",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 591,
+   "eingelegte_stimmzettel": 467,
+   "stimmbeteiligung": 79.018613,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 169,
+     "nein_stimmen": 246,
+     "ja": 40.722892
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 208,
+     "nein_stimmen": 192,
+     "ja": 52.0
+    },
+    "stichfrage": {
+     "ja_stimmen": 153,
+     "nein_stimmen": 218,
+     "ja": 41.239892
+    }
+   }
+  },
+  {
+   "bfs": 2939,
+   "name": "Schaffhausen",
+   "kurz": "Schaffhausen",
+   "bezirk": "Bezirk Schaffhausen",
+   "stimmberechtigte": 22862,
+   "eingelegte_stimmzettel": 15584,
+   "stimmbeteiligung": 68.165515,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 6154,
+     "nein_stimmen": 8144,
+     "ja": 43.040985
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 5946,
+     "nein_stimmen": 7673,
+     "ja": 43.659593
+    },
+    "stichfrage": {
+     "ja_stimmen": 5258,
+     "nein_stimmen": 7017,
+     "ja": 42.835031
+    }
+   }
+  },
+  {
+   "bfs": 2952,
+   "name": "Schleitheim",
+   "kurz": "Schleitheim",
+   "bezirk": "Bezirk Schleitheim",
+   "stimmberechtigte": 1098,
+   "eingelegte_stimmzettel": 804,
+   "stimmbeteiligung": 73.224044,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 421,
+     "nein_stimmen": 330,
+     "ja": 56.058589
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 353,
+     "nein_stimmen": 331,
+     "ja": 51.608187
+    },
+    "stichfrage": {
+     "ja_stimmen": 367,
+     "nein_stimmen": 295,
+     "ja": 55.438066
+    }
+   }
+  },
+  {
+   "bfs": 2953,
+   "name": "Siblingen",
+   "kurz": "Siblingen",
+   "bezirk": "Bezirk Schleitheim",
+   "stimmberechtigte": 625,
+   "eingelegte_stimmzettel": 437,
+   "stimmbeteiligung": 69.92,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 225,
+     "nein_stimmen": 183,
+     "ja": 55.147059
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 191,
+     "nein_stimmen": 189,
+     "ja": 50.263158
+    },
+    "stichfrage": {
+     "ja_stimmen": 204,
+     "nein_stimmen": 167,
+     "ja": 54.986523
+    }
+   }
+  },
+  {
+   "bfs": 2964,
+   "name": "Stein am Rhein",
+   "kurz": "Stein am Rhein",
+   "bezirk": "Bezirk Stein",
+   "stimmberechtigte": 2504,
+   "eingelegte_stimmzettel": 1751,
+   "stimmbeteiligung": 69.928115,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 712,
+     "nein_stimmen": 906,
+     "ja": 44.004944
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 784,
+     "nein_stimmen": 765,
+     "ja": 50.613299
+    },
+    "stichfrage": {
+     "ja_stimmen": 647,
+     "nein_stimmen": 776,
+     "ja": 45.467323
+    }
+   }
+  },
+  {
+   "bfs": 2919,
+   "name": "Stetten (SH)",
+   "kurz": "Stetten",
+   "bezirk": "Bezirk Reiat",
+   "stimmberechtigte": 955,
+   "eingelegte_stimmzettel": 684,
+   "stimmbeteiligung": 71.623037,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 292,
+     "nein_stimmen": 339,
+     "ja": 46.275753
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 296,
+     "nein_stimmen": 311,
+     "ja": 48.764415
+    },
+    "stichfrage": {
+     "ja_stimmen": 259,
+     "nein_stimmen": 295,
+     "ja": 46.750903
+    }
+   }
+  },
+  {
+   "bfs": 2920,
+   "name": "Thayngen",
+   "kurz": "Thayngen",
+   "bezirk": "Bezirk Reiat",
+   "stimmberechtigte": 3426,
+   "eingelegte_stimmzettel": 2415,
+   "stimmbeteiligung": 70.490368,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 1169,
+     "nein_stimmen": 1029,
+     "ja": 53.184713
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 975,
+     "nein_stimmen": 1069,
+     "ja": 47.700587
+    },
+    "stichfrage": {
+     "ja_stimmen": 1029,
+     "nein_stimmen": 908,
+     "ja": 53.123387
+    }
+   }
+  },
+  {
+   "bfs": 2973,
+   "name": "Trasadingen",
+   "kurz": "Trasadingen",
+   "bezirk": "Bezirk Unterklettgau",
+   "stimmberechtigte": 397,
+   "eingelegte_stimmzettel": 287,
+   "stimmbeteiligung": 72.292191,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 137,
+     "nein_stimmen": 134,
+     "ja": 50.553506
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 115,
+     "nein_stimmen": 145,
+     "ja": 44.230769
+    },
+    "stichfrage": {
+     "ja_stimmen": 126,
+     "nein_stimmen": 112,
+     "ja": 52.941176
+    }
+   }
+  },
+  {
+   "bfs": 2974,
+   "name": "Wilchingen",
+   "kurz": "Wilchingen",
+   "bezirk": "Bezirk Unterklettgau",
+   "stimmberechtigte": 1206,
+   "eingelegte_stimmzettel": 795,
+   "stimmbeteiligung": 65.920398,
+   "fragen": {
+    "initiative": {
+     "ja_stimmen": 325,
+     "nein_stimmen": 421,
+     "ja": 43.565684
+    },
+    "gegenvorschlag": {
+     "ja_stimmen": 323,
+     "nein_stimmen": 407,
+     "ja": 44.246575
+    },
+    "stichfrage": {
+     "ja_stimmen": 290,
+     "nein_stimmen": 374,
+     "ja": 43.674699
+    }
+   }
+  }
+ ]
+}

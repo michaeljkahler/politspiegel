@@ -1,0 +1,1566 @@
+{
+ "abstimmtag": "20260927",
+ "timestamp": "2026-09-27T16:12:19",
+ "quelle": "https://ogd-static.voteinfo-app.ch/v1/ogd/sd-t-17-02-20260927-kantAbstimmung.json",
+ "kanton": {
+  "geoLevelnummer": 14,
+  "geoLevelname": "SH",
+  "nochKeineInformation": false
+ },
+ "vorlagen": [
+  {
+   "vorlagenId": 614311,
+   "reihenfolgeAnzeige": 1,
+   "vorlagenTitel": [
+    {
+     "langKey": "de",
+     "text": "A. Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen (Verkehrsflussinitiative)»"
+    },
+    {
+     "langKey": "fr",
+     "text": " "
+    },
+    {
+     "langKey": "it",
+     "text": " "
+    },
+    {
+     "langKey": "rm",
+     "text": " "
+    },
+    {
+     "langKey": "en",
+     "text": " "
+    }
+   ],
+   "vorlageBeendet": true,
+   "vorlageAngenommen": false,
+   "vorlagenArtId": 0,
+   "hauptvorlagenId": null,
+   "resultat": {
+    "gebietAusgezaehlt": true,
+    "jaStimmenInProzent": 46.742592704,
+    "jaStimmenAbsolut": 15555,
+    "neinStimmenAbsolut": 17723,
+    "stimmbeteiligungInProzent": 68.491649664,
+    "eingelegteStimmzettel": 36254,
+    "anzahlStimmberechtigte": 52932,
+    "gueltigeStimmen": 33938
+   },
+   "bezirke": [
+    {
+     "geoLevelnummer": "1401",
+     "geoLevelname": "Bezirk Oberklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.540983607,
+      "jaStimmenAbsolut": 1102,
+      "neinStimmenAbsolut": 1216,
+      "stimmbeteiligungInProzent": 71.176303048,
+      "eingelegteStimmzettel": 2499,
+      "anzahlStimmberechtigte": 3511,
+      "gueltigeStimmen": 2356
+     }
+    },
+    {
+     "geoLevelnummer": "1402",
+     "geoLevelname": "Bezirk Reiat",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.208226221,
+      "jaStimmenAbsolut": 1992,
+      "neinStimmenAbsolut": 1898,
+      "stimmbeteiligungInProzent": 71.769851952,
+      "eingelegteStimmzettel": 4266,
+      "anzahlStimmberechtigte": 5944,
+      "gueltigeStimmen": 4148
+     }
+    },
+    {
+     "geoLevelnummer": "1403",
+     "geoLevelname": "Bezirk Schaffhausen",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.042845517,
+      "jaStimmenAbsolut": 9409,
+      "neinStimmenAbsolut": 11480,
+      "stimmbeteiligungInProzent": 67.550941945,
+      "eingelegteStimmzettel": 22841,
+      "anzahlStimmberechtigte": 33813,
+      "gueltigeStimmen": 21152
+     }
+    },
+    {
+     "geoLevelnummer": "1404",
+     "geoLevelname": "Bezirk Schleitheim",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 57.853025937,
+      "jaStimmenAbsolut": 803,
+      "neinStimmenAbsolut": 585,
+      "stimmbeteiligungInProzent": 71.974830591,
+      "eingelegteStimmzettel": 1487,
+      "anzahlStimmberechtigte": 2066,
+      "gueltigeStimmen": 1404
+     }
+    },
+    {
+     "geoLevelnummer": "1405",
+     "geoLevelname": "Bezirk Stein",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.915520629,
+      "jaStimmenAbsolut": 1194,
+      "neinStimmenAbsolut": 1351,
+      "stimmbeteiligungInProzent": 69.076305221,
+      "eingelegteStimmzettel": 2752,
+      "anzahlStimmberechtigte": 3984,
+      "gueltigeStimmen": 2587
+     }
+    },
+    {
+     "geoLevelnummer": "1406",
+     "geoLevelname": "Bezirk Unterklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.930604982,
+      "jaStimmenAbsolut": 1055,
+      "neinStimmenAbsolut": 1193,
+      "stimmbeteiligungInProzent": 66.657443276,
+      "eingelegteStimmzettel": 2409,
+      "anzahlStimmberechtigte": 3614,
+      "gueltigeStimmen": 2291
+     }
+    }
+   ],
+   "gemeinden": [
+    {
+     "geoLevelnummer": "2901",
+     "geoLevelname": "Gächlingen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.21987315,
+      "jaStimmenAbsolut": 247,
+      "neinStimmenAbsolut": 226,
+      "stimmbeteiligungInProzent": 74.23580786,
+      "eingelegteStimmzettel": 510,
+      "anzahlStimmberechtigte": 687,
+      "gueltigeStimmen": 489
+     }
+    },
+    {
+     "geoLevelnummer": "2903",
+     "geoLevelname": "Löhningen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.523545706,
+      "jaStimmenAbsolut": 372,
+      "neinStimmenAbsolut": 350,
+      "stimmbeteiligungInProzent": 71.297989031,
+      "eingelegteStimmzettel": 780,
+      "anzahlStimmberechtigte": 1094,
+      "gueltigeStimmen": 729
+     }
+    },
+    {
+     "geoLevelnummer": "2904",
+     "geoLevelname": "Neunkirch",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.009795191,
+      "jaStimmenAbsolut": 483,
+      "neinStimmenAbsolut": 640,
+      "stimmbeteiligungInProzent": 69.884393064,
+      "eingelegteStimmzettel": 1209,
+      "anzahlStimmberechtigte": 1730,
+      "gueltigeStimmen": 1138
+     }
+    },
+    {
+     "geoLevelnummer": "2914",
+     "geoLevelname": "Büttenhardt",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 48.497854077,
+      "jaStimmenAbsolut": 113,
+      "neinStimmenAbsolut": 120,
+      "stimmbeteiligungInProzent": 79.430379747,
+      "eingelegteStimmzettel": 251,
+      "anzahlStimmberechtigte": 316,
+      "gueltigeStimmen": 251
+     }
+    },
+    {
+     "geoLevelnummer": "2915",
+     "geoLevelname": "Dörflingen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 49.048625793,
+      "jaStimmenAbsolut": 232,
+      "neinStimmenAbsolut": 241,
+      "stimmbeteiligungInProzent": 71.927374302,
+      "eingelegteStimmzettel": 515,
+      "anzahlStimmberechtigte": 716,
+      "gueltigeStimmen": 484
+     }
+    },
+    {
+     "geoLevelnummer": "2917",
+     "geoLevelname": "Lohn (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.394366197,
+      "jaStimmenAbsolut": 186,
+      "neinStimmenAbsolut": 169,
+      "stimmbeteiligungInProzent": 75.517890772,
+      "eingelegteStimmzettel": 401,
+      "anzahlStimmberechtigte": 531,
+      "gueltigeStimmen": 358
+     }
+    },
+    {
+     "geoLevelnummer": "2919",
+     "geoLevelname": "Stetten (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.275752773,
+      "jaStimmenAbsolut": 292,
+      "neinStimmenAbsolut": 339,
+      "stimmbeteiligungInProzent": 71.623036649,
+      "eingelegteStimmzettel": 684,
+      "anzahlStimmberechtigte": 955,
+      "gueltigeStimmen": 640
+     }
+    },
+    {
+     "geoLevelnummer": "2920",
+     "geoLevelname": "Thayngen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 53.184713376,
+      "jaStimmenAbsolut": 1169,
+      "neinStimmenAbsolut": 1029,
+      "stimmbeteiligungInProzent": 70.490367776,
+      "eingelegteStimmzettel": 2415,
+      "anzahlStimmberechtigte": 3426,
+      "gueltigeStimmen": 2415
+     }
+    },
+    {
+     "geoLevelnummer": "2931",
+     "geoLevelname": "Bargen (SH)",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 61.904761905,
+      "jaStimmenAbsolut": 78,
+      "neinStimmenAbsolut": 48,
+      "stimmbeteiligungInProzent": 68.341708543,
+      "eingelegteStimmzettel": 136,
+      "anzahlStimmberechtigte": 199,
+      "gueltigeStimmen": 130
+     }
+    },
+    {
+     "geoLevelnummer": "2932",
+     "geoLevelname": "Beringen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.813852814,
+      "jaStimmenAbsolut": 1098,
+      "neinStimmenAbsolut": 981,
+      "stimmbeteiligungInProzent": 70.153374233,
+      "eingelegteStimmzettel": 2287,
+      "anzahlStimmberechtigte": 3260,
+      "gueltigeStimmen": 2114
+     }
+    },
+    {
+     "geoLevelnummer": "2933",
+     "geoLevelname": "Buchberg",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.248945148,
+      "jaStimmenAbsolut": 205,
+      "neinStimmenAbsolut": 269,
+      "stimmbeteiligungInProzent": 79.607250755,
+      "eingelegteStimmzettel": 527,
+      "anzahlStimmberechtigte": 662,
+      "gueltigeStimmen": 477
+     }
+    },
+    {
+     "geoLevelnummer": "2936",
+     "geoLevelname": "Merishausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 58.071748879,
+      "jaStimmenAbsolut": 259,
+      "neinStimmenAbsolut": 187,
+      "stimmbeteiligungInProzent": 74.539877301,
+      "eingelegteStimmzettel": 486,
+      "anzahlStimmberechtigte": 652,
+      "gueltigeStimmen": 447
+     }
+    },
+    {
+     "geoLevelnummer": "2937",
+     "geoLevelname": "Neuhausen am Rheinfall",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.394296952,
+      "jaStimmenAbsolut": 1446,
+      "neinStimmenAbsolut": 1605,
+      "stimmbeteiligungInProzent": 60.032217648,
+      "eingelegteStimmzettel": 3354,
+      "anzahlStimmberechtigte": 5587,
+      "gueltigeStimmen": 3083
+     }
+    },
+    {
+     "geoLevelnummer": "2938",
+     "geoLevelname": "Rüdlingen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 40.722891566,
+      "jaStimmenAbsolut": 169,
+      "neinStimmenAbsolut": 246,
+      "stimmbeteiligungInProzent": 79.018612521,
+      "eingelegteStimmzettel": 467,
+      "anzahlStimmberechtigte": 591,
+      "gueltigeStimmen": 431
+     }
+    },
+    {
+     "geoLevelnummer": "2939",
+     "geoLevelname": "Schaffhausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.040984753,
+      "jaStimmenAbsolut": 6154,
+      "neinStimmenAbsolut": 8144,
+      "stimmbeteiligungInProzent": 68.165514828,
+      "eingelegteStimmzettel": 15584,
+      "anzahlStimmberechtigte": 22862,
+      "gueltigeStimmen": 14470
+     }
+    },
+    {
+     "geoLevelnummer": "2951",
+     "geoLevelname": "Beggingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 68.558951965,
+      "jaStimmenAbsolut": 157,
+      "neinStimmenAbsolut": 72,
+      "stimmbeteiligungInProzent": 71.720116618,
+      "eingelegteStimmzettel": 246,
+      "anzahlStimmberechtigte": 343,
+      "gueltigeStimmen": 233
+     }
+    },
+    {
+     "geoLevelnummer": "2952",
+     "geoLevelname": "Schleitheim",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 56.058588549,
+      "jaStimmenAbsolut": 421,
+      "neinStimmenAbsolut": 330,
+      "stimmbeteiligungInProzent": 73.224043716,
+      "eingelegteStimmzettel": 804,
+      "anzahlStimmberechtigte": 1098,
+      "gueltigeStimmen": 760
+     }
+    },
+    {
+     "geoLevelnummer": "2953",
+     "geoLevelname": "Siblingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 55.147058824,
+      "jaStimmenAbsolut": 225,
+      "neinStimmenAbsolut": 183,
+      "stimmbeteiligungInProzent": 69.92,
+      "eingelegteStimmzettel": 437,
+      "anzahlStimmberechtigte": 625,
+      "gueltigeStimmen": 411
+     }
+    },
+    {
+     "geoLevelnummer": "2961",
+     "geoLevelname": "Buch (SH)",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 56.551724138,
+      "jaStimmenAbsolut": 82,
+      "neinStimmenAbsolut": 63,
+      "stimmbeteiligungInProzent": 72.641509434,
+      "eingelegteStimmzettel": 154,
+      "anzahlStimmberechtigte": 212,
+      "gueltigeStimmen": 148
+     }
+    },
+    {
+     "geoLevelnummer": "2962",
+     "geoLevelname": "Hemishofen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.072961373,
+      "jaStimmenAbsolut": 119,
+      "neinStimmenAbsolut": 114,
+      "stimmbeteiligungInProzent": 70.467836257,
+      "eingelegteStimmzettel": 241,
+      "anzahlStimmberechtigte": 342,
+      "gueltigeStimmen": 234
+     }
+    },
+    {
+     "geoLevelnummer": "2963",
+     "geoLevelname": "Ramsen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.183970856,
+      "jaStimmenAbsolut": 281,
+      "neinStimmenAbsolut": 268,
+      "stimmbeteiligungInProzent": 65.442764579,
+      "eingelegteStimmzettel": 606,
+      "anzahlStimmberechtigte": 926,
+      "gueltigeStimmen": 561
+     }
+    },
+    {
+     "geoLevelnummer": "2964",
+     "geoLevelname": "Stein am Rhein",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 44.004944376,
+      "jaStimmenAbsolut": 712,
+      "neinStimmenAbsolut": 906,
+      "stimmbeteiligungInProzent": 69.928115016,
+      "eingelegteStimmzettel": 1751,
+      "anzahlStimmberechtigte": 2504,
+      "gueltigeStimmen": 1644
+     }
+    },
+    {
+     "geoLevelnummer": "2971",
+     "geoLevelname": "Hallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.543330088,
+      "jaStimmenAbsolut": 478,
+      "neinStimmenAbsolut": 549,
+      "stimmbeteiligungInProzent": 65.671641791,
+      "eingelegteStimmzettel": 1100,
+      "anzahlStimmberechtigte": 1675,
+      "gueltigeStimmen": 1048
+     }
+    },
+    {
+     "geoLevelnummer": "2972",
+     "geoLevelname": "Oberhallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 56.37254902,
+      "jaStimmenAbsolut": 115,
+      "neinStimmenAbsolut": 89,
+      "stimmbeteiligungInProzent": 67.55952381,
+      "eingelegteStimmzettel": 227,
+      "anzahlStimmberechtigte": 336,
+      "gueltigeStimmen": 208
+     }
+    },
+    {
+     "geoLevelnummer": "2973",
+     "geoLevelname": "Trasadingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.553505535,
+      "jaStimmenAbsolut": 137,
+      "neinStimmenAbsolut": 134,
+      "stimmbeteiligungInProzent": 72.292191436,
+      "eingelegteStimmzettel": 287,
+      "anzahlStimmberechtigte": 397,
+      "gueltigeStimmen": 277
+     }
+    },
+    {
+     "geoLevelnummer": "2974",
+     "geoLevelname": "Wilchingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.565683646,
+      "jaStimmenAbsolut": 325,
+      "neinStimmenAbsolut": 421,
+      "stimmbeteiligungInProzent": 65.92039801,
+      "eingelegteStimmzettel": 795,
+      "anzahlStimmberechtigte": 1206,
+      "gueltigeStimmen": 758
+     }
+    }
+   ]
+  },
+  {
+   "vorlagenId": 614312,
+   "reihenfolgeAnzeige": 2,
+   "vorlagenTitel": [
+    {
+     "langKey": "de",
+     "text": "B. Änderung des Strassengesetzes (Gegenvorschlag zur Verkehrsflussinitiative)"
+    },
+    {
+     "langKey": "fr",
+     "text": " "
+    },
+    {
+     "langKey": "it",
+     "text": " "
+    },
+    {
+     "langKey": "rm",
+     "text": " "
+    },
+    {
+     "langKey": "en",
+     "text": " "
+    }
+   ],
+   "vorlageBeendet": true,
+   "vorlageAngenommen": false,
+   "vorlagenArtId": 0,
+   "hauptvorlagenId": 614311,
+   "resultat": {
+    "gebietAusgezaehlt": true,
+    "jaStimmenInProzent": 46.307555893,
+    "jaStimmenAbsolut": 14623,
+    "neinStimmenAbsolut": 16955,
+    "stimmbeteiligungInProzent": 68.491649664,
+    "eingelegteStimmzettel": 36254,
+    "anzahlStimmberechtigte": 52932,
+    "gueltigeStimmen": 33938
+   },
+   "bezirke": [
+    {
+     "geoLevelnummer": "1401",
+     "geoLevelname": "Bezirk Oberklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.188848921,
+      "jaStimmenAbsolut": 1005,
+      "neinStimmenAbsolut": 1219,
+      "stimmbeteiligungInProzent": 71.176303048,
+      "eingelegteStimmzettel": 2499,
+      "anzahlStimmberechtigte": 3511,
+      "gueltigeStimmen": 2356
+     }
+    },
+    {
+     "geoLevelnummer": "1402",
+     "geoLevelname": "Bezirk Reiat",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 48.825136612,
+      "jaStimmenAbsolut": 1787,
+      "neinStimmenAbsolut": 1873,
+      "stimmbeteiligungInProzent": 71.769851952,
+      "eingelegteStimmzettel": 4266,
+      "anzahlStimmberechtigte": 5944,
+      "gueltigeStimmen": 4148
+     }
+    },
+    {
+     "geoLevelnummer": "1403",
+     "geoLevelname": "Bezirk Schaffhausen",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.12693686,
+      "jaStimmenAbsolut": 8941,
+      "neinStimmenAbsolut": 10872,
+      "stimmbeteiligungInProzent": 67.550941945,
+      "eingelegteStimmzettel": 22841,
+      "anzahlStimmberechtigte": 33813,
+      "gueltigeStimmen": 21152
+     }
+    },
+    {
+     "geoLevelnummer": "1404",
+     "geoLevelname": "Bezirk Schleitheim",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.626959248,
+      "jaStimmenAbsolut": 646,
+      "neinStimmenAbsolut": 630,
+      "stimmbeteiligungInProzent": 71.974830591,
+      "eingelegteStimmzettel": 1487,
+      "anzahlStimmberechtigte": 2066,
+      "gueltigeStimmen": 1404
+     }
+    },
+    {
+     "geoLevelnummer": "1405",
+     "geoLevelname": "Bezirk Stein",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.246710526,
+      "jaStimmenAbsolut": 1222,
+      "neinStimmenAbsolut": 1210,
+      "stimmbeteiligungInProzent": 69.076305221,
+      "eingelegteStimmzettel": 2752,
+      "anzahlStimmberechtigte": 3984,
+      "gueltigeStimmen": 2587
+     }
+    },
+    {
+     "geoLevelnummer": "1406",
+     "geoLevelname": "Bezirk Unterklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.031753336,
+      "jaStimmenAbsolut": 1022,
+      "neinStimmenAbsolut": 1151,
+      "stimmbeteiligungInProzent": 66.657443276,
+      "eingelegteStimmzettel": 2409,
+      "anzahlStimmberechtigte": 3614,
+      "gueltigeStimmen": 2291
+     }
+    }
+   ],
+   "gemeinden": [
+    {
+     "geoLevelnummer": "2901",
+     "geoLevelname": "Gächlingen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.454545455,
+      "jaStimmenAbsolut": 210,
+      "neinStimmenAbsolut": 252,
+      "stimmbeteiligungInProzent": 74.23580786,
+      "eingelegteStimmzettel": 510,
+      "anzahlStimmberechtigte": 687,
+      "gueltigeStimmen": 489
+     }
+    },
+    {
+     "geoLevelnummer": "2903",
+     "geoLevelname": "Löhningen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.277361319,
+      "jaStimmenAbsolut": 302,
+      "neinStimmenAbsolut": 365,
+      "stimmbeteiligungInProzent": 71.297989031,
+      "eingelegteStimmzettel": 780,
+      "anzahlStimmberechtigte": 1094,
+      "gueltigeStimmen": 729
+     }
+    },
+    {
+     "geoLevelnummer": "2904",
+     "geoLevelname": "Neunkirch",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.02283105,
+      "jaStimmenAbsolut": 493,
+      "neinStimmenAbsolut": 602,
+      "stimmbeteiligungInProzent": 69.884393064,
+      "eingelegteStimmzettel": 1209,
+      "anzahlStimmberechtigte": 1730,
+      "gueltigeStimmen": 1138
+     }
+    },
+    {
+     "geoLevelnummer": "2914",
+     "geoLevelname": "Büttenhardt",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.212389381,
+      "jaStimmenAbsolut": 118,
+      "neinStimmenAbsolut": 108,
+      "stimmbeteiligungInProzent": 79.430379747,
+      "eingelegteStimmzettel": 251,
+      "anzahlStimmberechtigte": 316,
+      "gueltigeStimmen": 251
+     }
+    },
+    {
+     "geoLevelnummer": "2915",
+     "geoLevelname": "Dörflingen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.208791209,
+      "jaStimmenAbsolut": 233,
+      "neinStimmenAbsolut": 222,
+      "stimmbeteiligungInProzent": 71.927374302,
+      "eingelegteStimmzettel": 515,
+      "anzahlStimmberechtigte": 716,
+      "gueltigeStimmen": 484
+     }
+    },
+    {
+     "geoLevelnummer": "2917",
+     "geoLevelname": "Lohn (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.304878049,
+      "jaStimmenAbsolut": 165,
+      "neinStimmenAbsolut": 163,
+      "stimmbeteiligungInProzent": 75.517890772,
+      "eingelegteStimmzettel": 401,
+      "anzahlStimmberechtigte": 531,
+      "gueltigeStimmen": 358
+     }
+    },
+    {
+     "geoLevelnummer": "2919",
+     "geoLevelname": "Stetten (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 48.764415157,
+      "jaStimmenAbsolut": 296,
+      "neinStimmenAbsolut": 311,
+      "stimmbeteiligungInProzent": 71.623036649,
+      "eingelegteStimmzettel": 684,
+      "anzahlStimmberechtigte": 955,
+      "gueltigeStimmen": 640
+     }
+    },
+    {
+     "geoLevelnummer": "2920",
+     "geoLevelname": "Thayngen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.700587084,
+      "jaStimmenAbsolut": 975,
+      "neinStimmenAbsolut": 1069,
+      "stimmbeteiligungInProzent": 70.490367776,
+      "eingelegteStimmzettel": 2415,
+      "anzahlStimmberechtigte": 3426,
+      "gueltigeStimmen": 2415
+     }
+    },
+    {
+     "geoLevelnummer": "2931",
+     "geoLevelname": "Bargen (SH)",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 49.166666667,
+      "jaStimmenAbsolut": 59,
+      "neinStimmenAbsolut": 61,
+      "stimmbeteiligungInProzent": 68.341708543,
+      "eingelegteStimmzettel": 136,
+      "anzahlStimmberechtigte": 199,
+      "gueltigeStimmen": 130
+     }
+    },
+    {
+     "geoLevelnummer": "2932",
+     "geoLevelname": "Beringen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.482617587,
+      "jaStimmenAbsolut": 1007,
+      "neinStimmenAbsolut": 949,
+      "stimmbeteiligungInProzent": 70.153374233,
+      "eingelegteStimmzettel": 2287,
+      "anzahlStimmberechtigte": 3260,
+      "gueltigeStimmen": 2114
+     }
+    },
+    {
+     "geoLevelnummer": "2933",
+     "geoLevelname": "Buchberg",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 54.279279279,
+      "jaStimmenAbsolut": 241,
+      "neinStimmenAbsolut": 203,
+      "stimmbeteiligungInProzent": 79.607250755,
+      "eingelegteStimmzettel": 527,
+      "anzahlStimmberechtigte": 662,
+      "gueltigeStimmen": 477
+     }
+    },
+    {
+     "geoLevelnummer": "2936",
+     "geoLevelname": "Merishausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.361445783,
+      "jaStimmenAbsolut": 209,
+      "neinStimmenAbsolut": 206,
+      "stimmbeteiligungInProzent": 74.539877301,
+      "eingelegteStimmzettel": 486,
+      "anzahlStimmberechtigte": 652,
+      "gueltigeStimmen": 447
+     }
+    },
+    {
+     "geoLevelnummer": "2937",
+     "geoLevelname": "Neuhausen am Rheinfall",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 44.456103533,
+      "jaStimmenAbsolut": 1271,
+      "neinStimmenAbsolut": 1588,
+      "stimmbeteiligungInProzent": 60.032217648,
+      "eingelegteStimmzettel": 3354,
+      "anzahlStimmberechtigte": 5587,
+      "gueltigeStimmen": 3083
+     }
+    },
+    {
+     "geoLevelnummer": "2938",
+     "geoLevelname": "Rüdlingen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.0,
+      "jaStimmenAbsolut": 208,
+      "neinStimmenAbsolut": 192,
+      "stimmbeteiligungInProzent": 79.018612521,
+      "eingelegteStimmzettel": 467,
+      "anzahlStimmberechtigte": 591,
+      "gueltigeStimmen": 431
+     }
+    },
+    {
+     "geoLevelnummer": "2939",
+     "geoLevelname": "Schaffhausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.659593215,
+      "jaStimmenAbsolut": 5946,
+      "neinStimmenAbsolut": 7673,
+      "stimmbeteiligungInProzent": 68.165514828,
+      "eingelegteStimmzettel": 15584,
+      "anzahlStimmberechtigte": 22862,
+      "gueltigeStimmen": 14470
+     }
+    },
+    {
+     "geoLevelnummer": "2951",
+     "geoLevelname": "Beggingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 48.113207547,
+      "jaStimmenAbsolut": 102,
+      "neinStimmenAbsolut": 110,
+      "stimmbeteiligungInProzent": 71.720116618,
+      "eingelegteStimmzettel": 246,
+      "anzahlStimmberechtigte": 343,
+      "gueltigeStimmen": 233
+     }
+    },
+    {
+     "geoLevelnummer": "2952",
+     "geoLevelname": "Schleitheim",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.608187135,
+      "jaStimmenAbsolut": 353,
+      "neinStimmenAbsolut": 331,
+      "stimmbeteiligungInProzent": 73.224043716,
+      "eingelegteStimmzettel": 804,
+      "anzahlStimmberechtigte": 1098,
+      "gueltigeStimmen": 760
+     }
+    },
+    {
+     "geoLevelnummer": "2953",
+     "geoLevelname": "Siblingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.263157895,
+      "jaStimmenAbsolut": 191,
+      "neinStimmenAbsolut": 189,
+      "stimmbeteiligungInProzent": 69.92,
+      "eingelegteStimmzettel": 437,
+      "anzahlStimmberechtigte": 625,
+      "gueltigeStimmen": 411
+     }
+    },
+    {
+     "geoLevelnummer": "2961",
+     "geoLevelname": "Buch (SH)",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.0,
+      "jaStimmenAbsolut": 67,
+      "neinStimmenAbsolut": 67,
+      "stimmbeteiligungInProzent": 72.641509434,
+      "eingelegteStimmzettel": 154,
+      "anzahlStimmberechtigte": 212,
+      "gueltigeStimmen": 148
+     }
+    },
+    {
+     "geoLevelnummer": "2962",
+     "geoLevelname": "Hemishofen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.678733032,
+      "jaStimmenAbsolut": 112,
+      "neinStimmenAbsolut": 109,
+      "stimmbeteiligungInProzent": 70.467836257,
+      "eingelegteStimmzettel": 241,
+      "anzahlStimmberechtigte": 342,
+      "gueltigeStimmen": 234
+     }
+    },
+    {
+     "geoLevelnummer": "2963",
+     "geoLevelname": "Ramsen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 49.053030303,
+      "jaStimmenAbsolut": 259,
+      "neinStimmenAbsolut": 269,
+      "stimmbeteiligungInProzent": 65.442764579,
+      "eingelegteStimmzettel": 606,
+      "anzahlStimmberechtigte": 926,
+      "gueltigeStimmen": 561
+     }
+    },
+    {
+     "geoLevelnummer": "2964",
+     "geoLevelname": "Stein am Rhein",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.613298903,
+      "jaStimmenAbsolut": 784,
+      "neinStimmenAbsolut": 765,
+      "stimmbeteiligungInProzent": 69.928115016,
+      "eingelegteStimmzettel": 1751,
+      "anzahlStimmberechtigte": 2504,
+      "gueltigeStimmen": 1644
+     }
+    },
+    {
+     "geoLevelnummer": "2971",
+     "geoLevelname": "Hallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 49.746192893,
+      "jaStimmenAbsolut": 490,
+      "neinStimmenAbsolut": 495,
+      "stimmbeteiligungInProzent": 65.671641791,
+      "eingelegteStimmzettel": 1100,
+      "anzahlStimmberechtigte": 1675,
+      "gueltigeStimmen": 1048
+     }
+    },
+    {
+     "geoLevelnummer": "2972",
+     "geoLevelname": "Oberhallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.474747475,
+      "jaStimmenAbsolut": 94,
+      "neinStimmenAbsolut": 104,
+      "stimmbeteiligungInProzent": 67.55952381,
+      "eingelegteStimmzettel": 227,
+      "anzahlStimmberechtigte": 336,
+      "gueltigeStimmen": 208
+     }
+    },
+    {
+     "geoLevelnummer": "2973",
+     "geoLevelname": "Trasadingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 44.230769231,
+      "jaStimmenAbsolut": 115,
+      "neinStimmenAbsolut": 145,
+      "stimmbeteiligungInProzent": 72.292191436,
+      "eingelegteStimmzettel": 287,
+      "anzahlStimmberechtigte": 397,
+      "gueltigeStimmen": 277
+     }
+    },
+    {
+     "geoLevelnummer": "2974",
+     "geoLevelname": "Wilchingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 44.246575342,
+      "jaStimmenAbsolut": 323,
+      "neinStimmenAbsolut": 407,
+      "stimmbeteiligungInProzent": 65.92039801,
+      "eingelegteStimmzettel": 795,
+      "anzahlStimmberechtigte": 1206,
+      "gueltigeStimmen": 758
+     }
+    }
+   ]
+  },
+  {
+   "vorlagenId": 614313,
+   "reihenfolgeAnzeige": 3,
+   "vorlagenTitel": [
+    {
+     "langKey": "de",
+     "text": "C. Stichfrage: Welche der beiden Vorlagen soll in Kraft treten, falls sowohl die kantonale Volksinitiative als auch der Gegenvorschlag angenommen werden?"
+    },
+    {
+     "langKey": "fr",
+     "text": " "
+    },
+    {
+     "langKey": "it",
+     "text": " "
+    },
+    {
+     "langKey": "rm",
+     "text": " "
+    },
+    {
+     "langKey": "en",
+     "text": " "
+    }
+   ],
+   "vorlageBeendet": true,
+   "vorlageAngenommen": false,
+   "vorlagenArtId": 0,
+   "hauptvorlagenId": 614311,
+   "resultat": {
+    "gebietAusgezaehlt": true,
+    "jaStimmenInProzent": 46.889952153,
+    "jaStimmenAbsolut": 13622,
+    "neinStimmenAbsolut": 15429,
+    "stimmbeteiligungInProzent": 68.491649664,
+    "eingelegteStimmzettel": 36254,
+    "anzahlStimmberechtigte": 52932,
+    "gueltigeStimmen": 33938
+   },
+   "bezirke": [
+    {
+     "geoLevelnummer": "1401",
+     "geoLevelname": "Bezirk Oberklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.951819076,
+      "jaStimmenAbsolut": 955,
+      "neinStimmenAbsolut": 1079,
+      "stimmbeteiligungInProzent": 71.176303048,
+      "eingelegteStimmzettel": 2499,
+      "anzahlStimmberechtigte": 3511,
+      "gueltigeStimmen": 2356
+     }
+    },
+    {
+     "geoLevelnummer": "1402",
+     "geoLevelname": "Bezirk Reiat",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.12212183,
+      "jaStimmenAbsolut": 1754,
+      "neinStimmenAbsolut": 1677,
+      "stimmbeteiligungInProzent": 71.769851952,
+      "eingelegteStimmzettel": 4266,
+      "anzahlStimmberechtigte": 5944,
+      "gueltigeStimmen": 4148
+     }
+    },
+    {
+     "geoLevelnummer": "1403",
+     "geoLevelname": "Bezirk Schaffhausen",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.273631841,
+      "jaStimmenAbsolut": 8190,
+      "neinStimmenAbsolut": 9900,
+      "stimmbeteiligungInProzent": 67.550941945,
+      "eingelegteStimmzettel": 22841,
+      "anzahlStimmberechtigte": 33813,
+      "gueltigeStimmen": 21152
+     }
+    },
+    {
+     "geoLevelnummer": "1404",
+     "geoLevelname": "Bezirk Schleitheim",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 57.282343369,
+      "jaStimmenAbsolut": 704,
+      "neinStimmenAbsolut": 525,
+      "stimmbeteiligungInProzent": 71.974830591,
+      "eingelegteStimmzettel": 1487,
+      "anzahlStimmberechtigte": 2066,
+      "gueltigeStimmen": 1404
+     }
+    },
+    {
+     "geoLevelnummer": "1405",
+     "geoLevelname": "Bezirk Stein",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.735346359,
+      "jaStimmenAbsolut": 1075,
+      "neinStimmenAbsolut": 1177,
+      "stimmbeteiligungInProzent": 69.076305221,
+      "eingelegteStimmzettel": 2752,
+      "anzahlStimmberechtigte": 3984,
+      "gueltigeStimmen": 2587
+     }
+    },
+    {
+     "geoLevelnummer": "1406",
+     "geoLevelname": "Bezirk Unterklettgau",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.848635236,
+      "jaStimmenAbsolut": 944,
+      "neinStimmenAbsolut": 1071,
+      "stimmbeteiligungInProzent": 66.657443276,
+      "eingelegteStimmzettel": 2409,
+      "anzahlStimmberechtigte": 3614,
+      "gueltigeStimmen": 2291
+     }
+    }
+   ],
+   "gemeinden": [
+    {
+     "geoLevelnummer": "2901",
+     "geoLevelname": "Gächlingen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 47.529411765,
+      "jaStimmenAbsolut": 202,
+      "neinStimmenAbsolut": 223,
+      "stimmbeteiligungInProzent": 74.23580786,
+      "eingelegteStimmzettel": 510,
+      "anzahlStimmberechtigte": 687,
+      "gueltigeStimmen": 489
+     }
+    },
+    {
+     "geoLevelnummer": "2903",
+     "geoLevelname": "Löhningen",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.448657188,
+      "jaStimmenAbsolut": 332,
+      "neinStimmenAbsolut": 301,
+      "stimmbeteiligungInProzent": 71.297989031,
+      "eingelegteStimmzettel": 780,
+      "anzahlStimmberechtigte": 1094,
+      "gueltigeStimmen": 729
+     }
+    },
+    {
+     "geoLevelnummer": "2904",
+     "geoLevelname": "Neunkirch",
+     "geoLevelParentnummer": "1401",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.135245902,
+      "jaStimmenAbsolut": 421,
+      "neinStimmenAbsolut": 555,
+      "stimmbeteiligungInProzent": 69.884393064,
+      "eingelegteStimmzettel": 1209,
+      "anzahlStimmberechtigte": 1730,
+      "gueltigeStimmen": 1138
+     }
+    },
+    {
+     "geoLevelnummer": "2914",
+     "geoLevelname": "Büttenhardt",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.376811594,
+      "jaStimmenAbsolut": 96,
+      "neinStimmenAbsolut": 111,
+      "stimmbeteiligungInProzent": 79.430379747,
+      "eingelegteStimmzettel": 251,
+      "anzahlStimmberechtigte": 316,
+      "gueltigeStimmen": 251
+     }
+    },
+    {
+     "geoLevelnummer": "2915",
+     "geoLevelname": "Dörflingen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 49.642004773,
+      "jaStimmenAbsolut": 208,
+      "neinStimmenAbsolut": 211,
+      "stimmbeteiligungInProzent": 71.927374302,
+      "eingelegteStimmzettel": 515,
+      "anzahlStimmberechtigte": 716,
+      "gueltigeStimmen": 484
+     }
+    },
+    {
+     "geoLevelnummer": "2917",
+     "geoLevelname": "Lohn (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 51.592356688,
+      "jaStimmenAbsolut": 162,
+      "neinStimmenAbsolut": 152,
+      "stimmbeteiligungInProzent": 75.517890772,
+      "eingelegteStimmzettel": 401,
+      "anzahlStimmberechtigte": 531,
+      "gueltigeStimmen": 358
+     }
+    },
+    {
+     "geoLevelnummer": "2919",
+     "geoLevelname": "Stetten (SH)",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 46.750902527,
+      "jaStimmenAbsolut": 259,
+      "neinStimmenAbsolut": 295,
+      "stimmbeteiligungInProzent": 71.623036649,
+      "eingelegteStimmzettel": 684,
+      "anzahlStimmberechtigte": 955,
+      "gueltigeStimmen": 640
+     }
+    },
+    {
+     "geoLevelnummer": "2920",
+     "geoLevelname": "Thayngen",
+     "geoLevelParentnummer": "1402",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 53.12338668,
+      "jaStimmenAbsolut": 1029,
+      "neinStimmenAbsolut": 908,
+      "stimmbeteiligungInProzent": 70.490367776,
+      "eingelegteStimmzettel": 2415,
+      "anzahlStimmberechtigte": 3426,
+      "gueltigeStimmen": 2415
+     }
+    },
+    {
+     "geoLevelnummer": "2931",
+     "geoLevelname": "Bargen (SH)",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 64.102564103,
+      "jaStimmenAbsolut": 75,
+      "neinStimmenAbsolut": 42,
+      "stimmbeteiligungInProzent": 68.341708543,
+      "eingelegteStimmzettel": 136,
+      "anzahlStimmberechtigte": 199,
+      "gueltigeStimmen": 130
+     }
+    },
+    {
+     "geoLevelnummer": "2932",
+     "geoLevelname": "Beringen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.1218716,
+      "jaStimmenAbsolut": 958,
+      "neinStimmenAbsolut": 880,
+      "stimmbeteiligungInProzent": 70.153374233,
+      "eingelegteStimmzettel": 2287,
+      "anzahlStimmberechtigte": 3260,
+      "gueltigeStimmen": 2114
+     }
+    },
+    {
+     "geoLevelnummer": "2933",
+     "geoLevelname": "Buchberg",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.127962085,
+      "jaStimmenAbsolut": 182,
+      "neinStimmenAbsolut": 240,
+      "stimmbeteiligungInProzent": 79.607250755,
+      "eingelegteStimmzettel": 527,
+      "anzahlStimmberechtigte": 662,
+      "gueltigeStimmen": 477
+     }
+    },
+    {
+     "geoLevelnummer": "2936",
+     "geoLevelname": "Merishausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 55.745721271,
+      "jaStimmenAbsolut": 228,
+      "neinStimmenAbsolut": 181,
+      "stimmbeteiligungInProzent": 74.539877301,
+      "eingelegteStimmzettel": 486,
+      "anzahlStimmberechtigte": 652,
+      "gueltigeStimmen": 447
+     }
+    },
+    {
+     "geoLevelnummer": "2937",
+     "geoLevelname": "Neuhausen am Rheinfall",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 50.263355907,
+      "jaStimmenAbsolut": 1336,
+      "neinStimmenAbsolut": 1322,
+      "stimmbeteiligungInProzent": 60.032217648,
+      "eingelegteStimmzettel": 3354,
+      "anzahlStimmberechtigte": 5587,
+      "gueltigeStimmen": 3083
+     }
+    },
+    {
+     "geoLevelnummer": "2938",
+     "geoLevelname": "Rüdlingen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 41.239892183,
+      "jaStimmenAbsolut": 153,
+      "neinStimmenAbsolut": 218,
+      "stimmbeteiligungInProzent": 79.018612521,
+      "eingelegteStimmzettel": 467,
+      "anzahlStimmberechtigte": 591,
+      "gueltigeStimmen": 431
+     }
+    },
+    {
+     "geoLevelnummer": "2939",
+     "geoLevelname": "Schaffhausen",
+     "geoLevelParentnummer": "1403",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 42.83503055,
+      "jaStimmenAbsolut": 5258,
+      "neinStimmenAbsolut": 7017,
+      "stimmbeteiligungInProzent": 68.165514828,
+      "eingelegteStimmzettel": 15584,
+      "anzahlStimmberechtigte": 22862,
+      "gueltigeStimmen": 14470
+     }
+    },
+    {
+     "geoLevelnummer": "2951",
+     "geoLevelname": "Beggingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 67.857142857,
+      "jaStimmenAbsolut": 133,
+      "neinStimmenAbsolut": 63,
+      "stimmbeteiligungInProzent": 71.720116618,
+      "eingelegteStimmzettel": 246,
+      "anzahlStimmberechtigte": 343,
+      "gueltigeStimmen": 233
+     }
+    },
+    {
+     "geoLevelnummer": "2952",
+     "geoLevelname": "Schleitheim",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 55.438066465,
+      "jaStimmenAbsolut": 367,
+      "neinStimmenAbsolut": 295,
+      "stimmbeteiligungInProzent": 73.224043716,
+      "eingelegteStimmzettel": 804,
+      "anzahlStimmberechtigte": 1098,
+      "gueltigeStimmen": 760
+     }
+    },
+    {
+     "geoLevelnummer": "2953",
+     "geoLevelname": "Siblingen",
+     "geoLevelParentnummer": "1404",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 54.986522911,
+      "jaStimmenAbsolut": 204,
+      "neinStimmenAbsolut": 167,
+      "stimmbeteiligungInProzent": 69.92,
+      "eingelegteStimmzettel": 437,
+      "anzahlStimmberechtigte": 625,
+      "gueltigeStimmen": 411
+     }
+    },
+    {
+     "geoLevelnummer": "2961",
+     "geoLevelname": "Buch (SH)",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 55.118110236,
+      "jaStimmenAbsolut": 70,
+      "neinStimmenAbsolut": 57,
+      "stimmbeteiligungInProzent": 72.641509434,
+      "eingelegteStimmzettel": 154,
+      "anzahlStimmberechtigte": 212,
+      "gueltigeStimmen": 148
+     }
+    },
+    {
+     "geoLevelnummer": "2962",
+     "geoLevelname": "Hemishofen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 48.571428571,
+      "jaStimmenAbsolut": 102,
+      "neinStimmenAbsolut": 108,
+      "stimmbeteiligungInProzent": 70.467836257,
+      "eingelegteStimmzettel": 241,
+      "anzahlStimmberechtigte": 342,
+      "gueltigeStimmen": 234
+     }
+    },
+    {
+     "geoLevelnummer": "2963",
+     "geoLevelname": "Ramsen",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.032520325,
+      "jaStimmenAbsolut": 256,
+      "neinStimmenAbsolut": 236,
+      "stimmbeteiligungInProzent": 65.442764579,
+      "eingelegteStimmzettel": 606,
+      "anzahlStimmberechtigte": 926,
+      "gueltigeStimmen": 561
+     }
+    },
+    {
+     "geoLevelnummer": "2964",
+     "geoLevelname": "Stein am Rhein",
+     "geoLevelParentnummer": "1405",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.467322558,
+      "jaStimmenAbsolut": 647,
+      "neinStimmenAbsolut": 776,
+      "stimmbeteiligungInProzent": 69.928115016,
+      "eingelegteStimmzettel": 1751,
+      "anzahlStimmberechtigte": 2504,
+      "gueltigeStimmen": 1644
+     }
+    },
+    {
+     "geoLevelnummer": "2971",
+     "geoLevelname": "Hallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 45.659163987,
+      "jaStimmenAbsolut": 426,
+      "neinStimmenAbsolut": 507,
+      "stimmbeteiligungInProzent": 65.671641791,
+      "eingelegteStimmzettel": 1100,
+      "anzahlStimmberechtigte": 1675,
+      "gueltigeStimmen": 1048
+     }
+    },
+    {
+     "geoLevelnummer": "2972",
+     "geoLevelname": "Oberhallau",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 56.666666667,
+      "jaStimmenAbsolut": 102,
+      "neinStimmenAbsolut": 78,
+      "stimmbeteiligungInProzent": 67.55952381,
+      "eingelegteStimmzettel": 227,
+      "anzahlStimmberechtigte": 336,
+      "gueltigeStimmen": 208
+     }
+    },
+    {
+     "geoLevelnummer": "2973",
+     "geoLevelname": "Trasadingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 52.941176471,
+      "jaStimmenAbsolut": 126,
+      "neinStimmenAbsolut": 112,
+      "stimmbeteiligungInProzent": 72.292191436,
+      "eingelegteStimmzettel": 287,
+      "anzahlStimmberechtigte": 397,
+      "gueltigeStimmen": 277
+     }
+    },
+    {
+     "geoLevelnummer": "2974",
+     "geoLevelname": "Wilchingen",
+     "geoLevelParentnummer": "1406",
+     "resultat": {
+      "gebietAusgezaehlt": true,
+      "jaStimmenInProzent": 43.674698795,
+      "jaStimmenAbsolut": 290,
+      "neinStimmenAbsolut": 374,
+      "stimmbeteiligungInProzent": 65.92039801,
+      "eingelegteStimmzettel": 795,
+      "anzahlStimmberechtigte": 1206,
+      "gueltigeStimmen": 758
+     }
+    }
+   ]
+  }
+ ]
+}

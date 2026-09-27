@@ -97,8 +97,8 @@ Auf der obersten Ebene der Datei:
 | `vorlage.kantonsrat_suche`, `kantonsrat_hinweis` | Suchwort für die Ratsdaten und ein optionaler Satz dazu |
 | `argumente`, `textkritik`, `karte` | Dürfen leer sein. Ohne Aussagen zeigt die Seite einen Platzhalter, ohne `karte.gemeinden` keine Karte |
 | `status` | `entwurf` oder `veroeffentlicht`. Ein Entwurf erscheint in der Übersicht mit dem Vermerk «noch nicht veröffentlichungsreif». Fehlt das Feld, gilt Entwurf |
-| `vorlage.abstimmung` | Abstimmungstermin, `JJJJ-MM-TT`. Daran entscheidet die Übersicht, ob die Abstimmung kommend oder vergangen ist |
-| `ergebnis` | Wird nach dem Abstimmungssonntag nachgetragen, Schema unten. Ohne das Feld steht in der Übersicht «Ergebnis noch nicht nachgetragen» |
+| `vorlage.abstimmung` | Abstimmungstermin, `JJJJ-MM-TT`. Daran entscheidet die Übersicht, ob die Abstimmung kommend oder vergangen ist; mit eingetragenem `ergebnis` gilt sie schon am Abstimmungstag als vergangen |
+| `ergebnis` | Wird nach dem Abstimmungssonntag mit `scripts/ergebnis.py` nachgetragen, Schema unten. Ohne das Feld steht in der Übersicht «Ergebnis noch nicht nachgetragen» |
 
 ```
 "ergebnis": {
@@ -115,6 +115,37 @@ Auf der obersten Ebene der Datei:
 Eine einfache Vorlage hat eine Frage, eine Doppelvorlage zwei oder drei. Die
 Seite selbst bleibt nach der Abstimmung unverändert; sie zeigt, was vor dem
 Entscheid zu wissen war. Das Ergebnis steht in der Übersicht daneben.
+
+Nachtragen, sobald der Kanton ausgezählt hat:
+
+```
+python3 scripts/ergebnis.py 2026-09-27-verkehrsfluss            # Probelauf
+python3 scripts/ergebnis.py 2026-09-27-verkehrsfluss --apply    # schreibt
+python3 politspiegel/bauen.py
+```
+
+Das Skript holt die Echtzeitdaten des BFS zu kantonalen Vorlagen
+(opendata.swiss, eine Datei je Abstimmungstag), findet die Vorlage über
+`vorlage.titel` oder `vorlage.kantonsrat_suche` im amtlichen Titel und nimmt
+Gegenvorschlag und Stichfrage über die Hauptvorlage dazu. Vor dem Schreiben
+rechnet es nach: Summe der Gemeinden gleich Kantonstotal, Ja-Anteil aus den
+Stimmen gleich dem gelieferten, alle Gemeinden ausgezählt. Es schreibt:
+
+1. `vorlage.json`, Feld `ergebnis`, nur Kantonszahlen
+2. `ergebnis/voteinfo_roh.json`, der Block des Kantons aus der BFS-Datei, unverändert
+3. `ergebnis/ergebnis.json`, Kanton und alle Gemeinden je Frage
+4. `ergebnis/gemeindegrenzen.geojson`, swissBOUNDARIES3D über api3.geo.admin.ch, für die Ergebniskarte
+
+Zusätzliche Felder je Frage, alle optional: `bezeichnung` ersetzt das Wort «Ja»
+hinter dem Anteil (Stichfrage: «für die Initiative»; das BFS zählt dort die
+Stimmen für die Initiative als Ja), `ja_stimmen` und `nein_stimmen`. Anteile
+stehen mit sechs Stellen, damit die Anzeige mit einer Stelle nicht doppelt
+rundet (82 : 63 sind 56,55 %, auf zwei Stellen gespeichert würde 56,5 statt
+56,6 angezeigt).
+
+Das Ergebnisreel dazu: `python3 scripts/datenreel.py <slug> ergebnis`
+(Gemeinden nach Ja-Anteil eingefärbt, Kamerafahrt durch vier Regionen,
+Wechsel zum Gegenvorschlag, Kantonsergebnis).
 
 | Feld | Bedeutung |
 |---|---|

@@ -2,6 +2,33 @@
   "schema_version": "0.4",
   "stand": "2026-09-04",
   "status": "veroeffentlicht",
+  "ergebnis": {
+    "stimmbeteiligung": 68.49165,
+    "quelle": "Kanton Schaffhausen, Ergebnis vom 27. September 2026, Echtzeitdaten des BFS, Stand 16:12 Uhr",
+    "fragen": [
+      {
+        "titel": "Initiative",
+        "ja": 46.742593,
+        "angenommen": false,
+        "ja_stimmen": 15555,
+        "nein_stimmen": 17723
+      },
+      {
+        "titel": "Gegenvorschlag",
+        "ja": 46.307556,
+        "angenommen": false,
+        "ja_stimmen": 14623,
+        "nein_stimmen": 16955
+      },
+      {
+        "titel": "Stichfrage",
+        "ja": 46.889952,
+        "bezeichnung": "für die Initiative",
+        "ja_stimmen": 13622,
+        "nein_stimmen": 15429
+      }
+    ]
+  },
   "hinweis_quellen": "Argumente erhoben von den Websites beider Komitees und aus dem amtlichen Abstimmungsmagazin, je fünf pro Seite. Räumliche Auswertung, Kennzahlen und Grafiken aus eigener Geoanalyse, Juli und August 2026.",
   "lesehilfe": "Der Abstand zwischen den beiden Reihen beruht überwiegend auf der Quellenlage: Das Bündnis Pro30 verweist auf den Initiativtext, auf die Würdigung von Regierungsrat und Kantonsrat und auf einen internationalen Vergleichsbericht, das Initiativkomitee überwiegend ohne Quellenangabe. Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch. Ob Reisezeit oder Wohnruhe schwerer wiegt, messen diese Achsen nicht.",
   "vorlage": {

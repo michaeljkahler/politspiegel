@@ -84,6 +84,13 @@ def prozent(z) -> str:
     return f"{float(z):.1f}".replace(".", ",") + " %"
 
 
+def vorbei(z, heute) -> bool:
+    """Vergangen ist eine Abstimmung nach ihrem Datum oder sobald ihr Ergebnis
+    eingetragen ist (scripts/ergebnis.py). So steht sie am Abstimmungssonntag
+    mit dem Nachtragen unter «Vergangen» und nicht erst am Montag."""
+    return z["datum"] < heute or bool(z.get("ergebnis"))
+
+
 CSS = """
 :root{
   --pro:#0F766E; --pro-text:#0C6A62; --contra:#8E44AD; --contra-text:#7E3C9A;
@@ -131,6 +138,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-zahl em{display:block;font-style:normal;font-size:12px;font-weight:400;
   letter-spacing:.05em;text-transform:uppercase;color:var(--text-leise);margin-top:2px}
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
+.k-zuletzt{margin:-6px 0 18px;font-size:14px;color:var(--text-leise)}
+.k-zuletzt b{color:var(--text);font-weight:600}
 .k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
@@ -290,8 +299,8 @@ def kasten(k) -> str:
 def gruppen(zeilen, heute):
     """Aktuell (die naechste), kommend (die weiteren), vergangen; nur gebaute."""
     g = [z for z in zeilen if z["gebaut"]]
-    kommend = sorted([z for z in g if z["datum"] >= heute], key=lambda z: z["datum"])
-    vergangen = sorted([z for z in g if z["datum"] < heute], key=lambda z: z["datum"], reverse=True)
+    kommend = sorted([z for z in g if not vorbei(z, heute)], key=lambda z: z["datum"])
+    vergangen = sorted([z for z in g if vorbei(z, heute)], key=lambda z: z["datum"], reverse=True)
     aktuell = kommend[:1]
     return aktuell, kommend[1:], vergangen
 
@@ -318,12 +327,18 @@ def abstimmungskasten(zeilen, heute) -> str:
         z = aktuell[0]
         satz = (f"Nächste Abstimmung am {datum_lang(z['datum'])}: {z['titel']}. "
                 "Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.")
-        zahlen = [{"wert": str(z["aussagen"]), "einheit": "Aussagen geprüft"},
+        zahlen = ([{"wert": str(z["aussagen"]), "einheit": "Aussagen geprüft"}] if z["aussagen"] else []) + [
                   {"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
     else:
         satz = "Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs."
         zahlen = [{"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
     zahlen_html = "".join(f'<span class="k-zahl">{e(x["wert"])}<em>{e(x["einheit"])}</em></span>' for x in zahlen)
+    # Das Ergebnis der letzten Abstimmung, sobald es eingetragen ist
+    zuletzt = ""
+    if vergangen and vergangen[0]["ergebnis"]:
+        z0 = vergangen[0]
+        zuletzt = (f'<p class="k-zuletzt">Zuletzt am {e(datum_kurz(z0["datum"]))}: '
+                   f'<a href="{e(z0["pfad"])}">{e(z0["titel"])}</a>. {ergebnis_text(z0["ergebnis"])}</p>')
     wahl = (gruppe("Aktuell", aktuell, "keine Abstimmung angekündigt")
             + gruppe("Kommend", kommend, "keine weiteren angekündigt")
             + gruppe("Vergangen", vergangen, "noch keine"))
@@ -332,6 +347,7 @@ def abstimmungskasten(zeilen, heute) -> str:
       <span class="k-marke">Laufend</span>
       <a class="k-titel-link" href="abstimmung/"><h2>Abstimmungsspiegel</h2></a>
       <p class="k-satz">{e(satz)}</p>
+      {zuletzt}
       <div class="k-zahlen">{zahlen_html}</div>
       <details class="k-wahl"><summary>Abstimmung wählen</summary>{wahl}</details>
       <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
@@ -347,11 +363,13 @@ def ergebnis_text(erg) -> str:
           "quelle": "sh.ch, amtliches Ergebnis vom ...",
           "fragen": [
             {"titel": "Initiative", "ja": 38.1, "angenommen": false},
-            {"titel": "Gegenvorschlag", "ja": 61.5, "angenommen": true}
+            {"titel": "Gegenvorschlag", "ja": 61.5, "angenommen": true},
+            {"titel": "Stichfrage", "ja": 44.0, "bezeichnung": "für die Initiative"}
           ]
         }
     Eine einfache Vorlage hat eine Frage. Bei einer Doppelvorlage sind es
-    zwei oder drei, die Stichfrage eingeschlossen.
+    zwei oder drei, die Stichfrage eingeschlossen. «bezeichnung» ersetzt das
+    Wort «Ja» hinter dem Anteil, bei der Stichfrage «für die Initiative».
     """
     if not erg:
         return "Ergebnis noch nicht nachgetragen"
@@ -359,7 +377,7 @@ def ergebnis_text(erg) -> str:
     for f in erg.get("fragen") or []:
         t = e(f.get("titel", ""))
         if f.get("ja") is not None:
-            t += f" <b>{prozent(f['ja'])} Ja</b>"
+            t += f" <b>{prozent(f['ja'])} {e(f.get('bezeichnung') or 'Ja')}</b>"
         if f.get("angenommen") is not None:
             t += ", angenommen" if f["angenommen"] else ", abgelehnt"
         teile.append(t)
@@ -472,7 +490,7 @@ def listenseite(zeilen) -> str:
     <li><a href="{e(z['pfad'].split('/', 1)[1])}">
       <time datetime="{e(z['datum'])}">{e(datum_kurz(z['datum']))}</time>
       <span><h3>{e(z['titel'])}{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
-      <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if z['datum'] < heute else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>
+      <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if vorbei(z, heute) else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>
     </a></li>""" for z in zs)
         return f'<section class="abschnitt"><h2>{e(titel)}</h2><ul class="liste">{li}\n  </ul></section>'
 
@@ -557,9 +575,9 @@ def main() -> None:
     print(f"  {'kantonsrat/':44s} "
           + ("vorhanden" if (SITE / "kantonsrat" / "index.html").is_file() else "FEHLT NOCH"))
     for z in zeilen:
-        lage = "kommend " if z["datum"] >= heute else "vergangen"
+        lage = "vergangen" if vorbei(z, heute) else "kommend "
         seite = "vorhanden" if z["gebaut"] else "FEHLT NOCH, nicht verlinkt"
-        erg = "" if z["datum"] >= heute or z["ergebnis"] else ", Ergebnis fehlt"
+        erg = ", Ergebnis fehlt" if z["datum"] < heute and not z["ergebnis"] else ""
         print(f"  {z['pfad']:44s} {lage}  {seite}  [{z['status']}]{erg}")
 
 

@@ -8,6 +8,10 @@ Zahlendaten einer Vorlage, nicht aus den Standbildern.
               erfassen; Halt in den Gemeinden mit Kilometern und Anwohnern.
   zeitstrahl  Fussgängerunfälle 2011 bis 2025 (ASTRA): Schweiz, die grossen
               Städte, Kanton Schaffhausen. Balken wachsen Jahr für Jahr.
+  ergebnis    Nach der Abstimmung: Gemeinden nach Ja-Anteil eingefärbt,
+              Kamerafahrt durch die Regionen mit den Zahlen je Gemeinde,
+              Wechsel zum Gegenvorschlag, Kantonsergebnis. Daten aus
+              abstimmungen/<slug>/ergebnis/ (scripts/ergebnis.py).
 
 Ausgabe: site/social/abstimmung/<slug>/reel-<name>.mp4 (1080 x 1920, 30 fps,
 H.264, Tonspur aus scripts/ton.py) und ein Deckbild reel-<name>.png.
@@ -20,6 +24,7 @@ Ausführen:
     python3 scripts/datenreel.py 2026-09-27-verkehrsfluss ueberflug
     python3 scripts/datenreel.py 2026-09-27-verkehrsfluss zeitstrahl
     python3 scripts/datenreel.py 2026-09-27-verkehrsfluss alle
+    python3 scripts/datenreel.py 2026-09-27-verkehrsfluss ergebnis
 """
 import json
 import math
@@ -807,6 +812,479 @@ def bus(slug, ordner):
     return ziel
 
 
+# ── Ergebnis: Gemeinden nach Ja-Anteil eingefärbt ───────────────────────────
+# Acht Klassen zu 5 Prozentpunkten um 50, wie auf den Abstimmungskarten des
+# BFS. Zwei Arme, Grün für Ja und Violett für Nein wie auf der Seite, im
+# gleichen Abstand von 50 gleich hell; Gleichstand grau. Die Töne kommen aus
+# OKLCH (Ja 160°, Nein 300°, Helligkeit 0.87/0.77/0.66/0.55, Buntheit 0.07 bis
+# 0.12). Mit den Seitenfarben #0F766E und #8E44AD wären die beiden Klassen an
+# der 50-Prozent-Grenze bei Grünblindheit kaum zu trennen (Delta E 1.7 in
+# OKLab), so sind es 7.8; die Zahlen stehen zusätzlich auf der Karte.
+KLASSEN = (35, 40, 45, 50, 55, 60, 65)
+FARBEN_ERG = ("#7D5FAD", "#9D82CC", "#BDA7E6", "#DBCAFC", "#ADE3C5", "#80C6A1", "#4CA77B", "#118659")
+GLEICH = "#D3D6DC"
+KURZNAME = {"Neuhausen am Rheinfall": "Neuhausen"}
+# Regionen der Kamerafahrt, BFS-Nummern; zusammen alle 26 Gemeinden
+REGIONEN = [
+    ("Stadt und Reiat", (2939, 2937, 2936, 2931, 2919, 2917, 2914, 2915, 2920), 3.0),
+    ("Stein am Rhein", (2964, 2962, 2963, 2961), 2.4),
+    ("Rüdlingen und Buchberg", (2938, 2933), 2.0),
+    ("Klettgau und Randen", (2951, 2952, 2953, 2901, 2903, 2904, 2971, 2972, 2973, 2974, 2932), 3.2),
+]
+
+
+def rgb(h):
+    h = h.lstrip("#")
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def pz(x):
+    return f"{x:.1f}".replace(".", ",") + " %"
+
+
+def tausend(n):
+    return f"{n:,}".replace(",", " ")
+
+
+def farbe_ergebnis(r):
+    """Klassenfarbe aus Ja- und Nein-Stimmen; Gleichstand grau."""
+    ja, nein = r["ja_stimmen"], r["nein_stimmen"]
+    if ja == nein:
+        return rgb(GLEICH)
+    a = 100 * ja / (ja + nein)
+    return rgb(FARBEN_ERG[sum(1 for k in KLASSEN if a >= k)])
+
+
+def innenpunkt(ring):
+    """Punkt im Innern mit dem grössten Abstand zum Rand, für die Beschriftung
+    (Rastersuche in drei Runden, jede enger um den besten Punkt)."""
+    import numpy as np
+    P = np.array(ring, dtype=float)
+    A, B = P[:-1], P[1:]
+    AB = B - A
+    L2 = (AB ** 2).sum(1) + 1e-9
+    (x0, y0), (x1, y1) = P.min(0), P.max(0)
+    cx, cy, bw, bh = (x0 + x1) / 2, (y0 + y1) / 2, x1 - x0, y1 - y0
+    best = (cx, cy, -1.0)
+    for _ in range(3):
+        G = np.array([(x, y) for x in np.linspace(cx - bw / 2, cx + bw / 2, 31)
+                      for y in np.linspace(cy - bh / 2, cy + bh / 2, 31)])
+        innen = np.zeros(len(G), bool)
+        for (ax, ay), (bx, by) in zip(A, B):
+            quer = (ay > G[:, 1]) != (by > G[:, 1])
+            xs = ax + (G[:, 1] - ay) * (bx - ax) / ((by - ay) or 1e-9)
+            innen ^= quer & (G[:, 0] < xs)
+        t = np.clip(((G[:, None, :] - A[None]) * AB[None]).sum(2) / L2[None], 0, 1)
+        dist = np.sqrt(((G[:, None, :] - (A[None] + t[..., None] * AB[None])) ** 2).sum(2)).min(1)
+        dist[~innen] = -1
+        i = int(dist.argmax())
+        if dist[i] > best[2]:
+            best = (float(G[i, 0]), float(G[i, 1]), float(dist[i]))
+        cx, cy, bw, bh = best[0], best[1], bw / 3, bh / 3
+    return best[0], best[1]
+
+
+def vorladen(bbox, z=Z):
+    """Fehlende Kacheln parallel in den Zwischenspeicher holen; Karte() liest sie
+    dann von dort. Die Ergebniskarte braucht rund 1400 Kacheln, einzeln
+    nacheinander geladen dauert das Minuten."""
+    from concurrent.futures import ThreadPoolExecutor
+    lon0, lat0, lon1, lat1 = bbox
+    x0, y1 = tile_xy(lon0, lat0, z)
+    x1, y0 = tile_xy(lon1, lat1, z)
+    CACHE.mkdir(parents=True, exist_ok=True)
+    fehlend = [(tx, ty) for tx in range(int(x0), int(x1) + 1) for ty in range(int(y0), int(y1) + 1)
+               if not (CACHE / f"grau-{z}-{tx}-{ty}.jpg").exists()]
+
+    def hole(t):
+        tx, ty = t
+        url = f"https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{tx}/{ty}.jpeg"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Politspiegel Schaffhausen"})
+            (CACHE / f"grau-{z}-{tx}-{ty}.jpg").write_bytes(urllib.request.urlopen(req, timeout=30).read())
+        except Exception:
+            pass                         # Karte() versucht es noch einmal und zählt die Lücken
+
+    if fehlend:
+        print(f"  {len(fehlend)} Kacheln laden …")
+        with ThreadPoolExecutor(8) as ex:
+            list(ex.map(hole, fehlend))
+
+
+def ergebnis(slug, ordner):
+    """Ergebnisreel: die Gemeinden färben sich nach dem Ja-Anteil zur Initiative,
+    die Kamera fährt durch vier Regionen mit den Zahlen je Gemeinde, zurück in
+    die Übersicht, wo die Farben zum Gegenvorschlag wechseln; am Schluss das
+    Kantonsergebnis. Daten aus ergebnis/ (scripts/ergebnis.py)."""
+    basis = ROOT / "abstimmungsspiegel" / "abstimmungen" / slug
+    erg = json.loads((basis / "ergebnis" / "ergebnis.json").read_text(encoding="utf-8"))
+    fc = json.loads((basis / "ergebnis" / "gemeindegrenzen.geojson").read_text(encoding="utf-8"))
+    v = json.loads((basis / "vorlage.json").read_text(encoding="utf-8"))["vorlage"]
+    F = {f["id"]: f for f in erg["fragen"]}
+    haupt = erg["fragen"][0]["id"]
+    gv = "gegenvorschlag" if "gegenvorschlag" in F else None
+    gem = {g["bfs"]: g for g in erg["gemeinden"]}
+    tag = v["abstimmung"]
+    datum = f"{tag[8:10]}.{tag[5:7]}.{tag[:4]}"
+    stand = erg["quelle"]["stand"][11:16]
+
+    polys = {}
+    for f in fc["features"]:
+        g = f["geometry"]
+        polys[f["properties"]["bfs"]] = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
+    alle = [c for ps in polys.values() for p in ps for ring in p for c in ring]
+    lons, lats = [c[0] for c in alle], [c[1] for c in alle]
+    # Rand so gross, dass die Karte auch in der Übersicht das ganze Bild füllt:
+    # die Übersicht steht über der Bildmitte, darum unten mehr als oben.
+    bbox = (min(lons) - 0.09, min(lats) - 0.22, max(lons) + 0.09, max(lats) + 0.17)
+    print("  Karte laden …")
+    vorladen(bbox)
+    karte = Karte(bbox)
+    pxp = {b: [[[karte.px(*c) for c in ring] for ring in p] for p in ps] for b, ps in polys.items()}
+
+    # Ausserhalb des Kantons blasser, damit die Gemeinden vorne stehen
+    maske = Image.new("L", karte.img.size, 0)
+    dm = ImageDraw.Draw(maske)
+    for ps in pxp.values():
+        for p in ps:
+            dm.polygon(p[0], fill=255)
+            for loch in p[1:]:
+                dm.polygon(loch, fill=0)
+    karte.img = Image.composite(karte.img, Image.blend(karte.img, Image.new("RGB", karte.img.size, GRUND), 0.55), maske)
+    del maske, dm
+    karte.stufen = [(1.0, karte.img)]
+    f_ = 0.5
+    while f_ >= 0.1:
+        karte.stufen.append((f_, karte.img.resize((int(karte.img.size[0] * f_), int(karte.img.size[1] * f_)), Image.LANCZOS)))
+        f_ /= 2
+    print(f"  Karte {karte.img.size[0]} x {karte.img.size[1]} px")
+
+    def flaeche(r):
+        return abs(sum(a[0] * b[1] - b[0] * a[1] for a, b in zip(r, r[1:] + r[:1]))) / 2
+
+    anker = {b: innenpunkt(max(ps, key=lambda p: flaeche(p[0]))[0]) for b, ps in pxp.items()}
+
+    OBEN, UNTEN = 340, H - 670          # Kartenfeld zwischen Kopf und Tafel
+    YM = (OBEN + UNTEN) / 2
+
+    def einpassen(bfs_liste, rand):
+        xs = [x for b in bfs_liste for p in pxp[b] for x, _ in p[0]]
+        ys = [y for b in bfs_liste for p in pxp[b] for _, y in p[0]]
+        s = min((W - 2 * rand) / (max(xs) - min(xs)), (UNTEN - OBEN - 2 * rand) / (max(ys) - min(ys)))
+        return ((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2), s
+
+    ueber = einpassen(list(pxp), 36)
+    farben = {fid: {b: farbe_ergebnis(gem[b]["fragen"][fid]) for b in pxp} for fid in F}
+    westost = sorted(pxp, key=lambda b: anker[b][0])
+    rang = {b: i / max(1, len(westost) - 1) for i, b in enumerate(westost)}
+
+    # ── Ebenen, die sich nicht bewegen ──
+    kopf = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    kasten(kopf, (48, 150, W - 48, 330))
+    d = ImageDraw.Draw(kopf)
+    d.text((80, 178), "ABSTIMMUNGSSPIEGEL · ERGEBNIS", font=font("a", 24, "Bold"), fill=TEXT)
+    d.text((80, 214), v["titel"], font=font("a", 44, "SemiBold"), fill=TEXT)
+    d.text((80, 278), f"Kanton Schaffhausen · Abstimmung vom {datum} · Stimmbeteiligung {pz(erg['kanton']['stimmbeteiligung'])}",
+           font=font("p", 24, "Regular"), fill=TEXT2)
+    kasten(kopf, (48, H - 300, W - 48, H - 172), fill=(255, 255, 255, 215))
+    d = ImageDraw.Draw(kopf)
+    d.text((80, H - 282), SEITE_KURZ + "/abstimmung/", font=font("a", 24, "SemiBold"), fill=TEXT)
+    d.text((80, H - 244), f"Quelle: Kanton Schaffhausen, Echtzeitdaten des BFS, Stand {datum}, {stand} Uhr",
+           font=font("p", 20, "Regular"), fill=TEXT3)
+    d.text((80, H - 216), "Karte und Gemeindegrenzen © swisstopo", font=font("p", 20, "Regular"), fill=TEXT3)
+
+    BX0, BX1 = 80, 900                  # Balken und Legende bleiben links der Knöpfe der Apps
+    tafeln = {}
+
+    def tafel(fid):
+        if fid in tafeln:
+            return tafeln[fid]
+        f = F[fid]
+        e_ = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        y = UNTEN + 10
+        kasten(e_, (48, y, W - 48, y + 300))
+        d = ImageDraw.Draw(e_)
+        d.text((80, y + 22), f["titel"] or "Vorlage", font=font("a", 30, "SemiBold"), fill=TEXT2)
+        lage = "" if f["angenommen"] is None else (" · angenommen" if f["angenommen"] else " · abgelehnt")
+        d.text((80, y + 58), f"{pz(f['ja'])} {f.get('bezeichnung', 'Ja')}{lage}", font=font("a", 50, "Bold"), fill=TEXT)
+        n = f["gemeinden_ja"] + f["gemeinden_nein"] + f["gemeinden_gleich"]
+        d.text((80, y + 158), f"{tausend(f['ja_stimmen'])} Ja, {tausend(f['nein_stimmen'])} Nein · "
+                              f"Ja-Mehrheit in {f['gemeinden_ja']} von {n} Gemeinden",
+               font=font("p", 24, "Regular"), fill=TEXT2)
+        ly = y + 200
+        d.text((80, ly), "Ja-Anteil je Gemeinde in Prozent", font=font("p", 21, "Regular"), fill=TEXT3)
+        bw = 88
+        for i, c in enumerate(FARBEN_ERG):
+            d.rectangle((BX0 + i * bw, ly + 32, BX0 + (i + 1) * bw - 3, ly + 54), fill=rgb(c))
+        for i, k in enumerate(KLASSEN):
+            d.text((BX0 + (i + 1) * bw - 1.5, ly + 60), str(k), font=font("p", 21, "Regular"), fill=TEXT3, anchor="mt")
+        if f["gemeinden_gleich"]:
+            gx = BX0 + 8 * bw + 22
+            d.rectangle((gx, ly + 32, gx + 40, ly + 54), fill=rgb(GLEICH))
+            d.text((gx + 52, ly + 43), "gleich", font=font("p", 21, "Regular"), fill=TEXT3, anchor="lm")
+        tafeln[fid] = e_
+        return e_
+
+    def balken(frame, fid, anteil, alpha=1.0):
+        """Ja links, Nein rechts, Strich bei 50 Prozent; wächst mit «anteil» von aussen zur Grenze."""
+        f = F[fid]
+        y = UNTEN + 10 + 130
+        ebene = Image.new("RGBA", (W, 40), (0, 0, 0, 0))
+        d = ImageDraw.Draw(ebene)
+        a = int(255 * alpha)
+        mitte = BX0 + (BX1 - BX0) * f["ja"] / 100
+        ja_x = BX0 + (mitte - BX0) * anteil
+        nein_x = BX1 - (BX1 - mitte) * anteil
+        if ja_x > BX0 + 10:
+            d.rounded_rectangle((BX0, 10, ja_x - 1.5, 28), 4, fill=rgb(FARBEN_ERG[-1]) + (a,))
+        if nein_x < BX1 - 10:
+            d.rounded_rectangle((nein_x + 1.5, 10, BX1, 28), 4, fill=rgb(FARBEN_ERG[0]) + (a,))
+        hx = (BX0 + BX1) / 2
+        d.line((hx, 3, hx, 35), fill=(17, 24, 39, a), width=3)
+        frame.alpha_composite(ebene, (0, int(y - 10)))
+
+    schilder = {}
+
+    def schild(b, fid):
+        """Beschriftung einer Gemeinde: Name und Ja-Anteil, weisser Grund."""
+        k = (b, fid)
+        if k in schilder:
+            return schilder[k]
+        g = gem[b]
+        r = g["fragen"][fid]
+        name = KURZNAME.get(g["name"], g["kurz"])
+        wert = "Gleichstand" if r["ja_stimmen"] == r["nein_stimmen"] else pz(r["ja"])
+        f1, f2 = font("p", 24, "Medium"), font("a", 32, "Bold")
+        probe = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+        bw = int(max(probe.textlength(name, font=f1), probe.textlength(wert, font=f2))) + 28
+        img = Image.new("RGBA", (bw, 76), (0, 0, 0, 0))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((0, 0, bw - 1, 75), 10, fill=(255, 255, 255, 238), outline=(17, 24, 39, 60), width=1)
+        d.text((bw / 2, 8), name, font=f1, fill=TEXT2, anchor="mt")
+        d.text((bw / 2, 35), wert, font=f2, fill=TEXT, anchor="mt")
+        schilder[k] = img
+        return img
+
+    def schilder_legen(bfs_liste, fid, zentrum, s):
+        """Bildschirmlage der Schilder; überlappende werden auseinandergeschoben."""
+        cx, cy = zentrum
+        lagen = []
+        for b in bfs_liste:
+            img = schild(b, fid)
+            x = (anker[b][0] - cx) * s + W / 2 - img.size[0] / 2
+            y = (anker[b][1] - cy) * s + YM - img.size[1] / 2
+            lagen.append([x, y, img.size[0], img.size[1], b])
+        for _ in range(60):
+            bewegt = False
+            for i in range(len(lagen)):
+                for j in range(i + 1, len(lagen)):
+                    a, c = lagen[i], lagen[j]
+                    ox = min(a[0] + a[2], c[0] + c[2]) - max(a[0], c[0]) + 6
+                    oy = min(a[1] + a[3], c[1] + c[3]) - max(a[1], c[1]) + 6
+                    if ox > 0 and oy > 0:
+                        bewegt = True
+                        if oy <= ox:
+                            d_ = oy / 2 * (1 if a[1] + a[3] / 2 <= c[1] + c[3] / 2 else -1)
+                            a[1] -= d_
+                            c[1] += d_
+                        else:
+                            d_ = ox / 2 * (1 if a[0] + a[2] / 2 <= c[0] + c[2] / 2 else -1)
+                            a[0] -= d_
+                            c[0] += d_
+            for l in lagen:
+                l[0] = min(max(l[0], 56), W - 56 - l[2])
+                l[1] = min(max(l[1], OBEN + 6), UNTEN - 6 - l[3])
+            if not bewegt:
+                break
+        # Versatz gegenüber dem Anker, damit die Schilder während des Halts mitwandern
+        return [(b, x - ((anker[b][0] - cx) * s + W / 2), y - ((anker[b][1] - cy) * s + YM)) for x, y, _, _, b in lagen]
+
+    SS = 2                               # Überabtastung der Flächen und Grenzen
+
+    def bild(zentrum, s, farbe, deckung, fid, anteil=1.0, schilder_=(), schild_alpha=0.0, tafel_alpha=1.0,
+             zweite=None, schluss=0.0):
+        cx, cy = zentrum
+        x0, y0 = cx - W / 2 / s, cy - YM / s
+        frame = karte.ausschnitt(x0, y0, W / s, H / s, s).convert("RGBA")
+        ebene = Image.new("RGBA", (W * SS, H * SS), (0, 0, 0, 0))
+        d = ImageDraw.Draw(ebene)
+        k = s * SS
+        for b, ps in pxp.items():
+            a = deckung.get(b, 1.0)
+            if a <= 0:
+                continue
+            c = farbe[b]
+            for p in ps:
+                d.polygon([((x - x0) * k, (y - y0) * k) for x, y in p[0]], fill=c + (int(215 * a),))
+                for loch in p[1:]:
+                    d.polygon([((x - x0) * k, (y - y0) * k) for x, y in loch], fill=(0, 0, 0, 0))
+        breite = max(2, int(round(max(1.2, min(3.0, 3.2 * s / 0.45)) * SS)))
+        for ps in pxp.values():
+            for p in ps:
+                for ring in p:
+                    pts = [((x - x0) * k, (y - y0) * k) for x, y in ring]
+                    d.line(pts, fill=(255, 255, 255, 235), width=breite, joint="curve")
+        frame.alpha_composite(ebene.reduce(SS))
+        if schluss > 0:
+            schleier = Image.new("RGBA", (W, H), rgb(GRUND) + (int(150 * schluss),))
+            frame.alpha_composite(schleier)
+        if schild_alpha > 0:
+            for b, dx, dy in schilder_:
+                img = schild(b, fid)
+                x = (anker[b][0] - cx) * s + W / 2 + dx
+                y = (anker[b][1] - cy) * s + YM + dy
+                if schild_alpha < 1:
+                    img = img.copy()
+                    img.putalpha(img.getchannel("A").point(lambda q: int(q * schild_alpha)))
+                frame.alpha_composite(img, (int(x), int(y)))
+        frame.alpha_composite(kopf)
+        if tafel_alpha > 0 and fid:
+            t_ = tafel(fid)
+            if tafel_alpha < 1:
+                t_ = t_.copy()
+                t_.putalpha(t_.getchannel("A").point(lambda q: int(q * tafel_alpha)))
+            frame.alpha_composite(t_)
+            balken(frame, fid, anteil, tafel_alpha)
+        if zweite:
+            frame.alpha_composite(zweite)
+        return frame
+
+    # ── Schlusstafel: Inhalt zuerst, dann der Kasten in passender Höhe ──
+    fragen = erg["fragen"]
+    inhalt = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(inhalt)
+    d.text((80, 40), "Ergebnis Kanton Schaffhausen", font=font("a", 42, "Bold"), fill=TEXT)
+    d.text((80, 102), f"Abstimmung vom {datum}", font=font("p", 26, "Regular"), fill=TEXT2)
+    yy = 170
+    for i, f in enumerate(fragen, 1):
+        if f["id"] == "stichfrage":
+            z1 = f"{i}. {f['titel']}"
+            z2 = f"{pz(f['ja'])} Initiative, {pz(100 - f['ja'])} Gegenvorschlag"
+        else:
+            z1 = f"{i}. {f['titel'] or 'Vorlage'}"
+            z2 = f"{pz(f['ja'])} Ja, " + ("angenommen" if f["angenommen"] else "abgelehnt")
+        d.text((80, yy), z1, font=font("a", 32, "SemiBold"), fill=TEXT)
+        d.text((80, yy + 44), z2, font=font("p", 30, "Regular"), fill=TEXT2)
+        if f["id"] != "stichfrage":
+            mitte = BX0 + (BX1 - BX0) * f["ja"] / 100
+            d.rounded_rectangle((BX0, yy + 92, mitte, yy + 104), 3, fill=rgb(FARBEN_ERG[-1]))
+            d.rounded_rectangle((mitte + 3, yy + 92, BX1, yy + 104), 3, fill=rgb(FARBEN_ERG[0]))
+            d.line(((BX0 + BX1) / 2, yy + 86, (BX0 + BX1) / 2, yy + 110), fill=rgb(TEXT), width=2)
+            yy += 140
+        else:
+            yy += 110
+    if all(f["angenommen"] is False for f in fragen if f["angenommen"] is not None):
+        satz = (v.get("bei_nein") or "").split(".")[0].strip()
+        if satz:
+            d.text((80, yy + 6), satz + ".", font=font("a", 32, "SemiBold"), fill=TEXT)
+            yy += 60
+    d.text((80, yy + 10), f"Stimmbeteiligung {pz(erg['kanton']['stimmbeteiligung'])} · "
+                          f"{tausend(erg['kanton']['eingelegte_stimmzettel'])} Stimmzettel",
+           font=font("p", 26, "Regular"), fill=TEXT2)
+    hoehe = yy + 10 + 36 + 44
+    y0 = int((OBEN + H - 330 - hoehe) / 2)
+    schluss_ebene = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    kasten(schluss_ebene, (48, y0, W - 48, y0 + hoehe), fill=(255, 255, 255, 246))
+    schluss_ebene.alpha_composite(inhalt.crop((0, 0, W, hoehe)), (0, y0))
+    del inhalt
+
+    # ── Ablauf ──
+    INTRO, HIN, GV, SCHLUSS = 4.5, 1.6, 4.2, 4.6
+    stationen = []
+    for name, liste, halt in REGIONEN:
+        liste = [b for b in liste if b in pxp]
+        if liste:
+            z, s = einpassen(liste, 70)
+            stationen.append((name, liste, z, min(s, 0.9), halt))
+    dauern = [INTRO] + [HIN + st[4] for st in stationen] + [HIN + GV, SCHLUSS]
+    ziel = ordner / "reel-ergebnis.mp4"
+    sw = Schreiber(ziel, dauern)
+    deckbild = None
+
+    def extreme(fid):
+        werte = sorted(pxp, key=lambda b: gem[b]["fragen"][fid]["ja"])
+        aus = [werte[-1], werte[0]]
+        aus += [b for b in pxp if gem[b]["fragen"][fid]["ja_stimmen"] == gem[b]["fragen"][fid]["nein_stimmen"]]
+        return list(dict.fromkeys(aus))
+
+    print("  Bilder rechnen …")
+    # 1. Übersicht, die Gemeinden färben sich von West nach Ost
+    ex = extreme(haupt)
+    lagen_ex = schilder_legen(ex, haupt, *ueber)
+    n = int(INTRO * FPS)
+    for i in range(n):
+        t = (i + 1) / FPS
+        deckung = {b: min(1.0, max(0.0, (t - 0.25 - 1.3 * rang[b]) / 0.45)) for b in pxp}
+        frame = bild(ueber[0], ueber[1], farben[haupt], deckung, haupt,
+                     anteil=ease((t - 0.9) / 1.0), schilder_=lagen_ex, schild_alpha=min(1.0, max(0.0, (t - 2.3) / 0.35)))
+        sw.bild(frame)
+        if i == n - 1:
+            deckbild = frame.convert("RGB")
+
+    # 2. Kamerafahrt durch die Regionen
+    vorher = ueber
+    for name, liste, z, s, halt in stationen:
+        m = int(HIN * FPS)
+        for i in range(m):
+            t = (i + 1) / m
+            e_ = ease(t)
+            sk = math.exp(math.log(vorher[1]) * (1 - e_) + math.log(s) * e_) * (1 - 0.14 * math.sin(math.pi * t))
+            zk = (vorher[0][0] * (1 - e_) + z[0] * e_, vorher[0][1] * (1 - e_) + z[1] * e_)
+            sw.bild(bild(zk, sk, farben[haupt], {}, haupt))
+        lagen = schilder_legen(liste, haupt, z, s)
+        m = int(halt * FPS)
+        for i in range(m):
+            t = (i + 1) / m
+            sk = s * (1 + 0.025 * t)
+            sw.bild(bild(z, sk, farben[haupt], {}, haupt, schilder_=lagen,
+                         schild_alpha=min(1.0, (i + 1) / FPS / 0.3)))
+        vorher = (z, s)
+
+    # 3. Zurück in die Übersicht, Wechsel zum Gegenvorschlag
+    m = int(HIN * FPS)
+    for i in range(m):
+        t = (i + 1) / m
+        e_ = ease(t)
+        sk = math.exp(math.log(vorher[1]) * (1 - e_) + math.log(ueber[1]) * e_) * (1 - 0.10 * math.sin(math.pi * t))
+        zk = (vorher[0][0] * (1 - e_) + ueber[0][0] * e_, vorher[0][1] * (1 - e_) + ueber[0][1] * e_)
+        sw.bild(bild(zk, sk, farben[haupt], {}, haupt))
+    zweite = gv or haupt
+    ex2 = extreme(zweite)
+    lagen_ex2 = schilder_legen(ex2, zweite, *ueber)
+    m = int(GV * FPS)
+    for i in range(m):
+        t = (i + 1) / FPS
+        mix = {}
+        for b in pxp:
+            u = ease((t - 0.1 - 0.6 * rang[b]) / 0.7)
+            a, c = farben[haupt][b], farben[zweite][b]
+            mix[b] = tuple(int(a[j] * (1 - u) + c[j] * u) for j in range(3))
+        wechsel = min(1.0, t / 0.3)
+        if wechsel < 1:                  # Tafel überblenden, der Balken bleibt stehen
+            frame = bild(ueber[0], ueber[1], mix, {}, haupt, tafel_alpha=1 - wechsel)
+            t2 = tafel(zweite).copy()
+            t2.putalpha(t2.getchannel("A").point(lambda q: int(q * wechsel)))
+            frame.alpha_composite(t2)
+            balken(frame, zweite, 1.0, wechsel)
+        else:
+            frame = bild(ueber[0], ueber[1], mix, {}, zweite,
+                         schilder_=lagen_ex2, schild_alpha=min(1.0, max(0.0, (t - 1.7) / 0.35)))
+        sw.bild(frame)
+
+    # 4. Schlusstafel
+    m = int(SCHLUSS * FPS)
+    for i in range(m):
+        t = (i + 1) / FPS
+        a = min(1.0, t / 0.5)
+        t_ = schluss_ebene.copy()
+        t_.putalpha(t_.getchannel("A").point(lambda q: int(q * min(1.0, max(0.0, (t - 0.15) / 0.45)))))
+        sw.bild(bild(ueber[0], ueber[1], farben[zweite], {}, None, tafel_alpha=0, zweite=t_, schluss=a))
+
+    sw.deckbild = deckbild
+    print(f"  {ziel.name}: {sw.schliessen():.1f} s")
+    return ziel
+
+
 def main():
     if len(sys.argv) < 3:
         raise SystemExit(__doc__)
@@ -823,6 +1301,8 @@ def main():
         anlagen(slug, ordner)
     if was in ("bus", "alle"):
         bus(slug, ordner)
+    if was == "ergebnis":            # erst nach dem Abstimmungssonntag, darum nicht in «alle»
+        ergebnis(slug, ordner)
 
 
 if __name__ == "__main__":
