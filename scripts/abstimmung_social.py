@@ -126,8 +126,8 @@ def serie(slug, daten, bilder, ordner):
         # Feste Sendezeiten (Vorgabe Michael, 4. September 2026): 09:00, zweiter Beitrag am selben Tag 16:00.
         zeit = "T16:00" if any(q["termin"].startswith(wann.isoformat()) for q in posts) else "T09:00"
         posts.append({"art": art, "termin": wann.isoformat() + zeit, "text": text,
-                      "media": medien, "providers": ["instagram", "facebook"],
-                      "instagram": {"type": "POST"}, "facebook": {"type": "POST"}})
+                      "media": medien, "providers": ["instagram"],
+                      "instagram": {"type": "POST"}})
         # Bilder nicht auf TikTok: dort nur Videos (TikTok nimmt über Metricool keine PNG-Fotos).
 
     # Termine rückwärts vom Abstimmungssonntag, frühestens morgen.
@@ -194,7 +194,8 @@ def serie(slug, daten, bilder, ordner):
          "3. Eigene Auswertungen und Karten." + fuss, t(2))
 
     # Datenreels (scripts/datenreel.py), falls vorhanden: je ein Beitrag für
-    # Instagram/Facebook/YouTube und einer für TikTok, in der letzten Woche.
+    # Instagram/YouTube und einer für TikTok, in der letzten Woche. Facebook seit
+    # 27. September 2026 nicht mehr bespielt.
     reels = {
         "reel-ueberflug.mp4": (t(13), "Welche Strassen die Vorlage erfasst",
                                f"{v['titel']}: Überflug über die betroffenen Kantonsstrassen.\n\n"
@@ -231,11 +232,11 @@ def serie(slug, daten, bilder, ordner):
             continue
         medien = [url_ordner + datei]
         text = text + fuss
-        for netz, prov in (("instagram", ["instagram", "facebook", "youtube"]), ("tiktok", ["tiktok"])):
+        for netz, prov in (("instagram", ["instagram", "youtube"]), ("tiktok", ["tiktok"])):
             po = {"art": "reel", "netz": netz, "termin": wann.isoformat() + "T16:00", "text": text,
                   "media": medien, "providers": prov}
             if netz == "instagram":
-                po.update({"instagram": {"type": "REEL", "showReelOnFeed": True}, "facebook": {"type": "REEL"},
+                po.update({"instagram": {"type": "REEL", "showReelOnFeed": True},
                            "youtube": {"type": "short", "title": f"{v['titel']}: {titel}", "privacy": "public",
                                        "madeForKids": False, "category": "NEWS_POLITICS"}})
             else:
@@ -244,6 +245,7 @@ def serie(slug, daten, bilder, ordner):
 
     (ordner / "posts.json").write_text(json.dumps({
         "slug": slug, "vorlage": v["titel"], "abstimmung": v["abstimmung"], "status": "entwurf",
+        "kontingent": sum(len(p["providers"]) for p in posts),
         "bilder": bilder, "posts": posts}, ensure_ascii=False, indent=1), encoding="utf-8")
     return posts
 
@@ -276,6 +278,8 @@ def main():
     print(f"  {len(bilder)} Bilder, {len(posts)} Beiträge geplant, Ordner {ordner.relative_to(ROOT)}")
     for p in posts:
         print(f"  {p['termin'][:10]}  {len(p['media'])} Bild(er)  {p['text'][:70]}…")
+    print(f"  Kontingent dieser Charge: {sum(len(p['providers']) for p in posts)} (Veröffentlichungen je Netz). "
+          "Vor dem Anlegen in Metricool die Monatszählung nach docs/KONZEPT_social-media.md, Abschnitt 1a. Keine zweite Ausspielung.")
 
 
 if __name__ == "__main__":

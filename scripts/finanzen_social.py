@@ -18,8 +18,9 @@ Ausführen:
     python3 scripts/finanzen_social.py --jahr b27      # nach dem Budget 2027
 
 Texte nach den Regeln des Politspiegels: nummerierte Listen, nur Zahlen, keine
-Wertung, keine Erwähnungen. Ein Beitrag je Tag um 09:00, Instagram und Facebook;
-TikTok nimmt über Metricool keine Fotos.
+Wertung, keine Erwähnungen. Ein Beitrag je Tag um 09:00, nur Instagram: Facebook wird
+seit 27. September 2026 nicht mehr bespielt, TikTok nimmt über Metricool keine PNG-Fotos,
+YouTube nur Videos.
 """
 import argparse
 import base64
@@ -177,8 +178,8 @@ def serie(d, jahr, start, serienname, bilder):
         if f"{datei}.png" not in bilder:
             return
         posts.append({"art": "bild", "termin": tag.isoformat() + "T09:00", "text": text,
-                      "media": [url_ordner + datei + ".png"], "providers": ["instagram", "facebook"],
-                      "instagram": {"type": "POST"}, "facebook": {"type": "POST"}})
+                      "media": [url_ordner + datei + ".png"], "providers": ["instagram"],
+                      "instagram": {"type": "POST"}})
 
     t = lambda n: start + timedelta(days=n)
 
@@ -291,7 +292,8 @@ def main():
     if pj.exists():
         alt = json.loads(pj.read_text(encoding="utf-8"))
     daten = {"serie": serienname, "jahr": jahr, "start": start.isoformat(),
-             "status": alt.get("status", "entwurf"), "bilder": bilder, "posts": posts}
+             "status": alt.get("status", "entwurf"), "bilder": bilder, "posts": posts,
+             "kontingent": sum(len(p["providers"]) for p in posts)}
     # Metricool-IDs aus einem frueheren Lauf behalten
     for p in posts:
         for q in alt.get("posts", []):
@@ -299,6 +301,8 @@ def main():
                 p["metricool"] = q["metricool"]
     pj.write_text(json.dumps(daten, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(posts)} Beiträge, {start} bis {start + timedelta(days=len(posts) - 1)}, {pj.relative_to(ROOT)}")
+    print(f"Kontingent dieser Charge: {daten['kontingent']} (Veröffentlichungen je Netz). "
+          "Vor dem Anlegen in Metricool die Monatszählung nach docs/KONZEPT_social-media.md, Abschnitt 1a.")
 
 
 if __name__ == "__main__":
