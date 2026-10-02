@@ -9,6 +9,12 @@
   "titel": "Finanzspiegel",
   "satz": "Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto."
  },
+ "vertrag": {
+  "titel": "Vertragsspiegel",
+  "marke": "National",
+  "satz": "Paket Schweiz–EU (Bilaterale III): Botschaft, Abkommen, Protokolle und Bundesbeschlüsse, gegliedert in Artikel und Abschnitte, mit Umfang und Verweisen.",
+  "url": "https://michaeljkahler.github.io/vertragsspiegel/"
+ },
  "ausblenden": [],
  "testphase": false,
  "melden": {

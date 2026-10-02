@@ -4,10 +4,13 @@
 Aufruf aus der Projektwurzel:
     python3 politspiegel/bauen.py
 
-Liest    politspiegel/politspiegel.json              Titel, Untertitel, Kantonsratskasten
+Liest    politspiegel/politspiegel.json              Titel, Untertitel, Texte der Kaesten
          abstimmungsspiegel/abstimmungen/*/vorlage.json  je Abstimmung Titel, Datum, Stand, Ergebnis
          data/all_sessions.json                       Kennzahlen des Kantonsratsspiegels
-Schreibt site/index.html            die Uebersicht, zwei Kaesten
+         finanzspiegel/daten/finanzspiegel.json       Kennzahlen des Finanzspiegels
+         <vertrag.url>/kennzahlen.json                Kennzahlen des Vertragsspiegels (eigenes Repository)
+Schreibt site/index.html            die Uebersicht, vier Kaesten
+         data/vertragsspiegel_kennzahlen.json  zuletzt gelesene Kennzahlen des Vertragsspiegels
          site/abstimmung/index.html alle Abstimmungen: aktuell, kommend, vergangen
          site/dashboard.html        Weiterleitung auf kantonsrat/
 
@@ -29,11 +32,19 @@ die Seite gebaut, erscheint die Abstimmung.
 
 Warum ein Kasten fuer alle Abstimmungen und nicht einer je Abstimmung: Mit
 jeder Vorlage kaeme ein Kasten dazu, und nach zwei Jahren waere die Uebersicht
-eine Halde. Darum stehen auf der Startseite genau zwei Kaesten, einer je
-Angebot. Der Abstimmungskasten nennt die naechste Abstimmung, und ein
+eine Halde. Darum steht auf der Startseite genau ein Kasten je Angebot. Der Abstimmungskasten nennt die naechste Abstimmung, und ein
 Aufklappfeld darin fuehrt zu jeder einzelnen: aktuell, kommend, vergangen. Die
 vollstaendige Liste mit Ergebnissen liegt unter abstimmung/. Nichts wird
 geloescht: eine alte Abstimmung bleibt unter ihrer Adresse erreichbar.
+
+Warum alle Kaesten gleich gross: Ab zwei Spalten sind alle Zeilen des Rasters
+gleich hoch (grid-auto-rows:1fr), Kennzahlen und Fusszeile sitzen unten
+(margin-top:auto). Das Aufklappfeld «Abstimmung waehlen» oeffnet als Ebene ueber
+den Kaesten darunter, damit sich beim Oeffnen keine Groesse aendert.
+
+Der vierte Kasten fuehrt auf den Vertragsspiegel (Paket Schweiz-EU), eine
+nationale Seite mit eigenem Repository. Er traegt darum eine eigene Farbe
+(Tokens --bund*), keine Ampel- und keine Pro- oder Contra-Farbe.
 """
 
 from __future__ import annotations
@@ -42,6 +53,7 @@ import html
 import json
 import re
 import sys
+import urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -57,6 +69,7 @@ VORLAGEN = WURZEL / "abstimmungsspiegel" / "abstimmungen"
 SITE = WURZEL / "site"
 SITZUNGEN = WURZEL / "data" / "all_sessions.json"
 FINANZEN = WURZEL / "finanzspiegel" / "daten" / "finanzspiegel.json"
+VERTRAG_ZWISCHENSTAND = WURZEL / "data" / "vertragsspiegel_kennzahlen.json"
 
 BESCHREIBUNG = ("Politspiegel Schaffhausen: wie der Kantonsrat abstimmt, und "
                 "was bei der naechsten kantonalen Abstimmung auf dem Zettel "
@@ -81,7 +94,8 @@ def datum_kurz(iso: str) -> str:
 
 
 def prozent(z) -> str:
-    return f"{float(z):.1f}".replace(".", ",") + " %"
+    # geschuetztes Leerzeichen: «46,7» und «%» nie auf zwei Zeilen
+    return f"{float(z):.1f}".replace(".", ",") + "\u00a0%"
 
 
 def vorbei(z, heute) -> bool:
@@ -96,12 +110,14 @@ CSS = """
   --pro:#0F766E; --pro-text:#0C6A62; --contra:#8E44AD; --contra-text:#7E3C9A;
   --grund:#FFFFFF; --flaeche:#F7F8FA; --karte:#FFFFFF;
   --text:#12161C; --text-leise:#5A626D; --linie:#E2E6EB;
+  --bund:#2B4A7A; --bund-flaeche:#EEF3FA; --bund-linie:#C5D3E8; --ebene:0 14px 34px rgba(18,22,28,.16);
 }
 @media (prefers-color-scheme:dark){
   :root{
     --pro:#3FB3A8; --pro-text:#3FB3A8; --contra:#C08AD8; --contra-text:#C08AD8;
     --grund:#12161C; --flaeche:#171C24; --karte:#1B212B;
     --text:#EEF1F5; --text-leise:#9AA3AF; --linie:#2C3440;
+    --bund:#9DB8E6; --bund-flaeche:#172238; --bund-linie:#2E4365; --ebene:0 14px 34px rgba(0,0,0,.55);
   }
 }
 *{box-sizing:border-box}
@@ -117,7 +133,8 @@ a{color:inherit}
 h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spacing:-.015em}
 .lead{margin:0;font-size:18px;color:var(--text-leise)}
 
-.kaesten{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px;align-items:start}
+.kaesten{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:880px){.kaesten{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr}}
 .kasten{display:flex;flex-direction:column;border:1px solid var(--linie);border-radius:16px;
   padding:24px 26px 22px;background:var(--karte);text-decoration:none;color:inherit;
   transition:border-color .12s, transform .12s}
@@ -130,8 +147,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-abstimmung .k-marke{color:var(--contra-text)}
 .k-finanzen .k-marke{color:var(--text)}
 .kasten h2{margin:0 0 8px;font-size:23px;letter-spacing:-.01em}
-.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise);flex:1}
-.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;
+.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise)}
+.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;margin-top:auto;
   border-top:1px solid var(--linie)}
 .k-zahl{font-family:Archivo,sans-serif;font-size:19px;font-weight:600;
   font-variant-numeric:tabular-nums}
@@ -140,23 +157,35 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
 .k-zuletzt{margin:-6px 0 18px;font-size:14px;color:var(--text-leise)}
 .k-zuletzt b{color:var(--text);font-weight:600}
-.k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
+.k-fuss{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;margin:16px 0 0;
+  min-height:24px;font-family:Archivo,sans-serif;font-size:14px;font-weight:600;line-height:24px}
+.k-pfeil{margin:0;white-space:nowrap}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
 .k-finanzen .k-pfeil{color:var(--text)}
+.k-vertrag{background:var(--bund-flaeche);border-color:var(--bund-linie)}
+.k-vertrag:hover,.k-vertrag:focus-visible{border-color:var(--bund)}
+.k-vertrag .k-marke,.k-vertrag .k-pfeil{color:var(--bund)}
+.k-vertrag .k-zahlen{border-top-color:var(--bund-linie)}
 
 .kasten-div{cursor:default}
 .kasten-div:hover{transform:none}
 .k-titel-link{text-decoration:none;color:inherit}
 .k-titel-link:hover h2{text-decoration:underline}
-.k-wahl{margin:14px 0 0;border-top:1px solid var(--linie);padding-top:12px}
-.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;
-  font-family:Archivo,sans-serif;font-size:14px;font-weight:600;color:var(--contra-text);padding:4px 0}
+.k-abstimmung{position:relative}
+.k-wahl{margin:0}
+.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;white-space:nowrap;
+  color:var(--contra-text);border-radius:6px;padding:0 2px}
 .k-wahl summary::-webkit-details-marker{display:none}
-.k-wahl summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
-  transform:rotate(45deg);margin-right:4px;transition:transform .15s}
-.k-wahl[open] summary::after{transform:rotate(-135deg)}
+.k-wahl summary:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+.k-wahl summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.k-wahl[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+.k-wahl-liste{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:var(--karte);
+  border:1px solid var(--linie);border-radius:16px;padding:4px 20px 14px;box-shadow:var(--ebene);
+  max-height:min(70vh,460px);overflow:auto;font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight:400;line-height:1.55}
 .k-gruppe{margin:10px 0 0}
 .k-gruppe h3{margin:0 0 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise)}
 .k-gruppe ul{list-style:none;margin:0;padding:0}
@@ -237,6 +266,39 @@ def finanzzahlen() -> list[dict] | None:
              "einheit": "Defizit" if gesamt < 0 else "Überschuss"}]
 
 
+def vertragszahlen(url: str) -> list[dict] | None:
+    """Kennzahlen des Vertragsspiegels aus dessen kennzahlen.json (Projektbrief
+    Vertragsspiegel, Ziffer 10.1): Seiten und Woerter, wie sie der Vertragsspiegel
+    im Kopf nennt.
+
+    Gelesen wird die veroeffentlichte Datei, damit der Kasten zeigt, was hinter
+    dem Link steht. Der Vertragsspiegel liegt in einem eigenen Repository, eine
+    Datei auf der Platte gibt es hier nicht. Ist die Seite nicht erreichbar
+    (Bauumgebung ohne Netz), gilt die zuletzt gelesene Fassung in
+    data/vertragsspiegel_kennzahlen.json; fehlt auch die, bleibt der Kasten ohne
+    Zahlen statt mit falschen.
+    """
+    k = None
+    try:
+        with urllib.request.urlopen(url.rstrip("/") + "/kennzahlen.json", timeout=10) as r:
+            k = json.loads(r.read().decode("utf-8"))
+        VERTRAG_ZWISCHENSTAND.write_text(json.dumps(k, ensure_ascii=False, indent=1) + "\n",
+                                         encoding="utf-8")
+    except Exception as ex:
+        print(f"Hinweis: Kennzahlen Vertragsspiegel nicht abrufbar ({ex}), "
+              f"verwende {VERTRAG_ZWISCHENSTAND.relative_to(WURZEL)}", file=sys.stderr)
+        try:
+            k = json.loads(VERTRAG_ZWISCHENSTAND.read_text(encoding="utf-8"))
+        except Exception:
+            return None
+    try:
+        zahl = lambda v: f"{int(v):,}".replace(",", " ")
+        return [{"wert": zahl(k["seiten"]), "einheit": "Seiten"},
+                {"wert": zahl(k["woerter"]), "einheit": "Wörter"}]
+    except Exception:
+        return None
+
+
 def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
     """Eine Zeile je Abstimmungsordner mit vorlage.json.
 
@@ -285,6 +347,9 @@ def kasten(k) -> str:
         f'<span class="k-zahl">{e(z["wert"])}<em>{e(z["einheit"])}</em></span>'
         for z in k.get("kennzahlen", []))
     stand = (f'<p class="k-stand">{e(k["stand"])}</p>' if k.get("stand") else "")
+    # Fuehrt der Kasten auf eine eigene Seite ausserhalb des Politspiegels, zeigt
+    # der Pfeil schraeg nach oben.
+    pfeil = "ansehen &nearr;" if k.get("extern") else "ansehen &rarr;"
     return f"""
     <a class="kasten k-{e(k['art'])}" href="{e(k['pfad'])}">
       <span class="k-marke">{e(k['marke'])}</span>
@@ -292,7 +357,7 @@ def kasten(k) -> str:
       <p class="k-satz">{e(k['satz'])}</p>
       <div class="k-zahlen">{zahlen}</div>
       {stand}
-      <p class="k-pfeil">ansehen &rarr;</p>
+      <p class="k-fuss"><span class="k-pfeil">{pfeil}</span></p>
     </a>"""
 
 
@@ -349,8 +414,10 @@ def abstimmungskasten(zeilen, heute) -> str:
       <p class="k-satz">{e(satz)}</p>
       {zuletzt}
       <div class="k-zahlen">{zahlen_html}</div>
-      <details class="k-wahl"><summary>Abstimmung wählen</summary>{wahl}</details>
-      <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
+      <div class="k-fuss">
+        <a class="k-pfeil k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a>
+        <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-wahl-liste">{wahl}</div></details>
+      </div>
     </div>"""
 
 
@@ -424,7 +491,17 @@ def bauen(d, zeilen) -> str:
             "art": "finanzen", "pfad": "finanzen/", "marke": "Budget und Rechnung",
             "titel": fi.get("titel", "Finanzspiegel"), "satz": fi["satz"], "kennzahlen": fz,
         })
-    html_kaesten = "".join(kasten(k) for k in kaesten) + abstimmungskasten(zeilen, heute) + finanzkasten
+    # Vierter Kasten, Vertragsspiegel: national, eigene Seite in eigenem Repository.
+    vertragskasten = ""
+    if d.get("vertrag") and "vertrag" not in set(d.get("ausblenden") or []):
+        ve = d["vertrag"]
+        vertragskasten = kasten({
+            "art": "vertrag", "pfad": ve["url"], "marke": ve.get("marke", "National"),
+            "titel": ve.get("titel", "Vertragsspiegel"), "satz": ve["satz"],
+            "kennzahlen": vertragszahlen(ve["url"]) or [], "extern": True,
+        })
+    html_kaesten = ("".join(kasten(k) for k in kaesten) + abstimmungskasten(zeilen, heute)
+                    + finanzkasten + vertragskasten)
 
     return f"""<!DOCTYPE html>
 <html lang="de-CH">
@@ -460,11 +537,19 @@ def bauen(d, zeilen) -> str:
 </div>
 {kanal_html()}
 </main>
+<script>
+// «Abstimmung wählen» schliesst bei Klick daneben und mit Escape.
+(function(){{
+  function zu(ausser){{document.querySelectorAll("details.k-wahl[open]").forEach(function(d){{if(d!==ausser)d.open=false;}});}}
+  document.addEventListener("click",function(ev){{zu(ev.target.closest&&ev.target.closest("details.k-wahl"));}});
+  document.addEventListener("keydown",function(ev){{if(ev.key==="Escape")zu(null);}});
+}})();
+</script>
 
 <footer class="fuss">
   <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Alle
   Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats, Budget und Staatsrechnung,
-  amtliche Abstimmungsunterlagen, Geodaten von Bund und Kanton. Jede Zahl ist
+  amtliche Abstimmungsunterlagen, Bundesblatt, Geodaten von Bund und Kanton. Jede Zahl ist
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>
 

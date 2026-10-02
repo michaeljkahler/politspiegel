@@ -17,12 +17,14 @@
   --pro:#0F766E; --pro-text:#0C6A62; --contra:#8E44AD; --contra-text:#7E3C9A;
   --grund:#FFFFFF; --flaeche:#F7F8FA; --karte:#FFFFFF;
   --text:#12161C; --text-leise:#5A626D; --linie:#E2E6EB;
+  --bund:#2B4A7A; --bund-flaeche:#EEF3FA; --bund-linie:#C5D3E8; --ebene:0 14px 34px rgba(18,22,28,.16);
 }
 @media (prefers-color-scheme:dark){
   :root{
     --pro:#3FB3A8; --pro-text:#3FB3A8; --contra:#C08AD8; --contra-text:#C08AD8;
     --grund:#12161C; --flaeche:#171C24; --karte:#1B212B;
     --text:#EEF1F5; --text-leise:#9AA3AF; --linie:#2C3440;
+    --bund:#9DB8E6; --bund-flaeche:#172238; --bund-linie:#2E4365; --ebene:0 14px 34px rgba(0,0,0,.55);
   }
 }
 *{box-sizing:border-box}
@@ -38,7 +40,8 @@ a{color:inherit}
 h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spacing:-.015em}
 .lead{margin:0;font-size:18px;color:var(--text-leise)}
 
-.kaesten{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px;align-items:start}
+.kaesten{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:880px){.kaesten{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr}}
 .kasten{display:flex;flex-direction:column;border:1px solid var(--linie);border-radius:16px;
   padding:24px 26px 22px;background:var(--karte);text-decoration:none;color:inherit;
   transition:border-color .12s, transform .12s}
@@ -51,8 +54,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-abstimmung .k-marke{color:var(--contra-text)}
 .k-finanzen .k-marke{color:var(--text)}
 .kasten h2{margin:0 0 8px;font-size:23px;letter-spacing:-.01em}
-.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise);flex:1}
-.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;
+.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise)}
+.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;margin-top:auto;
   border-top:1px solid var(--linie)}
 .k-zahl{font-family:Archivo,sans-serif;font-size:19px;font-weight:600;
   font-variant-numeric:tabular-nums}
@@ -61,23 +64,35 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
 .k-zuletzt{margin:-6px 0 18px;font-size:14px;color:var(--text-leise)}
 .k-zuletzt b{color:var(--text);font-weight:600}
-.k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
+.k-fuss{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;margin:16px 0 0;
+  min-height:24px;font-family:Archivo,sans-serif;font-size:14px;font-weight:600;line-height:24px}
+.k-pfeil{margin:0;white-space:nowrap}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
 .k-finanzen .k-pfeil{color:var(--text)}
+.k-vertrag{background:var(--bund-flaeche);border-color:var(--bund-linie)}
+.k-vertrag:hover,.k-vertrag:focus-visible{border-color:var(--bund)}
+.k-vertrag .k-marke,.k-vertrag .k-pfeil{color:var(--bund)}
+.k-vertrag .k-zahlen{border-top-color:var(--bund-linie)}
 
 .kasten-div{cursor:default}
 .kasten-div:hover{transform:none}
 .k-titel-link{text-decoration:none;color:inherit}
 .k-titel-link:hover h2{text-decoration:underline}
-.k-wahl{margin:14px 0 0;border-top:1px solid var(--linie);padding-top:12px}
-.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;
-  font-family:Archivo,sans-serif;font-size:14px;font-weight:600;color:var(--contra-text);padding:4px 0}
+.k-abstimmung{position:relative}
+.k-wahl{margin:0}
+.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;white-space:nowrap;
+  color:var(--contra-text);border-radius:6px;padding:0 2px}
 .k-wahl summary::-webkit-details-marker{display:none}
-.k-wahl summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
-  transform:rotate(45deg);margin-right:4px;transition:transform .15s}
-.k-wahl[open] summary::after{transform:rotate(-135deg)}
+.k-wahl summary:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+.k-wahl summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.k-wahl[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+.k-wahl-liste{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:var(--karte);
+  border:1px solid var(--linie);border-radius:16px;padding:4px 20px 14px;box-shadow:var(--ebene);
+  max-height:min(70vh,460px);overflow:auto;font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight:400;line-height:1.55}
 .k-gruppe{margin:10px 0 0}
 .k-gruppe h3{margin:0 0 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise)}
 .k-gruppe ul{list-style:none;margin:0;padding:0}
@@ -283,13 +298,13 @@ body.melden-offen{overflow:hidden}
     <li><a href="2026-09-27-verkehrsfluss/">
       <time datetime="2026-09-27">27.09.2026</time>
       <span><h3>Verkehrsflussinitiative</h3>
-      <p class="erg">Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen», mit Gegenvorschlag des Kantonsrats · Initiative <b>46,7 % Ja</b>, abgelehnt &middot; Gegenvorschlag <b>46,3 % Ja</b>, abgelehnt &middot; Stichfrage <b>46,9 % für die Initiative</b> &middot; Stimmbeteiligung 68,5 %</p></span>
+      <p class="erg">Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen», mit Gegenvorschlag des Kantonsrats · Initiative <b>46,7 % Ja</b>, abgelehnt &middot; Gegenvorschlag <b>46,3 % Ja</b>, abgelehnt &middot; Stichfrage <b>46,9 % für die Initiative</b> &middot; Stimmbeteiligung 68,5 %</p></span>
     </a></li>
   </ul></section>
 </main>
 
 <footer class="fuss">
-  <p>Erzeugt am 29.09.2026. Aufbereitung ohne Gewähr.</p>
+  <p>Erzeugt am 02.10.2026. Aufbereitung ohne Gewähr.</p>
   <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="politspiegel.sh" data-d="gmail.com">politspiegel.sh (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 

@@ -18,12 +18,14 @@
   --pro:#0F766E; --pro-text:#0C6A62; --contra:#8E44AD; --contra-text:#7E3C9A;
   --grund:#FFFFFF; --flaeche:#F7F8FA; --karte:#FFFFFF;
   --text:#12161C; --text-leise:#5A626D; --linie:#E2E6EB;
+  --bund:#2B4A7A; --bund-flaeche:#EEF3FA; --bund-linie:#C5D3E8; --ebene:0 14px 34px rgba(18,22,28,.16);
 }
 @media (prefers-color-scheme:dark){
   :root{
     --pro:#3FB3A8; --pro-text:#3FB3A8; --contra:#C08AD8; --contra-text:#C08AD8;
     --grund:#12161C; --flaeche:#171C24; --karte:#1B212B;
     --text:#EEF1F5; --text-leise:#9AA3AF; --linie:#2C3440;
+    --bund:#9DB8E6; --bund-flaeche:#172238; --bund-linie:#2E4365; --ebene:0 14px 34px rgba(0,0,0,.55);
   }
 }
 *{box-sizing:border-box}
@@ -39,7 +41,8 @@ a{color:inherit}
 h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spacing:-.015em}
 .lead{margin:0;font-size:18px;color:var(--text-leise)}
 
-.kaesten{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:20px;align-items:start}
+.kaesten{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:880px){.kaesten{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr}}
 .kasten{display:flex;flex-direction:column;border:1px solid var(--linie);border-radius:16px;
   padding:24px 26px 22px;background:var(--karte);text-decoration:none;color:inherit;
   transition:border-color .12s, transform .12s}
@@ -52,8 +55,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-abstimmung .k-marke{color:var(--contra-text)}
 .k-finanzen .k-marke{color:var(--text)}
 .kasten h2{margin:0 0 8px;font-size:23px;letter-spacing:-.01em}
-.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise);flex:1}
-.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;
+.k-satz{margin:0 0 18px;font-size:15px;color:var(--text-leise)}
+.k-zahlen{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:16px;margin-top:auto;
   border-top:1px solid var(--linie)}
 .k-zahl{font-family:Archivo,sans-serif;font-size:19px;font-weight:600;
   font-variant-numeric:tabular-nums}
@@ -62,23 +65,35 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-stand{margin:14px 0 0;font-size:12.5px;font-style:italic;color:var(--text-leise)}
 .k-zuletzt{margin:-6px 0 18px;font-size:14px;color:var(--text-leise)}
 .k-zuletzt b{color:var(--text);font-weight:600}
-.k-pfeil{margin:16px 0 0;font-family:Archivo,sans-serif;font-size:14px;font-weight:600}
+.k-fuss{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;margin:16px 0 0;
+  min-height:24px;font-family:Archivo,sans-serif;font-size:14px;font-weight:600;line-height:24px}
+.k-pfeil{margin:0;white-space:nowrap}
 .k-kantonsrat .k-pfeil{color:var(--pro-text)}
 .kanal{margin:22px 0 0;font-size:14.5px} .kanal a{color:var(--pro-text);font-weight:600;text-decoration:none} .kanal a:hover{text-decoration:underline}
 .k-abstimmung .k-pfeil{color:var(--contra-text)}
 .k-finanzen .k-pfeil{color:var(--text)}
+.k-vertrag{background:var(--bund-flaeche);border-color:var(--bund-linie)}
+.k-vertrag:hover,.k-vertrag:focus-visible{border-color:var(--bund)}
+.k-vertrag .k-marke,.k-vertrag .k-pfeil{color:var(--bund)}
+.k-vertrag .k-zahlen{border-top-color:var(--bund-linie)}
 
 .kasten-div{cursor:default}
 .kasten-div:hover{transform:none}
 .k-titel-link{text-decoration:none;color:inherit}
 .k-titel-link:hover h2{text-decoration:underline}
-.k-wahl{margin:14px 0 0;border-top:1px solid var(--linie);padding-top:12px}
-.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;
-  font-family:Archivo,sans-serif;font-size:14px;font-weight:600;color:var(--contra-text);padding:4px 0}
+.k-abstimmung{position:relative}
+.k-wahl{margin:0}
+.k-wahl summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;white-space:nowrap;
+  color:var(--contra-text);border-radius:6px;padding:0 2px}
 .k-wahl summary::-webkit-details-marker{display:none}
-.k-wahl summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
-  transform:rotate(45deg);margin-right:4px;transition:transform .15s}
-.k-wahl[open] summary::after{transform:rotate(-135deg)}
+.k-wahl summary:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+.k-wahl summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.k-wahl[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+.k-wahl-liste{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:var(--karte);
+  border:1px solid var(--linie);border-radius:16px;padding:4px 20px 14px;box-shadow:var(--ebene);
+  max-height:min(70vh,460px);overflow:auto;font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight:400;line-height:1.55}
 .k-gruppe{margin:10px 0 0}
 .k-gruppe h3{margin:0 0 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-leise)}
 .k-gruppe ul{list-style:none;margin:0;padding:0}
@@ -277,16 +292,18 @@ body.melden-offen{overflow:hidden}
       <p class="k-satz">Alle namentlichen Abstimmungen der Legislatur, nach Ratsmitglied, Fraktion und Thema. Mit Vergleich der eigenen Haltung.</p>
       <div class="k-zahlen"><span class="k-zahl">1 476<em>namentliche Abstimmungen</em></span><span class="k-zahl">141<em>Sitzungstage</em></span></div>
       
-      <p class="k-pfeil">ansehen &rarr;</p>
+      <p class="k-fuss"><span class="k-pfeil">ansehen &rarr;</span></p>
     </a>
     <div class="kasten kasten-div k-abstimmung">
       <span class="k-marke">Laufend</span>
       <a class="k-titel-link" href="abstimmung/"><h2>Abstimmungsspiegel</h2></a>
       <p class="k-satz">Nächste Abstimmung am 29. November 2026: Änderung des Spitalgesetzes. Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.</p>
-      <p class="k-zuletzt">Zuletzt am 27.09.2026: <a href="abstimmung/2026-09-27-verkehrsfluss/">Verkehrsflussinitiative</a>. Initiative <b>46,7 % Ja</b>, abgelehnt &middot; Gegenvorschlag <b>46,3 % Ja</b>, abgelehnt &middot; Stichfrage <b>46,9 % für die Initiative</b> &middot; Stimmbeteiligung 68,5 %</p>
+      <p class="k-zuletzt">Zuletzt am 27.09.2026: <a href="abstimmung/2026-09-27-verkehrsfluss/">Verkehrsflussinitiative</a>. Initiative <b>46,7 % Ja</b>, abgelehnt &middot; Gegenvorschlag <b>46,3 % Ja</b>, abgelehnt &middot; Stichfrage <b>46,9 % für die Initiative</b> &middot; Stimmbeteiligung 68,5 %</p>
       <div class="k-zahlen"><span class="k-zahl">2<em>Abstimmungen</em></span></div>
-      <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li class="k-leer">keine weiteren angekündigt</li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div></details>
-      <p class="k-pfeil"><a class="k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a></p>
+      <div class="k-fuss">
+        <a class="k-pfeil k-titel-link" href="abstimmung/">alle Abstimmungen &rarr;</a>
+        <details class="k-wahl"><summary>Abstimmung wählen</summary><div class="k-wahl-liste"><div class="k-gruppe"><h3>Aktuell</h3><ul><li><a href="abstimmung/2026-11-29-spitalgesetz/"><time datetime="2026-11-29">29.11.2026</time><span>Änderung des Spitalgesetzes <span class="k-entwurf">Entwurf</span></span></a></li></ul></div><div class="k-gruppe"><h3>Kommend</h3><ul><li class="k-leer">keine weiteren angekündigt</li></ul></div><div class="k-gruppe"><h3>Vergangen</h3><ul><li><a href="abstimmung/2026-09-27-verkehrsfluss/"><time datetime="2026-09-27">27.09.2026</time><span>Verkehrsflussinitiative</span></a></li></ul></div></div></details>
+      </div>
     </div>
     <a class="kasten k-finanzen" href="finanzen/">
       <span class="k-marke">Budget und Rechnung</span>
@@ -294,20 +311,36 @@ body.melden-offen{overflow:hidden}
       <p class="k-satz">Budget und Staatsrechnung des Kantons: woher das Geld kommt, wohin es geht, bis zum einzelnen Konto.</p>
       <div class="k-zahlen"><span class="k-zahl">1&#x27;217.8 Mio.<em>Aufwand Budget 2027 (Vorlage)</em></span><span class="k-zahl">−65.0 Mio.<em>Defizit</em></span></div>
       
-      <p class="k-pfeil">ansehen &rarr;</p>
+      <p class="k-fuss"><span class="k-pfeil">ansehen &rarr;</span></p>
+    </a>
+    <a class="kasten k-vertrag" href="https://michaeljkahler.github.io/vertragsspiegel/">
+      <span class="k-marke">National</span>
+      <h2>Vertragsspiegel</h2>
+      <p class="k-satz">Paket Schweiz–EU (Bilaterale III): Botschaft, Abkommen, Protokolle und Bundesbeschlüsse, gegliedert in Artikel und Abschnitte, mit Umfang und Verweisen.</p>
+      <div class="k-zahlen"><span class="k-zahl">1 945<em>Seiten</em></span><span class="k-zahl">642 186<em>Wörter</em></span></div>
+      
+      <p class="k-fuss"><span class="k-pfeil">ansehen &nearr;</span></p>
     </a>
 </div>
 <p class="kanal"><a href="https://whatsapp.com/channel/0029VbDT16R0LKZChkAwY01o" target="_blank" rel="noopener">Nach jeder Sitzung eine Meldung: dem WhatsApp-Kanal folgen &rarr;</a></p>
 </main>
+<script>
+// «Abstimmung wählen» schliesst bei Klick daneben und mit Escape.
+(function(){
+  function zu(ausser){document.querySelectorAll("details.k-wahl[open]").forEach(function(d){if(d!==ausser)d.open=false;});}
+  document.addEventListener("click",function(ev){zu(ev.target.closest&&ev.target.closest("details.k-wahl"));});
+  document.addEventListener("keydown",function(ev){if(ev.key==="Escape")zu(null);});
+})();
+</script>
 
 <footer class="fuss">
   <p><strong>Kein Angebot einer Partei und keines des Kantons.</strong> Alle
   Seiten stehen auf denselben Grundlagen: Wortprotokolle des Kantonsrats, Budget und Staatsrechnung,
-  amtliche Abstimmungsunterlagen, Geodaten von Bund und Kanton. Jede Zahl ist
+  amtliche Abstimmungsunterlagen, Bundesblatt, Geodaten von Bund und Kanton. Jede Zahl ist
   bis zu ihrer Quelle verfolgbar, jede eigene Auswertung als solche
   gekennzeichnet.</p>
 
-  <p>Erzeugt am 29.09.2026. Aufbereitung ohne Gewähr.</p>
+  <p>Erzeugt am 02.10.2026. Aufbereitung ohne Gewähr.</p>
   <div class="impressum" id="impressum"><p><b>Impressum.</b> Verantwortlich für den Inhalt: Michael Kahler, <span class="imp-mail" data-u="politspiegel.sh" data-d="gmail.com">politspiegel.sh (at) gmail.com</span>. Privates, nichtkommerzielles Projekt. Es steht in keinem Zusammenhang mit dem Kantonsrat oder der Verwaltung des Kantons Schaffhausen. Rückmeldungen, auch von den Komitees, an diese Adresse; Korrekturen werden sichtbar protokolliert.</p><p><b>Datenschutz.</b> Diese Seiten senden nichts: kein Konto, kein Cookie, kein Zählpixel, keine Auswertung. Die Seiten liegen bei GitHub Pages; GitHub führt als Betreiber der Server eigene Zugriffsprotokolle, auf die der Herausgeber keinen Zugriff hat.</p></div><script>document.querySelectorAll(".imp-mail").forEach(function(s){var a=s.dataset.u+"@"+s.dataset.d;s.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
 </footer>
 
