@@ -2127,7 +2127,14 @@ body.melden-offen{overflow:hidden}
 
   /* ═══ Rubrik: Ranglisten ═══════════════════════════════════════════════ */
   function renderRang(el) {
-    var mem = mitgliedStats().filter(function (m) { return m.total > 0; });
+    /* Ausgeschiedene Ratsmitglieder stehen nicht in den Ranglisten. Massgeblich
+       ist wegSeit(): nur in der laufenden Legislatur und ihren Sitzungen. In
+       abgeschlossenen Legislaturen bleiben alle drin, dort sind alle
+       ausgeschieden. Die Fraktionswerte enthalten ihre Stimmen weiterhin, sie
+       gehören zum Stimmverhalten der Fraktion im Zeitraum. */
+    var mitStimmen = mitgliedStats().filter(function (m) { return m.total > 0; });
+    var mem = mitStimmen.filter(function (m) { return !wegSeit(m.k); });
+    var ohneWeg = mitStimmen.length - mem.length;
     var fs = frakStats();
     function box(titel, unter, daten, wert, format) {
       var top = daten.slice().sort(function (a, b) { return wert(b) - wert(a); }).slice(0, 8);
@@ -2151,7 +2158,8 @@ body.melden-offen{overflow:hidden}
       '<div class="hinweis"><b>Zur Einordnung:</b> Abwesenheiten können entschuldigt sein. ' +
       "Quoten beziehen sich auf die Sitzungen seit Amtsantritt der jeweiligen Person, " +
       "Zustimmungsquoten auf die abgegebenen Stimmen und sind richtungskorrigiert.</div>" +
-      '<div class="sec"><h2>Ratsmitglieder</h2><p>' + mem.length + " Personen im Zeitraum</p></div>" +
+      '<div class="sec"><h2>Ratsmitglieder</h2><p>' + mem.length + " Personen im Zeitraum" +
+      (ohneWeg ? ", ohne " + ohneWeg + " ausgeschiedene" : "") + "</p></div>" +
       '<div class="rgrid">' +
       box("Höchste Präsenz", "abgegebene Stimmen", mem, function (m) { return m.praesenz; }, prozent) +
       box("Höchste Abwesenheitsquote", "nicht teilgenommen", mem, function (m) { return 100 - m.praesenz; }, prozent) +
@@ -2504,8 +2512,9 @@ body.melden-offen{overflow:hidden}
      Prozent: bei Präsenzwerten zwischen 88 und 99 wären sonst alle Balken
      gleich lang und die Grafik sagte nichts. */
   function bildRangArt(x, y, ink, ink2, ink3, line, m) {
+    /* Ausgeschiedene fehlen wie in der Rubrik Ranglisten, siehe renderRang() */
     var liste = (m.frak ? frakStats() : mitgliedStats())
-      .filter(function (e) { return m.frak ? e.abgegeben > 0 : e.abgegeben > 0; })
+      .filter(function (e) { return e.abgegeben > 0 && (m.frak || !wegSeit(e.k)); })
       .map(function (e) {
         return { name: m.frak ? e.f : anzeigeName(e.k),
                  partei: m.frak ? null : e.p,
