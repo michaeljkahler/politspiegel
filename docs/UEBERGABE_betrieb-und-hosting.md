@@ -631,6 +631,13 @@ letzte Sitzung, an der sie teilgenommen haben. Mehr lässt sich nicht belegen, e
 Rücktrittsdatum steht in keiner der Quellen. Der Vermerk erscheint nur, wenn die laufende
 Legislatur im Blick ist; in einer abgeschlossenen sind alle ausgeschieden, dort wäre er Lärm.
 
+**In den Ranglisten fehlen sie seit dem 8. Oktober 2026**, in der Rubrik wie im Bilddownload.
+Es gilt dieselbe Bedingung wie für das Abzeichen (`wegSeit()` in `dashboard.js`): ausgeblendet
+wird nur, wenn die laufende Legislatur oder eine ihrer Sitzungen im Blick ist. Die Zeile über
+den Mitgliederranglisten nennt die Zahl der Ausgeblendeten. Die Fraktionsranglisten rechnen
+ihre Stimmen weiterhin mit, sie gehören zum Stimmverhalten der Fraktion im Zeitraum. Anlass:
+Lara Winzeler stand vorher auf Rang 1 bei Abwesenheits- und Ablehnungsquote.
+
 **Der erste Ansatz war falsch und ist lehrreich.** Er verglich die Abstimmungsdaten mit
 `mitglieder.json` und erklärte jeden für ausgeschieden, der dort fehlt. Das ergab vier Namen,
 darunter Lukas Bringolf, der der Justizkommission vorsitzt und in der jüngsten Sitzung
