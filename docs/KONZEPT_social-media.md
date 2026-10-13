@@ -1,6 +1,6 @@
 # Social Media: Konzept und Ablauf
 
-Stand 27. September 2026. Gilt für Instagram, TikTok und YouTube des Politspiegels sowie den WhatsApp-Kanal. Facebook wird seit 27. September 2026 nicht mehr bespielt.
+Stand 11. Oktober 2026. Gilt für Instagram, TikTok und YouTube des Politspiegels sowie den WhatsApp-Kanal. Facebook wird seit 27. September 2026 nicht mehr bespielt.
 
 ## 1. Rahmen
 
@@ -26,6 +26,14 @@ Metricool läuft im Gratisplan (Entscheid vom 27. September 2026). Grundlage: Me
    4. Weitere Karussell-Teile.
    5. Serien wie der Finanzspiegel.
 8. Nicht angelegte Beiträge erhalten in `posts.json` den Status `zurueckgestellt` mit Monat oder `entfallen`.
+9. Sendeplan (Entscheid vom 11. Oktober 2026, gilt ab 1. November 2026): Die 17 Veröffentlichungen verteilen sich gleichmässig über den ganzen Monat statt in Schüben nach jeder Sitzung. Grund: Das Oktoberkontingent war am 11. Oktober aufgebraucht, danach blieben die Kanäle drei Wochen leer. `scripts/sendeplan.py` rechnet die Termine und die freien Plätze.
+   1. 17 Termine je Kalendermonat, Termin k (k = 0 bis 16) am Tag 1 + floor((k + 0,5) × T / 17), T = Tage des Monats. November 2026: 1., 3., 5., 7., 8., 10., 12., 14., 16., 17., 19., 21., 23., 24., 26., 28., 30.
+   2. Je Termin genau ein Beitrag (ein Netz). Bild und Karussell 09:00, Reel 16:00.
+   3. Jede kommende Kantonsratssitzung hält die ersten 8 freien Termine ab dem zweiten Tag nach der Sitzung frei (2 Halbtage × Karussell Teil 1 und drei Reels).
+   4. Belegung nach Vorrang (Ziffer 7), dann in Serienreihenfolge auf die frühesten freien Termine. Je Sitzungshalbtag: Karussell Teil 1, Reel Instagram, Reel TikTok, Reel YouTube, weitere Karussellteile.
+   5. Beiträge ohne Termin bleiben `zurueckgestellt` und erhalten bei einem späteren Lauf Termine, die frei geworden sind.
+   6. Termine ohne Beitrag bleiben leer. Nichts verdichten, keine zwei Beiträge am selben Tag.
+   7. Die 3 Reserveplätze sind keine Termine und werden nur auf Anweisung von Michael belegt.
 
 ## 2. Textregeln
 
@@ -62,7 +70,7 @@ Serie je kantonale Vorlage, Bilder aus `abstimmungsspiegel/bausteine/teilen.py` 
 
 Rhythmus nach dem 6. September 2026 verdichtet: Alle Beiträge einer Vorlage laufen in einer Woche (zwei je Tag, 09:00 und 16:00), in der Woche darauf werden sie ein zweites Mal ausgespielt, weil viele brieflich abstimmen und Reels nur kurz sichtbar sind. Die Erinnerung bleibt am Freitag vor dem Abstimmungssonntag.
 
-Seit 27. September 2026 begrenzt das Kontingent (Abschnitt 1a) den Umfang: keine zweite Ausspielung, je Serie nur so viele Beiträge, wie im Monat Platz haben, Reels vor Bildern.
+Seit 27. September 2026 begrenzt das Kontingent (Abschnitt 1a) den Umfang: keine zweite Ausspielung, je Serie nur so viele Beiträge, wie im Monat Platz haben, Reels vor Bildern. Seit 1. November 2026 laufen die Beiträge auf den Terminen des Sendeplans (Abschnitt 1a, Ziffer 9) in den vier Wochen vor dem Abstimmungssonntag; reichen die freien Termine nicht, darf die Serie reservierte Termine einer Sitzung belegen, solange dieser mindestens 6 bleiben.
 
 Noch offen: die Motive aus teilen.py werden im Browser gezeichnet. Für Metricool braucht es PNG-Dateien mit öffentlicher Adresse. Umsetzung als eigener Schritt (Rendering nach dem Muster von social.py).
 
@@ -85,11 +93,11 @@ Erzeugt `scripts/whatsapp.py`, Ausgabe in `Whatsappkanal/<slug>/` (nicht im Repo
 
 1. `python3 scripts/antragstexte.py --neueste 4` liest Streichungen und Einfügungen der neuen Sitzungen aus den Excel-Dateien. Claude schreibt danach je Abstimmung ein Stichwort in `data/stichworte.json` (Regeln in Abschnitt 2, Punkt 8, und im Hinweis der Datei). Dann erzeugt `python3 scripts/social.py` Bilder, Video und `posts.json` für die neueste Sitzung; Abstimmungen ohne Stichwort meldet das Skript, dort steht der Titel aus dem Protokoll.
 2. Commit und Push nach GitHub, damit die Dateien unter `https://michaeljkahler.github.io/politspiegel/social/…` öffentlich sind. Ein bis zwei Minuten warten.
-3. Claude zählt das Kontingent des Monats (Abschnitt 1a) und legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true), soweit es reicht, in der Reihenfolge des Vorrangs. Sendezeiten fest: 09:00, ein zweiter Beitrag am selben Tag 16:00 (Vorgabe vom 4. September 2026). Kantonsrat: Karussell Teil 1 um 09:00, Reel um 16:00, weitere Teile am Folgetag 09:00.
+3. Claude zählt das Kontingent des Monats (Abschnitt 1a) und legt die Beiträge aus `posts.json` in Metricool als Entwurf an (draft: true), soweit es reicht, in der Reihenfolge des Vorrangs. Termine nach dem Sendeplan (Abschnitt 1a, Ziffer 9): `python3 scripts/sendeplan.py --frei --ab <morgen> --belegt <Tage mit Beitrag>`. Bis Oktober 2026 galten feste Sendezeiten 09:00 und 16:00 am selben Tag (Vorgabe vom 4. September 2026).
 4. Michael prüft in Metricool oder im Chat und gibt frei. Claude zählt das Kontingent nochmals und setzt draft auf false.
 5. `posts.json` wird auf `status: freigegeben` gesetzt, damit nichts doppelt angelegt wird.
 
-Im wiederkehrenden Auftrag `kantonsrat-dashboard-update` (1. und 15. jedes Monats) läuft Schritt 1 bis 3 als Teil E, sobald eine neue Sitzung im Datenbestand ist.
+Im wiederkehrenden Auftrag «Kantonsrat dashboard update» (geplante Aufgabe in der Cloud, dienstags 08:00) laufen Schritt 1 bis 3 als Teil F, sobald eine neue Sitzung im Datenbestand ist oder zurückgestellte Beiträge freie Termine finden.
 
 ## 5. Technik
 
