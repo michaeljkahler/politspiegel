@@ -18,15 +18,15 @@ python3 politspiegel/bauen.py
 
 Liest `politspiegel.json` (Titel, Untertitel, Texte der Kästen), die
 `vorlage.json` jeder Abstimmung unter `abstimmungsspiegel/abstimmungen/`,
-`data/all_sessions.json`, `finanzspiegel/daten/finanzspiegel.json` und die
-veröffentlichte `kennzahlen.json` des Vertragsspiegels (Adresse aus
-`vertrag.url`). Ist der Vertragsspiegel nicht erreichbar, gilt die zuletzt
-gelesene Fassung in `data/vertragsspiegel_kennzahlen.json`. Schreibt `site/index.html`, `site/abstimmung/index.html`
+`data/all_sessions.json` und die veröffentlichten `kennzahlen.json` des
+Finanzspiegels und des Vertragsspiegels (Adressen aus `finanzen.url` und
+`vertrag.url`). Ist eine der Seiten nicht erreichbar, gilt die zuletzt gelesene
+Fassung in `data/finanzspiegel_kennzahlen.json` bzw. `data/vertragsspiegel_kennzahlen.json`. Schreibt `site/index.html`, `site/abstimmung/index.html`
 (die Liste) und `site/dashboard.html` (Weiterleitung auf `kantonsrat/`).
 
 Nichts auf der Übersicht wird von Hand gepflegt: Die Kennzahlen des
 Kantonsratsspiegels kommen aus den Ratsdaten, die des Finanzspiegels aus dessen
-Daten, die des Vertragsspiegels (Seiten, Wörter) aus dessen `kennzahlen.json`,
+`kennzahlen.json`, die des Vertragsspiegels (Seiten, Wörter) aus dessen `kennzahlen.json`,
 die Abstimmungen aus ihren Vorlagen. Von Hand gepflegte Zahlen auf einer Übersichtsseite veralten
 unbemerkt, und zwar genau dann, wenn die Seite darunter aktuell ist.
 
@@ -38,7 +38,7 @@ unbemerkt, und zwar genau dann, wenn die Seite darunter aktuell ist.
 | `/kantonsrat/` | Kantonsratsspiegel | `site/kantonsrat/index.html` | 2,6 MB |
 | `/abstimmung/` | Abstimmungsspiegel, alle Abstimmungen | `site/abstimmung/index.html` | 8 kB |
 | `/abstimmung/<slug>/` | eine Abstimmung | `site/abstimmung/<slug>/index.html` | 0,1 bis 0,5 MB |
-| `/finanzen/` | Finanzspiegel | `site/finanzen/index.html` | 0,3 MB |
+| `michaeljkahler.github.io/finanzspiegel/` | Finanzspiegel | eigenes Repository seit 24.10.2026; `/finanzen/` leitet weiter | |
 | `michaeljkahler.github.io/vertragsspiegel/` | Vertragsspiegel, national | eigenes Repository | |
 | `/dashboard.html` | Weiterleitung auf `/kantonsrat/` | | |
 

@@ -7,10 +7,11 @@ Aufruf aus der Projektwurzel:
 Liest    politspiegel/politspiegel.json              Titel, Untertitel, Texte der Kaesten
          abstimmungsspiegel/abstimmungen/*/vorlage.json  je Abstimmung Titel, Datum, Stand, Ergebnis
          data/all_sessions.json                       Kennzahlen des Kantonsratsspiegels
-         finanzspiegel/daten/finanzspiegel.json       Kennzahlen des Finanzspiegels
+         <finanzen.url>/kennzahlen.json               Kennzahlen des Finanzspiegels (eigenes Repository seit 24.10.2026)
          <vertrag.url>/kennzahlen.json                Kennzahlen des Vertragsspiegels (eigenes Repository)
 Schreibt site/index.html            die Uebersicht, vier Kaesten
          data/vertragsspiegel_kennzahlen.json  zuletzt gelesene Kennzahlen des Vertragsspiegels
+         data/finanzspiegel_kennzahlen.json    zuletzt gelesene Kennzahlen des Finanzspiegels
          site/abstimmung/index.html alle Abstimmungen: aktuell, kommend, vergangen
          site/dashboard.html        Weiterleitung auf kantonsrat/
 
@@ -68,7 +69,7 @@ QUELLE = WURZEL / "politspiegel" / "politspiegel.json"
 VORLAGEN = WURZEL / "abstimmungsspiegel" / "abstimmungen"
 SITE = WURZEL / "site"
 SITZUNGEN = WURZEL / "data" / "all_sessions.json"
-FINANZEN = WURZEL / "finanzspiegel" / "daten" / "finanzspiegel.json"
+FINANZ_ZWISCHENSTAND = WURZEL / "data" / "finanzspiegel_kennzahlen.json"
 VERTRAG_ZWISCHENSTAND = WURZEL / "data" / "vertragsspiegel_kennzahlen.json"
 
 BESCHREIBUNG = ("Politspiegel Schaffhausen: wie der Kantonsrat abstimmt, und "
@@ -245,25 +246,35 @@ def ratszahlen() -> list[dict] | None:
             {"wert": str(len(tage) or len(s)), "einheit": "Sitzungstage"}]
 
 
-def finanzzahlen() -> list[dict] | None:
-    """Kennzahlen des Finanzspiegels aus dessen Datendatei: ordentlicher Aufwand und
-    Ergebnis des juengsten Budgets. Fehlt die Datei, faellt der Kasten weg."""
+def finanzzahlen(url: str) -> list[dict] | None:
+    """Kennzahlen des Finanzspiegels aus dessen kennzahlen.json: ordentlicher Aufwand und
+    Gesamtergebnis des juengsten Budgets.
+
+    Seit dem 24. Oktober 2026 liegt der Finanzspiegel im eigenen Repository
+    (michaeljkahler/finanzspiegel). Gelesen wird darum die veroeffentlichte Datei, wie
+    beim Vertragsspiegel. Ist die Seite nicht erreichbar, gilt die zuletzt gelesene
+    Fassung in data/finanzspiegel_kennzahlen.json; fehlt auch die, faellt der Kasten weg.
+    """
+    k = None
     try:
-        d = json.loads(FINANZEN.read_text(encoding="utf-8"))
+        with urllib.request.urlopen(url.rstrip("/") + "/kennzahlen.json", timeout=10) as r:
+            k = json.loads(r.read().decode("utf-8"))
+        FINANZ_ZWISCHENSTAND.write_text(json.dumps(k, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    except Exception as ex:
+        print(f"Hinweis: Kennzahlen Finanzspiegel nicht abrufbar ({ex}), "
+              f"verwende {FINANZ_ZWISCHENSTAND.relative_to(WURZEL)}", file=sys.stderr)
+        try:
+            k = json.loads(FINANZ_ZWISCHENSTAND.read_text(encoding="utf-8"))
+        except Exception:
+            return None
+    try:
+        mio = lambda v: f"{v / 1e6:,.1f}".replace(",", "'")
+        gesamt = k["gesamt"]
+        return [{"wert": f"{mio(k['aufwand'])} Mio.", "einheit": f"Aufwand {k['titel']}"},
+                {"wert": f"{'−' if gesamt < 0 else '+'}{mio(abs(gesamt))} Mio.",
+                 "einheit": "Defizit" if gesamt < 0 else "Überschuss"}]
     except Exception:
         return None
-    jahre = [j["k"] for j in d.get("jahre") or []]
-    if not jahre or not d.get("z"):
-        return None
-    i = 5 + len(jahre) - 1
-    # Budget, das der Kantonsrat noch nicht beschlossen hat: Zusatz «Vorlage»
-    titel = d["jahre"][-1]["t"] + (" (Vorlage)" if d["jahre"][-1].get("vorlage") else "")
-    auf = sum(z[i] for z in d["z"] if z[3][0] == "3" and z[3][:2] not in ("38", "39"))
-    gesamt = -sum(z[i] for z in d["z"])
-    mio = lambda v: f"{v / 1e6:,.1f}".replace(",", "'")
-    return [{"wert": f"{mio(auf)} Mio.", "einheit": f"Aufwand {titel}"},
-            {"wert": f"{'−' if gesamt < 0 else '+'}{mio(abs(gesamt))} Mio.",
-             "einheit": "Defizit" if gesamt < 0 else "Überschuss"}]
 
 
 def vertragszahlen(url: str) -> list[dict] | None:
@@ -483,14 +494,16 @@ def bauen(d, zeilen) -> str:
     }]
     # Dritter Kasten, Finanzspiegel, nur wenn seine Datendatei da ist. Reihenfolge:
     # Kantonsrat, Abstimmung, Finanzen, von haeufig genutzt zu neu.
-    fz = finanzzahlen()
+    # Seit 24.10.2026 eigenes Repository; /finanzen/ leitet dorthin weiter.
     finanzkasten = ""
-    if fz and d.get("finanzen") and "finanzen" not in set(d.get("ausblenden") or []):
+    if d.get("finanzen") and "finanzen" not in set(d.get("ausblenden") or []):
         fi = d["finanzen"]
-        finanzkasten = kasten({
-            "art": "finanzen", "pfad": "finanzen/", "marke": "Budget und Rechnung",
-            "titel": fi.get("titel", "Finanzspiegel"), "satz": fi["satz"], "kennzahlen": fz,
-        })
+        fz = finanzzahlen(fi.get("url", "https://michaeljkahler.github.io/finanzspiegel/"))
+        if fz:
+            finanzkasten = kasten({
+                "art": "finanzen", "pfad": fi.get("url", "finanzen/"), "marke": "Budget und Rechnung",
+                "titel": fi.get("titel", "Finanzspiegel"), "satz": fi["satz"], "kennzahlen": fz, "extern": True,
+            })
     # Vierter Kasten, Vertragsspiegel: national, eigene Seite in eigenem Repository.
     vertragskasten = ""
     if d.get("vertrag") and "vertrag" not in set(d.get("ausblenden") or []):
