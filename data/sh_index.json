@@ -40,6 +40,10 @@
    {
     "name": "KRB 10. KR-Sitzung vom 29.06.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/bdaca003-152c-402e-9f17-45152c6ea3bd"
+   },
+   {
+    "name": "Protokoll 10. Sitzung vom 29.06.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/b282fc10-c2bf-47f2-8d86-26eaea416870"
    }
   ]
  },
@@ -62,6 +66,10 @@
    {
     "name": "KRB 7. KR-Sitzung vom 01.06.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/3a0c188c-bc8c-47e8-8576-ba2dd2aaf102"
+   },
+   {
+    "name": "Protokoll 7. Sitzung vom 1.06.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/b056ca96-7016-44e8-a960-131e405e138a"
    }
   ]
  },
@@ -204,6 +212,14 @@
    {
     "name": "KRB 8. und 9. KR-Sitzung vom 15.06.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/683668de-fe35-4575-8b06-2210c0bd62c2"
+   },
+   {
+    "name": "Protokoll 8. Sitzung vom 15.06.2026_ VM.pdf",
+    "href": "https://sh.ch/CMS/get/file/47134a4b-8153-45b7-8fd0-072fa14b8410"
+   },
+   {
+    "name": "Protokoll 9. Sitzung vom 15.06.2026_ NM.pdf",
+    "href": "https://sh.ch/CMS/get/file/43312fe1-34cc-4181-9e77-fcfe7a7975db"
    }
   ]
  },
@@ -4820,6 +4836,16 @@
    {
     "name": "KRB 14. und 15. KR-Sitzung vom 21.09.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/277c17ab-b731-40a8-8ccf-5352fcd305b5"
+   }
+  ]
+ },
+ "23774052": {
+  "titel": "16. Sitzung 2026",
+  "datum": "02.11.2026",
+  "files": [
+   {
+    "name": "16. Sitzung vom 02.11.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/ca08bb43-12bb-4e73-9b5e-ba868f599da1"
    }
   ]
  }
