@@ -1,7 +1,7 @@
 {
   "schema_version": "0.5",
   "stand": "2026-11-02",
-  "status": "entwurf",
+  "status": "veroeffentlicht",
   "hinweis_quellen": "Argumente aus dem Abstimmungsmagazin der Stadt und aus dem Protokoll des Grossen Stadtrats vom 1. September 2026, je vier pro Seite. Gegen die Vorlage gibt es keine Parole und kein Komitee; die zweite Seite enthält die meistgenannten Einwände aus der Ratsdebatte.",
   "lesehilfe": "Die Einwände auf der zweiten Seite stammen von Ratsmitgliedern, die der Vorlage selbst zugestimmt haben, mit einer Ausnahme ohne Begründung. Zwei der vier Einwände sind Werturteile und tragen keine Note. Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
   "vorlage": {

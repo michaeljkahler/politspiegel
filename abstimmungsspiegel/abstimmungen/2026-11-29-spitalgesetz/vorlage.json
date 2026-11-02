@@ -1,7 +1,7 @@
 {
   "schema_version": "0.5",
   "stand": "2026-11-02",
-  "status": "entwurf",
+  "status": "veroeffentlicht",
   "hinweis_quellen": "Argumente aus dem amtlichen Abstimmungs-Magazin, aus der Kampagnenseite der SP und aus dem Wortprotokoll der ersten Lesung im Kantonsrat vom 4. Mai 2026, je fünf pro Seite. Das Wortprotokoll der zweiten Lesung vom 24. August 2026 war am Stichtag nicht publiziert. Gesetzestexte nach rechtsbuch.sh.ch und fedlex.admin.ch, Stand 1. Januar 2026.",
   "lesehilfe": "Die Ja-Seite stützt sich überwiegend auf das Abstimmungs-Magazin und den Gesetzestext, die Nein-Seite auf Voten im Kantonsrat und eine Kampagnenseite ohne Quellenangaben. Ein Teil der Nein-Argumente bezieht sich auf die Fassung der ersten Lesung, die seither ergänzt wurde; das steht jeweils unter «Was fehlt». Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
   "vorlage": {

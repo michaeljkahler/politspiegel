@@ -1108,6 +1108,10 @@ h1{font-size:clamp(28px,4.2vw,42px);line-height:1.12;margin:12px 0 4px;letter-sp
 .untertitel{color:var(--text-leise);margin:0 0 18px;font-size:17px}
 .termin{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--linie);
   border-radius:999px;padding:5px 14px;font-size:14px;font-variant-numeric:tabular-nums}
+/* Gelbe Marke fuer staedtische Vorlagen; gleiche Farben in hell und dunkel. */
+.ober-rechts{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap}
+.staedtisch{display:inline-flex;align-items:center;border-radius:999px;padding:5px 12px;font-size:13px;
+  font-weight:600;background:#FFD84D;color:#3D3000;border:1px solid #E6BE2E}
 .lead{margin:18px 0 0;font-size:17px}
 .warn{margin:22px 0 0;padding:14px 16px;border:1px dashed var(--linie);
   border-radius:12px;background:var(--flaeche);font-size:14.5px;color:var(--text-leise)}
@@ -2061,7 +2065,7 @@ def bauen() -> str:
 <header class="kopf">
   <div class="ober">
     <span class="marke-seite"><a class="heim" href="../../" title="Zur Übersicht Politspiegel Schaffhausen"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2 8l6-5 6 5v5.5a.5.5 0 0 1-.5.5H10v-4H6v4H2.5a.5.5 0 0 1-.5-.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>Politspiegel</a> · <a href="../" class="heim heim-liste" title="Alle Abstimmungen">Abstimmungsspiegel</a> · {e(v['ebene'])}</span>
-    <span class="termin">Abstimmung {tag}.{monat}.{jahr}</span>
+    <span class="ober-rechts">{'' if str(v.get('ebene', '')).startswith('Kanton') else '<span class="staedtisch">Städtische Vorlage</span>'}<span class="termin">Abstimmung {tag}.{monat}.{jahr}</span></span>
   </div>
   <h1>{e(v['titel'])}</h1>
   <p class="untertitel">{e(v['untertitel'])}</p>

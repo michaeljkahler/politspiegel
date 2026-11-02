@@ -30,7 +30,7 @@ Dach über beiden ist der Politspiegel.
 | Termin | Vorlage | Ordner | Stand |
 |---|---|---|---|
 | 27.09.2026 | Verkehrsflussinitiative, mit Gegenvorschlag | [`abstimmungen/2026-09-27-verkehrsfluss/`](abstimmungen/2026-09-27-verkehrsfluss/) | veröffentlicht am 03.09.2026, Rückmeldungen offen |
-| 29.11.2026 | Änderung des Spitalgesetzes (Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen») | [`abstimmungen/2026-11-29-spitalgesetz/`](abstimmungen/2026-11-29-spitalgesetz/) | Entwurf vom 02.11.2026, je fünf Aussagen |
-| 29.11.2026 | Stadt Schaffhausen: Neubau Kinderzentrum Geissberg | [`abstimmungen/2026-11-29-geissberg/`](abstimmungen/2026-11-29-geissberg/) | Entwurf vom 02.11.2026, je fünf Aussagen |
-| 29.11.2026 | Stadt Schaffhausen: Kinder- und Jugendheim Generalengut | [`abstimmungen/2026-11-29-generalengut/`](abstimmungen/2026-11-29-generalengut/) | Entwurf vom 02.11.2026, je vier Aussagen, Gegenseite aus Einwänden im Grossen Stadtrat |
-| 29.11.2026 | Stadt Schaffhausen: Arealentwicklung Güterbahnhof | [`abstimmungen/2026-11-29-gueterbahnhof/`](abstimmungen/2026-11-29-gueterbahnhof/) | Entwurf vom 02.11.2026, je vier Aussagen, Gegenseite aus Vorbehalten im Grossen Stadtrat |
+| 29.11.2026 | Änderung des Spitalgesetzes (Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen») | [`abstimmungen/2026-11-29-spitalgesetz/`](abstimmungen/2026-11-29-spitalgesetz/) | veröffentlicht am 02.11.2026, je fünf Aussagen |
+| 29.11.2026 | Stadt Schaffhausen: Neubau Kinderzentrum Geissberg | [`abstimmungen/2026-11-29-geissberg/`](abstimmungen/2026-11-29-geissberg/) | veröffentlicht am 02.11.2026, je fünf Aussagen |
+| 29.11.2026 | Stadt Schaffhausen: Kinder- und Jugendheim Generalengut | [`abstimmungen/2026-11-29-generalengut/`](abstimmungen/2026-11-29-generalengut/) | veröffentlicht am 02.11.2026, je vier Aussagen, Gegenseite aus Einwänden im Grossen Stadtrat |
+| 29.11.2026 | Stadt Schaffhausen: Arealentwicklung Güterbahnhof | [`abstimmungen/2026-11-29-gueterbahnhof/`](abstimmungen/2026-11-29-gueterbahnhof/) | veröffentlicht am 02.11.2026, je vier Aussagen, Gegenseite aus Vorbehalten im Grossen Stadtrat |

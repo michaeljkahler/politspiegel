@@ -18,4 +18,4 @@
 1. Wortprotokoll der zweiten Lesung vom 24. August 2026, sobald publiziert:
    Begründung der Enthaltungen und allfällige neue Aussagen nachtragen.
 2. Parolen von Die Mitte, Grüne und AL; Stellungnahmen von VPOD und SBK.
-3. Status «veroeffentlicht» erst nach Durchsicht durch den Herausgeber.
+3. Veröffentlicht am 2. November 2026 nach Freigabe des Herausgebers.

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.5",
   "stand": "2026-11-02",
-  "status": "entwurf",
+  "status": "veroeffentlicht",
   "hinweis_quellen": "Argumente aus dem Abstimmungsmagazin der Stadt, der Vorlage des Stadtrats und dem Protokoll des Grossen Stadtrats vom 18. August 2026, je vier pro Seite. Gegen die Vorlage gibt es keine Stimme, keine Parole und kein Komitee; die zweite Seite enthält Vorbehalte aus den Fraktionserklärungen.",
   "lesehilfe": "Alle Aussagen auf der zweiten Seite stammen von Fraktionen, die der Vorlage zugestimmt haben. Zwei davon sind Werturteile und tragen keine Note. Die Ja-Seite stützt sich auf die Vorlage, deren Grundlagen (Machbarkeitsstudie, Vereinbarungen mit der SBB, Gutachten) nicht veröffentlicht sind. Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
   "vorlage": {

@@ -195,8 +195,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-gruppe li a:hover{background:var(--flaeche)}
 .k-gruppe time{color:var(--text-leise);font-variant-numeric:tabular-nums;font-size:13px;padding-top:1px}
 .k-entwurf{font-size:12px;font-weight:400;color:var(--text-leise);font-style:italic;font-family:"Public Sans",sans-serif}
-.k-ebene{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-leise);
-  border:1px solid var(--linie);border-radius:999px;padding:0 7px;margin-left:4px;vertical-align:2px;font-family:"Public Sans",sans-serif}
+.k-ebene{display:inline-block;font-size:11px;font-weight:600;color:#3D3000;background:#FFD84D;
+  border:1px solid #E6BE2E;border-radius:999px;padding:0 7px;margin-left:4px;vertical-align:2px;font-family:"Public Sans",sans-serif}
 .k-gruppe .k-leer{font-size:13.5px;color:var(--text-leise);padding:4px 6px}
 
 .zurueck{display:inline-flex;align-items:center;gap:6px;font-family:Archivo,sans-serif;font-size:13px;font-weight:600;
@@ -357,10 +357,12 @@ def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
     return zeilen
 
 
-def ebene_kurz(z) -> str:
-    """«Kanton» oder «Stadt Schaffhausen» als kurze Marke hinter dem Titel."""
-    eb = z.get("ebene") or ""
-    return "Kanton" if eb.startswith("Kanton") else eb
+def ebene_marke(z) -> str:
+    """Gelbe Marke «Städtische Vorlage» hinter dem Titel; kantonale Vorlagen
+    bleiben ohne Marke."""
+    if (z.get("ebene") or "Kanton").startswith("Kanton"):
+        return ""
+    return ' <span class="k-ebene">Städtische Vorlage</span>'
 
 
 # ---------------------------------------------------------------- Bausteine
@@ -401,7 +403,7 @@ def gruppen(zeilen, heute):
 def eintrag(z) -> str:
     entwurf = ' <span class="k-entwurf">Entwurf</span>' if z["status"] != "veroeffentlicht" else ""
     return (f'<li><a href="{e(z["pfad"])}"><time datetime="{e(z["datum"])}">{e(datum_kurz(z["datum"]))}</time>'
-            f'<span>{e(z["titel"])} <span class="k-ebene">{e(ebene_kurz(z))}</span>{entwurf}</span></a></li>')
+            f'<span>{e(z["titel"])}{ebene_marke(z)}{entwurf}</span></a></li>')
 
 
 def gruppe(titel, zs, leer) -> str:
@@ -613,7 +615,7 @@ def listenseite(zeilen) -> str:
         li = "".join(f"""
     <li><a href="{e(z['pfad'].split('/', 1)[1])}">
       <time datetime="{e(z['datum'])}">{e(datum_kurz(z['datum']))}</time>
-      <span><h3>{e(z['titel'])} <span class="k-ebene">{e(ebene_kurz(z))}</span>{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
+      <span><h3>{e(z['titel'])}{ebene_marke(z)}{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
       <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if vorbei(z, heute) else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>
     </a></li>""" for z in zs)
         return f'<section class="abschnitt"><h2>{e(titel)}</h2><ul class="liste">{li}\n  </ul></section>'

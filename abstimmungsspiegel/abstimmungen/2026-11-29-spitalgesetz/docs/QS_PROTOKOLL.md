@@ -4,7 +4,8 @@
 |---|---|
 | 1 Inhalt | 2. November 2026: zehn Aussagen, je fünf, alle Zitate gegen Magazin, Protokoll und Kampagnenseite geprüft |
 | 2 Prüfung | 2. November 2026: Gesetzesvergleiche gegen rechtsbuch.sh.ch und Obligationenrecht, Zahlen gegen Kommissionsbericht nachgerechnet |
-| 3 Seite | gebaut am 2. November 2026, Status Entwurf |
+| 3 Seite | gebaut am 2. November 2026 |
+| 5 Veröffentlichung | 2. November 2026 auf Freigabe des Herausgebers; Linkprüfung, git status vor dem Commit gelesen |
 
 ## Korrekturen während der Prüfung
 

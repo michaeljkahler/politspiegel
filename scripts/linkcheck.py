@@ -97,7 +97,11 @@ def ratssprünge() -> list[str]:
         return ["site/kantonsrat/index.html fehlt"]
     m = re.search(r'<script id="daten" type="application/json">(.*?)</script>', kr.read_text(encoding="utf-8"), re.S)
     D = json.loads(m.group(1))
+    # Seit der Buendelung der Tageshaelften (build3.tage_buendeln) heisst die
+    # Sitzung im Kantonsratsspiegel nach dem Tag; jede Abstimmung traegt den
+    # Namen ihrer Haelfte in «qs», und springeZu() loest Spruenge darueber auf.
     paare = {(s["s"], str(v["nr"])) for s in D["sessions"] for v in s["v"]}
+    paare |= {(v["qs"], str(v["nr"])) for s in D["sessions"] for v in s["v"] if v.get("qs")}
     for f in glob.glob(str(SITE / "abstimmung" / "*" / "index.html")):
         t = Path(f).read_text(encoding="utf-8")
         for s, nr in re.findall(r'href="[^"]*kantonsrat/#s=([^&"]+)&(?:amp;)?nr=([^"]+)"', t):

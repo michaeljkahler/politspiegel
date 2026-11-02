@@ -10,5 +10,5 @@
 ## Offen
 
 1. Parolen von SVP und Grünen. EVP-Parole (Ja) am 2. November 2026 nachgetragen.
-2. Status «veroeffentlicht» erst nach Durchsicht durch den Herausgeber.
+2. Veröffentlicht am 2. November 2026 nach Freigabe des Herausgebers.
 3. Ergebnis nach dem 29. November von Hand nachtragen.
