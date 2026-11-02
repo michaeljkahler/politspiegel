@@ -34,6 +34,7 @@ Metricool läuft im Gratisplan (Entscheid vom 27. September 2026). Grundlage: Me
    5. Beiträge ohne Termin bleiben `zurueckgestellt` und erhalten bei einem späteren Lauf Termine, die frei geworden sind.
    6. Termine ohne Beitrag bleiben leer. Nichts verdichten, keine zwei Beiträge am selben Tag.
    7. Die 3 Reserveplätze sind keine Termine und werden nur auf Anweisung von Michael belegt.
+10. November 2026, Ausnahme (Entscheid Michael vom 2. November 2026): alle 20 Veröffentlichungen eingeplant, Reserve aufgebraucht. 20 Termine vom 3. bis 30. November (Tag 3 + floor((k + 0,5) × 28 / 20)): 3., 5., 6., 7., 9., 10., 12., 13., 14., 16., 17., 19., 20., 21., 23., 24., 26., 27., 28., 30. Aufteilung: 12 Abstimmung vom 29. November (60 %), 4 Finanzen (20 %), 4 Kantonsratssitzungen (20 %). Plan der Abstimmung in `site/social/abstimmung/2026-11-29/posts.json`, Finanzen im Repository finanzspiegel unter `site/social/2026-11-budget2027/`. Kantonsrat: 5. November Karussell Teil 1 und 13. November Reel TikTok für die Sitzung vom 2. November, 19. November Karussell Teil 1 und 24. November Reel YouTube für die Sitzung vom 16. November. Ab Dezember gilt wieder Ziffer 9.
 
 ## 2. Textregeln
 

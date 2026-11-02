@@ -1802,7 +1802,10 @@ if(kmEl){
         x.fillStyle = p.ink; rundrect(x, M, y, jw, bh, 8); x.fill();
         x.font = ARCH(28, 700); x.textBaseline = 'middle';
         x.fillStyle = p.bg; x.fillText(v.ja + ' Ja', M + 20, y + bh/2 + 1);
-        x.fillStyle = p.ink; x.textAlign = 'right'; x.fillText(v.nein + ' Nein', W - M - 20, y + bh/2 + 1);
+        /* Nein-Zahl dunkel auf dem hellen Rest; ist der Rest zu schmal (30 : 1), hell auf dem Ja-Balken,
+           sonst verschwindet sie (Generalengut, 2. November 2026). */
+        var nt = v.nein + ' Nein', eng = (bw - jw) < x.measureText(nt).width + 40;
+        x.fillStyle = eng ? p.bg : p.ink; x.textAlign = 'right'; x.fillText(nt, eng ? M + jw - 20 : W - M - 20, y + bh/2 + 1);
         x.textAlign = 'left'; x.textBaseline = 'alphabetic';
         y += bh + 40;
         x.fillStyle = p.leise; x.font = SANS(22, 400);
