@@ -167,7 +167,11 @@ Textform in allen Feldern (`trifft_zu`, `fehlt`, `kommentar`, `zahlhinweis`,
 `problem`, `folge`, `bei_ja`, `bei_nein`): Absätze durch eine Leerzeile getrennt.
 Aufzählungen als nummerierte Liste, eine Zeile je Punkt, beginnend mit `1. `,
 `2. ` und so weiter; die Seite macht daraus eine Liste, das Social-Media-Bild
-setzt sie mit hängendem Einzug. Nur prüfbare Fakten, keine Wertungen, keine
+setzt sie mit hängendem Einzug. In den Kästen «Bei einem Ja» und «Bei einem
+Nein» steht vor jedem Punkt statt der Nummer ein Symbol nach Inhalt (Geld,
+Recht, Planung, Bau, Termin, Personen, nicht bewilligt, unverändert, offen;
+sonst ein Pfeil). Die Zuordnung steht in `FOLGE_REGELN` in `argumente.py`, die
+erste passende Regel gilt. Nur prüfbare Fakten, keine Wertungen, keine
 Verweise auf interne Dokumente. Zahlen, die aus Unterlagen nicht direkt
 hervorgehen, werden nachgerechnet und als Ergebnis genannt, nicht als Hinweis
 auf eine Differenz.

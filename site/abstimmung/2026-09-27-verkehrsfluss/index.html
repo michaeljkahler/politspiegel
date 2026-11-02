@@ -80,14 +80,22 @@ h1{font-size:clamp(28px,4.2vw,42px);line-height:1.12;margin:12px 0 4px;letter-sp
 .untertitel{color:var(--text-leise);margin:0 0 18px;font-size:17px}
 .termin{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--linie);
   border-radius:999px;padding:5px 14px;font-size:14px;font-variant-numeric:tabular-nums}
+/* Gelbe Marke fuer staedtische Vorlagen; gleiche Farben in hell und dunkel. */
+.ober-rechts{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap}
+.staedtisch{display:inline-flex;align-items:center;border-radius:999px;padding:5px 12px;font-size:13px;
+  font-weight:600;background:#FFD84D;color:#3D3000;border:1px solid #E6BE2E}
 .lead{margin:18px 0 0;font-size:17px}
 .warn{margin:22px 0 0;padding:14px 16px;border:1px dashed var(--linie);
   border-radius:12px;background:var(--flaeche);font-size:14.5px;color:var(--text-leise)}
 .warn strong{color:var(--text)}
 
 .folgen{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 0}
-.folge{border:1px solid var(--linie);border-radius:14px;padding:16px 18px;background:var(--karte)}
-.folge h3{margin:0 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.folge{border:1px solid var(--linie);border-radius:14px;padding:18px 20px 16px;background:var(--karte);
+  border-top:4px solid var(--fk)}
+.folge-ja{--fk:var(--pro)} .folge-nein{--fk:var(--contra)}
+.folge h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:18px;letter-spacing:0}
+.folge-zeichen{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:none;
+  border-radius:50%;background:var(--fk);color:var(--karte)}
 .folge p{margin:0;font-size:15px;color:var(--text-leise)}
 .folge-ja h3{color:var(--pro-text)} .folge-nein h3{color:var(--contra-text)}
 .kontext{margin:16px 0 0;padding:14px 16px;background:var(--flaeche);border-radius:12px;
@@ -247,6 +255,13 @@ html{scroll-behavior:smooth}
 .rohling{border:1px dashed var(--linie);border-radius:14px;padding:22px 24px;margin:0 0 30px;color:var(--text-leise)}
 .rohling h2{margin:0 0 8px;font-size:20px;color:var(--text)} .rohling p{margin:0}
 .folge ol{margin:0;padding-left:20px} .folge p{margin:0 0 8px} .folge p:last-child{margin:0}
+.folge ol.folge-liste{list-style:none;padding:0;margin:0}
+.folge-liste li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--linie);
+  font-size:15px;line-height:1.5}
+.folge-liste li:first-child{border-top:0;padding-top:0}
+.folge-liste li:last-child{padding-bottom:0}
+.fz{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex:none;border-radius:9px;
+  color:var(--fk);background:color-mix(in srgb,var(--fk) 13%,transparent);margin-top:-3px}
 .km-anwohner{margin:18px 0 6px} .km-anwohner-satz{margin:0 0 8px;font-size:14px;color:var(--text-leise)}
 .km-anwohner td.z,.km-anwohner th{text-align:right} .km-anwohner td:first-child,.km-anwohner th:first-child{text-align:left}
 .km-einleitung{margin:0 0 16px;font-size:15px} .km-einleitung ol{margin:0;padding-left:22px} .km-einleitung li{margin:0 0 5px}
@@ -742,15 +757,15 @@ body.melden-offen{overflow:hidden}
 <header class="kopf">
   <div class="ober">
     <span class="marke-seite"><a class="heim" href="../../" title="Zur Übersicht Politspiegel Schaffhausen"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2 8l6-5 6 5v5.5a.5.5 0 0 1-.5.5H10v-4H6v4H2.5a.5.5 0 0 1-.5-.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>Politspiegel</a> · <a href="../" class="heim heim-liste" title="Alle Abstimmungen">Abstimmungsspiegel</a> · Kanton Schaffhausen</span>
-    <span class="termin">Abstimmung 27.09.2026</span>
+    <span class="ober-rechts"><span class="termin">Abstimmung 27.09.2026</span></span>
   </div>
   <h1>Verkehrsflussinitiative</h1>
   <p class="untertitel">Volksinitiative «für flüssigen Verkehr auf kantonalen Hauptstrassen», mit Gegenvorschlag des Kantonsrats</p>
   <p class="lead">Die Initiative will im kantonalen Strassengesetz festschreiben, dass auf Kantonsstrassen innerorts, die auch vom öffentlichen Verkehr genutzt werden, generell Tempo 50 gilt und der Verkehrsfluss weder durch bauliche Massnahmen noch durch Verkehrsanordnungen verlangsamt werden darf. Ausnahmen wären nur auf kurzen Strecken und nur mit Festlegung im kantonalen Strassenrichtplan möglich. Der Kantonsrat lehnt die Initiative ab und stellt ihr einen Gegenvorschlag gegenüber, der dasselbe Grundanliegen aufnimmt, aber auf das Bauverbot und den Richtplanvorbehalt verzichtet.</p>
 
   <div class="folgen">
-    <div class="folge folge-ja"><h3>Bei einem Ja zur Initiative</h3><p>Neuer Art. 12 Abs. 3 und 4 Strassengesetz: generell Tempo 50 auf diesen Strassen, kein Verlangsamen durch Bau oder Anordnung, Ausnahmen nur auf kurzen Strecken und nur mit Eintrag im kantonalen Strassenrichtplan, den der Kantonsrat beschliesst.</p></div>
-    <div class="folge folge-nein"><h3>Bei einem Nein</h3><p>Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag käme in Art. 12 Abs. 3 der Satz: «Auf verkehrsorientierten Kantonsstrassen innerorts gilt grundsätzlich als allgemeine Höchstgeschwindigkeit 50 km/h. Der Verkehrsablauf darf nicht behindert werden.»</p></div>
+    <div class="folge folge-ja"><h3><span class="folge-zeichen" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 12.5l3 3L16.5 9"/></svg></span>Bei einem Ja zur Initiative</h3><p>Neuer Art. 12 Abs. 3 und 4 Strassengesetz: generell Tempo 50 auf diesen Strassen, kein Verlangsamen durch Bau oder Anordnung, Ausnahmen nur auf kurzen Strecken und nur mit Eintrag im kantonalen Strassenrichtplan, den der Kantonsrat beschliesst.</p></div>
+    <div class="folge folge-nein"><h3><span class="folge-zeichen" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg></span>Bei einem Nein</h3><p>Es bleibt beim geltenden Recht. Bei einem Ja zum Gegenvorschlag käme in Art. 12 Abs. 3 der Satz: «Auf verkehrsorientierten Kantonsstrassen innerorts gilt grundsätzlich als allgemeine Höchstgeschwindigkeit 50 km/h. Der Verkehrsablauf darf nicht behindert werden.»</p></div>
   </div>
 
   <div class="kontext"><p><b>Drei Fragen auf einem Zettel.</b> Abgestimmt wird über Initiative und Gegenvorschlag getrennt, dazu über die Stichfrage. Das Initiativkomitee empfiehlt Ja zur Initiative, Nein zum Gegenvorschlag, Stichfrage Initiative. Das Bündnis Pro30 empfiehlt zweimal Nein. Regierungsrat und Kantonsrat empfehlen Nein zur Initiative, Ja zum Gegenvorschlag, Stichfrage Gegenvorschlag.</p><p><b>Was der Kanton nicht allein entscheiden kann.</b> Die Höchstgeschwindigkeit ist bundesrechtlich geregelt (SVG, Signalisationsverordnung Art. 108). Abweichungen setzen ein Gutachten voraus und müssen verhältnismässig sein; wo Lärmgrenzwerte überschritten sind, verpflichten Umweltschutzgesetz und Lärmschutz-Verordnung zur Sanierung. Das Bundesgericht hat am 31. März 2026 (Urteil 1C_345/2025) eine Stimmrechtsbeschwerde abgewiesen und die Initiative für zulässig erklärt, dabei aber festgehalten, dass das Bundesrecht wenig Spielraum lässt, in gewissen Fällen sogar eine Pflicht zur Herabsetzung besteht und stets eine Einzelfallprüfung erfolgen muss.</p></div>

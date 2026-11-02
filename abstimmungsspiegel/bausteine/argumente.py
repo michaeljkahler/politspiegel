@@ -379,6 +379,63 @@ def absaetze(text: str) -> str:
     return "".join(teile)
 
 
+# Symbole fuer die Kaesten «Bei einem Ja / Bei einem Nein». Jeder Punkt erhaelt
+# ein Symbol nach seinem Inhalt; die erste passende Regel gilt, sonst ein Pfeil.
+# Eigene, schlichte Strichzeichnungen (24er Raster), Farbe aus dem Kasten.
+FOLGE_SYMBOLE = {
+    "offen": '<circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.6a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.3"/><circle cx="12" cy="16.6" r=".7" fill="currentColor" stroke="none"/>',
+    "nein": '<circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/>',
+    "bleibt": '<circle cx="12" cy="12" r="8.5"/><path d="M8.5 10h7M8.5 14h7"/>',
+    "recht": '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/>',
+    "geld": '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/>',
+    "planung": '<path d="M9 4 3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/>',
+    "bau": '<rect x="4" y="3" width="11" height="18" rx="1"/><path d="M15 9h4a1 1 0 0 1 1 1v11M8 7h3M8 11h3M8 15h3M2.5 21h19"/>',
+    "zeit": '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+    "personen": '<circle cx="9" cy="8.5" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.5a3 3 0 0 1 0 6M18 14.8c1.9.7 3 2.5 3 5.2"/>',
+    "weiter": '<path d="M5 12h14M13 6l6 6-6 6"/>',
+}
+FOLGE_REGELN = [
+    ("offen", re.compile(r"(beschreiben|regeln|nennen) die (amtlichen )?Unterlagen nicht|nicht beschrieben")),
+    ("nein", re.compile(r"nicht bewilligt|nicht vollzogen|findet keine|entfällt|entfallen")),
+    ("bleibt", re.compile(r"^Es bleibt|bleibt vorerst")),
+    ("personen", re.compile(r"Chefärzte|Geschäftsleitung")),
+    ("recht", re.compile(r"\bGAV\b|Gesetz|Obligationenrecht|Personalrecht|Reglement|Verordnung|\bArt\. \d|Motion")),
+    ("geld", re.compile(r"Franken|\bMio\.|[Kk]redit|Kosten|Abschreibung|\bLohn|Beitr[aä]g")),
+    ("planung", re.compile(r"[Pp]lanung|Zonenplan|Quartierplan")),
+    ("bau", re.compile(r"Liegenschaft|[Gg]rundstück|Gebäude|Areal|Serviceanlage|Wohnungen")),
+    ("zeit", re.compile(r"\b(19|20)\d\d\b|\bJahre|Baustart|Fertigstellung|in Kraft")),
+    ("personen", re.compile(r"Personal\b|Mitarbeitende|Ärzte|Plätze")),
+]
+
+
+def folge_symbol(text: str) -> str:
+    art = next((n for n, r in FOLGE_REGELN if r.search(text)), "weiter")
+    return (f'<span class="fz fz-{art}" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" '
+            f'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+            f'stroke-linejoin="round">{FOLGE_SYMBOLE[art]}</svg></span>')
+
+
+def folge_html(text: str) -> str:
+    """Wie absaetze(), nummerierte Listen aber als Zeilen mit Symbol."""
+    teile = []
+    for a in text.split("\n\n"):
+        zeilen = [z.strip() for z in a.strip().split("\n") if z.strip()]
+        if zeilen and all(NUMMER.match(z) for z in zeilen):
+            li = "".join(f'<li>{folge_symbol(NUMMER.sub("", z))}<span>{e(NUMMER.sub("", z))}</span></li>'
+                         for z in zeilen)
+            teile.append(f'<ol class="folge-liste">{li}</ol>')
+        elif zeilen:
+            teile.append(f"<p>{e(' '.join(zeilen))}</p>")
+    return "".join(teile)
+
+
+def folge_kopf(titel: str, ja: bool) -> str:
+    pfad = '<path d="M7.5 12.5l3 3L16.5 9"/>' if ja else '<path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/>'
+    return (f'<h3><span class="folge-zeichen" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" '
+            f'fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" '
+            f'stroke-linejoin="round">{pfad}</svg></span>{e(titel)}</h3>')
+
+
 def klappe(titel: str, text: str, art: str) -> str:
     """Aufklappbarer Block. Zu heisst Anriss sichtbar, auf heisst voller Text."""
     return (f'<details class="pk pk-{e(art)}">'
@@ -1118,8 +1175,12 @@ h1{font-size:clamp(28px,4.2vw,42px);line-height:1.12;margin:12px 0 4px;letter-sp
 .warn strong{color:var(--text)}
 
 .folgen{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 0}
-.folge{border:1px solid var(--linie);border-radius:14px;padding:16px 18px;background:var(--karte)}
-.folge h3{margin:0 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.folge{border:1px solid var(--linie);border-radius:14px;padding:18px 20px 16px;background:var(--karte);
+  border-top:4px solid var(--fk)}
+.folge-ja{--fk:var(--pro)} .folge-nein{--fk:var(--contra)}
+.folge h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:18px;letter-spacing:0}
+.folge-zeichen{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:none;
+  border-radius:50%;background:var(--fk);color:var(--karte)}
 .folge p{margin:0;font-size:15px;color:var(--text-leise)}
 .folge-ja h3{color:var(--pro-text)} .folge-nein h3{color:var(--contra-text)}
 .kontext{margin:16px 0 0;padding:14px 16px;background:var(--flaeche);border-radius:12px;
@@ -1279,6 +1340,13 @@ html{scroll-behavior:smooth}
 .rohling{border:1px dashed var(--linie);border-radius:14px;padding:22px 24px;margin:0 0 30px;color:var(--text-leise)}
 .rohling h2{margin:0 0 8px;font-size:20px;color:var(--text)} .rohling p{margin:0}
 .folge ol{margin:0;padding-left:20px} .folge p{margin:0 0 8px} .folge p:last-child{margin:0}
+.folge ol.folge-liste{list-style:none;padding:0;margin:0}
+.folge-liste li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--linie);
+  font-size:15px;line-height:1.5}
+.folge-liste li:first-child{border-top:0;padding-top:0}
+.folge-liste li:last-child{padding-bottom:0}
+.fz{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex:none;border-radius:9px;
+  color:var(--fk);background:color-mix(in srgb,var(--fk) 13%,transparent);margin-top:-3px}
 .km-anwohner{margin:18px 0 6px} .km-anwohner-satz{margin:0 0 8px;font-size:14px;color:var(--text-leise)}
 .km-anwohner td.z,.km-anwohner th{text-align:right} .km-anwohner td:first-child,.km-anwohner th:first-child{text-align:left}
 .km-einleitung{margin:0 0 16px;font-size:15px} .km-einleitung ol{margin:0;padding-left:22px} .km-einleitung li{margin:0 0 5px}
@@ -2072,8 +2140,8 @@ def bauen() -> str:
   <p class="lead">{e(v['worum_geht_es'])}</p>
 
   <div class="folgen">
-    <div class="folge folge-ja"><h3>{e(v.get('ja_titel', 'Bei einem Ja'))}</h3>{absaetze(v.get('bei_ja', ''))}</div>
-    <div class="folge folge-nein"><h3>{e(v.get('nein_titel', 'Bei einem Nein'))}</h3>{absaetze(v.get('bei_nein', ''))}</div>
+    <div class="folge folge-ja">{folge_kopf(v.get('ja_titel', 'Bei einem Ja'), True)}{folge_html(v.get('bei_ja', ''))}</div>
+    <div class="folge folge-nein">{folge_kopf(v.get('nein_titel', 'Bei einem Nein'), False)}{folge_html(v.get('bei_nein', ''))}</div>
   </div>
 
   {kontext}
