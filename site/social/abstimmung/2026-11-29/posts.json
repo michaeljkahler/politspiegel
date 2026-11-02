@@ -1,7 +1,7 @@
 {
  "serie": "2026-11-29",
  "abstimmung": "2026-11-29",
- "hinweis": "Plan November 2026 nach Entscheid Michael vom 2. November 2026: 12 von 20 Beiträgen für die Abstimmung vom 29. November, gestaffelt; Bilder in den Ordnern der Vorlagen, Reels hier.",
+ "hinweis": "Plan November 2026 nach Entscheid Michael vom 2. November 2026: 12 von 20 Beiträgen für die Abstimmung vom 29. November, gestaffelt; Bilder in den Ordnern der Vorlagen, Reels hier. Nachtrag 2. November 2026: alle Abstimmungsbeiträge spätestens eine Woche vor dem Abstimmungssonntag, also bis 22. November.",
  "status": "entwurf_in_metricool",
  "kontingent": 12,
  "posts": [
@@ -34,7 +34,7 @@
   {
    "art": "karussell",
    "netz": "instagram",
-   "termin": "2026-11-06T09:00",
+   "termin": "2026-11-04T09:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/vorlage.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/vorlage.png",
@@ -52,10 +52,41 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413853354,
+    "id": 413908020,
     "uuid": "1173298965691780576",
+    "termin": "2026-11-04T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
+   }
+  },
+  {
+   "art": "karussell",
+   "netz": "instagram",
+   "termin": "2026-11-06T09:00",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-0.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-1.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-2.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-3.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-4.png"
+   ],
+   "text": "Änderung des Spitalgesetzes: fünf Aussagenpaare, je eine Aussage der Befürworter und der Gegner im Wortlaut.\n\nAussagenpaare, Punkte für den Beleg (Befürworter / Gegner):\n1. 10 von 20 / 12 von 20\n2. 10 von 12 / 9 von 12\n3. 17 von 20 / 8 von 20\n4. 5 von 16 / 7 von 12\n5. 8 von 16 / Werturteil, ohne Note\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Wortlaut, Fundstelle und Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-11-29-spitalgesetz/\n\n#Schaffhausen #Abstimmung #Spitalgesetz #Politspiegel",
+   "providers": [
+    {
+     "network": "instagram"
+    }
+   ],
+   "instagramData": {
+    "type": "POST",
+    "showReelOnFeed": true,
+    "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413908043,
+    "uuid": "-8700624278660495007",
     "termin": "2026-11-06T09:00",
-    "angelegt": "2026-11-02"
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
@@ -88,35 +119,6 @@
    "netz": "instagram",
    "termin": "2026-11-10T09:00",
    "media": [
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-0.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-1.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-2.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-3.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/paar-4.png"
-   ],
-   "text": "Änderung des Spitalgesetzes: fünf Aussagenpaare, je eine Aussage der Befürworter und der Gegner im Wortlaut.\n\nAussagenpaare, Punkte für den Beleg (Befürworter / Gegner):\n1. 10 von 20 / 12 von 20\n2. 10 von 12 / 9 von 12\n3. 17 von 20 / 8 von 20\n4. 5 von 16 / 7 von 12\n5. 8 von 16 / Werturteil, ohne Note\n\nGeprüft wird der Beleg jeder Aussage nach fünf Achsen (Quellenlage, Zahlenfestigkeit, Ursachennachweis, Reichweite, Übertragbarkeit), nicht ob sie richtig ist. Wortlaut, Fundstelle und Begründung je Achse auf der Seite.\n\nAlle Argumente und die Prüfung: https://michaeljkahler.github.io/politspiegel/abstimmung/2026-11-29-spitalgesetz/\n\n#Schaffhausen #Abstimmung #Spitalgesetz #Politspiegel",
-   "providers": [
-    {
-     "network": "instagram"
-    }
-   ],
-   "instagramData": {
-    "type": "POST",
-    "showReelOnFeed": true,
-    "isAiGenerated": false
-   },
-   "metricool": {
-    "id": 413853844,
-    "uuid": "-8700624278660495007",
-    "termin": "2026-11-10T09:00",
-    "angelegt": "2026-11-02"
-   }
-  },
-  {
-   "art": "karussell",
-   "netz": "instagram",
-   "termin": "2026-11-16T09:00",
-   "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/kantonsrat.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/paar-0.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/paar-1.png",
@@ -136,16 +138,17 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413853899,
+    "id": 413908066,
     "uuid": "-1508435812631556945",
-    "termin": "2026-11-16T09:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-10T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "karussell",
    "netz": "instagram",
-   "termin": "2026-11-17T09:00",
+   "termin": "2026-11-11T09:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/kantonsrat.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/paar-0.png",
@@ -165,16 +168,17 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413854347,
+    "id": 413908085,
     "uuid": "-6178256607347325865",
-    "termin": "2026-11-17T09:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-11T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "karussell",
    "netz": "instagram",
-   "termin": "2026-11-20T09:00",
+   "termin": "2026-11-15T09:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-gueterbahnhof/kantonsrat.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-gueterbahnhof/paar-0.png",
@@ -194,16 +198,17 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413854363,
+    "id": 413908443,
     "uuid": "8617737481163981004",
-    "termin": "2026-11-20T09:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-15T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "reel",
    "netz": "youtube",
-   "termin": "2026-11-21T16:00",
+   "termin": "2026-11-16T16:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29/reel-spitalgesetz.mp4"
    ],
@@ -222,16 +227,17 @@
     "isAiGeneratedContent": false
    },
    "metricool": {
-    "id": 413854378,
+    "id": 413908468,
     "uuid": "5071291271519225771",
-    "termin": "2026-11-21T16:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-16T16:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "karussell",
    "netz": "instagram",
-   "termin": "2026-11-23T09:00",
+   "termin": "2026-11-17T09:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/gegen.png",
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/gegen.png",
@@ -249,16 +255,17 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413854404,
+    "id": 413908483,
     "uuid": "500715151271087773",
-    "termin": "2026-11-23T09:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-17T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "karussell",
    "netz": "instagram",
-   "termin": "2026-11-26T09:00",
+   "termin": "2026-11-18T09:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/gegen.png"
    ],
@@ -274,44 +281,17 @@
     "isAiGenerated": false
    },
    "metricool": {
-    "id": 413854729,
+    "id": 413908495,
     "uuid": "-4772918876173611124",
-    "termin": "2026-11-26T09:00",
-    "angelegt": "2026-11-02"
-   }
-  },
-  {
-   "art": "karussell",
-   "netz": "instagram",
-   "termin": "2026-11-27T09:00",
-   "media": [
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/vorlage.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/vorlage.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/vorlage.png",
-    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-gueterbahnhof/vorlage.png"
-   ],
-   "text": "Am Sonntag, 29. November 2026, wird abgestimmt.\n\n1. Kanton Schaffhausen: Änderung des Spitalgesetzes.\n2. Stadt Schaffhausen: Neubau Kinderzentrum Geissberg.\n3. Stadt Schaffhausen: Kinder- und Jugendheim Generalengut.\n4. Stadt Schaffhausen: Arealentwicklung Güterbahnhof.\n\nZu jeder Vorlage: worum es geht, was bei Ja und bei Nein gilt, die Abstimmung im Rat und die Aussagen beider Seiten mit geprüftem Beleg.\n\nBilder: je Vorlage ein Bild.\n\nAlle Vorlagen vom 29. November: https://michaeljkahler.github.io/politspiegel/abstimmung/\n\n#Schaffhausen #Abstimmung #Politspiegel",
-   "providers": [
-    {
-     "network": "instagram"
-    }
-   ],
-   "instagramData": {
-    "type": "POST",
-    "showReelOnFeed": true,
-    "isAiGenerated": false
-   },
-   "metricool": {
-    "id": 413854746,
-    "uuid": "-7853337892414274440",
-    "termin": "2026-11-27T09:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-18T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   },
   {
    "art": "reel",
    "netz": "tiktok",
-   "termin": "2026-11-28T16:00",
+   "termin": "2026-11-20T16:00",
    "media": [
     "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29/reel-stadt.mp4"
    ],
@@ -327,10 +307,40 @@
     "isAigc": false
    },
    "metricool": {
-    "id": 413854761,
+    "id": 413908848,
     "uuid": "2364768654611204395",
-    "termin": "2026-11-28T16:00",
-    "angelegt": "2026-11-02"
+    "termin": "2026-11-20T16:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
+   }
+  },
+  {
+   "art": "karussell",
+   "netz": "instagram",
+   "termin": "2026-11-22T09:00",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-spitalgesetz/vorlage.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-geissberg/vorlage.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-generalengut/vorlage.png",
+    "https://michaeljkahler.github.io/politspiegel/social/abstimmung/2026-11-29-gueterbahnhof/vorlage.png"
+   ],
+   "text": "In einer Woche, am Sonntag, 29. November 2026, wird abgestimmt.\n\n1. Kanton Schaffhausen: Änderung des Spitalgesetzes.\n2. Stadt Schaffhausen: Neubau Kinderzentrum Geissberg.\n3. Stadt Schaffhausen: Kinder- und Jugendheim Generalengut.\n4. Stadt Schaffhausen: Arealentwicklung Güterbahnhof.\n\nZu jeder Vorlage: worum es geht, was bei Ja und bei Nein gilt, die Abstimmung im Rat und die Aussagen beider Seiten mit geprüftem Beleg.\n\nBilder: je Vorlage ein Bild.\n\nAlle Vorlagen vom 29. November: https://michaeljkahler.github.io/politspiegel/abstimmung/\n\n#Schaffhausen #Abstimmung #Politspiegel",
+   "providers": [
+    {
+     "network": "instagram"
+    }
+   ],
+   "instagramData": {
+    "type": "POST",
+    "showReelOnFeed": true,
+    "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413908831,
+    "uuid": "-7853337892414274440",
+    "termin": "2026-11-22T09:00",
+    "angelegt": "2026-11-02",
+    "geaendert": "2026-11-02"
    }
   }
  ]
