@@ -2,7 +2,7 @@
  "serie": "2026-11-29",
  "abstimmung": "2026-11-29",
  "hinweis": "Plan November 2026 nach Entscheid Michael vom 2. November 2026: 12 von 20 Beiträgen für die Abstimmung vom 29. November, gestaffelt; Bilder in den Ordnern der Vorlagen, Reels hier.",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "kontingent": 12,
  "posts": [
   {
@@ -23,6 +23,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413853336,
+    "uuid": "-5038110888031335375",
+    "termin": "2026-11-03T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -44,6 +50,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413853354,
+    "uuid": "1173298965691780576",
+    "termin": "2026-11-06T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -63,6 +75,12 @@
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Abstimmung 29. November 2026: Änderung des Spitalgesetzes",
     "isAigc": false
+   },
+   "metricool": {
+    "id": 413853372,
+    "uuid": "3449323459900819281",
+    "termin": "2026-11-07T16:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -86,6 +104,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413853844,
+    "uuid": "-8700624278660495007",
+    "termin": "2026-11-10T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -110,6 +134,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413853899,
+    "uuid": "-1508435812631556945",
+    "termin": "2026-11-16T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -133,6 +163,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413854347,
+    "uuid": "-6178256607347325865",
+    "termin": "2026-11-17T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -156,6 +192,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413854363,
+    "uuid": "8617737481163981004",
+    "termin": "2026-11-20T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -178,6 +220,12 @@
     "madeForKids": false,
     "category": "NEWS_POLITICS",
     "isAiGeneratedContent": false
+   },
+   "metricool": {
+    "id": 413854378,
+    "uuid": "5071291271519225771",
+    "termin": "2026-11-21T16:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -199,6 +247,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413854404,
+    "uuid": "500715151271087773",
+    "termin": "2026-11-23T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -218,6 +272,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413854729,
+    "uuid": "-4772918876173611124",
+    "termin": "2026-11-26T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -240,6 +300,12 @@
     "type": "POST",
     "showReelOnFeed": true,
     "isAiGenerated": false
+   },
+   "metricool": {
+    "id": 413854746,
+    "uuid": "-7853337892414274440",
+    "termin": "2026-11-27T09:00",
+    "angelegt": "2026-11-02"
    }
   },
   {
@@ -259,6 +325,12 @@
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Abstimmung 29. November 2026: drei Vorlagen der Stadt Schaffhausen",
     "isAigc": false
+   },
+   "metricool": {
+    "id": 413854761,
+    "uuid": "2364768654611204395",
+    "termin": "2026-11-28T16:00",
+    "angelegt": "2026-11-02"
    }
   }
  ]
