@@ -36,7 +36,7 @@
       },
       {
         "titel": "Wer was empfiehlt.",
-        "text": "Ja: Kantonsrat und Regierungsrat, SVP, FDP, GLP und EDU. Nein: SP Kanton Schaffhausen. Ohne publizierte Parole bis zum 2. November 2026: Die Mitte, EVP, Grüne und AL. Ein eigenes Nein-Komitee oder eine Stellungnahme der Personalverbände war nicht auffindbar."
+        "text": "Ja: Kantonsrat und Regierungsrat, SVP, FDP, GLP, EVP und EDU. Nein: SP Kanton Schaffhausen. Ohne publizierte Parole zur kantonalen Vorlage bis zum 2. November 2026: Die Mitte, Grüne und AL. Ein eigenes Nein-Komitee oder eine Stellungnahme der Personalverbände war nicht auffindbar."
       },
       {
         "titel": "Wer betroffen ist.",
@@ -99,6 +99,11 @@
       {
         "titel": "EDU Schaffhausen: Abstimmungen vom 29. November 2026",
         "url": "https://www.edu-sh.ch/abstimmungen/",
+        "art": "partei"
+      },
+      {
+        "titel": "EVP Schaffhausen: Parolen zur Volksabstimmung vom 29.11.2026",
+        "url": "https://evp-sh.ch/abstimmungsparolen",
         "art": "partei"
       }
     ],

@@ -1024,7 +1024,7 @@ def _rat_sitzung_html(s: dict, kr: dict, mehrere: bool) -> str:
   <div class="kr-gesamt"><span class="kr-ja" style="flex:{max(ja,0.001)}"></span>
     <span class="kr-nein" style="flex:{max(nein,0.001)}"></span></div>
   <p class="kr-neben">{_neben(enth, abw)}</p>
-  {('<details><summary>Fraktionen</summary><div class="kr-frakt-liste">' + ''.join(zeilen) + '</div></details>') if zeilen else ''}
+  {('<details><summary>' + ('Parteien' if manuell else 'Fraktionen') + '</summary><div class="kr-frakt-liste">' + ''.join(zeilen) + '</div></details>') if zeilen else ''}
   {'' if manuell else _kr_link(s, v)}
 </div>""")
     raster = f'<div class="kr-raster">{"".join(karten)}</div>'

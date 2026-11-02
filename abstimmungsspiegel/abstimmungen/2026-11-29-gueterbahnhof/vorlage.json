@@ -1,0 +1,605 @@
+{
+  "schema_version": "0.5",
+  "stand": "2026-11-02",
+  "status": "entwurf",
+  "hinweis_quellen": "Argumente aus dem Abstimmungsmagazin der Stadt, der Vorlage des Stadtrats und dem Protokoll des Grossen Stadtrats vom 18. August 2026, je vier pro Seite. Gegen die Vorlage gibt es keine Stimme, keine Parole und kein Komitee; die zweite Seite enthält Vorbehalte aus den Fraktionserklärungen.",
+  "lesehilfe": "Alle Aussagen auf der zweiten Seite stammen von Fraktionen, die der Vorlage zugestimmt haben. Zwei davon sind Werturteile und tragen keine Note. Die Ja-Seite stützt sich auf die Vorlage, deren Grundlagen (Machbarkeitsstudie, Vereinbarungen mit der SBB, Gutachten) nicht veröffentlicht sind. Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
+  "vorlage": {
+    "id": "stadt-sh-gueterbahnhof-2026",
+    "titel": "Arealentwicklung Güterbahnhof",
+    "untertitel": "Verordnung über die städtebauliche Entwicklung des Güterbahnhofareals: Vorinvestitionen bis 34 Mio. Franken, Baurechte von der SBB und Unterbaurechte an Private",
+    "ebene": "Stadt Schaffhausen",
+    "abstimmung": "2026-11-29",
+    "seiten": {
+      "pro": {
+        "name": "Für die Vorlage",
+        "komitee": "Befürworter",
+        "empfehlung": "Ja"
+      },
+      "contra": {
+        "name": "Vorbehalte im Grossen Stadtrat",
+        "komitee": "Kritische Voten",
+        "empfehlung": "keine Nein-Parole"
+      }
+    },
+    "worum_geht_es": "Die SBB bauen auf dem Güterbahnhofareal eine Serviceanlage für ihre Züge. Die Stadt will das rund 26 000 m² grosse Areal gleichzeitig zu einem Quartier mit Wohnungen und Arbeitsplätzen entwickeln, teils auf einem tragfähigen Dach über der Anlage. Abgestimmt wird über eine Verordnung: Sie erlaubt dem Stadtrat, bis 34 Mio. Franken in Unterbau und Tragkonstruktion vorzuinvestieren, Baurechte von der SBB zu übernehmen und als Unterbaurechte an Private weiterzugeben. Die Vorinvestitionen sollen über Baurechtszinsen zurückfliessen. Die SBB bleibt Eigentümerin des Bodens.",
+    "bei_ja": "1. Die Verordnung tritt sofort in Kraft und gilt höchstens 15 Jahre.\n2. Der Stadtrat entscheidet abschliessend über Vorinvestitionen bis 34 Mio. Franken (indexiert), über Baurechte und Unterbaurechte; jede Vorinvestition setzt ein Gutachten des Amtes für Grundstückschätzungen zur Refinanzierung voraus.\n3. Es folgen Testplanung, Zonenplanänderung, Quartierplan und Vergabe der Unterbaurechte; über die Vergabekriterien und eine Brücke entscheiden Grosser Stadtrat und Stimmberechtigte später.\n4. Fertigstellung in 10 bis 15 Jahren.",
+    "bei_nein": "1. Die SBB bauen die Serviceanlage trotzdem.\n2. Laut Abstimmungsmagazin findet keine städtebauliche Entwicklung statt.\n3. Was mit den bereits rechtskräftigen Planungskrediten von 550 000 Franken geschieht, regeln die Unterlagen nicht.",
+    "ja_titel": "Bei einem Ja",
+    "nein_titel": "Bei einem Nein",
+    "doppelvorlage": "",
+    "rechtsrahmen": "",
+    "kontext": [
+      {
+        "titel": "Warum es zur Abstimmung kommt.",
+        "text": "Der Grosse Stadtrat hat die Verordnung von sich aus der Volksabstimmung unterstellt (Art. 10 lit. f der Stadtverfassung). Eine Delegation von Ausgabenbefugnissen braucht nach Art. 19 Abs. 1 der Stadtverfassung einen referendumspflichtigen Erlass. Die Planungskredite von 550 000 Franken unterstanden dem fakultativen Referendum; die Frist lief am 21. September 2026 unbenutzt ab."
+      },
+      {
+        "titel": "Wer was empfiehlt.",
+        "text": "Ja: Stadtrat; Grosser Stadtrat mit 35 : 0 Stimmen; GPK 6 : 0; SP Stadt, FDP Stadt, GLP, Die Mitte und EDU. Eine Nein-Parole, ein Komitee oder ein Referendum gibt es nicht. Ohne publizierte Parole bis zum 2. November 2026: SVP, EVP und Grüne."
+      },
+      {
+        "titel": "Eine Seite ohne Gegner.",
+        "text": "Niemand hat gegen die Vorlage gestimmt. Auf der zweiten Seite stehen Vorbehalte, die Fraktionen in ihren zustimmenden Erklärungen geäussert haben."
+      }
+    ],
+    "kantonsrat_suche": "",
+    "rat": {
+      "name": "Grosse Stadtrat",
+      "satz": "Dieselbe Vorlage im Grossen Stadtrat der Stadt Schaffhausen, Sitzung vom 18. August 2026, ausgezählt aus der namentlichen Abstimmungsliste. 36 Mitglieder, 1 abwesend. Anträge zur Vorlage gab es keine.",
+      "sitzungen": [
+        {
+          "sitzung": "12./13. Sitzung · 18.08.2026",
+          "protokoll": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "protokoll_art": "Ratsprotokoll",
+          "abstimmungen": [
+            {
+              "nr": 8,
+              "titel": "Schlussabstimmung",
+              "details": "Verordnung über die städtebauliche Entwicklung des Güterbahnhofareals, dem obligatorischen Referendum unterstellt, dazu Planungskredite von 550 000 Franken.",
+              "ja": 35,
+              "nein": 0,
+              "enth": 0,
+              "abw": 1,
+              "fraktionen": [
+                {
+                  "name": "SVP",
+                  "ja": 8,
+                  "nein": 0
+                },
+                {
+                  "name": "EDU",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "FDP",
+                  "ja": 6,
+                  "nein": 0
+                },
+                {
+                  "name": "GLP",
+                  "ja": 4,
+                  "nein": 0
+                },
+                {
+                  "name": "EVP",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "Grüne",
+                  "ja": 3,
+                  "nein": 0
+                },
+                {
+                  "name": "SP",
+                  "ja": 10,
+                  "nein": 0
+                },
+                {
+                  "name": "JUSO",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "PUSH",
+                  "ja": 1,
+                  "nein": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quellen": [
+      {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen zur Volksabstimmung vom 29. November 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Vorlage des Stadtrats vom 10. März 2026: Arealentwicklung Güterbahnhof",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Beilage 1: Verordnung über die städtebauliche Entwicklung des Güterbahnhofareals",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6882163/B1_Verordnung_Entwicklung_Gueterbahnhofareal.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Bericht und Antrag der Geschäftsprüfungskommission vom 25. Juni 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7148347/Bericht_und_Antrag_GPK_zur_VdSR_Entwicklung_G%C3%BCterbahnhofareal.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Beschlussprotokoll des Grossen Stadtrats vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7166782/12_RatBeschlussprotokoll_18082026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Abstimmungsresultate des Grossen Stadtrats vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7167244/20260818_Abstimmungsresultat.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Verfassung der Stadt Schaffhausen (RSS 100.1), Art. 10 und 19",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6885178/100.1_Stand_01.03.2026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "SP Stadt Schaffhausen: Ja zur Arealentwicklung Güterbahnhof",
+        "url": "https://stadt.spsh.ch/parole/ja-zur-arealentwicklung-gueterbahnhof/",
+        "art": "partei"
+      },
+      {
+        "titel": "FDP Stadt Schaffhausen: Abstimmungsparolen",
+        "url": "https://www.fdp-schaffhausen.ch/wahlen-abstimmungen/abstimmungsparolen",
+        "art": "partei"
+      },
+      {
+        "titel": "GLP Schaffhausen: Abstimmungsparolen für den 29.11.2026",
+        "url": "https://sh.glp.swiss/neuigkeiten-und-abstimmungen/2026-10-25-abstimmungsparolen-fuer-den-29-11-2026/",
+        "art": "partei"
+      },
+      {
+        "titel": "Die Mitte Schaffhausen: Ja zur Arealentwicklung Güterbahnhof",
+        "url": "https://sh.die-mitte.ch/parolen/ja-zur-arealentwicklung-gueterbahnhof/",
+        "art": "partei"
+      },
+      {
+        "titel": "EDU Schaffhausen: Abstimmungen vom 29. November 2026",
+        "url": "https://www.edu-sh.ch/abstimmungen/",
+        "art": "partei"
+      },
+      {
+        "titel": "SRF, 19.03.2026: Unten Züge, oben Wohnungen",
+        "url": "https://www.srf.ch/news/schweiz/sbb-serviceanlage-unten-zuege-oben-wohnungen-schaffhausen-plant-neues-quartier",
+        "art": "medien"
+      }
+    ]
+  },
+  "achsen": [
+    {
+      "id": "quelle",
+      "kurz": "Quellenlage",
+      "frage": "Nennt die Seite für ihre Aussage eine überprüfbare Quelle?",
+      "null": "keine Quelle genannt",
+      "voll": "amtliche Statistik, Gesetzestext oder begutachtete Studie"
+    },
+    {
+      "id": "zahl",
+      "kurz": "Zahlenfestigkeit",
+      "frage": "Ist die Zahl belastbar und richtig bezogen?",
+      "null": "Zahl fehlt oder ist falsch bezogen",
+      "voll": "Zahl, Bezugsgrösse, Zeitraum und Unsicherheit genannt"
+    },
+    {
+      "id": "ursache",
+      "kurz": "Ursachennachweis",
+      "frage": "Ist der behauptete Zusammenhang belegt?",
+      "null": "blosse Gleichzeitigkeit oder Behauptung",
+      "voll": "Wirkungskette belegt, Vergleichsfall vorhanden"
+    },
+    {
+      "id": "reichweite",
+      "kurz": "Reichweite",
+      "frage": "Gilt die Aussage so allgemein, wie sie formuliert ist?",
+      "null": "unzulässig verallgemeinert",
+      "voll": "Bedingungen und Ausnahmen benannt"
+    },
+    {
+      "id": "transfer",
+      "kurz": "Übertragbarkeit",
+      "frage": "Passt der Beleg auf Schaffhausen und auf diese Vorlage?",
+      "null": "anderer Zusammenhang, andere Grössenordnung",
+      "voll": "Daten oder Texte aus dem Kanton, direkt zur Vorlage"
+    }
+  ],
+  "argumente": [
+    {
+      "id": "pro-1",
+      "seite": "pro",
+      "aussage": "Die Vorinvestitionen der Stadt können über die Baurechtsdauer vollständig refinanziert werden. Die Stadt kostet die Entwicklung unter dem Strich also nichts, sie profitiert aber von der Entwicklung und der Dynamik des neuen Quartiers.",
+      "traeger": "Stadtrat im Abstimmungsmagazin; ebenso SVP/EDU-Fraktion und GPK-Präsident Thomas Stamm (SVP) im Grossen Stadtrat",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Haltung des Stadtrats», S. 26",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": 1,
+        "ursache": 2,
+        "reichweite": 1,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Vorinvestitionen sind an eine Bedingung geknüpft: Vorher muss das kantonale Amt für Grundstückschätzungen mit der Residualwertmethode nachweisen, dass sie über die Baurechtsdauer amortisiert werden (Vorlage S. 20; Abstimmungsmagazin S. 24).\n2. Die Ausgaben sind auf 34 Mio. Franken begrenzt, indexiert auf den Baupreisindex Oktober 2025 (Verordnung Art. 5).\n3. Für das Baufeld Nord ist eine vollständige Entschädigung beim Baurechtsantritt «einschliesslich einer angemessenen Verzinsung» vorgesehen (Vorlage S. 12 und 16).",
+      "fehlt": "1. Baufeld Mitte (11,5 Mio. Franken) wird über die Differenz der Baurechtszinsen während 90 Jahren zurückbezahlt; eine Verzinsung ist dafür nicht ausdrücklich genannt.\n2. Nicht in der Refinanzierung enthalten sind die Umgestaltung der Fulachstrasse, die Fuss- und Velobrücke sowie Frei- und Grünräume; sie müssten laut Vorlage «von der Stadt mitfinanziert werden» (S. 17). Ebenso die Planungskredite von 550 000 Franken.\n3. Der Erwerb der Bestandesgebäude im Baufeld Süd fällt nicht unter den Deckel; ein Betrag steht in keiner Unterlage (Vorlage S. 21).\n4. Rahmenvereinbarung und Planungsvereinbarung mit der SBB sind nicht veröffentlicht.\n5. Die Bedingung des Gutachtens steht in der Vorlage, nicht im Verordnungstext; dieser spricht von «refinanzierbarer Vorinvestition».",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die vollständige Rückzahlung?",
+          "status": "offen",
+          "kommentar": "Nachweis erst vor jeder Ausgabe, Vereinbarungen nicht öffentlich"
+        },
+        {
+          "frage": "Gilt die Aussage für alle Kosten?",
+          "status": "nein",
+          "kommentar": "Brücke, Strasse, Grünräume, Planung und Gebäudekauf ausgenommen"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 12, 15 bis 17, 20 und 21",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Verordnung über die städtebauliche Entwicklung des Güterbahnhofareals, Art. 3 bis 5",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882163/B1_Verordnung_Entwicklung_Gueterbahnhofareal.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-2",
+      "seite": "pro",
+      "aussage": "Die Arealentwicklung bietet das Potenzial für Wohnungen mit rund 800 neuen Einwohnerinnen und Einwohnern in 350 Wohnungen sowie rund 900 Arbeitsplätze auf 24'000 m2 Büro- und Gewerbeflächen.",
+      "traeger": "Stadtrat; ebenso SVP/EDU-Fraktion und GLP («350 neue Wohnungen und etwa 900 Arbeitsplätze»)",
+      "fundstelle": {
+        "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 10",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+        "datum": "2026-03-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": 2,
+        "ursache": 1,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Grundlage ist eine Machbarkeitsstudie mit 61 000 m² Geschossfläche, davon rund 60 % Wohnen (Vorlage S. 7).\n2. Nachgerechnet: 36 600 m² Wohnen auf 350 Wohnungen ergeben rund 105 m² Geschossfläche je Wohnung; 800 Personen auf 350 Wohnungen 2,3 je Wohnung; 24 000 m² auf 900 Arbeitsplätze 27 m² je Arbeitsplatz.",
+      "fehlt": "1. Die Machbarkeitsstudie ist nicht veröffentlicht; die Visualisierungen haben laut Vorlage «beispielhaften Charakter» (S. 4).\n2. Über Nutzung und Dichte entscheidet nicht diese Abstimmung: Nötig sind noch eine Zonenplanänderung und ein Quartierplanverfahren (Vorlage S. 5 und 14).\n3. Die Arbeitsplätze sind ein Flächenpotenzial; Zusagen von Unternehmen nennt keine Unterlage.\n4. Fertigstellung in 10 bis 15 Jahren (Abstimmungsmagazin S. 25).",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die Folge?",
+          "status": "offen",
+          "kommentar": "Zonenplan, Quartierplan und Baurechtsvergabe folgen erst"
+        },
+        {
+          "frage": "Sind die Zahlen in sich stimmig?",
+          "status": "beantwortet",
+          "kommentar": "nachgerechnet aus Geschossfläche und Nutzungsanteil"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 4, 5, 7, 10 und 14",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "GLP Schaffhausen: Abstimmungsparolen für den 29.11.2026",
+          "url": "https://sh.glp.swiss/neuigkeiten-und-abstimmungen/2026-10-25-abstimmungsparolen-fuer-den-29-11-2026/",
+          "art": "partei"
+        }
+      ]
+    },
+    {
+      "id": "pro-3",
+      "seite": "pro",
+      "aussage": "Wird die Vorlage von den Stimmberechtigten abgelehnt, bauen die SBB die Serviceanlage trotzdem. In diesem Fall verwirkt die Stadt die Chance, das Areal städtebaulich zu entwickeln und eine Brückenverbindung über die Gleise zu schaffen.",
+      "traeger": "Stadtrat im Abstimmungsmagazin; als «einmalige Chance» ebenso alle Fraktionen im Grossen Stadtrat und Die Mitte",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Haltung des Stadtrats», S. 26",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": null,
+        "ursache": 3,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Die SBB bauen die Serviceanlage unabhängig vom Ausgang; so steht es in der Vorlage (S. 3) und im Abstimmungsmagazin (S. 25); SRF berichtete am 19.03.2026 dasselbe.\n2. Die Stadt muss sich bis Sommer 2027 gegenüber der SBB verbindlich festlegen (Vorlage S. 14). Der statische Unterbau im Baufeld Nord ist laut Vorlage eine «unerlässliche Grundvoraussetzung» für die spätere Überbauung (S. 19).",
+      "fehlt": "1. Ob eine Überbauung später ohne die Vorinvestitionen in Dach und Unterbau technisch noch möglich wäre, steht in keiner Unterlage.\n2. Die Brücke ist nicht Teil der Verordnung; über ihren Kredit stimmen Parlament und Stimmberechtigte später separat ab (Abstimmungsmagazin S. 25).\n3. Die rund 60 Arbeitsplätze der Serviceanlage entstehen auch bei einem Nein.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist die Folge eines Nein belegt?",
+          "status": "beantwortet",
+          "kommentar": "SBB baut trotzdem, Vorlage und Medien"
+        },
+        {
+          "frage": "Gibt es einen späteren zweiten Weg?",
+          "status": "offen",
+          "kommentar": "in den Unterlagen nicht behandelt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 3, 14 und 19",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "SRF, 19.03.2026: Unten Züge, oben Wohnungen",
+          "url": "https://www.srf.ch/news/schweiz/sbb-serviceanlage-unten-zuege-oben-wohnungen-schaffhausen-plant-neues-quartier",
+          "art": "medien"
+        }
+      ]
+    },
+    {
+      "id": "pro-4",
+      "seite": "pro",
+      "aussage": "Auf dem Güterbahnhofareal kann bereits versiegeltes Land entwickelt werden, es geht kein Kulturland verloren.",
+      "traeger": "Stadtrat; ebenso SVP/EDU-Fraktion, GLP/Grüne/EVP-Fraktion und GLP («ohne zusätzliches Kulturland zu verbrauchen»)",
+      "fundstelle": {
+        "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 3",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+        "datum": "2026-03-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 3,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Das Areal liegt heute in der Zone «Ü», Verkehrs- und übrige Flächen (Vorlage S. 5); es ist Bahnareal der SBB.\n2. Eine Einzonung von Landwirtschaftsland ist nicht vorgesehen.",
+      "fehlt": "1. Wie viel der rund 26 000 m² heute versiegelt ist, beziffert keine Unterlage.\n2. Das Abstimmungsmagazin formuliert enger: «es geht kein unversiegeltes Kulturland verloren» (S. 25).",
+      "kritische_fragen": [
+        {
+          "frage": "Stimmt die Zonenangabe?",
+          "status": "beantwortet",
+          "kommentar": "Zone Ü, Verkehrs- und übrige Flächen"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 10. März 2026, S. 5",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-1",
+      "seite": "contra",
+      "aussage": "Die Vorinvestitionen, die im Moment mit 34 Mio. Franken veranschlagt werden, sind erheblich. Auch, wenn wir von einer Refinanzierung ausgehen, muss aus diesem Bauen an der Zukunft unbedingt ein Mehrwert für die Bevölkerung resultieren.",
+      "traeger": "Romina Loliva (SP), Fraktionserklärung der SP/JUSO-Fraktion im Grossen Stadtrat; der Stadtrat führt die Vorinvestitionen in der Vorlage selbst als Risiko auf",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 51",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 4,
+        "ursache": null,
+        "reichweite": 3,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Die Vorlage schätzt die Vorinvestitionen auf 12,0 Mio. Franken (Baufeld Nord), 11,5 Mio. (Mitte), 2,5 Mio. (Süd) und 8,0 Mio. Reserve; zusammen 34,0 Mio. Franken, Kostengenauigkeit ±30 %, Preisstand Oktober 2025 (S. 15).\n2. Mit der Verordnung entscheidet der Stadtrat über diese Ausgaben abschliessend. Laut Vorlage ist das Finanzreferendum dafür «unabhängig ihrer Höhe ausgeschlossen» (S. 20).",
+      "fehlt": "1. Die Reserve von 8,0 Mio. Franken entspricht 30,8 % der 26,0 Mio. Franken für die drei Baufelder.\n2. Der Deckel gilt nicht für den Erwerb von Baurechtsliegenschaften (Vorlage S. 21); dafür nennt keine Unterlage einen Betrag.\n3. Der Stadtrat stellt den 34 Mio. Franken ein ausgelöstes Investitionsvolumen der Baurechtsnehmer von über 200 Mio. Franken gegenüber. Die Zahl stammt laut Finanzreferent Preisig vom Amt für Grundstückschätzungen (Protokoll S. 57); die Schätzung ist nicht veröffentlicht und steht nicht in der Vorlage.\n4. Die SP/JUSO-Fraktion stimmte der Vorlage zu.",
+      "kritische_fragen": [
+        {
+          "frage": "Stimmt der Betrag?",
+          "status": "beantwortet",
+          "kommentar": "12,0 + 11,5 + 2,5 + 8,0 = 34,0 Mio. Franken"
+        },
+        {
+          "frage": "Ist der Betrag die Obergrenze aller Ausgaben?",
+          "status": "nein",
+          "kommentar": "Gebäudekauf, Brücke, Strasse, Grünräume ausserhalb"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 10. März 2026, Tabelle 1, S. 15; S. 20, 21 und 24",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882160/VdSR_10.03.2026_Arealentwicklung_G%C3%BCterbahnhof_fina.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll des Grossen Stadtrats vom 18. August 2026, S. 57",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-2",
+      "seite": "contra",
+      "aussage": "Bei solch ambitionierten Bauprojekten stellt die Rentabilität einen entscheidenden Faktor dar und ohne politische Leitplanken wird es äusserst schwierig sein, Wohnraum zu schaffen, den sich nicht nur gut Verdienende leisten können.",
+      "traeger": "Romina Loliva (SP), Fraktionserklärung der SP/JUSO-Fraktion im Grossen Stadtrat",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 51",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 0,
+        "zahl": null,
+        "ursache": 2,
+        "reichweite": 2,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Die Refinanzierung hängt an Baurechtszinsen, die das Amt für Grundstückschätzungen nach der Residualwertmethode ermittelt (Vorlage S. 20); damit hängt sie an der Wirtschaftlichkeit der späteren Bauten.\n2. Leitplanken sind erst in Auftrag gegeben: Der Grosse Stadtrat verlangte vom Stadtrat Vorschläge, wie «ein angemessener Anteil gemeinnütziger Wohnungen» sichergestellt werden kann (Beschluss Ziff. 3).",
+      "fehlt": "1. Den Anteil gemeinnütziger Wohnungen beziffert keine Unterlage. Über die Vergabekriterien entscheidet später der Grosse Stadtrat (Verordnung Art. 4 Abs. 2).\n2. Wie hoch die Mieten werden, hängt von den Baurechtsnehmern ab; eine Prognose enthält keine Unterlage.\n3. Die SP/JUSO-Fraktion stimmte der Vorlage zu und bezeichnete die Aufträge der GPK als «unverzichtbar».",
+      "kritische_fragen": [
+        {
+          "frage": "Gibt es eine Wirkungskette?",
+          "status": "beantwortet",
+          "kommentar": "Refinanzierung über Baurechtszinsen setzt wirtschaftliche Nutzung voraus"
+        },
+        {
+          "frage": "Wie gross ist die Folge?",
+          "status": "offen",
+          "kommentar": "keine Zahl zu Mieten oder Anteil"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Beschlussprotokoll des Grossen Stadtrats vom 18. August 2026, Ziff. 3",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7166782/12_RatBeschlussprotokoll_18082026.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Verordnung, Art. 4 Abs. 2",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6882163/B1_Verordnung_Entwicklung_Gueterbahnhofareal.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-3",
+      "seite": "contra",
+      "aussage": "Wir sind keine Fans von Architekturwettbewerben. Insbesondere dann, wenn nicht vorab ein Kostendach vorgegeben wurde. Was sonst rauskommt, haben wir jetzt beim Kinderzentrum Geissberg gesehen und ausführlich diskutiert.",
+      "traeger": "Christian Mundt (FDP), Fraktionserklärung der FDP/Die Mitte-Fraktion im Grossen Stadtrat",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 50 f.",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "wertung",
+      "schema": "Werturteil",
+      "pruefung": {},
+      "trifft_zu": "1. Architekturwettbewerbe sind vorgesehen; durchführen sollen sie die Baurechtsnehmer (Abstimmungsmagazin S. 25).\n2. Ein Kostendach für diese Wettbewerbe enthält die Vorlage nicht.",
+      "fehlt": "1. Finanzreferent Preisig: «Die Baurechtsnehmer führen den Wettbewerb durch, nicht die Stadt, und sie tragen auch die Investitionen, nicht wir.» (Protokoll S. 58)\n2. Ob Wettbewerbe die Kosten erhöhen, ist strittig; Baureferentin Bernath nannte die Befürchtung «unbegründet» (S. 55), ohne Zahlen.\n3. Die FDP/Die Mitte-Fraktion stimmte der Vorlage zu.",
+      "kritische_fragen": [],
+      "belege": [
+        {
+          "titel": "Protokoll des Grossen Stadtrats vom 18. August 2026, S. 55 und 58",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-4",
+      "seite": "contra",
+      "aussage": "Bei der Ausführung muss das lokale Gewerbe eine faire Chance erhalten. Entscheidend bleiben aber Qualität, Preis, Nachhaltigkeit und ein gerechter Wettbewerb. Wir betreiben seriöse Standortpolitik und keinen Protektionismus.",
+      "traeger": "Daniel Spitz (GLP), Fraktionserklärung der GLP/Grüne/EVP-Fraktion im Grossen Stadtrat",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 52",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "wertung",
+      "schema": "Werturteil",
+      "pruefung": {},
+      "trifft_zu": "1. Der Stadtrat erwartet, dass das ausgelöste Investitionsvolumen «zu einem möglichst grossen Teil an lokale Unternehmen fliessen wird» (Abstimmungsmagazin S. 26).\n2. Für die Baurechtsnehmer gilt das Submissionsrecht nicht (Bericht der GPK S. 1). Der Grosse Stadtrat verlangte Vorschläge zur Förderung des lokalen Baugewerbes (Beschluss Ziff. 3); in der GPK stimmte ein Mitglied dagegen.",
+      "fehlt": "1. Wie weit lokale Firmen bevorzugt werden sollen, ist eine Wertung. Die Kriterien legt der Grosse Stadtrat später fest.\n2. Die GLP/Grüne/EVP-Fraktion stimmte der Vorlage einstimmig zu.",
+      "kritische_fragen": [],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der GPK vom 25. Juni 2026, S. 1",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7148347/Bericht_und_Antrag_GPK_zur_VdSR_Entwicklung_G%C3%BCterbahnhofareal.pdf",
+          "art": "amtlich"
+        }
+      ]
+    }
+  ],
+  "textkritik": {
+    "einleitung": "Die Verordnung überträgt dem Stadtrat Befugnisse. Was sie offen lässt, entscheidet später der Stadtrat allein oder der Grosse Stadtrat.",
+    "stellen": [
+      {
+        "begriff": "«refinanzierbare Vorinvestition» und der Deckel von 34 Mio. Franken",
+        "wo": "Verordnung Art. 3 Abs. 2 und Art. 5 Abs. 1",
+        "wortlaut": "Ausgabenbeschlüsse gemäss Artikel 3 Absatz 2 lit. b bis d dieser Verordnung dürfen die Gesamtsumme von 34 Millionen Franken nicht übersteigen.",
+        "problem": "Dass jede Vorinvestition ein Gutachten des Amtes für Grundstückschätzungen zur Refinanzierung voraussetzt, steht in Vorlage und Abstimmungsmagazin, nicht im Verordnungstext. Der Deckel gilt nicht für den Erwerb von Baurechtsliegenschaften und Bestandesgebäuden; dafür nennt keine Unterlage einen Betrag. Vorfinanzierungen mit zugesicherter Refinanzierung kann der Stadtrat laut Vorlage «netto» beschliessen.",
+        "folge": "1. Das Finanzreferendum für diese Ausgaben ist ausgeschlossen, unabhängig von ihrer Höhe (Vorlage S. 20).\n2. Berichtet wird jährlich mit der Jahresrechnung (Verordnung Art. 6).",
+        "quelle": "Verordnung Art. 3 bis 6; Vorlage S. 16, 20 und 21; Abstimmungsmagazin S. 24"
+      },
+      {
+        "begriff": "«sämtlicher notwendiger baulicher Massnahmen» im Baufeld Süd",
+        "wo": "Verordnung Art. 3 Abs. 2 lit. d",
+        "wortlaut": "Finanzierung sämtlicher notwendiger baulicher Massnahmen als refinanzierbare Vorinvestition für die Bebaubarkeit des Baufelds Süd",
+        "problem": "Die Vorlage setzt dafür 2,5 Mio. Franken als Platzhalter ein: «Investitionen werden im weiteren Projektverlauf geklärt».",
+        "folge": "1. Der Umfang im Baufeld Süd ist offen; begrenzt ist er nur durch den Gesamtdeckel.",
+        "quelle": "Verordnung Art. 3 Abs. 2 lit. d; Vorlage S. 15"
+      },
+      {
+        "begriff": "«angemessener Anteil gemeinnütziger Wohnungen»",
+        "wo": "Beschluss des Grossen Stadtrats, Ziff. 3",
+        "wortlaut": "Der Grosse Stadtrat beauftragt den Stadtrat, im Rahmen der Vorlage zu den Vergabekriterien der Unterbaurechte Vorschläge zu unterbreiten, wie die Förderung des lokalen Baugewerbes und ein angemessener Anteil gemeinnütziger Wohnungen auf dem Güterbahnhof sichergestellt werden kann.",
+        "problem": "Der Anteil ist nicht beziffert. Der Auftrag verlangt Vorschläge; entschieden wird mit den Vergabekriterien.",
+        "folge": "1. Über den Anteil entscheidet der Grosse Stadtrat später (Verordnung Art. 4 Abs. 2), nicht die Stimmberechtigten mit dieser Vorlage.",
+        "quelle": "Beschlussprotokoll Ziff. 3; Verordnung Art. 4 Abs. 2"
+      }
+    ]
+  },
+  "karte": null,
+  "social": {
+    "hinweis": "Kurzfassungen für die Social-Media-Bilder (bausteine/teilen.py).",
+    "vorlage_kurz": [
+      "Verordnung: Stadtrat darf bis 34 Mio. Franken vorinvestieren",
+      "Baurechte von der SBB, Unterbaurechte an Private",
+      "Potenzial: 350 Wohnungen, rund 900 Arbeitsplätze",
+      "Grosser Stadtrat 35 : 0"
+    ],
+    "bei_ja_kurz": "Stadtrat erhält Kompetenzen für Vorinvestitionen und Baurechte; Quartier in 10 bis 15 Jahren.",
+    "bei_nein_kurz": "SBB bauen die Serviceanlage trotzdem, ohne Quartier.",
+    "kantonsrat": [
+      {
+        "nr": 8,
+        "kurz": "Schlussabstimmung"
+      }
+    ]
+  }
+}

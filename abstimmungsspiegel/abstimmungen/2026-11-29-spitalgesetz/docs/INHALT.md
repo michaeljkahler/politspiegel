@@ -21,8 +21,8 @@ Aussagen, Fundstellen, Textkritik. Stand 2. November 2026.
    Personalgesetz SHR 180.100, Personalverordnung SHR 180.111, Kantonsverfassung
    SHR 101.000; Obligationenrecht nach fedlex.
 6. Parolen: SVP (svp-sh.ch), FDP (fdp-sh.ch, Parteiversammlung 23. Oktober 2026),
-   GLP (25. Oktober 2026), EDU (edu-sh.ch) Ja; SP Kanton (spsh.ch/spitalpersonal/)
-   Nein. Ohne publizierte Parole: Die Mitte, EVP, Grüne, AL. Kein Nein-Komitee,
+   GLP (25. Oktober 2026), EVP (evp-sh.ch, Grafik), EDU (edu-sh.ch) Ja; SP Kanton (spsh.ch/spitalpersonal/)
+   Nein. Ohne publizierte Parole zur kantonalen Vorlage: Die Mitte, Grüne, AL. Kein Nein-Komitee,
    keine Stellungnahme von VPOD oder SBK gefunden.
 
 ## Auswahl der Aussagen
