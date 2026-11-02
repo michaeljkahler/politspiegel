@@ -854,78 +854,152 @@ def viewer_block(k) -> str:
 
 # ------------------------------------------------- Kantonsrat (Phase-2-Bruecke)
 
-def kantonsrat_daten(suchwort: str) -> dict | None:
+def kantonsrat_daten(suchwort: str, alle: bool = False) -> dict | None:
     """Die namentlichen Abstimmungen zum Geschaeft, frisch aus all_sessions.json,
     als Struktur. Daraus entstehen der Seitenblock und das Bild fuer Social
-    Media; beide zaehlen so garantiert dieselben Stimmen."""
+    Media; beide zaehlen so garantiert dieselben Stimmen.
+
+    Ohne «alle» zaehlt nur die juengste Sitzung mit dem Geschaeft. Mit «alle»
+    (vorlage.kantonsrat_alle) kommen die frueheren Sitzungen unter «weitere»
+    dazu, aelteste zuerst, etwa die erste Lesung eines Gesetzes. Die obersten
+    Felder bleiben die der juengsten Sitzung; darauf greift das Bild zu."""
     if not SITZUNGEN.exists() or not suchwort:
         return None
     daten = json.loads(SITZUNGEN.read_text(encoding="utf-8"))
+    gefunden = []
     for s in daten.get("sessions", []):
-        idx = [i for i, v in enumerate(s.get("votes", []))
-               if suchwort.lower() in (v.get("geschaeft") or "").lower()]
-        if not idx:
-            continue
-        # Wortprotokoll, sofern sh.ch es ausliefert (scripts/linkcheck.py schreibt
-        # data/link_status.json); sonst die Sitzungsseite, beschriftet als solche.
-        status = {}
-        try:
-            status = json.loads((SITZUNGEN.parent / "link_status.json").read_text(encoding="utf-8"))
-        except Exception:
-            pass
-        protokoll, protokoll_art = "", "Wortprotokoll"
-        for p in s.get("protokolle", []) or []:
-            if p.get("url") and status.get(p["url"], {}).get("status", 200) == 200:
-                protokoll = p["url"]
-                break
-        if not protokoll and s.get("url"):
-            protokoll = s["url"]
-            protokoll_art = ("Sitzungsseite auf sh.ch (Wortprotokoll zurzeit nicht abrufbar)"
-                             if s.get("protokolle") else "Sitzungsseite auf sh.ch (Wortprotokoll noch nicht publiziert)")
-        # Livestream-Zeitmarken (scripts/youtube.py, data/youtube_zuordnung.json)
-        try:
-            yt = json.loads((SITZUNGEN.parent / "youtube_zuordnung.json").read_text(encoding="utf-8")).get(s["sitzung"], {})
-        except Exception:
-            yt = {}
-        abstimmungen = []
-        for i in idx:
-            v = s["votes"][i]
-            marke = (yt.get("abstimmungen") or {}).get(str(v["nr"]))
-            gesamt = collections.Counter()
-            frakt = collections.defaultdict(collections.Counter)
-            for m in s["members"]:
-                st = m["votes"][i]
-                gesamt[st] += 1
-                frakt[m["fraktion"]][st] += 1
-            abstimmungen.append({
-                "nr": v["nr"],
-                "titel": v.get("titel") or "",
-                "details": v.get("details") or "",
-                "ja": gesamt.get("Ja", 0), "nein": gesamt.get("Nein", 0),
-                "enth": gesamt.get("Enth", 0), "abw": gesamt.get("V/A/N", 0),
-                "umkehr": (v.get("inverted_note") or "")
-                          if v.get("richtung_invertiert") else "",
-                "fraktionen": [{"name": f, "ja": frakt[f].get("Ja", 0),
-                                "nein": frakt[f].get("Nein", 0)} for f in sorted(frakt)],
-                "livestream": (f"https://www.youtube.com/watch?v={yt['video']}&t={int(marke['t'])}s"
-                               if marke and yt.get("video") else ""),
-                "livestream_ab": (f"{int(marke['t']) // 3600}:{int(marke['t']) % 3600 // 60:02d}:{int(marke['t']) % 60:02d}"
-                                  if marke else ""),
-            })
-        return {"sitzung": s["sitzung"], "protokoll": protokoll, "protokoll_art": protokoll_art,
-                "abstimmungen": abstimmungen}
-    return None
+        eintrag = _kantonsrat_sitzung(s, suchwort)
+        if eintrag:
+            if not alle:
+                return eintrag
+            gefunden.append(eintrag)
+    if not gefunden:
+        return None
+    juengste = gefunden[0]
+    juengste["weitere"] = list(reversed(gefunden[1:]))
+    return juengste
+
+
+def _kantonsrat_sitzung(s: dict, suchwort: str) -> dict | None:
+    """Eine Sitzung aus all_sessions.json, falls sie Abstimmungen zum Geschaeft hat."""
+    idx = [i for i, v in enumerate(s.get("votes", []))
+           if suchwort.lower() in (v.get("geschaeft") or "").lower()]
+    if not idx:
+        return None
+    # Wortprotokoll, sofern sh.ch es ausliefert (scripts/linkcheck.py schreibt
+    # data/link_status.json); sonst die Sitzungsseite, beschriftet als solche.
+    status = {}
+    try:
+        status = json.loads((SITZUNGEN.parent / "link_status.json").read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    protokoll, protokoll_art = "", "Wortprotokoll"
+    for p in s.get("protokolle", []) or []:
+        if p.get("url") and status.get(p["url"], {}).get("status", 200) == 200:
+            protokoll = p["url"]
+            break
+    if not protokoll and s.get("url"):
+        protokoll = s["url"]
+        protokoll_art = ("Sitzungsseite auf sh.ch (Wortprotokoll zurzeit nicht abrufbar)"
+                         if s.get("protokolle") else "Sitzungsseite auf sh.ch (Wortprotokoll noch nicht publiziert)")
+    # Livestream-Zeitmarken (scripts/youtube.py, data/youtube_zuordnung.json)
+    try:
+        yt = json.loads((SITZUNGEN.parent / "youtube_zuordnung.json").read_text(encoding="utf-8")).get(s["sitzung"], {})
+    except Exception:
+        yt = {}
+    abstimmungen = []
+    for i in idx:
+        v = s["votes"][i]
+        marke = (yt.get("abstimmungen") or {}).get(str(v["nr"]))
+        gesamt = collections.Counter()
+        frakt = collections.defaultdict(collections.Counter)
+        for m in s["members"]:
+            st = m["votes"][i]
+            gesamt[st] += 1
+            frakt[m["fraktion"]][st] += 1
+        abstimmungen.append({
+            "nr": v["nr"],
+            "titel": v.get("titel") or "",
+            "details": v.get("details") or "",
+            "ja": gesamt.get("Ja", 0), "nein": gesamt.get("Nein", 0),
+            "enth": gesamt.get("Enth", 0), "abw": gesamt.get("V/A/N", 0),
+            "umkehr": (v.get("inverted_note") or "")
+                      if v.get("richtung_invertiert") else "",
+            "fraktionen": [{"name": f, "ja": frakt[f].get("Ja", 0),
+                            "nein": frakt[f].get("Nein", 0)} for f in sorted(frakt)],
+            "livestream": (f"https://www.youtube.com/watch?v={yt['video']}&t={int(marke['t'])}s"
+                           if marke and yt.get("video") else ""),
+            "livestream_ab": (f"{int(marke['t']) // 3600}:{int(marke['t']) % 3600 // 60:02d}:{int(marke['t']) % 60:02d}"
+                              if marke else ""),
+        })
+    return {"sitzung": s["sitzung"], "protokoll": protokoll, "protokoll_art": protokoll_art,
+            "abstimmungen": abstimmungen}
+
+
+def rat_manuell(r: dict | None) -> dict | None:
+    """Ratsabstimmungen, die nicht im Kantonsratsspiegel stehen, etwa die des
+    Grossen Stadtrats, von Hand aus dem Protokoll in vorlage.rat erfasst:
+    {"name", "satz", "sitzungen": [{"sitzung", "protokoll", "protokoll_art",
+    "abstimmungen": [{"nr", "titel", "details", "ja", "nein", "enth", "abw",
+    "fraktionen"}]}]}. Ergibt dieselbe Struktur wie kantonsrat_daten(),
+    juengste Sitzung oben, fruehere unter «weitere»."""
+    if not r or not r.get("sitzungen"):
+        return None
+    sitz = []
+    for s in r["sitzungen"]:
+        ab = []
+        for a in s.get("abstimmungen", []):
+            ab.append({"nr": a.get("nr", ""), "titel": a.get("titel", ""), "details": a.get("details", ""),
+                       "ja": a.get("ja", 0), "nein": a.get("nein", 0), "enth": a.get("enth", 0),
+                       "abw": a.get("abw"), "umkehr": "", "fraktionen": a.get("fraktionen", []),
+                       "livestream": "", "livestream_ab": ""})
+        sitz.append({"sitzung": s["sitzung"], "protokoll": s.get("protokoll", ""),
+                     "protokoll_art": s.get("protokoll_art", "Protokoll"), "abstimmungen": ab})
+    juengste = dict(sitz[-1])
+    juengste["weitere"] = sitz[:-1]
+    juengste["rat"] = r.get("name", "Rat")
+    juengste["manuell"] = True
+    juengste["satz"] = r.get("satz", "")
+    return juengste
 
 
 def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
-    """Der Seitenblock aus kantonsrat_daten(). «hinweis» kommt aus
-    vorlage.kantonsrat_hinweis, etwa eine Gegenprobe mit dem Abstimmungsmagazin."""
+    """Der Seitenblock aus kantonsrat_daten() oder rat_manuell(). «hinweis»
+    kommt aus vorlage.kantonsrat_hinweis, etwa eine Gegenprobe mit dem
+    Abstimmungsmagazin. Mehrere Sitzungen stehen aelteste zuerst untereinander."""
     if not kr:
         return ""
-    prot = (f' · <a href="{e(kr["protokoll"])}" target="_blank" rel="noopener">{e(kr.get("protokoll_art", "Wortprotokoll"))}</a>'
-            if kr["protokoll"] else "")
+    sitzungen = list(kr.get("weitere") or []) + [kr]
+    rat = kr.get("rat", "Kantonsrat")
+    teile = []
+    for s in sitzungen:
+        teile.append(_rat_sitzung_html(s, kr, mehrere=len(sitzungen) > 1))
+    n = sum(len(s["abstimmungen"]) for s in sitzungen)
+    if kr.get("manuell"):
+        einleitung = (kr.get("satz") or
+                      f"Dieselbe Vorlage, {n} Abstimmung{'en' if n != 1 else ''} im {e(rat)}, "
+                      f"erfasst aus dem Protokoll.")
+        return abschnitt("kantonsrat", f"Wie der {e(rat)} dazu gestimmt hat",
+            e(einleitung) + (f" {e(hinweis)}" if hinweis else ""),
+            "".join(teile))
+    if len(sitzungen) == 1:
+        prot = (f' · <a href="{e(kr["protokoll"])}" target="_blank" rel="noopener">{e(kr.get("protokoll_art", "Wortprotokoll"))}</a>'
+                if kr["protokoll"] else "")
+        satz = (f"Dieselbe Vorlage, {n} namentliche Abstimmung{'en' if n != 1 else ''} am "
+                f"{e(kr['sitzung'])}{prot}. Gezählt aus den vom Kantonsrat publizierten "
+                f"Abstimmungsergebnissen.")
+    else:
+        satz = (f"Dieselbe Vorlage, {n} namentliche Abstimmungen in {len(sitzungen)} Sitzungen. "
+                f"Gezählt aus den vom Kantonsrat publizierten Abstimmungsergebnissen.")
+    return abschnitt("kantonsrat", "Wie der Kantonsrat dazu gestimmt hat",
+        satz + (f" {e(hinweis)}" if hinweis else ""), "".join(teile))
+
+
+def _rat_sitzung_html(s: dict, kr: dict, mehrere: bool) -> str:
+    """Die Karten einer Sitzung; bei mehreren Sitzungen mit Zwischentitel."""
+    manuell = kr.get("manuell")
     karten = []
-    for v in kr["abstimmungen"]:
+    for v in s["abstimmungen"]:
         ja, nein, enth, abw = v["ja"], v["nein"], v["enth"], v["abw"]
         umkehr = (f'<p class="kr-umkehr">Richtungsverkehrt: «{e(v["umkehr"])}». '
                   f'Angezeigt ist das protokollierte Ergebnis.</p>' if v["umkehr"] else "")
@@ -949,16 +1023,30 @@ def kantonsrat_block(kr: dict | None, hinweis: str = "") -> str:
   {umkehr}
   <div class="kr-gesamt"><span class="kr-ja" style="flex:{max(ja,0.001)}"></span>
     <span class="kr-nein" style="flex:{max(nein,0.001)}"></span></div>
-  <p class="kr-neben">{enth} Enthaltungen · {abw} abwesend oder nicht teilgenommen</p>
-  <details><summary>Fraktionen</summary><div class="kr-frakt-liste">{''.join(zeilen)}</div></details>
-  <p class="kr-link"><a href="../../kantonsrat/#s={urllib.parse.quote(kr['sitzung'], safe='')}&amp;nr={e(v['nr'])}">Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a>{(' · <a href="' + e(v['livestream']) + '" target="_blank" rel="noopener" title="Livestream der Sitzung auf YouTube, ab Beginn der Debatte zu diesem Geschäft">Debatte im Livestream, ab ' + e(v['livestream_ab']) + '</a>') if v.get('livestream') else ''}</p>
+  <p class="kr-neben">{_neben(enth, abw)}</p>
+  {('<details><summary>Fraktionen</summary><div class="kr-frakt-liste">' + ''.join(zeilen) + '</div></details>') if zeilen else ''}
+  {'' if manuell else _kr_link(s, v)}
 </div>""")
-    n = len(kr["abstimmungen"])
-    return abschnitt("kantonsrat", "Wie der Kantonsrat dazu gestimmt hat",
-        f"Dieselbe Vorlage, {n} namentliche Abstimmung{'en' if n != 1 else ''} am "
-        f"{e(kr['sitzung'])}{prot}. Gezählt aus den vom Kantonsrat publizierten "
-        f"Abstimmungsergebnissen." + (f" {e(hinweis)}" if hinweis else ""),
-        f'<div class="kr-raster">{"".join(karten)}</div>')
+    raster = f'<div class="kr-raster">{"".join(karten)}</div>'
+    if not mehrere:
+        return raster
+    prot = (f' · <a href="{e(s["protokoll"])}" target="_blank" rel="noopener">{e(s.get("protokoll_art", "Wortprotokoll"))}</a>'
+            if s.get("protokoll") else "")
+    return f'<h3 class="kr-sitzung">{e(s["sitzung"])}{prot}</h3>{raster}'
+
+
+def _neben(enth, abw) -> str:
+    t = f"{enth} Enthaltung{'en' if enth != 1 else ''}"
+    if abw is not None:
+        t += f" · {abw} abwesend oder nicht teilgenommen"
+    return t
+
+
+def _kr_link(s: dict, v: dict) -> str:
+    return (f'<p class="kr-link"><a href="../../kantonsrat/#s={urllib.parse.quote(s["sitzung"], safe="")}&amp;nr={e(v["nr"])}">'
+            f'Im Kantonsratsspiegel ansehen, mit allen Einzelstimmen &rarr;</a>'
+            + ((' · <a href="' + e(v['livestream']) + '" target="_blank" rel="noopener" title="Livestream der Sitzung auf YouTube, ab Beginn der Debatte zu diesem Geschäft">Debatte im Livestream, ab ' + e(v['livestream_ab']) + '</a>') if v.get('livestream') else '')
+            + '</p>')
 
 
 # ---------------------------------------------------------------- Seite
@@ -1445,6 +1533,9 @@ details summary{cursor:pointer;color:var(--text-leise);padding:7px 0;font-size:1
 
 /* Kantonsrat */
 .kr-raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.kr-sitzung{font-family:Archivo,sans-serif;font-size:15px;font-weight:600;margin:22px 0 10px;color:var(--text)}
+.kr-sitzung:first-child{margin-top:4px}
+.kr-sitzung a{font-weight:400;font-size:14px}
 .kr-karte{border:1px solid var(--linie);border-radius:14px;padding:16px 18px;
   background:var(--karte);display:flex;flex-direction:column}
 .kr-karte .kr-detail{flex:1}
@@ -1842,7 +1933,8 @@ def bauen() -> str:
     repo = quellcode_adresse()
     quellcode = (f' Vorlage, Daten und Skripte: <a href="{e(repo)}" target="_blank" '
                  f'rel="noopener">Quellcode auf GitHub</a>.' if repo else "")
-    kr = kantonsrat_daten(v.get("kantonsrat_suche", ""))
+    kr = (kantonsrat_daten(v.get("kantonsrat_suche", ""), alle=bool(v.get("kantonsrat_alle")))
+          or rat_manuell(v.get("rat")))
     bild_daten = teilen.bild_daten(daten, achsen, args, kr, url, punkte, mittelwerte,
                                    SEITE_KOMITEE, SEITE_NAME, TYP_NAME)
 
@@ -1888,9 +1980,10 @@ def bauen() -> str:
         if GEOJSON.exists():
             verzeichnis.append(("viewer", "Selber nachschauen", "Karte zum Bewegen"))
     if kr:
-        n_kr = len(kr["abstimmungen"])
-        verzeichnis.append(("kantonsrat", "Wie der Kantonsrat gestimmt hat",
-                            f"{n_kr} namentliche Abstimmung" + ("en" if n_kr != 1 else "")))
+        n_kr = sum(len(s["abstimmungen"]) for s in (kr.get("weitere") or []) + [kr])
+        rat_name = kr.get("rat", "Kantonsrat")
+        verzeichnis.append(("kantonsrat", f"Wie der {rat_name} gestimmt hat",
+                            f"{n_kr} {'' if kr.get('manuell') else 'namentliche '}Abstimmung" + ("en" if n_kr != 1 else "")))
     verzeichnis.append(("methode", "Methode und Quellen", "wie geprüft wird"))
     iv = "".join(
         f'<li><a href="#{e(k)}">{e(t)}</a></li>' for k, t, _ in verzeichnis)

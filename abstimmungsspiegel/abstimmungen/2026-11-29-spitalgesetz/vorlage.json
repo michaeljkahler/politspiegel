@@ -1,13 +1,13 @@
 {
   "schema_version": "0.5",
-  "stand": "2026-09-04",
+  "stand": "2026-11-02",
   "status": "entwurf",
-  "hinweis_quellen": "Argumentarien liegen noch nicht vor. Grundlage bis dahin: Abstimmungsvorlage und Bericht und Antrag des Regierungsrats vom 29. Oktober 2024.",
-  "lesehilfe": "",
+  "hinweis_quellen": "Argumente aus dem amtlichen Abstimmungs-Magazin, aus der Kampagnenseite der SP und aus dem Wortprotokoll der ersten Lesung im Kantonsrat vom 4. Mai 2026, je fünf pro Seite. Das Wortprotokoll der zweiten Lesung vom 24. August 2026 war am Stichtag nicht publiziert. Gesetzestexte nach rechtsbuch.sh.ch und fedlex.admin.ch, Stand 1. Januar 2026.",
+  "lesehilfe": "Die Ja-Seite stützt sich überwiegend auf das Abstimmungs-Magazin und den Gesetzestext, die Nein-Seite auf Voten im Kantonsrat und eine Kampagnenseite ohne Quellenangaben. Ein Teil der Nein-Argumente bezieht sich auf die Fassung der ersten Lesung, die seither ergänzt wurde; das steht jeweils unter «Was fehlt». Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
   "vorlage": {
     "id": "sh-spitalgesetz-2026",
     "titel": "Änderung des Spitalgesetzes",
-    "untertitel": "Umsetzung der Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen»",
+    "untertitel": "Flexibilisierung der Personalpolitik der Spitäler Schaffhausen: Obligationenrecht und Gesamtarbeitsvertrag statt kantonales Personalrecht",
     "ebene": "Kanton Schaffhausen",
     "abstimmung": "2026-11-29",
     "seiten": {
@@ -22,28 +22,87 @@
         "empfehlung": "Nein"
       }
     },
-    "worum_geht_es": "Noch offen. Hier steht in drei bis vier Sätzen, was die Vorlage ändert und wer sie vorgelegt hat.",
-    "bei_ja": "1. Noch offen: erste Folge eines Ja.\n2. Noch offen: zweite Folge eines Ja.",
-    "bei_nein": "1. Noch offen: Es bleibt beim geltenden Spitalgesetz.\n2. Noch offen: zweite Folge eines Nein.",
+    "worum_geht_es": "Für rund 1300 Mitarbeitende der Spitäler Schaffhausen gilt heute das kantonale Personalrecht. Neu sollen ihre Arbeitsverhältnisse dem Obligationenrecht unterstehen, und die Spitäler müssen mit den Verbänden der Mitarbeitenden einen Gesamtarbeitsvertrag (GAV) abschliessen. Das Gesetz schreibt dem GAV Mindestinhalte vor: Lohnsystem, Teuerungsausgleich für untere Lohnbänder, Kündigungsschutz, Schiedsgericht im vertragslosen Zustand, Lohnbesitzstand. Die Vorlage geht auf die Motion von Christian Heydecker (FDP) aus dem Jahr 2019 zurück. Der Kantonsrat stimmte am 24. August 2026 mit 43 : 0 Stimmen bei 12 Enthaltungen zu; weil damit die Vierfünftelmehrheit verfehlt wurde, kommt die Änderung obligatorisch vors Volk.",
+    "bei_ja": "1. Die Arbeitsverhältnisse richten sich nach dem Obligationenrecht und einem GAV, den die Spitäler mit den Verbänden aushandeln. Den Zeitpunkt der Überführung legt der Regierungsrat fest.\n2. Ausgenommen vom GAV sind CEO, Geschäftsleitung, Chefärzte und leitende Ärzte.\n3. Der GAV muss Lohnsystem, Teuerungsausgleich ab Lohnband 1, Kündigungsschutz mit Anhörung und Begründung und eine Verwarnung regeln.\n4. Lohnbesitzstand von mindestens drei Jahren, für die heutigen Lohnbänder 1 und 2 unbefristet.\n5. Lohnsumme des Kantonsrats, Genehmigung durch den Regierungsrat und Kader-Rahmenvorgaben entfallen; die Pensionskasse bleibt die PKSH.",
+    "bei_nein": "1. Es bleibt beim geltenden Spitalgesetz: Für das Personal gilt das kantonale Personalrecht mit der Lohnsumme, die der Kantonsrat jährlich beschliesst.\n2. Das Personalreglement der Spitäler kann weiterhin vom Personalrecht abweichen, soweit betrieblich erforderlich, mit Genehmigung des Regierungsrats.\n3. Die Motion Heydecker ist vom Kantonsrat als erledigt abgeschrieben.",
     "ja_titel": "Bei einem Ja",
     "nein_titel": "Bei einem Nein",
     "doppelvorlage": "",
     "rechtsrahmen": "",
-    "kontext": [],
-    "kantonsrat_suche": "Änderung des Spitalgesetzes",
-    "kantonsrat_hinweis": "",
+    "kontext": [
+      {
+        "titel": "Warum es zur Abstimmung kommt.",
+        "text": "Nach Art. 32 lit. c und Art. 33 Abs. 1 lit. a der Kantonsverfassung kommt ein Gesetz obligatorisch vors Volk, wenn ihm weniger als vier Fünftel der anwesenden Mitglieder des Kantonsrats zugestimmt haben. Am 24. August 2026 stimmten 43 von 55 Teilnehmenden zu; nötig gewesen wären 44. Die 12 Enthaltungen kamen aus der SP-JUSO-GRÜNE-Junge Grüne-Fraktion. Die SP Kanton Schaffhausen empfiehlt inzwischen ein Nein. Eine Minderheitsmeinung des Kantonsrats enthält das Abstimmungs-Magazin nicht, weil niemand dagegen gestimmt hat."
+      },
+      {
+        "titel": "Wer was empfiehlt.",
+        "text": "Ja: Kantonsrat und Regierungsrat, SVP, FDP, GLP und EDU. Nein: SP Kanton Schaffhausen. Ohne publizierte Parole bis zum 2. November 2026: Die Mitte, EVP, Grüne und AL. Ein eigenes Nein-Komitee oder eine Stellungnahme der Personalverbände war nicht auffindbar."
+      },
+      {
+        "titel": "Wer betroffen ist.",
+        "text": "Nach Angaben der Spitäler 1326 Personen, die heute nach Personalrecht angestellt sind. Weitere 332 Personen arbeiten bereits mit Vertrag nach Obligationenrecht. Die Lohnvergleiche in den Argumenten stammen aus dem Kommissionsbericht zur zweiten Lesung (Quelle: Spitäler Schaffhausen, perinova)."
+      }
+    ],
+    "kantonsrat_suche": "Lohnpolitik für die Spitäler",
+    "kantonsrat_hinweis": "Die Ergebnisse decken sich mit den Angaben im Abstimmungs-Magazin (43 : 0 bei 12 Enthaltungen) und im Protokoll der ersten Lesung.",
     "quellen": [
       {
-        "titel": "Bericht und Antrag des Regierungsrats vom 29. Oktober 2024 betreffend die Änderung des Spitalgesetzes",
-        "url": "",
+        "titel": "Schaffhauser Abstimmungs-Magazin zur Volksabstimmung vom 29. November 2026",
+        "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
         "art": "amtlich"
       },
       {
-        "titel": "Schaffhauser Abstimmungs-Magazin zur Volksabstimmung vom 29. November 2026",
-        "url": "",
+        "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung vom 5. Juni 2026 (ADS 26-40)",
+        "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
         "art": "amtlich"
+      },
+      {
+        "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026 (erste Lesung)",
+        "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Spitalgesetz (SHR 813.100), geltende Fassung",
+        "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/813.100",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Personalgesetz (SHR 180.100) und Personalverordnung (SHR 180.111)",
+        "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/180.100",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Verfassung des Kantons Schaffhausen (SHR 101.000), Art. 32 und 33",
+        "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/101.000",
+        "art": "amtlich"
+      },
+      {
+        "titel": "SP Kanton Schaffhausen: «NEIN zur Auslagerung des Spitalpersonals!»",
+        "url": "https://spsh.ch/spitalpersonal/",
+        "art": "partei"
+      },
+      {
+        "titel": "GLP Schaffhausen: Abstimmungsparolen für den 29.11.2026",
+        "url": "https://sh.glp.swiss/neuigkeiten-und-abstimmungen/2026-10-25-abstimmungsparolen-fuer-den-29-11-2026/",
+        "art": "partei"
+      },
+      {
+        "titel": "FDP Kanton Schaffhausen: Wahlen und Abstimmungen",
+        "url": "https://www.fdp-sh.ch/wahlen-abstimmungen",
+        "art": "partei"
+      },
+      {
+        "titel": "SVP Kanton Schaffhausen: Parolen",
+        "url": "https://svp-sh.ch/",
+        "art": "partei"
+      },
+      {
+        "titel": "EDU Schaffhausen: Abstimmungen vom 29. November 2026",
+        "url": "https://www.edu-sh.ch/abstimmungen/",
+        "art": "partei"
       }
-    ]
+    ],
+    "kantonsrat_alle": true
   },
   "achsen": [
     {
@@ -82,10 +141,551 @@
       "voll": "Daten oder Texte aus dem Kanton, direkt zur Vorlage"
     }
   ],
-  "argumente": [],
+  "argumente": [
+    {
+      "id": "pro-1",
+      "seite": "pro",
+      "aussage": "Dadurch erhalten diese mehr Spielraum, um in Bereichen mit Fachkräftemangel konkurrenzfähige Löhne anzubieten und qualifizierte Mitarbeitende zu gewinnen und zu halten.",
+      "traeger": "Kantonsrat und Regierungsrat im Abstimmungs-Magazin; gleichlautend GLP («Wettbewerbsfähige Spitäler brauchen Spielraum bei Löhnen und Personal») und Regierungsrat Marcel Montanari (FDP) im Kantonsrat",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Zur Sache», S. 5",
+        "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+        "datum": "2026-10-02",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": 1,
+        "ursache": 1,
+        "reichweite": 3,
+        "transfer": 3
+      },
+      "trifft_zu": "Die Gesundheitskommission hat die Löhne der 1326 nach Personalrecht angestellten Mitarbeitenden mit Zürcher Spitälern verglichen (Medianlohn, Spitäler Schaffhausen gleich 100 % Zürich). Unter dem Zürcher Wert liegen unter anderem:\n\n1. Oberärztinnen und Oberärzte, 52 Personen: 92,4 %.\n2. Pflege und Betreuung mit Fähigkeitsausweis, 82 Personen: 95,1 %, ohne die befristeten Lohnmassnahmen 91,1 %.\n3. Apotheke, Pharma- und Praxisassistenz, 87 Personen: 96,0 %.\n4. Spezialisierte kaufmännische Fachbearbeitung, 14 Personen: 93,9 %.\n\nSechs Funktionsgruppen mit zusammen 257 Personen liegen mehr als 2,5 % unter dem Zürcher Median. Der Kommissionsbericht hält zudem fest, dass junge Fachkräfte mit Berufserfahrung wegen der Gewichtung des Alters im kantonalen Lohnsystem oft noch deutlicher darunter liegen.",
+      "fehlt": "1. Über alle 1326 Angestellten liegt der Medianlohn bei 101,8 % des Zürcher Werts. Die grösste Gruppe, Pflege mit Diplom (301 Personen), liegt bei 102,4 %.\n2. Vier Funktionsgruppen mit 125 Personen liegen 7,6 % und mehr über dem Zürcher Median: Medizinisch-technische Radiologie 112,4 %, Technische Assistenz 110,1 %, Assistenz Hauswirtschaft und Raumpflege 109,2 %, Medizinisches Labor 107,6 %.\n3. Schon das geltende Recht lässt Abweichungen zu: Nach Art. 17 Abs. 3 Spitalgesetz kann das Personalreglement vom kantonalen Personalrecht abweichen, soweit betrieblich erforderlich. Befristete Lohnmassnahmen bestehen bis Ende 2028.\n4. Was höhere Löhne kosten und wer sie bezahlt, beziffert keine Unterlage. Das Abstimmungs-Magazin hält fest, dass die Vereinbarung wegfällt, nach der der Kanton die Kosten genereller Lohnbeschlüsse des Kantonsrats für ein Jahr übernimmt (S. 7).\n5. Dass der Lohn der entscheidende Grund für Rekrutierungsprobleme ist, belegt keine der Unterlagen.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die Folge?",
+          "status": "offen",
+          "kommentar": "hängt vom GAV ab, der noch nicht verhandelt ist"
+        },
+        {
+          "frage": "Gilt die Aussage für alle Berufsgruppen?",
+          "status": "nein",
+          "kommentar": "Medianlohn insgesamt 101,8 % des Zürcher Werts, einzelne Gruppen darunter"
+        },
+        {
+          "frage": "Gibt es andere Wege zum Ziel?",
+          "status": "ja",
+          "kommentar": "Art. 17 Abs. 3 Spitalgesetz erlaubt heute Abweichungen; befristete Lohnmassnahmen bis 2028"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), Tabellen 1 und 2, S. 2 bis 4",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Spitalgesetz (SHR 813.100), Art. 17 Abs. 3 in der geltenden Fassung",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/813.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "GLP Schaffhausen, Abstimmungsparolen für den 29.11.2026",
+          "url": "https://sh.glp.swiss/neuigkeiten-und-abstimmungen/2026-10-25-abstimmungsparolen-fuer-den-29-11-2026/",
+          "art": "partei"
+        }
+      ]
+    },
+    {
+      "id": "pro-2",
+      "seite": "pro",
+      "aussage": "Gleichzeitig werden aber auch zentrale Mindeststandards im Gesetz verankert, namentlich beim Teuerungsausgleich, beim Kündigungsschutz, bei der Mitwirkung der Sozialpartner und beim Schutz bestehender Arbeitsverhältnisse.",
+      "traeger": "Kantonsrat, Mehrheitsmeinung im Abstimmungs-Magazin; gleichlautend GLP («Der GAV schützt die Interessen der Mitarbeitenden»)",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Erwägungen des Kantonsrates», S. 8",
+        "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+        "datum": "2026-10-02",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 4,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "Das Gesetz schreibt vor:\n\n1. Die Spitäler müssen mit den Verbänden der Mitarbeitenden einen GAV nach Art. 356 ff. Obligationenrecht abschliessen (Art. 17 Abs. 2).\n2. Der GAV gilt für alle Mitarbeitenden ausser CEO, Geschäftsleitung, Chefärzte und leitende Ärzte (Art. 17 Abs. 3 lit. b).\n3. Der GAV regelt mindestens ein Lohnsystem mit Lohnbändern und Lohnstufen und einen kaufkrafterhaltenden Teuerungsausgleich «ab Lohnband 1 bis zu einem im Gesamtarbeitsvertrag definierten Lohnband» (lit. c).\n4. Kündigungsschutz: Anhörung, schriftliche und sachliche Begründung, abschliessende Liste der Kündigungsgründe, Verwarnung (lit. d und e).\n5. Kommt nach Kündigung eines GAV binnen zwölf Monaten kein neuer zustande, entscheidet ein Schiedsgericht (Abs. 4).\n6. Lohnbesitzstand von mindestens drei Jahren, für die Lohnbänder 1 und 2 unbefristet (Art. 33a Abs. 2).",
+      "fehlt": "1. Für welche Lohnbänder der kaufkrafterhaltende Teuerungsausgleich gilt, legt der GAV fest. Das Gesetz garantiert ihn nur ab Lohnband 1.\n2. Keine gesetzliche Mindestvorgabe gibt es für Ferien, Lohnfortzahlung bei Krankheit, Arbeitszeit, Mutterschaftsurlaub und Mindestlohn. Anträge dazu lehnte der Kantonsrat am 4. Mai 2026 ab: Mindestlohn von 4500 Franken 19 : 40, Teuerungsausgleich unabhängig von der Betriebsrechnung 19 : 38, Ferien 18 : 37, Mutterschaftsurlaub 18 : 38.\n3. Das Schiedsgericht nach Art. 17 Abs. 4 greift nach der Kündigung eines bestehenden GAV. Für den Fall, dass schon der erste GAV nicht zustande kommt, nennt das Gesetz weder Frist noch Verfahren.",
+      "kritische_fragen": [
+        {
+          "frage": "Steht das Genannte im Gesetz?",
+          "status": "beantwortet",
+          "kommentar": "Art. 17 Abs. 2 bis 4 und Art. 33a"
+        },
+        {
+          "frage": "Fehlen Bereiche, die heute geregelt sind?",
+          "status": "ja",
+          "kommentar": "Ferien, Lohnfortzahlung, Arbeitszeit, Mutterschaft"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Beschluss des Kantonsrates vom 24. August 2026, Abstimmungs-Magazin S. 13 bis 16",
+          "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, Abstimmungen 5, 6, 8 und 9",
+          "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-3",
+      "seite": "pro",
+      "aussage": "Die Überführung in das neue Lohnsystem soll nicht zu kurzfristigen Lohnverschlechterungen führen. Deshalb sieht Art. 33a Abs. 2 Spitalgesetz für sämtliche bestehenden Arbeitsverhältnisse einen Lohnbesitzstand von mindestens drei Jahren vor.",
+      "traeger": "Kantonsrat und Regierungsrat im Abstimmungs-Magazin",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Zur Sache», S. 6 f.",
+        "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+        "datum": "2026-10-02",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 4,
+        "zahl": 3,
+        "ursache": 3,
+        "reichweite": 3,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Art. 33a Abs. 2: Lohnbesitzstand von mindestens drei Jahren für alle bestehenden Arbeitsverhältnisse; der GAV kann für besondere Konstellationen länger vorsehen.\n2. Für die heutigen Lohnbänder 1 und 2 gilt der Besitzstand unbefristet. Das betrifft 44 Personen (Lohnband 1: 4, Lohnband 2: 40), vor allem in Raumpflege, Hauswirtschaft, Hotellerie und Facility Management.\n3. Die Aussage beschränkt sich auf «kurzfristige» Verschlechterungen; das entspricht dem Gesetzestext.",
+      "fehlt": "1. Für 1282 Personen in den Lohnbändern 3 bis 15 endet der gesetzliche Besitzstand nach drei Jahren, sofern der GAV nichts anderes vorsieht.\n2. Dass Angleichungen bei zu hoher Einstufung «weitestmöglich ohne nominale Lohnreduktion» erfolgen sollen, steht im Kommissionsbericht, nicht im Gesetz. Die Spitäler erklären, sie beabsichtigten grundsätzlich keine Lohnkürzungen (Bericht 26-40, S. 5).\n3. Ob der Besitzstand nur den heutigen Lohn sichert oder auch die Teuerung, regelt das Gesetz nicht.",
+      "kritische_fragen": [
+        {
+          "frage": "Steht die Regel im Gesetz?",
+          "status": "beantwortet",
+          "kommentar": "Art. 33a Abs. 2"
+        },
+        {
+          "frage": "Gilt der Schutz für alle gleich lang?",
+          "status": "nein",
+          "kommentar": "unbefristet nur für 44 Personen in den Lohnbändern 1 und 2"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Beschluss des Kantonsrates vom 24. August 2026, Art. 33a, Abstimmungs-Magazin S. 16",
+          "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), Tabelle 1 und S. 7 f.",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-4",
+      "seite": "pro",
+      "aussage": "Weshalb sollten wir dann zu den Anstellungsbedingungen, Salären und Umkleidezeiten des Personals nicht nur mitsprechen, sondern abschliessend bestimmen können? Das macht einfach keinen Sinn, wird in keinem Betrieb so gehandhabt und führt früher oder später zu Problemen.",
+      "traeger": "Markus Müller (SVP), Mitglied der Gesundheitskommission, im Kantonsrat",
+      "fundstelle": {
+        "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 169",
+        "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+        "datum": "2026-05-04",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Analogie",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": null,
+        "ursache": 1,
+        "reichweite": 1,
+        "transfer": 2
+      },
+      "trifft_zu": "1. Heute gilt für das Spitalpersonal das kantonale Personalrecht (Art. 17 Abs. 2 Spitalgesetz). Danach beschliesst der Kantonsrat mit dem Voranschlag die Lohnsumme und berücksichtigt dabei die Entwicklung der Lebenshaltungskosten (Art. 19 Personalgesetz).\n2. Personalreglement und allfällige GAV der Spitäler muss heute der Regierungsrat genehmigen (Art. 12 Abs. 1 lit. h Spitalgesetz). Mit der Vorlage entfallen Genehmigung und Lohnsumme.",
+      "fehlt": "1. «Abschliessend» trifft nicht zu: Über die Verwendung der Lohnsumme entscheidet der Regierungsrat (Art. 19 Abs. 2 Personalgesetz), und das Personalreglement der Spitäler kann heute schon vom Personalrecht abweichen, soweit betrieblich erforderlich (Art. 17 Abs. 3 Spitalgesetz).\n2. «In keinem Betrieb»: Öffentliche Spitäler mit öffentlich-rechtlicher Anstellung und kantonalem Personalrecht gibt es auch anderswo. Beim Universitätsspital Zürich gilt das Personalrecht des Kantons, soweit das eigene Reglement nichts anderes regelt (Personalreglement USZ, § 1).\n3. Welche Probleme früher oder später entstehen, nennt die Aussage nicht.",
+      "kritische_fragen": [
+        {
+          "frage": "Sind die verglichenen Betriebe vergleichbar?",
+          "status": "nein",
+          "kommentar": "Vergleich mit privaten Betrieben; öffentliche Spitäler mit Personalrecht gibt es"
+        },
+        {
+          "frage": "Bestimmt der Kantonsrat heute abschliessend?",
+          "status": "nein",
+          "kommentar": "Lohnsumme ja, Verwendung und Reglement beim Regierungsrat und Spitalrat"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Personalgesetz (SHR 180.100), Art. 19 und 20",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/180.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Spitalgesetz (SHR 813.100), Art. 12 und 17 in der geltenden Fassung",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/813.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Personalreglement des Universitätsspitals Zürich, § 1",
+          "url": "https://usz.ch/app/uploads/2024/12/Personalreglement-des-Universitaetsspitals-Zuerich.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-5",
+      "seite": "pro",
+      "aussage": "Damit wird den Spitälern Schaffhausen mehr Handlungsspielraum bei Löhnen, Arbeitszeitmodellen und weiteren Anstellungsbedingungen gegeben.",
+      "traeger": "Kantonsrat und Regierungsrat im Abstimmungs-Magazin; Regierungsrat Marcel Montanari (FDP) im Kantonsrat: «mehr Möglichkeiten als im Personalrecht, beispielsweise auch, was Arbeitszeitmodelle anbelangt»",
+      "fundstelle": {
+        "titel": "Schaffhauser Abstimmungs-Magazin, «Zur Sache», S. 4",
+        "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+        "datum": "2026-10-02",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": null,
+        "ursache": 1,
+        "reichweite": 2,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Mit dem Wechsel ins Obligationenrecht entfällt die Bindung an Personalgesetz und Personalverordnung. Arbeitszeit und Anstellungsbedingungen regeln Spitäler und Verbände im GAV.\n2. Der Kommissionsbericht nennt als Ziel, «Arbeitszeitmodelle flexibler anzupassen und attraktiver zu gestalten sowie moderne Vergütungssysteme einzuführen» (Bericht 26-40, S. 5).",
+      "fehlt": "1. Keine Unterlage nennt ein Arbeitszeitmodell, das unter dem geltenden Recht nicht möglich ist.\n2. Schon heute kann das Personalreglement der Spitäler vom Personalrecht abweichen, soweit betrieblich erforderlich (Art. 17 Abs. 3 Spitalgesetz); es braucht die Genehmigung des Regierungsrats.\n3. Der Spielraum steht unter dem Vorbehalt des GAV, den die Verbände mitverhandeln.",
+      "kritische_fragen": [
+        {
+          "frage": "Welche Modelle sind heute nicht möglich?",
+          "status": "offen",
+          "kommentar": "nicht genannt"
+        },
+        {
+          "frage": "Gibt es andere Wege zum Ziel?",
+          "status": "ja",
+          "kommentar": "Abweichungen nach Art. 17 Abs. 3 Spitalgesetz"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), S. 5",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Spitalgesetz (SHR 813.100), Art. 17 in der geltenden Fassung",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/813.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 169",
+          "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-1",
+      "seite": "contra",
+      "aussage": "Ein Beispiel: Im kantonalen Personalrecht sind die Ferien nach Alter abgestuft und es werden mindestens 24 Tage gewährt. Im Obligationenrecht jedoch sind nur mindestens 20 Tage vorgesehen. […] Sie sehen, wenn der Gesamtarbeitsvertrag nicht gut ausgestaltet wird, wird das Personal merklich darunter leiden.",
+      "traeger": "Leonie Altorfer (SP), Fraktionserklärung der SP-JUSO-GRÜNE-Junge Grüne-Fraktion im Kantonsrat",
+      "fundstelle": {
+        "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 173 f.",
+        "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+        "datum": "2026-05-04",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": 3,
+        "ursache": 1,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "Die genannten Unterschiede zwischen Personalrecht und Obligationenrecht bestehen:\n\n1. Ferien: Personalverordnung § 35: 24 Tage bis zum 49. Altersjahr, 28 ab dem 50., 32 ab dem 60. Obligationenrecht Art. 329a: mindestens vier Wochen, also 20 Arbeitstage bei der Fünftagewoche, bis zum 20. Altersjahr fünf Wochen.\n2. Kündigungsfrist nach der Probezeit: Personalgesetz Art. 11: zwei Monate, ab dem zweiten Dienstjahr drei Monate. Obligationenrecht Art. 335c: ein Monat im ersten Dienstjahr, zwei Monate im zweiten bis neunten, drei Monate ab dem zehnten.\n3. Lohnfortzahlung bei Krankheit oder Unfall: Personalgesetz Art. 38: voller Lohn bis 12 Monate. Obligationenrecht Art. 324a: drei Wochen im ersten Dienstjahr, danach «für eine angemessene längere Zeit».\n\nFerien, Kündigungsfristen und Lohnfortzahlung gehören nicht zu den Inhalten, die das Gesetz dem GAV vorschreibt (Art. 17 Abs. 3). Anträge, den Ferienanspruch und einen viermonatigen Mutterschaftsurlaub ins Gesetz zu schreiben, lehnte der Kantonsrat am 4. Mai 2026 mit 37 : 18 und 38 : 18 Stimmen ab.",
+      "fehlt": "1. Die Werte des Obligationenrechts sind Untergrenzen. Was gilt, legt der GAV fest, den die Spitäler mit den Verbänden erst nach der Abstimmung aushandeln. Eine Verschlechterung tritt nur ein, wenn der GAV unter dem heutigen Stand bleibt.\n2. Die 12-Monats-Regel steht im Personalgesetz (Art. 38 Abs. 1), nicht in der Personalverordnung.\n3. Beim Kündigungsschutz geht das neue Gesetz über das Obligationenrecht hinaus: Der GAV muss eine Anhörung vor der ordentlichen Kündigung, eine schriftliche und sachliche Begründung, eine abschliessende Liste sachlicher Kündigungsgründe und eine Verwarnung vor einer Kündigung wegen Leistung oder Verhalten enthalten (Art. 17 Abs. 3 lit. d und e). Das Obligationenrecht verlangt eine Begründung nur auf Verlangen (Art. 335 Abs. 2).\n4. Der Vergleich der Kündigungsfrist gilt für das erste Dienstjahr. Vom zweiten bis neunten Dienstjahr beträgt der Unterschied einen Monat (drei gegen zwei), ab dem zehnten keinen.",
+      "kritische_fragen": [
+        {
+          "frage": "Stimmen die verglichenen Werte?",
+          "status": "beantwortet",
+          "kommentar": "Ferien, Kündigungsfrist und Lohnfortzahlung wie genannt"
+        },
+        {
+          "frage": "Folgt aus den Untergrenzen eine Verschlechterung?",
+          "status": "offen",
+          "kommentar": "hängt vom Verhandlungsergebnis im GAV ab"
+        },
+        {
+          "frage": "Gibt es Gegenbeispiele?",
+          "status": "ja",
+          "kommentar": "Kündigungsschutz im neuen Gesetz geht über das Obligationenrecht hinaus"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Personalgesetz (SHR 180.100), Art. 11, 23 und 38",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/180.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Personalverordnung (SHR 180.111), § 35",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/180.111",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Obligationenrecht, Art. 324a, 329a, 335 und 335c",
+          "url": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Beschluss des Kantonsrates vom 24. August 2026, Art. 17 Abs. 3, Abstimmungs-Magazin S. 14",
+          "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-2",
+      "seite": "contra",
+      "aussage": "Dennoch, die vorgeschlagene Änderung wäre ein einschneidender Systemwechsel, weg von einer politischen Errungenschaft für Arbeitnehmende hin zu vielen Fragezeichen, wie genau der Gesamtarbeitsvertrag aussehen könnte. […] mit der vorliegenden Änderung kaufen wir die Katze im Sack",
+      "traeger": "Leonie Altorfer (SP), Fraktionserklärung der SP-JUSO-GRÜNE-Junge Grüne-Fraktion im Kantonsrat",
+      "fundstelle": {
+        "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 173",
+        "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+        "datum": "2026-05-04",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Ein GAV liegt nicht vor. Das Gesetz verpflichtet zum Abschluss; verhandelt wird nach dem Inkrafttreten (Art. 17 Abs. 2).\n2. Das Gesetz legt Inhalte fest, die der GAV regeln muss, aber kaum Werte. Zahlen nennt es nur beim Lohnbesitzstand (mindestens drei Jahre) und beim vertragslosen Zustand (zwölf Monate).\n3. Den Zeitpunkt der Überführung legt der Regierungsrat fest (Art. 33a Abs. 1). Einen Antrag, die Überführung erst nach Einigung über den GAV zuzulassen, lehnte der Kantonsrat am 4. Mai 2026 mit 39 : 19 Stimmen ab.\n4. Eine Kommissionsminderheit hielt die Mindestanforderungen nach der ersten Lesung für «zu abstrakt und zu wenig weitgehend» (Bericht 26-40, S. 2).",
+      "fehlt": "1. Die Aussage bezieht sich auf die Fassung der ersten Lesung. Seither hat die Kommission ergänzt: Anhörungspflicht vor der Kündigung, abschliessende Liste der Kündigungsgründe, Verwarnung, unbefristeter Lohnbesitzstand für die Lohnbänder 1 und 2.\n2. In der Schlussabstimmung vom 24. August 2026 stimmte niemand dagegen: 43 Ja, 0 Nein, 12 Enthaltungen, alle aus der SP-JUSO-GRÜNE-Junge Grüne-Fraktion; sechs Mitglieder dieser Fraktion stimmten Ja.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist der Inhalt des GAV bei der Abstimmung bekannt?",
+          "status": "nein",
+          "kommentar": "wird nach dem Inkrafttreten verhandelt"
+        },
+        {
+          "frage": "Legt das Gesetz Untergrenzen fest?",
+          "status": "ja",
+          "kommentar": "Inhalte nach Art. 17 Abs. 3, Werte nur in Art. 17 Abs. 4 und Art. 33a"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Beschluss des Kantonsrates vom 24. August 2026, Abstimmungs-Magazin S. 13 bis 16",
+          "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), S. 2",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-3",
+      "seite": "contra",
+      "aussage": "Mit dem vorliegenden Gesetzentwurf wird nicht sichergestellt, dass die Überführung der Arbeitsverhältnisse ins neue Lohnsystem nicht zu Lohnsenkungen führen könnte, und oft treffen die Lohnverschlechterungen überproportional Personen mit mittleren und tieferen Einkommen.",
+      "traeger": "Angela Penkov (SP), Antrag auf unbefristeten Lohnbesitzstand im Kantonsrat",
+      "fundstelle": {
+        "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 197",
+        "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+        "datum": "2026-05-04",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 0,
+        "ursache": 2,
+        "reichweite": 2,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Nach Ablauf des Besitzstands schliesst das Gesetz Lohnsenkungen bei der Angleichung an das neue Lohnsystem nicht aus. Die Spitäler halten eine Einzelfallbeurteilung für notwendig (Bericht 26-40, S. 5).\n2. Im Lohnvergleich liegen auch Gruppen mit tieferen Löhnen über dem Zürcher Median, etwa Assistenz Hauswirtschaft und Raumpflege mit 109,2 % (63 Personen). Bei solchen Gruppen ist eine Angleichung nach unten denkbar.",
+      "fehlt": "1. Der Antrag bezog sich auf die Fassung vom 4. Mai 2026. Seither gilt für die Lohnbänder 1 und 2 (44 Personen) ein unbefristeter Besitzstand, für alle übrigen mindestens drei Jahre.\n2. Wie viele Personen nach drei Jahren betroffen wären, beziffert keine Unterlage. Die Kommission spricht von «erwartungsgemäss wenigen Fällen».\n3. Über dem Zürcher Median liegen auch Gruppen mit mittleren Löhnen, etwa die Medizinisch-technische Radiologie mit 112,4 %. Unter dem Median liegen Gruppen mit hohen Löhnen, etwa die Oberärzte mit 92,4 %. Eine Häufung bei tiefen Einkommen zeigt der Vergleich nicht.\n4. Der Antrag wurde mit 40 : 19 Stimmen abgelehnt. Regierungsrat Montanari begründete die Befristung damit, dass im Team nicht dauerhaft zwei Vertragsgruppen nebeneinander bestehen sollen.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die Folge?",
+          "status": "offen",
+          "kommentar": "keine Zahl betroffener Personen"
+        },
+        {
+          "frage": "Trifft es überproportional tiefe Einkommen?",
+          "status": "offen",
+          "kommentar": "Lohnvergleich zeigt Abweichungen in allen Lohnhöhen"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), Tabellen 1 und 2, S. 5 und 7 f.",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, Abstimmung 11",
+          "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-4",
+      "seite": "contra",
+      "aussage": "Heute können demokratisch gewählte Gremien mitbestimmen, wie die Menschen bezahlt und angestellt werden, die uns pflegen. Mit der Vorlage gibt die Politik diese Verantwortung aus der Hand.",
+      "traeger": "SP Kanton Schaffhausen, Kampagne «Nein zur Auslagerung des Spitalpersonals»; ähnlich Leonie Altorfer (SP) im Kantonsrat: «verlieren wir … demokratisch legitimierte Mitsprachemöglichkeiten»",
+      "fundstelle": {
+        "titel": "spsh.ch, «NEIN zur Auslagerung des Spitalpersonals!»",
+        "url": "https://spsh.ch/spitalpersonal/",
+        "datum": "2026-10",
+        "art": "partei"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Argument aus dem Wortlaut",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "Mit der Vorlage entfallen:\n\n1. die Lohnsumme, die der Kantonsrat mit dem Voranschlag beschliesst (Art. 19 Personalgesetz, gilt heute über Art. 17 Abs. 2 Spitalgesetz);\n2. die Genehmigung von Personalreglement und GAV durch den Regierungsrat (Art. 12 Abs. 1 lit. h);\n3. die Rahmenvorgaben des Regierungsrats für die Besoldung von Kader und Ärzteschaft (Art. 12 Abs. 1 lit. j).\n\nLohnsystem und GAV erlässt neu der Spitalrat (Art. 14 Abs. 3 lit. l, n und o).",
+      "fehlt": "1. Unverändert bleiben: Der Regierungsrat wählt den Spitalrat und legt dessen Entschädigung fest (Art. 12 Abs. 1 lit. b und c). Der Kantonsrat übt die Oberaufsicht aus, beschliesst den Globalkredit, genehmigt Geschäftsbericht und Jahresrechnung und genehmigt die Auslagerung von Betriebsbereichen (Art. 11).\n2. Die Mindestinhalte des GAV stehen im Gesetz. Sie zu ändern, braucht einen Beschluss des Kantonsrats.\n3. Die Kantonsratsminderheit hat im Abstimmungs-Magazin keine eigene Stellungnahme; die Enthaltenden halten dort fest, der Entscheid habe «grosse Tragweite» und solle bei den Stimmberechtigten liegen (S. 8).",
+      "kritische_fragen": [
+        {
+          "frage": "Welche Zuständigkeiten fallen weg?",
+          "status": "beantwortet",
+          "kommentar": "Lohnsumme Kantonsrat, Genehmigung Reglement und GAV, Kader-Rahmenvorgaben"
+        },
+        {
+          "frage": "Fällt jede politische Steuerung weg?",
+          "status": "nein",
+          "kommentar": "Wahl des Spitalrats, Oberaufsicht, Globalkredit, Gesetz bleiben"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Spitalgesetz (SHR 813.100), Art. 11, 12 und 14 in der geltenden Fassung",
+          "url": "https://rechtsbuch.sh.ch/app/de/texts_of_law/813.100",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Beschluss des Kantonsrates vom 24. August 2026, Abstimmungs-Magazin S. 13",
+          "url": "https://sh.ch/CMS/get/file/67e58477-54d6-40a4-aa87-d87e03a3a57e",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll der 4. Sitzung des Kantonsrats vom 4. Mai 2026, S. 173",
+          "url": "https://sh.ch/CMS/get/file/6f540fb6-1fdc-4753-b0a7-e72733820167",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-5",
+      "seite": "contra",
+      "aussage": "Die Spitäler Schaffhausen gehören dem Kanton und erfüllen einen wichtigen öffentlichen Auftrag für uns alle. Ihr Personal gehört deshalb öffentlich angestellt.",
+      "traeger": "SP Kanton Schaffhausen, Kampagne «Nein zur Auslagerung des Spitalpersonals»; ebenso Leonie Altorfer (SP) im Kantonsrat",
+      "fundstelle": {
+        "titel": "spsh.ch, «NEIN zur Auslagerung des Spitalpersonals!», Abschnitt «Gesundheitsversorgung ist öffentliche Aufgabe!»",
+        "url": "https://spsh.ch/spitalpersonal/",
+        "datum": "2026-10",
+        "art": "partei"
+      },
+      "stand": "geprueft",
+      "typ": "wertung",
+      "schema": "Werturteil",
+      "pruefung": {},
+      "trifft_zu": "1. Die Spitäler Schaffhausen bleiben eine öffentlich-rechtliche Anstalt des Kantons; daran ändert die Vorlage nichts.\n2. Geändert wird die Rechtsgrundlage der Arbeitsverhältnisse: Obligationenrecht mit GAV statt kantonales Personalrecht.",
+      "fehlt": "1. Ob ein öffentlicher Auftrag eine öffentlich-rechtliche Anstellung verlangt, ist eine Wertung.\n2. Schon heute arbeiten 332 Personen bei den Spitälern mit Vertrag nach Obligationenrecht, darunter Kaderärzte, Lernende, Praktikanten und Sitzwachen (Bericht 26-40, S. 2).",
+      "kritische_fragen": [],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Gesundheitskommission zur 2. Lesung (ADS 26-40), S. 2",
+          "url": "https://sh.ch/CMS/get/file/2b8d9cde-e16e-45c5-a2e7-20b824e6d401",
+          "art": "amtlich"
+        }
+      ]
+    }
+  ],
   "textkritik": {
-    "einleitung": "",
-    "stellen": []
+    "einleitung": "Das Gesetz legt fest, was der GAV regeln muss, nicht wie. Wo ein Begriff offen bleibt, entscheiden später die Vertragsparteien, der Regierungsrat oder ein Schiedsgericht. Die folgenden drei Stellen halten fest, was der Text nicht festlegt.",
+    "stellen": [
+      {
+        "begriff": "«ab Lohnband 1 bis zu einem im Gesamtarbeitsvertrag definierten Lohnband»",
+        "wo": "Art. 17 Abs. 3 lit. c",
+        "wortlaut": "das transparente, marktnahe Lohnsystem mit Lohnbändern und Lohnstufen, wobei der Teuerungsausgleich ab Lohnband 1 bis zu einem im Gesamtarbeitsvertrag definierten Lohnband so auszugestalten ist, dass die Kaufkraft erhalten bleibt",
+        "problem": "Das Gesetz garantiert den kaufkrafterhaltenden Teuerungsausgleich nur für Lohnband 1. Bis zu welchem Band er reicht, bestimmt der GAV. Gemeint sind die Lohnbänder des künftigen Lohnsystems, das ebenfalls der GAV festlegt; Art. 33a spricht dagegen ausdrücklich von den «geltenden» Lohnbändern.",
+        "folge": "1. Wie viele Mitarbeitende einen kaufkrafterhaltenden Teuerungsausgleich erhalten, steht bei der Abstimmung nicht fest.\n2. Im heutigen System sind in Lohnband 1 vier Personen eingereiht, in den Bändern 1 und 2 zusammen 44.",
+        "quelle": "Beschluss des Kantonsrates vom 24. August 2026, Abstimmungs-Magazin S. 14 und 16; Bericht 26-40, Tabelle 1"
+      },
+      {
+        "begriff": "«Lohn-Besitzstand»",
+        "wo": "Art. 33a Abs. 2",
+        "wortlaut": "Für bestehende Arbeitsverhältnisse gilt ein Lohn-Besitzstand für die Dauer von mindestens 3 Jahren. … Für bestehende Arbeitsverhältnisse der geltenden Lohnbänder 1 und 2 gilt ein Lohn-Besitzstand.",
+        "problem": "Das Gesetz definiert den Besitzstand nicht. Offen bleibt, ob er den Nominallohn am Stichtag sichert oder auch Teuerung und Stufenanstieg, und ob er bei einem Stellenwechsel innerhalb der Spitäler weiter gilt.",
+        "folge": "1. Die Ausgestaltung bleibt dem GAV oder dem Regierungsrat überlassen, der nach Art. 33a Abs. 1 die Modalitäten der Überführung regelt, soweit der GAV sie nicht bestimmt.",
+        "quelle": "Beschluss des Kantonsrates vom 24. August 2026, Art. 33a, Abstimmungs-Magazin S. 16"
+      },
+      {
+        "begriff": "Zeitpunkt der Überführung",
+        "wo": "Art. 33a Abs. 1 und Art. 17 Abs. 4",
+        "wortlaut": "Der Regierungsrat legt den Zeitpunkt für die Überführung der bestehenden Arbeitsverhältnisse fest und regelt die weiteren Modalitäten, soweit diese nicht bereits von einem Gesamtarbeitsvertrag bestimmt sind.",
+        "problem": "Das Gesetz knüpft die Überführung nicht an einen abgeschlossenen GAV und nennt keine Kriterien für den Zeitpunkt. Das Schiedsgericht nach Art. 17 Abs. 4 greift im vertragslosen Zustand nach Kündigung eines GAV; für den ersten Abschluss nennt das Gesetz weder Frist noch Verfahren.",
+        "folge": "1. Einen Antrag, die Überführung erst nach Einigung über den GAV zuzulassen, lehnte der Kantonsrat am 4. Mai 2026 mit 39 : 19 Stimmen ab.\n2. Staatsschreiber Stefan Bilger hielt in der Debatte fest, das Konzept setze einen GAV voraus; eine Koppelung würde die materielle Inkraftsetzung in die Hände der Vertragsparteien legen (Protokoll S. 194).",
+        "quelle": "Beschluss des Kantonsrates vom 24. August 2026, Abstimmungs-Magazin S. 15 f.; Protokoll des Kantonsrats vom 4. Mai 2026, S. 193 f."
+      }
+    ]
   },
-  "karte": null
+  "karte": null,
+  "social": {
+    "hinweis": "Kurzfassungen für die Social-Media-Bilder (bausteine/teilen.py), aus worum_geht_es, bei_ja, bei_nein und den Kantonsratsabstimmungen gekürzt.",
+    "vorlage_kurz": [
+      "Rund 1300 Spitalangestellte: Obligationenrecht und GAV statt kantonales Personalrecht",
+      "Gesetz schreibt dem GAV Mindestinhalte vor: Lohnsystem, Teuerung untere Lohnbänder, Kündigungsschutz",
+      "Lohnbesitzstand mindestens drei Jahre, Lohnbänder 1 und 2 unbefristet",
+      "Kantonsrat 43 : 0 bei 12 Enthaltungen, darum obligatorisch vors Volk"
+    ],
+    "bei_ja_kurz": "GAV nach Obligationenrecht mit gesetzlichen Mindestinhalten. Lohnsumme des Kantonsrats und Genehmigung durch den Regierungsrat entfallen.",
+    "bei_nein_kurz": "Es bleibt beim kantonalen Personalrecht mit der Lohnsumme des Kantonsrats.",
+    "kantonsrat": [
+      {
+        "nr": 4,
+        "kurz": "Schlussabstimmung: Änderung des Spitalgesetzes"
+      }
+    ]
+  }
 }

@@ -95,6 +95,9 @@ Auf der obersten Ebene der Datei:
 | `vorlage.ja_titel`, `nein_titel` | Überschriften der beiden Folgenkästen, Voreinstellung «Bei einem Ja» und «Bei einem Nein» |
 | `vorlage.doppelvorlage`, `doppelvorlage_titel`, `rechtsrahmen`, `kontext` | Kontextabsätze im Kopf, alle optional; `kontext` ist eine Liste von `{titel, text}` |
 | `vorlage.kantonsrat_suche`, `kantonsrat_hinweis` | Suchwort für die Ratsdaten und ein optionaler Satz dazu |
+| `vorlage.kantonsrat_alle` | `true`: Ratsblock mit allen Sitzungen zum Geschäft (etwa erste und zweite Lesung), älteste zuerst. Ohne das Feld nur die jüngste Sitzung |
+| `vorlage.rat` | Ratsabstimmungen ausserhalb des Kantonsratsspiegels, etwa des Grossen Stadtrats, von Hand aus dem Protokoll: `{name, satz, sitzungen: [{sitzung, protokoll, protokoll_art, abstimmungen: [{nr, titel, details, ja, nein, enth, abw, fraktionen}]}]}`. Greift nur, wenn `kantonsrat_suche` nichts findet. Der Block heisst dann «Wie der Grosse Stadtrat dazu gestimmt hat», ohne Verweis in den Kantonsratsspiegel |
+| `vorlage.ebene` | `Kanton Schaffhausen` oder `Stadt Schaffhausen`. Die Übersicht zeigt die Ebene als Marke und führt alle Vorlagen des nächsten Abstimmungstags unter «Aktuell», Kanton zuerst |
 | `argumente`, `textkritik`, `karte` | Dürfen leer sein. Ohne Aussagen zeigt die Seite einen Platzhalter, ohne `karte.gemeinden` keine Karte |
 | `status` | `entwurf` oder `veroeffentlicht`. Ein Entwurf erscheint in der Übersicht mit dem Vermerk «noch nicht veröffentlichungsreif». Fehlt das Feld, gilt Entwurf |
 | `vorlage.abstimmung` | Abstimmungstermin, `JJJJ-MM-TT`. Daran entscheidet die Übersicht, ob die Abstimmung kommend oder vergangen ist; mit eingetragenem `ergebnis` gilt sie schon am Abstimmungstag als vergangen |

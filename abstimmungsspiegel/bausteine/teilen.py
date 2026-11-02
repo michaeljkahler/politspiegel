@@ -471,14 +471,14 @@ JS = r"""
     if (so.kantonsrat && so.kantonsrat.length){
       /* Social-Fassung: nur die entscheidenden Antraege, mit Kurztitel,
          grosse Balken mit Zahlen im Balken. */
-      y = titel(x, p, 'Wie der Kantonsrat gestimmt hat', y + 24, 46);
+      y = titel(x, p, 'Wie der ' + (kr.rat || 'Kantonsrat') + ' gestimmt hat', y + 24, 46);
       x.fillStyle = p.leise; x.font = SANS(26, 400);
       var sd = (kr.sitzung.match(/\d{2}\.\d{2}\.\d{4}/) || [kr.sitzung])[0];
-      y = text(x, 'Namentliche Abstimmungen vom ' + sd + ', gezählt aus dem Wortprotokoll.', M, y, INNEN, 36) + 30;
+      y = text(x, (kr.manuell ? 'Abstimmungen vom ' + sd + ', gemäss Protokoll.' : 'Namentliche Abstimmungen vom ' + sd + ', gezählt aus dem Wortprotokoll.'), M, y, INNEN, 36) + 30;
       so.kantonsrat.forEach(function(w, i){
         var v = null; kr.abstimmungen.forEach(function(a){ if (a.nr === w.nr) v = a; });
         if (!v) return;
-        x.fillStyle = p.leise; x.font = ARCH(20, 600); x.fillText(('Antrag ' + v.nr).toUpperCase(), M, y);
+        x.fillStyle = p.leise; x.font = ARCH(20, 600); x.fillText(('Abstimmung ' + v.nr).toUpperCase(), M, y);
         y += 14;
         x.fillStyle = p.ink; x.font = ARCH(34, 600);
         y = text(x, w.kurz, M, y + 30, INNEN, 42) + 10;
@@ -491,18 +491,19 @@ JS = r"""
         x.textAlign = 'left'; x.textBaseline = 'alphabetic';
         y += bh + 40;
         x.fillStyle = p.leise; x.font = SANS(22, 400);
-        var fr = v.fraktionen.map(function(f){ return f.name.replace(/-JUSO-GRÜNE-Junge Grüne/, '-JUSO-Grüne') + ' ' + f.ja + ':' + f.nein; }).join('   ');
+        var fr = (v.fraktionen || []).map(function(f){ return f.name.replace(/-JUSO-GRÜNE-Junge Grüne/, '-JUSO-Grüne') + ' ' + f.ja + ':' + f.nein; }).join('   ');
         y = text(x, fr + (v.enth ? '   ' + v.enth + ' Enth.' : ''), M, y, INNEN, 30) + (i < so.kantonsrat.length - 1 ? 44 : 10);
       });
       x.fillStyle = p.leise; x.font = SANS(20, 400);
       pruefe(y + 6);
-      x.fillText('Balken: Ja dunkel, Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 16);
+      x.fillText(kr.manuell ? 'Balken: Ja dunkel, Nein hell.' : 'Balken: Ja dunkel, Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 16);
       return;
     }
-    y = titel(x, p, 'Wie der Kantonsrat gestimmt hat', y + 24, 40);
+    y = titel(x, p, 'Wie der ' + (kr.rat || 'Kantonsrat') + ' gestimmt hat', y + 24, 40);
     x.fillStyle = p.leise; x.font = SANS(21, 400);
-    y = text(x, 'Dieselbe Vorlage im Rat: namentliche Abstimmungen am ' + kr.sitzung +
-             ', gezählt aus dem Wortprotokoll.', M, y, INNEN, 30, 2) + 14;
+    y = text(x, (kr.manuell ? 'Dieselbe Vorlage im Rat: Abstimmungen am ' + kr.sitzung + ', gemäss Protokoll.'
+                            : 'Dieselbe Vorlage im Rat: namentliche Abstimmungen am ' + kr.sitzung +
+             ', gezählt aus dem Wortprotokoll.'), M, y, INNEN, 30, 2) + 14;
     /* Die Zeilen fliessen; passt die Folge nicht bis zur Fusslinie, setzt
        zeichne() das Motiv kleiner. Ein festes Budget je Zeile hatte zuvor
        zweizeilige Antraege in die naechste Zeile laufen lassen. */
@@ -522,12 +523,12 @@ JS = r"""
       x.fillStyle = p.ink; rundrect(x, M, y, bw * v.ja / s, 18, 4); x.fill();
       y += 34;
       x.fillStyle = p.leise; x.font = SANS(16, 400);
-      var fr = v.fraktionen.map(function(f){ return f.name + ' ' + f.ja + ':' + f.nein; }).join('  ·  ');
+      var fr = (v.fraktionen || []).map(function(f){ return f.name + ' ' + f.ja + ':' + f.nein; }).join('  ·  ');
       y = text(x, fr + (v.enth ? '  ·  ' + v.enth + ' Enth.' : ''), M, y, INNEN, 22) + luft;
     });
     x.fillStyle = p.leise; x.font = SANS(15, 400);
     pruefe(y + 6);
-    x.fillText('Balken: Anteil Ja dunkel, Anteil Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 14);
+    x.fillText(kr.manuell ? 'Balken: Anteil Ja dunkel, Anteil Nein hell.' : 'Balken: Anteil Ja dunkel, Anteil Nein hell. Je Fraktion Ja:Nein.', M, FUSS - 14);
   }
 
   /* ---- Karussell ------------------------------------------------------- */
@@ -699,7 +700,7 @@ JS = r"""
   var nPaare = Math.min(D.argumente.filter(function(a){ return a.seite === 'pro'; }).length,
                         D.argumente.filter(function(a){ return a.seite === 'contra'; }).length);
   for (var i = 0; i < nPaare; i++) MOTIVE.push({ k: 'paar:' + i, g: 'Aussagenpaare', l: 'Aussagenpaar ' + (i+1) });
-  if (D.kantonsrat && D.kantonsrat.abstimmungen.length) MOTIVE.push({ k: 'kantonsrat', g: 'Kantonsrat', l: 'Wie der Kantonsrat gestimmt hat' });
+  if (D.kantonsrat && D.kantonsrat.abstimmungen.length) MOTIVE.push({ k: 'kantonsrat', g: (D.kantonsrat.rat || 'Kantonsrat'), l: 'Wie der ' + (D.kantonsrat.rat || 'Kantonsrat') + ' gestimmt hat' });
   D.argumente.forEach(function(a, i){
     var nr = D.argumente.filter(function(b){ return b.seite === a.seite; }).indexOf(a) + 1;
     MOTIVE.push({ k: 'karussell:' + a.id, g: 'Karussell ' + D.seiten[a.seite].komitee, l: nr + '. ' + kurz(a.aussage, 60), arg: a });

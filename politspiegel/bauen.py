@@ -195,6 +195,8 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;letter-spac
 .k-gruppe li a:hover{background:var(--flaeche)}
 .k-gruppe time{color:var(--text-leise);font-variant-numeric:tabular-nums;font-size:13px;padding-top:1px}
 .k-entwurf{font-size:12px;font-weight:400;color:var(--text-leise);font-style:italic;font-family:"Public Sans",sans-serif}
+.k-ebene{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-leise);
+  border:1px solid var(--linie);border-radius:999px;padding:0 7px;margin-left:4px;vertical-align:2px;font-family:"Public Sans",sans-serif}
 .k-gruppe .k-leer{font-size:13.5px;color:var(--text-leise);padding:4px 6px}
 
 .zurueck{display:inline-flex;align-items:center;gap:6px;font-family:Archivo,sans-serif;font-size:13px;font-weight:600;
@@ -341,14 +343,24 @@ def abstimmungen_lesen(ausblenden: set[str]) -> list[dict]:
             "datum": datum,
             "titel": v.get("titel") or slug,
             "untertitel": v.get("untertitel") or "",
+            "ebene": v.get("ebene") or "Kanton Schaffhausen",
             "status": d.get("status") or "entwurf",
             "aussagen": sum(1 for a in args if a.get("fundstelle")),
             "stellen": len(stellen),
             "ergebnis": d.get("ergebnis"),
             "gebaut": (SITE / "abstimmung" / slug / "index.html").is_file(),
         })
+    # Am selben Tag zuerst der Kanton, dann die Gemeinden, je nach Slug;
+    # die zweite Sortierung nach Datum ist stabil und behaelt diese Folge.
+    zeilen.sort(key=lambda z: (not z["ebene"].startswith("Kanton"), z["slug"]))
     zeilen.sort(key=lambda z: z["datum"], reverse=True)
     return zeilen
+
+
+def ebene_kurz(z) -> str:
+    """«Kanton» oder «Stadt Schaffhausen» als kurze Marke hinter dem Titel."""
+    eb = z.get("ebene") or ""
+    return "Kanton" if eb.startswith("Kanton") else eb
 
 
 # ---------------------------------------------------------------- Bausteine
@@ -373,18 +385,23 @@ def kasten(k) -> str:
 
 
 def gruppen(zeilen, heute):
-    """Aktuell (die naechste), kommend (die weiteren), vergangen; nur gebaute."""
+    """Aktuell (alle Vorlagen des naechsten Abstimmungstags), kommend (spaetere
+    Tage), vergangen; nur gebaute. Kanton und Gemeinden stimmen oft am selben
+    Sonntag ab; darum zaehlt der Tag, nicht die einzelne Vorlage."""
     g = [z for z in zeilen if z["gebaut"]]
+    # sorted ist stabil: innerhalb eines Tages bleibt die Reihenfolge aus
+    # abstimmungen_lesen (Kanton vor Gemeinde).
     kommend = sorted([z for z in g if not vorbei(z, heute)], key=lambda z: z["datum"])
     vergangen = sorted([z for z in g if vorbei(z, heute)], key=lambda z: z["datum"], reverse=True)
-    aktuell = kommend[:1]
-    return aktuell, kommend[1:], vergangen
+    naechster = kommend[0]["datum"] if kommend else None
+    aktuell = [z for z in kommend if z["datum"] == naechster]
+    return aktuell, [z for z in kommend if z["datum"] != naechster], vergangen
 
 
 def eintrag(z) -> str:
     entwurf = ' <span class="k-entwurf">Entwurf</span>' if z["status"] != "veroeffentlicht" else ""
     return (f'<li><a href="{e(z["pfad"])}"><time datetime="{e(z["datum"])}">{e(datum_kurz(z["datum"]))}</time>'
-            f'<span>{e(z["titel"])}{entwurf}</span></a></li>')
+            f'<span>{e(z["titel"])} <span class="k-ebene">{e(ebene_kurz(z))}</span>{entwurf}</span></a></li>')
 
 
 def gruppe(titel, zs, leer) -> str:
@@ -401,20 +418,29 @@ def abstimmungskasten(zeilen, heute) -> str:
     gesamt = len(aktuell) + len(kommend) + len(vergangen)
     if aktuell:
         z = aktuell[0]
-        satz = (f"Nächste Abstimmung am {datum_lang(z['datum'])}: {z['titel']}. "
-                "Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.")
-        zahlen = ([{"wert": str(z["aussagen"]), "einheit": "Aussagen geprüft"}] if z["aussagen"] else []) + [
+        if len(aktuell) == 1:
+            satz = (f"Nächste Abstimmung am {datum_lang(z['datum'])}: {z['titel']}. "
+                    "Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.")
+        else:
+            nach_ebene = {}
+            for a in aktuell:
+                nach_ebene.setdefault(a["ebene"], []).append(a["titel"])
+            was = "; ".join(f"{eb}: " + ", ".join(ts) for eb, ts in nach_ebene.items())
+            satz = (f"Nächste Abstimmung am {datum_lang(z['datum'])}, {len(aktuell)} Vorlagen. {was}.")
+        n_aussagen = sum(a["aussagen"] for a in aktuell)
+        zahlen = ([{"wert": str(n_aussagen), "einheit": "Aussagen geprüft"}] if n_aussagen else []) + [
                   {"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
     else:
-        satz = "Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs."
+        satz = "Zu jeder Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs."
         zahlen = [{"wert": str(gesamt), "einheit": "Abstimmungen" if gesamt != 1 else "Abstimmung"}]
     zahlen_html = "".join(f'<span class="k-zahl">{e(x["wert"])}<em>{e(x["einheit"])}</em></span>' for x in zahlen)
     # Das Ergebnis der letzten Abstimmung, sobald es eingetragen ist
     zuletzt = ""
-    if vergangen and vergangen[0]["ergebnis"]:
-        z0 = vergangen[0]
-        zuletzt = (f'<p class="k-zuletzt">Zuletzt am {e(datum_kurz(z0["datum"]))}: '
-                   f'<a href="{e(z0["pfad"])}">{e(z0["titel"])}</a>. {ergebnis_text(z0["ergebnis"])}</p>')
+    tag = [z for z in vergangen if z["datum"] == vergangen[0]["datum"] and z["ergebnis"]] if vergangen else []
+    if tag:
+        zuletzt = (f'<p class="k-zuletzt">Zuletzt am {e(datum_kurz(tag[0]["datum"]))}: '
+                   + " ".join(f'<a href="{e(z0["pfad"])}">{e(z0["titel"])}</a>. {ergebnis_text(z0["ergebnis"])}'
+                              for z0 in tag) + '</p>')
     wahl = (gruppe("Aktuell", aktuell, "keine Abstimmung angekündigt")
             + gruppe("Kommend", kommend, "keine weiteren angekündigt")
             + gruppe("Vergangen", vergangen, "noch keine"))
@@ -587,7 +613,7 @@ def listenseite(zeilen) -> str:
         li = "".join(f"""
     <li><a href="{e(z['pfad'].split('/', 1)[1])}">
       <time datetime="{e(z['datum'])}">{e(datum_kurz(z['datum']))}</time>
-      <span><h3>{e(z['titel'])}{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
+      <span><h3>{e(z['titel'])} <span class="k-ebene">{e(ebene_kurz(z))}</span>{' <span class="k-entwurf">Entwurf</span>' if z['status'] != 'veroeffentlicht' else ''}</h3>
       <p class="erg">{(e(z['untertitel']) + ' · ' if z['untertitel'] else '') + (ergebnis_text(z['ergebnis']) if vorbei(z, heute) else str(z['aussagen']) + ' Aussagen geprüft')}</p></span>
     </a></li>""" for z in zs)
         return f'<section class="abschnitt"><h2>{e(titel)}</h2><ul class="liste">{li}\n  </ul></section>'
@@ -598,7 +624,7 @@ def listenseite(zeilen) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abstimmungsspiegel · alle Abstimmungen</title>
-<meta name="description" content="Abstimmungsspiegel Schaffhausen: zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
+<meta name="description" content="Abstimmungsspiegel Schaffhausen: zu jeder kantonalen und städtischen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -616,9 +642,9 @@ def listenseite(zeilen) -> str:
 
 <header class="kopf">
   <a class="zurueck" href="../">&larr; Politspiegel Schaffhausen</a>
-  <p class="marke">Kanton Schaffhausen</p>
+  <p class="marke">Kanton und Stadt Schaffhausen</p>
   <h1>Abstimmungsspiegel</h1>
-  <p class="lead">Zu jeder kantonalen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.
+  <p class="lead">Zu jeder kantonalen und städtischen Vorlage die Argumente beider Seiten mit Fundstelle und Prüfung des Belegs.
   Bewertet wird der Beleg, nicht das Argument.</p>
 </header>
 

@@ -1,6 +1,7 @@
 # Abstimmungsspiegel
 
-Aufbereitung der Argumente zu kantonalen Abstimmungen im Kanton Schaffhausen.
+Aufbereitung der Argumente zu kantonalen Abstimmungen im Kanton Schaffhausen und,
+seit dem 29. November 2026, zu städtischen Abstimmungen der Stadt Schaffhausen.
 Zu jeder Aussage beider Seiten stehen Wortlaut, Fundstelle und eine Prüfung des
 Belegs. Bewertet wird nie das Argument, sondern sein Beleg.
 
@@ -29,4 +30,4 @@ Dach über beiden ist der Politspiegel.
 | Termin | Vorlage | Ordner | Stand |
 |---|---|---|---|
 | 27.09.2026 | Verkehrsflussinitiative, mit Gegenvorschlag | [`abstimmungen/2026-09-27-verkehrsfluss/`](abstimmungen/2026-09-27-verkehrsfluss/) | veröffentlicht am 03.09.2026, Rückmeldungen offen |
-| 29.11.2026 | Änderung des Spitalgesetzes (Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen») | [`abstimmungen/2026-11-29-spitalgesetz/`](abstimmungen/2026-11-29-spitalgesetz/) | Rohling, Argumentarien ausstehend |
+| 29.11.2026 | Änderung des Spitalgesetzes (Motion «Mehr Flexibilität in der Lohnpolitik für die Spitäler Schaffhausen») | [`abstimmungen/2026-11-29-spitalgesetz/`](abstimmungen/2026-11-29-spitalgesetz/) | Entwurf vom 02.11.2026, je fünf Aussagen |
