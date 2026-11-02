@@ -36,7 +36,7 @@
       },
       {
         "titel": "Wer was empfiehlt.",
-        "text": "Ja: Stadtrat; Grosser Stadtrat mit 35 : 0 Stimmen; GPK 6 : 0; SP Stadt, FDP Stadt, GLP, Die Mitte und EDU. Eine Nein-Parole, ein Komitee oder ein Referendum gibt es nicht. Ohne publizierte Parole bis zum 2. November 2026: SVP, EVP und Grüne."
+        "text": "Ja: Stadtrat; Grosser Stadtrat mit 35 : 0 Stimmen; GPK 6 : 0; SP Stadt, FDP Stadt, GLP, Die Mitte, EVP und EDU. Eine Nein-Parole, ein Komitee oder ein Referendum gibt es nicht. Ohne publizierte Parole bis zum 2. November 2026: SVP und Grüne."
       },
       {
         "titel": "Eine Seite ohne Gegner.",
@@ -172,6 +172,11 @@
       {
         "titel": "Die Mitte Schaffhausen: Ja zur Arealentwicklung Güterbahnhof",
         "url": "https://sh.die-mitte.ch/parolen/ja-zur-arealentwicklung-gueterbahnhof/",
+        "art": "partei"
+      },
+      {
+        "titel": "EVP Schaffhausen: Abstimmungsparolen",
+        "url": "https://evp-sh.ch/abstimmungsparolen",
         "art": "partei"
       },
       {

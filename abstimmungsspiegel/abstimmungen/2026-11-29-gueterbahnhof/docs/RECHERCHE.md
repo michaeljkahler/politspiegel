@@ -189,8 +189,8 @@ Komitees: keine Referendums-, Abstimmungs- oder Nein-Komitees gefunden. Kein Ref
 4. FDP Kanton Schaffhausen: keine Parole zur städtischen Vorlage (Parteiversammlung 23.10.2026 nur eidgenössische und kantonale Vorlagen). https://www.fdp-sh.ch/wahlen-abstimmungen
 5. EDU Schaffhausen: Ja. Tabelle «Städtische Vorlagen», «Arealentwicklung Güterbahnhof», Empfehlung «Ja»; kein Datum, keine Begründung. https://www.edu-sh.ch/abstimmungen/
 6. SVP Kanton Schaffhausen: keine Parole zur städtischen Vorlage gefunden. Delegiertenversammlung Oberhallau, Medienmitteilung 19.10.2026, nur fünf eidgenössische und kantonale Vorlagen. https://svp-sh.ch/medienmitteilungen/klare-entscheide-an-der-svp-delegiertenversammlung/ Seite der Kreispartei Schaffhausen ohne Parolen: https://svp-sh.ch/kreispartei-schaffhausen/
-7. SP (Stadt/Kanton Schaffhausen): keine Parole gefunden. Unter sp-schaffhausen.ch (Link der SP Schweiz) erscheint ein themenfremdes Angebot; sp-sh.ch nicht erreichbar.
-8. EVP Schaffhausen: keine Parole gefunden. Seite https://evp-sh.ch/abstimmungsparolen enthält die Überschrift «Parolen zur Volksabstimmung vom 29.11.2026» ohne Inhalt (Stand 2.11.2026).
+7. SP Stadt Schaffhausen: Ja. Startseite stadt.spsh.ch, Rubrik «Kommunale Abstimmung»: «JA zur Arealentwicklung Güterbahnhof» (abgerufen 2.11.2026); Parolenseite selbst wegen Bot-Schutz nicht gelesen, keine Begründung bekannt. https://stadt.spsh.ch/parole/ja-zur-arealentwicklung-gueterbahnhof/
+8. EVP Schaffhausen: Ja. Seite https://evp-sh.ch/abstimmungsparolen, Rubrik «Parolen zur Volksabstimmung vom 29.11.2026», Grafik «Arealentwicklung Güterbahnhof JA», «Städtische Abstimmungen»; kein Datum, keine Begründung. Grafik: https://images.squarespace-cdn.com/content/v1/65e99f4f3100e44d6dd9e1f9/b415a7c0-9e91-455e-843d-5c63ff4925f9/Arealentwicklung+G%C3%BCterbahnhof_2.png (Nachtrag 2.11.2026; eine frühere Abfrage zeigte die Überschrift ohne Inhalt)
 9. Grüne Schaffhausen: keine Parole gefunden. «Parolen Stadt Schaffhausen» zeigt zuletzt den 8. März 2026. https://gruene-sh.ch/aktuell/parolen/parolen-stadt-schaffhausen/
 10. AL Schaffhausen: Partei aufgelöst; Beitrag «Die AL macht Schluss» vom 2. März 2022. https://al-sh.ch/
 11. JUSO Schaffhausen: keine Parole gefunden; Liste endet mit 28. September 2025. https://sh.juso.ch/die-juso/parolen/
@@ -329,8 +329,8 @@ Zahl der Argumentkandidaten: Ja 8 (plus 4 seltene); Nein 0 von Nein-Trägern, 8 
 1. Wortlaut der Abstimmungsfrage auf dem Stimmzettel: nicht online gefunden ([UG] nennt nur «Arealentwicklung Güterbahnhof»).
 2. Erklärvideo der Stadt: auf [UG] als «Erklärvideo» erwähnt, kein Link im HTML gefunden.
 3. Nicht öffentlich bzw. nicht gefunden: Machbarkeitsstudie (Atelier Corso 2025), Rahmenvereinbarung SBB/Stadt, Planungsvereinbarung, AGS-Kostenverifikation und AGS-Schätzung «über 200 Mio. Franken», Standortevaluation der SBB.
-4. Parolen ohne Fundstelle: SVP (Stadt), SP, EVP (Überschrift ohne Inhalt), Grüne, JUSO, JSVP (Website Fehler 500), Jungfreisinnige, Junge Grüne, Junge GLP. AL ist aufgelöst.
-5. Parolen ohne Begründung oder Datum: FDP Stadt (kein Beschlussdatum), EDU (kein Datum), Die Mitte (nur Einzeiler).
+4. Parolen ohne Fundstelle: SVP (Stadt), Grüne, JUSO, JSVP (Website Fehler 500), Jungfreisinnige, Junge Grüne, Junge GLP. AL ist aufgelöst.
+5. Parolen ohne Begründung oder Datum: FDP Stadt (kein Beschlussdatum), EDU (kein Datum), EVP (nur Grafik), SP Stadt (nur Titel gelesen), Die Mitte (nur Einzeiler).
 6. Schaffhauser Nachrichten 19.08.2026: Artikeltext hinter Paywall, nur Titel und Lead gelesen. Schaffhauser AZ, Radio Munot, Bock: keine Artikel zur Vorlage 2026 gefunden (Suche AZ ohne Treffer).
 7. Leserbriefe von Parteien oder Komitees: keine gefunden.
 8. Medienmitteilung der SBB vom März 2026: verlinkt in [MM-18.03.] auf eine Übersichtsseite, Einzelmitteilung nicht geöffnet. Investitionssumme SBB (70 bis 90 Mio. Fr.) nur aus Schaffhausen24.

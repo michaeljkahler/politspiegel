@@ -482,8 +482,10 @@ def uebersicht(args, achsen) -> str:
         "«x von y» und nicht ein Prozentwert.",
         f'<div class="ue-liste">{"".join(zeilen)}</div>'
         f'<p class="ue-summe">Zusammengezählt: {e(SEITE_KOMITEE["pro"])} <b>{ep} von {mp}</b> Punkten, '
-        f'{e(SEITE_KOMITEE["contra"])} <b>{ec} von {mc}</b>. Die Werturteile sind in beiden Zahlen nicht '
-        f'enthalten.</p>')
+        f'{e(SEITE_KOMITEE["contra"])} <b>{ec} von {mc}</b>.'
+        + (' Die Werturteile sind in beiden Zahlen nicht enthalten.'
+           if any(a.get("typ") == "wertung" for a in args) else '')
+        + '</p>')
 
 
 def textkritik_block(tk) -> str:

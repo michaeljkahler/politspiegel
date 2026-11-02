@@ -10,6 +10,6 @@
 
 ## Offen
 
-1. Parolen von SVP, FDP, Grünen; Begründung der Nein-Stimme.
+1. Parolen von SVP und Grünen; Begründung der Nein-Stimme. FDP Stadt (Ja) am 2. November 2026 nachgetragen; AL ist aufgelöst.
 2. Status «veroeffentlicht» erst nach Durchsicht durch den Herausgeber.
 3. Ergebnis nach dem 29. November von Hand nachtragen; scripts/ergebnis.py liest nur kantonale Vorlagen.

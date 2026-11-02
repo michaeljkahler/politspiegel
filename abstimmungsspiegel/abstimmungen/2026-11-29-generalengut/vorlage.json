@@ -36,7 +36,7 @@
       },
       {
         "titel": "Wer was empfiehlt.",
-        "text": "Ja: Stadtrat; Grosser Stadtrat mit 30 : 1 Stimmen bei 1 Enthaltung; SP Stadt, GLP, Die Mitte, EVP und EDU. Eine Nein-Parole oder ein Komitee gibt es nicht. Ohne publizierte Parole bis zum 2. November 2026: SVP, FDP, Grüne und AL."
+        "text": "Ja: Stadtrat; Grosser Stadtrat mit 30 : 1 Stimmen bei 1 Enthaltung; SP Stadt, FDP Stadt, GLP, Die Mitte, EVP und EDU. Eine Nein-Parole oder ein Komitee gibt es nicht. Ohne publizierte Parole bis zum 2. November 2026: SVP und Grüne."
       },
       {
         "titel": "Eine Seite ohne Gegner.",
@@ -279,6 +279,11 @@
       {
         "titel": "SP Stadt Schaffhausen: Ja zum Kinder- und Jugendheim Generalengut",
         "url": "https://stadt.spsh.ch/parole/ja-zum-kinder-und-jugendheim-generalengut/",
+        "art": "partei"
+      },
+      {
+        "titel": "FDP Stadt Schaffhausen: Abstimmungsparolen",
+        "url": "https://www.fdp-schaffhausen.ch/wahlen-abstimmungen/abstimmungsparolen",
         "art": "partei"
       },
       {

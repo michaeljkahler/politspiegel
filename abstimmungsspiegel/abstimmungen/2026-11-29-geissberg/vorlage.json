@@ -1,0 +1,881 @@
+{
+  "schema_version": "0.5",
+  "stand": "2026-11-02",
+  "status": "entwurf",
+  "hinweis_quellen": "Argumente aus dem Abstimmungsmagazin der Stadt, aus dem Protokoll des Grossen Stadtrats vom 18. August 2026 und aus einer Medienmitteilung der FDP Stadt Schaffhausen, je fünf pro Seite.",
+  "lesehilfe": "Beide Seiten anerkennen den Bedarf an vier Kindergärten. Umstritten sind die Kosten und der Umfang von Krippe und Hort. Ein guter Beleg macht eine Aussage nicht richtig, und eine unbelegte Aussage nicht falsch.",
+  "vorlage": {
+    "id": "stadt-sh-kinderzentrum-geissberg-2026",
+    "titel": "Neubau Kinderzentrum Geissberg",
+    "untertitel": "Drei Kindergärten, Kinderkrippe und Hort in einem Neubau an der Finsterwaldstrasse/Weinsteig",
+    "ebene": "Stadt Schaffhausen",
+    "abstimmung": "2026-11-29",
+    "seiten": {
+      "pro": {
+        "name": "Für die Vorlage",
+        "komitee": "Befürworter",
+        "empfehlung": "Ja"
+      },
+      "contra": {
+        "name": "Gegen die Vorlage",
+        "komitee": "Gegner",
+        "empfehlung": "Nein"
+      }
+    },
+    "worum_geht_es": "Die Stadt will auf dem Geissberg ein Kinderzentrum bauen: In einem zweigeschossigen Holzbau entstehen drei Kindergärten, eine Kinderkrippe und ein Hort; der vierte Kindergarten bleibt im Altbau von 1910. Der Pavillonkindergarten von 1992 wird abgebrochen. Die Krippe ersetzt die städtische Krippe am Ringkengässchen in der Altstadt mit 40 Plätzen. Abgestimmt wird über einen Verpflichtungskredit von 15,73 Mio. Franken und über die Umwidmung eines Teilgrundstücks im Wert von 2,222 Mio. Franken vom Finanz- ins Verwaltungsvermögen.",
+    "bei_ja": "1. Verpflichtungskredit 15,73 Mio. Franken brutto, Kostengenauigkeit ±15 %, Preisstand 1. April 2025; mit den bereits bewilligten Planungskosten 16,325 Mio. Franken.\n2. Das Teilgrundstück GB 2131 geht ins Verwaltungsvermögen über, ein buchhalterischer Vorgang ohne Zahlung.\n3. Baustart frühestens Anfang 2028, Betrieb ab Ende 2029. Das Kindergartenprovisorium im Schulhaus Steingut und die Krippe am Ringkengässchen bleiben bis dahin.\n4. Abschreibung über 25 Jahre: rund 397 000 Franken jährlich, nach Abzug des erwarteten Kantonsbeitrags von 2,63 Mio. und der Vorfinanzierung von 6 Mio. Franken. Die Betriebskosten werden über das Budget beantragt.\n5. Die Liegenschaft Ringkengässchen 5 kann danach im Baurecht abgegeben werden, wie der Grosse Stadtrat am 5. Mai 2026 beschlossen hat.",
+    "bei_nein": "1. Kredit und Umwidmung sind nicht bewilligt.\n2. Die Baurechtsabgabe Ringkengässchen 5 steht unter dem Vorbehalt eines rechtsgültigen Beschlusses zum Kinderzentrum und kann nicht vollzogen werden.\n3. Was mit Kindergärten, Krippe, Vorfinanzierung und Planung geschieht, beschreiben die Unterlagen nicht. Der Stadtrat schreibt: «Wenn das notwendige Angebot für Kindergärten und -betreuung an einem anderen Ort realisiert werden müsste, würden zusätzliche Kosten entstehen für die Planung und für die Sicherstellung des Betriebs in den heute sanierungsbedürftigen Gebäuden.»",
+    "ja_titel": "Bei einem Ja",
+    "nein_titel": "Bei einem Nein",
+    "doppelvorlage": "",
+    "rechtsrahmen": "",
+    "kontext": [
+      {
+        "titel": "Warum es zur Abstimmung kommt.",
+        "text": "Nach Art. 10 lit. d der Stadtverfassung entscheiden die Stimmberechtigten obligatorisch über neue einmalige Ausgaben von mehr als 2 Mio. Franken. Kredit und Umwidmung werden gemeinsam unterstellt. Weil der Kantonsbeitrag nicht verbindlich zugesichert ist, gilt der Bruttokredit."
+      },
+      {
+        "titel": "Wer was empfiehlt.",
+        "text": "Ja: Stadtrat; Grosser Stadtrat mit 19 : 14 Stimmen bei 2 Enthaltungen; SP Stadt, GLP, Die Mitte und EVP. Nein: FDP Stadt und EDU. Die SVP/EDU-Fraktion kündigte im Grossen Stadtrat an, die Vorlage «an der Urne zu bekämpfen»; eine Parole der SVP ist bis zum 2. November 2026 nicht publiziert, ebenso keine der Grünen. Ein Komitee gibt es nicht. Das Abstimmungsmagazin führt im Teil in Leichter Sprache die Mitte unter den Gegnern (S. 18); die Kantonalpartei beschloss Ja."
+      },
+      {
+        "titel": "Wie der Kredit zustande kam.",
+        "text": "Der Stadtrat beantragte 15,665 Mio. Franken, die Baufachkommission 15,5 Mio. Franken. Im Rat standen drei Beträge zur Wahl: 15,665 Mio. (Nicole Hinder, SP) erhielt 6 Stimmen, 12 Mio. (Stephan Schlatter, FDP) 16 und 15,73 Mio. (Matthias Frick, SP) 13. Danach setzte sich Frick gegen Schlatter mit 19 : 16 und gegen die Kommission mit 18 : 14 bei 3 Enthaltungen durch. Die 65 000 Franken über dem Antrag des Stadtrats begründete Frick mit automatischen Fenstern zur Nachtauskühlung, die in der zweiten Sparrunde gestrichen worden waren."
+      }
+    ],
+    "kantonsrat_suche": "",
+    "rat": {
+      "name": "Grosse Stadtrat",
+      "satz": "Dieselbe Vorlage im Grossen Stadtrat der Stadt Schaffhausen, Sitzung vom 18. August 2026, ausgezählt aus der namentlichen Abstimmungsliste. 36 Mitglieder.",
+      "sitzungen": [
+        {
+          "sitzung": "12./13. Sitzung · 18.08.2026",
+          "protokoll": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "protokoll_art": "Ratsprotokoll",
+          "abstimmungen": [
+            {
+              "nr": 3,
+              "titel": "Rückweisung an die Baufachkommission",
+              "details": "Antrag Lukas Ottiger (GLP): aufzeigen, was eine Neuplanung mit demselben Angebot an Kosten und Aufwand bedeuten würde. Er hatte sich vorher mit 18 : 16 gegen den Rückweisungsantrag der SVP/EDU-Fraktion durchgesetzt. Ja bedeutet Rückweisung.",
+              "ja": 16,
+              "nein": 18,
+              "enth": 0,
+              "abw": 2,
+              "fraktionen": [
+                {
+                  "name": "SVP",
+                  "ja": 7,
+                  "nein": 1
+                },
+                {
+                  "name": "EDU",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "FDP",
+                  "ja": 3,
+                  "nein": 2
+                },
+                {
+                  "name": "Die Mitte",
+                  "ja": 0,
+                  "nein": 0
+                },
+                {
+                  "name": "GLP",
+                  "ja": 3,
+                  "nein": 1
+                },
+                {
+                  "name": "EVP",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "Grüne",
+                  "ja": 0,
+                  "nein": 3
+                },
+                {
+                  "name": "SP",
+                  "ja": 0,
+                  "nein": 10
+                },
+                {
+                  "name": "JUSO",
+                  "ja": 0,
+                  "nein": 1
+                },
+                {
+                  "name": "PUSH",
+                  "ja": 1,
+                  "nein": 0
+                }
+              ]
+            },
+            {
+              "nr": 6,
+              "titel": "Schlussabstimmung",
+              "details": "Verpflichtungskredit von 15,73 Mio. Franken und Umwidmung des Teilgrundstücks von 2,222 Mio. Franken, gemeinsam dem obligatorischen Referendum unterstellt. Enthaltungen: Jeronim Perovic (FDP), Sandra Schöpfer (EDU).",
+              "ja": 19,
+              "nein": 14,
+              "enth": 2,
+              "abw": 1,
+              "fraktionen": [
+                {
+                  "name": "SVP",
+                  "ja": 0,
+                  "nein": 8
+                },
+                {
+                  "name": "EDU",
+                  "ja": 0,
+                  "nein": 0
+                },
+                {
+                  "name": "FDP",
+                  "ja": 0,
+                  "nein": 5
+                },
+                {
+                  "name": "Die Mitte",
+                  "ja": 0,
+                  "nein": 0
+                },
+                {
+                  "name": "GLP",
+                  "ja": 4,
+                  "nein": 0
+                },
+                {
+                  "name": "EVP",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "Grüne",
+                  "ja": 3,
+                  "nein": 0
+                },
+                {
+                  "name": "SP",
+                  "ja": 10,
+                  "nein": 0
+                },
+                {
+                  "name": "JUSO",
+                  "ja": 1,
+                  "nein": 0
+                },
+                {
+                  "name": "PUSH",
+                  "ja": 0,
+                  "nein": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quellen": [
+      {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen zur Volksabstimmung vom 29. November 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Vorlage des Stadtrats vom 20. Januar 2026: Neubau Kinderzentrum Geissberg",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, mit Beilagen",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Beschlussprotokoll des Grossen Stadtrats vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7166782/12_RatBeschlussprotokoll_18082026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Abstimmungsresultate des Grossen Stadtrats vom 18. August 2026",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7167244/20260818_Abstimmungsresultat.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Vorlage des Stadtrats vom 17. Mai 2022: Kinderzentrum Geissberg, Strategie und Planungskredit",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/3864337/VdSR_KIZ_Geissberg_Strategie_und_Planungskreditvorlage.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Beschlussprotokoll des Grossen Stadtrats vom 5. Mai 2026 (Baurechtsabgabe Ringkengässchen 5)",
+        "url": "https://www.stadt-schaffhausen.ch/_doc/6986464",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Antwort des Stadtrats vom 27. Oktober 2026 auf die Kleine Anfrage 29/2026 (Auslastung der Betreuungsangebote)",
+        "url": "https://www.stadt-schaffhausen.ch/_doc/7320034",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Antwort des Stadtrats vom 4. Juni 2026 auf die Kleine Anfrage 17/2026",
+        "url": "https://www.stadt-schaffhausen.ch/_doc/7166539",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Stadt Schaffhausen: Oktoberbrief zum Budget 2027",
+        "url": "https://www.stadt-schaffhausen.ch/index.php/_rte/information/3032344",
+        "art": "amtlich"
+      },
+      {
+        "titel": "Verfassung der Stadt Schaffhausen (RSS 100.1), Art. 10",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/6885178/100.1_Stand_01.03.2026.pdf",
+        "art": "amtlich"
+      },
+      {
+        "titel": "SP Stadt Schaffhausen: Ja zum Neubau Kinderzentrum Geissberg",
+        "url": "https://stadt.spsh.ch/parole/ja-zum-neubau-kinderzentrum-geissberg/",
+        "art": "partei"
+      },
+      {
+        "titel": "GLP Schaffhausen: Abstimmungsparolen für den 29.11.2026",
+        "url": "https://sh.glp.swiss/neuigkeiten-und-abstimmungen/2026-10-25-abstimmungsparolen-fuer-den-29-11-2026/",
+        "art": "partei"
+      },
+      {
+        "titel": "Die Mitte Schaffhausen: Ja zum Neubau Kinderzentrum Geissberg",
+        "url": "https://sh.die-mitte.ch/parolen/ja-zum-neubau-kinderzentrum-geissberg/",
+        "art": "partei"
+      },
+      {
+        "titel": "EVP Schaffhausen: Abstimmungsparolen",
+        "url": "https://evp-sh.ch/abstimmungsparolen",
+        "art": "partei"
+      },
+      {
+        "titel": "FDP Stadt Schaffhausen: Abstimmungsparolen",
+        "url": "https://www.fdp-schaffhausen.ch/wahlen-abstimmungen/abstimmungsparolen",
+        "art": "partei"
+      },
+      {
+        "titel": "FDP Stadt Schaffhausen: Sparen statt Luxus, Medienmitteilung zum Budget 2027",
+        "url": "https://www.fdp-schaffhausen.ch/lesenswertes-aus-der-fdp/medienmitteilungen/medienmitteilungen-detail/news/sparen-statt-luxus",
+        "art": "partei"
+      },
+      {
+        "titel": "EDU Schaffhausen: Abstimmungen vom 29. November 2026",
+        "url": "https://www.edu-sh.ch/abstimmungen/",
+        "art": "partei"
+      }
+    ]
+  },
+  "achsen": [
+    {
+      "id": "quelle",
+      "kurz": "Quellenlage",
+      "frage": "Nennt die Seite für ihre Aussage eine überprüfbare Quelle?",
+      "null": "keine Quelle genannt",
+      "voll": "amtliche Statistik, Gesetzestext oder begutachtete Studie"
+    },
+    {
+      "id": "zahl",
+      "kurz": "Zahlenfestigkeit",
+      "frage": "Ist die Zahl belastbar und richtig bezogen?",
+      "null": "Zahl fehlt oder ist falsch bezogen",
+      "voll": "Zahl, Bezugsgrösse, Zeitraum und Unsicherheit genannt"
+    },
+    {
+      "id": "ursache",
+      "kurz": "Ursachennachweis",
+      "frage": "Ist der behauptete Zusammenhang belegt?",
+      "null": "blosse Gleichzeitigkeit oder Behauptung",
+      "voll": "Wirkungskette belegt, Vergleichsfall vorhanden"
+    },
+    {
+      "id": "reichweite",
+      "kurz": "Reichweite",
+      "frage": "Gilt die Aussage so allgemein, wie sie formuliert ist?",
+      "null": "unzulässig verallgemeinert",
+      "voll": "Bedingungen und Ausnahmen benannt"
+    },
+    {
+      "id": "transfer",
+      "kurz": "Übertragbarkeit",
+      "frage": "Passt der Beleg auf Schaffhausen und auf diese Vorlage?",
+      "null": "anderer Zusammenhang, andere Grössenordnung",
+      "voll": "Daten oder Texte aus dem Kanton, direkt zur Vorlage"
+    }
+  ],
+  "argumente": [
+    {
+      "id": "pro-1",
+      "seite": "pro",
+      "aussage": "Die Erkenntnisse aus der Schulraumplanung zeigen, dass im Gebiet Geissberg sowohl mittel- als auch langfristig ein Bedarf von vier Kindergartenabteilungen besteht.",
+      "traeger": "Stadtrat im Abstimmungsmagazin; ebenso Baufachkommission («ausgewiesen und unbestritten»), SP/JUSO- und GLP/Grüne/EVP-Fraktion. Den Bedarf an Kindergärten anerkennen auch SVP/EDU- und FDP/Die Mitte-Fraktion.",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Ausgangslage», S. 5",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Expertenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 2,
+        "ursache": null,
+        "reichweite": 3,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Heute bestehen die Kindergärten Geissberg 1 und 2 und eine provisorische Abteilung im Schulhaus Steingut; das Provisorium an der Krebsbachstrasse wurde auf das Schuljahr 2025/26 geschlossen (Vorlage S. 5).\n2. Im Grossen Stadtrat bestritt keine Fraktion den Bedarf an vier Kindergärten. Laut Abstimmungsmagazin «anerkannte» die SVP/EDU-Fraktion den Bedarf an Kindergartenplätzen; die FDP/Die Mitte-Fraktion sah den Bedarf «im Grundsatz als gegeben» (S. 14).\n3. Im Quartier gibt es heute keine städtische Krippe und keinen Hort; an der Hochstrasse besteht eine private Betreuungseinrichtung (Antwort auf Kleine Anfrage 29/2026, S. 5).",
+      "fehlt": "1. Schulraumplanung und Schülermonitoring 2025 sind nicht publiziert; Kinderzahlen für das Einzugsgebiet nennt keine Unterlage.\n2. Die Aussage betrifft die Kindergärten. Der Bedarf an Krippe und Hort ist eine eigene Frage, siehe die Gegenseite.\n3. Der Hort ist auf einen Nutzungsanteil von rund 35 % der Kindergartenkinder ausgelegt (Abstimmungsmagazin S. 11); die Vorlage von 2022 rechnete mit 30 % (S. 7). Die Änderung ist nicht begründet.",
+      "kritische_fragen": [
+        {
+          "frage": "Nennt die Quelle eigene Daten?",
+          "status": "offen",
+          "kommentar": "Schulraumplanung und Schülermonitoring nicht publiziert"
+        },
+        {
+          "frage": "Sagen andere dasselbe?",
+          "status": "beantwortet",
+          "kommentar": "Bedarf an vier Kindergärten von keiner Fraktion bestritten"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 20. Januar 2026, S. 5 und 6",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Antwort des Stadtrats vom 27. Oktober 2026 auf die Kleine Anfrage 29/2026, S. 5",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/7320034",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll des Grossen Stadtrats vom 18. August 2026, S. 20",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-2",
+      "seite": "pro",
+      "aussage": "Mit dem Bau des Kinderzentrums Geissberg lassen sich Synergien in Bezug auf betriebliche und bauliche Aspekte realisieren. Für Eltern bietet das Kinderzentrum Geissberg den Vorteil, dass Kinder im Alter von vier Monaten bis sechs Jahren am selben Standort betreut werden können.",
+      "traeger": "Stadtrat im Abstimmungsmagazin; ebenso SP/JUSO-Fraktion, Präsident der Baufachkommission und GLP («Kindergarten, Krippe und Hort an einem Ort»)",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Ausgangslage», S. 6",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 2,
+        "zahl": null,
+        "ursache": 1,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Im Neubau liegen drei Kindergärten, die Krippe mit rund 40 Plätzen als Ersatz für das Ringkengässchen und ein Hort; der vierte Kindergarten bleibt im Altbau daneben (Abstimmungsmagazin S. 3).\n2. Krippe und Hort teilen sich Betriebsflächen von 402 m² (Faktenblatt, Bericht der Baufachkommission S. 31) und eine Küche (Protokoll S. 43).",
+      "fehlt": "1. Die betrieblichen Synergien sind nicht beziffert. Betriebskosten und Personal nennt die Vorlage nicht; sie werden über das Budget beantragt (S. 23).\n2. Die Platzzahlen sind nicht festgelegt: Für den Hort nennt die Vorlage 23 Plätze (S. 25), der Stadtrat später «etwa 25 Kinder»; eine Verschiebung zwischen Krippen- und Hortplätzen ist «möglich» (Antwort auf Kleine Anfrage 29/2026, S. 5).\n3. Mit dem Umzug fällt der Krippenstandort in der Altstadt weg. Der Grosse Stadtrat beauftragte den Stadtrat am 5. Mai 2026, dort ein «angemessenes» Angebot zu prüfen; der Begriff ist nicht bestimmt.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie gross ist der Nutzen?",
+          "status": "offen",
+          "kommentar": "Synergien nicht beziffert"
+        },
+        {
+          "frage": "Gibt es Nebenwirkungen?",
+          "status": "ja",
+          "kommentar": "Krippenstandort Altstadt entfällt"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, Beilage 2, S. 31",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Vorlage des Stadtrats vom 20. Januar 2026, S. 23 und 25",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Beschlussprotokoll des Grossen Stadtrats vom 5. Mai 2026, Ziff. 3 und 4",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/6986464",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-3",
+      "seite": "pro",
+      "aussage": "Die Kosten wurden vertieft geprüft und sind vergleichbar mit anderen Projekten.",
+      "traeger": "Stadtrat im Abstimmungsmagazin, dort auch S. 6: «Weitere wesentliche Einsparungen wären nur mit einer Reduktion des Angebots möglich.»; ebenso Präsident der Baufachkommission, SP/JUSO- und GLP/Grüne/EVP-Fraktion",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Haltung des Stadtrats», S. 13",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Analogie",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": 1,
+        "ursache": null,
+        "reichweite": 2,
+        "transfer": 2
+      },
+      "trifft_zu": "1. Vor der Vorlage sank der Kostenvoranschlag in zwei Runden von 16,708 auf 15,665 Mio. Franken, um 1,043 Mio. Franken oder 6,2 % (Bericht der Baufachkommission, Beilage S. 37 und 39).\n2. Die Mehrkosten gegenüber der Schätzung von 2022 sind in sieben Posten aufgeschlüsselt, zusammen rund 9,2 Mio. Franken (Beilage S. 23).\n3. Als Vergleichsprojekte nennt die Vorlage die Kindergärten Iddastrasse St. Gallen, Effretikon und Herblingen (S. 21).",
+      "fehlt": "1. Kennwerte der Vergleichsprojekte sind nicht publiziert; genannt ist nur der Kennwert dieses Projekts: 4867 Franken je m² Geschossfläche für die Gebäudekosten (Beilage S. 39). Die Machbarkeitsstudie von 2021 rechnete mit 3300 Franken je m² (Beilage S. 23).\n2. Die Baureferentin nannte im Rat Einsparungen von 1,2 Mio. Franken oder «rund 7%» (Protokoll S. 42); aus den Tabellen ergeben sich 1,043 Mio. Franken oder 6,2 %.\n3. Kostengenauigkeit ±15 %: Beim beschlossenen Kredit von 15,73 Mio. Franken reicht die Bandbreite von 13,37 bis 18,09 Mio. Franken.",
+      "kritische_fragen": [
+        {
+          "frage": "Sind die Fälle vergleichbar?",
+          "status": "offen",
+          "kommentar": "Vergleichsprojekte genannt, Kennwerte nicht publiziert"
+        },
+        {
+          "frage": "Stimmt die Einsparung?",
+          "status": "beantwortet",
+          "kommentar": "1,043 Mio. Franken oder 6,2 % gemäss Tabellen"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, Beilagen S. 23, 37 und 39",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Vorlage des Stadtrats vom 20. Januar 2026, S. 21",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Protokoll des Grossen Stadtrats vom 18. August 2026, S. 42 f.",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-4",
+      "seite": "pro",
+      "aussage": "Die drei Kindergärten im Neubau machen flächenmässig rund einen Drittel des Gebäudes aus. Krippe und Hort zusammen entsprechen flächenmässig rund sechs Kindergärten. Insgesamt umfasst der Neubau damit flächenmässig ein Äquivalent von rund neun Kindergärten.",
+      "traeger": "Matthias Frick (SP), Bericht der Baufachkommission im Grossen Stadtrat; ebenso Baureferentin Katrin Bernath («Das Gebäude entspricht von den Flächen her etwas 9 Kindergärten.», S. 43)",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 20",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Analogie",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 3,
+        "ursache": null,
+        "reichweite": 3,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Laut Faktenblatt haben die drei Kindergärten 588 m² Geschossfläche, dazu knapp 100 m² Büro und Lager; die Tagesstruktur hat 1415 m², davon Krippe 736, Hort 277 und gemeinsame Betriebsflächen 402 m² (Bericht der Baufachkommission S. 31).\n2. Nachgerechnet: 688 m² für drei Kindergärten ergeben 229 m² je Kindergarten; 1415 / 229 = 6,2 Kindergärten; Anteil der Kindergärten an Kindergärten und Tagesstruktur 688 / 2103 = 32,7 %.",
+      "fehlt": "1. Bezogen auf die gesamte Geschossfläche von 2481 m² mit Technik und Erschliessung machen die Kindergärten 27,7 % aus, die Tagesstruktur 57,0 %.\n2. Die Rechnung vergleicht Flächen. Ob der Bedarf an Krippe und Hort in diesem Umfang besteht, beantwortet sie nicht.",
+      "kritische_fragen": [
+        {
+          "frage": "Sind die Fälle vergleichbar?",
+          "status": "beantwortet",
+          "kommentar": "Vergleich über Flächen, nachgerechnet"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, Beilage 2 (Faktenblatt), S. 31",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "pro-5",
+      "seite": "pro",
+      "aussage": "Das stärkt die Vereinbarkeit von Familie und Beruf, macht Schaffhausen als Wohnort für Familien attraktiver und schafft einen langfristigen Mehrwert, der auch dem Quartier zugutekommt.",
+      "traeger": "Stadtrat im Abstimmungsmagazin; ebenso Stadtpräsident Peter Neukomm im Rat, SP/JUSO-Fraktion und Lukas Ottiger (GLP)",
+      "fundstelle": {
+        "titel": "Abstimmungsmagazin der Stadt Schaffhausen, «Haltung des Stadtrats», S. 13",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+        "datum": "2026-10",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 1,
+        "zahl": null,
+        "ursache": 1,
+        "reichweite": 1,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Städtische Horte haben Wartelisten: Zündelgut 18, Breite 33, Rosengasse 5 Kinder (Antwort auf Kleine Anfrage 29/2026, S. 4 f.).\n2. Der Aussenraum steht ausserhalb der Schulzeiten dem Quartier offen; Hartplatz, Fussballwiese und Schlittelhang bleiben (Abstimmungsmagazin S. 3; Vorlage S. 18).",
+      "fehlt": "1. Zu Zuzug von Familien oder zur Wirkung auf die Steuern enthält keine Unterlage Zahlen.\n2. Neue Betreuungsplätze entstehen im Hort; die Krippe ersetzt die 40 Plätze am Ringkengässchen.\n3. Die Stadt befragte Eltern zum Betreuungsbedarf, 780 Antworten; die Auswertung war «bis im Herbst 2026» angekündigt (Antwort auf Kleine Anfrage 17/2026, S. 1) und ist bis zum 2. November 2026 nicht publiziert.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie wahrscheinlich ist die Folge?",
+          "status": "offen",
+          "kommentar": "keine Zahlen zu Zuzug oder Nachfrage"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Antwort des Stadtrats vom 27. Oktober 2026 auf die Kleine Anfrage 29/2026, S. 4 und 5",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/7320034",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Antwort des Stadtrats vom 4. Juni 2026 auf die Kleine Anfrage 17/2026, S. 1",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/7166539",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-1",
+      "seite": "contra",
+      "aussage": "So haben wir […] der vorausgegangenen Strategie und dem Planungskredit für die Kindergärten Geissberg, welche Kosten von circa 6.5 Mio. Franken vorsah, zugestimmt. Nun weist die Vorlage das 2.5-fache an Kosten gegenüber der Planungskreditvorlage aus. Einsparungsmöglichkeiten wurden aus unserer Sicht ungenügend geprüft […].",
+      "traeger": "Markus Leu (SVP), Fraktionsmeinung der SVP/EDU-Fraktion im Grossen Stadtrat; im Abstimmungsmagazin als Minderheitsposition: «massive Kostensteigerung von 6.5 auf neu knapp 16 Mio. Franken aufgrund falscher Planungsgrundlagen»",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 22",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Analogie",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 2,
+        "ursache": null,
+        "reichweite": 1,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Die Vorlage von 2022 bezifferte die Investitionen nach Grobkostenschätzung mit ca. 6,5 Mio. Franken (S. 14).\n2. Investitionskredit heute 15,73 Mio. Franken: 15,73 / 6,5 = 2,42. Mit den Planungskosten ergeben sich 16,325 Mio. Franken: 16,325 / 6,5 = 2,51.\n3. Die Stadt bestätigt die zu tiefe Schätzung: «hat sich im Nachhinein gezeigt, dass die in der Machbarkeitsstudie eingesetzten Kennzahlen zu tief waren» (Baureferentin Bernath, Protokoll S. 43).",
+      "fehlt": "1. Die 6,5 Mio. Franken enthielten keine Planungskosten; vergleichbar ist der Investitionskredit, Faktor 2,42.\n2. Der Umfang hat sich geändert: 2022 war ein zusätzlicher Doppelkindergarten geplant (Vorlage 2022 S. 11), heute entstehen drei neue Kindergärten, weil der Pavillon von 1992 abgebrochen wird.\n3. Von den Mehrkosten von rund 9,2 Mio. Franken entfallen laut Stadt 4,4 Mio. auf mehr Umfang (zusätzlicher Kindergarten 1,1, grössere Tagesstruktur 1,8, Provisorium 0,3, grösserer Aussenraum 1,2), 2,0 Mio. auf Bauteuerung und Auflagen und 2,8 Mio. auf die zu tiefe Kennzahl (Bericht der Baufachkommission, Beilage S. 23).\n4. Vor der Vorlage wurden 1,043 Mio. Franken eingespart (Beilage S. 37 und 39). Ob das ungenügend ist, ist eine Wertung.",
+      "kritische_fragen": [
+        {
+          "frage": "Sind die Fälle vergleichbar?",
+          "status": "offen",
+          "kommentar": "2022 zwei neue Kindergärten, heute drei; grössere Tagesstruktur und Aussenraum"
+        },
+        {
+          "frage": "Stimmt die Zahl?",
+          "status": "beantwortet",
+          "kommentar": "Faktor 2,42 beim Kredit, 2,51 mit Planungskosten"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Vorlage des Stadtrats vom 17. Mai 2022: Kinderzentrum Geissberg, Strategie und Planungskredit, S. 11 und 14",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/3864337/VdSR_KIZ_Geissberg_Strategie_und_Planungskreditvorlage.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, Beilage S. 23",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Abstimmungsmagazin der Stadt Schaffhausen, S. 14",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-2",
+      "seite": "contra",
+      "aussage": "Es geht mir um die Auslastungen unserer Tagesstrukturen z.B. beim Ringkengässchen. […] Interessant ist nämlich der Fakt und Umstand, dass die privat geführten Krippen sehr gut ausgelastet sind.",
+      "traeger": "Mariano Fioretti (SVP) im Grossen Stadtrat; ebenso Rückweisungsantrag der SVP/EDU-Fraktion («Den Bedarf der Tagesstruktur zu überprüfen und eventuell […] auf eine Privatlösung zu setzen») und Kleine Anfrage 29/2026",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 44",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Beispielargument",
+      "pruefung": {
+        "quelle": 0,
+        "zahl": null,
+        "ursache": null,
+        "reichweite": 1,
+        "transfer": 3
+      },
+      "trifft_zu": "1. Städtische Krippe am Ringkengässchen, Auslastung: 2022 90 %, 2023 78 %, 2024 71 %, 2025 68 %, Januar bis Juli 2026 57 %; im September 2026 22 von 40 Kindern (55 %), Warteliste 0 (Antwort auf Kleine Anfrage 29/2026, S. 2 und 4).\n2. Der Stadtrat schrieb im Juni 2026: «Im Bereich der familienergänzenden Betreuung (Krippen) deckt das derzeitig bestehende Angebot die Nachfrage.» (Antwort auf Kleine Anfrage 17/2026, S. 4)\n3. Die Vorlage vom Januar 2026 schrieb zum Ringkengässchen: «Die Betreuungsplätze sind vollständig ausgelastet» (S. 7). 2025 lag die Auslastung bei 68 %.",
+      "fehlt": "1. Für die privaten Angebote mit 610 Plätzen haben Stadt und Kanton keine aktuellen Zahlen; eine Erhebung folgt im ersten Halbjahr 2027. Die kantonale Aufsicht nennt die Auslastung «gleichbleibend hoch» (Antwort auf Kleine Anfrage 29/2026, S. 5 f.). Die Aussage ist damit nicht mit Zahlen prüfbar.\n2. Gründe für den Rückgang am Ringkengässchen laut Stadtrat: freie Wahl mit Betreuungsgutscheinen, Baustelle in der Nachbarschaft, wenige Familien in der Altstadt, Betriebsferien, Zustand der Liegenschaft (S. 3).\n3. Die zweite städtische Krippe, Forsthaus, war 2026 zu 82 % ausgelastet; Horte haben Wartelisten (S. 4 f.).\n4. Die Krippe im Kinderzentrum ersetzt die 40 Plätze am Ringkengässchen; neu sind die Hortplätze.",
+      "kritische_fragen": [
+        {
+          "frage": "Ist der Fall typisch?",
+          "status": "offen",
+          "kommentar": "Ringkengässchen 55 %, Forsthaus 82 %; private Krippen ohne Zahlen"
+        },
+        {
+          "frage": "Wie gross ist die Grundgesamtheit?",
+          "status": "offen",
+          "kommentar": "610 private Plätze, Erhebung erst 2027"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Antwort des Stadtrats vom 27. Oktober 2026 auf die Kleine Anfrage 29/2026",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/7320034",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Antwort des Stadtrats vom 4. Juni 2026 auf die Kleine Anfrage 17/2026, S. 4",
+          "url": "https://www.stadt-schaffhausen.ch/_doc/7166539",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Vorlage des Stadtrats vom 20. Januar 2026, S. 7",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-3",
+      "seite": "contra",
+      "aussage": "Wir sind in der Kommission auf die Vorlage eingetreten, mit der Absicht und dem Willen zu retten, was zu retten ist. Wie Sie jedoch aus dem Bericht erkennen, war dies nicht möglich. Wir haben gerade mal 1% eingespart, was nicht seriös ist.",
+      "traeger": "Stephan Schlatter (FDP), Fraktionserklärung der FDP/Die Mitte-Fraktion im Grossen Stadtrat; ebenso SVP/EDU-Fraktion («kein Sparwille ersichtlich»)",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 37",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Beispielargument",
+      "pruefung": {
+        "quelle": 3,
+        "zahl": 2,
+        "ursache": null,
+        "reichweite": 1,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Die Baufachkommission kürzte den Kredit um 165 000 Franken auf 15,5 Mio. Franken: 165 000 / 15 665 000 = 1,05 % (Bericht der Baufachkommission S. 3).\n2. Der Grosse Stadtrat hob die Kürzung auf und erhöhte den Antrag des Stadtrats um 65 000 Franken auf 15,73 Mio. Franken (Beschlussprotokoll Ziff. 3).",
+      "fehlt": "1. Die Kürzung der Kommission war die dritte Sparrunde. Vorher sank der Voranschlag von 16,708 auf 15,665 Mio. Franken, um 6,2 % (Beilage S. 37 und 39).\n2. Die in der Kommission vorgestellten weiteren Einsparungen beziffert der Bericht mit «rund 240'000 Franken, also rund 1.5%» (S. 3). Sie betrafen laut SP/JUSO-Fraktion vor allem den Aussenraum, etwa Wasserspiel, Rutschbahn und Bepflanzung (Protokoll S. 37).",
+      "kritische_fragen": [
+        {
+          "frage": "Ist der Fall typisch?",
+          "status": "nein",
+          "kommentar": "eine von drei Sparrunden; vorher 6,2 % eingespart"
+        },
+        {
+          "frage": "Stimmt die Zahl?",
+          "status": "beantwortet",
+          "kommentar": "1,05 % für die Kürzung der Kommission"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, S. 3 und Beilagen S. 37 und 39",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Beschlussprotokoll des Grossen Stadtrats vom 18. August 2026, Ziff. 3",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7166782/12_RatBeschlussprotokoll_18082026.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-4",
+      "seite": "contra",
+      "aussage": "Der Stadtrat will drei Kindergärten und eine Kita bauen und dafür 16 Mio. Franken ausgeben. Das entspricht circa 25 Einfamilienhäusern. Die Renovation vom bestehenden Kindergarten noch nicht einmal miteingerechnet.",
+      "traeger": "Stephan Schlatter (FDP), Fraktionserklärung der FDP/Die Mitte-Fraktion im Grossen Stadtrat; ähnlich Markus Leu (SVP) mit dem Vergleich zum Schulhaus Gosu in Neunkirch",
+      "fundstelle": {
+        "titel": "Protokoll des Grossen Stadtrats, Sitzung 12/13 vom 18. August 2026, S. 36",
+        "url": "https://www.stadt-schaffhausen.ch/_docn/7223218/Protokoll_Rat12_13_18_08_2026.pdf",
+        "datum": "2026-08-18",
+        "art": "amtlich"
+      },
+      "stand": "geprueft",
+      "typ": "tatsache",
+      "schema": "Analogie",
+      "pruefung": {
+        "quelle": 0,
+        "zahl": 1,
+        "ursache": null,
+        "reichweite": 1,
+        "transfer": 1
+      },
+      "trifft_zu": "1. Gesamtkosten mit Planung laut Vorlage 16,26 Mio. Franken, nach dem Ratsbeschluss 16,325 Mio. Franken (Abstimmungsmagazin S. 11).\n2. Die Sanierung des bestehenden Kindergartens Geissberg 2 ist nicht enthalten. Sie kostet 1,55 Mio. Franken und läuft über das Budget 2026 (Bericht der Baufachkommission, Beilage S. 35). Zusammen: 16,325 + 1,55 = 17,875 Mio. Franken.",
+      "fehlt": "1. Gebaut werden drei Kindergärten, eine Krippe und ein Hort; der Hort fehlt in der Aufzählung. Krippe und Hort belegen mehr als doppelt so viel Fläche wie die drei Kindergärten (1415 gegenüber 688 m²).\n2. Für den Vergleich mit Einfamilienhäusern ist kein Hauspreis genannt. Nachgerechnet: 16 Mio. / 25 = 640 000 Franken je Haus; die Geschossfläche des Neubaus von 2481 m² ergibt je Haus 99 m².",
+      "kritische_fragen": [
+        {
+          "frage": "Sind die Fälle vergleichbar?",
+          "status": "offen",
+          "kommentar": "kein Hauspreis genannt; öffentlicher Bau mit Krippe und Hort"
+        },
+        {
+          "frage": "Stimmt die Zahl?",
+          "status": "beantwortet",
+          "kommentar": "16,325 Mio. Franken mit Planung, ohne Sanierung Altbau"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Abstimmungsmagazin der Stadt Schaffhausen, S. 11",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Bericht und Antrag der Baufachkommission vom 10. August 2026, Beilagen S. 31 und 35",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7298605/Bericht_u._Antrag_20260808_Kinderzentrum_Geissberg_def_inklusive_Beilagen.pdf",
+          "art": "amtlich"
+        }
+      ]
+    },
+    {
+      "id": "contra-5",
+      "seite": "contra",
+      "aussage": "Auch bei den Investitionen gilt: Die Zeit für Luxusprojekte wie das Kinderzentrum Geissberg ist vorbei. Die hohen Abschreibungen belasten uns sonst über Jahre hinweg.",
+      "traeger": "FDP Stadt Schaffhausen, Medienmitteilung «Sparen statt Luxus» zum Budget 2027; ähnlich SVP/EDU-Fraktion im Grossen Stadtrat («die fetten Jahre gehen langsam dem Ende entgegen»)",
+      "fundstelle": {
+        "titel": "FDP Stadt Schaffhausen, Medienmitteilung vom 27. August 2026 (Text als Bild)",
+        "url": "https://www.fdp-schaffhausen.ch/lesenswertes-aus-der-fdp/medienmitteilungen/medienmitteilungen-detail/news/sparen-statt-luxus",
+        "datum": "2026-08-27",
+        "art": "partei"
+      },
+      "stand": "geprueft",
+      "typ": "prognose",
+      "schema": "Folgenargument",
+      "pruefung": {
+        "quelle": 0,
+        "zahl": 0,
+        "ursache": 3,
+        "reichweite": 2,
+        "transfer": 4
+      },
+      "trifft_zu": "1. Die Investition wird über 25 Jahre abgeschrieben. Laut Abstimmungsmagazin belastet das die Erfolgsrechnung mit rund 395 000 Franken jährlich, nach Abzug des Kantonsbeitrags und der Vorfinanzierung von 6 Mio. Franken (S. 12).\n2. Mit dem beschlossenen Kredit nachgerechnet: (16,325 − 2,63 − 6,0) / 25 = 307 800 Franken für den Neubau plus 2,222 / 25 = 88 880 Franken für die Umwidmung, zusammen 396 680 Franken jährlich.\n3. Das Budget 2027 weist nach dem Oktoberbrief ein Defizit von 5,8 Mio. Franken aus (Stadt Schaffhausen, 27. Oktober 2026).",
+      "fehlt": "1. Die Medienmitteilung nennt keinen Betrag. Das Defizit von 5,8 Mio. Franken entspricht laut Stadt 1,7 % des betrieblichen Aufwands, dieser beträgt damit rund 341 Mio. Franken. Die Abschreibung von 396 680 Franken entspricht 0,12 % davon und 6,8 % des Defizits 2027.\n2. Die Betriebskosten von Krippe und Hort sind nicht beziffert; die Gesamtbelastung lässt sich daher nicht vollständig berechnen.\n3. Ob das Projekt ein «Luxusprojekt» ist, ist eine Wertung.",
+      "kritische_fragen": [
+        {
+          "frage": "Wie gross ist die Folge?",
+          "status": "beantwortet",
+          "kommentar": "rund 397 000 Franken jährlich, 0,12 % des betrieblichen Aufwands"
+        },
+        {
+          "frage": "Gibt es Nebenwirkungen?",
+          "status": "offen",
+          "kommentar": "Betriebskosten nicht beziffert"
+        }
+      ],
+      "belege": [
+        {
+          "titel": "Abstimmungsmagazin der Stadt Schaffhausen, S. 12",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/7296325/Abstimmungsmagazin_Nov_26_WEB.pdf",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Stadt Schaffhausen: Oktoberbrief zum Budget 2027, 27. Oktober 2026",
+          "url": "https://www.stadt-schaffhausen.ch/index.php/_rte/information/3032344",
+          "art": "amtlich"
+        },
+        {
+          "titel": "Vorlage des Stadtrats vom 20. Januar 2026, S. 22 f.",
+          "url": "https://www.stadt-schaffhausen.ch/_docn/6709238/VdSR_20.01.2026_Neubau_KiZ_Geissberg.pdf",
+          "art": "amtlich"
+        }
+      ]
+    }
+  ],
+  "textkritik": {
+    "einleitung": "Beschlossen werden ein Kredit und eine Umwidmung. Die folgenden Stellen betreffen Beträge und Umfang, die im Beschluss nicht festgelegt oder im Abstimmungsmagazin abweichend dargestellt sind.",
+    "stellen": [
+      {
+        "begriff": "«Verpflichtungskredit … 15'730’000 Franken»",
+        "wo": "Beschluss Ziff. 3",
+        "wortlaut": "Der Grosse Stadtrat bewilligt für den Neubau des Kinderzentrums Geissberg einen Verpflichtungskredit (INV00585) in Höhe von 15'730’000 Franken zulasten Konto 5120.5040.00 «Hochbauten» als einmalige, neue Ausgabe.",
+        "problem": "Der Kredit beruht auf einer Kostengenauigkeit von ±15 %, Preisstand 1. April 2025. Der Beschluss enthält keine Indexklausel. Die 65 000 Franken über dem Antrag des Stadtrats sind keinem Zweck zugeordnet; der Antragsteller begründete sie mit der Nachtauskühlung.",
+        "folge": "1. Bandbreite: 13,37 bis 18,09 Mio. Franken.\n2. Ob die 65 000 Franken für die Nachtauskühlung verwendet werden, legt der Beschluss nicht fest.",
+        "quelle": "Vorlage S. 21; Beschlussprotokoll vom 18. August 2026, Ziff. 3; Protokoll S. 46 f."
+      },
+      {
+        "begriff": "«Umbau des bestehenden Kindergartens»",
+        "wo": "Abstimmungsmagazin S. 3 und S. 46",
+        "wortlaut": "Für die Umsetzung des Projekts mit Neubau, Umbau des bestehenden Kindergartens und Gestaltung der Aussenanlage wird ein Kredit von 15.730 Mio. Franken beantragt.",
+        "problem": "Der bestehende Kindergarten Geissberg 2 wird über das Budget 2026 saniert; der Kredit dafür «ist nicht Teil der Vorlage» (Abstimmungsmagazin S. 8; Vorlage S. 14). Kosten 1,55 Mio. Franken, Ausführung 2030.",
+        "folge": "1. Der Kredit von 15,73 Mio. Franken enthält den Umbau des bestehenden Kindergartens nicht.\n2. Neubau, Planung und Sanierung am Standort zusammen: 16,325 + 1,55 = 17,875 Mio. Franken.",
+        "quelle": "Abstimmungsmagazin S. 3, 8 und 46; Vorlage S. 14; Bericht der Baufachkommission, Beilage S. 35"
+      },
+      {
+        "begriff": "«Voraussichtlich … 2.63 Mio. Franken»",
+        "wo": "Abstimmungsmagazin S. 12",
+        "wortlaut": "Voraussichtlich unterstützt der Kanton die Realisierung des Kinderzentrums Geissberg mit einem Betrag von 2.63 Mio. Franken. Der Kanton hat dem Unterstützungsgesuch im Grundsatz zugestimmt. Der genaue Betrag wird erst zu einem späteren Zeitpunkt ermittelt.",
+        "problem": "Der Beitrag ist «rechtlich nicht verbindlich zugesichert» (Vorlage S. 24). Die Nettoinvestition von 13,63 Mio. Franken im Magazin beruht auf dem Antrag des Stadtrats.",
+        "folge": "1. Mit dem beschlossenen Kredit: 16,325 − 2,63 = 13,695 Mio. Franken netto.\n2. Abschreibung: (13,695 − 6,0) / 25 = 307 800 Franken plus 88 880 Franken für die Umwidmung, zusammen 396 680 Franken jährlich.",
+        "quelle": "Abstimmungsmagazin S. 11 f.; Vorlage S. 21 bis 24"
+      },
+      {
+        "begriff": "«Umwidmung ins Finanzvermögen»",
+        "wo": "Abstimmungsmagazin S. 11",
+        "wortlaut": "Gemäss Gutachten des kantonalen Amts für Grundstückschätzung liegt der Marktwert des Grundstücks bei 2.222 Mio.Franken, weshalb die Stimmberechtigten auch über die Ausgabe von 2.222 Mio.Franken für die Umwidmung ins Finanzvermögen entscheiden müssen.",
+        "problem": "Der Beschluss lautet auf die Umwidmung «vom Finanz- ins Verwaltungsvermögen». Es fliesst kein Geld. Im Gegenzug wird das Ringkengässchen 5 mit 2,545 Mio. Franken ins Finanzvermögen übertragen (S. 12).",
+        "folge": "1. Saldo der beiden Umwidmungen: 2,545 − 2,222 = +0,323 Mio. Franken.\n2. Die Umwidmung erhöht die jährliche Abschreibung um 88 880 Franken (2,222 Mio. / 25 Jahre).",
+        "quelle": "Abstimmungsmagazin S. 11 f.; Beschlussprotokoll vom 18. August 2026, Ziff. 2; Vorlage S. 21 und 23"
+      },
+      {
+        "begriff": "«auf dem ordentlichen Budgetweg»",
+        "wo": "Vorlage S. 23",
+        "wortlaut": "Für den Betrieb der Kinderkrippe wird das Personal vom bisherigen Standort «Ringkengässchen 5» übernommen und aufgestockt. Der Aufwand und die Erträge für den neuen Hort kommen neu dazu. Die Betriebsaufwände und -erträge werden auf dem ordentlichen Budgetweg beantragt.",
+        "problem": "Betriebskosten, Stellen und Platzzahlen sind nicht festgelegt. Für den Hort genannt: 23 Plätze (Vorlage S. 25), «mindestens 20» (Protokoll S. 40), «etwa 25 Kinder» (Antwort auf Kleine Anfrage 29/2026, S. 5).",
+        "folge": "1. Über Personal und Betriebskosten entscheidet der Grosse Stadtrat im Budget, nicht die Stimmberechtigten mit dieser Vorlage.",
+        "quelle": "Vorlage S. 23 und 25; Protokoll S. 40; Antwort des Stadtrats auf die Kleine Anfrage 29/2026, S. 5"
+      }
+    ]
+  },
+  "karte": null,
+  "social": {
+    "hinweis": "Kurzfassungen für die Social-Media-Bilder (bausteine/teilen.py).",
+    "vorlage_kurz": [
+      "Drei Kindergärten, Krippe und Hort in einem Neubau",
+      "Kredit 15,73 Mio. Franken, ±15 %",
+      "Umwidmung Teilgrundstück 2,222 Mio. Franken",
+      "Grosser Stadtrat 19 : 14 bei 2 Enthaltungen"
+    ],
+    "bei_ja_kurz": "Bau ab 2028, Betrieb ab Ende 2029; die Krippe zieht vom Ringkengässchen auf den Geissberg.",
+    "bei_nein_kurz": "Kein Neubau; die Baurechtsabgabe Ringkengässchen 5 bleibt blockiert.",
+    "kantonsrat": [
+      {
+        "nr": 3,
+        "kurz": "Rückweisung zur Neuplanung"
+      },
+      {
+        "nr": 6,
+        "kurz": "Schlussabstimmung"
+      }
+    ]
+  }
+}
