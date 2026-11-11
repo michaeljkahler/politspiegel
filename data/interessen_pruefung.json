@@ -30,6 +30,7 @@
     "geloescht_am": null,
     "zweck": "Die Stiftung bezweckt die a) Ausrichtung von Zuwendungen an gemeinnützige wohltätige, soziale und ökologische sowie Kunst und Kultur fördernde Vereine, Institutionen, Organisationen, Veranstaltungen und Projekte im Kanton Schaffhausen; b) …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE461305755&directLink=true"
    }
   },
@@ -60,6 +61,7 @@
     "geloescht_am": null,
     "zweck": "Herstellung und Reparatur von Schuhen sowie den Handel mit Schuhen und Textilien.",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE113559079&directLink=true"
    }
   },
@@ -90,6 +92,7 @@
     "geloescht_am": null,
     "zweck": "Bewahrung der Bergtrotte Osterfingen als Kulturgut und deren Ausbau zu einem kulturellen und touristischen Begegnungszentrum. Das Angebot der Bergtrotte Osterfingen soll ermöglichen, die Weinkultur zu erleben, regionale Traditionen zu …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE218603736&directLink=true"
    }
   },
@@ -120,6 +123,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt den Bau und Betrieb eines Parkhauses unter dem Herrenacker in Schaffhausen und von weiteren öffentlichen Parkierungsanlagen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften errichten und sich …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE101262046&directLink=true"
    }
   },
@@ -180,6 +184,7 @@
     "frueher": [
      "Immobilien AG zum Schild"
     ],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE102764149&directLink=true"
    }
   },
@@ -193,7 +198,7 @@
      "ort": "Stein am Rhein",
      "uid": "CHE112875922",
      "stufe": "eindeutig",
-     "uebereinstimmung": 0.91
+     "uebereinstimmung": 1.0
     }
    ],
    "mitglieder": [
@@ -227,6 +232,7 @@
     "geloescht_am": null,
     "zweck": "Die Genossenschaft bezweckt in gemeinsamer Selbsthilfe die Pflege, den Unterhalt und die allfällige Rückführung in den ursprünglichen Zustand der Parzelle \"Tiltehuuse\" genannt Baumland (BL). Organisation und Durchführung der …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE178497615&directLink=true"
    }
   },
@@ -257,6 +263,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt den Erwerb, Verkauf, Verwaltung, Unterhalt und Vermietung von Liegenschaften bzw. Grundeigentum. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE305722616&directLink=true"
    }
   },
@@ -303,6 +310,7 @@
     "frueher": [
      "Swisspower Netzwerk AG"
     ],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE116186715&directLink=true"
    }
   },
@@ -333,6 +341,7 @@
     "geloescht_am": null,
     "zweck": "Zweck der Gesellschaft ist die Erbringung von Dienstleistungen im Baugewerbe, insbesondere Bauausführungen, Bauberatung, Bauplanung, Generalunternehmung sowie Verwaltung, Kauf und Verkauf von Liegenschaften. Die Gesellschaft kann im …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE108505876&directLink=true"
    }
   }
@@ -393,6 +402,7 @@
     "geloescht_am": null,
     "zweck": "Der Verein setzt sich für junge Menschen in erschwerten Lebenssituationen ein, unterstützt und fördert sie, mit dem Ziel einer erfolgreichen, eigenverantwortlichen Integration in unsere Gesellschaft und Arbeitswelt. Dazu betreibt und …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE203433023&directLink=true"
    }
   },
@@ -423,6 +433,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt die Projektierung, die Erstellung und den Betrieb von Anlagen für die Nutzung und Verteilung von Energie sowie die Erbringung von dazugehörenden Dienstleistungen. Sie kann Anlagen und Einrichtungen erstellen, …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE437870931&directLink=true"
    }
   },
@@ -441,22 +452,7 @@
    ],
    "mitglieder": [
     "Neukomm Peter"
-   ],
-   "amtlich": {
-    "name": "sasag Kabelkommunikation AG",
-    "uid": "CHE107878725",
-    "sitz": "Schaffhausen",
-    "kanton": "SH",
-    "ort": "Schaffhausen",
-    "rechtsform": "Aktiengesellschaft",
-    "status": "aktiv",
-    "geloescht_am": null,
-    "zweck": "Die Gesellschaft bezweckt den Bau und Betrieb von Grossgemeinschafts-Antennenanlagen in der Stadt Schaffhausen sowie den angrenzenden Regionen. Die Gesellschaft kann im Übrigen alle kommerziellen, finanziellen und anderen Geschäfte …",
-    "frueher": [
-     "Stadtantenne Schaffhausen AG"
-    ],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE107878725&directLink=true"
-   }
+   ]
   },
   {
    "organisation": "Parkhaus Herrenacker AG",
@@ -501,20 +497,7 @@
    ],
    "mitglieder": [
     "Neukomm Peter"
-   ],
-   "amtlich": {
-    "name": "Parkhaus 104 Glattbrugg GmbH",
-    "uid": "CHE110640348",
-    "sitz": "Opfikon",
-    "kanton": "ZH",
-    "ort": "Glattbrugg",
-    "rechtsform": "Gesellschaft mit beschränkter Haftung",
-    "status": "aktiv",
-    "geloescht_am": null,
-    "zweck": "Die Gesellschaft bezweckt das Betreiben eines Parkhauses. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen errichten, sich an anderen Unternehmen des In- und Auslandes beteiligen, gleichartige oder verwandte Unternehmungen …",
-    "frueher": [],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110640348&directLink=true"
-   }
+   ]
   },
   {
    "organisation": "Landw. Genossenschaft",
@@ -573,6 +556,7 @@
     "frueher": [
      "Landwirtschaftlicher Kreisverein Aesch-Birmensdorf"
     ],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE102386515&directLink=true"
    }
   }
@@ -606,6 +590,7 @@
     "geloescht_am": null,
     "zweck": "Die Stiftung unterstützt invalide Personen im Sinne der schweizerischen Gesetzgebung sowie Personen, die aus sozialen Gründen auf besondere Betreuung und Unterstützung angewiesen sind, in dem sie für sie Wohnmöglichkeiten und Einrichtungen …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE247089586&directLink=true"
    }
   },
@@ -628,6 +613,7 @@
     "geloescht_am": null,
     "zweck": "Gewährung von finanzieller Unterstützung an Einzelpersonen, die durch Alter, Krankheit oder Unfall unverschuldet in Not geraten sind und welche bei der Pro Senectute Schaffhausen, dem Verein zur Unterstützung von Blinden und Augenkranken …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110410156&directLink=true"
    }
   },
@@ -653,6 +639,7 @@
     "frueher": [
      "Stiftung Nationales Handball Trainings- & Leistungs-Zentrum Schweizersbild"
     ],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE115666941&directLink=true"
    }
   },
@@ -665,19 +652,18 @@
     "Kräuchi Raphael"
    ],
    "amtlich": {
-    "name": "Forum 4 AG für Architektur",
-    "uid": "CHE114917974",
-    "sitz": "Interlaken",
-    "kanton": "BE",
-    "ort": "Interlaken",
-    "rechtsform": "Aktiengesellschaft",
+    "name": "Stiftung Forum für Weiterbildung Schaffhausen FWS",
+    "uid": "CHE110261206",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Stiftung",
     "status": "aktiv",
     "geloescht_am": null,
-    "zweck": "Die Gesellschaft bezweckt den Betrieb eines Architektur-, Planungs- und Bauleitungsbüros sowie die Erbringung aller damit im Zusammenhang stehender Dienstleistungen. Die Gesellschaft bezweckt weiter die Förderung des …",
-    "frueher": [
-     "F4 Immo Spiez AG"
-    ],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE114917974&directLink=true"
+    "zweck": "Die Stiftung fördert die berufliche Weiterbildung. Insbesondere stellt sie Schulraum für Aus- und Weiterbildungszwecke der Handelsschule KVS zur Verfügung. Die Stiftung sucht ihren Zweck zu erreichen durch Bereitstellung von …",
+    "frueher": [],
+    "gefunden_ueber": "aktueller Name",
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110261206&directLink=true"
    }
   },
   {
@@ -708,6 +694,7 @@
     "geloescht_am": null,
     "zweck": "Zweck der Stiftung soll sein, den im Statut genannten gemeinnützigen Institutionen den aus den Einkünften des Stiftungsvermögens allfällig resultierenden jährlichen Netto-Ertrag anteilsmässig auszurichten. Die Destinatäre haben keinen …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE423761276&directLink=true"
    }
   },
@@ -720,17 +707,18 @@
     "Müller Andrea"
    ],
    "amtlich": {
-    "name": "Muller Architecture du Paysage Sàrl",
-    "uid": "CHE167446358",
-    "sitz": "Delémont",
-    "kanton": "JU",
-    "ort": "Delémont",
+    "name": "Müller Energie GmbH",
+    "uid": "CHE179560736",
+    "sitz": "Thayngen",
+    "kanton": "SH",
+    "ort": "Thayngen",
     "rechtsform": "Gesellschaft mit beschränkter Haftung",
     "status": "aktiv",
     "geloescht_am": null,
-    "zweck": "Conception et planification d'aménagements paysagers. La société pourra traiter toutes les opérations qui seraient en relation directe ou indirecte avec son but principal. Elle peut créer des succursales en Suisse et à l'étranger, …",
+    "zweck": "Erzeugung und Verkauf von Energie.",
     "frueher": [],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE167446358&directLink=true"
+    "gefunden_ueber": "aktueller Name",
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE179560736&directLink=true"
    }
   },
   {
@@ -752,6 +740,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt die Veranstaltung eines unabhängigen, für die Region Schaffhausen bestimmten Radioprogrammes unter der Bezeichnung Radio Munot und den Betrieb eines entsprechenden Radiosenders. Die Gesellschaft kann …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE100155212&directLink=true"
    }
   },
@@ -762,20 +751,7 @@
    "treffer": [],
    "mitglieder": [
     "Neukomm Peter"
-   ],
-   "amtlich": {
-    "name": "Verwaltung & Finanzen S. Jud",
-    "uid": "CHE443591474",
-    "sitz": "Benken (SG)",
-    "kanton": "SG",
-    "ort": "Benken",
-    "rechtsform": "Einzelunternehmen",
-    "status": "aktiv",
-    "geloescht_am": null,
-    "zweck": "Erbringen von Dienstleistungen im Bereich der Verwaltung, Übernahme von administrativen Dienstleistungen für Kleinbetriebe, Liegenschaftenverwaltung, Büroorganisation und Beratung, Vermietung und Verkauf von Fahrzeugen jeglicher Art, …",
-    "frueher": [],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE443591474&directLink=true"
-   }
+   ]
   },
   {
    "organisation": "SHolar-Selbstbau Genossenschaft, Schaffhauen, Verwaltung",
@@ -793,22 +769,7 @@
    "treffer": [],
    "mitglieder": [
     "Rohner Raphaël"
-   ],
-   "amtlich": {
-    "name": "Schule für Bewegung Zürich GmbH in Liquidation",
-    "uid": "CHE498855547",
-    "sitz": "Zürich",
-    "kanton": "ZH",
-    "ort": "Zürich",
-    "rechtsform": "Gesellschaft mit beschränkter Haftung",
-    "status": "in Löschung",
-    "geloescht_am": null,
-    "zweck": "Die Gesellschaft bezweckt die 3-jährige, berufsbegleitende Ausbildung in Bewegungspädagogik. Fachrichtung: Körper- und Bewegungsschulung. Der Lehrgang bereitet auf folgenden Fachausweis vor: Spezialist/-in Bewegungs- und …",
-    "frueher": [
-     "Schule für Bewegung Zürich GmbH"
-    ],
-    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE498855547&directLink=true"
-   }
+   ]
   },
   {
    "organisation": "Künzle-Stiftung",
@@ -829,6 +790,7 @@
     "geloescht_am": null,
     "zweck": "Vorsorge für das Alter.",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109417996&directLink=true"
    }
   },
@@ -851,6 +813,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt den Handel mit Waren aller Art, insbesondere mit Haushaltswaren, Waren für den Wohnbedarf und Geschenkartikel. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE303666869&directLink=true"
    }
   },
@@ -873,6 +836,7 @@
     "geloescht_am": null,
     "zweck": "Wahrnehmung der wirtschaftlichen Interessen ihrer Mitglieder und der Landwirtschaft im Allgemeinen.",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE103288996&directLink=true"
    }
   },
@@ -895,6 +859,7 @@
     "geloescht_am": null,
     "zweck": "Ausführung von allgemeinenen Holz-, Sägerei-, Zimmerei- und Schreinerarbeiten.",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE106925150&directLink=true"
    }
   },
@@ -917,6 +882,7 @@
     "geloescht_am": null,
     "zweck": "Die Gesellschaft bezweckt den An- und Verkauf, den Handel und die Vermittlung sowie die Verwaltung von Immobilien aller Art. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE228271067&directLink=true"
    }
   },
@@ -939,6 +905,7 @@
     "geloescht_am": null,
     "zweck": "Zweck der Stiftung ist, Leistungen von Beihilfen an Einwohnerinnen und Einwohner oder Bürgerinnen und Bürger von Stein am Rhein, die in wirtschaftliche Not geraten sind; Kleinunternehmen mit Betriebsstätte in Stein am Rhein in …",
     "frueher": [],
+    "gefunden_ueber": "aktueller Name",
     "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109982888&directLink=true"
    }
   }
@@ -969,7 +936,7 @@
     "Herren Nicole",
     "Mundt Michael"
    ],
-   "text": "am Register doch gefunden als «Gemeinnützige Stiftung Schweizersbild» (früherer Name)",
+   "text": "am Register doch gefunden als «Gemeinnützige Stiftung Schweizersbild» (Namensvariante)",
    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE115666941&directLink=true"
   },
   {
@@ -978,8 +945,8 @@
    "mitglieder": [
     "Kräuchi Raphael"
    ],
-   "text": "am Register doch gefunden als «Forum 4 AG für Architektur» (früherer Name)",
-   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE114917974&directLink=true"
+   "text": "am Register doch gefunden als «Stiftung Forum für Weiterbildung Schaffhausen FWS» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110261206&directLink=true"
   },
   {
    "art": "aufgeloest",
@@ -996,8 +963,8 @@
    "mitglieder": [
     "Müller Andrea"
    ],
-   "text": "am Register doch gefunden als «Muller Architecture du Paysage Sàrl» (Namensvariante)",
-   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE167446358&directLink=true"
+   "text": "am Register doch gefunden als «Müller Energie GmbH» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE179560736&directLink=true"
   },
   {
    "art": "aufgeloest",
@@ -1007,24 +974,6 @@
    ],
    "text": "am Register doch gefunden als «Radio Munot Betriebs AG» (Namensvariante)",
    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE100155212&directLink=true"
-  },
-  {
-   "art": "aufgeloest",
-   "organisation": "Verwaltung Kraftwerk Schaffhausen AG",
-   "mitglieder": [
-    "Neukomm Peter"
-   ],
-   "text": "am Register doch gefunden als «Verwaltung & Finanzen S. Jud» (Namensvariante)",
-   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE443591474&directLink=true"
-  },
-  {
-   "art": "geloescht",
-   "organisation": "Stiftung Schule für berufliche Aus- und Weiterbildung",
-   "mitglieder": [
-    "Rohner Raphaël"
-   ],
-   "text": "im Handelsregister in Löschung",
-   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE498855547&directLink=true"
   },
   {
    "art": "aufgeloest",
@@ -1081,7 +1030,7 @@
    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109982888&directLink=true"
   }
  ],
- "amtlich_geprueft": 29,
+ "amtlich_geprueft": 25,
  "amtlich_fehler": [],
  "personensuche": []
 }

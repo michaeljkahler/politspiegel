@@ -91,7 +91,8 @@ def norm(s):
 
 def wortmenge(s):
     return {w for w in re.split(r"[^a-z0-9]+", norm(s)) if len(w) > 2
-            and w not in {"der", "die", "das", "und", "ag", "gmbh", "sa"}}
+            and w not in {"der", "die", "das", "und", "ag", "gmbh", "sa", "sarl",
+                          "fur", "von", "des", "dem", "den", "zur", "zum", "bei", "aus"}}
 
 
 def guete(deklariert, treffer, ort=None):
@@ -113,6 +114,23 @@ def guete(deklariert, treffer, ort=None):
     if anteil >= 0.34:
         return ("moeglich", anteil)
     return ("kein", anteil)
+
+
+# Mindestüberschneidung, ab der ein Treffer der REST-Suche übernommen wird.
+# Ohne Schwelle nahm die Suche den besten von beliebig schlechten Treffern:
+# «Stiftung Forum für Weiterbildung» wurde zur «Forum 4 AG für Architektur»,
+# «Müller Energie GmbH» zur «Muller Architecture du Paysage Sàrl».
+MIN_REST = 0.6
+
+
+def firmenname(label):
+    """Deklaration ohne angehängte Rolle und Ortsangabe.
+
+    «Müller Energie GmbH, Thayngen, Gesellschafter, GL» → «Müller Energie GmbH».
+    Rolle und Ort stehen auf sh.ch nach dem ersten Komma; im Register sucht
+    nur der Firmenname."""
+    teil = (label or "").split(",")[0].strip()
+    return teil if len(teil) > 3 else (label or "").strip()
 
 
 def suchbegriff(name):
@@ -227,8 +245,9 @@ def rest_anreichern(orgs, zugang):
     """
     raus, fehler = {}, []
     for i, o in enumerate(orgs, 1):
-        gefunden = None
-        for begriff in (o["label"], suchbegriff(o["label"])):
+        gefunden, voll, ueber = None, None, None
+        name = firmenname(o["label"])
+        for begriff in dict.fromkeys((o["label"], name, suchbegriff(name))):
             kurz, f = rest("/company/search", zugang, "POST", {"name": begriff})
             if f:
                 fehler.append(f"{o['label']}: {f}")
@@ -236,18 +255,28 @@ def rest_anreichern(orgs, zugang):
             if kurz:
                 # Bester Treffer nach Wortüberschneidung, aktive vor gelöschten
                 bewertet = sorted(
-                    kurz, key=lambda t: (-guete(o["label"], t, o.get("ort"))[1],
+                    kurz, key=lambda t: (-guete(name, t, o.get("ort"))[1],
                                          0 if not t.get("deletionDate") else 1))
-                gefunden = bewertet[0]
-                break
+                kandidat = bewertet[0]
+                kvoll = None
+                if kandidat.get("uid"):
+                    kvoll, f = rest(f"/company/uid/{kandidat['uid']}", zugang)
+                    if isinstance(kvoll, list):
+                        kvoll = kvoll[0] if kvoll else None
+                kv = kvoll or kandidat
+                # Übereinstimmung mit dem heutigen Namen oder einem früheren.
+                # Nur was die Schwelle erreicht, gilt als gefunden; sonst
+                # weiter mit dem nächsten Suchbegriff.
+                jetzt = guete(name, {"name": kv.get("name", "")})[1]
+                frueher = max([guete(name, {"name": n.get("name", "")})[1]
+                               for n in (kv.get("oldNames") or []) if n.get("name")] or [0.0])
+                if max(jetzt, frueher) >= MIN_REST:
+                    gefunden, voll = kandidat, kvoll
+                    ueber = "früherer Name" if frueher > jetzt else "aktueller Name"
+                    break
             time.sleep(0.3)
         if not gefunden:
             continue
-        voll = None
-        if gefunden.get("uid"):
-            voll, f = rest(f"/company/uid/{gefunden['uid']}", zugang)
-            if isinstance(voll, list):
-                voll = voll[0] if voll else None
         v = voll or gefunden
         adresse = v.get("address") or {}
         raus[o["label"]] = {
@@ -261,6 +290,7 @@ def rest_anreichern(orgs, zugang):
             "geloescht_am": v.get("deletionDate"),
             "zweck": kuerzen(v.get("purpose")),
             "frueher": [n.get("name") for n in (v.get("oldNames") or []) if n.get("name")][:4],
+            "gefunden_ueber": ueber,
             "url": deutsch(v.get("zefixDetailWeb")) or v.get("cantonalExcerptWeb"),
         }
         if i % 10 == 0:
@@ -450,7 +480,10 @@ def main():
                                         + (f", Datum {a['geloescht_am']}" if a.get("geloescht_am") else ""),
                                 "url": a.get("url")})
             elif e in offen:
-                treffer = a.get("frueher") and "früherer Name" or "Namensvariante"
+                # «früherer Name» nur, wenn die Deklaration einem früheren
+                # Registernamen entspricht, nicht schon, wenn es einen gibt.
+                treffer = ("früherer Name" if a.get("gefunden_ueber") == "früherer Name"
+                           else "Namensvariante")
                 befunde.append({"art": "aufgeloest", "organisation": e["organisation"],
                                 "mitglieder": e["mitglieder"],
                                 "text": f"am Register doch gefunden als «{a['name']}» ({treffer})",
