@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01",
+ "stand": "2026-11-11",
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat/Mitglieder-und-Parteien/Mitglieder-und-Fraktionen-2304166-DE.html",
  "knoten": [
   {
@@ -23,7 +23,7 @@
    "id": "b:Wirtschaft und Gewerbe",
    "typ": "branche",
    "label": "Wirtschaft und Gewerbe",
-   "anzahl": 21
+   "anzahl": 18
   },
   {
    "id": "o:dorflingen",
@@ -37,7 +37,7 @@
    "id": "b:Gemeinden und Behörden",
    "typ": "branche",
    "label": "Gemeinden und Behörden",
-   "anzahl": 18
+   "anzahl": 17
   },
   {
    "id": "m:Alaye|Mayowa",
@@ -60,7 +60,7 @@
    "id": "b:Parteien",
    "typ": "branche",
    "label": "Parteien",
-   "anzahl": 24
+   "anzahl": 25
   },
   {
    "id": "m:Altorfer|Leonie",
@@ -216,7 +216,7 @@
    "id": "b:Wohnen und Immobilien",
    "typ": "branche",
    "label": "Wohnen und Immobilien",
-   "anzahl": 9
+   "anzahl": 8
   },
   {
    "id": "o:frau macht politik",
@@ -396,7 +396,7 @@
    "label": "Grosser Stadtrat Schaffhausen",
    "branche": "Gemeinden und Behörden",
    "ort": null,
-   "anzahl": 3
+   "anzahl": 2
   },
   {
    "id": "m:Flubacher Rüedlinger|Melanie",
@@ -542,15 +542,7 @@
    "partei": "FDP",
    "fraktion": "FDP-Die Mitte",
    "bild": true,
-   "anzahl": 4
-  },
-  {
-   "id": "o:stadtischer gewerbeverband sh",
-   "typ": "organisation",
-   "label": "Städtischer Gewerbeverband SH",
-   "branche": "Wirtschaft und Gewerbe",
-   "ort": null,
-   "anzahl": 1
+   "anzahl": 2
   },
   {
    "id": "o:herrenacker parkhaus",
@@ -899,13 +891,35 @@
    "partei": "Junge Grüne",
    "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
    "bild": true,
-   "anzahl": 2
+   "anzahl": 4
   },
   {
-   "id": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "id": "o:eidgenossische kommission fur kinder und jugendfragen ekkj",
    "typ": "organisation",
-   "label": "Eidgenässische Kommission für Kinder- und Jugendfragen (EKKJ)",
+   "label": "Eidgenössische Kommission für Kinder- und Jugendfragen (EKKJ)",
    "branche": "Berufs- und Interessenverbände",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "o:kantonales arbeitersekretariat schaffhausen",
+   "typ": "organisation",
+   "label": "Kantonales Arbeitersekretariat Schaffhausen",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Übrige",
+   "typ": "branche",
+   "label": "Übrige",
+   "anzahl": 5
+  },
+  {
+   "id": "o:grune schaffhausen co",
+   "typ": "organisation",
+   "label": "GRÜNE Schaffhausen, Co",
+   "branche": "Parteien",
    "ort": null,
    "anzahl": 1
   },
@@ -1291,12 +1305,6 @@
    "branche": "Übrige",
    "ort": null,
    "anzahl": 1
-  },
-  {
-   "id": "b:Übrige",
-   "typ": "branche",
-   "label": "Übrige",
-   "anzahl": 4
   },
   {
    "id": "m:Neumann|Eva",
@@ -1716,39 +1724,6 @@
    "typ": "organisation",
    "label": "Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter",
    "branche": "Berufs- und Interessenverbände",
-   "ort": null,
-   "anzahl": 1
-  },
-  {
-   "id": "m:Schraff|Jannik",
-   "typ": "mitglied",
-   "label": "Jannik Schraff",
-   "partei": "GLP",
-   "fraktion": "GLP-EVP",
-   "bild": true,
-   "anzahl": 3
-  },
-  {
-   "id": "o:smg immobilien",
-   "typ": "organisation",
-   "label": "SMG Immobilien AG",
-   "branche": "Wohnen und Immobilien",
-   "ort": "Beringen",
-   "anzahl": 1
-  },
-  {
-   "id": "o:schraff und muller beringen gesellschafter",
-   "typ": "organisation",
-   "label": "Schraff und Müller GmbH, Beringen, Gesellschafter",
-   "branche": "Wirtschaft und Gewerbe",
-   "ort": null,
-   "anzahl": 1
-  },
-  {
-   "id": "o:smg bau beringen gesellschafter",
-   "typ": "organisation",
-   "label": "SMG bau gmbh, Beringen, Gesellschafter",
-   "branche": "Wirtschaft und Gewerbe",
    "ort": null,
    "anzahl": 1
   },
@@ -2195,12 +2170,6 @@
   },
   {
    "von": "m:Herren|Nicole",
-   "nach": "o:stadtischer gewerbeverband sh",
-   "rolle": "Präsidentin",
-   "roh": "- Städtischer Gewerbeverband SH, Präsidentin"
-  },
-  {
-   "von": "m:Herren|Nicole",
    "nach": "o:herrenacker parkhaus",
    "rolle": "Vizepräsidentin",
    "roh": "- Herrenacker Parkhaus AG, Vizepräsidentin"
@@ -2210,12 +2179,6 @@
    "nach": "o:gemeinnutzige stiftung schweizersbild",
    "rolle": "Stiftungsrätin",
    "roh": "- Gemeinnützige Stiftung Schweizersbild, Stiftungsrätin"
-  },
-  {
-   "von": "m:Herren|Nicole",
-   "nach": "o:grosser stadtrat schaffhausen",
-   "rolle": "Mitglied",
-   "roh": "- Grosser Stadtrat Schaffhausen, Mitglied"
   },
   {
    "von": "m:Hotz|Walter",
@@ -2389,13 +2352,25 @@
    "von": "m:Looser|Gianluca",
    "nach": "o:mieterinnen und mieterverband schaffhausen",
    "rolle": "Vorstand",
-   "roh": "Mieterinnen- und Mieterverband Schaffhausen, Vorstand"
+   "roh": "- Mieterinnen- und Mieterverband Schaffhausen, Vorstand"
   },
   {
    "von": "m:Looser|Gianluca",
-   "nach": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "nach": "o:eidgenossische kommission fur kinder und jugendfragen ekkj",
    "rolle": "Mitglied",
-   "roh": "Eidgenässische Kommission für Kinder- und Jugendfragen (EKKJ), Mitglied"
+   "roh": "- Eidgenössische Kommission für Kinder- und Jugendfragen (EKKJ), Mitglied"
+  },
+  {
+   "von": "m:Looser|Gianluca",
+   "nach": "o:kantonales arbeitersekretariat schaffhausen",
+   "rolle": "Vorstand",
+   "roh": "- Kantonales Arbeitersekretariat Schaffhausen, Vorstand"
+  },
+  {
+   "von": "m:Looser|Gianluca",
+   "nach": "o:grune schaffhausen co",
+   "rolle": "Präsident",
+   "roh": "- GRÜNE Schaffhausen, Co-Präsident"
   },
   {
    "von": "m:Lüthi|Isabelle",
@@ -2914,24 +2889,6 @@
    "roh": "- Kantonale Natur- und Heimatschutzkommission (KNHK) als Lw. Vertreter, Mitglied"
   },
   {
-   "von": "m:Schraff|Jannik",
-   "nach": "o:smg immobilien",
-   "rolle": "Verwaltungsrat",
-   "roh": "- SMG Immobilien AG, Beringen, Verwaltungsrat"
-  },
-  {
-   "von": "m:Schraff|Jannik",
-   "nach": "o:schraff und muller beringen gesellschafter",
-   "rolle": null,
-   "roh": "- Schraff und Müller GmbH, Beringen, Gesellschafter"
-  },
-  {
-   "von": "m:Schraff|Jannik",
-   "nach": "o:smg bau beringen gesellschafter",
-   "rolle": null,
-   "roh": "- SMG bau gmbh, Beringen, Gesellschafter"
-  },
-  {
    "von": "m:Schudel|Erich",
    "nach": "o:svp beggingen",
    "rolle": "Präsident",
@@ -3299,13 +3256,6 @@
    "art": "branche"
   },
   {
-   "von": "o:stadtischer gewerbeverband sh",
-   "nach": "b:Wirtschaft und Gewerbe",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
    "von": "o:herrenacker parkhaus",
    "nach": "b:Wirtschaft und Gewerbe",
    "rolle": null,
@@ -3509,8 +3459,22 @@
    "art": "branche"
   },
   {
-   "von": "o:eidgenassische kommission fur kinder und jugendfragen ekkj",
+   "von": "o:eidgenossische kommission fur kinder und jugendfragen ekkj",
    "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:kantonales arbeitersekretariat schaffhausen",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:grune schaffhausen co",
+   "nach": "b:Parteien",
    "rolle": null,
    "roh": null,
    "art": "branche"
@@ -4057,27 +4021,6 @@
   {
    "von": "o:kantonale natur und heimatschutzkommission knhk als lw vertreter",
    "nach": "b:Berufs- und Interessenverbände",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
-   "von": "o:smg immobilien",
-   "nach": "b:Wohnen und Immobilien",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
-   "von": "o:schraff und muller beringen gesellschafter",
-   "nach": "b:Wirtschaft und Gewerbe",
-   "rolle": null,
-   "roh": null,
-   "art": "branche"
-  },
-  {
-   "von": "o:smg bau beringen gesellschafter",
-   "nach": "b:Wirtschaft und Gewerbe",
    "rolle": null,
    "roh": null,
    "art": "branche"

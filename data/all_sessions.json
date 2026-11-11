@@ -1,6 +1,1643 @@
 {
  "sessions": [
   {
+   "sitzung": "16. Sitzung 2026 · 02.11.2026 (Vormittag)",
+   "n_votes": 14,
+   "cid": "23774052",
+   "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23774052-DE.html",
+   "members": [
+    {
+     "nachname": "Aellig",
+     "vorname": "Pentti",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Alaye",
+     "vorname": "Mayowa",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Altorfer",
+     "vorname": "Leonie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "JUSO",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bolli",
+     "vorname": "Fabian",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Enth",
+      "Ja",
+      "Enth",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brenn",
+     "vorname": "Franziska",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bringolf",
+     "vorname": "Lukas",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Brügel",
+     "vorname": "Anna",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Bucher",
+     "vorname": "Tim",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "De Ventura",
+     "vorname": "Linda",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Derksen",
+     "vorname": "Theresia",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Di Ronco",
+     "vorname": "Christian",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "Die Mitte",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Egger",
+     "vorname": "Martin",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Faccani",
+     "vorname": "Diego",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fehr",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Fioretti",
+     "vorname": "Mariano",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Flubacher Rüedlinger",
+     "vorname": "Melanie",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Freivogel",
+     "vorname": "Matthias",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Enth",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Graf",
+     "vorname": "Hansueli",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Gruhler Heinzer",
+     "vorname": "Irene",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Hedinger",
+     "vorname": "Beat",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Herren",
+     "vorname": "Nicole",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Hotz",
+     "vorname": "Walter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Arnold",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Isliker",
+     "vorname": "Deborah",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Kräuchi",
+     "vorname": "Raphael",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Laich",
+     "vorname": "Lorenz",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Lang",
+     "vorname": "Svea",
+     "fraktion": "SVP-EDU",
+     "partei": "JSVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Le Donne",
+     "vorname": "Vanessa",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Leu",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Litscher",
+     "vorname": "Monika",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Gianluca",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "Junge Grüne",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Looser",
+     "vorname": "Bettina",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Lüthi",
+     "vorname": "Isabelle",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Meyer",
+     "vorname": "Daniel",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Enth",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Roland",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Markus",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Enth"
+     ]
+    },
+    {
+     "nachname": "Müller",
+     "vorname": "Andrea",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Mundt",
+     "vorname": "Michael",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Neukomm",
+     "vorname": "Peter",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Neumann",
+     "vorname": "Eva",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Oberle",
+     "vorname": "Claudia",
+     "fraktion": "GLP-EVP",
+     "partei": "GLP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Passafaro",
+     "vorname": "Marco",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "V/A/N",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Penkov",
+     "vorname": "Angela",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Pfalzgraf",
+     "vorname": "Maurus",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "GRÜNE",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Enth"
+     ]
+    },
+    {
+     "nachname": "Portmann",
+     "vorname": "Patrick",
+     "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
+     "partei": "SP",
+     "votes": [
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Rohner",
+     "vorname": "Raphaël",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Salathé",
+     "vorname": "Regula",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schärrer",
+     "vorname": "Nina",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Nein",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Scheck",
+     "vorname": "Peter",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Enth",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Roman",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Hermann",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schlatter",
+     "vorname": "Martin",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schmidig",
+     "vorname": "Rainer",
+     "fraktion": "GLP-EVP",
+     "partei": "EVP",
+     "votes": [
+      "Nein",
+      "Nein",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein"
+     ]
+    },
+    {
+     "nachname": "Schnetzler",
+     "vorname": "Andreas",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schöpfer",
+     "vorname": "Sandra",
+     "fraktion": "SVP-EDU",
+     "partei": "EDU",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Schudel",
+     "vorname": "Erich",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Suter",
+     "vorname": "Roman",
+     "fraktion": "FDP-Die Mitte",
+     "partei": "FDP",
+     "votes": [
+      "Nein",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "V/A/N"
+     ]
+    },
+    {
+     "nachname": "Tognella",
+     "vorname": "Ivo",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Nein",
+      "Ja",
+      "V/A/N",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Ullmann",
+     "vorname": "Corinne",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "V/A/N",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Nein",
+      "Ja",
+      "Nein",
+      "Ja"
+     ]
+    },
+    {
+     "nachname": "Würms",
+     "vorname": "Josef",
+     "fraktion": "SVP-EDU",
+     "partei": "SVP",
+     "votes": [
+      "Ja",
+      "Enth",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja",
+      "Ja"
+     ]
+    }
+   ],
+   "votes": [
+    {
+     "nr": 1,
+     "titel": "Antrag A. Schnetzler",
+     "typ": "Antrag",
+     "details": "Direkte Beratung im Kantonsrat gemäss §34 Abs. 2 GO",
+     "inverted_note": null,
+     "gegen_note": null,
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 29. September 2026 betreffend Änderung des Gesetzes über die öffentliche Sozialhilfe und soziale Einrichtungen (Unterstützung von Schutzbedürftigen mit Aufenthaltsbewilligung; Anpassungen infolge Entlastungspaket 27)",
+     "thema_gruppe": "8",
+     "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
+     "richtung_invertiert": false,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Gesundheit und Soziales"
+     ],
+     "tags_unterthema": [
+      "Soziale Sicherheit"
+     ],
+     "tags_detail": [
+      "Sozialhilfe"
+     ]
+    },
+    {
+     "nr": 2,
+     "titel": "Antrag R. Kräuchi",
+     "typ": "Antrag",
+     "details": "Die Bezeichnung Rheinfallmanagement Gesellschaft ist zu überprüfen und durch eine sachgerechtere Bezeichnung wie beispielsweise Rheinfallgesellschaft zu ersetzen. Die Bezeichnung ist im Gesetz, in den Statuten sowie in den weiteren Bestandteilen der Vorlage entsprechend durchgängig anzupassen.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag R. Kräuchi",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 3,
+     "titel": "Antrag M. Freivogel",
+     "typ": "Antrag",
+     "details": "Ergänzung Art. 1 wie folgt: 1 Der Kanton fördert zusammen mit den anliegenden Gemeinden die nachhaltige Entwicklung des Rheinfallareals im Kanton Schaffhausen. 2 Insbesondere sollen die Planung, Entwicklung, Steuerung, Organisation und Koordination auf der Schaffhauser Seite gebündelt und in innovativer, nachhaltiger Weise betrieben werden. 3 Dabei sind die sozialen, kulturellen, ökologischen und wirtschaftlichen Interessen ausgewogen zu berücksichtigen und nach Möglichkeit die Zürcher Seite des Rheinfalls in angemessener Weise einzubeziehen.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag M. Freivogel",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 4,
+     "titel": "Antrag M. Freivogel",
+     "typ": "Antrag",
+     "details": "Ergänzung Art. 2 wie folgt: 1 Ziele nachhaltiger Entwicklung sind namentlich: a) die Bewahrung der natürlichen und kulturellen Authentizität des Rheinfalls als europaweit einzigartiges Naturschauspiel und kulturelles Erbe; b) die Steigerung der lokalen und regionalen Wertschöpfung durch qualitativ hochstehende, angemessen eingepreiste Angebote mit kostenlosem sowie barrierefreiem Zugang zum Rheinfall (Aufwertung der Aufenthaltsqualität); c) die Erhöhung der Aufenthaltsdauer der Gäste in der Destination Neuhausen am Rheinfall, namentlich der Einheimischen, sowie Verteilung der Besuchenden über das ganze Jahr hinweg; d) die Vermeidung von saisonal überbordenden, Natur, Klima sowie die Infrastruktur überlastenden Tourismus.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag M. Freivogel",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Wirtschaft und Arbeit"
+     ],
+     "tags_unterthema": [
+      "Standort und Förderung"
+     ],
+     "tags_detail": [
+      "Tourismus"
+     ]
+    },
+    {
+     "nr": 5,
+     "titel": "Antrag M. Freivogel",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 3 wie folgt: 1 Zur Umsetzung der bezweckten Ziele gemäss Artikel 1 und 2 gründet der Kanton eine gemischtwirtschaftliche Aktiengesellschaft nach den Bestimmungen des Schweizerischen Obligationenrechtes (Art. 762 OR). Der Sitz der Gesellschaft befindet sich in Neuhausen am Rheinfall. 2 Die Gesellschaft kann Rechte sowie Eigentum an Infrastrukturen und Immobilien erwerben und halten, einschliesslich solcher, die bei der Gründung als Sacheinlage übertragen oder ihr später zugeführt werden. 3 Die Gesellschaft kann die Leistungserbringung, insbesondere in den Bereichen Gastronomie und Schifffahrt, durch die Vergabe an private Anbieter sicherstellen. 4 Bei der Verfolgung des Gesellschaftszwecks und ihrer Aufgabenerfüllung strebt die Gesellschaft die Schaffung von langfristigen, nachhaltigen Werten in sozialer, ökologischer und ökonomischer Hinsicht an. Die Aktivitäten am Rheinfall stehen im Einklang mit den Klimazielen des Kantons Schaffhausen, berücksichtigen in angemessener Weise die Interessen der angrenzenden Gemeinwesen, richten sich nach dem Bundesinventar der Landschaften und Naturdenkmäler (BLN) und tragen dem kulturellen Erbe des Rheinfalls Sorge 5 Die Gesellschaft koordiniert ihre Aktivitäten mit der gemäss Tourismusförderungsgesetz für den ganzen Kanton bestimmten Tourismusorganisation.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag M. Freivogel",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Raum, Bau und Verkehr",
+      "Wirtschaft und Arbeit"
+     ],
+     "tags_unterthema": [
+      "Raumplanung und Bau",
+      "Standort und Förderung"
+     ],
+     "tags_detail": [
+      "Landerwerb und Liegenschaften",
+      "Tourismus",
+      "Gewerbe und Handel"
+     ]
+    },
+    {
+     "nr": 6,
+     "titel": "Antrag RR Martin Kessler",
+     "typ": "Antrag",
+     "details": "Ergänzung Art. 3 Abs. 1 um folgednen Satz: und leistet einen Beitrag zur kantonalen Tourismusförderung.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag RR M. Kessler",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Wirtschaft und Arbeit"
+     ],
+     "tags_unterthema": [
+      "Standort und Förderung"
+     ],
+     "tags_detail": [
+      "Tourismus"
+     ]
+    },
+    {
+     "nr": 7,
+     "titel": "Antrag R. Müller",
+     "typ": "Antrag",
+     "details": "Schaffung Art. 3 Abs. 6 neu wie folgt: 6 Die Aktivitäten am Rheinfall haben im Einklang mit den geltenden Rahmenbedingungen zu erfolgen, insebsondere dem Bundesinventar der Landschaften und Naturdenkmäler BLN.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag R. Müller",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 8,
+     "titel": "Antrag M. Litscher",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 4 Abs. 2 wie folgt: Der Entwurf der Gründungsstatuten sowie deren Abänderung bedarf der Genehmigung durch den Kantonsrat",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag M. Litscher",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 9,
+     "titel": "Antrag M. Freivogel",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 5 Abs. 2 wie folgt: Der Verwaltungsrat der Gesellschaft besteht aus neun Mitgliedern; dem Kanton stehen mindestens 6 Mitglieder zu, mindestens drei aus der Mitte des Kantonsrates. Bei der Zusammensetzung des Verwaltungsrates ist darauf zu achten, dass eine im Hinblick auf die verschiedenen Fachgebiete ganzheitliche Steuerung der Gesellschaft gewährleistet ist.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag M. Freivogel",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 10,
+     "titel": "Antrag I. Lüthi",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 5 Abs. 3 wie folgt: Der Regierungsrat ernennt die Vertreterinnen und Vertreter des Kantons im Verwaltungsrat und beruft sie ab, wobei die Mitglieder aus den Reihen des Kantonsrates von diesem zuhanden des Regierungsrates nominiert werden.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag I. Lüthi",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [],
+     "tags_unterthema": [],
+     "tags_detail": []
+    },
+    {
+     "nr": 11,
+     "titel": "Antrag N. Schärrer",
+     "typ": "Antrag",
+     "details": "Schaffung Art. 5 Abs. 4 neu wie folgt: 4 Der Einwohnergemeinde Neuhausen am Rheinfall steht das Recht zu, ein Mitglied in den Verwaltungsrat zu entsenden. Die Ernennung und Abberufung erfolgen durch den Gemeinderat. Er berücksichtigt dabei das Anforderungsprofil gemäss Eignerstrategie.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag N. Schärrer",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Finanzen und Steuern"
+     ],
+     "tags_unterthema": [
+      "Beteiligungen"
+     ],
+     "tags_detail": [
+      "Eignerstrategie"
+     ]
+    },
+    {
+     "nr": 12,
+     "titel": "Antrag L. Altorfer",
+     "typ": "Antrag",
+     "details": "Anpassung Art. 6 Abs. 2 wie folgt: Der Verwaltungsrat legt der Generalversammlung jährlich den Geschäftsbericht und die Jahresrechnung zur Genehmigung vor einschliesslich dem Vergütungsbericht einzelner Gehälter der Geschäftsleitung.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag L. Altorfer",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Finanzen und Steuern"
+     ],
+     "tags_unterthema": [
+      "Haushalt"
+     ],
+     "tags_detail": [
+      "Staatsrechnung"
+     ]
+    },
+    {
+     "nr": 13,
+     "titel": "Antrag N. Schärrer",
+     "typ": "Antrag",
+     "details": "Ergänzung Art. 8 Abs. 1 wie folgt: Die Eignerstrategie, die der Regierungsrat erlässt, legt die mittel- und langfristigen Zielsetzungen für die Gesellschaft fest und regelt die relevanten Vorstellungen betreffend Unternehmensverständnis, Steuerung und Controlling sowie die Anforderungen an den Verwaltungsrat der Gesellschaft. Der Regierungsrat hört die an der Gesellschaft beteiligten Gemeinwesen sowie die Standortgemeinde an und berücksichtigt deren Interessen soweit als möglich. Anpassungen zur Eignerstrategie sind dem Kantonsrat zur Kenntnis zu bringen.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag N. Schärrer",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Finanzen und Steuern"
+     ],
+     "tags_unterthema": [
+      "Beteiligungen"
+     ],
+     "tags_detail": [
+      "Eignerstrategie"
+     ]
+    },
+    {
+     "nr": 14,
+     "titel": "Antrag P. Neukomm",
+     "typ": "",
+     "details": "Anpassung Art. 8 Abs. 1 wie folgt: Der Regierungsrat erlässt eine Eignerstrategie die vom Kantonsrat zu genehmigen ist. Geringfügige Änderungen der Eignerstrategie sind dem Kantonsrat zur Kenntnis zu bringen. Wesentliche Änderungen unterliegen seiner Genehmigung.",
+     "inverted_note": "Ja bedeutet Zustimmung Antrag SPK",
+     "gegen_note": "Nein bedeutet Zustimmung Antrag P. Neukomm",
+     "geschaeft": "Bericht und Antrag des Regierungsrats vom 16. Dezember 2025 betreffend das Gesetz über die Rheinfall Managementgesellschaft (RMG-Gesetz)",
+     "thema_gruppe": "9",
+     "thema_name": "Wirtschaft",
+     "richtung_invertiert": true,
+     "tags_form": [
+      "Antrag"
+     ],
+     "tags_ueberthema": [
+      "Finanzen und Steuern"
+     ],
+     "tags_unterthema": [
+      "Beteiligungen"
+     ],
+     "tags_detail": [
+      "Eignerstrategie"
+     ]
+    }
+   ],
+   "quelle": "ec3a9e93_20261102-Abstimmungsergebnisse_Vormittag.xlsx",
+   "protokolle": [],
+   "legislatur": 3
+  },
+  {
    "sitzung": "14. und 15. Sitzung 2026 · 21.09.2026 (Nachmittag)",
    "n_votes": 19,
    "cid": "23578858",
@@ -3327,6 +4964,7 @@
      "geschaeft": "Bericht und Antrag des  Regierungsrats vom 17. September 2024 betreffend Totalrevision Polizeigesetz",
      "thema_gruppe": "3",
      "thema_name": "Strafrecht, Strafvollzug",
+     "vermerk_herkunft": "handentscheid",
      "richtung_invertiert": true,
      "tags_form": [
       "Antrag"
@@ -3339,8 +4977,7 @@
      ],
      "tags_detail": [
       "Polizeigesetz"
-     ],
-     "vermerk_herkunft": "handentscheid"
+     ]
     }
    ],
    "quelle": "839b24ae_20260921_Abstimmungsergebnisse_Vormittag.xlsx",
@@ -9005,6 +10642,22 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen) 2. Lesung",
+     "kontext": "Der Gesetzesrevision wird mit 54 : 0 Stimmen bei 2 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "kanton",
+      "schulen",
+      "schulleitungen",
+      "einführung",
+      "anliegen",
+      "vernehmlassung",
+      "struktur",
+      "anstellung",
+      "lösung",
+      "vereinheitlichung",
+      "kommissionslösung",
+      "funktion"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "4",
      "thema_name": "Erziehung, Kultur, Natur",
      "richtung_invertiert": false,
@@ -9018,7 +10671,8 @@
       "Schule"
      ],
      "tags_detail": [
-      "Volksschule"
+      "Volksschule",
+      "Lehrpersonen"
      ]
     },
     {
@@ -9029,6 +10683,18 @@
      "inverted_note": "Ja bedeutet Zustimmung SPK",
      "gegen_note": "Nein bedeutet Zustimmung Antrag A. Penkov",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen) 2. Lesung",
+     "kontext": "Der Kommissionsvorlage wird mit 37 : 18 Stimmen zugestimmt.",
+     "stichworte": [
+      "schüler",
+      "pensum",
+      "schülern",
+      "gemeinden",
+      "schulleitungen",
+      "schulen",
+      "flexibilität",
+      "bandbreite"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "4",
      "thema_name": "Erziehung, Kultur, Natur",
      "richtung_invertiert": true,
@@ -9057,6 +10723,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen) 2. Lesung",
+     "kontext": "Der Teilrevision des Schuldekrets wird mit 42 : 12 Stimmen bei 2 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "pensum",
+      "schüler",
+      "gemeinden",
+      "schülern",
+      "schulleitungen",
+      "flexibilität",
+      "bandbreite",
+      "wortmeldungen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "4",
      "thema_name": "Erziehung, Kultur, Natur",
      "richtung_invertiert": false,
@@ -9070,7 +10748,8 @@
       "Schule"
      ],
      "tags_detail": [
-      "Volksschule"
+      "Volksschule",
+      "Lehrpersonen"
      ]
     },
     {
@@ -9081,6 +10760,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 17. September 2024 betreffend Teilrevision des Schulgesetzes und des Schuldekretes (flächendeckende Einführung von geleiteten Schulen im Kanton Schaffhausen) 2. Lesung",
+     "kontext": "Schaffhausen wird mit 56 : 0 Stimmen (einstimmig) zugestimmt.",
+     "stichworte": [
+      "gemeinden",
+      "schulleitungen",
+      "flexibilität",
+      "bandbreite",
+      "schulen",
+      "pensum",
+      "schüler",
+      "wortmeldungen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "4",
      "thema_name": "Erziehung, Kultur, Natur",
      "richtung_invertiert": false,
@@ -9094,7 +10785,8 @@
       "Schule"
      ],
      "tags_detail": [
-      "Volksschule"
+      "Volksschule",
+      "Lehrpersonen"
      ]
     },
     {
@@ -9105,6 +10797,22 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom vom 23. September 2025 betreffend Teilrevision des Altersbetreuungs- und Pflegegesetzes (Restkostenfinanzierung Pflege) 2. Lesung",
+     "kontext": "Der Gesetzesänderung wird mit 52 : 0 Stimmen bei 4 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "altersheim",
+      "wohnsitz",
+      "alters",
+      "gesundheitskommission",
+      "vernehmlassung",
+      "schluss",
+      "gemeinde",
+      "stufe",
+      "problem",
+      "platz",
+      "steuern",
+      "lösung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": false,
@@ -9130,6 +10838,14 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 28. April 2026 betreffend Jahresbericht und Jahresrechnung 2025 der Schaffhauser Sonderschulen",
+     "kontext": "Sonderschulen werden mit 53 : 0 Stimmen genehmigt.",
+     "stichworte": [
+      "verantwortung",
+      "regelschule",
+      "massnahmen",
+      "briefträger"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "4",
      "thema_name": "Erziehung, Kultur, Natur",
      "richtung_invertiert": false,
@@ -9154,6 +10870,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+     "kontext": "Der Kommissionsvorlage wird mit 24 : 23 Stimmen und 4 Enthaltungen der Vorzug gegeben.",
+     "stichworte": [
+      "unterführung",
+      "prüfung",
+      "stein",
+      "rhein",
+      "ortsbus",
+      "stadt",
+      "ortsverkehr",
+      "rundbuck",
+      "friedhof"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -9185,6 +10914,18 @@
      "inverted_note": "Ja bedeutet Zustimmung Planungserklärung BVE",
      "gegen_note": "Nein bedeutet Zustimmung Antrag M. Freivogel",
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+     "stichworte": [
+      "unterführung",
+      "prüfung",
+      "stein",
+      "rhein",
+      "ortsbus",
+      "stadt",
+      "ortsverkehr",
+      "rundbuck",
+      "friedhof"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": true,
@@ -9213,6 +10954,21 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+     "kontext": "Einführung eines Ortsverkehrsbusses vorzusehen» wird mit 34 : 15 Stimmen bei 5 Enthaltungen abgelehnt.",
+     "stichworte": [
+      "prüfung",
+      "stein",
+      "rhein",
+      "stadt",
+      "ortsbus",
+      "unterführung",
+      "ortsverkehr",
+      "rundbuck",
+      "friedhof",
+      "planungserklärung",
+      "vorzug"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -9241,6 +10997,20 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+     "kontext": "wird mit 54 :0 Stimmen bei 2 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "stadt",
+      "projekt",
+      "planungserklärung",
+      "stein",
+      "rhein",
+      "ortsverkehr",
+      "rundbuck",
+      "friedhof",
+      "vorzug",
+      "aufhebung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -9269,6 +11039,23 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 24. Februar 2026 betreffend «Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein»  (Orientierungsvorlage)",
+     "kontext": "sonstigen allfällig höheren Kosten» wird mit 52 : 0 Stimmen bei 3 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "projekt",
+      "planungserklärung",
+      "stein",
+      "rhein",
+      "ortsverkehr",
+      "stadt",
+      "rundbuck",
+      "friedhof",
+      "vorzug",
+      "aufhebung",
+      "rahmen",
+      "beteiligung",
+      "bundes"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -9291,7 +11078,13 @@
     }
    ],
    "quelle": "71d0e976_20260629_Abstimmungsergebnisse_Vormittag.xlsx",
-   "protokolle": [],
+   "protokolle": [
+    {
+     "name": "Protokoll 10. Sitzung vom 29.06.2026.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/b282fc10-c2bf-47f2-8d86-26eaea416870"
+    }
+   ],
    "legislatur": 3
   },
   {
@@ -10210,6 +12003,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Der Amtsbericht des Obergerichts wird mit 52 : 1 Stimmen geneh- migt.",
+     "stichworte": [
+      "zunahme",
+      "vielleicht",
+      "berufsbeistandschaften",
+      "arbeit",
+      "person",
+      "erledigungen",
+      "zahlen",
+      "massnahmen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -10234,6 +12039,15 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zu den Postulaten 2022/15, 2022/16, 2022/17 und 2025/1 betreffend die Axpo",
+     "kontext": "Der Abschreibung des Postulats 2022/15 wird mit 38 : 17 Stimmen zugestimmt.",
+     "stichworte": [
+      "bedenken",
+      "sicht",
+      "verträge",
+      "marktpreise",
+      "gestehungskosten"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -10258,6 +12072,15 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zu den Postulaten 2022/15, 2022/16, 2022/17 und 2025/1 betreffend die Axpo",
+     "kontext": "Der Abschreibung des Postulats 2022/16 wird mit 39 : 15 Stimmen zugestimmt.",
+     "stichworte": [
+      "bedenken",
+      "verträge",
+      "marktpreise",
+      "gestehungskosten",
+      "postulats"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -10282,6 +12105,20 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zu den Postulaten 2022/15, 2022/16, 2022/17 und 2025/1 betreffend die Axpo",
+     "kontext": "Der Nichtabschreibung des Postulats Nummer 2022/17 wird mit 27 : 26 Stimmen bei 2 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "vertretung",
+      "kanton",
+      "zürich",
+      "glarus",
+      "kantonen",
+      "sinne",
+      "person",
+      "verwaltungsrat",
+      "fokus",
+      "einfluss"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -10306,6 +12143,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 10. Februar 2026 zu den Postulaten 2022/15, 2022/16, 2022/17 und 2025/1 betreffend die Axpo",
+     "kontext": "der Geschäftsleitung Axpo auf ein vernünftiges Mass» wird mit 36 : 17 Stimmen bei 1 Enthaltung zugestimmt.",
+     "stichworte": [
+      "vertretung",
+      "kanton",
+      "kantonen",
+      "sinne",
+      "person",
+      "verwaltungsrat",
+      "fokus",
+      "einfluss",
+      "postulats"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -10330,6 +12180,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 7. April 2026 betreffend Geschäftsbericht 2025 der Gebäudeversicherung des Kantons Schaffhausen",
+     "kontext": "Schaffhausen wird mit 50 : 0 Stimmen genehmigt.",
+     "stichworte": [
+      "mitte",
+      "aufnahme",
+      "brände",
+      "brandschutz",
+      "kanton",
+      "wallis",
+      "dinge",
+      "bevölkerung",
+      "gebäudeversicherung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "7",
      "thema_name": "Raumplanung, Bau, Verkehr, Energie",
      "richtung_invertiert": false,
@@ -10354,6 +12217,15 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Das Postulat wird mit 43 : 5 Stimmen bei 1 Enthaltung für erheblich erklärt.",
+     "stichworte": [
+      "verbindung",
+      "baden",
+      "württemberg",
+      "pendler",
+      "strecke"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -10372,7 +12244,18 @@
     }
    ],
    "quelle": "2bc4e4f6_20260615_Abstimmungsergebnisse_Nachmittag.xlsx",
-   "protokolle": [],
+   "protokolle": [
+    {
+     "name": "Protokoll 8. Sitzung vom 15.06.2026_ VM.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/47134a4b-8153-45b7-8fd0-072fa14b8410"
+    },
+    {
+     "name": "Protokoll 9. Sitzung vom 15.06.2026_ NM.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/43312fe1-34cc-4181-9e77-fcfe7a7975db"
+    }
+   ],
    "legislatur": 3
   },
   {
@@ -11291,6 +13174,16 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 31. März 2026 betreffend Geschäftsbericht 2025 der Informatik Schaffhausen (ITSH)",
+     "kontext": "matik Schaffhausen wird mit 57 : 0 Stimmen bei 1 Enthaltung zuge- stimmt.",
+     "stichworte": [
+      "gemeinden",
+      "programme",
+      "systeme",
+      "programm",
+      "wortmeldungen",
+      "rückkommen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "1",
      "thema_name": "Staat, Volk, Behörden",
      "richtung_invertiert": false,
@@ -11318,6 +13211,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "kontext": "Franken wird mit 54 : 0 Stimmen bei 1 Enthaltung zuge- stimmt.",
+     "stichworte": [
+      "personalamt",
+      "mitarbeitenden",
+      "weiterbildung",
+      "personal",
+      "departementen",
+      "kanton",
+      "bevölkerung",
+      "projekt"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11325,14 +13230,17 @@
       "Sonstige"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Finanzen und Steuern"
      ],
      "tags_unterthema": [
+      "Regierung und Verwaltung",
       "Steuern",
       "Haushalt",
       "Finanzpolitik"
      ],
      "tags_detail": [
+      "Verwaltungsorganisation",
       "Unternehmenssteuern",
       "Staatsrechnung",
       "Reserven und Fonds"
@@ -11346,6 +13254,17 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "kontext": "wird mit 54 : 0 Stimmen bei 1 Enthaltung zugestimmt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "weiterbildung",
+      "personalamt",
+      "departementen",
+      "kanton",
+      "bevölkerung",
+      "projekt"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11353,13 +13272,16 @@
       "Sonstige"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Finanzen und Steuern"
      ],
      "tags_unterthema": [
+      "Regierung und Verwaltung",
       "Haushalt",
       "Finanzpolitik"
      ],
      "tags_detail": [
+      "Verwaltungsorganisation",
       "Staatsrechnung",
       "Reserven und Fonds",
       "Finanzausgleich"
@@ -11373,6 +13295,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "kontext": "schulalter wird mit 55 : 0 Stimmen bei 2 Enthaltungen zugestimmt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "weiterbildung",
+      "personalamt",
+      "förderung",
+      "kanton",
+      "bevölkerung",
+      "projekt",
+      "entnahme"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11402,6 +13336,17 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "stichworte": [
+      "mitarbeitenden",
+      "weiterbildung",
+      "personalamt",
+      "förderung",
+      "kanton",
+      "bevölkerung",
+      "projekt",
+      "entnahme"
+     ],
+     "kontext_quelle": "nachbar",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11429,6 +13374,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "kontext": "Franken in dieselbe wird mit 54 : 2 Stimmen zugestimmt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "personalamt",
+      "kanton",
+      "weiterbildung",
+      "bevölkerung",
+      "projekt",
+      "reserve",
+      "entnahme",
+      "einlage"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11458,6 +13416,18 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Staatsrechnung  und Verwaltungsbericht 2025",
+     "kontext": "Die Staatsrechnung für das Jahr 2025 wird mit 55 : 0 Stimmen geneh- migt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "kanton",
+      "weiterbildung",
+      "bevölkerung",
+      "projekt",
+      "reserve",
+      "entnahme",
+      "einlage"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "6",
      "thema_name": "Finanzen",
      "richtung_invertiert": false,
@@ -11476,7 +13446,18 @@
     }
    ],
    "quelle": "7aad23fe_20260615_Abstimmungsergebnisse_Vormittag.xlsx",
-   "protokolle": [],
+   "protokolle": [
+    {
+     "name": "Protokoll 8. Sitzung vom 15.06.2026_ VM.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/47134a4b-8153-45b7-8fd0-072fa14b8410"
+    },
+    {
+     "name": "Protokoll 9. Sitzung vom 15.06.2026_ NM.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/43312fe1-34cc-4181-9e77-fcfe7a7975db"
+    }
+   ],
    "legislatur": 3
   },
   {
@@ -12335,6 +14316,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 5. Mai 2026 betreffend die Einführung eines Mammographie-Screening-Programms im Kanton Schaffhausen",
+     "kontext": "ton Schaffhausen wird mit 55 : 0 Stimmen und 3 Enthaltungen zuge- stimmt.",
+     "stichworte": [
+      "screening",
+      "nachteile",
+      "mammografie",
+      "screenings",
+      "frauen",
+      "programm",
+      "brustkrebs",
+      "programmen",
+      "scree"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": false,
@@ -12360,6 +14354,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "Bericht und Antrag des Regierungsrats vom 5. Mai 2026 betreffend die Einführung eines Mammographie-Screening-Programms im Kanton Schaffhausen",
+     "kontext": "Der Abschreibung des Postulats 2025/06 wird mit 57 : 0 Stimmen zu- gestimmt.",
+     "stichworte": [
+      "screening",
+      "nachteile",
+      "mammografie",
+      "screenings",
+      "frauen",
+      "programm",
+      "brustkrebs",
+      "programmen",
+      "scree"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": "8",
      "thema_name": "Gesundheit, Umwelt, Arbeit, Soziales",
      "richtung_invertiert": false,
@@ -12384,6 +14391,21 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Der Geschäftsbericht 2025 der Schaffhauser Kantonalbank wird mit 54 : 0 Stimmen bei 2 Enthaltungen genehmigt und dem Bankrat sowie dem Bankvorstand Entlastung erteilt.",
+     "stichworte": [
+      "mitarbeitenden",
+      "kantonalbank",
+      "bankrat",
+      "betrieb",
+      "lösung",
+      "entlastung",
+      "arbeit",
+      "kanton",
+      "kantonsratspräsident",
+      "mitte",
+      "geschäftsberichts"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12391,13 +14413,16 @@
       "Genehmigung"
      ],
      "tags_ueberthema": [
+      "Staat und Politik",
       "Finanzen und Steuern"
      ],
      "tags_unterthema": [
+      "Parlament",
       "Haushalt",
       "Beteiligungen"
      ],
      "tags_detail": [
+      "Parlamentsbetrieb",
       "Staatsrechnung",
       "Kantonalbank"
      ]
@@ -12410,6 +14435,20 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Das Postulat wird mit 37 : 18 Stimmen bei 3 Enthaltungen für erheb- lich erklärt.",
+     "stichworte": [
+      "plakat",
+      "lösung",
+      "gemeinde",
+      "vereine",
+      "mittlerweile",
+      "auftrag",
+      "plakatieren",
+      "aufwand",
+      "grund",
+      "generalbewilligung"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12428,6 +14467,12 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Das Postulat wird mit 37 : 21 Stimmen als nicht erheblich erklärt.",
+     "stichworte": [
+      "ressourcen",
+      "menschen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12446,6 +14491,19 @@
      "inverted_note": null,
      "gegen_note": null,
      "geschaeft": "",
+     "kontext": "Der Motion wird mit 38 : 17 Stimmen bei 2 Enthaltungen für erheblich erklärt.",
+     "stichworte": [
+      "datencentren",
+      "gemeinde",
+      "beringen",
+      "wertschöpfung",
+      "projekt",
+      "datencenter",
+      "wasser",
+      "zukunft",
+      "grundlagen"
+     ],
+     "kontext_quelle": "protokoll",
      "thema_gruppe": null,
      "thema_name": null,
      "richtung_invertiert": false,
@@ -12464,7 +14522,13 @@
     }
    ],
    "quelle": "b0e3ccca_20260601-Abstimmungsergebnisse_Vormittag.xlsx",
-   "protokolle": [],
+   "protokolle": [
+    {
+     "name": "Protokoll 7. Sitzung vom 1.06.2026.pdf",
+     "dateiname": null,
+     "url": "https://sh.ch/CMS/get/file/b056ca96-7016-44e8-a960-131e405e138a"
+    }
+   ],
    "legislatur": 3
   },
   {
@@ -108507,7 +110571,6 @@
      "geschaeft": "",
      "kontext": "Dem Antrag von Martin Schlatter wird mit 32 : 13 Stimmen zuge- stimmt.",
      "stichworte": [
-      "claudia",
       "änderung",
       "einführung",
       "schweizerischen",
@@ -242917,7 +244980,7 @@
    "legislatur": 1
   }
  ],
- "n_sessions": 205,
+ "n_sessions": 206,
  "legislaturen": {
   "1": {
    "nummer": 1,
@@ -243067,7 +245130,7 @@
    "bis": "31-12-2028",
    "label": "Legislatur 2025–2028",
    "erste_sitzung": "13.01.2025",
-   "letzte_sitzung": "21.09.2026",
+   "letzte_sitzung": "02.11.2026",
    "aktive_mitglieder": [
     "Aellig|Pentti",
     "Alaye|Mayowa",
@@ -243109,6 +245172,7 @@
     "Mundt|Michael",
     "Neukomm|Peter",
     "Neumann|Eva",
+    "Oberle|Claudia",
     "Passafaro|Marco",
     "Penkov|Angela",
     "Pfalzgraf|Maurus",
@@ -243123,14 +245187,13 @@
     "Schmidig|Rainer",
     "Schnetzler|Andreas",
     "Schöpfer|Sandra",
-    "Schraff|Jannik",
     "Schudel|Erich",
     "Suter|Roman",
     "Tognella|Ivo",
     "Ullmann|Corinne",
     "Würms|Josef"
    ],
-   "n_sitzungen": 41
+   "n_sitzungen": 42
   }
  },
  "aktuelle_legislatur": 3,

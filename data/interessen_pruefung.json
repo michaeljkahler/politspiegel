@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02",
+ "stand": "2026-11-11",
  "quelle": "Zefix (Bundesamt für Justiz) über lindas.admin.ch",
  "hinweis": "Namensabgleich, keine Feststellung. «Eindeutig» heisst, dass Name und, soweit bekannt, Sitz übereinstimmen; «möglich» heisst, dass nur ein Teil des Namens passt. Nicht gefunden heisst nicht, dass es die Organisation nicht gibt: Schreibweise, Umbenennung oder Löschung im Register sind häufige Gründe. Verbindlich sind allein der beglaubigte Registerauszug und der Publikationstext im SHAB.",
  "eindeutig": [
@@ -18,7 +18,20 @@
    ],
    "mitglieder": [
     "Brügel Anna"
-   ]
+   ],
+   "amtlich": {
+    "name": "Ev Haeny-Stiftung",
+    "uid": "CHE461305755",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Stiftung bezweckt die a) Ausrichtung von Zuwendungen an gemeinnützige wohltätige, soziale und ökologische sowie Kunst und Kultur fördernde Vereine, Institutionen, Organisationen, Veranstaltungen und Projekte im Kanton Schaffhausen; b) …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE461305755&directLink=true"
+   }
   },
   {
    "organisation": "Faccani Schuhe AG",
@@ -35,7 +48,20 @@
    ],
    "mitglieder": [
     "Faccani Diego"
-   ]
+   ],
+   "amtlich": {
+    "name": "Faccani Schuhe AG",
+    "uid": "CHE113559079",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Herstellung und Reparatur von Schuhen sowie den Handel mit Schuhen und Textilien.",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE113559079&directLink=true"
+   }
   },
   {
    "organisation": "Stiftung Bergtrotte Osterfingen",
@@ -52,7 +78,20 @@
    ],
    "mitglieder": [
     "Hedinger Beat"
-   ]
+   ],
+   "amtlich": {
+    "name": "Stiftung Bergtrotte Osterfingen",
+    "uid": "CHE218603736",
+    "sitz": "Wilchingen",
+    "kanton": "SH",
+    "ort": "Wilchingen",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Bewahrung der Bergtrotte Osterfingen als Kulturgut und deren Ausbau zu einem kulturellen und touristischen Begegnungszentrum. Das Angebot der Bergtrotte Osterfingen soll ermöglichen, die Weinkultur zu erleben, regionale Traditionen zu …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE218603736&directLink=true"
+   }
   },
   {
    "organisation": "Herrenacker Parkhaus AG",
@@ -69,7 +108,20 @@
    ],
    "mitglieder": [
     "Herren Nicole"
-   ]
+   ],
+   "amtlich": {
+    "name": "Herrenacker Parkhaus AG",
+    "uid": "CHE101262046",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den Bau und Betrieb eines Parkhauses unter dem Herrenacker in Schaffhausen und von weiteren öffentlichen Parkierungsanlagen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften errichten und sich …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE101262046&directLink=true"
+   }
   },
   {
    "organisation": "Munot Invest AG",
@@ -114,7 +166,22 @@
    ],
    "mitglieder": [
     "Laich Lorenz"
-   ]
+   ],
+   "amtlich": {
+    "name": "Munot Invest AG",
+    "uid": "CHE102764149",
+    "sitz": "Dörflingen",
+    "kanton": "SH",
+    "ort": "Dörflingen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Finanz- und Immobiliengesellschaft; insbesondere Kauf, Verkauf und Vermietung von Sachanlagen und Liegenschaften.",
+    "frueher": [
+     "Immobilien AG zum Schild"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE102764149&directLink=true"
+   }
   },
   {
    "organisation": "bei der Stiftung Museumsbahn Stein am Rhein - Etzwilen - Hemishofen - Ramsen & Rielasingen - Singen (SEHR & RS)",
@@ -148,7 +215,20 @@
    ],
    "mitglieder": [
     "Meyer Daniel"
-   ]
+   ],
+   "amtlich": {
+    "name": "Genossenschaft Baum-land.ch",
+    "uid": "CHE178497615",
+    "sitz": "Trasadingen",
+    "kanton": "SH",
+    "ort": "Trasadingen",
+    "rechtsform": "Genossenschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Genossenschaft bezweckt in gemeinsamer Selbsthilfe die Pflege, den Unterhalt und die allfällige Rückführung in den ursprünglichen Zustand der Parzelle \"Tiltehuuse\" genannt Baumland (BL). Organisation und Durchführung der …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE178497615&directLink=true"
+   }
   },
   {
    "organisation": "MACHEIS Immo AG, Gesellschafter/GL",
@@ -165,7 +245,20 @@
    ],
    "mitglieder": [
     "Müller Andrea"
-   ]
+   ],
+   "amtlich": {
+    "name": "MACHEIS Immo AG",
+    "uid": "CHE305722616",
+    "sitz": "Thayngen",
+    "kanton": "SH",
+    "ort": "Thayngen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den Erwerb, Verkauf, Verwaltung, Unterhalt und Vermietung von Liegenschaften bzw. Grundeigentum. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE305722616&directLink=true"
+   }
   },
   {
    "organisation": "Swisspower AG",
@@ -196,7 +289,22 @@
    ],
    "mitglieder": [
     "Neukomm Peter"
-   ]
+   ],
+   "amtlich": {
+    "name": "Swisspower AG",
+    "uid": "CHE116186715",
+    "sitz": "Bern",
+    "kanton": "BE",
+    "ort": "Bern",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt die Wahrnehmung der gemeinsamen Interessen der Aktionäre im Bereich der Energiewirtschaft und der Telekommunikation und erbringt die dazu notwendigen Dienstleistungen. Die Gesellschaft bezweckt die Erbringung von …",
+    "frueher": [
+     "Swisspower Netzwerk AG"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE116186715&directLink=true"
+   }
   },
   {
    "organisation": "pmb bau ag",
@@ -213,7 +321,20 @@
    ],
    "mitglieder": [
     "Schöpfer Sandra"
-   ]
+   ],
+   "amtlich": {
+    "name": "PMB Bau AG",
+    "uid": "CHE108505876",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Zweck der Gesellschaft ist die Erbringung von Dienstleistungen im Baugewerbe, insbesondere Bauausführungen, Bauberatung, Bauplanung, Generalunternehmung sowie Verwaltung, Kauf und Verkauf von Liegenschaften. Die Gesellschaft kann im …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE108505876&directLink=true"
+   }
   }
  ],
  "moeglich": [
@@ -260,7 +381,20 @@
    ],
    "mitglieder": [
     "Brenn Franziska"
-   ]
+   ],
+   "amtlich": {
+    "name": "betreutes Wohnen",
+    "uid": "CHE203433023",
+    "sitz": "Rafz",
+    "kanton": "ZH",
+    "ort": "Rafz",
+    "rechtsform": "Verein",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Der Verein setzt sich für junge Menschen in erschwerten Lebenssituationen ein, unterstützt und fördert sie, mit dem Ziel einer erfolgreichen, eigenverantwortlichen Integration in unsere Gesellschaft und Arbeitswelt. Dazu betreibt und …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE203433023&directLink=true"
+   }
   },
   {
    "organisation": "Energieverbund Neuhausen AG",
@@ -277,7 +411,20 @@
    ],
    "mitglieder": [
     "Di Ronco Christian"
-   ]
+   ],
+   "amtlich": {
+    "name": "Energieverbund Neuhausen am Rheinfall AG",
+    "uid": "CHE437870931",
+    "sitz": "Neuhausen am Rheinfall",
+    "kanton": "SH",
+    "ort": "Neuhausen am Rheinfall",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt die Projektierung, die Erstellung und den Betrieb von Anlagen für die Nutzung und Verteilung von Energie sowie die Erbringung von dazugehörenden Dienstleistungen. Sie kann Anlagen und Einrichtungen erstellen, …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE437870931&directLink=true"
+   }
   },
   {
    "organisation": "Sasag Koomunikations AG",
@@ -294,7 +441,22 @@
    ],
    "mitglieder": [
     "Neukomm Peter"
-   ]
+   ],
+   "amtlich": {
+    "name": "sasag Kabelkommunikation AG",
+    "uid": "CHE107878725",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den Bau und Betrieb von Grossgemeinschafts-Antennenanlagen in der Stadt Schaffhausen sowie den angrenzenden Regionen. Die Gesellschaft kann im Übrigen alle kommerziellen, finanziellen und anderen Geschäfte …",
+    "frueher": [
+     "Stadtantenne Schaffhausen AG"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE107878725&directLink=true"
+   }
   },
   {
    "organisation": "Parkhaus Herrenacker AG",
@@ -339,7 +501,20 @@
    ],
    "mitglieder": [
     "Neukomm Peter"
-   ]
+   ],
+   "amtlich": {
+    "name": "Parkhaus 104 Glattbrugg GmbH",
+    "uid": "CHE110640348",
+    "sitz": "Opfikon",
+    "kanton": "ZH",
+    "ort": "Glattbrugg",
+    "rechtsform": "Gesellschaft mit beschränkter Haftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt das Betreiben eines Parkhauses. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen errichten, sich an anderen Unternehmen des In- und Auslandes beteiligen, gleichartige oder verwandte Unternehmungen …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110640348&directLink=true"
+   }
   },
   {
    "organisation": "Landw. Genossenschaft",
@@ -384,86 +559,22 @@
    ],
    "mitglieder": [
     "Schlatter Martin"
-   ]
-  },
-  {
-   "organisation": "SMG Immobilien AG",
-   "branche": "Wohnen und Immobilien",
-   "ort": "Beringen",
-   "treffer": [
-    {
-     "name": "Aadufo-Immobilien AG",
-     "ort": "Kreuzlingen",
-     "uid": "CHE102748297",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    },
-    {
-     "name": "Abag Immobilien- und Generalunternehmung AG",
-     "ort": "Zürich",
-     "uid": "CHE103114793",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    },
-    {
-     "name": "Treuhand & Immobilien Abt AG",
-     "ort": "Glattbrugg",
-     "uid": "CHE106949860",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    },
-    {
-     "name": "ABV Immobilien AG",
-     "ort": "Arosa",
-     "uid": "CHE103255287",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    },
-    {
-     "name": "Achermann Walter Immobilien AG",
-     "ort": "Buochs",
-     "uid": "CHE106902634",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    }
    ],
-   "mitglieder": [
-    "Schraff Jannik"
-   ]
-  },
-  {
-   "organisation": "Schraff und Müller GmbH, Beringen, Gesellschafter",
-   "branche": "Wirtschaft und Gewerbe",
-   "ort": null,
-   "treffer": [
-    {
-     "name": "Schraff & Müller AG",
-     "ort": "Beringen",
-     "uid": "CHE112388421",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    }
-   ],
-   "mitglieder": [
-    "Schraff Jannik"
-   ]
-  },
-  {
-   "organisation": "SMG bau gmbh, Beringen, Gesellschafter",
-   "branche": "Wirtschaft und Gewerbe",
-   "ort": null,
-   "treffer": [
-    {
-     "name": "Bau- und Wohngenossenschaft Bienengarten Beringen",
-     "ort": "Beringen",
-     "uid": "CHE101860187",
-     "stufe": "moeglich",
-     "uebereinstimmung": 0.5
-    }
-   ],
-   "mitglieder": [
-    "Schraff Jannik"
-   ]
+   "amtlich": {
+    "name": "Landw. Genossenschaft Aesch",
+    "uid": "CHE102386515",
+    "sitz": "Aesch (ZH)",
+    "kanton": "ZH",
+    "ort": "Aesch ZH",
+    "rechtsform": "Genossenschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Förderung der Interessen ihrer Mitglieder auf dem Wege genossenschaftlicher Selbsthilfe, durch: gemeinsame Deckung des Bedarfs ihrer Mitglieder an landwirtschaftlichen Bedarfsartikeln in guter Beschaffenheit und Abgabe derselben zu …",
+    "frueher": [
+     "Landwirtschaftlicher Kreisverein Aesch-Birmensdorf"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE102386515&directLink=true"
+   }
   }
  ],
  "nicht_gefunden": [
@@ -483,7 +594,20 @@
    "treffer": [],
    "mitglieder": [
     "Brenn Franziska"
-   ]
+   ],
+   "amtlich": {
+    "name": "Stiftung Schönhalde",
+    "uid": "CHE247089586",
+    "sitz": "Neuhausen am Rheinfall",
+    "kanton": "SH",
+    "ort": "Neuhausen am Rheinfall",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Stiftung unterstützt invalide Personen im Sinne der schweizerischen Gesetzgebung sowie Personen, die aus sozialen Gründen auf besondere Betreuung und Unterstützung angewiesen sind, in dem sie für sie Wohnmöglichkeiten und Einrichtungen …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE247089586&directLink=true"
+   }
   },
   {
    "organisation": "Paul und Clotilde Sonderegger-Van den Avont Stiftung",
@@ -492,7 +616,20 @@
    "treffer": [],
    "mitglieder": [
     "Di Ronco Christian"
-   ]
+   ],
+   "amtlich": {
+    "name": "Paul und Clotilde Sonderegger-Van den Avont-Stiftung",
+    "uid": "CHE110410156",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Gewährung von finanzieller Unterstützung an Einzelpersonen, die durch Alter, Krankheit oder Unfall unverschuldet in Not geraten sind und welche bei der Pro Senectute Schaffhausen, dem Verein zur Unterstützung von Blinden und Augenkranken …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110410156&directLink=true"
+   }
   },
   {
    "organisation": "Gemeinnützige Stiftung Schweizersbild",
@@ -502,7 +639,22 @@
    "mitglieder": [
     "Herren Nicole",
     "Mundt Michael"
-   ]
+   ],
+   "amtlich": {
+    "name": "Gemeinnützige Stiftung Schweizersbild",
+    "uid": "CHE115666941",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Förderung des Handballsports Jugendlicher und die gemeinnützige Unterstützung des Handballnachwuchses durch Zurverfügungstellung finanzieller Mittel für die Suche und Bereitstellung geeigneter Infrastrukturen, Schulen, Studienplätze, …",
+    "frueher": [
+     "Stiftung Nationales Handball Trainings- & Leistungs-Zentrum Schweizersbild"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE115666941&directLink=true"
+   }
   },
   {
    "organisation": "Stiftung Forum für Weiterbildung, Stiftungsratsmitglied",
@@ -511,7 +663,22 @@
    "treffer": [],
    "mitglieder": [
     "Kräuchi Raphael"
-   ]
+   ],
+   "amtlich": {
+    "name": "Forum 4 AG für Architektur",
+    "uid": "CHE114917974",
+    "sitz": "Interlaken",
+    "kanton": "BE",
+    "ort": "Interlaken",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den Betrieb eines Architektur-, Planungs- und Bauleitungsbüros sowie die Erbringung aller damit im Zusammenhang stehender Dienstleistungen. Die Gesellschaft bezweckt weiter die Förderung des …",
+    "frueher": [
+     "F4 Immo Spiez AG"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE114917974&directLink=true"
+   }
   },
   {
    "organisation": "Vorsitzender der Clientis BS Bank Schaffhausen AG",
@@ -529,7 +696,20 @@
    "treffer": [],
    "mitglieder": [
     "Laich Lorenz"
-   ]
+   ],
+   "amtlich": {
+    "name": "Jessica und Martin Blumer Stiftung",
+    "uid": "CHE423761276",
+    "sitz": "Neuhausen am Rheinfall",
+    "kanton": "SH",
+    "ort": "Neuhausen am Rheinfall",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Zweck der Stiftung soll sein, den im Statut genannten gemeinnützigen Institutionen den aus den Einkünften des Stiftungsvermögens allfällig resultierenden jährlichen Netto-Ertrag anteilsmässig auszurichten. Die Destinatäre haben keinen …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE423761276&directLink=true"
+   }
   },
   {
    "organisation": "Müller Energie GmbH, Thayngen, Gesellschafter, GL",
@@ -538,7 +718,20 @@
    "treffer": [],
    "mitglieder": [
     "Müller Andrea"
-   ]
+   ],
+   "amtlich": {
+    "name": "Muller Architecture du Paysage Sàrl",
+    "uid": "CHE167446358",
+    "sitz": "Delémont",
+    "kanton": "JU",
+    "ort": "Delémont",
+    "rechtsform": "Gesellschaft mit beschränkter Haftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Conception et planification d'aménagements paysagers. La société pourra traiter toutes les opérations qui seraient en relation directe ou indirecte avec son but principal. Elle peut créer des succursales en Suisse et à l'étranger, …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE167446358&directLink=true"
+   }
   },
   {
    "organisation": "Radio Munot AG Schaffhausen",
@@ -547,7 +740,20 @@
    "treffer": [],
    "mitglieder": [
     "Müller Markus"
-   ]
+   ],
+   "amtlich": {
+    "name": "Radio Munot Betriebs AG",
+    "uid": "CHE100155212",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt die Veranstaltung eines unabhängigen, für die Region Schaffhausen bestimmten Radioprogrammes unter der Bezeichnung Radio Munot und den Betrieb eines entsprechenden Radiosenders. Die Gesellschaft kann …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE100155212&directLink=true"
+   }
   },
   {
    "organisation": "Verwaltung Kraftwerk Schaffhausen AG",
@@ -556,7 +762,20 @@
    "treffer": [],
    "mitglieder": [
     "Neukomm Peter"
-   ]
+   ],
+   "amtlich": {
+    "name": "Verwaltung & Finanzen S. Jud",
+    "uid": "CHE443591474",
+    "sitz": "Benken (SG)",
+    "kanton": "SG",
+    "ort": "Benken",
+    "rechtsform": "Einzelunternehmen",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Erbringen von Dienstleistungen im Bereich der Verwaltung, Übernahme von administrativen Dienstleistungen für Kleinbetriebe, Liegenschaftenverwaltung, Büroorganisation und Beratung, Vermietung und Verkauf von Fahrzeugen jeglicher Art, …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE443591474&directLink=true"
+   }
   },
   {
    "organisation": "SHolar-Selbstbau Genossenschaft, Schaffhauen, Verwaltung",
@@ -574,7 +793,22 @@
    "treffer": [],
    "mitglieder": [
     "Rohner Raphaël"
-   ]
+   ],
+   "amtlich": {
+    "name": "Schule für Bewegung Zürich GmbH in Liquidation",
+    "uid": "CHE498855547",
+    "sitz": "Zürich",
+    "kanton": "ZH",
+    "ort": "Zürich",
+    "rechtsform": "Gesellschaft mit beschränkter Haftung",
+    "status": "in Löschung",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt die 3-jährige, berufsbegleitende Ausbildung in Bewegungspädagogik. Fachrichtung: Körper- und Bewegungsschulung. Der Lehrgang bereitet auf folgenden Fachausweis vor: Spezialist/-in Bewegungs- und …",
+    "frueher": [
+     "Schule für Bewegung Zürich GmbH"
+    ],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE498855547&directLink=true"
+   }
   },
   {
    "organisation": "Künzle-Stiftung",
@@ -583,7 +817,20 @@
    "treffer": [],
    "mitglieder": [
     "Rohner Raphaël"
-   ]
+   ],
+   "amtlich": {
+    "name": "Künzle-Stiftung",
+    "uid": "CHE109417996",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Schaffhausen",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Vorsorge für das Alter.",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109417996&directLink=true"
+   }
   },
   {
    "organisation": "Bling Bling Schaffhausen GmbH",
@@ -592,7 +839,20 @@
    "treffer": [],
    "mitglieder": [
     "Schlatter Hermann"
-   ]
+   ],
+   "amtlich": {
+    "name": "Bling Bling Schaffhausen GmbH",
+    "uid": "CHE303666869",
+    "sitz": "Schaffhausen",
+    "kanton": "SH",
+    "ort": "Hemmental",
+    "rechtsform": "Gesellschaft mit beschränkter Haftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den Handel mit Waren aller Art, insbesondere mit Haushaltswaren, Waren für den Wohnbedarf und Geschenkartikel. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE303666869&directLink=true"
+   }
   },
   {
    "organisation": "Landwirtschaftliche Genossenschaft Beringen",
@@ -601,7 +861,20 @@
    "treffer": [],
    "mitglieder": [
     "Schlatter Roman"
-   ]
+   ],
+   "amtlich": {
+    "name": "Landwirtschaftliche Genossenschaft Beringen",
+    "uid": "CHE103288996",
+    "sitz": "Beringen",
+    "kanton": "SH",
+    "ort": "Beringen",
+    "rechtsform": "Genossenschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Wahrnehmung der wirtschaftlichen Interessen ihrer Mitglieder und der Landwirtschaft im Allgemeinen.",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE103288996&directLink=true"
+   }
   },
   {
    "organisation": "Tanner Holzbau und Sägerei AG",
@@ -610,7 +883,20 @@
    "treffer": [],
    "mitglieder": [
     "Tognella Ivo"
-   ]
+   ],
+   "amtlich": {
+    "name": "Tanner Holzbau & Sägerei AG",
+    "uid": "CHE106925150",
+    "sitz": "Merishausen",
+    "kanton": "SH",
+    "ort": "Merishausen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Ausführung von allgemeinenen Holz-, Sägerei-, Zimmerei- und Schreinerarbeiten.",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE106925150&directLink=true"
+   }
   },
   {
    "organisation": "Randen Immo AG, Begginen, Mitinhaber",
@@ -619,7 +905,20 @@
    "treffer": [],
    "mitglieder": [
     "Tognella Ivo"
-   ]
+   ],
+   "amtlich": {
+    "name": "Randen Immo AG",
+    "uid": "CHE228271067",
+    "sitz": "Beggingen",
+    "kanton": "SH",
+    "ort": "Beggingen",
+    "rechtsform": "Aktiengesellschaft",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Die Gesellschaft bezweckt den An- und Verkauf, den Handel und die Vermittlung sowie die Verwaltung von Immobilien aller Art. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE228271067&directLink=true"
+   }
   },
   {
    "organisation": "Jakob & Emma Windler-Stiftung",
@@ -628,8 +927,161 @@
    "treffer": [],
    "mitglieder": [
     "Ullmann Corinne"
-   ]
+   ],
+   "amtlich": {
+    "name": "Jakob und Emma Windler-Stiftung",
+    "uid": "CHE109982888",
+    "sitz": "Stein am Rhein",
+    "kanton": "SH",
+    "ort": "Stein am Rhein",
+    "rechtsform": "Stiftung",
+    "status": "aktiv",
+    "geloescht_am": null,
+    "zweck": "Zweck der Stiftung ist, Leistungen von Beihilfen an Einwohnerinnen und Einwohner oder Bürgerinnen und Bürger von Stein am Rhein, die in wirtschaftliche Not geraten sind; Kleinunternehmen mit Betriebsstätte in Stein am Rhein in …",
+    "frueher": [],
+    "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109982888&directLink=true"
+   }
   }
  ],
+ "befunde": [
+  {
+   "art": "aufgeloest",
+   "organisation": "Stiftung Schönhalde",
+   "mitglieder": [
+    "Brenn Franziska"
+   ],
+   "text": "am Register doch gefunden als «Stiftung Schönhalde» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE247089586&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Paul und Clotilde Sonderegger-Van den Avont Stiftung",
+   "mitglieder": [
+    "Di Ronco Christian"
+   ],
+   "text": "am Register doch gefunden als «Paul und Clotilde Sonderegger-Van den Avont-Stiftung» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE110410156&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Gemeinnützige Stiftung Schweizersbild",
+   "mitglieder": [
+    "Herren Nicole",
+    "Mundt Michael"
+   ],
+   "text": "am Register doch gefunden als «Gemeinnützige Stiftung Schweizersbild» (früherer Name)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE115666941&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Stiftung Forum für Weiterbildung, Stiftungsratsmitglied",
+   "mitglieder": [
+    "Kräuchi Raphael"
+   ],
+   "text": "am Register doch gefunden als «Forum 4 AG für Architektur» (früherer Name)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE114917974&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Jessica und Martin Blumer-Stiftung",
+   "mitglieder": [
+    "Laich Lorenz"
+   ],
+   "text": "am Register doch gefunden als «Jessica und Martin Blumer Stiftung» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE423761276&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Müller Energie GmbH, Thayngen, Gesellschafter, GL",
+   "mitglieder": [
+    "Müller Andrea"
+   ],
+   "text": "am Register doch gefunden als «Muller Architecture du Paysage Sàrl» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE167446358&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Radio Munot AG Schaffhausen",
+   "mitglieder": [
+    "Müller Markus"
+   ],
+   "text": "am Register doch gefunden als «Radio Munot Betriebs AG» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE100155212&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Verwaltung Kraftwerk Schaffhausen AG",
+   "mitglieder": [
+    "Neukomm Peter"
+   ],
+   "text": "am Register doch gefunden als «Verwaltung & Finanzen S. Jud» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE443591474&directLink=true"
+  },
+  {
+   "art": "geloescht",
+   "organisation": "Stiftung Schule für berufliche Aus- und Weiterbildung",
+   "mitglieder": [
+    "Rohner Raphaël"
+   ],
+   "text": "im Handelsregister in Löschung",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE498855547&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Künzle-Stiftung",
+   "mitglieder": [
+    "Rohner Raphaël"
+   ],
+   "text": "am Register doch gefunden als «Künzle-Stiftung» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109417996&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Bling Bling Schaffhausen GmbH",
+   "mitglieder": [
+    "Schlatter Hermann"
+   ],
+   "text": "am Register doch gefunden als «Bling Bling Schaffhausen GmbH» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE303666869&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Landwirtschaftliche Genossenschaft Beringen",
+   "mitglieder": [
+    "Schlatter Roman"
+   ],
+   "text": "am Register doch gefunden als «Landwirtschaftliche Genossenschaft Beringen» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE103288996&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Tanner Holzbau und Sägerei AG",
+   "mitglieder": [
+    "Tognella Ivo"
+   ],
+   "text": "am Register doch gefunden als «Tanner Holzbau & Sägerei AG» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE106925150&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Randen Immo AG, Begginen, Mitinhaber",
+   "mitglieder": [
+    "Tognella Ivo"
+   ],
+   "text": "am Register doch gefunden als «Randen Immo AG» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE228271067&directLink=true"
+  },
+  {
+   "art": "aufgeloest",
+   "organisation": "Jakob & Emma Windler-Stiftung",
+   "mitglieder": [
+    "Ullmann Corinne"
+   ],
+   "text": "am Register doch gefunden als «Jakob und Emma Windler-Stiftung» (Namensvariante)",
+   "url": "https://www.zefix.admin.ch/de/search/entity/list?name=CHE109982888&directLink=true"
+  }
+ ],
+ "amtlich_geprueft": 29,
+ "amtlich_fehler": [],
  "personensuche": []
 }

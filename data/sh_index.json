@@ -130,10 +130,6 @@
   "datum": "24.08.2026",
   "files": [
    {
-    "name": "11. und 12. Sitzung vom 24.08.2026.pdf",
-    "href": "https://sh.ch/CMS/get/file/fdb10c56-6e84-4a8d-b8ff-eb1d838e3953"
-   },
-   {
     "name": "20260824 Abstimmungsergebnisse Vormittag.pdf",
     "href": "https://sh.ch/CMS/get/file/74bec7b4-98f8-4658-8396-d70a1e682854"
    },
@@ -151,7 +147,11 @@
    },
    {
     "name": "KRB 11. und 12. KR-Sitzung vom 24.08.2026.pdf",
-    "href": "https://sh.ch/CMS/get/file/c08b979c-2df1-4759-a41b-2f4a97259d85"
+    "href": "https://sh.ch/CMS/get/file/e9e9c911-f661-47b7-b9c2-018addeb9e4f"
+   },
+   {
+    "name": "11. und 12. Sitzung vom 24.08.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/e62ee2e7-0278-47a2-9a21-852bd7c49d1d"
    }
   ]
  },
@@ -4805,8 +4805,8 @@
   ]
  },
  "22004958": {
-  "titel": "16. Sitzung 2026",
-  "datum": "02.11.2026",
+  "titel": "17., 18. und 19 Sitzung 2026",
+  "datum": "16.11.2026",
   "files": []
  },
  "23578858": {
@@ -4846,6 +4846,28 @@
    {
     "name": "16. Sitzung vom 02.11.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/ca08bb43-12bb-4e73-9b5e-ba868f599da1"
+   },
+   {
+    "name": "20261102-Abstimmungsergebnisse Vormittag.pdf",
+    "href": "https://sh.ch/CMS/get/file/edb48ef8-6a44-4fc2-a856-cc8d368c318b"
+   },
+   {
+    "name": "20261102-Abstimmungsergebnisse Vormittag.xlsx",
+    "href": "https://sh.ch/CMS/get/file/f329874e-1e5b-42cb-800f-2d33f7a6a580"
+   },
+   {
+    "name": "KRB 16. KR-Sitzung vom 02.11.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/231c7956-d44e-41d6-b639-5178a35b4b83"
+   }
+  ]
+ },
+ "24336555": {
+  "titel": "17., 18. und 19. Sitzung 2026",
+  "datum": "16.11.2026",
+  "files": [
+   {
+    "name": "17., 18. und 19. Sitzung vom 16.11.2026.pdf",
+    "href": "https://sh.ch/CMS/get/file/2013f6d9-0c80-4266-a744-97277f0c2862"
    }
   ]
  }

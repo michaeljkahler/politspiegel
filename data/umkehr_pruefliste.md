@@ -5,12 +5,142 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **95**
+Offen: **106**
 
-- `kein_text`: 47
+- `kein_text`: 58
 - `keine_fundstelle`: 26
 - `objekt_unklar`: 21
 - `ungeklaert`: 1
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr2
+
+- **Titel:** Antrag R. Kräuchi
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 17 Ja : 29 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag R. Kräuchi»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr3
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 36 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr4
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 36 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr5
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 37 Ja : 20 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr6
+
+- **Titel:** Antrag RR Martin Kessler
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 7 Ja : 49 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag RR M. Kessler»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr7
+
+- **Titel:** Antrag R. Müller
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 38 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag R. Müller»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr8
+
+- **Titel:** Antrag M. Litscher
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 39 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Litscher»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr9
+
+- **Titel:** Antrag M. Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 39 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr10
+
+- **Titel:** Antrag I. Lüthi
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 35 Ja : 22 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag I. Lüthi»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr11
+
+- **Titel:** Antrag N. Schärrer
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 12 Ja : 40 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag N. Schärrer»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr12
+
+- **Titel:** Antrag L. Altorfer
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 33 Ja : 21 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag L. Altorfer»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr13
+
+- **Titel:** Antrag N. Schärrer
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 20 Ja : 31 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag N. Schärrer»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 16. Sitzung 2026 · 02.11.2026 (Vormittag) #Nr14
+
+- **Titel:** Antrag P. Neukomm
+- **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
+- **Stimmen:** 33 Ja : 21 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag P. Neukomm»: ein Ja ist Ablehnung des…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 
@@ -460,26 +590,6 @@ Offen: **95**
 - **Hinweis:** Ja bedeutet Zustimmung Antrag SPK
 - **Stimmen:** 29 Ja : 20 Nein
 - **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag RR D. Tamagni»: ein Ja ist Ablehnung des…
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 10. Sitzung 2026 · 29.06.2026 (Vormittag) #Nr2
-
-- **Titel:** Antrag A. Penkov
-- **Hinweis:** Ja bedeutet Zustimmung SPK
-- **Stimmen:** 37 Ja : 18 Nein
-- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag A. Penkov»: ein Ja ist Ablehnung des…
-- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
-
----
-
-### 10. Sitzung 2026 · 29.06.2026 (Vormittag) #Nr8
-
-- **Titel:** Antrag Matthias Freivogel
-- **Hinweis:** Ja bedeutet Zustimmung Planungserklärung BVE
-- **Stimmen:** 34 Ja : 19 Nein
-- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag M. Freivogel»: ein Ja ist Ablehnung des…
 - **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---

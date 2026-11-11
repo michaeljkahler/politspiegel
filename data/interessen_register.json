@@ -28,7 +28,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "SAH Services GmbH",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "schluessel": "Arnold Isliker|CHE-106.925.138",
@@ -55,7 +55,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Chlaffental Immobilien AG",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "kennung": "130b777869fd4494",
@@ -92,7 +92,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Dr. Bruno Herzer-Stiftung für Kinder und Jugendliche",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "kennung": "f015702b26c2e9d0",
@@ -137,7 +137,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Wärmeverbund Merishausen AG",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "kennung": "ddbf7b1771239162",
@@ -169,7 +169,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Allsecco Trocknungen AG",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "kennung": "cadbc78640305f04",
@@ -219,7 +219,7 @@
    "stand_klasse": "liquidation",
    "stand_text": "in Löschung",
    "stand_name": "RhySauna Schaffhuuse GmbH in Liquidation",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "schluessel": "Nicole Herren|CHE-112.426.777",
@@ -249,7 +249,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Herren-Metzgerei GmbH",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "schluessel": "Nina Schärrer|CHE-438.141.906",
@@ -277,7 +277,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Nina Schärrer. Kampagnen und Kommunikation.",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "schluessel": "Nina Schärrer|CHE-108.014.963",
@@ -305,7 +305,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Stiftung Ungarbühl",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "schluessel": "Peter Neukomm|CHE-103.584.012",
@@ -346,7 +346,7 @@
    "stand_klasse": "aktiv",
    "stand_text": "aktiv",
    "stand_name": "Etawatt AG",
-   "stand_geprueft": "2026-09-08"
+   "stand_geprueft": "2026-11-11"
   },
   {
    "kennung": "dc67e12727dd2b5e",
@@ -394,5 +394,5 @@
    "nicht_mehr_gefunden": true
   }
  ],
- "stand_register": "2026-09-08"
+ "stand_register": "2026-11-11"
 }

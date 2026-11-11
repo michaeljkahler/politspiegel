@@ -1,6 +1,6 @@
 {
  "hinweis": "Von Hand geschriebene Fragetexte und neutrale Zusammenfassungen für den Reiter «Wer stimmt wie ich». Die Frage benennt, worüber der Rat wirklich abgestimmt hat, nicht bloss das übergeordnete Geschäft: bei Anträgen innerhalb einer Vorlage sind das zwei verschiedene Dinge. Ein Ja bedeutet immer Zustimmung zu dem, was die Frage nennt; bei Umkehrabstimmungen ist die Richtung dafür bereits korrigiert. Die Zitate stammen wörtlich aus dem Wortprotokoll und sind anonymisiert; belegt ist die Seite durch die Stimmabgabe der sprechenden Person, nicht durch eine Auslegung ihres Inhalts. Zitate erscheinen nur paarweise, sonst läse sich die Karte einseitig. Wo sich in der Debatte kein eigenständiges Sachargument findet, bleiben beide Felder leer.",
- "stand": "2026-09-16",
+ "stand": "2026-11-11",
  "fragen": [
   {
    "schluessel": "16. und 17. Sitzung 2025 · 25.08.2025 (Nachmittag)#2",
@@ -665,6 +665,22 @@
    "zusammenfassung": "Der Antrag ergänzt die gesetzlichen Mindestinhalte des Gesamtarbeitsvertrags um ein Verfahren, das Mitarbeitenden vor Kündigungen, Versetzungen oder dem Ende der Lohnfortzahlung vorgängige Information und eine Stellungnahme ermöglicht. Befürworter verweisen auf andere Spital-GAV, etwa im Kanton Zug, und auf die Anliegen der Personalverbände. Die Gegenseite hält den Begriff der belastenden Entscheidung für zu weit, sieht Kündigungsmodalitäten bereits als Pflichtinhalt des GAV und will die Frage den Verhandlungen der Sozialpartner überlassen.",
    "dafuer": "In den Diskussionen oder Streitigkeiten, die wir jeweils bei personalrechtlichen Themen haben, geht es genau um dieses rechtliche Gehör.",
    "dagegen": "Es schafft mehr Aufwand, verlangsamt Entscheidungen und bringt keinen erkennbaren Mehrwert. Bei organisatorischen Fragen benötigt es schlanke und effiziente Prozesse keine zusätzlichen Verfahrensschritte."
+  },
+  {
+   "schluessel": "10. Sitzung 2026 · 29.06.2026 (Vormittag)#2",
+   "kontext": "Teilrevision des Schuldekrets, Pensum der Schulleitungen (§ 63a), 2. Lesung",
+   "frage": "Soll eine Gemeinde schon dann eine Bewilligung des Erziehungsdepartements brauchen, wenn ihr Schulleitungspensum unter 0,40 Prozent pro Schüler fällt, statt erst unter 0,38 Prozent?",
+   "zusammenfassung": "Das Schuldekret legt fest, wie viel Schulleitungspensum der Kanton vorgibt und mitfinanziert: in der Regel 0,42 Prozent pro Schüler. Die Kommissionsvorlage lässt Unterschreitungen bis 0,38 Prozent ohne Bewilligung zu, der Antrag will die Bewilligungsgrenze wie ursprünglich vom Regierungsrat vorgesehen bei 0,40 Prozent ansetzen. Befürworter verweisen auf die Arbeitslast der Schulleitungen, Gegner auf schwankende Schülerzahlen in kleineren Gemeinden.",
+   "dafuer": "Eine Senkung der Bewilligungsschwelle auf 0.38% pro Schüler geht für uns klar zu weit, schwächt die ursprünglich vorgesehene Regelung und schafft einen Anreiz, Pensen der Schulleitung aus finanziellen Gründen zu knapp anzusetzen.",
+   "dagegen": "In der aktuellen Zeit sind wir darauf angewiesen, dass wir eine Bandbreite haben, wo wir selbst entscheiden können, wie lange es so gut gehen kann."
+  },
+  {
+   "schluessel": "10. Sitzung 2026 · 29.06.2026 (Vormittag)#8",
+   "kontext": "Aufhebung Bahnübergang Kantonsstrasse H352 in Stein am Rhein, Planungserklärung zum Ortsverkehr",
+   "frage": "Soll die Stadt Stein am Rhein eingeladen werden, die Einführung eines Ortsverkehrsbusses bis zur Inbetriebnahme der Unterführung zu prüfen, statt sie vorzusehen?",
+   "zusammenfassung": "Zur Orientierungsvorlage über die Unterführung beantragte die Kommission eine Planungserklärung, die Stadt Stein am Rhein solle die Einführung eines Ortsverkehrsbusses vorsehen. Der Antrag schwächt dies zu einem Prüfauftrag ab. Abgestimmt wurde zwischen den beiden Fassungen; die Planungserklärung selbst wurde danach abgelehnt. Kritiker sahen darin einen Eingriff in die Gemeindeautonomie und verwiesen auf einen früheren Pilotversuch mit geringer Nachfrage.",
+   "dafuer": null,
+   "dagegen": null
   }
  ]
 }
