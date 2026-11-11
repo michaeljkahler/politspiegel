@@ -140,6 +140,29 @@
    "anzahl": 29
   },
   {
+   "id": "m:Bringolf|Lukas",
+   "typ": "mitglied",
+   "label": "Lukas Bringolf",
+   "partei": "JUNGE SVP",
+   "fraktion": "SVP-EDU",
+   "bild": true,
+   "anzahl": 1
+  },
+  {
+   "id": "o:guterkooperation hallau",
+   "typ": "organisation",
+   "label": "Güterkooperation Hallau",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
+  },
+  {
+   "id": "b:Übrige",
+   "typ": "branche",
+   "label": "Übrige",
+   "anzahl": 7
+  },
+  {
    "id": "m:Brügel|Anna",
    "typ": "mitglied",
    "label": "Anna Brügel",
@@ -910,12 +933,6 @@
    "anzahl": 1
   },
   {
-   "id": "b:Übrige",
-   "typ": "branche",
-   "label": "Übrige",
-   "anzahl": 5
-  },
-  {
    "id": "o:grune schaffhausen co",
    "typ": "organisation",
    "label": "GRÜNE Schaffhausen, Co",
@@ -1314,6 +1331,23 @@
    "fraktion": "SP-JUSO-GRÜNE-Junge Grüne",
    "bild": true,
    "anzahl": 0
+  },
+  {
+   "id": "m:Oberle|Claudia",
+   "typ": "mitglied",
+   "label": "Claudia Oberle",
+   "partei": "GLP",
+   "fraktion": "GLP-EVP",
+   "bild": false,
+   "anzahl": 1
+  },
+  {
+   "id": "o:frau macht politk",
+   "typ": "organisation",
+   "label": "Frau macht Politk",
+   "branche": "Übrige",
+   "ort": null,
+   "anzahl": 1
   },
   {
    "id": "m:Passafaro|Marco",
@@ -1977,6 +2011,12 @@
    "roh": "Stiftung Schönhalde, Neuhausen, Stiftungsrätin"
   },
   {
+   "von": "m:Bringolf|Lukas",
+   "nach": "o:guterkooperation hallau",
+   "rolle": "Präsident",
+   "roh": "Präsident Güterkooperation Hallau"
+  },
+  {
    "von": "m:Brügel|Anna",
    "nach": "o:ev haeny stiftung",
    "rolle": "Mitglied, Stiftungsrat",
@@ -2619,6 +2659,12 @@
    "roh": "- Stadtpräsident Schaffhauen"
   },
   {
+   "von": "m:Oberle|Claudia",
+   "nach": "o:frau macht politk",
+   "rolle": "Revisorin",
+   "roh": "Frau macht Politk, Revisorin"
+  },
+  {
    "von": "m:Penkov|Angela",
    "nach": "o:lindenforum",
    "rolle": "Vorstandsmitglied",
@@ -3041,6 +3087,13 @@
   {
    "von": "o:stiftung schonhalde",
    "nach": "b:Berufs- und Interessenverbände",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:guterkooperation hallau",
+   "nach": "b:Übrige",
    "rolle": null,
    "roh": null,
    "art": "branche"
@@ -3754,6 +3807,13 @@
   },
   {
    "von": "o:schaffhauen",
+   "nach": "b:Übrige",
+   "rolle": null,
+   "roh": null,
+   "art": "branche"
+  },
+  {
+   "von": "o:frau macht politk",
    "nach": "b:Übrige",
    "rolle": null,
    "roh": null,
