@@ -261,10 +261,16 @@ def antragsteller(sess, v):
     """(Antragsteller, Gegenantrag) aus Titel und Vermerken. Der Gegenantrag ist
     nur bei einer Ausmehrung zweier Anträge gesetzt."""
     t = flach(v.get("titel"))
-    m = re.match(r"^(?:Ordnungsantrag|Antrag)\s+(?:RR\s+)?(.+)$", t)
+    m = re.match(r"^(?:Ordnungsantrag|Antrag)\s+(RR\s+)?(.+)$", t)
     if not m:
         return None, None
-    wer = person(sess, m.group(1))
+    wer = person(sess, m.group(2))
+    if not wer and m.group(1):
+        # Mitglied des Regierungsrats, nicht des Kantonsrats: steht nicht auf
+        # der Namensliste. «Antrag RR Martin Kessler» → «Regierungsrat M. Kessler».
+        n = re.match(r"^([A-ZÄÖÜ])[a-zäöüé]*\.?\s+([A-ZÄÖÜ][\w\-]+)$", flach(m.group(2)))
+        if n:
+            wer = {"name": f"Regierungsrat {n.group(1)}. {n.group(2)}", "partei": ""}
     if not wer:
         return None, None
     ja, nein = flach(v.get("inverted_note")), flach(v.get("gegen_note"))

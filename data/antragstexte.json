@@ -1,6 +1,213 @@
 {
  "hinweis": "Antragstexte aus den Excel-Dateien der Abstimmungsergebnisse mit Markierungen: alt = gestrichen (durchgestrichen), neu = eingefügt (rot), gleich = unverändert. Erzeugt von scripts/antragstexte.py.",
  "sitzungen": {
+  "2026-11-02-vormittag": {
+   "quelle": "ec3a9e93_20261102-Abstimmungsergebnisse_Vormittag.xlsx",
+   "abstimmungen": {
+    "1": {
+     "segmente": [
+      [
+       "gleich",
+       "Direkte Beratung im Kantonsrat gemäss §34 Abs. 2 GO"
+      ]
+     ],
+     "hinweise": []
+    },
+    "2": {
+     "segmente": [
+      [
+       "gleich",
+       "Die Bezeichnung Rheinfallmanagement Gesellschaft ist zu überprüfen und durch eine sachgerechtere Bezeichnung wie beispielsweise Rheinfallgesellschaft zu ersetzen. Die Bezeichnung ist im Gesetz, in den Statuten sowie in den weiteren Bestandteilen der Vorlage entsprechend durchgängig anzupassen. "
+      ]
+     ],
+     "hinweise": []
+    },
+    "3": {
+     "segmente": [
+      [
+       "gleich",
+       "Ergänzung Art. 1 wie folgt: "
+      ],
+      [
+       "neu",
+       "1 Der Kanton fördert zusammen mit den anliegenden Gemeinden die nachhaltige Entwicklung des Rheinfallareals im Kanton Schaffhausen. 2 Insbesondere sollen die Planung, Entwicklung, Steuerung, Organisation und Koordination auf der Schaffhauser Seite gebündelt und in innovativer, nachhaltiger Weise betrieben werden. 3 Dabei sind die sozialen, kulturellen, ökologischen und wirtschaftlichen Interessen ausgewogen zu berücksichtigen und nach Möglichkeit die Zürcher Seite des Rheinfalls in angemessener Weise einzubeziehen."
+      ]
+     ],
+     "hinweise": []
+    },
+    "4": {
+     "segmente": [
+      [
+       "gleich",
+       "Ergänzung Art. 2 wie folgt: "
+      ],
+      [
+       "neu",
+       "1 Ziele nachhaltiger Entwicklung sind namentlich: a) die Bewahrung der natürlichen und kulturellen Authentizität des Rheinfalls als europaweit einzigartiges Naturschauspiel und kulturelles Erbe; b) die Steigerung der lokalen und regionalen Wertschöpfung durch qualitativ hochstehende, angemessen eingepreiste Angebote mit kostenlosem sowie barrierefreiem Zugang zum Rheinfall (Aufwertung der Aufenthaltsqualität); c) die Erhöhung der Aufenthaltsdauer der Gäste in der Destination Neuhausen am Rheinfall, namentlich der Einheimischen, sowie Verteilung der Besuchenden über das ganze Jahr hinweg; d) die Vermeidung von saisonal überbordenden, Natur, Klima sowie die Infrastruktur überlastenden Tourismus."
+      ]
+     ],
+     "hinweise": []
+    },
+    "5": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 3 wie folgt: "
+      ],
+      [
+       "neu",
+       "1 Zur Umsetzung der bezweckten Ziele gemäss Artikel 1 und 2 gründet der Kanton eine gemischtwirtschaftliche Aktiengesellschaft nach den Bestimmungen des Schweizerischen Obligationenrechtes (Art. 762 OR). Der Sitz der Gesellschaft befindet sich in Neuhausen am Rheinfall. 2 Die Gesellschaft kann Rechte sowie Eigentum an Infrastrukturen und Immobilien erwerben und halten, einschliesslich solcher, die bei der Gründung als Sacheinlage übertragen oder ihr später zugeführt werden. 3 Die Gesellschaft kann die Leistungserbringung, insbesondere in den Bereichen Gastronomie und Schifffahrt, durch die Vergabe an private Anbieter sicherstellen. 4 Bei der Verfolgung des Gesellschaftszwecks und ihrer Aufgabenerfüllung strebt die Gesellschaft die Schaffung von langfristigen, nachhaltigen Werten in sozialer, ökologischer und ökonomischer Hinsicht an. Die Aktivitäten am Rheinfall stehen im Einklang mit den Klimazielen des Kantons Schaffhausen, berücksichtigen in angemessener Weise die Interessen der angrenzenden Gemeinwesen, richten sich nach dem Bundesinventar der Landschaften und Naturdenkmäler (BLN) und tragen dem kulturellen Erbe des Rheinfalls Sorge 5 Die Gesellschaft koordiniert ihre Aktivitäten mit der gemäss Tourismusförderungsgesetz für den ganzen Kanton bestimmten Tourismusorganisation."
+      ]
+     ],
+     "hinweise": []
+    },
+    "6": {
+     "segmente": [
+      [
+       "gleich",
+       "Ergänzung Art. 3 Abs. 1 um folgednen Satz: "
+      ],
+      [
+       "neu",
+       "und leistet einen Beitrag zur kantonalen Tourismusförderung."
+      ]
+     ],
+     "hinweise": []
+    },
+    "7": {
+     "segmente": [
+      [
+       "gleich",
+       "Schaffung Art. 3 Abs. 6 neu wie folgt: "
+      ],
+      [
+       "neu",
+       "6 Die Aktivitäten am Rheinfall haben im Einklang mit den geltenden Rahmenbedingungen zu erfolgen, insebsondere dem Bundesinventar der Landschaften und Naturdenkmäler BLN."
+      ]
+     ],
+     "hinweise": []
+    },
+    "8": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 4 Abs. 2 wie folgt: Der Entwurf der Gründungsstatuten"
+      ],
+      [
+       "neu",
+       " sowie deren Abänderung "
+      ],
+      [
+       "gleich",
+       "bedarf der Genehmigung durch den Kantonsrat"
+      ]
+     ],
+     "hinweise": []
+    },
+    "9": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 5 Abs. 2 wie folgt: Der Verwaltungsrat der Gesellschaft besteht aus "
+      ],
+      [
+       "neu",
+       "neun"
+      ],
+      [
+       "gleich",
+       " Mitgliedern; dem Kanton stehen mindestens 6 Mitglieder zu, "
+      ],
+      [
+       "neu",
+       "mindestens drei"
+      ],
+      [
+       "gleich",
+       " aus der Mitte des Kantonsrates. "
+      ],
+      [
+       "neu",
+       "Bei der Zusammensetzung des Verwaltungsrates ist darauf zu achten, dass eine im Hinblick auf die verschiedenen Fachgebiete ganzheitliche Steuerung der Gesellschaft gewährleistet ist."
+      ]
+     ],
+     "hinweise": []
+    },
+    "10": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 5 Abs. 3 wie folgt: Der Regierungsrat ernennt die Vertreterinnen und Vertreter des Kantons im Verwaltungsrat und beruft sie ab, "
+      ],
+      [
+       "neu",
+       "wobei die Mitglieder aus den Reihen des Kantonsrates von diesem zuhanden des Regierungsrates nominiert werden."
+      ]
+     ],
+     "hinweise": []
+    },
+    "11": {
+     "segmente": [
+      [
+       "gleich",
+       "Schaffung Art. 5 Abs. 4 neu wie folgt: "
+      ],
+      [
+       "neu",
+       "4 Der Einwohnergemeinde Neuhausen am Rheinfall steht das Recht zu, ein Mitglied in den Verwaltungsrat zu entsenden. Die Ernennung und Abberufung erfolgen durch den Gemeinderat. Er berücksichtigt dabei das Anforderungsprofil gemäss Eignerstrategie. "
+      ]
+     ],
+     "hinweise": []
+    },
+    "12": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 6 Abs. 2 wie folgt: Der Verwaltungsrat legt der Generalversammlung jährlich den Geschäftsbericht und die Jahresrechnung zur Genehmigung vor"
+      ],
+      [
+       "neu",
+       " einschliesslich dem Vergütungsbericht einzelner Gehälter der Geschäftsleitung."
+      ]
+     ],
+     "hinweise": []
+    },
+    "13": {
+     "segmente": [
+      [
+       "gleich",
+       "Ergänzung Art. 8 Abs. 1 wie folgt: Die Eignerstrategie, die der Regierungsrat erlässt, legt die mittel- und langfristigen Zielsetzungen für die Gesellschaft fest und regelt die relevanten Vorstellungen betreffend Unternehmensverständnis, Steuerung und Controlling sowie die Anforderungen an den Verwaltungsrat der Gesellschaft. "
+      ],
+      [
+       "neu",
+       "Der Regierungsrat hört die an der Gesellschaft beteiligten Gemeinwesen sowie die Standortgemeinde an und berücksichtigt deren Interessen soweit als möglich. "
+      ],
+      [
+       "gleich",
+       "Anpassungen zur Eignerstrategie sind dem Kantonsrat zur Kenntnis zu bringen"
+      ],
+      [
+       "neu",
+       "."
+      ]
+     ],
+     "hinweise": []
+    },
+    "14": {
+     "segmente": [
+      [
+       "gleich",
+       "Anpassung Art. 8 Abs. 1 wie folgt: "
+      ],
+      [
+       "neu",
+       "Der Regierungsrat erlässt eine Eignerstrategie die vom Kantonsrat zu genehmigen ist. Geringfügige Änderungen der Eignerstrategie sind dem Kantonsrat zur Kenntnis zu bringen. Wesentliche Änderungen unterliegen seiner Genehmigung. "
+      ]
+     ],
+     "hinweise": []
+    }
+   }
+  },
   "2026-09-21-vormittag": {
    "quelle": "839b24ae_20260921_Abstimmungsergebnisse_Vormittag.xlsx",
    "abstimmungen": {

@@ -1,0 +1,278 @@
+{
+ "sitzung": "16. Sitzung 2026 · 02.11.2026 (Vormittag)",
+ "slug": "2026-11-02-vormittag",
+ "n_votes": 14,
+ "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-23774052-DE.html",
+ "status": "entwurf",
+ "kontingent": 5,
+ "neu_erzeugt": "2026-11-11",
+ "abstimmungen": [
+  {
+   "nr": 1,
+   "titel": "Antrag A. Schnetzler: Direkte Beratung im Kantonsrat gemäss §34 Abs. 2 GO",
+   "stichwort": "Sozialhilfegesetz ohne Kommission direkt im Rat beraten",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 26,
+    "nein": 31,
+    "enth": 0,
+    "abw": 3
+   }
+  },
+  {
+   "nr": 2,
+   "titel": "Antrag R. Kräuchi: Die Bezeichnung Rheinfallmanagement Gesellschaft ist zu überprüfen und durch eine…",
+   "stichwort": "Gesellschaft umbenennen, etwa in Rheinfallgesellschaft",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 17,
+    "nein": 29,
+    "enth": 9,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 3,
+   "titel": "Antrag M. Freivogel: Ergänzung Art. 1",
+   "stichwort": "Zweck: nachhaltige Entwicklung des Rheinfallareals",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 36,
+    "nein": 18,
+    "enth": 1,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 4,
+   "titel": "Antrag M. Freivogel: Ergänzung Art. 2",
+   "stichwort": "Ziele: Authentizität, Wertschöpfung, Gratiszugang",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 36,
+    "nein": 18,
+    "enth": 1,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 5,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 3",
+   "stichwort": "Gemischtwirtschaftliche AG mit Nachhaltigkeitsauftrag",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 37,
+    "nein": 20,
+    "enth": 0,
+    "abw": 3
+   }
+  },
+  {
+   "nr": 6,
+   "titel": "Antrag RR Martin Kessler: Ergänzung Art. 3 Abs. 1 um folgednen Satz",
+   "stichwort": "Gesellschaft soll zur Tourismusförderung beitragen",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 7,
+    "nein": 49,
+    "enth": 0,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 7,
+   "titel": "Antrag R. Müller: Schaffung Art. 3 Abs. 6 neu",
+   "stichwort": "Aktivitäten am Rheinfall im Einklang mit dem BLN",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 38,
+    "nein": 18,
+    "enth": 0,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 8,
+   "titel": "Antrag M. Litscher: Anpassung Art. 4 Abs. 2",
+   "stichwort": "Auch Änderungen der Statuten vom Kantonsrat genehmigen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 39,
+    "nein": 18,
+    "enth": 0,
+    "abw": 3
+   }
+  },
+  {
+   "nr": 9,
+   "titel": "Antrag M. Freivogel: Anpassung Art. 5 Abs. 2",
+   "stichwort": "Neun Verwaltungsräte, mindestens drei aus dem Kantonsrat",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 39,
+    "nein": 18,
+    "enth": 0,
+    "abw": 3
+   }
+  },
+  {
+   "nr": 10,
+   "titel": "Antrag I. Lüthi: Anpassung Art. 5 Abs. 3",
+   "stichwort": "Kantonsrat nominiert seine Mitglieder im Verwaltungsrat",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 35,
+    "nein": 22,
+    "enth": 0,
+    "abw": 3
+   }
+  },
+  {
+   "nr": 11,
+   "titel": "Antrag N. Schärrer: Schaffung Art. 5 Abs. 4 neu",
+   "stichwort": "Neuhausen am Rheinfall stellt einen Verwaltungsrat",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 12,
+    "nein": 40,
+    "enth": 3,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 12,
+   "titel": "Antrag L. Altorfer: Anpassung Art. 6 Abs. 2",
+   "stichwort": "Gehälter der Geschäftsleitung einzeln offenlegen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 33,
+    "nein": 21,
+    "enth": 0,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 13,
+   "titel": "Antrag N. Schärrer: Ergänzung Art. 8 Abs. 1",
+   "stichwort": "Gemeinwesen zur Eignerstrategie anhören",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 20,
+    "nein": 31,
+    "enth": 5,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 14,
+   "titel": "Antrag P. Neukomm: Anpassung Art. 8 Abs. 1",
+   "stichwort": "Eignerstrategie vom Kantonsrat genehmigen lassen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 33,
+    "nein": 21,
+    "enth": 2,
+    "abw": 4
+   }
+  }
+ ],
+ "posts": [
+  {
+   "art": "karussell",
+   "teil": 1,
+   "teile": 2,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 namentliche Abstimmungen. Teil 1 von 2.\n\nÄnderung des Gesetzes über die öffentliche Sozialhilfe und soziale Einrichtungen:\n1. Sozialhilfegesetz ohne Kommission direkt im Rat beraten (A. Schnetzler, EDU): Abgelehnt\n\nGesetz über die Rheinfall Managementgesellschaft (Anträge aus dem Rat zur Fassung der Spezialkommission):\n2. Gesellschaft umbenennen, etwa in Rheinfallgesellschaft (R. Kräuchi, GLP): Angenommen\n3. Zweck: nachhaltige Entwicklung des Rheinfallareals (M. Freivogel, SP · Art. 1): Abgelehnt\n4. Ziele: Authentizität, Wertschöpfung, Gratiszugang (M. Freivogel, SP · Art. 2): Abgelehnt\n5. Gemischtwirtschaftliche AG mit Nachhaltigkeitsauftrag (M. Freivogel, SP · Art. 3): Abgelehnt\n6. Gesellschaft soll zur Tourismusförderung beitragen (Regierungsrat M. Kessler · Art. 3): Angenommen\n7. Aktivitäten am Rheinfall im Einklang mit dem BLN (R. Müller, Grüne · Art. 3): Abgelehnt\n8. Auch Änderungen der Statuten vom Kantonsrat genehmigen (M. Litscher, SP · Art. 4): Abgelehnt\n9. Neun Verwaltungsräte, mindestens drei aus dem Kantonsrat (M. Freivogel, SP · Art. 5): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-00.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-01.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-02.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-03.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-04.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-05.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-06.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-07.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-08.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-09.png"
+   ],
+   "providers": [
+    "instagram"
+   ],
+   "instagram": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "karussell",
+   "teil": 2,
+   "teile": 2,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 namentliche Abstimmungen. Teil 2 von 2.\n\nGesetz über die Rheinfall Managementgesellschaft (Anträge aus dem Rat zur Fassung der Spezialkommission):\n10. Kantonsrat nominiert seine Mitglieder im Verwaltungsrat (I. Lüthi, SP · Art. 5): Abgelehnt\n11. Neuhausen am Rheinfall stellt einen Verwaltungsrat (N. Schärrer, FDP · Art. 5): Angenommen\n12. Gehälter der Geschäftsleitung einzeln offenlegen (L. Altorfer, JUSO · Art. 6): Abgelehnt\n13. Gemeinwesen zur Eignerstrategie anhören (N. Schärrer, FDP · Art. 8): Angenommen\n14. Eignerstrategie vom Kantonsrat genehmigen lassen (P. Neukomm, SP · Art. 8): Abgelehnt\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-10.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-11.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-12.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-13.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-14.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/feed-15.png"
+   ],
+   "providers": [
+    "instagram"
+   ],
+   "instagram": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 namentliche Abstimmungen. Behandelt: Änderung des Gesetzes über die öffentliche Sozialhilfe und soziale Einrichtungen; Gesetz über die Rheinfall Managementgesellschaft. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/reel.mp4"
+   ],
+   "dauer_s": 62.5,
+   "providers": [
+    "instagram"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "youtube",
+   "text": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 namentliche Abstimmungen. Behandelt: Änderung des Gesetzes über die öffentliche Sozialhilfe und soziale Einrichtungen; Gesetz über die Rheinfall Managementgesellschaft. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, SP, FDP, GLP, Grüne, Die Mitte, EVP, EDU, JSVP, JUSO, Junge Grüne\nMedien: Schaffhauser Nachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, Schaffhauser Fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/reel.mp4"
+   ],
+   "dauer_s": 62.5,
+   "providers": [
+    "youtube"
+   ],
+   "youtube": {
+    "type": "short",
+    "title": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 Abstimmungen",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "text": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 namentliche Abstimmungen. Behandelt: Änderung des Gesetzes über die öffentliche Sozialhilfe und soziale Einrichtungen; Gesetz über die Rheinfall Managementgesellschaft. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, @sp.schaffhausen, FDP, GLP, Grüne, Die Mitte, EVP, EDU, @jsvp.sh, @juso.schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, @schaffhauserfernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-02-vormittag/reel.mp4"
+   ],
+   "dauer_s": 62.5,
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Kantonsrat Schaffhausen, 2. November 2026, Vormittag: 14 Abstimmungen"
+   }
+  }
+ ]
+}
