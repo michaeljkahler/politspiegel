@@ -1,6 +1,39 @@
 {
   "hinweis": "Stichworte je Abstimmung für Deckblatt, Karte und Bildtext (scripts/social.py). Geschrieben aus dem Antragstext mit Streichungen und Einfügungen (data/antragstexte.json): was der Antrag will, ohne Wertung, eine Zeile, höchstens rund 55 Zeichen. Der Antragsteller, der Artikel und das Ergebnis stehen nicht hier, die setzt social.py. Ungültige Abstimmungen bekommen kein Stichwort. Fehlt ein Eintrag, zeigt social.py den Titel aus dem Protokoll.",
   "sitzungen": {
+    "2026-11-16-vormittag": {
+      "1": "Vorlage ADS 26-59 an 9er-SPK statt an die BVE",
+      "2": "Interpellation Unternehmenssteuern nach 2030 diskutieren",
+      "3": "Sozialamt: 80-%-Stelle unbefristet statt befristet",
+      "4": "Sozialamt: Löhne um 50'000 Franken kürzen",
+      "5": "Sozialamt: Löhne um 60'000 Franken kürzen"
+    },
+    "2026-11-16-nachmittag": {
+      "1": "Asyl- und Flüchtlingswesen: Löhne um 250'000 Fr. kürzen",
+      "2": "Familie und Jugend: neue Stelle Sozialarbeit streichen",
+      "3": "Strassenunterhalt: Ersatzfahrzeug, 45'000 Fr., streichen",
+      "4": "Denkmalpflege: befristete Anstellung, Pensum 0,8 auf 1,0",
+      "5": "Beschluss zum Personalbestand der Schaffhauser Polizei",
+      "6": "Umbau Restaurant Bahnhof Beringen, 1 Mio. Fr., streichen",
+      "7": "Ordnungsantrag: sofort abstimmen",
+      "8": "Ordnungsantrag: Pause bis 18.30 Uhr"
+    },
+    "2026-11-16-abend": {
+      "1": "Studien Netto-Null Liegenschaften: Kredit auf 500'000 Fr.",
+      "2": "Gesundheitszentrum Klettgau: 3 oder 2,5 Mio. Franken",
+      "3": "Gesundheitszentrum Klettgau: Kredit auf 2,5 Mio. Fr.",
+      "4": "Verpflichtungskredit Gesundheitszentrum Klettgau",
+      "5": "Investitionsbeitrag Stiftung Altra, Sanierung 4. OG",
+      "6": "Verpflichtungskredite über 11,9 und 10,9 Mio. Franken",
+      "7": "Neue Ausgaben in Kompetenz des Kantonsrats genehmigen",
+      "8": "Globalkredit Spitäler Schaffhausen: 17,9 Mio. Franken",
+      "9": "Energie- und Klimafonds: 5,5 und 1 Mio. Fr. einlegen",
+      "10": "Budget 2027 der ITSH genehmigen",
+      "11": "Lohnsumme: 0,6 statt 1 % für Lohnmassnahmen",
+      "12": "Lohnsumme: 1 % Lohnmassnahmen plus 0,4 % Teuerung",
+      "13": "Steuerfuss: 76 % natürliche, 98 % juristische Personen",
+      "14": "Schlussabstimmung Budget 2027"
+    },
     "2026-11-02-vormittag": {
       "1": "Sozialhilfegesetz ohne Kommission direkt im Rat beraten",
       "2": "Gesellschaft umbenennen, etwa in Rheinfallgesellschaft",
@@ -16,6 +49,17 @@
       "12": "Gehälter der Geschäftsleitung einzeln offenlegen",
       "13": "Gemeinwesen zur Eignerstrategie anhören",
       "14": "Eignerstrategie vom Kantonsrat genehmigen lassen"
+    },
+    "2026-09-21-vormittag": {
+      "1": "Prävention namentlich im jugendpolizeilichen Bereich",
+      "2": "Uniformierte tragen immer Namensschild oder Dienstnummer",
+      "3": "Polizeikommission: drei Ratsmitglieder auf Ratsvorschlag",
+      "4": "Polizeikommission: Ratsmitglieder vom Kantonsrat gewählt",
+      "5": "Polizeikommandant in der Kommission mit Antragsrecht",
+      "6": "Verbandsmitglieder: «mit beratender Stimme» streichen",
+      "7": "Verbandsmitglieder in der Kommission mit Antragsrecht",
+      "8": "Aufgaben der Polizeikommission: auch Einsatzgrundsätze",
+      "9": "Polizeikommission: Begleitung, Anträge an Regierungsrat"
     },
     "2026-09-21-nachmittag": {
       "1": "Betreuung Inhaftierter nicht an private Sicherheitsfirmen",
@@ -36,17 +80,6 @@
       "17": "Gesetzliche Grundlage für Fachstelle Radikalisierung",
       "18": "Häusliche Gewalt: Schutzpflicht, Viererteams als Regel",
       "19": "Häusliche Gewalt, Nachstellung: Verbot 21 statt 14 Tage"
-    },
-    "2026-09-21-vormittag": {
-      "1": "Prävention namentlich im jugendpolizeilichen Bereich",
-      "2": "Uniformierte tragen immer Namensschild oder Dienstnummer",
-      "3": "Polizeikommission: drei Ratsmitglieder auf Ratsvorschlag",
-      "4": "Polizeikommission: Ratsmitglieder vom Kantonsrat gewählt",
-      "5": "Polizeikommandant in der Kommission mit Antragsrecht",
-      "6": "Verbandsmitglieder: «mit beratender Stimme» streichen",
-      "7": "Verbandsmitglieder in der Kommission mit Antragsrecht",
-      "8": "Aufgaben der Polizeikommission: auch Einsatzgrundsätze",
-      "9": "Polizeikommission: Begleitung, Anträge an Regierungsrat"
     }
   }
 }

@@ -1,6 +1,192 @@
 {
  "hinweis": "Antragstexte aus den Excel-Dateien der Abstimmungsergebnisse mit Markierungen: alt = gestrichen (durchgestrichen), neu = eingefügt (rot), gleich = unverändert. Erzeugt von scripts/antragstexte.py.",
  "sitzungen": {
+  "2026-11-16-vormittag": {
+   "quelle": "1e7393ba_20261116_Abstimmungsergebnisse_Vormittag.xlsx",
+   "abstimmungen": {
+    "1": {
+     "segmente": [
+      [
+       "gleich",
+       "Zuweisung Vorlage ADS 26-59 an eine 9er SPK anstelle BVE"
+      ]
+     ],
+     "hinweise": []
+    },
+    "2": {
+     "segmente": [
+      [
+       "gleich",
+       "Diskussion Interpellation 2026/2 von Walter Hotz vom 2. Oktober 2026 betreffend «Unternehmenssteuern nach 2030 - wie gross ist das finanzielle Risiko für den Kanton Schaffhausen?»"
+      ]
+     ],
+     "hinweise": []
+    },
+    "3": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2170 Sozialamt Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Umwandlung der 80% Stelle in unbesfristete Stelle"
+      ]
+     ],
+     "hinweise": []
+    },
+    "4": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2170 Sozialamt Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Kürzung um 50'000 Franken"
+      ]
+     ],
+     "hinweise": []
+    },
+    "5": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2170 Sozialamt Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Kürzung um 60'000 Franken"
+      ]
+     ],
+     "hinweise": []
+    }
+   }
+  },
+  "2026-11-16-nachmittag": {
+   "quelle": "9081d374_20261116_Abstimmungsergebnisse_Nachmittag.xlsx",
+   "abstimmungen": {
+    "1": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2198 Fonds Asyl- und Flüchtlingswesen Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Kürzung um 250'000 Franken"
+      ]
+     ],
+     "hinweise": []
+    },
+    "2": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2292 Familie und Jugend Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Streichung Sozialarbeiter/-in FH, Neue Stelle 0.1."
+      ]
+     ],
+     "hinweise": []
+    },
+    "3": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2322 Unterhaltsdienst und Strassenerhaltung Kto. 3111.00 Maschinen, Geräte und Fahrzeuge Streichung 45'000 Franken Ersatz VW Tiguan"
+      ]
+     ],
+     "hinweise": []
+    },
+    "4": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: Pos. 2338 Denkmalpflege Kto. 3010.00 Löhne des Verwaltungs- und Betriebspersonals Umwandlung von unbefristete in befristete Anstellung/Erhöhung Pensum von 08. auf 1.0."
+      ]
+     ],
+     "hinweise": []
+    },
+    "6": {
+     "segmente": [
+      [
+       "gleich",
+       "Budget 2027: IPR0330 (Oktoberbrief S. 17) Verpflichtungskredit Umbau Liegenschaft Restaurant Bahnhof Beringen Streichung (1. Mio. Franken)"
+      ]
+     ],
+     "hinweise": []
+    },
+    "7": {
+     "segmente": [
+      [
+       "gleich",
+       "Sofortige Abstimmung"
+      ]
+     ],
+     "hinweise": []
+    },
+    "8": {
+     "segmente": [
+      [
+       "gleich",
+       "Länge Pause bis 18.30 Uhr"
+      ]
+     ],
+     "hinweise": []
+    }
+   }
+  },
+  "2026-11-16-abend": {
+   "quelle": "45e05a17_20261116_Abstimmungsergebnisse_Abend.xlsx",
+   "abstimmungen": {
+    "1": {
+     "segmente": [
+      [
+       "gleich",
+       "EPR0169 «Verpflichtungskredit Studien für Umsetzung Netto-Null in kantonalen Liegenschaften» (Budget S. 83) Umkehr Kürzung, respektive Erhöhung auf 500'000 Franken"
+      ]
+     ],
+     "hinweise": []
+    },
+    "2": {
+     "segmente": [
+      [
+       "gleich",
+       "Beschluss betreffend Verpflichtungskredit «Gesundheitszentrum Klettgau» (IPR00326) (Anhang 2) Antrag Melanie Flubacher - Erhöhung auf 3. Mio. Franken Antrag Pentti Aellig - Erhöhung auf 2.5 Mio. Franken"
+      ]
+     ],
+     "hinweise": []
+    },
+    "3": {
+     "segmente": [
+      [
+       "gleich",
+       "Beschluss betreffend Verpflichtungskredit «Gesundheitszentrum Klettgau» (IPR00326) (Anhang 2) Erhöhung auf 2.5 Mio. Franken"
+      ]
+     ],
+     "hinweise": []
+    },
+    "6": {
+     "segmente": [
+      [
+       "gleich",
+       "11'917'000 Franken zulasten Erfolgsrechnung 10'903'000 Franken zulasten Investitionsrechnung"
+      ]
+     ],
+     "hinweise": []
+    },
+    "11": {
+     "segmente": [
+      [
+       "gleich",
+       "Entwicklung der Lohnsumme von 0.6% anstelle von 1% für Lohnentwicklungsmassnahmen (inkl. 0.5% Mutationsgewinn)"
+      ]
+     ],
+     "hinweise": []
+    },
+    "12": {
+     "segmente": [
+      [
+       "gleich",
+       "1% Lohnentwicklungsmassnahmen (inkl. 0.5% Mutationsgewinn) zuzügl. 0.4% Teuerungsausgleich"
+      ]
+     ],
+     "hinweise": []
+    },
+    "13": {
+     "segmente": [
+      [
+       "gleich",
+       "natürliche Personen 76% (Vorjahr 76%) juristische Personen 98% (Vorjahr 98%)"
+      ]
+     ],
+     "hinweise": []
+    }
+   }
+  },
   "2026-11-02-vormittag": {
    "quelle": "ec3a9e93_20261102-Abstimmungsergebnisse_Vormittag.xlsx",
    "abstimmungen": {

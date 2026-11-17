@@ -1,0 +1,184 @@
+{
+ "sitzung": "17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag)",
+ "slug": "2026-11-16-nachmittag",
+ "n_votes": 8,
+ "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-24336555-DE.html",
+ "status": "entwurf",
+ "kontingent": 4,
+ "neu_erzeugt": "2026-11-17",
+ "abstimmungen": [
+  {
+   "nr": 1,
+   "titel": "Antrag P. Aellig: Budget 2027: Pos. 2198 Fonds Asyl- und Flüchtlingswesen Kto. 3010.00 Löhne des…",
+   "stichwort": "Asyl- und Flüchtlingswesen: Löhne um 250'000 Fr. kürzen",
+   "ergebnis": "Stimmengleichheit",
+   "c": {
+    "ja": 28,
+    "nein": 28,
+    "enth": 0,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 2,
+   "titel": "Antrag Andreas Schnetzler: Budget 2027: Pos. 2292 Familie und Jugend Kto. 3010.00 Löhne des Verwaltungs-…",
+   "stichwort": "Familie und Jugend: neue Stelle Sozialarbeit streichen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 32,
+    "nein": 21,
+    "enth": 1,
+    "abw": 6
+   }
+  },
+  {
+   "nr": 3,
+   "titel": "Antrag Andreas Schnetzler: Budget 2027: Pos. 2322 Unterhaltsdienst und Strassenerhaltung Kto. 3111.00…",
+   "stichwort": "Strassenunterhalt: Ersatzfahrzeug, 45'000 Fr., streichen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 33,
+    "nein": 20,
+    "enth": 2,
+    "abw": 5
+   }
+  },
+  {
+   "nr": 4,
+   "titel": "Antrag Matthias Freivogel: Budget 2027: Pos. 2338 Denkmalpflege Kto. 3010.00 Löhne des Verwaltungs- und…",
+   "stichwort": "Denkmalpflege: befristete Anstellung, Pensum 0,8 auf 1,0",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 18,
+    "nein": 32,
+    "enth": 2,
+    "abw": 8
+   }
+  },
+  {
+   "nr": 5,
+   "titel": "Beschluss betreffend Personalbestand der Schaffhauser Polizei (Anhang 3)",
+   "stichwort": "Beschluss zum Personalbestand der Schaffhauser Polizei",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 45,
+    "nein": 0,
+    "enth": 4,
+    "abw": 11
+   }
+  },
+  {
+   "nr": 6,
+   "titel": "Antrag Martin Schlatter: Budget 2027: IPR0330 (Oktoberbrief S. 17) Verpflichtungskredit Umbau Liegenschaft…",
+   "stichwort": "Umbau Restaurant Bahnhof Beringen, 1 Mio. Fr., streichen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 36,
+    "nein": 18,
+    "enth": 2,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 7,
+   "titel": "Ordnungsantrag Raphaël Rohner: Sofortige Abstimmung",
+   "stichwort": "Ordnungsantrag: sofort abstimmen",
+   "ergebnis": "Abgelehnt",
+   "c": {
+    "ja": 23,
+    "nein": 29,
+    "enth": 4,
+    "abw": 4
+   }
+  },
+  {
+   "nr": 8,
+   "titel": "Ordnungsantrag Christian Di Ronco: Länge Pause bis 18.30 Uhr",
+   "stichwort": "Ordnungsantrag: Pause bis 18.30 Uhr",
+   "ergebnis": "Angenommen",
+   "c": {
+    "ja": 34,
+    "nein": 13,
+    "enth": 5,
+    "abw": 8
+   }
+  }
+ ],
+ "posts": [
+  {
+   "art": "karussell",
+   "teil": 1,
+   "teile": 1,
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 namentliche Abstimmungen.\n\nBudget 2027 und Finanzplan 2027-2030/Oktoberbrief vom 19. Oktober 2026:\n1. Asyl- und Flüchtlingswesen: Löhne um 250'000 Fr. kürzen (P. Aellig, SVP): Stimmengleichheit\n2. Familie und Jugend: neue Stelle Sozialarbeit streichen (A. Schnetzler, EDU): Abgelehnt\n3. Strassenunterhalt: Ersatzfahrzeug, 45'000 Fr., streichen (A. Schnetzler, EDU): Abgelehnt\n4. Denkmalpflege: befristete Anstellung, Pensum 0,8 auf 1,0 (M. Freivogel, SP): Angenommen\n5. Beschluss zum Personalbestand der Schaffhauser Polizei (Beschluss betreffend Personalbestand der Schaffhauser…): Angenommen\n6. Umbau Restaurant Bahnhof Beringen, 1 Mio. Fr., streichen (M. Schlatter, SVP): Abgelehnt\n7. Ordnungsantrag: sofort abstimmen (R. Rohner, FDP): Abgelehnt\n8. Ordnungsantrag: Pause bis 18.30 Uhr (C. Di Ronco, Die Mitte): Angenommen\n\nAlle Details, Fraktionen und Namen: https://michaeljkahler.github.io/politspiegel/kantonsrat/\nQuelle: Abstimmungsprotokolle des Kantonsrats, sh.ch\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-00.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-01.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-02.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-03.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-04.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-05.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-06.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-07.png",
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/feed-08.png"
+   ],
+   "providers": [
+    "instagram"
+   ],
+   "instagram": {
+    "type": "POST"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "instagram",
+   "text": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 namentliche Abstimmungen. Behandelt: Budget 2027 und Finanzplan 2027-2030/Oktoberbrief vom 19. Oktober 2026. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: @svp_kanton_schaffhausen, @sp.schaffhausen, @fdp.sh, @glp_schaffhausen, @gruene_sh, @diemitte.sh, @evp_schaffhausen, EDU, @jsvp_sh, @juso_schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, @schaffhauser_az, @bock_schaffhausen24, @klettgauerbote, @steiner.anzeiger, @radiomunot, @radio_rasa, @schaffhauser.fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 38.5,
+   "providers": [
+    "instagram"
+   ],
+   "instagram": {
+    "type": "REEL",
+    "showReelOnFeed": true
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "youtube",
+   "text": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 namentliche Abstimmungen. Behandelt: Budget 2027 und Finanzplan 2027-2030/Oktoberbrief vom 19. Oktober 2026. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, SP, FDP, GLP, Grüne, Die Mitte, EVP, EDU, JSVP, JUSO, Junge Grüne\nMedien: Schaffhauser Nachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, Schaffhauser Fernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 38.5,
+   "providers": [
+    "youtube"
+   ],
+   "youtube": {
+    "type": "short",
+    "title": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 Abstimmungen",
+    "privacy": "public",
+    "madeForKids": false,
+    "category": "NEWS_POLITICS"
+   }
+  },
+  {
+   "art": "reel",
+   "netz": "tiktok",
+   "text": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 namentliche Abstimmungen. Behandelt: Budget 2027 und Finanzplan 2027-2030/Oktoberbrief vom 19. Oktober 2026. Wer wie gestimmt hat: https://michaeljkahler.github.io/politspiegel/kantonsrat/\n\nParteien im Rat: SVP, @sp.schaffhausen, FDP, GLP, Grüne, Die Mitte, EVP, EDU, @jsvp.sh, @juso.schaffhausen, @jungegruene_sh\nMedien: @schaffhausernachrichten, Schaffhauser AZ, Schaffhauser Bock / Schaffhausen24, Klettgauer Bote, Steiner Anzeiger, Radio Munot, Radio RaSA, @schaffhauserfernsehen\n\n#Schaffhausen #Kantonsrat #Politspiegel",
+   "media": [
+    "https://michaeljkahler.github.io/politspiegel/social/kantonsrat/2026-11-16-nachmittag/reel.mp4"
+   ],
+   "dauer_s": 38.5,
+   "providers": [
+    "tiktok"
+   ],
+   "tiktok": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 Abstimmungen"
+   }
+  }
+ ]
+}

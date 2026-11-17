@@ -5,12 +5,132 @@ Gegenprobe am Wortprotokoll nicht klären. Entscheid von Hand eintragen in
 `data/umkehr_zuordnung.json`: `ja_ist_zustimmung` setzen, `herkunft` auf
 `"manuell"`, Begründung ergänzen.
 
-Offen: **106**
+Offen: **118**
 
-- `kein_text`: 58
+- `kein_text`: 70
 - `keine_fundstelle`: 26
 - `objekt_unklar`: 21
 - `ungeklaert`: 1
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Abend) #Nr1
+
+- **Titel:** Antrag Rainer Schmidig
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 25 Ja : 29 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung R. Schmidig»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Abend) #Nr3
+
+- **Titel:** Antrag Pentti Aellig
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 29 Ja : 25 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung P. Aellig»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Abend) #Nr11
+
+- **Titel:** Antrag Andreas Schnetzler
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 35 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung A. Schnetzler»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag) #Nr1
+
+- **Titel:** Antrag P. Aellig
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 28 Ja : 28 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung P. Aellig»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag) #Nr2
+
+- **Titel:** Antrag Andreas Schnetzler
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 32 Ja : 21 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung A. Schnetzler»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag) #Nr3
+
+- **Titel:** Antrag Andreas Schnetzler
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 33 Ja : 20 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung A. Schnetzler»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag) #Nr4
+
+- **Titel:** Antrag Matthias Freivogel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 18 Ja : 32 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung M. Freivogel»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag) #Nr6
+
+- **Titel:** Antrag Martin Schlatter
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 36 Ja : 18 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung M. Schlatter»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Vormittag) #Nr1
+
+- **Titel:** Antrag W. Hotz
+- **Hinweis:** Ja bedeutet Zustimmung Vorschlag Büro
+- **Stimmen:** 52 Ja : 4 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag W. Hotz»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Vormittag) #Nr3
+
+- **Titel:** Antrag I. Lüthi
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 30 Ja : 26 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung Antrag I. Lüthi»: ein Ja ist Ablehnung des Antrags…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Vormittag) #Nr4
+
+- **Titel:** Antrag P. Aellig
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 32 Ja : 24 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung P. Aellig»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
+
+---
+
+### 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Vormittag) #Nr5
+
+- **Titel:** Antrag E. Schudel
+- **Hinweis:** Ja bedeutet Zustimmung Antrag GPK/RR
+- **Stimmen:** 31 Ja : 25 Nein
+- **Regel:** `ja_ist_zustimmung = False` (quelle) — Die Datei des Kantonsrats druckt «Nein bedeutet Zustimmung E. Schudel»: ein Ja ist Ablehnung des Antrags im…
+- **Protokoll:** `kein_text` — Für diese Sitzung liegt kein Protokolltext vor.
 
 ---
 

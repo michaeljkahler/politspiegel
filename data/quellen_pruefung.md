@@ -1,6 +1,9 @@
 # Abgleich mit den Dateien des Kantonsrats
 
-Geprüft: 40 Sitzungen mit Quelldatei, 8 mit Befund. hinweis: 1, probe: 9
+Geprüft: 43 Sitzungen mit Quelldatei, 9 mit Befund. hinweis: 1, probe: 10
+
+## 17., 18. und 19. Sitzung 2026 · 16.11.2026 (Nachmittag)  (9081d374_20261116_Abstimmungsergebnisse_Nachmittag.xlsx)
+- [probe] Nr. 7: Rohner stimmte «Nein» zum eigenen Antrag, Umkehr nein, ohne Hinweis
 
 ## 14. und 15. Sitzung 2026 · 21.09.2026 (Vormittag)  (839b24ae_20260921_Abstimmungsergebnisse_Vormittag.xlsx)
 - [hinweis] Nr. 9: gespeichert «Ja bedeutet Zustimmung Antrag SPK», Datei hat keinen Hinweis

@@ -4805,8 +4805,8 @@
   ]
  },
  "22004958": {
-  "titel": "17., 18. und 19 Sitzung 2026",
-  "datum": "16.11.2026",
+  "titel": "20. Sitzung 2026",
+  "datum": "30.11.2026",
   "files": []
  },
  "23578858": {
@@ -4868,6 +4868,30 @@
    {
     "name": "17., 18. und 19. Sitzung vom 16.11.2026.pdf",
     "href": "https://sh.ch/CMS/get/file/2013f6d9-0c80-4266-a744-97277f0c2862"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Vormittag.xlsx",
+    "href": "https://sh.ch/CMS/get/file/aae8aa5e-28a9-4898-b16a-57535abf78b7"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Vormittag.pdf",
+    "href": "https://sh.ch/CMS/get/file/50bace03-bdb2-49ac-a22a-0df1bec30c44"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Nachmittag.xlsx",
+    "href": "https://sh.ch/CMS/get/file/14747e57-6580-4375-8b5d-fa7e06d9ca28"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Nachmittag.pdf",
+    "href": "https://sh.ch/CMS/get/file/a40f47ee-333c-4bff-8ee0-b6422ca859ce"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Abend.xlsx",
+    "href": "https://sh.ch/CMS/get/file/7dad2051-29b7-4dc5-8c4d-2ef98710752f"
+   },
+   {
+    "name": "20261116 Abstimmungsergebnisse Abend.pdf",
+    "href": "https://sh.ch/CMS/get/file/7e35b237-818e-40e1-b515-6435958330c5"
    }
   ]
  }
