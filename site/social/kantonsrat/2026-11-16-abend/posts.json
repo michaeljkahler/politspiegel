@@ -3,7 +3,7 @@
  "slug": "2026-11-16-abend",
  "n_votes": 14,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-24336555-DE.html",
- "status": "entwurf",
+ "status": "entwurf_in_metricool",
  "kontingent": 5,
  "neu_erzeugt": "2026-11-17",
  "abstimmungen": [
@@ -200,7 +200,14 @@
    ],
    "instagram": {
     "type": "POST"
-   }
+   },
+   "metricool": {
+    "id": 431834790,
+    "uuid": "1344153249203175669",
+    "termin": "2026-11-19T09:00:00",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=1344153249203175669"
+   },
+   "status": "entwurf_in_metricool"
   },
   {
    "art": "karussell",
@@ -221,7 +228,8 @@
    ],
    "instagram": {
     "type": "POST"
-   }
+   },
+   "status": "zurueckgestellt"
   },
   {
    "art": "reel",
@@ -237,7 +245,8 @@
    "instagram": {
     "type": "REEL",
     "showReelOnFeed": true
-   }
+   },
+   "status": "zurueckgestellt"
   },
   {
    "art": "reel",
@@ -256,7 +265,14 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
-   }
+   },
+   "metricool": {
+    "id": 431834827,
+    "uuid": "-4176179011117563450",
+    "termin": "2026-11-24T16:00:00",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6841058&openWithPostUuid=-4176179011117563450"
+   },
+   "status": "entwurf_in_metricool"
   },
   {
    "art": "reel",
@@ -272,7 +288,8 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Kantonsrat Schaffhausen, 16. November 2026, Abend: 14 Abstimmungen"
-   }
+   },
+   "status": "zurueckgestellt"
   }
  ]
 }

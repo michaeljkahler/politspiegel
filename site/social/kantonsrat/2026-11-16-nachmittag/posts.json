@@ -3,7 +3,7 @@
  "slug": "2026-11-16-nachmittag",
  "n_votes": 8,
  "quelle": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Parlament/Der-Kantonsrat-24336555-DE.html",
- "status": "entwurf",
+ "status": "zurueckgestellt",
  "kontingent": 4,
  "neu_erzeugt": "2026-11-17",
  "abstimmungen": [
@@ -127,7 +127,8 @@
    ],
    "instagram": {
     "type": "POST"
-   }
+   },
+   "status": "zurueckgestellt"
   },
   {
    "art": "reel",
@@ -143,7 +144,8 @@
    "instagram": {
     "type": "REEL",
     "showReelOnFeed": true
-   }
+   },
+   "status": "zurueckgestellt"
   },
   {
    "art": "reel",
@@ -162,7 +164,8 @@
     "privacy": "public",
     "madeForKids": false,
     "category": "NEWS_POLITICS"
-   }
+   },
+   "status": "zurueckgestellt"
   },
   {
    "art": "reel",
@@ -178,7 +181,8 @@
    "tiktok": {
     "privacyOption": "PUBLIC_TO_EVERYONE",
     "title": "Kantonsrat Schaffhausen, 16. November 2026, Nachmittag: 8 Abstimmungen"
-   }
+   },
+   "status": "zurueckgestellt"
   }
  ]
 }
